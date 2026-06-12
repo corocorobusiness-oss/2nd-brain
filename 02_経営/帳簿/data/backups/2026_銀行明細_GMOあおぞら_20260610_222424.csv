@@ -1,0 +1,115 @@
+date,side,amount,balance,status,description
+2026-01-01,income,4,10389,registered,普通預金 利息
+2026-01-10,expense,3245,7144,registered,Visaデビット利用 アポロステーション
+2026-01-13,income,41260,48404,registered,振込 UBER EATS JAPAN
+2026-01-14,income,5000,53404,registered,ATM セブン銀行
+2026-01-14,expense,50000,3404,registered,振込 ダイシホクエツ イケダ ユウマ
+2026-01-14,expense,3000,404,registered,ATM セブン銀行
+2026-01-20,income,47643,48047,registered,振込 UBER EATS JAPAN
+2026-01-20,expense,10000,38047,registered,ATM セブン銀行
+2026-01-20,expense,110,37937,registered,ATM 利用手数料 セブン銀行
+2026-01-21,income,6,37943,registered,振込 GMOあおぞらネット VISAデビットキャッシュバック
+2026-01-22,income,2609,40552,registered,振込 カ）デマエカン
+2026-01-27,expense,40000,552,registered,ATM セブン銀行
+2026-01-27,expense,110,442,registered,ATM 利用手数料 セブン銀行
+2026-01-27,income,24155,24597,registered,振込 UBER EATS JAPAN
+2026-01-27,expense,2980,21617,registered,Visaデビット利用 Brain
+2026-02-01,income,3,21620,registered,普通預金 利息
+2026-02-03,expense,21000,620,registered,振込 カ）コロコロ
+2026-02-03,income,20850,21470,registered,振込 UBER EATS JAPAN
+2026-02-04,expense,14800,6670,registered,Visaデビット利用 Brain
+2026-02-04,expense,6000,670,registered,振込 カ）コロコロ
+2026-02-10,income,25326,25996,registered,振込 UBER EATS JAPAN
+2026-02-10,expense,25900,96,registered,振込 カ）コロコロ
+2026-02-13,income,1000,1096,registered,ATM セブン銀行
+2026-02-13,expense,790,306,registered,Visaデビット利用 ニコニコプレミアム
+2026-02-16,income,14,320,registered,振込 グーグル
+2026-02-17,income,33084,33404,registered,振込 UBER EATS JAPAN
+2026-02-17,expense,1480,31924,registered,Visaデビット利用 Brain
+2026-02-22,expense,2000,29924,registered,ATM セブン銀行
+2026-02-23,expense,3631,26293,registered,Visaデビット利用 ENEOS-SS
+2026-02-24,income,37,26330,registered,振込 GMOあおぞらネット VISAデビットキャッシュバック
+2026-02-24,income,54252,80582,registered,振込 UBER EATS JAPAN
+2026-02-24,expense,6000,74582,registered,振込 ペイペイ イケダ ユウマ
+2026-02-25,expense,50000,24582,registered,振込 カ）コロコロ
+2026-02-25,income,93735,118317,registered,振込 グーグル
+2026-02-25,expense,100000,18317,registered,振込 カ）コロコロ
+2026-02-26,expense,1300,17017,registered,Visaデビット利用 Brain
+2026-02-28,expense,3617,13400,registered,Visaデビット利用 アポロステーション
+2026-03-01,income,3,13403,registered,普通預金 利息
+2026-03-01,expense,790,12613,registered,Visaデビット利用 ニコニコプレミアム
+2026-03-02,income,790,13403,registered,Visaデビット取消 ニコニコプレミアム
+2026-03-03,income,35359,48762,registered,振込 UBER EATS JAPAN
+2026-03-04,expense,2000,46762,registered,ATM セブン銀行
+2026-03-04,expense,790,45972,registered,Visaデビット利用（差額分） ニコニコプレミアム
+2026-03-05,income,790,46762,registered,Visaデビット取消（差額分） ニコニコプレミアム
+2026-03-06,income,4648,51410,registered,振込 カ）デマエカン
+2026-03-06,expense,16275,35135,registered,Visaデビット利用 海外 CLAUDE.AI SUBSCRIPTION
+2026-03-07,expense,3738,31397,registered,Visaデビット利用 アポロステーション
+2026-03-10,income,44267,75664,registered,振込 UBER EATS JAPAN
+2026-03-10,expense,75500,164,registered,振込 カ）コロコロ
+2026-03-17,income,41406,41570,registered,振込 UBER EATS JAPAN
+2026-03-17,expense,8000,33570,pending,振込 ダイシホクエツ イケダ ユウマ
+2026-03-23,income,153,33723,pending,振込 GMOあおぞらネット VISAデビットキャッシュバック
+2026-03-23,income,11275,44998,registered,振込 カ）デマエカン
+2026-03-23,income,28779,73777,pending,振込 グーグル
+2026-03-24,income,30413,104190,registered,振込 UBER EATS JAPAN
+2026-03-25,expense,70000,34190,registered,振込 カ）コロコロ
+2026-03-25,expense,3927,30263,registered,Visaデビット利用 ENEOS-SS
+2026-03-27,expense,5000,25263,registered,ATM セブン銀行
+2026-03-30,expense,2000,23263,registered,Visaデビット利用 アポロステーション
+2026-03-31,income,39416,62679,registered,振込 UBER EATS JAPAN
+2026-03-31,expense,20000,42679,registered,振込 カ）コロコロ
+2026-03-31,expense,20000,22679,pending,振込 ダイシホクエツ イケダ ユウマ
+2026-03-31,expense,75,22604,pending,振込手数料
+2026-04-01,income,6,22610,registered,普通預金 利息
+2026-04-01,expense,790,21820,pending,Visaデビット利用 ニコニコプレミアム
+2026-04-03,expense,3565,18255,registered,Visaデビット利用 アポロステーション
+2026-04-06,expense,3622,14633,registered,Visaデビット利用 海外 CLAUDE.AI SUBSCRIPTION
+2026-04-06,expense,14539,94,registered,Visaデビット利用 海外 CLAUDE.AI SUBSCRIPTION
+2026-04-07,income,3481,3575,registered,振込 カ）デマエカン
+2026-04-07,income,33666,37241,registered,振込 UBER EATS JAPAN
+2026-04-09,expense,3351,33890,registered,Visaデビット利用 アポロステーション
+2026-04-14,income,19579,53469,registered,振込 UBER EATS JAPAN
+2026-04-15,expense,50000,3469,pending,振込 ダイシホクエツ イケダ ユウマ
+2026-04-15,expense,3000,469,registered,振込 カ）コロコロ
+2026-04-21,income,155,624,pending,振込 GMOあおぞらネット VISAデビットキャッシュバック
+2026-04-21,income,31569,32193,registered,振込 UBER EATS JAPAN
+2026-04-21,expense,3235,28958,registered,Visaデビット利用 IDEMITSU
+2026-04-21,expense,10000,18958,pending,振込 ダイシホクエツ イケダ ユウマ
+2026-04-21,expense,75,18883,pending,振込手数料
+2026-04-22,income,23663,42546,registered,振込 カ）デマエカン
+2026-04-22,income,38246,80792,pending,振込 グーグル
+2026-04-25,expense,3671,77121,registered,Visaデビット利用 アポロステーション
+2026-04-28,income,21056,98177,registered,振込 UBER EATS JAPAN
+2026-04-30,expense,80000,18177,registered,振込 カ）コロコロ
+2026-05-01,income,8,18185,registered,普通預金 利息
+2026-05-01,expense,790,17395,pending,Visaデビット利用 ニコニコプレミアム
+2026-05-03,expense,3612,13783,registered,Visaデビット利用 アポロステーション
+2026-05-07,income,13597,27380,registered,振込 UBER EATS JAPAN
+2026-05-07,expense,17912,9468,registered,Visaデビット利用 海外 CLAUDE.AI SUBSCRIPTION
+2026-05-09,expense,1000,8468,registered,ATM セブン銀行
+2026-05-10,expense,2682,5786,registered,Visaデビット利用 Brain
+2026-05-12,income,13683,19469,registered,振込 カ）デマエカン
+2026-05-12,income,11057,30526,registered,振込 UBER EATS JAPAN
+2026-05-16,income,29000,59526,pending,ATM セブン銀行
+2026-05-16,expense,40000,19526,pending,振込 ダイシホクエツ イケダ ユウマ
+2026-05-19,income,23258,42784,registered,振込 UBER EATS JAPAN
+2026-05-21,income,196,42980,pending,振込 GMOあおぞらネット VISAデビットキャッシュバック
+2026-05-22,income,4003,46983,registered,振込 カ）デマエカン
+2026-05-22,income,28041,75024,pending,振込 グーグル
+2026-05-23,expense,3940,71084,registered,Visaデビット利用 アポロステーション
+2026-05-26,income,39888,110972,registered,振込 UBER EATS JAPAN
+2026-05-29,expense,3655,107317,registered,Visaデビット利用 アポロステーション
+2026-06-01,income,10,107327,registered,普通預金 利息
+2026-06-01,expense,90000,17327,registered,振込 カ）コロコロ
+2026-06-01,expense,105,17222,pending,Visaデビット利用 アピタ長岡店
+2026-06-02,income,44021,61243,registered,振込 UBER EATS JAPAN
+2026-06-04,expense,3756,57487,registered,Visaデビット利用 アポロステーション
+2026-06-05,income,16947,74434,registered,振込 カ）デマエカン
+2026-06-06,expense,8820,65614,registered,Visaデビット利用 Brain
+2026-06-06,expense,18183,47431,pending,Visaデビット利用 海外 ANTHROPIC CLAUDE SUB
+2026-06-08,expense,5000,42431,registered,ATM セブン銀行
+2026-06-09,income,28494,70925,registered,振込 UBER EATS JAPAN
+2026-06-09,expense,3000,67925,pending,Visaデビット利用 OPENAI CHATGPT SUBSCR
+2026-06-10,expense,21343,46582,pending,Visaデビット利用 MERCARI

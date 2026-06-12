@@ -1,0 +1,219 @@
+# L1: NGワード直接マッチ辞書
+# フォーマット: カテゴリ\t単語\t重大度\tタイプ(plain|regex)
+# タイプ plain = 単純文字列マッチ（自動でre.escape）、regex = 正規表現パターン
+# 行頭 # はコメント。空行は無視。
+# 新しい単語を追加するには、このファイルの該当カテゴリの末尾に1行追加するだけでOK。
+#
+# カテゴリ	単語/パターン	重大度	タイプ
+#
+# ── ヘイト/民族蔑称 ──
+ヘイト/民族	チョン	🔴	plain
+ヘイト/民族	支那人	🔴	plain
+ヘイト/民族	支那	🔴	plain
+ヘイト/民族	土人	🔴	plain
+ヘイト/民族	ニガー	🔴	plain
+ヘイト/民族	三国人	🔴	plain
+ヘイト/民族	不逞鮮人	🔴	plain
+ヘイト/民族	鮮人	🔴	plain
+ヘイト/民族	劣等民族	🔴	plain
+ヘイト/民族	蛮族	🔴	plain
+ヘイト/民族	未開人	🔴	plain
+ヘイト/民族	原住民	🔴	plain
+ヘイト/民族	毛唐	🔴	plain
+ヘイト/民族	鬼畜米英	🔴	plain
+#
+# ── 障害者差別 ──
+障害者差別	めくら	🔴	plain
+障害者差別	メクラ	🔴	plain
+障害者差別	つんぼ	🔴	plain
+障害者差別	ツンボ	🔴	plain
+障害者差別	びっこ	🔴	plain
+障害者差別	ビッコ	🔴	plain
+障害者差別	かたわ	🔴	plain
+障害者差別	カタワ	🔴	plain
+障害者差別	片輪	🔴	plain
+障害者差別	ガイジ	🔴	plain
+障害者差別	がいじ	🔴	plain
+障害者差別	池沼	🔴	plain
+障害者差別	キチガイ	🔴	plain
+障害者差別	きちがい	🔴	plain
+障害者差別	気違い	🔴	plain
+障害者差別	基地外	🔴	plain
+障害者差別	知障	🔴	plain
+障害者差別	身障	🔴	plain
+障害者差別	聾唖	🔴	plain
+障害者差別	精神異常者	🔴	plain
+#
+# ── 性差別 ──
+性差別	ま〜ん	🔴	plain
+性差別	マンさん	🔴	plain
+性差別	肉便器	🔴	plain
+性差別	ヤリマン	🔴	plain
+性差別	ビッチ	🔴	plain
+性差別	淫売	🔴	plain
+性差別	売女	🔴	plain
+#
+# ── LGBTQ差別 ──
+LGBTQ差別	ホモ	🟡	plain
+LGBTQ差別	ほも	🟡	plain
+LGBTQ差別	オカマ	🟡	plain
+LGBTQ差別	おかま	🟡	plain
+LGBTQ差別	おなべ	🟡	plain
+LGBTQ差別	オナベ	🟡	plain
+LGBTQ差別	レズ	🟡	plain
+LGBTQ差別	れず	🟡	plain
+#
+# ── 侮辱/罵倒 🔴 ──
+侮辱/罵倒	クソ	🔴	plain
+侮辱/罵倒	くそ	🔴	plain
+侮辱/罵倒	くっそ	🔴	plain
+侮辱/罵倒	クッソ	🔴	plain
+侮辱/罵倒	糞	🔴	plain
+侮辱/罵倒	ゴミ	🔴	plain
+侮辱/罵倒	ごみ	🔴	plain
+侮辱/罵倒	クズ	🔴	plain
+侮辱/罵倒	くず	🔴	plain
+侮辱/罵倒	カス	🔴	plain
+侮辱/罵倒	かす	🔴	plain
+侮辱/罵倒	ボンクラ	🔴	plain
+侮辱/罵倒	ぼんくら	🔴	plain
+侮辱/罵倒	外道	🔴	plain
+侮辱/罵倒	げどう	🔴	plain
+侮辱/罵倒	ゲドウ	🔴	plain
+侮辱/罵倒	畜生	🔴	plain
+侮辱/罵倒	ちくしょう	🔴	plain
+侮辱/罵倒	チクショウ	🔴	plain
+侮辱/罵倒	畜将	🔴	plain
+侮辱/罵倒	ぐう畜	🔴	plain
+侮辱/罵倒	ボロカス	🔴	plain
+侮辱/罵倒	ぼろかす	🔴	plain
+#
+# ── 侮辱/罵倒 🟡 ──
+侮辱/罵倒	野郎	🟡	plain
+侮辱/罵倒	この[やヤ]ろう	🟡	regex
+侮辱/罵倒	こん[やヤ]ろう	🟡	regex
+侮辱/罵倒	太鼓持ち	🟡	plain
+侮辱/罵倒	三流	🟡	plain
+侮辱/罵倒	さんりゅう	🟡	plain
+侮辱/罵倒	無能	🟡	plain
+侮辱/罵倒	むのう	🟡	plain
+侮辱/罵倒	ハゲ	🟡	plain
+侮辱/罵倒	はげ	🟡	plain
+侮辱/罵倒	禿	🟡	plain
+侮辱/罵倒	ブス	🟡	plain
+侮辱/罵倒	ぶす	🟡	plain
+#
+# ── CH固有禁止 ──
+CH固有禁止	アホ	🔴	plain
+CH固有禁止	あほ	🔴	plain
+CH固有禁止	バカ	🔴	plain
+CH固有禁止	ばか	🔴	plain
+CH固有禁止	馬鹿	🔴	plain
+CH固有禁止	デブ	🔴	plain
+CH固有禁止	でぶ	🔴	plain
+#
+# ── CH固有禁止/死（活用形・複合語）──
+# 漢字表記
+CH固有禁止/死	死ぬ	🔴	regex
+CH固有禁止/死	死んだ	🔴	regex
+CH固有禁止/死	死んで	🔴	regex
+# ひらがな表記
+CH固有禁止/死	しぬ	🔴	plain
+CH固有禁止/死	しんだ	🔴	plain
+CH固有禁止/死	しんで	🔴	plain
+CH固有禁止/死	しね	🔴	plain
+CH固有禁止/死	しな[いかくけせば]	🔴	regex
+# カタカナ表記
+CH固有禁止/死	シヌ	🔴	plain
+CH固有禁止/死	シンダ	🔴	plain
+CH固有禁止/死	シンデ	🔴	plain
+CH固有禁止/死	シネ	🔴	plain
+CH固有禁止/死	死に(かけ|方|様|際|場所|目|物狂い|体|絶え|至)	🔴	regex
+CH固有禁止/死	死な[いかくけせば]	🔴	regex
+CH固有禁止/死	死ね[ばよ]?	🔴	regex
+CH固有禁止/死	死の[うび]	🔴	regex
+CH固有禁止/死	死に?た[いがく]?	🔴	regex
+CH固有禁止/死	死す	🔴	regex
+CH固有禁止/死	死した	🔴	regex
+CH固有禁止/死	死去	🔴	regex
+CH固有禁止/死	死亡	🔴	regex
+CH固有禁止/死	死因	🔴	regex
+CH固有禁止/死	死体	🔴	regex
+CH固有禁止/死	死者	🔴	regex
+CH固有禁止/死	死傷	🔴	regex
+CH固有禁止/死	死闘	🟡	regex
+CH固有禁止/死	死守	🟡	regex
+CH固有禁止/死	戦死	🟡	regex
+CH固有禁止/死	病死	🟡	regex
+CH固有禁止/死	横死	🟡	regex
+CH固有禁止/死	討ち?死に?	🟡	regex
+CH固有禁止/死	溺死	🟡	regex
+CH固有禁止/死	餓死	🟡	regex
+CH固有禁止/死	焼死	🟡	regex
+CH固有禁止/死	憤死	🟡	regex
+CH固有禁止/死	頓死	🟡	regex
+CH固有禁止/死	刺死	🟡	regex
+# 汎用「死」キャッチオール（上記に該当しなかったものを拾う）
+CH固有禁止/死	(?<!必)(?<!決)(?<!九)(?<!瀕)(?<!致)(?<!生)(?<!起)(?<!活)死(?!守|闘|角|力|中|地|後|語|線|球|蔵|海|活)	🔴	regex
+#
+# ── 暴力/残虐（殺す活用形）──
+# 漢字表記
+暴力/残虐	殺[すしせさ]	🔴	regex
+暴力/残虐	殺し[たてに]	🔴	regex
+暴力/残虐	殺され	🔴	regex
+暴力/残虐	殺そう	🔴	regex
+暴力/残虐	ぶっ殺	🔴	regex
+暴力/残虐	殺害	🔴	regex
+暴力/残虐	殺戮	🔴	regex
+# ひらがな表記
+暴力/残虐	ころ[すしせさ]	🔴	regex
+暴力/残虐	ころし[たてに]	🔴	regex
+暴力/残虐	ころされ	🔴	regex
+暴力/残虐	ころそう	🔴	regex
+# カタカナ表記
+暴力/残虐	コロ[スシセサ]	🔴	regex
+暴力/残虐	コロシ[タテニ]	🔴	regex
+暴力/残虐	コロサレ	🔴	regex
+暴力/残虐	撫切り	🔴	plain
+暴力/残虐	撫切りに	🔴	plain
+暴力/残虐	皆殺し	🔴	plain
+暴力/残虐	虐殺	🔴	plain
+暴力/残虐	ジェノサイド	🔴	plain
+暴力/残虐	磔	🔴	plain
+暴力/残虐	串刺し	🔴	plain
+暴力/残虐	斬首	🔴	plain
+暴力/残虐	打ち首	🔴	plain
+暴力/残虐	釜茹で	🔴	plain
+暴力/残虐	火あぶり	🔴	plain
+暴力/残虐	血祭り	🔴	plain
+#
+# ── グラフィック暴力 ──
+グラフィック暴力	人肉	🔴	plain
+グラフィック暴力	食人	🔴	plain
+グラフィック暴力	カニバリ	🔴	plain
+グラフィック暴力	臓器	🔴	plain
+グラフィック暴力	内臓	🔴	plain
+グラフィック暴力	脳漿	🔴	plain
+#
+# ── 下品表現 ──
+下品表現	脱糞	🟡	plain
+下品表現	排泄	🟡	plain
+下品表現	うんこ	🟡	plain
+下品表現	うんち	🟡	plain
+下品表現	おしっこ	🟡	plain
+下品表現	ちんこ	🟡	plain
+下品表現	まんこ	🟡	plain
+#
+# ── 性的表現 ──
+性的表現	レイプ	🔴	plain
+性的表現	強姦	🔴	plain
+性的表現	輪姦	🔴	plain
+性的表現	近親相姦	🔴	plain
+性的表現	痴漢	🔴	plain
+性的表現	盗撮	🔴	plain
+#
+# ── 児童安全 ──
+児童安全	ロリコン	🔴	plain
+児童安全	ショタコン	🔴	plain
+児童安全	ペドフィリア	🔴	plain
+児童安全	児童ポルノ	🔴	plain

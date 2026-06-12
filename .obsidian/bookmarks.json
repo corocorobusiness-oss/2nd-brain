@@ -1,0 +1,41 @@
+{
+  "items": [
+    {
+      "type": "group",
+      "ctime": 1756476246078,
+      "items": [
+        {
+          "type": "file",
+          "ctime": 1756476224682,
+          "path": "Todo.md",
+          "title": "Todo"
+        }
+      ],
+      "title": "毎日見る"
+    },
+    {
+      "type": "group",
+      "ctime": 1756540729554,
+      "items": [
+        {
+          "type": "file",
+          "ctime": 1756540794749,
+          "path": "voice-note-data/20250830_【8月】AI関係で稼いだ進捗共有.md"
+        }
+      ],
+      "title": "文字起こし"
+    },
+    {
+      "type": "group",
+      "ctime": 1756732553619,
+      "items": [
+        {
+          "type": "file",
+          "ctime": 1756732544035,
+          "path": "secret/project_notes.md"
+        }
+      ],
+      "title": "project_notes"
+    }
+  ]
+}

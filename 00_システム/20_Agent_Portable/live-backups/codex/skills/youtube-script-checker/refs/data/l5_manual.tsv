@@ -1,0 +1,44 @@
+# L5: 辞書外マニュアル検知
+# フォーマット: レイヤー\t単語またはパターン\t重大度\tタイプ(plain|regex)
+# 新しいエントリを追加するには末尾に1行追加するだけでOK。
+#
+# レイヤー	単語/パターン	重大度	タイプ
+#
+# ── Layer A: 侮辱・蔑称・下品 ──
+A_侮辱	性格終わってる	🟡	plain
+A_侮辱	性格悪	🟡	plain
+A_侮辱	ろくでもない	🟡	plain
+A_侮辱	チンケ	🟡	plain
+A_侮辱	ショボ	🟡	plain
+A_侮辱	ダサ	🟡	plain
+A_侮辱	ウザ	🟡	plain
+A_侮辱	キモ	🟡	plain
+A_侮辱	タヌキ親父	🟡	plain
+A_侮辱	小物	🟡	plain
+A_侮辱	老害	🟡	plain
+A_侮辱	老害化	🟡	plain
+A_侮辱	老いぼれ	🟡	plain
+A_侮辱	金柑頭	🟡	plain
+A_侮辱	キンカン頭	🟡	plain
+A_侮辱	陰キャ	🟡	plain
+A_侮辱	陽キャ	⚪	plain
+A_侮辱	頭おかしい	🟡	plain
+A_侮辱	マジキチ	🔴	plain
+A_侮辱	ゴミ人間	🔴	plain
+A_侮辱	人間以下	🔴	plain
+A_侮辱	クズの極み	🔴	plain
+#
+# ── Layer B: 性的・ジェンダー ──
+B_ジェンダー	女性は.{1,10}(劣|低い|感情的|論理的.{0,3}ない)	🔴	regex
+B_ジェンダー	好きな女やる	🟡	regex
+B_ジェンダー	孕ませ	🟡	regex
+B_ジェンダー	身ごもらせて返却	🟡	regex
+#
+# ── Layer C: 民族・国際的敏感 ──
+C_民族	朝鮮.{0,5}(汚|臭|嫌|キモ|消え)	🔴	regex
+C_民族	蝦夷.{0,5}(野蛮|未開|土人)	🔴	regex
+#
+# ── Layer D: YouTube AI特別検知 ──
+D_YouTube_AI	ﾊﾞｷｰ|ﾊﾞｷﾊﾞｷ	🟡	regex
+D_YouTube_AI	オラオラ[ァ！]	🟡	regex
+D_YouTube_AI	ごおおお	🟡	regex

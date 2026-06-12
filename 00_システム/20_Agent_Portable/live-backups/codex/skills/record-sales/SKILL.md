@@ -1,0 +1,20 @@
+---
+name: record-sales
+description: >-
+  Uber Eats、出前館、YouTubeなどの売上報告を受け取り、デイリーノートと月次管理に記録し、
+  目標との差分や達成率を返すスキル。
+  「売上」「Uber 5000」「出前館 3000」「YouTube収益」「売上記録」などで使用する。
+---
+
+# 売上記録スキル
+
+## トリガー
+- Uber Eats/出前館のスクリーンショットが送られたとき
+- テキストで売上報告されたとき（例：「Uber 5000 出前館 3000」）
+
+## 手順
+1. **金額抽出**: スクリーンショットから売上金額を読み取り、またはテキストから解析
+2. **デイリーノート更新**: `/Users/kabushikikaishakorokoro/Library/CloudStorage/GoogleDrive-corocoro.business@gmail.com/マイドライブ/2nd-Brain/05_日誌/YYYY-MM-DD.md` の売上テーブルに記入
+3. **スプレッドシート更新**: 日次売上タブに追加（Sheets API使用）
+4. **進捗計算**: 月間目標（`02_経営/目標と計画.md`）との達成率を計算
+5. **Discord返信**: 記録結果と進捗率を返信

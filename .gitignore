@@ -1,0 +1,64 @@
+# System Files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+.env
+.pytest_cache/
+
+# Node / JS
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Obsidian
+# Ignore workspace state, but keep config (appearance, hotkeys)
+.obsidian/workspace
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+.trash/
+
+# Media / Big Files
+*.mp3
+*.m4a
+*.wav
+*.webm
+*.mp4
+*.mov
+*.avi
+*.mkv
+
+# Logs
+*.log
+
+# Project Specific
+# Agent internals
+.gemini/
+
+# Tool locks
+transcribe.lock
+
+# Processed Audio
+02_音声/processed/

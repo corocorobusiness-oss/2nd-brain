@@ -1,0 +1,12 @@
+{
+  "promptDelete": false,
+  "attachmentFolderPath": "画像",
+  "alwaysUpdateLinks": true,
+  "openBehavior": "daily",
+  "pdfExportSettings": {
+    "pageSize": "A4",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  }
+}

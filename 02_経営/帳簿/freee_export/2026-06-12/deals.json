@@ -1,0 +1,1349 @@
+{
+ "count": 33,
+ "deals": [
+  {
+   "id": 3590577776,
+   "company_id": 12511831,
+   "issue_date": "2026-06-10",
+   "due_date": null,
+   "amount": 21343,
+   "due_amount": 0,
+   "type": "expense",
+   "partner_id": 118769802,
+   "partner_code": null,
+   "ref_number": "",
+   "status": "settled",
+   "deal_origin_name": "手動",
+   "details": [
+    {
+     "id": 9761458266,
+     "account_item_id": 1024926881,
+     "tax_code": 136,
+     "partner_id": 118769802,
+     "partner_code": null,
+     "item_id": null,
+     "section_id": null,
+     "tag_ids": [],
+     "amount": 21343,
+     "vat": 1940,
+     "description": "メルカリ(仕事用機材・備品)",
+     "entry_side": "debit"
+    }
+   ],
+   "payments": [
+    {
+     "id": 9761458267,
+     "date": "2026-06-10",
+     "from_walletable_type": "bank_account",
+     "from_walletable_id": 4635538,
+     "amount": 21343
+    }
+   ],
+   "receipts": []
+  },
+  {
+   "id": 3590577772,
+   "company_id": 12511831,
+   "issue_date": "2026-06-09",
+   "due_date": null,
+   "amount": 3000,
+   "due_amount": 0,
+   "type": "expense",
+   "partner_id": 118769801,
+   "partner_code": null,
+   "ref_number": "",
+   "status": "settled",
+   "deal_origin_name": "手動",
+   "details": [
+    {
+     "id": 9761458258,
+     "account_item_id": 1024926876,
+     "tax_code": 136,
+     "partner_id": 118769801,
+     "partner_code": null,
+     "item_id": null,
+     "section_id": null,
+     "tag_ids": [],
+     "amount": 3000,
+     "vat": 272,
+     "description": "OpenAI ChatGPT サブスク",
+     "entry_side": "debit"
+    }
+   ],
+   "payments": [
+    {
+     "id": 9761458259,
+     "date": "2026-06-09",
+     "from_walletable_type": "bank_account",
+     "from_walletable_id": 4635538,
+     "amount": 3000
+    }
+   ],
+   "receipts": []
+  },
+  {
+   "id": 3587226747,
+   "company_id": 12511831,
+   "issue_date": "2026-06-09",
+   "due_date": null,
+   "amount": 28494,
+   "due_amount": 0,
+   "type": "income",
+   "partner_id": 112727574,
+   "partner_code": null,
+   "ref_number": null,
+   "status": "settled",
+   "deal_origin_name": "自動で経理",
+   "details": [
+    {
+     "id": 9752274011,
+     "account_item_id": 1024926858,
+     "tax_code": 129,
+     "partner_id": 112727574,
+     "partner_code": null,
+     "item_id": null,
+     "section_id": null,
+     "tag_ids": [],
+     "amount": 28494,
+     "vat": 2590,
+     "description": "",
+     "entry_side": "credit"
+    }
+   ],
+   "payments": [
+    {
+     "id": 9752274016,
+     "date": "2026-06-09",
+     "from_walletable_type": "bank_account",
+     "from_walletable_id": 4635538,
+     "amount": 28494
+    }
+   ],
+   "receipts": []
+  },
+  {
+   "id": 3587226660,
+   "company_id": 12511831,
+   "issue_date": "2026-06-08",
+   "due_date": null,
+   "amount": 5000,
+   "due_amount": 0,
+   "type": "expense",
+   "partner_id": 114973619,
+   "partner_code": null,
+   "ref_number": null,
+   "status": "settled",
+   "deal_origin_name": "自動で経理",
+   "details": [
+    {
+     "id": 9752273724,
+     "account_item_id": 1024926833,
+     "tax_code": 2,
+     "partner_id": 114973619,
+     "partner_code": null,
+     "item_id": null,
+     "section_id": null,
+     "tag_ids": [],
+     "amount": 5000,
+     "vat": 0,
+     "description": "",
+     "entry_side": "debit"
+    }
+   ],
+   "payments": [
+    {
+     "id": 9752273728,
+     "date": "2026-06-08",
+     "from_walletable_type": "bank_account",
+     "from_walletable_id": 4635538,
+     "amount": 5000
+    }
+   ],
+   "receipts": []
+  },
+  {
+   "id": 3590577765,
+   "company_id": 12511831,
+   "issue_date": "2026-06-06",
+   "due_date": null,
+   "amount": 18183,
+   "due_amount": 0,
+   "type": "expense",
+   "partner_id": 112727540,
+   "partner_code": null,
+   "ref_number": "",
+   "status": "settled",
+   "deal_origin_name": "手動",
+   "details": [
+    {
+     "id": 9761458244,
+     "account_item_id": 1024926876,
+     "tax_code": 136,
+     "partner_id": 112727540,
+     "partner_code": null,
+     "item_id": null,
+     "section_id": null,
+     "tag_ids": [],
+     "amount": 18183,
+     "vat": 1653,
+     "description": "Anthropic Claude サブスク",
+     "entry_side": "debit"
+    }
+   ],
+   "payments": [
+    {
+     "id": 9761458245,
+     "date": "2026-06-06",
+     "from_walletable_type": "bank_account",
+     "from_walletable_id": 4635538,
+     "amount": 18183
+    }
+   ],
+   "receipts": []
+  },
+  {
+   "id": 3587226576,
+   "company_id": 12511831,
+   "issue_date": "2026-06-06",
+   "due_date": null,
+   "amount": 8820,
+   "due_amount": 0,
+   "type": "expense",
+   "partner_id": 112727498,
+   "partner_code": null,
+   "ref_number": null,
+   "status": "settled",
+   "deal_origin_name": "自動で経理",
+   "details": [
+    {
+     "id": 9752273490,
+     "account_item_id": 1024926935,
+     "tax_code": 136,
+     "partner_id": 112727498,
+     "partner_code": null,
+     "item_id": null,
+     "section_id": null,
+     "tag_ids": [],
+     "amount": 8820,
+     "vat": 801,
+     "description": "",
+     "entry_side": "debit"
+    }
+   ],
+   "payments": [
+    {
+     "id": 9752273492,
+     "date": "2026-06-06",
+     "from_walletable_type": "bank_account",
+     "from_walletable_id": 4635538,
+     "amount": 8820
+    }
+   ],
+   "receipts": []
+  },
+  {
+   "id": 3587226491,
+   "company_id": 12511831,
+   "issue_date": "2026-06-05",
+   "due_date": null,
+   "amount": 16947,
+   "due_amount": 0,
+   "type": "income",
+   "partner_id": 112727657,
+   "partner_code": null,
+   "ref_number": null,
+   "status": "settled",
+   "deal_origin_name": "自動で経理",
+   "details": [
+    {
+     "id": 9752273255,
+     "account_item_id": 1024926858,
+     "tax_code": 129,
+     "partner_id": 112727657,
+     "partner_code": null,
+     "item_id": null,
+     "section_id": null,
+     "tag_ids": [],
+     "amount": 16947,
+     "vat": 1540,
+     "description": "",
+     "entry_side": "credit"
+    }
+   ],
+   "payments": [
+    {
+     "id": 9752273258,
+     "date": "2026-06-05",
+     "from_walletable_type": "bank_account",
+     "from_walletable_id": 4635538,
+     "amount": 16947
+    }
+   ],
+   "receipts": []
+  },
+  {
+   "id": 3587226423,
+   "company_id": 12511831,
+   "issue_date": "2026-06-04",
+   "due_date": null,
+   "amount": 3756,
+   "due_amount": 0,
+   "type": "expense",
+   "partner_id": 112727437,
+   "partner_code": null,
+   "ref_number": null,
+   "status": "settled",
+   "deal_origin_name": "自動で経理",
+   "details": [
+    {
+     "id": 9752273087,
+     "account_item_id": 1024926897,
+     "tax_code": 136,
+     "partner_id": 112727437,
+     "partner_code": null,
+     "item_id": null,
+     "section_id": null,
+     "tag_ids": [],
+     "amount": 3756,
+     "vat": 341,
+     "description": "",
+     "entry_side": "debit"
+    }
+   ],
+   "payments": [
+    {
+     "id": 9752273092,
+     "date": "2026-06-04",
+     "from_walletable_type": "bank_account",
+     "from_walletable_id": 4635538,
+     "amount": 3756
+    }
+   ],
+   "receipts": []
+  },
+  {
+   "id": 3587226346,
+   "company_id": 12511831,
+   "issue_date": "2026-06-02",
+   "due_date": null,
+   "amount": 44021,
+   "due_amount": 0,
+   "type": "income",
+   "partner_id": 112727574,
+   "partner_code": null,
+   "ref_number": null,
+   "status": "settled",
+   "deal_origin_name": "自動で経理",
+   "details": [
+    {
+     "id": 9752272926,
+     "account_item_id": 1024926858,
+     "tax_code": 129,
+     "partner_id": 112727574,
+     "partner_code": null,
+     "item_id": null,
+     "section_id": null,
+     "tag_ids": [],
+     "amount": 44021,
+     "vat": 4001,
+     "description": "",
+     "entry_side": "credit"
+    }
+   ],
+   "payments": [
+    {
+     "id": 9752272932,
+     "date": "2026-06-02",
+     "from_walletable_type": "bank_account",
+     "from_walletable_id": 4635538,
+     "amount": 44021
+    }
+   ],
+   "receipts": []
+  },
+  {
+   "id": 3590577761,
+   "company_id": 12511831,
+   "issue_date": "2026-06-01",
+   "due_date": null,
+   "amount": 105,
+   "due_amount": 0,
+   "type": "expense",
+   "partner_id": 118769803,
+   "partner_code": null,
+   "ref_number": "",
+   "status": "settled",
+   "deal_origin_name": "手動",
+   "details": [
+    {
+     "id": 9761458236,
+     "account_item_id": 1024926881,
+     "tax_code": 136,
+     "partner_id": 118769803,
+     "partner_code": null,
+     "item_id": null,
+     "section_id": null,
+     "tag_ids": [],
+     "amount": 105,
+     "vat": 9,
+     "description": "アピタ長岡店(消耗品)",
+     "entry_side": "debit"
+    }
+   ],
+   "payments": [
+    {
+     "id": 9761458237,
+     "date": "2026-06-01",
+     "from_walletable_type": "bank_account",
+     "from_walletable_id": 4635538,
+     "amount": 105
+    }
+   ],
+   "receipts": []
+  },
+  {
+   "id": 3587226247,
+   "company_id": 12511831,
+   "issue_date": "2026-06-01",
+   "due_date": null,
+   "amount": 90000,
+   "due_amount": 0,
+   "type": "expense",
+   "partner_id": 112727698,
+   "partner_code": null,
+   "ref_number": null,
+   "status": "settled",
+   "deal_origin_name": "自動で経理",
+   "details": [
+    {
+     "id": 9752272691,
+     "account_item_id": 1024926802,
+     "tax_code": 2,
+     "partner_id": 112727698,
+     "partner_code": null,
+     "item_id": null,
+     "section_id": null,
+     "tag_ids": [],
+     "amount": 90000,
+     "vat": 0,
+     "description": "",
+     "entry_side": "debit"
+    }
+   ],
+   "payments": [
+    {
+     "id": 9752272693,
+     "date": "2026-06-01",
+     "from_walletable_type": "bank_account",
+     "from_walletable_id": 4635538,
+     "amount": 90000
+    }
+   ],
+   "receipts": []
+  },
+  {
+   "id": 3587226170,
+   "company_id": 12511831,
+   "issue_date": "2026-06-01",
+   "due_date": null,
+   "amount": 10,
+   "due_amount": 0,
+   "type": "income",
+   "partner_id": 113066028,
+   "partner_code": null,
+   "ref_number": null,
+   "status": "settled",
+   "deal_origin_name": "自動で経理",
+   "details": [
+    {
+     "id": 9752272524,
+     "account_item_id": 1024926855,
+     "tax_code": 2,
+     "partner_id": 113066028,
+     "partner_code": null,
+     "item_id": null,
+     "section_id": null,
+     "tag_ids": [],
+     "amount": 10,
+     "vat": 0,
+     "description": "",
+     "entry_side": "credit"
+    }
+   ],
+   "payments": [
+    {
+     "id": 9752272526,
+     "date": "2026-06-01",
+     "from_walletable_type": "bank_account",
+     "from_walletable_id": 4635538,
+     "amount": 10
+    }
+   ],
+   "receipts": []
+  },
+  {
+   "id": 3587226083,
+   "company_id": 12511831,
+   "issue_date": "2026-05-29",
+   "due_date": null,
+   "amount": 3655,
+   "due_amount": 0,
+   "type": "expense",
+   "partner_id": 112727437,
+   "partner_code": null,
+   "ref_number": null,
+   "status": "settled",
+   "deal_origin_name": "自動で経理",
+   "details": [
+    {
+     "id": 9752272336,
+     "account_item_id": 1024926897,
+     "tax_code": 136,
+     "partner_id": 112727437,
+     "partner_code": null,
+     "item_id": null,
+     "section_id": null,
+     "tag_ids": [],
+     "amount": 3655,
+     "vat": 332,
+     "description": "",
+     "entry_side": "debit"
+    }
+   ],
+   "payments": [
+    {
+     "id": 9752272339,
+     "date": "2026-05-29",
+     "from_walletable_type": "bank_account",
+     "from_walletable_id": 4635538,
+     "amount": 3655
+    }
+   ],
+   "receipts": []
+  },
+  {
+   "id": 3587225955,
+   "company_id": 12511831,
+   "issue_date": "2026-05-26",
+   "due_date": null,
+   "amount": 39888,
+   "due_amount": 0,
+   "type": "income",
+   "partner_id": 112727574,
+   "partner_code": null,
+   "ref_number": null,
+   "status": "settled",
+   "deal_origin_name": "自動で経理",
+   "details": [
+    {
+     "id": 9752272015,
+     "account_item_id": 1024926858,
+     "tax_code": 129,
+     "partner_id": 112727574,
+     "partner_code": null,
+     "item_id": null,
+     "section_id": null,
+     "tag_ids": [],
+     "amount": 39888,
+     "vat": 3626,
+     "description": "",
+     "entry_side": "credit"
+    }
+   ],
+   "payments": [
+    {
+     "id": 9752272024,
+     "date": "2026-05-26",
+     "from_walletable_type": "bank_account",
+     "from_walletable_id": 4635538,
+     "amount": 39888
+    }
+   ],
+   "receipts": []
+  },
+  {
+   "id": 3549953397,
+   "company_id": 12511831,
+   "issue_date": "2026-05-23",
+   "due_date": null,
+   "amount": 3940,
+   "due_amount": 0,
+   "type": "expense",
+   "partner_id": 112727437,
+   "partner_code": null,
+   "ref_number": null,
+   "status": "settled",
+   "deal_origin_name": "自動で経理",
+   "details": [
+    {
+     "id": 9645336761,
+     "account_item_id": 1024926897,
+     "tax_code": 136,
+     "partner_id": 112727437,
+     "partner_code": null,
+     "item_id": null,
+     "section_id": null,
+     "tag_ids": [],
+     "amount": 3940,
+     "vat": 358,
+     "description": "",
+     "entry_side": "debit"
+    }
+   ],
+   "payments": [
+    {
+     "id": 9645336763,
+     "date": "2026-05-23",
+     "from_walletable_type": "bank_account",
+     "from_walletable_id": 4635538,
+     "amount": 3940
+    }
+   ],
+   "receipts": []
+  },
+  {
+   "id": 3590577755,
+   "company_id": 12511831,
+   "issue_date": "2026-05-22",
+   "due_date": null,
+   "amount": 28041,
+   "due_amount": 0,
+   "type": "income",
+   "partner_id": 112727620,
+   "partner_code": null,
+   "ref_number": "",
+   "status": "settled",
+   "deal_origin_name": "手動",
+   "details": [
+    {
+     "id": 9761458224,
+     "account_item_id": 1024926858,
+     "tax_code": 129,
+     "partner_id": 112727620,
+     "partner_code": null,
+     "item_id": null,
+     "section_id": null,
+     "tag_ids": [],
+     "amount": 28041,
+     "vat": 2549,
+     "description": "Google(YouTube AdSense)",
+     "entry_side": "credit"
+    }
+   ],
+   "payments": [
+    {
+     "id": 9761458225,
+     "date": "2026-05-22",
+     "from_walletable_type": "bank_account",
+     "from_walletable_id": 4635538,
+     "amount": 28041
+    }
+   ],
+   "receipts": []
+  },
+  {
+   "id": 3549953313,
+   "company_id": 12511831,
+   "issue_date": "2026-05-22",
+   "due_date": null,
+   "amount": 4003,
+   "due_amount": 0,
+   "type": "income",
+   "partner_id": 112727657,
+   "partner_code": null,
+   "ref_number": null,
+   "status": "settled",
+   "deal_origin_name": "自動で経理",
+   "details": [
+    {
+     "id": 9645336569,
+     "account_item_id": 1024926858,
+     "tax_code": 129,
+     "partner_id": 112727657,
+     "partner_code": null,
+     "item_id": null,
+     "section_id": null,
+     "tag_ids": [],
+     "amount": 4003,
+     "vat": 363,
+     "description": "",
+     "entry_side": "credit"
+    }
+   ],
+   "payments": [
+    {
+     "id": 9645336572,
+     "date": "2026-05-22",
+     "from_walletable_type": "bank_account",
+     "from_walletable_id": 4635538,
+     "amount": 4003
+    }
+   ],
+   "receipts": []
+  },
+  {
+   "id": 3590577748,
+   "company_id": 12511831,
+   "issue_date": "2026-05-21",
+   "due_date": null,
+   "amount": 196,
+   "due_amount": 0,
+   "type": "income",
+   "partner_id": 113066028,
+   "partner_code": null,
+   "ref_number": "",
+   "status": "settled",
+   "deal_origin_name": "手動",
+   "details": [
+    {
+     "id": 9761458210,
+     "account_item_id": 1024926864,
+     "tax_code": 2,
+     "partner_id": 113066028,
+     "partner_code": null,
+     "item_id": null,
+     "section_id": null,
+     "tag_ids": [],
+     "amount": 196,
+     "vat": 0,
+     "description": "Visaデビットキャッシュバック",
+     "entry_side": "credit"
+    }
+   ],
+   "payments": [
+    {
+     "id": 9761458213,
+     "date": "2026-05-21",
+     "from_walletable_type": "bank_account",
+     "from_walletable_id": 4635538,
+     "amount": 196
+    }
+   ],
+   "receipts": []
+  },
+  {
+   "id": 3544477404,
+   "company_id": 12511831,
+   "issue_date": "2026-05-19",
+   "due_date": null,
+   "amount": 23258,
+   "due_amount": 0,
+   "type": "income",
+   "partner_id": 112727574,
+   "partner_code": null,
+   "ref_number": null,
+   "status": "settled",
+   "deal_origin_name": "自動で経理",
+   "details": [
+    {
+     "id": 9630031523,
+     "account_item_id": 1024926858,
+     "tax_code": 129,
+     "partner_id": 112727574,
+     "partner_code": null,
+     "item_id": null,
+     "section_id": null,
+     "tag_ids": [],
+     "amount": 23258,
+     "vat": 2114,
+     "description": "",
+     "entry_side": "credit"
+    }
+   ],
+   "payments": [
+    {
+     "id": 9630031524,
+     "date": "2026-05-19",
+     "from_walletable_type": "bank_account",
+     "from_walletable_id": 4635538,
+     "amount": 23258
+    }
+   ],
+   "receipts": []
+  },
+  {
+   "id": 3590577744,
+   "company_id": 12511831,
+   "issue_date": "2026-05-16",
+   "due_date": null,
+   "amount": 29000,
+   "due_amount": 0,
+   "type": "income",
+   "partner_id": 114973619,
+   "partner_code": null,
+   "ref_number": "",
+   "status": "settled",
+   "deal_origin_name": "手動",
+   "details": [
+    {
+     "id": 9761458202,
+     "account_item_id": 1024926854,
+     "tax_code": 2,
+     "partner_id": 114973619,
+     "partner_code": null,
+     "item_id": null,
+     "section_id": null,
+     "tag_ids": [],
+     "amount": 29000,
+     "vat": 0,
+     "description": "ATM入金(自己資金)",
+     "entry_side": "credit"
+    }
+   ],
+   "payments": [
+    {
+     "id": 9761458203,
+     "date": "2026-05-16",
+     "from_walletable_type": "bank_account",
+     "from_walletable_id": 4635538,
+     "amount": 29000
+    }
+   ],
+   "receipts": []
+  },
+  {
+   "id": 3590577737,
+   "company_id": 12511831,
+   "issue_date": "2026-05-16",
+   "due_date": null,
+   "amount": 40000,
+   "due_amount": 0,
+   "type": "expense",
+   "partner_id": 114973028,
+   "partner_code": null,
+   "ref_number": "",
+   "status": "settled",
+   "deal_origin_name": "手動",
+   "details": [
+    {
+     "id": 9761458188,
+     "account_item_id": 1024926833,
+     "tax_code": 2,
+     "partner_id": 114973028,
+     "partner_code": null,
+     "item_id": null,
+     "section_id": null,
+     "tag_ids": [],
+     "amount": 40000,
+     "vat": 0,
+     "description": "振込 第四北越(生活費)",
+     "entry_side": "debit"
+    }
+   ],
+   "payments": [
+    {
+     "id": 9761458191,
+     "date": "2026-05-16",
+     "from_walletable_type": "bank_account",
+     "from_walletable_id": 4635538,
+     "amount": 40000
+    }
+   ],
+   "receipts": []
+  },
+  {
+   "id": 3571592371,
+   "company_id": 12511831,
+   "issue_date": "2026-05-12",
+   "due_date": null,
+   "amount": 3000,
+   "due_amount": 0,
+   "type": "expense",
+   "partner_id": 113065832,
+   "partner_code": null,
+   "ref_number": "",
+   "status": "settled",
+   "deal_origin_name": "手動",
+   "details": [
+    {
+     "id": 9707777133,
+     "account_item_id": 1024926897,
+     "tax_code": 136,
+     "partner_id": 113065832,
+     "partner_code": null,
+     "item_id": null,
+     "section_id": null,
+     "tag_ids": [],
+     "amount": 3000,
+     "vat": 272,
+     "description": null,
+     "entry_side": "debit"
+    }
+   ],
+   "payments": [
+    {
+     "id": 9707777134,
+     "date": "2026-05-12",
+     "from_walletable_type": "private_account_item",
+     "from_walletable_id": 1024926854,
+     "amount": 3000
+    }
+   ],
+   "receipts": [
+    {
+     "id": 466365459,
+     "status": "confirmed",
+     "description": "2026-05-12 出光 ガソリン 現金 ¥3,000",
+     "issue_date": "2026-06-04",
+     "created_at": "2026-06-04T05:21:07+09:00",
+     "mime_type": "image/jpeg",
+     "origin": "public_api",
+     "file_src": "https://secure.freee.co.jp/api/p/receipts/revisions/466409434/download",
+     "user": {
+      "id": 14910062,
+      "email": "corocoro.business@gmail.com",
+      "display_name": ""
+     },
+     "receipt_metadatum": {
+      "partner_name": "出光",
+      "issue_date": "2026-05-12",
+      "amount": 3000
+     },
+     "qualified_invoice": null,
+     "invoice_registration_number": null,
+     "document_type": null
+    }
+   ]
+  },
+  {
+   "id": 3529888984,
+   "company_id": 12511831,
+   "issue_date": "2026-05-12",
+   "due_date": null,
+   "amount": 11057,
+   "due_amount": 0,
+   "type": "income",
+   "partner_id": 112727574,
+   "partner_code": null,
+   "ref_number": null,
+   "status": "settled",
+   "deal_origin_name": "自動で経理",
+   "details": [
+    {
+     "id": 9588392508,
+     "account_item_id": 1024926858,
+     "tax_code": 129,
+     "partner_id": 112727574,
+     "partner_code": null,
+     "item_id": null,
+     "section_id": null,
+     "tag_ids": [],
+     "amount": 11057,
+     "vat": 1005,
+     "description": "",
+     "entry_side": "credit"
+    }
+   ],
+   "payments": [
+    {
+     "id": 9588392510,
+     "date": "2026-05-12",
+     "from_walletable_type": "bank_account",
+     "from_walletable_id": 4635538,
+     "amount": 11057
+    }
+   ],
+   "receipts": []
+  },
+  {
+   "id": 3590577733,
+   "company_id": 12511831,
+   "issue_date": "2026-05-01",
+   "due_date": null,
+   "amount": 790,
+   "due_amount": 0,
+   "type": "expense",
+   "partner_id": 112730154,
+   "partner_code": null,
+   "ref_number": "",
+   "status": "settled",
+   "deal_origin_name": "手動",
+   "details": [
+    {
+     "id": 9761458176,
+     "account_item_id": 1024926876,
+     "tax_code": 136,
+     "partner_id": 112730154,
+     "partner_code": null,
+     "item_id": null,
+     "section_id": null,
+     "tag_ids": [],
+     "amount": 790,
+     "vat": 71,
+     "description": "ニコニコプレミアム",
+     "entry_side": "debit"
+    }
+   ],
+   "payments": [
+    {
+     "id": 9761458177,
+     "date": "2026-05-01",
+     "from_walletable_type": "bank_account",
+     "from_walletable_id": 4635538,
+     "amount": 790
+    }
+   ],
+   "receipts": []
+  },
+  {
+   "id": 3590577725,
+   "company_id": 12511831,
+   "issue_date": "2026-04-22",
+   "due_date": null,
+   "amount": 38246,
+   "due_amount": 0,
+   "type": "income",
+   "partner_id": 112727620,
+   "partner_code": null,
+   "ref_number": "",
+   "status": "settled",
+   "deal_origin_name": "手動",
+   "details": [
+    {
+     "id": 9761458164,
+     "account_item_id": 1024926858,
+     "tax_code": 129,
+     "partner_id": 112727620,
+     "partner_code": null,
+     "item_id": null,
+     "section_id": null,
+     "tag_ids": [],
+     "amount": 38246,
+     "vat": 3476,
+     "description": "Google(YouTube AdSense)",
+     "entry_side": "credit"
+    }
+   ],
+   "payments": [
+    {
+     "id": 9761458165,
+     "date": "2026-04-22",
+     "from_walletable_type": "bank_account",
+     "from_walletable_id": 4635538,
+     "amount": 38246
+    }
+   ],
+   "receipts": []
+  },
+  {
+   "id": 3590577718,
+   "company_id": 12511831,
+   "issue_date": "2026-04-21",
+   "due_date": null,
+   "amount": 155,
+   "due_amount": 0,
+   "type": "income",
+   "partner_id": 113066028,
+   "partner_code": null,
+   "ref_number": "",
+   "status": "settled",
+   "deal_origin_name": "手動",
+   "details": [
+    {
+     "id": 9761458149,
+     "account_item_id": 1024926864,
+     "tax_code": 2,
+     "partner_id": 113066028,
+     "partner_code": null,
+     "item_id": null,
+     "section_id": null,
+     "tag_ids": [],
+     "amount": 155,
+     "vat": 0,
+     "description": "Visaデビットキャッシュバック",
+     "entry_side": "credit"
+    }
+   ],
+   "payments": [
+    {
+     "id": 9761458150,
+     "date": "2026-04-21",
+     "from_walletable_type": "bank_account",
+     "from_walletable_id": 4635538,
+     "amount": 155
+    }
+   ],
+   "receipts": []
+  },
+  {
+   "id": 3590577711,
+   "company_id": 12511831,
+   "issue_date": "2026-04-21",
+   "due_date": null,
+   "amount": 10000,
+   "due_amount": 0,
+   "type": "expense",
+   "partner_id": 114973028,
+   "partner_code": null,
+   "ref_number": "",
+   "status": "settled",
+   "deal_origin_name": "手動",
+   "details": [
+    {
+     "id": 9761458129,
+     "account_item_id": 1024926833,
+     "tax_code": 2,
+     "partner_id": 114973028,
+     "partner_code": null,
+     "item_id": null,
+     "section_id": null,
+     "tag_ids": [],
+     "amount": 10000,
+     "vat": 0,
+     "description": "振込 第四北越(生活費)",
+     "entry_side": "debit"
+    }
+   ],
+   "payments": [
+    {
+     "id": 9761458130,
+     "date": "2026-04-21",
+     "from_walletable_type": "bank_account",
+     "from_walletable_id": 4635538,
+     "amount": 10000
+    }
+   ],
+   "receipts": []
+  },
+  {
+   "id": 3590577706,
+   "company_id": 12511831,
+   "issue_date": "2026-04-21",
+   "due_date": null,
+   "amount": 75,
+   "due_amount": 0,
+   "type": "expense",
+   "partner_id": 113066028,
+   "partner_code": null,
+   "ref_number": "",
+   "status": "settled",
+   "deal_origin_name": "手動",
+   "details": [
+    {
+     "id": 9761458121,
+     "account_item_id": 1024926833,
+     "tax_code": 2,
+     "partner_id": 113066028,
+     "partner_code": null,
+     "item_id": null,
+     "section_id": null,
+     "tag_ids": [],
+     "amount": 75,
+     "vat": 0,
+     "description": "振込手数料(生活費送金分)",
+     "entry_side": "debit"
+    }
+   ],
+   "payments": [
+    {
+     "id": 9761458122,
+     "date": "2026-04-21",
+     "from_walletable_type": "bank_account",
+     "from_walletable_id": 4635538,
+     "amount": 75
+    }
+   ],
+   "receipts": []
+  },
+  {
+   "id": 3590577699,
+   "company_id": 12511831,
+   "issue_date": "2026-04-15",
+   "due_date": null,
+   "amount": 50000,
+   "due_amount": 0,
+   "type": "expense",
+   "partner_id": 114973028,
+   "partner_code": null,
+   "ref_number": "",
+   "status": "settled",
+   "deal_origin_name": "手動",
+   "details": [
+    {
+     "id": 9761458107,
+     "account_item_id": 1024926833,
+     "tax_code": 2,
+     "partner_id": 114973028,
+     "partner_code": null,
+     "item_id": null,
+     "section_id": null,
+     "tag_ids": [],
+     "amount": 50000,
+     "vat": 0,
+     "description": "振込 第四北越(生活費)",
+     "entry_side": "debit"
+    }
+   ],
+   "payments": [
+    {
+     "id": 9761458108,
+     "date": "2026-04-15",
+     "from_walletable_type": "bank_account",
+     "from_walletable_id": 4635538,
+     "amount": 50000
+    }
+   ],
+   "receipts": []
+  },
+  {
+   "id": 3590577684,
+   "company_id": 12511831,
+   "issue_date": "2026-04-01",
+   "due_date": null,
+   "amount": 790,
+   "due_amount": 0,
+   "type": "expense",
+   "partner_id": 112730154,
+   "partner_code": null,
+   "ref_number": "",
+   "status": "settled",
+   "deal_origin_name": "手動",
+   "details": [
+    {
+     "id": 9761458077,
+     "account_item_id": 1024926876,
+     "tax_code": 136,
+     "partner_id": 112730154,
+     "partner_code": null,
+     "item_id": null,
+     "section_id": null,
+     "tag_ids": [],
+     "amount": 790,
+     "vat": 71,
+     "description": "ニコニコプレミアム",
+     "entry_side": "debit"
+    }
+   ],
+   "payments": [
+    {
+     "id": 9761458079,
+     "date": "2026-04-01",
+     "from_walletable_type": "bank_account",
+     "from_walletable_id": 4635538,
+     "amount": 790
+    }
+   ],
+   "receipts": []
+  },
+  {
+   "id": 3590577677,
+   "company_id": 12511831,
+   "issue_date": "2026-03-31",
+   "due_date": null,
+   "amount": 20000,
+   "due_amount": 0,
+   "type": "expense",
+   "partner_id": 114973028,
+   "partner_code": null,
+   "ref_number": "",
+   "status": "settled",
+   "deal_origin_name": "手動",
+   "details": [
+    {
+     "id": 9761458063,
+     "account_item_id": 1024926833,
+     "tax_code": 2,
+     "partner_id": 114973028,
+     "partner_code": null,
+     "item_id": null,
+     "section_id": null,
+     "tag_ids": [],
+     "amount": 20000,
+     "vat": 0,
+     "description": "振込 第四北越(生活費)",
+     "entry_side": "debit"
+    }
+   ],
+   "payments": [
+    {
+     "id": 9761458064,
+     "date": "2026-03-31",
+     "from_walletable_type": "bank_account",
+     "from_walletable_id": 4635538,
+     "amount": 20000
+    }
+   ],
+   "receipts": []
+  },
+  {
+   "id": 3590577671,
+   "company_id": 12511831,
+   "issue_date": "2026-03-31",
+   "due_date": null,
+   "amount": 75,
+   "due_amount": 0,
+   "type": "expense",
+   "partner_id": 113066028,
+   "partner_code": null,
+   "ref_number": "",
+   "status": "settled",
+   "deal_origin_name": "手動",
+   "details": [
+    {
+     "id": 9761458051,
+     "account_item_id": 1024926833,
+     "tax_code": 2,
+     "partner_id": 113066028,
+     "partner_code": null,
+     "item_id": null,
+     "section_id": null,
+     "tag_ids": [],
+     "amount": 75,
+     "vat": 0,
+     "description": "振込手数料(生活費送金分)",
+     "entry_side": "debit"
+    }
+   ],
+   "payments": [
+    {
+     "id": 9761458052,
+     "date": "2026-03-31",
+     "from_walletable_type": "bank_account",
+     "from_walletable_id": 4635538,
+     "amount": 75
+    }
+   ],
+   "receipts": []
+  },
+  {
+   "id": 3590577649,
+   "company_id": 12511831,
+   "issue_date": "2026-03-17",
+   "due_date": null,
+   "amount": 8000,
+   "due_amount": 0,
+   "type": "expense",
+   "partner_id": 114973028,
+   "partner_code": null,
+   "ref_number": "",
+   "status": "settled",
+   "deal_origin_name": "手動",
+   "details": [
+    {
+     "id": 9761458006,
+     "account_item_id": 1024926833,
+     "tax_code": 2,
+     "partner_id": 114973028,
+     "partner_code": null,
+     "item_id": null,
+     "section_id": null,
+     "tag_ids": [],
+     "amount": 8000,
+     "vat": 0,
+     "description": "振込 第四北越(生活費)",
+     "entry_side": "debit"
+    }
+   ],
+   "payments": [
+    {
+     "id": 9761458007,
+     "date": "2026-03-17",
+     "from_walletable_type": "bank_account",
+     "from_walletable_id": 4635538,
+     "amount": 8000
+    }
+   ],
+   "receipts": []
+  }
+ ]
+}

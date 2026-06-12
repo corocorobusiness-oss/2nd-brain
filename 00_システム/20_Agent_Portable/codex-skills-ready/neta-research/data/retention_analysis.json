@@ -1,0 +1,502 @@
+[
+  {
+    "intro_hold": 0.809,
+    "q1": 0.664,
+    "q2": 0.49,
+    "q3": 0.379,
+    "q4": 0.302,
+    "worst_drops": [
+      {
+        "at_percent": 2,
+        "drop": 0.198
+      },
+      {
+        "at_percent": 15,
+        "drop": 0.069
+      },
+      {
+        "at_percent": 46,
+        "drop": 0.066
+      }
+    ],
+    "id": "5BudIEtacR0",
+    "title": "【2ch歴史】47都道府県代表の戦国武将を紹介していくで 2ちゃんねるの歴史オタクたちの見解がおも",
+    "views": 27328,
+    "published": "2026-03-15"
+  },
+  {
+    "intro_hold": 0.84,
+    "q1": 0.715,
+    "q2": 0.59,
+    "q3": 0.485,
+    "q4": 0.402,
+    "worst_drops": [
+      {
+        "at_percent": 2,
+        "drop": 0.101
+      },
+      {
+        "at_percent": 97,
+        "drop": 0.051
+      },
+      {
+        "at_percent": 98,
+        "drop": 0.044
+      }
+    ],
+    "id": "3XYZOZkrQ44",
+    "title": "【2ch歴史】秀長がいなくなった途端に豊臣が崩壊した件www 2ちゃんねるの歴史オタクたちの見解がお",
+    "views": 23979,
+    "published": "2026-04-05"
+  },
+  {
+    "intro_hold": 0.806,
+    "q1": 0.655,
+    "q2": 0.482,
+    "q3": 0.385,
+    "q4": 0.308,
+    "worst_drops": [
+      {
+        "at_percent": 2,
+        "drop": 0.123
+      },
+      {
+        "at_percent": 3,
+        "drop": 0.055
+      },
+      {
+        "at_percent": 28,
+        "drop": 0.049
+      }
+    ],
+    "id": "6ashamizB6c",
+    "title": "【2ch歴史】関ヶ原の戦いさん、実際のところ大したことがないwww 2ちゃんねるの歴史オタクたちの見",
+    "views": 20249,
+    "published": "2026-05-04"
+  },
+  {
+    "intro_hold": 0.823,
+    "q1": 0.697,
+    "q2": 0.538,
+    "q3": 0.444,
+    "q4": 0.375,
+    "worst_drops": [
+      {
+        "at_percent": 2,
+        "drop": 0.125
+      },
+      {
+        "at_percent": 99,
+        "drop": 0.061
+      },
+      {
+        "at_percent": 30,
+        "drop": 0.051
+      }
+    ],
+    "id": "bXm5Pgy51IE",
+    "title": "【2ch歴史】豊臣秀吉「ようやく天下統一したぞ！」←こいつがたった25年で滅亡した理由www ",
+    "views": 17339,
+    "published": "2026-05-01"
+  },
+  {
+    "intro_hold": 0.793,
+    "q1": 0.658,
+    "q2": 0.524,
+    "q3": 0.437,
+    "q4": 0.376,
+    "worst_drops": [
+      {
+        "at_percent": 2,
+        "drop": 0.127
+      },
+      {
+        "at_percent": 99,
+        "drop": 0.07
+      },
+      {
+        "at_percent": 3,
+        "drop": 0.069
+      }
+    ],
+    "id": "JjOeMrypYs4",
+    "title": "【2ch歴史】豊臣秀吉←こいつが天下取れた理由www 2ちゃんねるの歴史オタクたちの見解がおもしろい",
+    "views": 12521,
+    "published": "2026-05-06"
+  },
+  {
+    "intro_hold": 0.828,
+    "q1": 0.694,
+    "q2": 0.578,
+    "q3": 0.493,
+    "q4": 0.412,
+    "worst_drops": [
+      {
+        "at_percent": 2,
+        "drop": 0.101
+      },
+      {
+        "at_percent": 3,
+        "drop": 0.066
+      },
+      {
+        "at_percent": 98,
+        "drop": 0.063
+      }
+    ],
+    "id": "6VIVGD3-AM4",
+    "title": "【2ch歴史】浅井長政の裏切りがヤバすぎた件www 2ちゃんねるの歴史オタクたちの見解がおもし",
+    "views": 12327,
+    "published": "2026-04-08"
+  },
+  {
+    "intro_hold": 0.83,
+    "q1": 0.685,
+    "q2": 0.506,
+    "q3": 0.399,
+    "q4": 0.323,
+    "worst_drops": [
+      {
+        "at_percent": 2,
+        "drop": 0.12
+      },
+      {
+        "at_percent": 71,
+        "drop": 0.049
+      },
+      {
+        "at_percent": 100,
+        "drop": 0.046
+      }
+    ],
+    "id": "ROQ9xW1B458",
+    "title": "【2ch歴史】竹中半兵衛と黒田官兵衛どっちが優れてたん？2ちゃんねるの歴史オタクたちの見解がおもしろ",
+    "views": 10896,
+    "published": "2026-04-15"
+  },
+  {
+    "intro_hold": 0.832,
+    "q1": 0.704,
+    "q2": 0.567,
+    "q3": 0.49,
+    "q4": 0.416,
+    "worst_drops": [
+      {
+        "at_percent": 2,
+        "drop": 0.149
+      },
+      {
+        "at_percent": 72,
+        "drop": 0.075
+      },
+      {
+        "at_percent": 100,
+        "drop": 0.064
+      }
+    ],
+    "id": "MfmdBpJIcvQ",
+    "title": "【2ch歴史】明智光秀が本能寺の変を起こした理由www 2ちゃんねるの歴史オタクたちの見解がおもし",
+    "views": 7333,
+    "published": "2026-03-28"
+  },
+  {
+    "intro_hold": 0.813,
+    "q1": 0.681,
+    "q2": 0.548,
+    "q3": 0.469,
+    "q4": 0.398,
+    "worst_drops": [
+      {
+        "at_percent": 2,
+        "drop": 0.148
+      },
+      {
+        "at_percent": 99,
+        "drop": 0.05
+      },
+      {
+        "at_percent": 17,
+        "drop": 0.043
+      }
+    ],
+    "id": "rtMA44mAKfw",
+    "title": "【2ch歴史】お市の方はなぜ柴田勝家と運命を共にしたのか？ 2ちゃんねるの歴史オタクたちの見解がおも",
+    "views": 7156,
+    "published": "2026-05-16"
+  },
+  {
+    "intro_hold": 0.822,
+    "q1": 0.698,
+    "q2": 0.548,
+    "q3": 0.446,
+    "q4": 0.372,
+    "worst_drops": [
+      {
+        "at_percent": 2,
+        "drop": 0.112
+      },
+      {
+        "at_percent": 3,
+        "drop": 0.057
+      },
+      {
+        "at_percent": 99,
+        "drop": 0.05
+      }
+    ],
+    "id": "T9rfCUkFkec",
+    "title": "【2ch歴史】黒田官兵衛はなぜ天下を取らなかったの？2ちゃんねるの歴史オタクたちの見解がおもしろい【",
+    "views": 6616,
+    "published": "2026-05-31"
+  },
+  {
+    "intro_hold": 0.833,
+    "q1": 0.721,
+    "q2": 0.55,
+    "q3": 0.454,
+    "q4": 0.394,
+    "worst_drops": [
+      {
+        "at_percent": 2,
+        "drop": 0.119
+      },
+      {
+        "at_percent": 99,
+        "drop": 0.058
+      },
+      {
+        "at_percent": 83,
+        "drop": 0.048
+      }
+    ],
+    "id": "bQ3V8pD7tGs",
+    "title": "【2ch歴史】もし徳川家康が関東に転封されなければ？２ちゃんねるの歴史オタクたちの見解がおもしろい【",
+    "views": 5994,
+    "published": "2026-05-11"
+  },
+  {
+    "intro_hold": 0.831,
+    "q1": 0.7,
+    "q2": 0.584,
+    "q3": 0.505,
+    "q4": 0.454,
+    "worst_drops": [
+      {
+        "at_percent": 2,
+        "drop": 0.101
+      },
+      {
+        "at_percent": 3,
+        "drop": 0.069
+      },
+      {
+        "at_percent": 47,
+        "drop": 0.046
+      }
+    ],
+    "id": "TtzeTf5J4zU",
+    "title": "【2ch歴史】卑弥呼とかいう日本史最大のミステリーwww 2ちゃんねるの歴史オタクたちの見解が面白い",
+    "views": 5197,
+    "published": "2026-04-28"
+  },
+  {
+    "intro_hold": 0.862,
+    "q1": 0.74,
+    "q2": 0.595,
+    "q3": 0.5,
+    "q4": 0.418,
+    "worst_drops": [
+      {
+        "at_percent": 2,
+        "drop": 0.113
+      },
+      {
+        "at_percent": 33,
+        "drop": 0.054
+      },
+      {
+        "at_percent": 99,
+        "drop": 0.048
+      }
+    ],
+    "id": "opSBus4x3QA",
+    "title": "【2ch歴史】戦国最強なのに上杉謙信が天下取れなかった理由www 2ちゃんねるの歴史オタクたちの見解",
+    "views": 4830,
+    "published": "2026-05-17"
+  },
+  {
+    "intro_hold": 0.84,
+    "q1": 0.699,
+    "q2": 0.54,
+    "q3": 0.441,
+    "q4": 0.387,
+    "worst_drops": [
+      {
+        "at_percent": 2,
+        "drop": 0.12
+      },
+      {
+        "at_percent": 99,
+        "drop": 0.07
+      },
+      {
+        "at_percent": 3,
+        "drop": 0.058
+      }
+    ],
+    "id": "A7e9BEbyRtA",
+    "title": "【2ch歴史】幕末の英雄最強打線を組んだwww 2ちゃんねるの歴史オタクたちの見解がおもしろい【ゆ",
+    "views": 3919,
+    "published": "2026-04-21"
+  },
+  {
+    "intro_hold": 0.832,
+    "q1": 0.694,
+    "q2": 0.555,
+    "q3": 0.491,
+    "q4": 0.434,
+    "worst_drops": [
+      {
+        "at_percent": 2,
+        "drop": 0.132
+      },
+      {
+        "at_percent": 53,
+        "drop": 0.077
+      },
+      {
+        "at_percent": 3,
+        "drop": 0.069
+      }
+    ],
+    "id": "FkrEr4dAmAM",
+    "title": "【2ch歴史】伊達政宗の奇行・逸話打線www 2ちゃんねるの歴史オタクたちの見解がおもしろい【ゆっく",
+    "views": 3753,
+    "published": "2026-03-21"
+  },
+  {
+    "intro_hold": 0.858,
+    "q1": 0.716,
+    "q2": 0.559,
+    "q3": 0.49,
+    "q4": 0.437,
+    "worst_drops": [
+      {
+        "at_percent": 2,
+        "drop": 0.093
+      },
+      {
+        "at_percent": 3,
+        "drop": 0.06
+      },
+      {
+        "at_percent": 99,
+        "drop": 0.056
+      }
+    ],
+    "id": "ZQhqOBzp5mg",
+    "title": "【2c歴史】家康が最も恐れた男って結局誰なんや？ 2ちゃんねるの歴史オタクたちの見解がおもしろい【",
+    "views": 3526,
+    "published": "2026-04-01"
+  },
+  {
+    "intro_hold": 0.862,
+    "q1": 0.707,
+    "q2": 0.546,
+    "q3": 0.456,
+    "q4": 0.389,
+    "worst_drops": [
+      {
+        "at_percent": 59,
+        "drop": 0.077
+      },
+      {
+        "at_percent": 2,
+        "drop": 0.074
+      },
+      {
+        "at_percent": 3,
+        "drop": 0.065
+      }
+    ],
+    "id": "4n8RLXYmf3s",
+    "title": "【2ch歴史】薩摩島津家にひとりぶっ飛んだ奴いるよな？2ちゃんねるの歴史オタクたちの見解がおもし",
+    "views": 3405,
+    "published": "2026-03-25"
+  },
+  {
+    "intro_hold": 0.855,
+    "q1": 0.733,
+    "q2": 0.583,
+    "q3": 0.506,
+    "q4": 0.436,
+    "worst_drops": [
+      {
+        "at_percent": 2,
+        "drop": 0.11
+      },
+      {
+        "at_percent": 99,
+        "drop": 0.077
+      },
+      {
+        "at_percent": 19,
+        "drop": 0.05
+      }
+    ],
+    "id": "taChn7soE6s",
+    "title": "【2ch歴史】なぜ武田信玄は好きな武将ランキングで常に上位なのか？ 2ちゃんねるの歴史オタクた",
+    "views": 3118,
+    "published": "2026-05-29"
+  },
+  {
+    "intro_hold": 0.829,
+    "q1": 0.701,
+    "q2": 0.566,
+    "q3": 0.493,
+    "q4": 0.43,
+    "worst_drops": [
+      {
+        "at_percent": 2,
+        "drop": 0.124
+      },
+      {
+        "at_percent": 99,
+        "drop": 0.058
+      },
+      {
+        "at_percent": 3,
+        "drop": 0.051
+      }
+    ],
+    "id": "PYuxEKTqr18",
+    "title": "【2ch歴史】歴史オタクの雑学で戦国時代が面白くなり過ぎたwww 2ちゃんねるの歴史オタクたちの見解",
+    "views": 2930,
+    "published": "2026-03-18"
+  },
+  {
+    "intro_hold": 0.792,
+    "q1": 0.596,
+    "q2": 0.473,
+    "q3": 0.365,
+    "q4": 0.306,
+    "worst_drops": [
+      {
+        "at_percent": 2,
+        "drop": 0.19
+      },
+      {
+        "at_percent": 42,
+        "drop": 0.043
+      },
+      {
+        "at_percent": 99,
+        "drop": 0.042
+      }
+    ],
+    "id": "OWxCVpQ4V30",
+    "title": "【2ch歴史】47都道府県の武将で打線組んだｗｗｗｗ 2ちゃんねるの歴史オタクたちの見解がおもし",
+    "views": 1754,
+    "published": "2026-05-21"
+  }
+]

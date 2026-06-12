@@ -1,0 +1,32 @@
+#!/usr/bin/expect -f
+
+# Startup dialog auto-acceptance for Claude Code v2.1.x running under launchd.
+# Claude uses cursor-forward ANSI escapes instead of spaces, so we match on
+# single distinctive words. "cancel" comes from "Esc to cancel" — the last
+# line of any startup dialog, so it's a reliable "dialog drawn" trigger.
+#
+# After the startup phase (matched "Listening for channel messages" or 90s
+# elapsed), we stop pattern-matching and just keep the spawned process alive.
+
+set timeout 20
+spawn claude --channels plugin:discord@claude-plugins-official --dangerously-skip-permissions
+
+# Startup phase: auto-accept up to 3 dialogs, then break.
+set dialogs 0
+while {$dialogs < 3} {
+    expect {
+        -re "Listening.*channel" { break }
+        -re "cancel" {
+            after 500
+            send "2"
+            after 200
+            send "\r"
+            incr dialogs
+        }
+        timeout { break }
+    }
+}
+
+# Steady state: wait indefinitely for the spawned process to exit.
+set timeout -1
+expect eof
