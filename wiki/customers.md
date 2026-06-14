@@ -2,7 +2,7 @@
 title: Customers
 type: business
 sources: []
-related: ["[[business-dashboard]]", "[[offers]]", "[[sales-and-marketing]]"]
+related: ["[[business-dashboard]]", "[[business-operating-model]]", "[[youtube-business]]", "[[roblox-business]]", "[[offers]]", "[[sales-and-marketing]]"]
 created: 2026-06-15
 updated: 2026-06-15
 confidence: low
@@ -22,6 +22,16 @@ confidence: low
 - 購入前の不安
 - 継続や紹介につながる要因
 
+## 顧客/視聴者セグメント
+
+| セグメント | 関係する事業 | 見たいもの |
+|---|---|---|
+| 歴史好き視聴者 | YouTube | 面白く、分かりやすく、2chらしい歴史コンテンツ |
+| AI活用に興味がある個人 | AI自動化 / 教材 | 一人で仕組み化する方法、実例、手順 |
+| Roblox制作に興味がある人 | Roblox / 教材 / 受託 | AIでゲームを作る過程、成果物、再現手順 |
+| 受託候補 | Roblox / AI自動化 | 実績、信頼、納品範囲、料金 |
+| 未来の教材購入者 | Brain / Note / メルマガ | 体系化されたノウハウ、失敗しない手順 |
+
 ## 注意
 
 個人情報、秘密情報、取引条件は慎重に扱う。必要以上に詳細な個人情報をwikiへ書かない。
@@ -32,3 +42,4 @@ confidence: low
 - 商品改善のヒントを抽出する
 - 発信テーマに変換する
 - 相談ログからよくあるパターンを見つける
+- 視聴者の反応を商品・教材・受託導線へ変換する

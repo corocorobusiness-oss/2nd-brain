@@ -16,6 +16,7 @@ confidence: high
 
 - [[overview]]
 - [[business-dashboard]]
+- [[business-operating-model]]
 - [[migration-map]]
 
 ## Current Focus
@@ -29,6 +30,11 @@ confidence: high
 
 - [[business-dashboard]]
 - [[business-principles]]
+- [[business-operating-model]]
+- [[youtube-business]]
+- [[delivery-cashflow]]
+- [[ai-automation-business]]
+- [[roblox-business]]
 - [[offers]]
 - [[customers]]
 - [[sales-and-marketing]]

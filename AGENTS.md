@@ -51,8 +51,10 @@ Mac上のユーザー名に依存せず、Google Drive内の `マイドライブ
 会話開始時の追加読み順：
 1. `wiki/index.md`
 2. `wiki/business-dashboard.md`
-3. `wiki/migration-map.md`
-4. 必要に応じて `wiki/offers.md`、`wiki/customers.md`、`wiki/sales-and-marketing.md`、`wiki/operations.md`、`wiki/finance.md`、`wiki/decision-log.md`
+3. `wiki/business-operating-model.md`
+4. `wiki/migration-map.md`
+5. 必要に応じて `wiki/youtube-business.md`、`wiki/delivery-cashflow.md`、`wiki/ai-automation-business.md`、`wiki/roblox-business.md`
+6. 必要に応じて `wiki/offers.md`、`wiki/customers.md`、`wiki/sales-and-marketing.md`、`wiki/operations.md`、`wiki/finance.md`、`wiki/decision-log.md`
 
 新しい読み取りレイヤー：
 - `inbox/` — 未整理メモ、顧客メモ、売上アイデア、発信案、業務改善メモ
@@ -64,6 +66,13 @@ Mac上のユーザー名に依存せず、Google Drive内の `マイドライブ
 
 社長補佐スキル：
 - `00_システム/20_Agent_Portable/codex-skills-ready/business-chief-of-staff/SKILL.md`
+
+事業ポートフォリオ：
+- YouTube: 主柱・長期資産
+- フードデリバリー: 短期キャッシュフロー
+- AI自動化: 時間を増やすレバレッジ
+- Roblox: 第3の柱候補
+- Brain/Note/X/メルマガ: 知識の商品化・販売導線
 
 ## フォルダ構成
 - `00_システム/` — プロフィール、テンプレート、プロンプト、AIエージェント設定
