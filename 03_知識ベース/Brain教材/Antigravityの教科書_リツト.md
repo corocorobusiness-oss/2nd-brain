@@ -9,6 +9,8 @@ metadata:
 
 # Antigravityの教科書 — 完全ノート
 
+**関連**: [[Antigravity×Obsidianロードマップ_リツト]]（入門→応用の続き） / [[リツト(Ritsuto)]]（著者） / [[Google Antigravity Documentation]]（技術仕様）
+
 著者：リツト（@ritsuto2525）  
 公開日：2026年2月13日  
 販売数：4,800部超（Brain総合ランキング1位 14日間連続）

@@ -9,6 +9,8 @@ metadata:
 
 # リツト著「Antigravity × Obsidian 第2の脳構築ロードマップ」完全ノート
 
+**関連**: [[Antigravityの教科書_リツト]]（基本操作編） / [[リツト(Ritsuto)]]（著者） / [[24時間AIエージェント運用設計]]（自分の運用への接続）
+
 **出典**: Brain教材「メモが資産になる！Antigravity × Obsidian で第2の脳を構築する完全ロードマップ」  
 **著者**: リツト（@ritsuto_NFT_v）  
 **価格**: ¥4,980 / 販売数2,200部突破 / Brainランキング1位  
