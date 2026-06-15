@@ -45,3 +45,6 @@ AIエージェントが会話を通じて学んだこと。次回以降に活か
 - Discordモデル切り替え自動化を廃止→ターミナル`/model`手動運用に変更（ユーザー判断）
 - Codex: Claude Code x Codex x Obsidian運用を「Claude Codeメイン / Codex実行補助 / Obsidian正本」に更新。共通仕様 `00_システム/20_Agent_Portable/specs/claude-code-codex-obsidian-operation.md` を追加し、AGENTS.md / CLAUDE.md / workflows.md / Agent Portable READMEへ反映。
 - Codex: 24時間AIエージェント運用の管制塔として `06_エージェント運用/` を新設。起動時は `06_エージェント運用/00_司令塔/NOW.md` を確認し、未処理・確認待ち・実行キュー・ヘルスチェック・判断ログをここで管理する方針に更新。
+
+## 2026-06-15
+- Claude Code（ツバキ）: CLAUDE.md を現状に合わせて全面更新（ローカル正本化・二窓ペルソナ アオイ🌊/ツバキ🌸・Roblox事業・06_管制塔のファイル地図・削除ルール/口約束禁止/並行編集ルールの要点・AI自動化台帳の場所を追記）。AGENTS.md も同内容に同期（旧版はDrive正本のまま停滞していたため修正）。
