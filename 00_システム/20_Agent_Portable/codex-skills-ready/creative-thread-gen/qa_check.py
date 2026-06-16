@@ -169,7 +169,8 @@ def check(path, mn=2500, mx=3200):
     uro = sum(1 for b in bodies if URO_RE.search(b))
     haki = sum(1 for b in bodies if HAKISUTE_RE.search(b))
     teisei = sum(1 for b in bodies if TEISEI_RE.search(b))
-    zw = text.count('ｗ')
+    zenw = text.count('ｗ'); hanw = len(re.findall(r'(?<![A-Za-z])w+(?![A-Za-z])', text))  # 半角wも本物では優勢
+    zw = zenw + hanw
     def soft(name, val, need):
         if val < need:
             warns.append(name);
@@ -177,16 +178,24 @@ def check(path, mn=2500, mx=3200):
     print(f'{mark(soft("うろ覚え", uro, 2))} うろ覚え又聞き: {uro}本（目標2+）')
     print(f'{mark(soft("吐き捨て", haki, 2))} 吐き捨て口調: {haki}本（目標2+）')
     print(f'{mark(soft("誤答訂正", teisei, 1))} 誤答→訂正の気配: {teisei}本（目標1+）')
-    print(f'{mark(soft("全角ｗ", zw, 3))} 全角ｗ: {zw}個（目標3+）')
+    print(f'{mark(soft("笑いw", zw, 3))} 笑いw: 全角ｗ{zenw}+半角w{hanw}={zw}個（目標3+・半角wは本物で優勢でOK）')
 
-    # 10. ID（本物寄せ）
+    # 10. ID（本物寄せ）＋知識役の一極集中（最大のAI臭・2026-06-16監査でHigh）
     if has_id:
         idc = Counter(p['id'] for p in posts if p['id'])
         recur = [i for i, c in idc.items() if c >= 3]
-        st = 'ok' if recur else 'warn'
         if not recur:
             warns.append('ID再登場')
-        print(f'{mark(st)} ID: {len(idc)}種 / 3回以上再登場 {len(recur)}人（役の一貫性）')
+        print(f'{mark("ok" if recur else "warn")} ID: {len(idc)}種 / 3回以上再登場 {len(recur)}人（役の一貫性）')
+        # 長文(60字+)が特定IDに集中＝講義臭。最多IDが長文の45%超ならWARN
+        long_by_id = Counter(p['id'] for p in posts if p['id'] and len(p['body']) >= 60)
+        if sum(long_by_id.values()) >= 4:
+            top_id, top_cnt = long_by_id.most_common(1)[0]
+            share = top_cnt / sum(long_by_id.values())
+            if share > 0.45:
+                warns.append('知識役の集中')
+                hints.append(f'解説長文が ID:{top_id} に{int(share*100)}%集中＝講義臭（最大のAI臭）→ 解説を3人以上に分散。1スレ1回「住人が間違える→知識ニキ以外が訂正→本人が引き下がる」を作る')
+            print(f'{mark("warn" if share>0.45 else "ok")} 知識役の分散: 最多ID {top_id} が長文の{int(share*100)}%（45%以下が目標）')
 
     # 11. スレタイ（1レス目）
     title = bodies[0]
