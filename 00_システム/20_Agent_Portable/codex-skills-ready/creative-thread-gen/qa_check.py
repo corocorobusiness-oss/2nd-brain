@@ -108,7 +108,10 @@ def check(path, mn=2500, mx=3200, era=None):
     # 1. 字数
     chars = sum(len(b) for b in bodies)
     if chars < mn:
-        st = 'fail'; fails.append('字数'); hints.append(f'尺不足（あと{mn-chars}字）→ 知識ニキの長文(100〜140字)をトピック別に追加。短レス追加では埋まらない')
+        st = 'fail'; fails.append('字数')
+        cur_long = sum(1 for b in bodies if len(b) >= 60)
+        need_long = -(-(mn - chars) // 130)  # ceil: 不足字数÷130＝追加すべき長文本数
+        hints.append(f'尺不足（あと{mn-chars}字／現在の長文60字+={cur_long}本）→ 知識ニキ長文(130〜150字)を約{need_long}本トピック別に追加（短レス追加では埋まらない＝1430→2500は短レスでは無理）。次回は「尺設計図→長文ファースト」で長文10本を先に書き切ってから短・中レスを挟むと初稿一発で乗る')
     elif chars > mx:
         st = 'warn'; warns.append('字数'); hints.append(f'長すぎ（{chars}字）→ 冗長な解説を削るか分割')
     else:
