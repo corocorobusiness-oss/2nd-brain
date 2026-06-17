@@ -90,6 +90,27 @@ def infer_era(text):
     return None, None
 
 
+def era_index(era):
+    """時代名→ERA_ORDER上のインデックス（未知ならNone）"""
+    if not era:
+        return None
+    for i, x in enumerate(ERA_ORDER):
+        if x in era or era in x:
+            return i
+    return None
+
+
+def scan_people(text):
+    """本文に出現する既知人物を {人物名: (時代, 出現回数)} で返す（時代混線の自動検出用）"""
+    found = {}
+    for era, names in ERA_TABLE.items():
+        for nm in names:
+            c = text.count(nm)
+            if c > 0:
+                found[nm] = (era, c)
+    return found
+
+
 def parse(path):
     posts = []
     for ln in open(path, encoding='utf-8'):
@@ -312,28 +333,41 @@ def check(path, mn=2500, mx=3200, era=None):
         warns.append('スレタイ'); hints.append('スレタイ → 型違いで複数案出して採点し直す/1フックで止める/「」のみ/結論を書ききらない（「実は〜だった」「という真実」はAI臭）: ' + '・'.join(t_fail))
     print(f'{mark("warn" if t_fail else "ok")} スレタイ[{ttype}]: 「{title[:30]}」{" ←"+",".join(t_fail) if t_fail else ""}')
 
-    # 11c. 時代タグ照合（--era指定時のみ判定。未指定なら推定年代を情報表示）
+    # 11c. 時代タグ照合（2026-06-17 残課題④で標準フローに配線＝--era無しでも自動で効く）
+    #   ①--era指定時：トーン指示タグ vs スレタイ人物年代（ネタ分類の事故検出・2段以上でFAIL）
+    #   ②常時(自動era)：スレタイ人物の時代を基準に、本文に出る"他の既知人物"の時代混線を検出
+    #     （スレタイ人物と3段以上離れた人物が3回以上＝主役級に出たらWARN。1〜2回の比較・引き合いは許容）
     inf_era, inf_who = infer_era(bodies[0])
+    ti = era_index(inf_era)
     if inf_era is None:
         print('🧭 時代タグ照合: スレタイから既知人物を検出できず（テーブル外）→ スキップ')
-    elif era:
-        # トーン指示の時代タグ(era)と人物実在年代(inf_era)を照合。順序が2段以上離れたらズレ。
-        def _idx(e):
-            for i, x in enumerate(ERA_ORDER):
-                if x in e or e in x:
-                    return i
-            return None
-        gi, ti = _idx(inf_era), _idx(era)
-        if ti is None:
-            print(f'🧭 時代タグ照合: 指定タグ「{era}」が未知（{inf_who}={inf_era}）→ 参考のみ')
-        elif abs(gi - ti) >= 2:
-            fails.append('時代タグ不一致')
-            hints.append(f'時代タグ不一致＝{inf_who}は{inf_era}の人物やのに指示タグが「{era}」（{abs(gi-ti)}段ズレ）→ タグを{inf_era}に直す or テーマを{era}の人物に差し替える')
-            print(f'❌ 時代タグ照合: {inf_who}＝{inf_era} vs 指示「{era}」＝{abs(gi-ti)}段ズレ（不一致）')
-        else:
-            print(f'✅ 時代タグ照合: {inf_who}＝{inf_era} ≒ 指示「{era}」（整合）')
     else:
-        print(f'🧭 時代タグ照合: スレタイ人物「{inf_who}」＝{inf_era}（--eraで指定すると照合・現在は情報のみ）')
+        # ① --era 明示照合（従来＝ネタ管理の時代タグの分類事故検出）
+        if era:
+            gj = era_index(era)
+            if gj is None:
+                print(f'🧭 時代タグ照合: 指定タグ「{era}」が未知（{inf_who}={inf_era}）→ 参考のみ')
+            elif abs(ti - gj) >= 2:
+                fails.append('時代タグ不一致')
+                hints.append(f'時代タグ不一致＝{inf_who}は{inf_era}の人物やのに指示タグが「{era}」（{abs(ti-gj)}段ズレ）→ タグを{inf_era}に直す or テーマを{era}の人物に差し替える')
+                print(f'❌ 時代タグ照合: {inf_who}＝{inf_era} vs 指示「{era}」＝{abs(ti-gj)}段ズレ（不一致）')
+            else:
+                print(f'✅ 時代タグ照合: {inf_who}＝{inf_era} ≒ 指示「{era}」（整合）')
+        else:
+            print(f'🧭 時代タグ（自動era）: スレタイ人物「{inf_who}」＝{inf_era} を基準に本文を自動照合（--eraでネタ分類タグも照合可）')
+
+        # ② 本文の時代混線の自動検出（--eraの有無に関わらず常時。これが残課題④の配線の核）
+        mixed = []
+        for nm, (e, cnt) in scan_people(text).items():
+            if nm == inf_who:
+                continue
+            ei = era_index(e)
+            if ei is not None and ti is not None and abs(ei - ti) >= 3 and cnt >= 3:
+                mixed.append(f'{nm}({e}・{cnt}回)')
+        if mixed:
+            warns.append('時代混線疑い')
+            hints.append(f'時代混線の疑い＝スレタイは{inf_who}({inf_era})やのに、3段以上離れた時代の人物が主役級に頻出: {", ".join(mixed)} → 別時代の人物を主題にしてないか／時代を取り違えてないか確認（比較・引き合いの1〜2回はOK）')
+        print(f'{mark("warn" if mixed else "ok")} 本文の時代混線: {("⚠️"+",".join(mixed)) if mixed else "なし（基準"+inf_era+"）"}')
 
     # 12. 締め（最終レス）
     print(f'   末尾: 「{bodies[-1][:30]}」')
