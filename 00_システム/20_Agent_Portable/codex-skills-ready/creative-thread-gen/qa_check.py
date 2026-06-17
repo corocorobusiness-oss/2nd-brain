@@ -44,6 +44,22 @@ SLUR_CONTEXT_RE = re.compile(
     + ATTR_GROUP + r'.{0,10}' + _DEROG + r'|'
     + _DEROG + r'.{0,10}' + ATTR_GROUP)
 
+# 婉曲差別・非人間化（文脈差別の機械化・2026-06-17 残課題2）。蔑称"語"でない＝血統本質主義/非人間化/現代ゼノフォビア構文を拾う。
+# 歴史chは身分・民族語が正当に頻出するため誤爆を抑える設計：1)非人間化が"集団語"に近接＝ほぼ確実にヘイト→FAIL／2)本質主義・帰れ・民度・優生＝WARN(必ずLLM確認へ)。
+_DEHUMAN = r'(湧いて|湧く|沸いて|わいて|害虫|寄生虫|ゴキブリ|蛆|駆除|間引|根絶やし|処分しろ|処分すべき|消えろ|滅べ|絶滅さ)'
+DEHUMANIZE_RE = re.compile(
+    ATTR_GROUP + r'.{0,12}' + _DEHUMAN + r'|'
+    + _DEHUMAN + r'.{0,12}' + ATTR_GROUP)
+_ESSENCE = r'(の血(?:筋|統|が|を|は)|民族性|国民性|DNA|遺伝子レベル|生まれつき.{0,4}(?:劣|駄目|無能|犯罪)|血が穢|血が汚|血は争えん)'
+_XENO    = r'(国へ?帰れ|祖国へ?帰れ|半島へ?帰れ|大陸へ?帰れ|出て行け|出ていけ)'
+_EUGENIC = r'(優生|劣等遺伝|劣った血|生産性が(?:ない|低)|社会のお荷物|穀潰し|間引いた方)'
+_MINDO   = r'民度(?:が)?(?:低|ない|の低)'
+EUPHEMISM_RE = re.compile(
+    ATTR_GROUP + r'.{0,10}' + _ESSENCE + r'|' + _ESSENCE + r'.{0,8}' + ATTR_GROUP + r'|'
+    + ATTR_GROUP + r'.{0,12}' + _XENO + r'|'
+    + ATTR_ALL + r'.{0,10}' + _EUGENIC + r'|' + _EUGENIC + r'|'
+    + _MINDO)
+
 # スレタイ品質（1レス目）。本物スレタイ188本実測＝とかいう4%/結論書ききりは0。AI臭の典型を機械検出。
 TITLE_TOKAIU_RE = re.compile(r'とかいう')
 # 結論書ききり・ブログ/AI臭（「実は〜だった」「〜という真実」「〜が判明」等）。※「→嘘でした」は本物の型なので除外。
@@ -140,6 +156,20 @@ def check(path, mn=2500, mx=3200, era=None):
         warns.append('属性侮辱疑い')
         hints.append('属性(民族/性別/身分等)ベースの侮辱の疑い→必ず文脈確認＆youtube-script-checker(LLM)へ。煽りは"人物の能力・評価"に向け直す：' + ' '.join(attr_hits[:5]))
     print(f'{mark("warn" if attr_hits else "ok")} 属性侮辱の疑い: {len(attr_hits)}件（要LLM文脈確認）')
+
+    # 2d. 非人間化（集団語に近接＝ほぼ確実にヘイト→FAIL）
+    dehum = [f"#{p['n']}「{p['body'][:24]}」" for p in posts if DEHUMANIZE_RE.search(p['body'])]
+    if dehum:
+        fails.append('非人間化ヘイト')
+        hints.append('⚠️集団(民族/外国人等)の非人間化表現(湧く/害虫/駆除/根絶やし等)＝YouTube規約一発アウト → 即削除。煽りは"人物個人の能力・評価"へ向ける：' + ' '.join(dehum[:5]))
+    print(f'{mark("fail" if dehum else "ok")} 非人間化ヘイト: {len(dehum)}件')
+
+    # 2e. 婉曲差別の疑い（血統本質主義/帰れ系/民度/優生＝文脈差別・WARN→LLM）
+    euph = [f"#{p['n']}「{p['body'][:26]}」" for p in posts if EUPHEMISM_RE.search(p['body'])]
+    if euph:
+        warns.append('婉曲差別疑い')
+        hints.append('婉曲な差別の疑い(◯◯人の血/民族性/国民性・帰れ系・民度・優生)→必ず文脈確認＆youtube-script-checker(LLM)へ。属性でなく"人物の行動・実績"を論じる形に直す：' + ' '.join(euph[:5]))
+    print(f'{mark("warn" if euph else "ok")} 婉曲差別の疑い: {len(euph)}件（要LLM文脈確認）')
 
     # 3. メタ自己言及締め
     meta_hits = [f"#{p['n']}「{p['body'][:20]}」" for p in posts if META_RE.search(p['body'])]
