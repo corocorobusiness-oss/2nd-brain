@@ -44,6 +44,35 @@ SLUR_CONTEXT_RE = re.compile(
     + ATTR_GROUP + r'.{0,10}' + _DEROG + r'|'
     + _DEROG + r'.{0,10}' + ATTR_GROUP)
 
+# スレタイ品質（1レス目）。本物スレタイ188本実測＝とかいう4%/結論書ききりは0。AI臭の典型を機械検出。
+TITLE_TOKAIU_RE = re.compile(r'とかいう')
+# 結論書ききり・ブログ/AI臭（「実は〜だった」「〜という真実」「〜が判明」等）。※「→嘘でした」は本物の型なので除外。
+TITLE_CONCL_RE = re.compile(r'という真実|が判明|ことが判明|実は.{0,12}(?:だった|でした|なんだ|なのだ|な件)|衝撃の事実|驚きの真実|ヤバすぎた真実')
+
+# 時代タグ照合（人物の実在年代とトーン指示の時代タグを機械照合。立花宗茂[戦国]に"時代=飛鳥"が付く等の分類事故を防ぐ）
+ERA_ORDER = ['縄文', '弥生', '古墳', '飛鳥', '奈良', '平安', '鎌倉', '室町', '戦国', '江戸', '幕末']
+ERA_TABLE = {
+    '縄文': ['縄文人'],
+    '弥生': ['卑弥呼', '邪馬台'],
+    '飛鳥': ['聖徳太子', '厩戸', '蘇我入鹿', '蘇我馬子', '蘇我蝦夷', '中大兄', '中臣鎌足', '天智天皇', '天武天皇', '推古'],
+    '奈良': ['鑑真', '聖武天皇', '行基', '道鏡', '阿倍仲麻呂', '長屋王'],
+    '平安': ['平清盛', '源義経', '源頼朝', '紫式部', '清少納言', '藤原道長', '菅原道真', '平将門', '安倍晴明', '源義仲', '源義家'],
+    '鎌倉': ['北条政子', '北条時宗', '北条義時', '後醍醐', '楠木正成', '新田義貞'],
+    '室町': ['足利尊氏', '足利義満', '足利義政', '日野富子'],
+    '戦国': ['北条早雲', '斎藤道三', '今川義元', '武田信玄', '上杉謙信', '織田信長', '明智光秀', '豊臣秀吉', '徳川家康', '石田三成', '真田幸村', '真田信繁', '伊達政宗', '立花宗茂', '大谷吉継', '北条氏康', '毛利元就', '前田利家', '加藤清正', '福島正則', '島津義弘', '直江兼続', '黒田官兵衛', '長宗我部'],
+    '江戸': ['徳川家光', '徳川綱吉', '徳川吉宗', '田沼意次', '松平定信', '大塩平八郎', '水戸黄門', '吉良', '赤穂'],
+    '幕末': ['坂本龍馬', '西郷隆盛', '徳川慶喜', '勝海舟', '新選組', '新撰組', '土方歳三', '榎本武揚', '大久保利通', '吉田松陰'],
+}
+
+
+def infer_era(text):
+    """テキスト(主にスレタイ)から登場人物を拾って実在年代を推定。返り値=(era, 人物) or (None, None)"""
+    for era, names in ERA_TABLE.items():
+        for nm in names:
+            if nm in text:
+                return era, nm
+    return None, None
+
 
 def parse(path):
     posts = []
@@ -60,7 +89,7 @@ def mark(ok):
     return '✅' if ok == 'ok' else ('⚠️ ' if ok == 'warn' else '❌')
 
 
-def check(path, mn=2500, mx=3200):
+def check(path, mn=2500, mx=3200, era=None):
     posts = parse(path)
     if not posts:
         print('❌ パース失敗：レス行が見つからない')
@@ -203,18 +232,75 @@ def check(path, mn=2500, mx=3200):
                 hints.append(f'解説長文が ID:{top_id} に{int(share*100)}%集中＝講義臭（最大のAI臭）→ 解説を3人以上に分散。1スレ1回「住人が間違える→知識ニキ以外が訂正→本人が引き下がる」を作る')
             print(f'{mark("warn" if share>0.45 else "ok")} 知識役の分散: 最多ID {top_id} が長文の{int(share*100)}%（45%以下が目標）')
 
-    # 11. スレタイ（1レス目）
+    # 11. スレタイ（1レス目）＝本物61本のauditで誤検知を抑えた判定。
+    #   ・「」内/【】内の読点は構造的二節ではないので地の文(bare)で判定
+    #   ・二段重ねは「主張、…？」(、が？より前)のみ。断定？＋列挙(、)は除外
+    #   ・説明過多は ？無し・【】始まりでない・26字超 に限定／長いは45字超
+    #   ・とかいうは型ラベルで示すだけ（単発は本物で許容・連発抑制はプロトコル側）
     title = bodies[0]
+    bare = re.sub(r'【[^】]*】', '', re.sub(r'「[^」]*」', '', title))  # 「」内・【】内を除いた地の文
+    cpos = bare.find('、')
+    qpos = next((i for i, c in enumerate(bare) if c in '？?'), -1)
     t_fail = []
-    if '"' in title or '"' in title:
+    if '"' in title or '"' in title or '＂' in title:
         t_fail.append('ASCII"使用')
-    if '、' in title and ('？' in title or '?' in title):
-        t_fail.append('二段重ね疑い')
-    if len(title) > 42:
+    if cpos >= 0 and qpos >= 0 and cpos < qpos:
+        t_fail.append('二段重ね疑い(主張、…？)')
+    elif cpos >= 0 and qpos < 0 and len(title) > 26 and not title.startswith('【'):
+        t_fail.append('説明過多疑い(、で二節)')
+    if TITLE_CONCL_RE.search(title):
+        t_fail.append('結論書ききり/ブログ臭')
+    if len(title) > 45:
         t_fail.append(f'長い({len(title)}字)')
+    # ←列挙の語の使い回し（2026-06-17ブラインドで判明＝同じ評を2回使うとAI臭。本物は各項バラける）
+    arrow_vals = re.findall(r'←([^←　\s]+)', title)
+    if len(arrow_vals) >= 2:
+        dup = [w for w, c in Counter(arrow_vals).items() if c >= 2 and len(w) >= 2]
+        if dup:
+            t_fail.append('←列挙の使い回し(' + '/'.join(dup) + ')')
+    # 型の自動判定（毎回違う型を引けてるか・偏り把握用）
+    if '「' in title and '」' in title:
+        ttype = 'セリフ寸劇'
+    elif '←' in title:
+        ttype = '←ツッコミ'
+    elif re.search(r'【.+?】', title):
+        ttype = '【ブラケット】'
+    elif TITLE_TOKAIU_RE.search(title):
+        ttype = 'とかいう'
+    elif '→' in title:
+        ttype = '→列挙/通説破壊'
+    elif re.search(r'[ｗw]{2,}$|草$', title):
+        ttype = '末尾ｗ草'
+    elif title.endswith('？') or title.endswith('?'):
+        ttype = '疑問'
+    else:
+        ttype = '断定/その他'
     if t_fail:
-        warns.append('スレタイ'); hints.append('スレタイ → 1フックで止める/「」のみ/結論を書ききらない: ' + '・'.join(t_fail))
-    print(f'{mark("warn" if t_fail else "ok")} スレタイ: 「{title[:30]}」{" ←"+",".join(t_fail) if t_fail else ""}')
+        warns.append('スレタイ'); hints.append('スレタイ → 型違いで複数案出して採点し直す/1フックで止める/「」のみ/結論を書ききらない（「実は〜だった」「という真実」はAI臭）: ' + '・'.join(t_fail))
+    print(f'{mark("warn" if t_fail else "ok")} スレタイ[{ttype}]: 「{title[:30]}」{" ←"+",".join(t_fail) if t_fail else ""}')
+
+    # 11c. 時代タグ照合（--era指定時のみ判定。未指定なら推定年代を情報表示）
+    inf_era, inf_who = infer_era(bodies[0])
+    if inf_era is None:
+        print('🧭 時代タグ照合: スレタイから既知人物を検出できず（テーブル外）→ スキップ')
+    elif era:
+        # トーン指示の時代タグ(era)と人物実在年代(inf_era)を照合。順序が2段以上離れたらズレ。
+        def _idx(e):
+            for i, x in enumerate(ERA_ORDER):
+                if x in e or e in x:
+                    return i
+            return None
+        gi, ti = _idx(inf_era), _idx(era)
+        if ti is None:
+            print(f'🧭 時代タグ照合: 指定タグ「{era}」が未知（{inf_who}={inf_era}）→ 参考のみ')
+        elif abs(gi - ti) >= 2:
+            fails.append('時代タグ不一致')
+            hints.append(f'時代タグ不一致＝{inf_who}は{inf_era}の人物やのに指示タグが「{era}」（{abs(gi-ti)}段ズレ）→ タグを{inf_era}に直す or テーマを{era}の人物に差し替える')
+            print(f'❌ 時代タグ照合: {inf_who}＝{inf_era} vs 指示「{era}」＝{abs(gi-ti)}段ズレ（不一致）')
+        else:
+            print(f'✅ 時代タグ照合: {inf_who}＝{inf_era} ≒ 指示「{era}」（整合）')
+    else:
+        print(f'🧭 時代タグ照合: スレタイ人物「{inf_who}」＝{inf_era}（--eraで指定すると照合・現在は情報のみ）')
 
     # 12. 締め（最終レス）
     print(f'   末尾: 「{bodies[-1][:30]}」')
@@ -239,5 +325,6 @@ if __name__ == '__main__':
     ap.add_argument('file')
     ap.add_argument('--min', type=int, default=2500)
     ap.add_argument('--max', type=int, default=3200)
+    ap.add_argument('--era', default=None, help='トーン指示の時代タグ(例:戦国/飛鳥)。人物実在年代と機械照合')
     a = ap.parse_args()
-    sys.exit(check(a.file, a.min, a.max))
+    sys.exit(check(a.file, a.min, a.max, a.era))
