@@ -269,6 +269,141 @@ def check(path, mn=2500, mx=3200, era=None):
     print(f'{mark(soft("誤答訂正", teisei, 1))} 誤答→訂正の気配: {teisei}本（目標1+）')
     print(f'{mark(soft("笑いw", zw, 3))} 笑いw: 全角ｗ{zenw}+半角w{hanw}={zw}個（目標3+・半角wは本物で優勢でOK）')
 
+    # 9b. 接続「で、」のレス頭多用（2026-06-18 オーナー指摘＝同じ繋ぎの連発でAI臭。本物は接続詞を散らす）
+    #   レス頭の「で、（＝それで）」だけ数える。コピュラ「〜で、(である)」やテ形「飛んで、」は文中で自然なので対象外。
+    de_open = sum(1 for b in bodies if re.match(r'^(?:>>\d+\s*|↑\s*)?で、', b))
+    if de_open >= 2:
+        warns.append('で、多用')
+        hints.append(f'レス頭の接続「で、」が{de_open}本＝同じ繋ぎの連発でAI臭（句読点改行すると単独行で余計目立つ）→ 0〜1本に削減。てか/ところで/そんで/ほんで/そして/つまり/削除 に散らす。コピュラ「〜で、」やテ形「飛んで、」はOK')
+    print(f'{mark("warn" if de_open >= 2 else "ok")} 接続「で、」のレス頭: {de_open}本（0〜1が目標）')
+
+    # 9c. 語尾の偏り（2026-06-18 オーナー指摘＝同じ語尾の多用がAI臭。本物コーパスは9割が体言止め/言い切り、なんJ語尾は各1%未満）
+    #   各レスの末尾をなんJ語尾カテゴリに分類。flat(体言止め/言い切り/標準語)はNone。
+    def _gtail(b):
+        b = re.sub(r'^(?:>>\d+\s*|↑\s*)', '', b.strip())
+        return re.sub(r'[。、！？\.\?!ｗwＷ〜～…\s（）()「」]+$', '', b)
+    GOBI = [('わけや/わ', r'(わけや|わ)$'), ('やろ', r'やろ$'), ('やん', r'やん$'),
+            ('やねん/ねん', r'(やねん|ねん)$'), ('とる系', r'(とる|とった|とん|どる)$'),
+            ('んよ/んや', r'(んよ|んや|のよ)$'), ('やで', r'やで$'), ('な/なあ', r'(なあ|な)$'),
+            ('や/だ', r'(や|だ)$'), ('ンゴ', r'ンゴ$')]
+    def _gcat(t):
+        for nm, pat in GOBI:
+            if re.search(pat, t):
+                return nm
+        return None
+    gt = [_gcat(_gtail(b)) for b in bodies if _gtail(b)]
+    ng = len(gt) or 1
+    nanj = [g for g in gt if g]
+    nanj_share = len(nanj) * 100 // ng
+    gc = Counter(nanj)
+    # 説明おじさん語尾クラスタ（わけや/やねん/とる/んよ）＝本物コーパス全体で計≈5%なのに生成は3〜4倍に膨らむ最大の癖
+    EXPL = ('わけや/わ', 'やねん/ねん', 'とる系', 'んよ/んや')
+    expl_share = sum(v for k, v in gc.items() if k in EXPL) * 100 // ng
+    top_name, top_cnt = gc.most_common(1)[0] if gc else ('—', 0)
+    top_share = top_cnt * 100 // ng
+    # 基準=コーパス6119レス実測（なんJ語尾≈32%/説明クラスタ≈5%/な・なあが主力13%）。WARNは明確オーバー側で。
+    flat = nanj_share < 20
+    gobi_warn = nanj_share > 50 or expl_share > 12 or flat
+    if gobi_warn:
+        warns.append('語尾の偏り')
+        if flat:
+            hints.append(f'なんJ語尾{nanj_share}%＝削りすぎでフラット化(本物≈32%)→ や/やで/やろ/な/わ を足してなんJ味を戻す（目標帯20〜32%。標準語締めすぎは解説臭）')
+        else:
+            hints.append(f'語尾＝なんJ調{nanj_share}%(本物≈32%)・説明クラスタ(わけや/やねん/とる/んよ){expl_share}%(本物≈5%)・最多「{top_name}」{top_share}%＝同じ語尾の多用でAI臭 → なんJ語尾は35%前後・説明クラスタ12%未満に。特に〜わけや/〜やねん/〜やん/〜んよ の連発をほどき体言止め・言い切りに散らす（同一語尾3連続禁止。「な/なあ」は本物主力なので減らさなくてよい）')
+    print(f'{mark("warn" if gobi_warn else "ok")} 語尾の偏り: なんJ語尾{nanj_share}%(基準≈32%・20〜32帯){" ←フラット化" if flat else ""} / 説明クラスタ{expl_share}%(基準≈5%・12%未満) / 最多「{top_name}」{top_share}%')
+
+    # === 9d〜9h: 多次元AI癖ゲート群（2026-06-18 ultracode多次元監査で確定。本物コーパス6119レス実測基準）===
+    body_join = '\n'.join(bodies)
+    nb = len(bodies) or 1
+    def _head(b):
+        return re.sub(r'^(?:>>\d+\s*|↑\s*)', '', b.strip())
+
+    # 9d. 本物0件の作為クセ（即FAIL）＋ ナレ接着レス頭クラスタ（接続詞/定型句/構造の共通指摘）
+    banned0 = [w for w in ('それがな', 'それがそう', 'これ豆な', 'ここ大事') if w in body_join]
+    if banned0:
+        fails.append('本物0件クセ')
+        hints.append('本物コーパス0件の作為クセ ' + '/'.join(banned0) + ' → 全削除/別表現へ（ナレ講釈臭の主因・ゼロ強制）')
+    print(f'{mark("fail" if banned0 else "ok")} 本物0件クセ(それがな/これ豆な/ここ大事等): {len(banned0)}種')
+    NARRA = ('それがな', 'それが', 'そう、', 'そうなる', 'そっから', 'そんで', 'もはや', 'つまり', '結局')
+    narra_pct = sum(1 for b in bodies if _head(b).startswith(NARRA)) * 100 // nb
+    so_pct = sum(1 for b in bodies if _head(b).startswith('そ')) * 100 // nb
+    nd_warn = narra_pct > 3 or so_pct > 9
+    if nd_warn:
+        warns.append('ナレ接着頭')
+        hints.append(f'物語つなぎのレス頭(それがな/結局/そんで/もはや等){narra_pct}%・そ始まり{so_pct}%＝ナレ講釈臭（本物≈0.3%/4.5%）→ 主語始まり(将門は〜)や>>N受けに。同じ頭語を3レス以内に再使用しない')
+    print(f'{mark("warn" if nd_warn else "ok")} ナレ接着レス頭: {narra_pct}%(基準≈0.3/閾3) / そ始まり{so_pct}%(基準4.5)')
+    # 9d2. レス頭フィラー同語3連発（文中と区別＝レス頭のみ。本物は同語頭の連発が稀）
+    HEADW = ('それがな','それが','結局','つまり','まあ','正直','そもそも','ちな','てか','そんで','もはや','で、','要は','ようは')
+    head_hits = Counter()
+    for b in bodies:
+        h = _head(b)
+        for w in HEADW:
+            if h.startswith(w):
+                head_hits[w] += 1
+                break
+    head_rep = [(w, c) for w, c in head_hits.items() if c >= 3]
+    if head_rep:
+        warns.append('レス頭同語連発')
+        hints.append('同じフィラーがレス頭で3回以上: ' + '/'.join(f'{w}×{c}' for w, c in head_rep) + ' → レス頭は同語2回までに散らす(文中はOK・文頭/文中を区別)')
+    print(f'{mark("warn" if head_rep else "ok")} レス頭同語連発: {("/".join(f"{w}×{c}" for w,c in head_rep)) if head_rep else "なし(各2回以内)"}')
+
+    # 9e. 談話標識の本物比上限
+    disc = []
+    if body_join.count('結局') * 100 // nb > 4:
+        disc.append('結局' + str(body_join.count('結局') * 100 // nb) + '%(本物0.7)')
+    if (body_join.count('要は') + body_join.count('ようは')) * 100 // nb > 2:
+        disc.append('要は系過多')
+    if (body_join.count('ってこと') + body_join.count('っちゅう')) * 100 // nb > 4:
+        disc.append('ってこと系過多')
+    if disc:
+        warns.append('談話標識過多')
+        hints.append('談話標識 ' + '/'.join(disc) + '（本物比過剰）→ つまり/しょせん/そのまま/体言始まりに散らす。置換先で別のレア語過剰を作らない')
+    print(f'{mark("warn" if disc else "ok")} 談話標識: {"/".join(disc) if disc else "OK"}')
+
+    # 9f. 説明おじさんクラスタ密度（最終語尾だけでなく句末・節末／長文の途中節も数える）
+    clause = re.findall(r'(わけや|やねん|んよ|んどる|っとる|とった|とる)(?=[。、！？\sｗwやでなねの]|$)', body_join)
+    dens = len(clause) * 100 // nb
+    if dens > 12:
+        warns.append('説明クラスタ密度')
+        hints.append(f'説明おじさん語尾(わけや/やねん/んよ/とる)が節末含め{dens}語/100res＝本物≈1.8の過剰 → 長文の途中節末も〜てる/〜んや/体言止めに散らす（1レス1回まで）')
+    print(f'{mark("warn" if dens > 12 else "ok")} 説明クラスタ密度(節末含む): {dens}語/100res（基準≈1.8・12未満目標）')
+
+    # 9g. 長文の解説お膳立て頭率 ＆ アンカー応答率（独り語り検出）※parse()がanc(>>N)を分離済みなのでpostsで判定
+    long_posts = [p for p in posts if len(p['body']) >= 80]
+    nl2 = len(long_posts) or 1
+    EXPL_HEAD = ('それがな', 'それが', 'ちな', 'ちなみ', 'そもそも', 'しかも', 'ここ大事', 'もういっこ', 'ついでに', 'あと同じ', 'これ豆な')
+    exhead = sum(1 for p in long_posts if p['body'].startswith(EXPL_HEAD)) * 100 // nl2
+    lanc = sum(1 for p in long_posts if p['anc'] is not None) * 100 // nl2
+    lg_warn = exhead > 8 or lanc < 25
+    if lg_warn:
+        warns.append('長文の独り語り')
+        hints.append(f'長文の解説お膳立て頭{exhead}%(本物≈3%)/アンカー始まり{lanc}%(本物≈52%)＝独り語りで降る兆候 → 長文の1/4以上は直前の懐疑・質問へ>>N受けで開く（偽アンカー禁止）')
+    print(f'{mark("warn" if lg_warn else "ok")} 長文({nl2}本)独り語り: お膳立て頭{exhead}%(基準≈3) / アンカー始まり{lanc}%(基準≈52・25以上目標)')
+
+    # 9h. 記号ゲート（ASCII"は即FAIL・笑い記号率・カタカナ強調・オノマトペ・↑）
+    ascii_dq = body_join.count('"') + body_join.count('“') + body_join.count('”') + body_join.count('＂')
+    if ascii_dq:
+        fails.append('ASCII"使用')
+        hints.append(f'ASCIIダブルクオートが本文に{ascii_dq}箇所＝本物0件のNG → 引用・強調は「」のみ（入れ子も「」）')
+    warai_rate = sum(1 for b in bodies if re.search(r'[ｗ草]|(?<![A-Za-z])w+(?![A-Za-z])', b)) * 100 // nb
+    sym = []
+    if warai_rate > 6:
+        sym.append(f'笑い記号レス{warai_rate}%(本物2.3/目標3-4)')
+    if len(re.findall(r'ド[真派]', body_join)) > 2:
+        sym.append('ド+語強調過多')
+    if len(re.findall(r'ポツン|ポンポン|ブチギレ|ゾッと|ブッキラ', body_join)) > 1:
+        sym.append('オノマトペ過多')
+    if '↑' in body_join:
+        sym.append('↑参照(>>Nへ)')
+    if len(re.findall(r'[!！][?？]', body_join)) > 1:
+        sym.append('!?連結過多(本物0.14%)')
+    if len(re.findall(r'エグ', body_join)) > 1:
+        sym.append('現代スラング(エグ)連発')
+    if sym:
+        warns.append('記号の癖')
+        hints.append('記号 ' + '/'.join(sym) + ' → 本物水準に。前レス参照は↑でなく>>N')
+    print(f'{mark("fail" if ascii_dq else ("warn" if sym else "ok"))} 記号ゲート: ASCII\"={ascii_dq}(即FAIL) / {"/".join(sym) if sym else "他OK"}')
+
     # 10. ID（本物寄せ）＋知識役の一極集中（最大のAI臭・2026-06-16監査でHigh）
     if has_id:
         idc = Counter(p['id'] for p in posts if p['id'])
