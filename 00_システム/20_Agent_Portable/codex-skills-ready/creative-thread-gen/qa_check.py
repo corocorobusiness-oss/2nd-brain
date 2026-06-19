@@ -324,18 +324,26 @@ def check(path, mn=2500, mx=3200, era=None):
     expl_share = sum(v for k, v in gc.items() if k in EXPL) * 100 // ng
     top_name, top_cnt = gc.most_common(1)[0] if gc else ('—', 0)
     top_share = top_cnt * 100 // ng
-    # 基準=コーパス6119レス実測（なんJ語尾≈32%/説明クラスタ≈5%/な・なあが主力13%）。WARNは明確オーバー側で。
+    # 9c2: 単一語尾の過集中（2026-06-19 オーナー指摘＝やろ/わ等が個別に本物比で過多でも集計ゲートを素通りする穴）。
+    #   な/なあ(本物の主力語尾)は除外。corpus14本実測=やろ≈5%/わ系≈3%/他≤2%なので、個別が SINGLE_CAP 超なら過集中WARN。
+    SINGLE_CAP = 6
+    over_single = sorted([(k, v * 100 // ng) for k, v in gc.items()
+                          if k != 'な/なあ' and (v * 100 // ng) > SINGLE_CAP], key=lambda x: -x[1])
+    # 基準=コーパス14本約7432レス実測（なんJ語尾≈27〜32%/説明クラスタ≈5%/な・なあが主力10〜13%）。WARNは明確オーバー側で。
     # 上限WARNは「な/なあ」(本物の主力語尾・減らす対象でない)を母数から外したcore比で判定（2026-06-19: な/なあ算入の自己矛盾WARNを解消）
     core_share = len([g for g in nanj if g != 'な/なあ']) * 100 // ng
     flat = nanj_share < 20
-    gobi_warn = core_share > 42 or expl_share > 12 or flat
+    gobi_warn = core_share > 42 or expl_share > 12 or flat or bool(over_single)
     if gobi_warn:
         warns.append('語尾の偏り')
         if flat:
             hints.append(f'なんJ語尾{nanj_share}%＝削りすぎでフラット化(本物≈32%)→ や/やで/やろ/な/わ を足してなんJ味を戻す（目標帯20〜32%。標準語締めすぎは解説臭）')
         else:
             hints.append(f'語尾＝なんJ調{nanj_share}%(うちな/なあ除くcore{core_share}%・本物≈32%)・説明クラスタ(わけや/やねん/とる/んよ){expl_share}%(本物≈5%)・最多「{top_name}」{top_share}%＝同じ語尾の多用でAI臭 → core語尾は42%未満・説明クラスタ12%未満に。特に〜わけや/〜やねん/〜やん/〜んよ の連発をほどき体言止め・言い切りに散らす（同一語尾3連続禁止。「な/なあ」は本物主力なので減らさなくてよい）')
+        if over_single:
+            hints.append('単一語尾の過集中: ' + '/'.join(f'{k}{v}%' for k, v in over_single) + f'（本物は各≤5%／な・なあ除く）→ 同じ結びを{SINGLE_CAP}%以下に散らす。特に長文の締めを〜わ/〜わけや/〜やろで揃えず体言止め・言い切り・別語尾に')
     print(f'{mark("warn" if gobi_warn else "ok")} 語尾の偏り: なんJ語尾{nanj_share}%/core{core_share}%(な除外・上限42){" ←フラット化" if flat else ""} / 説明クラスタ{expl_share}%(基準≈5%・12%未満) / 最多「{top_name}」{top_share}%')
+    print(f'{mark("warn" if over_single else "ok")} 単一語尾の過集中(な/なあ除く): {("/".join(f"{k}{v}%" for k,v in over_single)) if over_single else f"なし(各≤{SINGLE_CAP}%)"}')
 
     # === 9d〜9h: 多次元AI癖ゲート群（2026-06-18 ultracode多次元監査で確定。本物コーパス6119レス実測基準）===
     body_join = '\n'.join(bodies)
