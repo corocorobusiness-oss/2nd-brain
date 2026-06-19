@@ -390,16 +390,17 @@ def check(path, mn=2500, mx=3200, era=None):
         disc.append('ってこと系過多')
     if disc:
         warns.append('談話標識過多')
-        hints.append('談話標識 ' + '/'.join(disc) + '（本物比過剰）→ つまり/しょせん/そのまま/体言始まりに散らす。置換先で別のレア語過剰を作らない')
+        hints.append('談話標識 ' + '/'.join(disc) + '（本物比過剰）→ そのまま/体言始まり/言い切りに散らす（つまり/しょせん等のSCAF説明語へ逃がさない＝9iで罰せられる）。置換先で別のレア語過剰を作らない')
     print(f'{mark("warn" if disc else "ok")} 談話標識: {"/".join(disc) if disc else "OK"}')
 
-    # 9f. 説明おじさんクラスタ密度（節末含む）。閾値は本物自然帯(参照3本=18〜24)を誤WARNしない26へ緩和（2026-06-19 敵対監査）。
+    # 9f. 説明おじさんクラスタ密度（節末含む）。2026-06-19 ギャップ監査で旧コメント「本物自然帯18〜24・閾26」が実測に無い捏造値と判明
+    #   （実測=個別66スレで中央0・平均1.2・p90=3・最大9・26超は0/66本）→ 閾値を6に是正。
     clause = re.findall(r'(わけや|やねん|んよ|んどる|っとる|とった|とる)(?=[。、！？\sｗwやでなねの]|$)', body_join)
     dens = len(clause) * 100 // nb
-    if dens > 26:
+    if dens > 6:
         warns.append('説明クラスタ密度')
-        hints.append(f'説明おじさん語尾(わけや/やねん/んよ/とる)が節末含め{dens}語/100res＝過剰 → 長文の途中節末も〜てる/〜んや/体言止めに散らす（1レス1回まで）')
-    print(f'{mark("warn" if dens > 26 else "ok")} 説明クラスタ密度(節末含む): {dens}語/100res（基準≈1.8・本物自然帯18〜24・26超でWARN）')
+        hints.append(f'説明おじさん語尾(わけや/やねん/んよ/とる)が節末含め{dens}語/100res＝本物(中央0・p90=3・最大9)の数倍 → 長文の途中節末も〜てる/〜んや/体言止めに散らす（1レス1回まで）')
+    print(f'{mark("warn" if dens > 6 else "ok")} 説明クラスタ密度(節末含む): {dens}語/100res（本物 中央0・p90=3・最大9／6超でWARN）')
 
     # 9g. 長文の解説お膳立て頭率 ＆ アンカー応答率（独り語り検出）※parse()がanc(>>N)を分離済みなのでpostsで判定
     long_posts = [p for p in posts if len(p['body']) >= 80]
@@ -436,6 +437,47 @@ def check(path, mn=2500, mx=3200, era=None):
         warns.append('記号の癖')
         hints.append('記号 ' + '/'.join(sym) + ' → 本物水準に。前レス参照は↑でなく>>N')
     print(f'{mark("fail" if ascii_dq else ("warn" if sym else "ok"))} 記号ゲート: ASCII\"={ascii_dq}(即FAIL) / {"/".join(sym) if sym else "他OK"}')
+
+    # ===== 9i〜9l: 2026-06-19 ギャップ監査(8軸×敵対検証・本物コーパス約7432レス)で確定した追加ゲート群 =====
+    #   共通の根＝全ゲートPASSでも残る「質感の単調さ」。本物は8〜9割が淡々と事実を投げて去る無色レス。
+    #   生成は短文も長文も毎回ウィット/感情オチ/説明エッセイ語を載せ、全員が等しく上手く・熱く解説してしまう。
+
+    # 9i. SCAF=説明エッセイ語（解説者の地の文がレスに混入）。本物≈0.3〜0.95/100res(per-file最大2.74)↔生成t2≈32。9fのregexトークンと重複ゼロ。
+    SCAF = ('いわば', 'しょせん', 'つまり', 'そこは', '出来すぎ', 'てもうた', 'てもた', '前代未聞',
+            '運否天賦', '紙一重', '二面性', '王道', '尾ひれ')
+    scaf_n = sum(body_join.count(w) for w in SCAF)
+    scaf_dens = scaf_n * 100 // nb
+    if scaf_dens > 3:
+        warns.append('説明エッセイ語(SCAF)')
+        hints.append(f'解説者の地の文語(いわば/しょせん/つまり/紙一重/運否天賦/前代未聞/二面性/王道/尾ひれ等)が{scaf_dens}/100res＝本物≈0.3〜0.95の数十倍＝"住人が全員上手く解説してしまう"最大の癖 → 評価・総括の地の文を削り、住人は事実か茶々を投げて去る形に。長文締めの意味づけ一文を落とす')
+    print(f'{mark("warn" if scaf_dens > 3 else "ok")} 説明エッセイ語(SCAF)密度: {scaf_dens}/100res（本物≈0.3〜0.95・3超でWARN）')
+
+    # 9j. 感情温度のサチュレーション。本物は無色(攻撃も感嘆も!?もない)レスが85〜87%。生成は温度ありレス≈35%(3〜4倍)。
+    ATTACK = re.compile(r'やんけ|雑魚|論破|にわか|エアプ|過大評価|盛りすぎ|引くわ|信者|負け犬|イキ|調子乗')
+    TENSION = re.compile(r'ファッ|マ[?？]|はえ|すご|つよ|最強|エグ|こわ|すこ|ロマン|ヤバ|胸熱|鳥肌|草どころ|大草原')
+    EXCLAIM = re.compile(r'[!！][?？]')
+    hot = sum(1 for b in bodies if ATTACK.search(b) or TENSION.search(b) or EXCLAIM.search(b))
+    hot_rate = hot * 100 // nb
+    if hot_rate > 22:
+        warns.append('感情温度サチュレーション')
+        hints.append(f'温度ありレス(攻撃/高テンション/!?){hot_rate}%＝本物4〜12%の3〜4倍。本物は8〜9割が淡々と事実を投げて去る無色レス → ウィットや感情オチの無い「言いっぱなし/相槌だけ」のフラットなレスを増やす（無色レス68%以上が目標）')
+    print(f'{mark("warn" if hot_rate > 22 else "ok")} 感情温度: 温度ありレス{hot_rate}%（本物4〜12%・22超でWARN／無色レスが本物85%）')
+
+    # 9k. 「でな、/てな、」文中接続＝本物全7948レスで0件の生成クセ（説明を繋ぐ口癖）。
+    dena = len(re.findall(r'[ぁ-んァ-ヶ一-龥][でて]な[、，]', body_join))
+    if dena >= 2:
+        warns.append('でな/てな文中接続')
+        hints.append(f'「〜でな、」「〜てな、」が文中に{dena}件＝本物0件の生成クセ → そこで文を切る/体言止めにする')
+    print(f'{mark("warn" if dena >= 2 else "ok")} でな/てな文中接続: {dena}件（本物0・2件以上でWARN）')
+
+    # 9l. 長文の壁化。本物の長文は91字+が23%だが生成は71〜75%＝全部盛りの説明壁（9gお膳立てとは別断面）。
+    longs60 = [p['body'] for p in posts if len(p['body']) >= 60]
+    wall_rate = (sum(1 for b in longs60 if len(b) >= 91) * 100 // len(longs60)) if longs60 else 0
+    # 閾値55＝本物14本FP実測0(最大は今川/大塩の小規模連結スレで54%)・生成は83〜85%で確実に発火する分離点。
+    if wall_rate > 55:
+        warns.append('長文の壁化')
+        hints.append(f'長文(60字+)のうち91字+の壁が{wall_rate}%＝本物≈23%(最大54%)を大きく超過。AIは長文を全部盛りの説明壁にしがち → 長文を46〜90字の中尺に割り1レス1論点に分ける（中尺帯の空洞も同時に埋まる）')
+    print(f'{mark("warn" if wall_rate > 55 else "ok")} 長文の壁化(91字+比率): {wall_rate}%（本物≈23%・最大54%／55超でWARN）')
 
     # 10. ID（本物寄せ）＋知識役の一極集中（最大のAI臭・2026-06-16監査でHigh）
     if has_id:
