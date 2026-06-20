@@ -44,7 +44,7 @@ STEP3 解説対象の自動選定 → 解説者パート生成  →  /youtube-sc
       ・冒頭/前置き/締め＋解説×N を生成
 STEP4 アセンブル【本スキルの心臓部】→ /scripts/assemble_csv.py
       ・構成順に結合し、話者・大/下・返信先・解説挿入・句読点改行を機械付与
-      ・出力＝CSV(utf-8-sig) ＋ xlsx ＋ ~/Desktop複製 ＋ 会話ビューア(show_widget)
+      ・出力＝CSV(utf-8-sig) ＋ xlsx ＋ ~/Desktop複製（※会話ビューアは作らない＝不要との確定）
 STEP5 規約3段階チェック → /youtube-script-checker（8層＋LLM文脈＋ファクト）
 STEP6 読み仮名dic → /ymm4-dic-generator（毎回書き換え・漏れ/誤読ゼロ）
 STEP7 (任意) 発音チェック /ymm4-pronunciation-checker、タイトル/サムネ/概要欄 /youtube-script-parts、投稿予約
@@ -57,8 +57,8 @@ STEP7 (任意) 発音チェック /ymm4-pronunciation-checker、タイトル/サ
 - `_台本.xlsx`（折返し整形）
 - `.md`（人間可読・構成見出し付き）
 - `~/Desktop` への複製（CSV/xlsx/dic）
-- 会話ビューア（show_widget・スレタイ/話者/返信↳）
 - `ymm4_user.dic`（STEP6）
+- ※会話ビューア（show_widget）は**作らない**（オーナー判断＝不要）。レビューしたい時だけ単発依頼で出す
 
 ## 6. CSV組み立て規約【正本＝refs/組み立て規約.md にも複製】
 ### 6.1 列構成
@@ -94,12 +94,25 @@ STEP7 (任意) 発音チェック /ymm4-pronunciation-checker、タイトル/サ
 3. **解説挿入アンカーの自動特定**：解説対象用語が初出するレス番号を本文走査で自動検出し、挿入位置に。
 4. **大/下/>>の機械付与**：6.3〜6.6を決定的に適用（手判定ゼロ）。
 
+## 7.5 自動化グラデーション（確認ゲート → 学習 → 段階自動化）※設計の軸
+オーナー方針＝**「初期は各STEPで確認、ナレッジ/学習が溜まったらフル自動化も視野」**。
+- **初期＝全STEPで確認ゲートON**。各STEP完了時に結果を提示し、ユーザー承認を取ってから次へ。
+- 各STEPの判断を `learning-log.md` に記録：`STEP / 提案内容 / 判定[そのまま承認 or 修正→修正内容]`。
+- **成熟度トラッカー**：同種の判断がK回連続（暫定K=3〜5）で「そのまま承認」されたSTEPは、
+  スキルが「このSTEP、自動化していい？」と**提案**する（**提案専用＝勝手に自動化しない**）。
+- ユーザー承認で**そのSTEPだけ自動モードにflip**（他STEPは確認のまま個別運用）。
+- 自動化の進む順（判断が安定しやすい順）：STEP4アセンブル＞STEP6 dic＞STEP3解説対象選定＞…。
+- creative-thread-genの学習ループ（収集→学習→**承認**→検証付き適用）と同一哲学＝
+  **金/出荷に関わる所は実装者≠確認者の検証ゲートを残す**（rules.md準拠）。
+- 完全自動運用に移っても、STEP5規約チェックの🔴とqa_checkのFAILは**常にハードゲート**（自動承認しない）。
+
 ## 8. 同梱物（skill配下）
 - `scripts/assemble_csv.py` … threads(2)＋parts → CSV/MD（gen_csv.pyの汎用版）
 - `scripts/to_xlsx.py` … CSV→xlsx＋Desktop複製（make_xlsx.pyの汎用版）
-- `scripts/viewer_template.html` … 会話ビューア（スレタイ/話者色分け/返信↳）。show_widgetで投入
 - `refs/組み立て規約.md` … 6章の正本（人間レビュー用）
 - `refs/サンプル/` … 平将門の最終CSVを参照見本として同梱
+- `learning-log.md` … 各STEPの判断ログ（9章の自動化グラデーション用）
+- ※会話ビューアのテンプレは同梱しない（不要との確定）
 
 ## 9. エッジケース・失敗モード
 - 解説対象がスレに出てこない → ユーザーに代替提案（用語追加 or 解説スキップ）
@@ -111,12 +124,28 @@ STEP7 (任意) 発音チェック /ymm4-pronunciation-checker、タイトル/サ
 - `assemble_csv.py` を共有エンジン化し、youtube-pipeline STEP2-4/STEP4 もこれを呼ぶよう差し替え。
 - これで実スレ版／創作版の**両方が同一の組み立て規約**を使う＝規約の二重メンテ解消。
 
-## 11. 残論点（実装前に決める）
-1. スコープ：フルオーケストレーター（STEP1-7全部）か、アセンブル特化（STEP4＋出荷のみ）か。
-2. 解説対象の選定：完全自動 vs 毎回ユーザー確認（推奨＝提案→確認）。
-3. youtube-pipelineの扱い：今は別スキルで併存→将来共有エンジン化、でよいか。
-4. ビューアを毎回自動表示するか（任意トグル）。
-5. スキルの正本配置：`~/.claude/skills/creative-thread-pipeline/` ＋ ポータブル複製（既存トポロジ踏襲）。
+## 11. 論点の確定（2026-06-20 オーナー回答）
+1. **スコープ＝フルオーケストレーター（STEP1〜7）**。初期は**各STEPで確認ゲート**、
+   ナレッジ/学習が溜まれば段階自動化（→ 7.5章）。✅確定
+2. **解説対象の選定＝提案→確認**（後者）。同じく学習で自動化を視野。✅確定
+3. **youtube-pipelineの扱い＝〔ベスト案〕「組み立てエンジンの一本化」**。
+   - 本スキルが `assemble_csv.py`＋`refs/組み立て規約.md` の**正本**を持つ。
+   - 第2フェーズで youtube-pipeline(実スレ版) もこのエンジンを参照/採用し、STEP2-4/4を差し替え。
+   - 根拠＝両者の差は**生成ソース（scrape vs 創作生成）だけ**で、下流（組み立て→検品→dic→出荷）は同一。
+     下流を一本化すれば規約の二重メンテが消える。当面は別スキル併存でOK、規約だけ共有。✅確定
+4. **会話ビューア＝作らない**（不要）。✅確定
+5. **配置＝〔ベスト案〕既存スキル同期トポロジを踏襲**。
+   - 正本＝`~/.claude/skills/creative-thread-pipeline/`（編集は必ずここ）。
+   - ポータブル複製＝`00_システム/20_Agent_Portable/codex-skills-ready/creative-thread-pipeline/`。
+   - 根拠＝全スキルと同一配置＝既存の同期/移行の自動化にそのまま乗る（memory: skill-sync-topology）。✅確定
+
+## 12. 次アクション（実装フェーズ）
+- skill-creator で `~/.claude/skills/creative-thread-pipeline/` を生成。
+- SKILL.md＝本設計書の3〜10章を実装手順に落とす（各STEPに確認ゲート＋learning-log記録を組み込む）。
+- `scripts/assemble_csv.py` ＝ 平将門の gen_csv.py を汎用化（返信マップ自動導出・非破壊番号振り直しを実装）。
+- `scripts/to_xlsx.py` ＝ make_xlsx.py を汎用化。
+- `refs/組み立て規約.md`＋`refs/サンプル/`（平将門CSV）を同梱。
+- ポータブル複製を作成し同期確認。
 
 ---
 > 関連: [[claude-code-codex-obsidian-operation]] / 既存スキル youtube-pipeline・creative-thread-gen・ymm4-dic-generator
