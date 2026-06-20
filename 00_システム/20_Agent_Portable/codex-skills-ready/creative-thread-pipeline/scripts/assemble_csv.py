@@ -57,8 +57,14 @@ for sec in man["sections"]:
     # thread
     label = sec["label"]
     rmap = {int(k): int(v) for k, v in sec.get("reply_map", {}).items()}
-    inserts = {int(d["after_seq"]): d for d in sec.get("inserts", [])}
-    A["inserts_expected"] += len(inserts)
+    raw_inserts = sec.get("inserts", [])
+    inserts = {}
+    for d in raw_inserts:                      # 同一after_seq重複→即エラー（片方の無言消失を禁止）
+        a = int(d["after_seq"])
+        if a in inserts:
+            sys.exit(f"[ERROR] {label}: after_seq={a} に解説が重複指定（片方が無言消失するため禁止）")
+        inserts[a] = d
+    A["inserts_expected"] += len(raw_inserts)   # 元配列長で数える（dedupで期待値が下がる自己無効化を防ぐ）
     posts = parse_thread(resolve(sec["path"]))
     nseq = len(posts)
     thread_seqs = set(range(1, nseq + 1))
@@ -77,6 +83,7 @@ for sec in man["sections"]:
         sp = ROT[i % 5]
         if seq == 1:
             emit(sp, body, label, str(seq)); prev_dai = False
+            A.setdefault("thread_titles", []).append(sp)   # スレタイ話者を記録（labelテキスト非依存の受入チェック用）
         else:
             tgt = rmap.get(seq)
             if tgt is not None: A["confirmed"] += 1
@@ -127,8 +134,9 @@ outarrow = sum(1 for r in rows if ">>" in str(r[3]))
 dai_arrow = [r[3] for r in rows if r[0].endswith("大") and ">>" in str(r[3])]
 future = [r[3] for r in rows if ">>" in str(r[3])
           and int(str(r[3]).split(">>")[1]) >= int(str(r[3]).split(">>")[0])]
-title_rows = [r for r in rows if r[2].startswith("スレ") and r[3] == "1"]
-title_ok = all(r[0] == "男性A" for r in title_rows) and len(title_rows) > 0
+title_speakers = A.get("thread_titles", [])   # labelテキスト非依存（列挙系ラベルでも誤NGにならない）
+title_ok = len(title_speakers) > 0 and all(s == "男性A" for s in title_speakers)
+ascii_dq = [r[3] for r in rows if '"' in r[1]]   # 出荷物にASCII"が残ってないか（qaのハードゲートと整合）
 
 print("=== 組み立て結果 ===")
 for r in rows:
@@ -144,9 +152,11 @@ checks.append(("解説 本数発火 (期待=発火)", A['inserts_expected'] == l
                f"期待{A['inserts_expected']} / 発火{len(A['inserts_fired'])}@seq{A['inserts_fired']}"))
 checks.append(("大に>>なし", not dai_arrow, dai_arrow or "なし"))
 checks.append(("未来/自己参照なし", not future and not A['badmap'], (future + A['badmap']) or "なし"))
-checks.append(("スレタイ=男性A・各スレ先頭", title_ok, f"{len(title_rows)}本"))
+checks.append(("スレタイ=男性A・各スレ先頭", title_ok, f"{len(title_speakers)}スレ"))
+checks.append(("出荷物にASCII\"なし", not ascii_dq, ascii_dq or "なし"))
 for name, ok, detail in checks:
     print(f"  [{'OK' if ok else 'NG'}] {name}: {detail}")
+print("※§4.8は構造整合の検査。返信先が会話として噛み合うかの意味検査はしない＝STEP4.5の敵対監査(LLM)の責務。")
 print(f"\n抑制で消えた返信リンク(可視化): {A['suppressed'] or 'なし'}")
 print(f"総行数: {len(rows)}")
 print(f"出力CSV : {csv_path}")
