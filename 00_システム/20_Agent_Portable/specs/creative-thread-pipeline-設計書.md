@@ -135,8 +135,8 @@ youtube-script-checker が近代政治の固有名（GHQ／米軍／進駐軍／
 - **機械の自動補正（gap≥3で直近へ寄せる）は廃止**（§7のLLM判断降格と矛盾＋実証で破綻）。scriptは寄せない＝LLMが材料を見て決める。
 ### 6.7 句読点改行（TTS用）
 - セリフは `。、！？` の直後で改行（既存改行は一旦解除してから付与）
-### 6.8 文字コード
-- CSV=UTF-8(BOM付き/utf-8-sig)・LF。xlsxはセリフ列を折返し表示。
+### 6.8 文字コード・出荷物
+- CSV=UTF-8(BOM付き/utf-8-sig)・LF。**出荷はCSVのみ**（xlsx廃止2026-06-20）。目視は会話ビューアを単発で。
 ### 6.9 句点(。)・読点(、)は【あえてゲートしない】※将来の事故防止メモ
 - 本物2chは句点が極端に少ない＝AI臭の"穴"ではあるが、**うちのCSVはTTS用に句読点改行を使う**ため
   句点/読点を削ると改行ロジックが壊れる。よって**句点系の整然さは意図的にゲート対象外**にしている。
@@ -192,8 +192,9 @@ youtube-script-checker が近代政治の固有名（GHQ／米軍／進駐軍／
   - **after_seq＝再採番後の連番**（raw原スレ番号は載せない）。指定seqが実在しなければ**即エラー**
     （旧gen_csvはキー不在を黙ってスキップ＝解説が無言で消える穴があった）。
   - 話者ローテ・大下ラベル・句読点改行のみscriptが規約(§6)で機械付与。
-- `scripts/to_xlsx.py` … CSV→xlsx＋Desktop複製（make_xlsx.pyの汎用版）
-- `refs/組み立て規約.md` … 6章の正本（人間レビュー用）
+  - **§4.8受入チェックを内蔵**し、NG（未来/自己参照・大に>>・スレタイ不正・解説本数不一致）なら**exit 2**（"完成"と言わせない）。
+  - 副産物＝`_台本.md`(人間可読)＋`~/Desktop`へCSV複製。**xlsxは出さない**（to_xlsx.py廃止）。
+- `refs/組み立て規約.md` … 6章の正本（人間レビュー用）＋manifest正本スキーマ（sectionsリスト形）
 - `refs/サンプル/` … 平将門の最終CSVを参照見本として同梱
 - `learning-log.md` … 各STEPの判断ログ（9章の自動化グラデーション用）
 - ※会話ビューアのテンプレは同梱しない（不要との確定）
@@ -235,9 +236,17 @@ youtube-script-checker が近代政治の固有名（GHQ／米軍／進駐軍／
 - 実装メモ：
   - skill-creator で `~/.claude/skills/creative-thread-pipeline/` を生成。
   - SKILL.md＝本設計書の3〜10章を手順化（各STEPに確認ゲート＋learning-log）。
-  - `scripts/assemble_csv.py`＝gen_csv.py汎用化（**返信マップはLLM判断→manifest供給**・**スレread-only**・seq空間・大下/句読点のみ機械付与）。
-  - `scripts/to_xlsx.py`＝make_xlsx.py汎用化。`refs/組み立て規約.md`＋`refs/サンプル/`（平将門CSV）同梱。
+  - `scripts/assemble_csv.py`＝gen_csv.py汎用化（**返信マップはLLM判断→manifest供給**・**スレread-only**・seq空間・大下/句読点のみ機械付与・§4.8内蔵・CSV出力のみ）。
+  - `refs/組み立て規約.md`＋`refs/サンプル/`（平将門CSV＋manifest）同梱。**to_xlsx.pyは作らない**（CSV出力に確定）。
   - ポータブル複製を作成し同期確認。
+
+## 16. Phase1 実装完了ログ（2026-06-20）
+- `~/.claude/skills/creative-thread-pipeline/`（SKILL.md＋scripts/assemble_csv.py＋refs/組み立て規約.md＋refs/サンプル/＋learning-log.md）生成。ポータブル複製も完全一致で同期。
+- **出力＝CSVのみに確定**（オーナー指示）。xlsx/to_xlsx.py は廃止。目視は show_widget の会話ビューア（単発）。
+- assemble_csv.py に **§4.8受入チェック内蔵＋NGでexit 2**、section path を manifest相対で解決（CWD非依存）、`_台本.md`＋Desktop複製を追加。
+- **回帰テスト合格**：平将門 manifest から本番CSV(174行)を**差分0で再現**。§4.8全PASS（解説4本発火・大に>>なし・未来参照なし・抑制12件可視化）。
+- manifest正本スキーマ＝**sectionsリスト形**（§8ネスト案から確定）。`refs/組み立て規約.md`に記載。
+- 残＝Phase2（learning-log自動化グラデーション）／Phase3（youtube-pipelineへエンジン共有）／新ネタ初回実走。
 
 ## 13. レビュー反映ログ（2026-06-20）
 平将門の全工程と突き合わせ、設計の穴を反映：
