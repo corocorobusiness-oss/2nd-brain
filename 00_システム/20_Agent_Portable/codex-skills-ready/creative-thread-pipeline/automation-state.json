@@ -16,7 +16,7 @@
   },
   "STEP3": {
    "label": "解説対象・挿入位置",
-   "mode": "manual",
+   "mode": "auto",
    "streak": 3,
    "automatable": true,
    "hard_gate": false,
@@ -64,7 +64,7 @@
   },
   "STEP6": {
    "label": "読み仮名dic",
-   "mode": "manual",
+   "mode": "auto",
    "streak": 3,
    "automatable": true,
    "hard_gate": false,
