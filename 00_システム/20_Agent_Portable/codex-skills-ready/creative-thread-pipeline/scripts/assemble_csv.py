@@ -56,7 +56,9 @@ for sec in man["sections"]:
         continue
     # thread
     label = sec["label"]
+    A.setdefault("thread_labels", []).append(label)
     rmap = {int(k): int(v) for k, v in sec.get("reply_map", {}).items()}
+    override = {int(k): bool(v) for k, v in sec.get("dai_override", {}).items()}  # ⑤グレーゾーン手動確定
     raw_inserts = sec.get("inserts", [])
     inserts = {}
     for d in raw_inserts:                      # 同一after_seq重複→即エラー（片方の無言消失を禁止）
@@ -79,7 +81,10 @@ for sec in man["sections"]:
     prev_dai = False
     for i, (num, body) in enumerate(posts):
         seq = i + 1
-        c = clean(body); is_dai = len(c) >= 88   # 字数は句読点改行を付与する前の生本文で数える
+        c = clean(body); base_dai = len(c) >= 88   # 字数は句読点改行を付与する前の生本文で数える
+        is_dai = override.get(seq, base_dai)        # ⑤ dai_overrideがあれば88字判定より優先
+        if seq != 1 and 83 <= len(c) <= 92 and seq not in override:   # 境界±5字の未確認＝グレーゾーン
+            A.setdefault("grey", []).append({"label": label, "seq": seq, "len": len(c), "判定": "大" if is_dai else "非大"})
         sp = ROT[i % 5]
         if seq == 1:
             emit(sp, body, label, str(seq)); prev_dai = False
@@ -158,6 +163,21 @@ for name, ok, detail in checks:
     print(f"  [{'OK' if ok else 'NG'}] {name}: {detail}")
 print("※§4.8は構造整合の検査。返信先が会話として噛み合うかの意味検査はしない＝STEP4.5の敵対監査(LLM)の責務。")
 print(f"\n抑制で消えた返信リンク(可視化): {A['suppressed'] or 'なし'}")
+# ⑥ 出荷物(組み立て後CSV)の安価率を可視化＝WARN・exitには影響しない。
+#    ★帯域は生スレqaの18〜32%とは別物：CSVの>>は動画の返信表示を駆動するので密度が高く、
+#      本パイプラインの確立実績は≈44〜46%（平将門 本番=45/44%）。グロスな外れ値(盛り/薄すぎ)だけ拾う。
+for tl in A.get("thread_labels", []):
+    trows = [r for r in rows if r[2] == tl]
+    if not trows:
+        continue
+    ar = sum(1 for r in trows if ">>" in str(r[3]))
+    rate = round(100 * ar / len(trows))
+    flag = "" if 30 <= rate <= 55 else "  ⚠️帯域外(組立CSV目安30〜55%・実績≈45%)"
+    print(f"安価率 {tl}: {rate}% ({ar}/{len(trows)}){flag}")
+# ⑤ 大判定グレーゾーン（83〜92字でoverride未指定＝要確認。dai_overrideで確定可）
+if A.get("grey"):
+    print(f"大グレーゾーン(83〜92字・未確認{len(A['grey'])}件): {A['grey']}")
+    print('  → 必要なら manifestの該当threadに "dai_override": {"<seq>": true/false} を足して確定')
 print(f"総行数: {len(rows)}")
 print(f"出力CSV : {csv_path}")
 print(f"出力MD  : {md_path}")
