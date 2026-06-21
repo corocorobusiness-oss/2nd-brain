@@ -10,18 +10,20 @@
    "hard_gate": false,
    "history": [
     "modified:字数不足/禁止語で再生成",
-    "modified:zen字数不足で拡張(kouは一発PASS)"
+    "modified:zen字数不足で拡張(kouは一発PASS)",
+    "modified:zen伏字1個修正(字数は両スレ一発PASS)"
    ]
   },
   "STEP3": {
    "label": "解説対象・挿入位置",
    "mode": "manual",
-   "streak": 2,
+   "streak": 3,
    "automatable": true,
    "hard_gate": false,
    "history": [
     "approved:解説4本提案そのまま",
-    "approved:解説4本クラスタ末尾そのまま"
+    "approved:解説4本クラスタ末尾そのまま",
+    "approved:解説4本クラスタ末尾そのまま採用"
    ]
   },
   "STEP4": {
@@ -32,7 +34,8 @@
    "hard_gate": false,
    "history": [
     "approved:§4.8全PASS",
-    "modified:安価率73/92%→reply_map間引き"
+    "modified:安価率73/92%→reply_map間引き",
+    "modified:安価率の盛り→薄→43/42%に調整"
    ]
   },
   "STEP4.5": {
@@ -43,29 +46,32 @@
    "hard_gate": false,
    "history": [
     "modified:ナレVO化10箇所修正",
-    "modified:講義臭8+会話流れ2修正"
+    "modified:講義臭8+会話流れ2修正",
+    "modified:講義臭評価締め4+会話流れ2修正"
    ]
   },
   "STEP5": {
    "label": "規約チェック",
    "mode": "manual",
-   "streak": 2,
+   "streak": 3,
    "automatable": false,
    "hard_gate": true,
    "history": [
     "approved:ファクト0誤り",
-    "approved:ファクト0誤り規約クリア"
+    "approved:ファクト0誤り規約クリア",
+    "approved:規約/ファクト0誤り"
    ]
   },
   "STEP6": {
    "label": "読み仮名dic",
    "mode": "manual",
-   "streak": 2,
+   "streak": 3,
    "automatable": true,
    "hard_gate": false,
    "history": [
     "approved:dic319",
-    "approved:dic256"
+    "approved:dic256",
+    "approved:dic265"
    ]
   }
  }
