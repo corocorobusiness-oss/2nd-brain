@@ -1,0 +1,66 @@
+{
+ "K": 3,
+ "note": "K回連続approvedで自動化'提案'。flipはユーザー承認後のみ。hard_gate=trueは永久にauto不可。",
+ "steps": {
+  "STEP2": {
+   "label": "創作スレ生成(qa)",
+   "mode": "manual",
+   "streak": 0,
+   "automatable": true,
+   "hard_gate": false,
+   "history": [
+    "modified:字数不足/禁止語で再生成"
+   ]
+  },
+  "STEP3": {
+   "label": "解説対象・挿入位置",
+   "mode": "manual",
+   "streak": 1,
+   "automatable": true,
+   "hard_gate": false,
+   "history": [
+    "approved:解説4本提案そのまま"
+   ]
+  },
+  "STEP4": {
+   "label": "アセンブル(§4.8)",
+   "mode": "manual",
+   "streak": 1,
+   "automatable": true,
+   "hard_gate": false,
+   "history": [
+    "approved:§4.8全PASS"
+   ]
+  },
+  "STEP4.5": {
+   "label": "敵対監査",
+   "mode": "manual",
+   "streak": 0,
+   "automatable": true,
+   "hard_gate": false,
+   "history": [
+    "modified:ナレVO化10箇所修正"
+   ]
+  },
+  "STEP5": {
+   "label": "規約チェック",
+   "mode": "manual",
+   "streak": 1,
+   "automatable": false,
+   "hard_gate": true,
+   "history": [
+    "approved:ファクト0誤り"
+   ]
+  },
+  "STEP6": {
+   "label": "読み仮名dic",
+   "mode": "manual",
+   "streak": 1,
+   "automatable": true,
+   "hard_gate": false,
+   "history": [
+    "approved:dic319"
+   ]
+  }
+ }
+}

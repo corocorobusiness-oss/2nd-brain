@@ -105,10 +105,17 @@ youtube-pipeline（実スレscrape版）の**兄弟**＝下流（組み立て→
 - `~/Desktop` への CSV 複製＋ `ymm4_user.dic`（STEP6）
 - ※**xlsx は作らない**（オーナー決定2026-06-20）。目視は show_widget の会話ビューアを**単発依頼で**出す。
 
-## 学習と自動化（Phase2の土台）
-- 各STEPの判断は `learning-log.md` に **"ルール/修正パターン"で**記録（値は汎化しない）。
-- 同種判断がK回連続承認されたSTEPは、スキルが「このSTEP自動化していい？」と**提案**（提案専用・承認でそのSTEPだけflip）。
-- 完全自動運用に移っても、**STEP5の🔴と qa_check の FAIL は常にハードゲート**（金/出荷は実装者≠確認者・rules.md準拠）。
+## 学習と自動化グラデーション（Phase2・2026-06-21実装）
+判断ルールは `learning-log.md` に prose で（値は汎化しない）。STEP別の成熟度は **`scripts/maturity.py`＋`automation-state.json`** で機械管理する。
+
+**鉄則（絶対）**：①**勝手に自動化しない＝提案だけ**（flipはユーザーが「自動化していい」と言った後のみ）。②**🔴/FAIL/qa NEEDS-FIX のハードゲートは永久にauto不可**（STEP5は hard_gate＝ロック）。③**auto中に修正が入ったら即manual降格**（自動が早すぎたサイン）。④autoは「ユーザー確認をスキップ」するだけで、機械ゲート（qa・§4.8・規約🔴）は必ず実行する。
+
+**運用フロー**：
+1. **セッション開始時**に `python3 scripts/maturity.py status` を見る。mode=auto のSTEPは確認スキップで進めてよい（ハードゲートは実行）。manual は従来どおり提案→確認。
+2. **各STEP完了時**に結果を記録：ユーザーが提案をそのまま承認＝`record <STEP> approved`／修正が入った＝`record <STEP> modified "理由"`。modifiedは連続をリセット。
+3. K回（既定3）連続approvedになったSTEPは record時に「💡自動化を提案できる」と出る→**ユーザーに『このSTEP自動化していい？』と確認**→OKなら `flip <STEP> auto`。
+4. 自動化が進みやすい順＝STEP4アセンブル ＞ STEP6 dic ＞ STEP3解説選定（判断が安定しやすい順）。STEP5規約は永久にmanual。
+- creative-thread-genの学習ループ（収集→学習→**承認**→検証付き適用・実装者≠確認者）と同一哲学。金/出荷に関わる所の検証ゲートは残す（rules.md準拠）。
 
 ## エッジケース
 - 解説対象が0本/多すぎ/スレに出てこない → 代替提案（用語追加 or 本数調整 or スキップ）。

@@ -265,6 +265,13 @@ youtube-script-checker が近代政治の固有名（GHQ／米軍／進駐軍／
 - youtube-pipeline独自の上流(thread_scraper.py)・下流(規約3段階checker/dic/タイトル概要欄)は不変。**STEP4.5敵対監査は実スレには非適用**（AI生成でないため＝source固有）。
 - 検証：実スレ形式demoが共有エンジンで§4.8全PASS・既存2本回帰無傷。正本/ポータブル同期済。
 
+## 19. Phase2 完了ログ（2026-06-21・自動化グラデーション）
+- §7.5を実装＝`scripts/maturity.py`＋`automation-state.json`。STEP別に mode(manual/auto)/streak/history を機械管理。
+- **鉄則を実装で担保**：①提案専用（flipはユーザー承認後の手動コマンドのみ）②STEP5は hard_gate＝auto化を**コードで拒否**（🔴/FAIL/qa NEEDS-FIXは永久manual）③auto中に modified が来たら**自動でmanual降格**④autoは確認スキップのみ＝機械ゲートは必ず実行。
+- 運用：開始時 `maturity.py status`／各STEP後 `record <STEP> approved|modified`／K(=3)回連続approvedで「💡自動化提案」→ユーザーOKで `flip <STEP> auto`。自動化順＝STEP4＞STEP6＞STEP3。
+- 崇徳実績を投入（STEP3/4/6=連続1・STEP2/4.5=リセット・STEP5=ロック）。**flip提案はまだ無し**（K=3に未到達＝あと2回の安定承認が必要＝設計どおり慎重）。負テスト（STEP5 auto化拒否）合格。
+- これで Phase1(実装)→実走検証→敵対監査ハードニング→Phase3(エンジン共有)→Phase2(自動化グラデーション) が全着地。残＝実運用で各STEPの streak を積む／崇徳・将門の仕上げ。
+
 ## 13. レビュー反映ログ（2026-06-20）
 平将門の全工程と突き合わせ、設計の穴を反映：
 - ①解説位置=初出直後は誤り→クラスタ末尾＋確認（§4 STEP3/§6.2/§7-3）
