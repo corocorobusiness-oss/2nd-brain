@@ -52,18 +52,24 @@ Second Brainは、エージェントの作業場ではなく、事業OS。
 - ダウンロード済み依存パッケージ
 - 実行中プロセスの状態
 
-## Claude時代の資産の扱い
+## トポロジ（2026-06-23 4分離）
 
-Claude固有のスキルは、直接実行するものではなく、次の2用途で使う。
-
-1. Codexなど別エージェントへ移植するための原本
-2. 事業ワークフローを理解するための仕様書
-
-保管場所:
+知識・作業・スキル・入口をトップレベルで分離（すべてローカルSSD・各々git）。
 
 ```text
-00_システム/20_Agent_Portable/archive/claude/
+~/2nd-Brain        知識の正本（内部 00_〜99_ は不変）
+~/Projects/youtube YouTube制作の作業場（vaultから抽出）
+~/agent-skills     スキル正本（~/.claude/skills はここへのsymlink）
+~/agent-adapters   AI入口＋呼び出しラッパー bin/agent-run（vendor seam）
 ```
+
+別エージェント（Codex等）への乗り換えは「フォルダ名」ではなく **`~/agent-adapters/bin/agent-run` の1ファイル**で吸収する。新規の自動化スクリプトは `claude` 直叩きせず agent-run 経由にすること。
+
+## Claude時代の資産の扱い
+
+スキルの**正本は `~/agent-skills/`（git管理）**。Codex等へは、ここを Codex のスキル探索先へ symlink/同期して流用する（=移植の原本そのもの）。
+
+`00_システム/20_Agent_Portable/{archive,codex-skills-ready,live-backups}/` のコピーは旧スナップショット（仕様理解・履歴用）。編集の正本ではない。
 
 ## 新しいエージェントへの指示テンプレート
 

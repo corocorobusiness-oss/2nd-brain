@@ -36,9 +36,14 @@
 - 今後の本線は **Claude Codeメイン / Codex実行補助 / Obsidian正本**
 - Claude Code Channels / Discord連携は、スマホ受付・通知・過去ログ参照用。正本にはしない
 
+## 環境トポロジ（2026-06-23 4分離）
+このvaultは「知識の正本」。作業・スキル・AI入口は別フォルダに分離（すべて `~/` 直下・各々git）：
+- `~/2nd-Brain`（このvault）＝知識／`~/Projects/youtube`＝YouTube制作の作業場（vaultから抽出）／`~/agent-skills`＝スキル正本（`~/.claude/skills`はsymlink）／`~/agent-adapters`＝AI入口＋`bin/agent-run`（Claude→Codex継ぎ目）
+- 詳細: `00_システム/20_Agent_Portable/specs/agent-neutral-contract.md`
+
 ## フォルダ構成
 - `00_システム/` — プロフィール、テンプレート、プロンプト、AIエージェント設定
-- `01_プロジェクト/` — 事業別プロジェクト管理（YouTube / フードデリバリー / AI自動化）
+- `01_プロジェクト/` — 事業別プロジェクト管理（フードデリバリー / AI自動化 / Roblox。※YouTube制作の作業は `~/Projects/youtube/` へ移動。YouTubeの知識は `03_知識ベース/YouTube・コンテンツ制作/`）
 - `02_経営/` — 目標・計画・収支・月次レポート
 - `03_知識ベース/` — ナレッジ蓄積（カテゴリ別）
 - `04_アウトプット/` — SNS投稿、Note、メルマガ

@@ -10,11 +10,17 @@
 - コアバリュー：自由・効率・自動化
 - ビジョン：一人社長 + AIエージェント部隊で事業運営
 
-## Vault の場所
-Google Driveの `マイドライブ/2nd-Brain` が正。
+## Vault の場所（2026-06-13 ローカル正本化）
+**正本は Mac mini ローカルの `/Users/kojinn/2nd-Brain-master`（git・10分毎auto-commit）**。
+アクセスは常に `~/2nd-Brain`（正本へのsymlink）経由。
+Google Drive の `マイドライブ/2nd-Brain` は**15分毎の片方向ミラー（閲覧専用）**＝Drive側を直接編集しない。
 
-Mac上のユーザー名に依存せず、Google Drive内の `マイドライブ/2nd-Brain` を開くこと。
-現在のこのMacでの短縮パス: `/Users/kojinn/2nd-Brain`
+## トポロジ（2026-06-23 4分離・知識/作業/スキル/入口）
+- `~/2nd-Brain` = 知識の正本（このフォルダ。内部 `00_〜99_` は不変）
+- `~/Projects/youtube` = YouTube制作の作業場（創作スレ下書き/スレコーパス/制作ログ等。vaultから抽出）
+- `~/agent-skills` = スキル正本（`~/.claude/skills` はここへのsymlink）
+- `~/agent-adapters` = AI入口＋呼び出しラッパー `bin/agent-run`（Claude→Codex差し替えの継ぎ目）
+詳細は `00_システム/20_Agent_Portable/specs/agent-neutral-contract.md`。
 
 ## AIエージェント設定
 会話開始時に以下を読み込んで行動すること：
