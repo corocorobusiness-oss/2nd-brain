@@ -1,9 +1,0 @@
-# 創作スレ学習コーパスの収集キュー
-# ここに「まとめスレのURL」を1行1個で貼ると、週次ジョブ(corpus-collect・毎週日曜21:00)が
-# 自動でスクレイプ→蔑称マスク(【NG】化)→重複排除→スレコーパスに保存→#youtubeに結果報告する。
-# 対応サイト: livedoor/blog.jp系(gabareki等)・nanjgod・merit-information・FC2/WordPress系
-# 成功したURLは _収集済みURL.txt に移って次回スキップ。失敗URLはこのキューに残って次回再試行。
-# 「#」始まりの行はコメント（無視される）。
-#
-# 例: https://gabareki.blog.jp/archives/XXXXXXXX.html
-#
