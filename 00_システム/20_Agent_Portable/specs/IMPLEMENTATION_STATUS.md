@@ -28,6 +28,7 @@ related: [AI_AGENT_STRUCTURE_AND_BACKUP, CLAUDE_CODE_INSTRUCTIONS]
 - [ ] **外付けSSDのゴミ精査** — `_backups`（8.4G・YMM4移行スナップショットの重複疑い）＋空殻フォルダ（`_アーカイブ_重複_削除可`・`01_制作中`）を精査→隔離→確認後に削除（手順2）
 - [ ] **各正本に `README_正本.md`** — 「ここは何の正本か／正本はここだけ／コピーはどこ」を明記（手順3）
 - [ ] **CLAUDE.md に正本の見分けルール1行追記** — 「実体がローカルにあり.gitがあるフォルダだけが正本。Drive配下と.gsheetポインタは正本でない＝税証憑・gsheet原生のみ例外」（手順3）
+- [ ] **YouTube制作物の整理（1ネタ＝1か所で見えるように）** — 台本(Mac・複数フォルダに散在)と素材(SSD)が分離。改名はしない（.ymmpが壊れる）。①Mac側に素材へのsymlink玄関 ②`.codex`/`Downloads` 参照素材をネタフォルダへ集約しYMM4プロジェクトを自己完結化 ③今後はpipelineが生成画像をネタフォルダ直保存。詳細は [[AI_AGENT_STRUCTURE_AND_BACKUP]] §6
 
 ---
 
@@ -46,6 +47,7 @@ related: [AI_AGENT_STRUCTURE_AND_BACKUP, CLAUDE_CODE_INSTRUCTIONS]
 - **agent-run が未配線** — 継ぎ目は存在するが、~30本のlaunchd/cronスクリプトは全て `claude` を直叩き、codex側も未実装。**現状Codex切替は実質不可**
 - **動画メディアがSSD単独** — 物理故障で完成動画＋編集プロジェクトを失うリスク（判断待ち）
 - **.gsheet/.gdoc がGoogleアカウント単独依存** — 凍結・誤削除に弱い（判断待ち）
+- **⚠️ YMM4プロジェクトが掃除対象フォルダを参照** — `.ymmp` が素材を絶対パスで参照し、一部が `~/.codex/generated_images` `~/Downloads`（＝「掃除していいキャッシュ」と分類した場所）を指す。実例 `平将門の祟り.ymmp` は66素材中5個が該当。**`.codex`/`Downloads` を掃除すると再編集時に映像が壊れる**ため、掃除前チェックが必須（[[CLAUDE_CODE_INSTRUCTIONS]] の「掃除の鉄則」）
 
 ---
 
