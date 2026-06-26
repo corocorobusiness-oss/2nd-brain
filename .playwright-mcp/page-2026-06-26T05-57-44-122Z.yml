@@ -1,0 +1,2532 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e5]:
+    - generic [ref=e7]:
+      - link "ココナラ" [ref=e8] [cursor=pointer]:
+        - /url: /
+        - img "ココナラ" [ref=e9]
+      - generic [ref=e11]:
+        - generic [ref=e15] [cursor=pointer]: サービス
+        - generic [ref=e18]:
+          - textbox "キーワードで検索" [ref=e19]
+          - button
+      - generic [ref=e23]:
+        - generic [ref=e31] [cursor=pointer]:
+          - generic:
+            - generic:
+              - generic: サポート
+        - button "ログイン" [ref=e38] [cursor=pointer]:
+          - generic [ref=e39]:
+            - generic: ログイン
+        - button "会員登録" [ref=e42] [cursor=pointer]:
+          - generic [ref=e43]:
+            - generic: 会員登録
+    - generic [ref=e47]:
+      - link "サービスを探す" [ref=e51] [cursor=pointer]:
+        - /url: /search
+        - text: サービスを探す
+      - link "プロ人材を探す" [ref=e57] [cursor=pointer]:
+        - /url: /users/
+        - text: プロ人材を探す
+      - link "ノウハウ・素材を探す" [ref=e65] [cursor=pointer]:
+        - /url: /contents_market
+        - generic: ノウハウ・素材を探す
+      - link "ブログを探す" [ref=e71] [cursor=pointer]:
+        - /url: /blogs
+        - text: ブログを探す
+      - listitem [ref=e74] [cursor=pointer]:
+        - generic [ref=e76]:
+          - link "仕事を探す" [ref=e80]:
+            - /url: /job_matching/supplier
+            - generic: 仕事を探す
+          - generic: 単発の仕事
+          - generic: 継続（時給/月給）の仕事
+  - generic [ref=e93]:
+    - button "会員登録で「300円」+「10%」割引クーポンを獲得！ ※電話サービスはご利用不可" [ref=e95] [cursor=pointer]:
+      - generic [ref=e97]: 会員登録で「300円」+「10%」割引クーポンを獲得！ ※電話サービスはご利用不可
+    - generic [ref=e98]:
+      - generic [ref=e99]:
+        - navigation "breadcrumbs" [ref=e100]:
+          - list [ref=e101]:
+            - listitem [ref=e102]:
+              - link "ホーム" [ref=e103] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=e104]:
+              - text: ">"
+              - link "占い" [ref=e105] [cursor=pointer]:
+                - /url: /categories/3
+            - listitem [ref=e106]:
+              - text: ">"
+              - link "総合運鑑定" [ref=e107] [cursor=pointer]:
+                - /url: /categories/659
+            - listitem [ref=e108]:
+              - text: ">"
+              - link "自己分析・適性鑑定" [ref=e109] [cursor=pointer]:
+                - /url: /categories/659/350
+        - generic [ref=e111]:
+          - generic [ref=e115]:
+            - heading "四柱推命×ホロスコープ自己理解鑑定書を作ります" [level=1] [ref=e116]
+            - heading "本質・強み・恋愛・仕事の傾向をPDFに整理" [level=2] [ref=e117]
+          - generic [ref=e118]:
+            - generic [ref=e119]:
+              - generic [ref=e120]:
+                - generic [ref=e121]: 評価
+                - generic [ref=e123]:
+                  - generic [ref=e125]:
+                    - generic [ref=e126]:
+                      - generic [ref=e127]:  
+                      - text: 
+                    - generic [ref=e128]:
+                      - strong [ref=e129]: "4.9"
+                      - text: (270)
+                  - text:  
+              - generic [ref=e130]:
+                - generic [ref=e131]: 販売実績
+                - generic [ref=e132]:
+                  - strong [ref=e133]: "295"
+                  - text: 件
+            - generic [ref=e135]:
+              - generic [ref=e136]: 残り
+              - generic [ref=e137]:
+                - strong [ref=e138]: "20"
+                - text: 枠 / お願い中：
+                - strong [ref=e139]: "0"
+                - text: 人
+          - generic [ref=e140]:
+            - link "透月｜恋と人生の整理占い" [ref=e141] [cursor=pointer]:
+              - /url: "#providerProfile"
+              - img "透月｜恋と人生の整理占い" [ref=e142]
+            - generic [ref=e143]:
+              - link "透月｜恋と人生の整理占い 出品者ランク：ブロンズ" [ref=e144] [cursor=pointer]:
+                - /url: "#providerProfile"
+                - generic [ref=e145]: 透月｜恋と人生の整理占い
+                - generic [ref=e149]:
+                  - img "出品者ランク：ブロンズ" [ref=e152]
+                  - text: 
+              - link "総販売実績：1,771件" [ref=e153] [cursor=pointer]:
+                - /url: "#serviceContentsRating"
+      - generic [ref=e155]:
+        - button "サービス内容" [ref=e157] [cursor=pointer]:
+          - generic [ref=e158]: サービス内容
+        - button "購入時のお願い" [ref=e160] [cursor=pointer]:
+          - generic [ref=e161]: 購入時のお願い
+        - button "よくある質問" [ref=e163] [cursor=pointer]:
+          - generic [ref=e164]: よくある質問
+        - button "回答例" [ref=e166] [cursor=pointer]:
+          - generic [ref=e167]: 回答例
+        - button "評価・感想" [ref=e169] [cursor=pointer]:
+          - generic [ref=e170]: 評価・感想
+        - generic [ref=e176] [cursor=pointer]:
+          - img [ref=e177]
+          - generic [ref=e179]: お気に入り（1006）
+      - generic [ref=e182]:
+        - text: 
+        - generic [ref=e186]:
+          - generic [ref=e187]:
+            - term [ref=e188]: 鑑定
+            - definition [ref=e189]:
+              - generic [ref=e191]: 
+          - generic [ref=e192]:
+            - term [ref=e193]: カウンセリング
+            - definition [ref=e194]:
+              - generic [ref=e196]: 
+          - generic [ref=e197]:
+            - term [ref=e198]: お届け日数
+            - definition [ref=e199]:
+              - generic [ref=e200]: 3日（予定） / 約1日（実績）
+          - generic [ref=e201]:
+            - term [ref=e202]: 初回返答時間
+            - definition [ref=e203]:
+              - generic [ref=e204]: 1時間以内（実績）
+          - generic [ref=e205]:
+            - term [ref=e206]: スタイル
+            - definition [ref=e207]:
+              - generic [ref=e208]:
+                - link "具体的" [ref=e209] [cursor=pointer]:
+                  - /url: /categories/659?style_ids[]=22
+                - link "寄り添い" [ref=e210] [cursor=pointer]:
+                  - /url: /categories/659?style_ids[]=24
+                - link "まじめ" [ref=e211] [cursor=pointer]:
+                  - /url: /categories/659?style_ids[]=26
+                - link "初心者歓迎" [ref=e212] [cursor=pointer]:
+                  - /url: /categories/659?style_ids[]=28
+          - generic [ref=e213]:
+            - term [ref=e214]: 占術
+            - definition [ref=e215]:
+              - generic [ref=e216]:
+                - link "四柱推命" [ref=e217] [cursor=pointer]:
+                  - /url: /categories/659?technique_ids[]=24
+                - link "西洋占星術" [ref=e218] [cursor=pointer]:
+                  - /url: /categories/659?technique_ids[]=22
+        - generic [ref=e219]:
+          - heading "高評価のレビュー" [level=2] [ref=e220]
+          - button "すべての評価・感想をみる" [ref=e221] [cursor=pointer]
+        - generic [ref=e224]:
+          - generic [ref=e227]:
+            - generic [ref=e230]:
+              - generic [ref=e231]:
+                - generic [ref=e234]:
+                  - generic [ref=e236]:  
+                  - generic [ref=e238]: scorpion1581f
+                - generic [ref=e239]: 2年前
+              - generic [ref=e240]:
+                - generic [ref=e241]: この度はyouTube収益化のスタートラインに立つ為に依頼致しました。 本当に始めたばかりで動画もなかったんですがご丁寧に教えていただき進める事が出来ました。 依頼してすぐ取り掛かっていただけたので思ったより早く達成できこれからのayouTubeライフを楽し...
+                - button "もっと見る" [ref=e243] [cursor=pointer]
+              - button "出品者からの返信 " [ref=e246] [cursor=pointer]:
+                - text: 出品者からの返信
+                - generic [ref=e247]: 
+            - generic [ref=e250]:
+              - generic [ref=e251]:
+                - generic [ref=e254]:
+                  - generic [ref=e256]:  
+                  - generic [ref=e258]: 男性
+                - generic [ref=e259]: 1年前
+              - generic [ref=e260]:
+                - generic [ref=e261]: 他の出品者のサービスが1000時間につき1ヶ月とある中、こちらのサービスは4000時間で1ヶ月から2ヶ月ほどの納品とあったため購入させて頂きました。 私の場合、実際には1ヶ月たたず納品が完了し、やり取りは非常にスムーズでした。他者様から購入して4ヶ月も待て...
+                - button "もっと見る" [ref=e263] [cursor=pointer]
+            - generic [ref=e266]:
+              - generic [ref=e267]:
+                - generic [ref=e270]:
+                  - generic [ref=e272]:  
+                  - generic [ref=e274]: 女性
+                - generic [ref=e275]: 1年前
+              - generic [ref=e276]:
+                - generic [ref=e277]: 申請日の翌日に、収益化が承認されました。 多くの人が収益化達成までの道のりの途中で、心折れて止めてしまうということですので、現在、迷ってらっしゃる方には、webconsultingさんのサービスを強くお勧めします。
+                - button "もっと見る" [ref=e279] [cursor=pointer]
+            - generic [ref=e282]:
+              - generic [ref=e283]:
+                - generic [ref=e286]:
+                  - generic [ref=e288]:  
+                  - generic [ref=e290]: 男性
+                - generic [ref=e291]: 2年前
+              - generic [ref=e292]:
+                - generic [ref=e293]: 最初から最後までご丁寧に対応していただきましてありがとうございました！ 無事収益化も合格しました。本当に嬉しいです！ 収益化を目指している方は、webconsulting様のサービスを利用した方が早くて遠回りしなくていいです。
+                - button "もっと見る" [ref=e295] [cursor=pointer]
+              - button "出品者からの返信 " [ref=e298] [cursor=pointer]:
+                - text: 出品者からの返信
+                - generic [ref=e299]: 
+            - generic [ref=e302]:
+              - generic [ref=e303]:
+                - generic [ref=e306]:
+                  - generic [ref=e308]:  
+                  - generic [ref=e309]:
+                    - generic [ref=e310]: 女性
+                    - generic [ref=e311]: 見積り相談
+                - generic [ref=e312]: 1年前
+              - generic [ref=e313]:
+                - generic [ref=e314]: チャンネルの方向性的にかなり時間がかかると思っていましたが、早くて驚いています。 また質問にもお答えいただきスムーズに取引できました。 もし悩んでいるなら一度質問をしてみることをおすすめします。
+                - button "もっと見る" [ref=e316] [cursor=pointer]
+          - generic [ref=e318] [cursor=pointer]: 
+        - generic [ref=e325]:
+          - generic [ref=e327]:
+            - img "四柱推命×ホロスコープ自己理解鑑定書を作ります 本質・強み・恋愛・仕事の傾向をPDFに整理 イメージ1" [ref=e330] [cursor=pointer]
+            - generic [ref=e331]:
+              - generic [ref=e333]:
+                - img "四柱推命×ホロスコープ自己理解鑑定書を作ります 本質・強み・恋愛・仕事の傾向をPDFに整理 イメージ1" [ref=e335] [cursor=pointer]
+                - img "四柱推命×ホロスコープ自己理解鑑定書を作ります 本質・強み・恋愛・仕事の傾向をPDFに整理 イメージ2" [ref=e337] [cursor=pointer]
+                - img "四柱推命×ホロスコープ自己理解鑑定書を作ります 本質・強み・恋愛・仕事の傾向をPDFに整理 イメージ3" [ref=e339] [cursor=pointer]
+                - img "四柱推命×ホロスコープ自己理解鑑定書を作ります 本質・強み・恋愛・仕事の傾向をPDFに整理 イメージ4" [ref=e341] [cursor=pointer]
+                - img "四柱推命×ホロスコープ自己理解鑑定書を作ります 本質・強み・恋愛・仕事の傾向をPDFに整理 イメージ5" [ref=e343] [cursor=pointer]
+              - generic [ref=e346] [cursor=pointer]: 
+          - heading "サービス内容" [level=2] [ref=e348]
+          - generic [ref=e350]: 四柱推命とホロスコープの視点から、自己理解のためのPDF鑑定書を作成します。 生まれ持った性質、強み、疲れやすい場面、恋愛、仕事、人間関係の傾向を、読み返せる鑑定書として整理します。 私は会社経営・人事の現場で、4000人以上と向き合ってきました。占いの読み取りに、人を見てきた現実的な視点も重ねることで、「当たった」で終わらない、日常で使いやすい自己理解に落とし込みます。 【鑑定内容】 ・あなたの本質と基本性格 ・強み、才能、伸びやすい環境 ・苦手になりやすい状況 ・恋愛で出やすい傾向 ・仕事、適職、働き方のヒント ・人間関係で気をつけたいこと ・今の悩みに対する整理 ・次に取りやすい行動 【納品形式】 ・PDF 10-12ページ目安 ・6000-8000字前後 ・24-48時間目安 ・鑑定範囲内の確認1往復まで 公開初期のため、先着10名様まで500円で受付します。 未来を決めつける鑑定ではなく、自分の傾向を知り、選択肢を整理するための鑑定書です。
+          - heading "購入にあたってのお願い" [level=2] [ref=e352]
+          - generic [ref=e354]: "ご購入後、次の内容をお送りください。 1. ニックネーム 2. 生年月日（西暦） 3. 出生時間（不明なら不明） 4. 出生地（都道府県） 5. 性別（任意） 6. 知りたいテーマを1つ 7. 現在の悩みや状況 8. 表現の希望: やさしめ / 率直 / 具体策多め 出生時間が不明でも作成できますが、一部の読み取りは参考情報として扱います。 医療、法律、投資、合否、生死に関する鑑定、第三者を傷つける内容、効果保証は対応できません。"
+      - generic [ref=e356]:
+        - generic [ref=e357]:
+          - generic [ref=e359]: 500 円
+          - generic [ref=e360]: 3ポイント (0.5％) 獲得
+          - button " 購入画面に進む" [ref=e364] [cursor=pointer]:
+            - generic [ref=e365]:
+              - generic [ref=e366]: 
+              - text: 購入画面に進む
+          - text: 
+        - generic [ref=e368]:
+          - button " 出品者に質問" [ref=e370] [cursor=pointer]:
+            - generic [ref=e373]:
+              - generic [ref=e374]: 
+              - text: 出品者に質問
+          - button " フォロー 356" [ref=e377] [cursor=pointer]:
+            - generic [ref=e379]:
+              - generic [ref=e380]:
+                - generic [ref=e381]: 
+                - text: フォロー
+              - generic [ref=e382]: "356"
+        - list [ref=e385]:
+          - listitem [ref=e388] [cursor=pointer]:
+            - generic [ref=e390]: 
+          - listitem [ref=e393] [cursor=pointer]:
+            - generic [ref=e395]: 
+          - listitem [ref=e398] [cursor=pointer]:
+            - generic [ref=e399]: 
+          - listitem [ref=e402] [cursor=pointer]:
+            - generic [ref=e403]: 
+      - generic [ref=e405]:
+        - generic [ref=e408]:
+          - generic [ref=e410]:
+            - img "透月｜恋と人生の整理占い" [ref=e412]
+            - generic [ref=e413]:
+              - link "透月｜恋と人生の整理占い 出品者ランク：ブロンズ":
+                - /url: /users/2500940
+                - generic [ref=e414] [cursor=pointer]: 透月｜恋と人生の整理占い
+                - generic [ref=e419]:
+                  - img "出品者ランク：ブロンズ" [ref=e422] [cursor=pointer]
+                  - text: 
+              - generic [ref=e423]:
+                - generic [ref=e424]:
+                  - img [ref=e426]
+                  - generic [ref=e429]: 本人確認
+                  - generic [ref=e430]: 
+                - generic [ref=e431]:
+                  - img [ref=e433]
+                  - generic [ref=e435]: 機密保持契約(NDA)
+                  - generic [ref=e436]: 
+                - generic [ref=e437]:
+                  - img [ref=e439]
+                  - generic [ref=e441]: インボイス発行事業者
+                  - generic [ref=e442]: 
+                  - generic [ref=e443]: 未登録
+              - generic [ref=e444]:
+                - generic [ref=e445]:
+                  - generic [ref=e446]: 総販売実績
+                  - generic [ref=e447]: 1,771
+                - generic [ref=e448]:
+                  - generic [ref=e449]: 評価
+                  - generic [ref=e450]:
+                    - img [ref=e451]
+                    - generic [ref=e453]: "4.9"
+                - generic [ref=e454]:
+                  - generic [ref=e455]: フォロワー
+                  - generic [ref=e456]: "356"
+          - generic [ref=e457]:
+            - link "プロフィール詳細を見る" [ref=e458] [cursor=pointer]:
+              - /url: /users/2500940
+            - generic [ref=e460]:
+              - button " 出品者に質問" [ref=e462] [cursor=pointer]:
+                - generic [ref=e465]:
+                  - generic [ref=e466]: 
+                  - text: 出品者に質問
+              - button " フォロー 356" [ref=e469] [cursor=pointer]:
+                - generic [ref=e471]:
+                  - generic [ref=e472]:
+                    - generic [ref=e473]: 
+                    - text: フォロー
+                  - generic [ref=e474]: "356"
+          - generic [ref=e476]:
+            - generic [ref=e477]: スケジュール
+            - generic [ref=e478]: 公開初期のため、少人数ずつ丁寧に受付しています。 通常24時間以内に初回返信いたします。 鑑定書は商品ごとの納期に沿ってお届けします。 満枠時は受付を一時停止する場合があります。
+            - generic [ref=e480] [cursor=pointer]:
+              - text: すべて見る
+              - img [ref=e481]
+          - generic [ref=e485]:
+            - paragraph [ref=e487]: 得意分野
+            - generic [ref=e489]:
+              - paragraph [ref=e490]:
+                - text: 占い
+                - generic [ref=e491]: 恋愛・婚活・人生相談の占い
+              - generic [ref=e492]:
+                - generic [ref=e493]: 恋愛占い
+                - generic [ref=e494]: 相手の気持ち
+                - generic [ref=e495]: 婚活
+                - generic [ref=e496]: 復縁
+                - generic [ref=e497]: 相性
+                - generic [ref=e498]: 四柱推命
+                - generic [ref=e499]: ホロスコープ
+          - generic [ref=e501]:
+            - heading "出品者のその他の人気サービス" [level=2] [ref=e502]
+            - generic [ref=e503]:
+              - generic [ref=e506]:
+                - link "あなたの取扱説明書PDFを大容量で作成します 本質・強み・恋愛・仕事・人間関係を総合鑑定 あなたの取扱説明書PDFを大容量で作成します 本質・強み・恋愛・仕事・人間関係を総合鑑定 4.9 (489) 500 円" [ref=e507] [cursor=pointer]:
+                  - /url: /services/1764475
+                  - img "あなたの取扱説明書PDFを大容量で作成します 本質・強み・恋愛・仕事・人間関係を総合鑑定" [ref=e509]
+                  - generic [ref=e510]:
+                    - generic [ref=e511]: あなたの取扱説明書PDFを大容量で作成します 本質・強み・恋愛・仕事・人間関係を総合鑑定
+                    - generic [ref=e512]:
+                      - generic [ref=e513]:
+                        - img [ref=e514]
+                        - generic [ref=e516]: "4.9"
+                        - generic [ref=e517]: (489)
+                      - generic [ref=e519]:
+                        - strong [ref=e520]: "500"
+                        - text: 円
+                - link "恋愛｜相手の気持ちと本音、次の一手を占います 保存用PDF・質問2つまで。迷いを今日できる行動に整理 恋愛｜相手の気持ちと本音、次の一手を占います 保存用PDF・質問2つまで。迷いを今日できる行動に整理 5.0 (163) 500 円" [ref=e521] [cursor=pointer]:
+                  - /url: /services/1764502
+                  - img "恋愛｜相手の気持ちと本音、次の一手を占います 保存用PDF・質問2つまで。迷いを今日できる行動に整理" [ref=e523]
+                  - generic [ref=e524]:
+                    - generic [ref=e525]: 恋愛｜相手の気持ちと本音、次の一手を占います 保存用PDF・質問2つまで。迷いを今日できる行動に整理
+                    - generic [ref=e526]:
+                      - generic [ref=e527]:
+                        - img [ref=e528]
+                        - generic [ref=e530]: "5.0"
+                        - generic [ref=e531]: (163)
+                      - generic [ref=e533]:
+                        - strong [ref=e534]: "500"
+                        - text: 円
+                - link "婚活・運命の人戦略書PDFを作成します 相性の傾向と婚活の進め方を行動まで整理 婚活・運命の人戦略書PDFを作成します 相性の傾向と婚活の進め方を行動まで整理 4.9 (578) 500 円" [ref=e535] [cursor=pointer]:
+                  - /url: /services/1764526
+                  - img "婚活・運命の人戦略書PDFを作成します 相性の傾向と婚活の進め方を行動まで整理" [ref=e537]
+                  - generic [ref=e538]:
+                    - generic [ref=e539]: 婚活・運命の人戦略書PDFを作成します 相性の傾向と婚活の進め方を行動まで整理
+                    - generic [ref=e540]:
+                      - generic [ref=e541]:
+                        - img [ref=e542]
+                        - generic [ref=e544]: "4.9"
+                        - generic [ref=e545]: (578)
+                      - generic [ref=e547]:
+                        - strong [ref=e548]: "500"
+                        - text: 円
+                - link "30日運勢カレンダーPDFをあなた専用に作ります 毎朝1分で見返せる月間運勢ガイド 30日運勢カレンダーPDFをあなた専用に作ります 毎朝1分で見返せる月間運勢ガイド 4.5 (38) 1,000 円" [ref=e549] [cursor=pointer]:
+                  - /url: /services/3235430
+                  - img "30日運勢カレンダーPDFをあなた専用に作ります 毎朝1分で見返せる月間運勢ガイド" [ref=e551]
+                  - generic [ref=e552]:
+                    - generic [ref=e553]: 30日運勢カレンダーPDFをあなた専用に作ります 毎朝1分で見返せる月間運勢ガイド
+                    - generic [ref=e554]:
+                      - generic [ref=e555]:
+                        - img [ref=e556]
+                        - generic [ref=e558]: "4.5"
+                        - generic [ref=e559]: (38)
+                      - generic [ref=e561]:
+                        - strong [ref=e562]: 1,000
+                        - text: 円
+              - generic [ref=e564] [cursor=pointer]: 
+        - text:    
+        - generic [ref=e566]:
+          - heading "自己分析・適性鑑定の関連サービス" [level=2] [ref=e567]
+          - generic [ref=e568]:
+            - generic [ref=e571]:
+              - link "あなたが気づいていない、あなたの魅力お伝えします 自己理解を深めて、自分に自信が持てるようお手伝いいたします。 あなたが気づいていない、あなたの魅力お伝えします 自己理解を深めて、自分に自信が持てるようお手伝いいたします。  5.0 (3) ことね✧誰にも言えない悩み｜霊視タロット ことね✧誰にも言えない悩み｜霊視タロット 500 円" [ref=e572] [cursor=pointer]:
+                - /url: /services/4253268
+                - generic [ref=e574]:
+                  - img "あなたが気づいていない、あなたの魅力お伝えします 自己理解を深めて、自分に自信が持てるようお手伝いいたします。"
+                - generic [ref=e575]:
+                  - generic [ref=e576]: あなたが気づいていない、あなたの魅力お伝えします 自己理解を深めて、自分に自信が持てるようお手伝いいたします。
+                  - generic [ref=e577]:
+                    - generic [ref=e578]: 
+                    - generic [ref=e579]: "5.0"
+                    - generic [ref=e580]: (3)
+                  - generic [ref=e581]:
+                    - img "ことね✧誰にも言えない悩み｜霊視タロット" [ref=e582]
+                    - generic [ref=e583]: ことね✧誰にも言えない悩み｜霊視タロット
+                    - generic [ref=e585]:
+                      - strong [ref=e586]: "500"
+                      - text: 円
+              - link "あなたを猫にたとえて占います 猫タイプ占いで見つけるあなたの魅力と幸運への鍵 あなたを猫にたとえて占います 猫タイプ占いで見つけるあなたの魅力と幸運への鍵  5.0 (3) 心眼コミュニケーター⭐︎紗矢 saya 心眼コミュニケーター⭐︎紗矢 saya 500 円" [ref=e587] [cursor=pointer]:
+                - /url: /services/3702081
+                - generic [ref=e589]:
+                  - img "あなたを猫にたとえて占います 猫タイプ占いで見つけるあなたの魅力と幸運への鍵"
+                - generic [ref=e590]:
+                  - generic [ref=e591]: あなたを猫にたとえて占います 猫タイプ占いで見つけるあなたの魅力と幸運への鍵
+                  - generic [ref=e592]:
+                    - generic [ref=e593]: 
+                    - generic [ref=e594]: "5.0"
+                    - generic [ref=e595]: (3)
+                  - generic [ref=e596]:
+                    - img "心眼コミュニケーター⭐︎紗矢 saya" [ref=e597]
+                    - generic [ref=e598]: 心眼コミュニケーター⭐︎紗矢 saya
+                    - generic [ref=e600]:
+                      - strong [ref=e601]: "500"
+                      - text: 円
+              - link "ご自分のお名前に宿る真実の使命を伝えます ご自身の強みを知ることで魅力的に♡魂のエネルギー感じましょう ご自分のお名前に宿る真実の使命を伝えます ご自身の強みを知ることで魅力的に♡魂のエネルギー感じましょう  5.0 (5) 初音⭐️魂の羅針盤 ルミナススター鑑定 初音⭐️魂の羅針盤 ルミナススター鑑定 500 円" [ref=e602] [cursor=pointer]:
+                - /url: /services/3568024
+                - generic [ref=e604]:
+                  - img "ご自分のお名前に宿る真実の使命を伝えます ご自身の強みを知ることで魅力的に♡魂のエネルギー感じましょう"
+                - generic [ref=e605]:
+                  - generic [ref=e606]: ご自分のお名前に宿る真実の使命を伝えます ご自身の強みを知ることで魅力的に♡魂のエネルギー感じましょう
+                  - generic [ref=e607]:
+                    - generic [ref=e608]: 
+                    - generic [ref=e609]: "5.0"
+                    - generic [ref=e610]: (5)
+                  - generic [ref=e611]:
+                    - img "初音⭐️魂の羅針盤 ルミナススター鑑定" [ref=e612]
+                    - generic [ref=e613]: 初音⭐️魂の羅針盤 ルミナススター鑑定
+                    - generic [ref=e615]:
+                      - strong [ref=e616]: "500"
+                      - text: 円
+              - link "あなたのオーラカラーを診断、画像化し差し上げます オーラカラーを知る事であなたの内面を輝かせませんか？ あなたのオーラカラーを診断、画像化し差し上げます オーラカラーを知る事であなたの内面を輝かせませんか？  4.9 (36) 星宮ルナ✮愛されオーラ占い 星宮ルナ✮愛されオーラ占い 500 円" [ref=e617] [cursor=pointer]:
+                - /url: /services/3009579
+                - generic [ref=e619]:
+                  - img "あなたのオーラカラーを診断、画像化し差し上げます オーラカラーを知る事であなたの内面を輝かせませんか？"
+                - generic [ref=e620]:
+                  - generic [ref=e621]: あなたのオーラカラーを診断、画像化し差し上げます オーラカラーを知る事であなたの内面を輝かせませんか？
+                  - generic [ref=e622]:
+                    - generic [ref=e623]: 
+                    - generic [ref=e624]: "4.9"
+                    - generic [ref=e625]: (36)
+                  - generic [ref=e626]:
+                    - img "星宮ルナ✮愛されオーラ占い" [ref=e627]
+                    - generic [ref=e628]: 星宮ルナ✮愛されオーラ占い
+                    - generic [ref=e630]:
+                      - strong [ref=e631]: "500"
+                      - text: 円
+              - link "30年の霊視経験による【潜在能力鑑定】を行います あなたの秘めた力、眠る才能、潜在能力を開花・覚醒させます 30年の霊視経験による【潜在能力鑑定】を行います あなたの秘めた力、眠る才能、潜在能力を開花・覚醒させます  4.9 (202) 【霊能者】天晴 【霊能者】天晴 1,000 円" [ref=e632] [cursor=pointer]:
+                - /url: /services/3758905
+                - generic [ref=e634]:
+                  - img "30年の霊視経験による【潜在能力鑑定】を行います あなたの秘めた力、眠る才能、潜在能力を開花・覚醒させます"
+                - generic [ref=e635]:
+                  - generic [ref=e636]: 30年の霊視経験による【潜在能力鑑定】を行います あなたの秘めた力、眠る才能、潜在能力を開花・覚醒させます
+                  - generic [ref=e637]:
+                    - generic [ref=e638]: 
+                    - generic [ref=e639]: "4.9"
+                    - generic [ref=e640]: (202)
+                  - generic [ref=e641]:
+                    - img "【霊能者】天晴" [ref=e642]
+                    - generic [ref=e643]: 【霊能者】天晴
+                    - generic [ref=e645]:
+                      - strong [ref=e646]: 1,000
+                      - text: 円
+              - link "誰もが持つ「天中殺」の使い方、教えます 実は天中殺は誰もが持っていますが、悪いものではありません 誰もが持つ「天中殺」の使い方、教えます 実は天中殺は誰もが持っていますが、悪いものではありません  5.0 (1) 宿命鑑定 令和陰陽師 KENT 宿命鑑定 令和陰陽師 KENT 500 円" [ref=e647] [cursor=pointer]:
+                - /url: /services/3912238
+                - generic [ref=e649]:
+                  - img "誰もが持つ「天中殺」の使い方、教えます 実は天中殺は誰もが持っていますが、悪いものではありません"
+                - generic [ref=e650]:
+                  - generic [ref=e651]: 誰もが持つ「天中殺」の使い方、教えます 実は天中殺は誰もが持っていますが、悪いものではありません
+                  - generic [ref=e652]:
+                    - generic [ref=e653]: 
+                    - generic [ref=e654]: "5.0"
+                    - generic [ref=e655]: (1)
+                  - generic [ref=e656]:
+                    - img "宿命鑑定 令和陰陽師 KENT" [ref=e657]
+                    - generic [ref=e658]: 宿命鑑定 令和陰陽師 KENT
+                    - generic [ref=e660]:
+                      - strong [ref=e661]: "500"
+                      - text: 円
+              - link "あなたの本質を言語化します 悩みの原因とズレを文章で整理します❗️ あなたの本質を言語化します 悩みの原因とズレを文章で整理します❗️  - Otsu Otsu 500 円" [ref=e662] [cursor=pointer]:
+                - /url: /services/4200305
+                - generic [ref=e664]:
+                  - img "あなたの本質を言語化します 悩みの原因とズレを文章で整理します❗️"
+                - generic [ref=e665]:
+                  - generic [ref=e666]: あなたの本質を言語化します 悩みの原因とズレを文章で整理します❗️
+                  - generic [ref=e667]:
+                    - generic [ref=e668]: 
+                    - generic [ref=e669]: "-"
+                  - generic [ref=e670]:
+                    - img "Otsu" [ref=e671]
+                    - generic [ref=e672]: Otsu
+                    - generic [ref=e674]:
+                      - strong [ref=e675]: "500"
+                      - text: 円
+              - link "自分でも分からない心のモヤモヤの原因を視ます 理由の分からない不安や迷いを整理し、本当の気持ちを読み解く 自分でも分からない心のモヤモヤの原因を視ます 理由の分からない不安や迷いを整理し、本当の気持ちを読み解く  - 原因と流れを読み解く鑑定師｜凛道 原因と流れを読み解く鑑定師｜凛道 500 円" [ref=e676] [cursor=pointer]:
+                - /url: /services/4279706
+                - generic [ref=e678]:
+                  - img "自分でも分からない心のモヤモヤの原因を視ます 理由の分からない不安や迷いを整理し、本当の気持ちを読み解く"
+                - generic [ref=e679]:
+                  - generic [ref=e680]: 自分でも分からない心のモヤモヤの原因を視ます 理由の分からない不安や迷いを整理し、本当の気持ちを読み解く
+                  - generic [ref=e681]:
+                    - generic [ref=e682]: 
+                    - generic [ref=e683]: "-"
+                  - generic [ref=e684]:
+                    - img "原因と流れを読み解く鑑定師｜凛道" [ref=e685]
+                    - generic [ref=e686]: 原因と流れを読み解く鑑定師｜凛道
+                    - generic [ref=e688]:
+                      - strong [ref=e689]: "500"
+                      - text: 円
+              - link "裏側九星気学｜あなたの恋愛本能を深く暴きます 片思い・交際中・不倫｜秘密厳守・20名限定モニター500円！ 裏側九星気学｜あなたの恋愛本能を深く暴きます 片思い・交際中・不倫｜秘密厳守・20名限定モニター500円！  - 遥環（はるわ）｜復縁専門占い師 遥環（はるわ）｜復縁専門占い師 500 円" [ref=e690] [cursor=pointer]:
+                - /url: /services/4208773
+                - generic [ref=e692]:
+                  - img "裏側九星気学｜あなたの恋愛本能を深く暴きます 片思い・交際中・不倫｜秘密厳守・20名限定モニター500円！"
+                - generic [ref=e693]:
+                  - generic [ref=e694]: 裏側九星気学｜あなたの恋愛本能を深く暴きます 片思い・交際中・不倫｜秘密厳守・20名限定モニター500円！
+                  - generic [ref=e695]:
+                    - generic [ref=e696]: 
+                    - generic [ref=e697]: "-"
+                  - generic [ref=e698]:
+                    - img "遥環（はるわ）｜復縁専門占い師" [ref=e699]
+                    - generic [ref=e700]: 遥環（はるわ）｜復縁専門占い師
+                    - generic [ref=e702]:
+                      - strong [ref=e703]: "500"
+                      - text: 円
+              - link "本当はどうしたい？言えないモヤモヤを整理します 【初出品SALE】お悩みを聞きながら一緒に答えを見つけます 本当はどうしたい？言えないモヤモヤを整理します 【初出品SALE】お悩みを聞きながら一緒に答えを見つけます  - furaffy furaffy 500 円" [ref=e704] [cursor=pointer]:
+                - /url: /services/3855869
+                - generic [ref=e706]:
+                  - img "本当はどうしたい？言えないモヤモヤを整理します 【初出品SALE】お悩みを聞きながら一緒に答えを見つけます"
+                - generic [ref=e707]:
+                  - generic [ref=e708]: 本当はどうしたい？言えないモヤモヤを整理します 【初出品SALE】お悩みを聞きながら一緒に答えを見つけます
+                  - generic [ref=e709]:
+                    - generic [ref=e710]: 
+                    - generic [ref=e711]: "-"
+                  - generic [ref=e712]:
+                    - img "furaffy" [ref=e713]
+                    - generic [ref=e714]: furaffy
+                    - generic [ref=e716]:
+                      - strong [ref=e717]: "500"
+                      - text: 円
+              - link "貴方の性格☆輝く魅力ꕤ恋愛傾向♡トリセツ作成します 短所や苦手な事ִ⭐︎アドバイス໒꒱気分転換法付♡約4000字 貴方の性格☆輝く魅力ꕤ恋愛傾向♡トリセツ作成します 短所や苦手な事ִ⭐︎アドバイス໒꒱気分転換法付♡約4000字  5.0 (2) 愛と光 MARISA ☆ ライトワーカー 愛と光 MARISA ☆ ライトワーカー 500 円" [ref=e718] [cursor=pointer]:
+                - /url: /services/4263004
+                - generic [ref=e720]:
+                  - img "貴方の性格☆輝く魅力ꕤ恋愛傾向♡トリセツ作成します 短所や苦手な事ִ⭐︎アドバイス໒꒱気分転換法付♡約4000字"
+                - generic [ref=e721]:
+                  - generic [ref=e722]: 貴方の性格☆輝く魅力ꕤ恋愛傾向♡トリセツ作成します 短所や苦手な事ִ⭐︎アドバイス໒꒱気分転換法付♡約4000字
+                  - generic [ref=e723]:
+                    - generic [ref=e724]: 
+                    - generic [ref=e725]: "5.0"
+                    - generic [ref=e726]: (2)
+                  - generic [ref=e727]:
+                    - img "愛と光 MARISA ☆ ライトワーカー" [ref=e728]
+                    - generic [ref=e729]: 愛と光 MARISA ☆ ライトワーカー
+                    - generic [ref=e731]:
+                      - strong [ref=e732]: "500"
+                      - text: 円
+              - link "生きづらさに終止符を｜貴方の本当の魅力を伝えます 自分を愛し、心を軽くする「自分のトリセツ」4,000字 生きづらさに終止符を｜貴方の本当の魅力を伝えます 自分を愛し、心を軽くする「自分のトリセツ」4,000字  5.0 (2) 【四大占術】 一ノ瀬 櫂 【四大占術】 一ノ瀬 櫂 1,000 円" [ref=e733] [cursor=pointer]:
+                - /url: /services/4095950
+                - generic [ref=e735]:
+                  - img "生きづらさに終止符を｜貴方の本当の魅力を伝えます 自分を愛し、心を軽くする「自分のトリセツ」4,000字"
+                - generic [ref=e736]:
+                  - generic [ref=e737]: 生きづらさに終止符を｜貴方の本当の魅力を伝えます 自分を愛し、心を軽くする「自分のトリセツ」4,000字
+                  - generic [ref=e738]:
+                    - generic [ref=e739]: 
+                    - generic [ref=e740]: "5.0"
+                    - generic [ref=e741]: (2)
+                  - generic [ref=e742]:
+                    - img "【四大占術】 一ノ瀬 櫂" [ref=e743]
+                    - generic [ref=e744]: 【四大占術】 一ノ瀬 櫂
+                    - generic [ref=e746]:
+                      - strong [ref=e747]: 1,000
+                      - text: 円
+              - link "自分迷子からの卒業！あなたの特性・適性を鑑定します 鑑定&コーチングのメッセージセッションであなたの一歩を応援！ 自分迷子からの卒業！あなたの特性・適性を鑑定します 鑑定&コーチングのメッセージセッションであなたの一歩を応援！  5.0 (8) 十三夜の月 十三夜の月 500 円" [ref=e748] [cursor=pointer]:
+                - /url: /services/2924409
+                - generic [ref=e750]:
+                  - img "自分迷子からの卒業！あなたの特性・適性を鑑定します 鑑定&コーチングのメッセージセッションであなたの一歩を応援！"
+                - generic [ref=e751]:
+                  - generic [ref=e752]: 自分迷子からの卒業！あなたの特性・適性を鑑定します 鑑定&コーチングのメッセージセッションであなたの一歩を応援！
+                  - generic [ref=e753]:
+                    - generic [ref=e754]: 
+                    - generic [ref=e755]: "5.0"
+                    - generic [ref=e756]: (8)
+                  - generic [ref=e757]:
+                    - img "十三夜の月" [ref=e758]
+                    - generic [ref=e759]: 十三夜の月
+                    - generic [ref=e761]:
+                      - strong [ref=e762]: "500"
+                      - text: 円
+              - link "手相から本質を読み解き行動設計まで落とし込みます 迷いを整理し次の一歩が明確になる手相鑑定（鑑定書形式） 手相から本質を読み解き行動設計まで落とし込みます 迷いを整理し次の一歩が明確になる手相鑑定（鑑定書形式）  5.0 (1) HIRO先生 HIRO先生 500 円" [ref=e763] [cursor=pointer]:
+                - /url: /services/4084852
+                - generic [ref=e765]:
+                  - img "手相から本質を読み解き行動設計まで落とし込みます 迷いを整理し次の一歩が明確になる手相鑑定（鑑定書形式）"
+                - generic [ref=e766]:
+                  - generic [ref=e767]: 手相から本質を読み解き行動設計まで落とし込みます 迷いを整理し次の一歩が明確になる手相鑑定（鑑定書形式）
+                  - generic [ref=e768]:
+                    - generic [ref=e769]: 
+                    - generic [ref=e770]: "5.0"
+                    - generic [ref=e771]: (1)
+                  - generic [ref=e772]:
+                    - img "HIRO先生" [ref=e773]
+                    - generic [ref=e774]: HIRO先生
+                    - generic [ref=e776]:
+                      - strong [ref=e777]: "500"
+                      - text: 円
+              - link "頑張り癖を卒業！四柱推命で心の取扱説明書作ります もう自分を責めないで。四柱推命で明かす、あなたの人生攻略書 頑張り癖を卒業！四柱推命で心の取扱説明書作ります もう自分を責めないで。四柱推命で明かす、あなたの人生攻略書  5.0 (1) 心を整える恋愛鑑定士 詩音 心を整える恋愛鑑定士 詩音 500 円" [ref=e778] [cursor=pointer]:
+                - /url: /services/4068205
+                - generic [ref=e780]:
+                  - img "頑張り癖を卒業！四柱推命で心の取扱説明書作ります もう自分を責めないで。四柱推命で明かす、あなたの人生攻略書"
+                - generic [ref=e781]:
+                  - generic [ref=e782]: 頑張り癖を卒業！四柱推命で心の取扱説明書作ります もう自分を責めないで。四柱推命で明かす、あなたの人生攻略書
+                  - generic [ref=e783]:
+                    - generic [ref=e784]: 
+                    - generic [ref=e785]: "5.0"
+                    - generic [ref=e786]: (1)
+                  - generic [ref=e787]:
+                    - img "心を整える恋愛鑑定士 詩音" [ref=e788]
+                    - generic [ref=e789]: 心を整える恋愛鑑定士 詩音
+                    - generic [ref=e791]:
+                      - strong [ref=e792]: "500"
+                      - text: 円
+              - link "守護フクロウ占い｜あなたを守る一羽を視ます 霊感ではなく統計学。あなたの守護フクロウを3占術で導きます 守護フクロウ占い｜あなたを守る一羽を視ます 霊感ではなく統計学。あなたの守護フクロウを3占術で導きます  - フクロウ神社 四柱推命×九星気学×姓名 フクロウ神社 四柱推命×九星気学×姓名 500 円" [ref=e793] [cursor=pointer]:
+                - /url: /services/4272977
+                - generic [ref=e795]:
+                  - img "守護フクロウ占い｜あなたを守る一羽を視ます 霊感ではなく統計学。あなたの守護フクロウを3占術で導きます"
+                - generic [ref=e796]:
+                  - generic [ref=e797]: 守護フクロウ占い｜あなたを守る一羽を視ます 霊感ではなく統計学。あなたの守護フクロウを3占術で導きます
+                  - generic [ref=e798]:
+                    - generic [ref=e799]: 
+                    - generic [ref=e800]: "-"
+                  - generic [ref=e801]:
+                    - img "フクロウ神社 四柱推命×九星気学×姓名" [ref=e802]
+                    - generic [ref=e803]: フクロウ神社 四柱推命×九星気学×姓名
+                    - generic [ref=e805]:
+                      - strong [ref=e806]: "500"
+                      - text: 円
+              - link "写真鑑定であなたの手相から運勢・性格を鑑定します あなた本来の魅力や強み、そして今後の運勢をお伝えする鑑定です 写真鑑定であなたの手相から運勢・性格を鑑定します あなた本来の魅力や強み、そして今後の運勢をお伝えする鑑定です  5.0 (10) Story_Coco Story_Coco 500 円" [ref=e807] [cursor=pointer]:
+                - /url: /services/3931518
+                - generic [ref=e809]:
+                  - img "写真鑑定であなたの手相から運勢・性格を鑑定します あなた本来の魅力や強み、そして今後の運勢をお伝えする鑑定です"
+                - generic [ref=e810]:
+                  - generic [ref=e811]: 写真鑑定であなたの手相から運勢・性格を鑑定します あなた本来の魅力や強み、そして今後の運勢をお伝えする鑑定です
+                  - generic [ref=e812]:
+                    - generic [ref=e813]: 
+                    - generic [ref=e814]: "5.0"
+                    - generic [ref=e815]: (10)
+                  - generic [ref=e816]:
+                    - img "Story_Coco" [ref=e817]
+                    - generic [ref=e818]: Story_Coco
+                    - generic [ref=e820]:
+                      - strong [ref=e821]: "500"
+                      - text: 円
+              - link "人生の迷い、今動くべきか、先の一歩をタロットします 転職・離婚・移住・漠然とした不安..迷いの正体＆今できること 人生の迷い、今動くべきか、先の一歩をタロットします 転職・離婚・移住・漠然とした不安..迷いの正体＆今できること  5.0 (3) ＊みなも＊タロット占い＆カードセラピスト ＊みなも＊タロット占い＆カードセラピスト 500 円" [ref=e822] [cursor=pointer]:
+                - /url: /services/4069699
+                - generic [ref=e824]:
+                  - img "人生の迷い、今動くべきか、先の一歩をタロットします 転職・離婚・移住・漠然とした不安..迷いの正体＆今できること"
+                - generic [ref=e825]:
+                  - generic [ref=e826]: 人生の迷い、今動くべきか、先の一歩をタロットします 転職・離婚・移住・漠然とした不安..迷いの正体＆今できること
+                  - generic [ref=e827]:
+                    - generic [ref=e828]: 
+                    - generic [ref=e829]: "5.0"
+                    - generic [ref=e830]: (3)
+                  - generic [ref=e831]:
+                    - img "＊みなも＊タロット占い＆カードセラピスト" [ref=e832]
+                    - generic [ref=e833]: ＊みなも＊タロット占い＆カードセラピスト
+                    - generic [ref=e835]:
+                      - strong [ref=e836]: "500"
+                      - text: 円
+              - link "あなただけの可愛い♡取扱説明書を作ります 性格も運気も全部♡あなた専用取扱説明書 【とりせつちゃん】 あなただけの可愛い♡取扱説明書を作ります 性格も運気も全部♡あなた専用取扱説明書 【とりせつちゃん】  5.0 (1) とりせつちゃん とりせつちゃん 500 円" [ref=e837] [cursor=pointer]:
+                - /url: /services/4211713
+                - generic [ref=e839]:
+                  - img "あなただけの可愛い♡取扱説明書を作ります 性格も運気も全部♡あなた専用取扱説明書 【とりせつちゃん】"
+                - generic [ref=e840]:
+                  - generic [ref=e841]: あなただけの可愛い♡取扱説明書を作ります 性格も運気も全部♡あなた専用取扱説明書 【とりせつちゃん】
+                  - generic [ref=e842]:
+                    - generic [ref=e843]: 
+                    - generic [ref=e844]: "5.0"
+                    - generic [ref=e845]: (1)
+                  - generic [ref=e846]:
+                    - img "とりせつちゃん" [ref=e847]
+                    - generic [ref=e848]: とりせつちゃん
+                    - generic [ref=e850]:
+                      - strong [ref=e851]: "500"
+                      - text: 円
+              - link "3占術で立体的な「あなたのトリセツ」お届けします ｜占星術×数秘術×タロット｜約13ページの美麗な保存版PDF 3占術で立体的な「あなたのトリセツ」お届けします ｜占星術×数秘術×タロット｜約13ページの美麗な保存版PDF  5.0 (1) Lunafleur（ルナフルール） Lunafleur（ルナフルール） 500 円" [ref=e852] [cursor=pointer]:
+                - /url: /services/4188055
+                - generic [ref=e854]:
+                  - img "3占術で立体的な「あなたのトリセツ」お届けします ｜占星術×数秘術×タロット｜約13ページの美麗な保存版PDF"
+                - generic [ref=e855]:
+                  - generic [ref=e856]: 3占術で立体的な「あなたのトリセツ」お届けします ｜占星術×数秘術×タロット｜約13ページの美麗な保存版PDF
+                  - generic [ref=e857]:
+                    - generic [ref=e858]: 
+                    - generic [ref=e859]: "5.0"
+                    - generic [ref=e860]: (1)
+                  - generic [ref=e861]:
+                    - img "Lunafleur（ルナフルール）" [ref=e862]
+                    - generic [ref=e863]: Lunafleur（ルナフルール）
+                    - generic [ref=e865]:
+                      - strong [ref=e866]: "500"
+                      - text: 円
+              - link "あなたの生まれ持った本当の才能・運勢を鑑定します 性格や使命を総合診断・より良い未来へのアドバイスをいたします あなたの生まれ持った本当の才能・運勢を鑑定します 性格や使命を総合診断・より良い未来へのアドバイスをいたします  4.9 (34) momo⭐️占い momo⭐️占い 1,000 円" [ref=e867] [cursor=pointer]:
+                - /url: /services/3603295
+                - generic [ref=e869]:
+                  - img "あなたの生まれ持った本当の才能・運勢を鑑定します 性格や使命を総合診断・より良い未来へのアドバイスをいたします"
+                - generic [ref=e870]:
+                  - generic [ref=e871]: あなたの生まれ持った本当の才能・運勢を鑑定します 性格や使命を総合診断・より良い未来へのアドバイスをいたします
+                  - generic [ref=e872]:
+                    - generic [ref=e873]: 
+                    - generic [ref=e874]: "4.9"
+                    - generic [ref=e875]: (34)
+                  - generic [ref=e876]:
+                    - img "momo⭐️占い" [ref=e877]
+                    - generic [ref=e878]: momo⭐️占い
+                    - generic [ref=e880]:
+                      - strong [ref=e881]: 1,000
+                      - text: 円
+              - link "言霊おみくじ:全12タイプのおみくじを引きます あなたの道が見えなくなった時に、是非ご活用ください。 言霊おみくじ:全12タイプのおみくじを引きます あなたの道が見えなくなった時に、是非ご活用ください。  - 【未来預言者】カムイ 【未来預言者】カムイ 500 円" [ref=e882] [cursor=pointer]:
+                - /url: /services/3592002
+                - generic [ref=e884]:
+                  - img "言霊おみくじ:全12タイプのおみくじを引きます あなたの道が見えなくなった時に、是非ご活用ください。"
+                - generic [ref=e885]:
+                  - generic [ref=e886]: 言霊おみくじ:全12タイプのおみくじを引きます あなたの道が見えなくなった時に、是非ご活用ください。
+                  - generic [ref=e887]:
+                    - generic [ref=e888]: 
+                    - generic [ref=e889]: "-"
+                  - generic [ref=e890]:
+                    - img "【未来預言者】カムイ" [ref=e891]
+                    - generic [ref=e892]: 【未来預言者】カムイ
+                    - generic [ref=e894]:
+                      - strong [ref=e895]: "500"
+                      - text: 円
+              - link "タロット｜感情が揺れて判断できない時、心を整えます 「決められない」、その迷いをタロット3枚で整理します タロット｜感情が揺れて判断できない時、心を整えます 「決められない」、その迷いをタロット3枚で整理します  5.0 (1) 占い師 笑月 占い師 笑月 500 円" [ref=e896] [cursor=pointer]:
+                - /url: /services/3899885
+                - generic [ref=e898]:
+                  - img "タロット｜感情が揺れて判断できない時、心を整えます 「決められない」、その迷いをタロット3枚で整理します"
+                - generic [ref=e899]:
+                  - generic [ref=e900]: タロット｜感情が揺れて判断できない時、心を整えます 「決められない」、その迷いをタロット3枚で整理します
+                  - generic [ref=e901]:
+                    - generic [ref=e902]: 
+                    - generic [ref=e903]: "5.0"
+                    - generic [ref=e904]: (1)
+                  - generic [ref=e905]:
+                    - img "占い師 笑月" [ref=e906]
+                    - generic [ref=e907]: 占い師 笑月
+                    - generic [ref=e909]:
+                      - strong [ref=e910]: "500"
+                      - text: 円
+              - link "このままでいいのか迷い疲れた心を整理します 考えすぎが止まらない人。気持ちがまとまっていなくても大丈夫。 このままでいいのか迷い疲れた心を整理します 考えすぎが止まらない人。気持ちがまとまっていなくても大丈夫。  - ノクティル✴︎カード鑑定師 ノクティル✴︎カード鑑定師 500 円" [ref=e911] [cursor=pointer]:
+                - /url: /services/4235273
+                - generic [ref=e913]:
+                  - img "このままでいいのか迷い疲れた心を整理します 考えすぎが止まらない人。気持ちがまとまっていなくても大丈夫。"
+                - generic [ref=e914]:
+                  - generic [ref=e915]: このままでいいのか迷い疲れた心を整理します 考えすぎが止まらない人。気持ちがまとまっていなくても大丈夫。
+                  - generic [ref=e916]:
+                    - generic [ref=e917]: 
+                    - generic [ref=e918]: "-"
+                  - generic [ref=e919]:
+                    - img "ノクティル✴︎カード鑑定師" [ref=e920]
+                    - generic [ref=e921]: ノクティル✴︎カード鑑定師
+                    - generic [ref=e923]:
+                      - strong [ref=e924]: "500"
+                      - text: 円
+            - generic [ref=e926] [cursor=pointer]: 
+        - generic [ref=e928]:
+          - heading "このサービスを見た人はこちらもチェックしています" [level=2] [ref=e929]
+          - generic [ref=e930]:
+            - generic [ref=e933]:
+              - link "占い 鑑定歴33年のプロ占い師が真剣占います 博多・廓屋の純血統占い祈願師 雷鳥 予約受付中 鑑定歴33年のプロ占い師が真剣占います 博多・廓屋の純血統占い祈願師 雷鳥  5.0 (11515) 鑑定歴33年のプロ占い師 雷鳥 鑑定歴33年のプロ占い師 雷鳥 400 円 /分" [ref=e934] [cursor=pointer]:
+                - /url: /services/2030001
+                - generic [ref=e935]:
+                  - img "占い"
+                - generic [ref=e937]:
+                  - img "鑑定歴33年のプロ占い師が真剣占います 博多・廓屋の純血統占い祈願師 雷鳥"
+                  - generic [ref=e940]: 予約受付中
+                - generic [ref=e941]:
+                  - generic [ref=e942]: 鑑定歴33年のプロ占い師が真剣占います 博多・廓屋の純血統占い祈願師 雷鳥
+                  - generic [ref=e943]:
+                    - generic [ref=e944]: 
+                    - generic [ref=e945]: "5.0"
+                    - generic [ref=e946]: (11515)
+                  - generic [ref=e947]:
+                    - img "鑑定歴33年のプロ占い師 雷鳥" [ref=e948]
+                    - generic [ref=e949]: 鑑定歴33年のプロ占い師 雷鳥
+                    - generic [ref=e951]:
+                      - strong [ref=e952]: "400"
+                      - text: 円 /分
+              - link "誰かとちょこっと話したいとき、5分でもお話聞きます 疲れた～、でもカウンセリングじゃない、なんとなく雑談聞いて～ 予約受付中 誰かとちょこっと話したいとき、5分でもお話聞きます 疲れた～、でもカウンセリングじゃない、なんとなく雑談聞いて～  5.0 (7943) ナナミ_nanami ナナミ_nanami 220 円 /分" [ref=e953] [cursor=pointer]:
+                - /url: /services/716373
+                - generic [ref=e955]:
+                  - img "誰かとちょこっと話したいとき、5分でもお話聞きます 疲れた～、でもカウンセリングじゃない、なんとなく雑談聞いて～"
+                  - generic [ref=e958]: 予約受付中
+                - generic [ref=e959]:
+                  - generic [ref=e960]: 誰かとちょこっと話したいとき、5分でもお話聞きます 疲れた～、でもカウンセリングじゃない、なんとなく雑談聞いて～
+                  - generic [ref=e961]:
+                    - generic [ref=e962]: 
+                    - generic [ref=e963]: "5.0"
+                    - generic [ref=e964]: (7943)
+                  - generic [ref=e965]:
+                    - img "ナナミ_nanami" [ref=e966]
+                    - generic [ref=e967]: ナナミ_nanami
+                    - generic [ref=e969]:
+                      - strong [ref=e970]: "220"
+                      - text: 円 /分
+              - link "今すぐ話がしたい！ そんなあなたの希望叶えます 今日あったことから深刻な悩みまで☆何でも打ち明けてください。 今すぐ話がしたい！ そんなあなたの希望叶えます 今日あったことから深刻な悩みまで☆何でも打ち明けてください。  5.0 (5794) はしもと ゆっこ♡救急こころの相談室 はしもと ゆっこ♡救急こころの相談室 500 円 /分" [ref=e971] [cursor=pointer]:
+                - /url: /services/1509496
+                - generic [ref=e973]:
+                  - img "今すぐ話がしたい！ そんなあなたの希望叶えます 今日あったことから深刻な悩みまで☆何でも打ち明けてください。"
+                - generic [ref=e974]:
+                  - generic [ref=e975]: 今すぐ話がしたい！ そんなあなたの希望叶えます 今日あったことから深刻な悩みまで☆何でも打ち明けてください。
+                  - generic [ref=e976]:
+                    - generic [ref=e977]: 
+                    - generic [ref=e978]: "5.0"
+                    - generic [ref=e979]: (5794)
+                  - generic [ref=e980]:
+                    - img "はしもと ゆっこ♡救急こころの相談室" [ref=e981]
+                    - generic [ref=e982]: はしもと ゆっこ♡救急こころの相談室
+                    - generic [ref=e984]:
+                      - strong [ref=e985]: "500"
+                      - text: 円 /分
+              - link "スピード納品！ポップで目を惹く人物×動物描きます 挿絵・動画・グッズなど鮮やかな配色で個性を出したい方へ スピード納品！ポップで目を惹く人物×動物描きます 挿絵・動画・グッズなど鮮やかな配色で個性を出したい方へ  5.0 (1326) hoppe（ほっぺ） hoppe（ほっぺ） 10,000 円" [ref=e986] [cursor=pointer]:
+                - /url: /services/429449
+                - generic [ref=e988]:
+                  - img "スピード納品！ポップで目を惹く人物×動物描きます 挿絵・動画・グッズなど鮮やかな配色で個性を出したい方へ"
+                - generic [ref=e989]:
+                  - generic [ref=e990]: スピード納品！ポップで目を惹く人物×動物描きます 挿絵・動画・グッズなど鮮やかな配色で個性を出したい方へ
+                  - generic [ref=e991]:
+                    - generic [ref=e992]: 
+                    - generic [ref=e993]: "5.0"
+                    - generic [ref=e994]: (1326)
+                  - generic [ref=e995]:
+                    - img "hoppe（ほっぺ）" [ref=e996]
+                    - generic [ref=e997]: hoppe（ほっぺ）
+                    - generic [ref=e999]:
+                      - strong [ref=e1000]: 10,000
+                      - text: 円
+              - link "占い スッキリお悩み解決！視えたままお伝え致します 恋愛、結婚、人間関係、仕事、人生、ペットの気持ち等◎祈願付き 相談中 スッキリお悩み解決！視えたままお伝え致します 恋愛、結婚、人間関係、仕事、人生、ペットの気持ち等◎祈願付き  5.0 (9822) 佐和ダウジング＆スピリットメンター 佐和ダウジング＆スピリットメンター 380 円 /分" [ref=e1001] [cursor=pointer]:
+                - /url: /services/474812
+                - generic [ref=e1002]:
+                  - img "占い"
+                - generic [ref=e1004]:
+                  - img "スッキリお悩み解決！視えたままお伝え致します 恋愛、結婚、人間関係、仕事、人生、ペットの気持ち等◎祈願付き"
+                  - generic [ref=e1007]: 相談中
+                - generic [ref=e1008]:
+                  - generic [ref=e1009]: スッキリお悩み解決！視えたままお伝え致します 恋愛、結婚、人間関係、仕事、人生、ペットの気持ち等◎祈願付き
+                  - generic [ref=e1010]:
+                    - generic [ref=e1011]: 
+                    - generic [ref=e1012]: "5.0"
+                    - generic [ref=e1013]: (9822)
+                  - generic [ref=e1014]:
+                    - img "佐和ダウジング＆スピリットメンター" [ref=e1015]
+                    - generic [ref=e1016]: 佐和ダウジング＆スピリットメンター
+                    - generic [ref=e1018]:
+                      - strong [ref=e1019]: "380"
+                      - text: 円 /分
+              - link "簡単〜複雑◎歌ってみた・オリジナルMV制作します Vtuber・歌い手必見！お任せ〜本家再現まで可能！ 簡単〜複雑◎歌ってみた・オリジナルMV制作します Vtuber・歌い手必見！お任せ〜本家再現まで可能！  5.0 (191) 矢野ちぃ菜 矢野ちぃ菜 5,000 円" [ref=e1020] [cursor=pointer]:
+                - /url: /services/3133402
+                - generic [ref=e1022]:
+                  - img "簡単〜複雑◎歌ってみた・オリジナルMV制作します Vtuber・歌い手必見！お任せ〜本家再現まで可能！"
+                - generic [ref=e1023]:
+                  - generic [ref=e1024]: 簡単〜複雑◎歌ってみた・オリジナルMV制作します Vtuber・歌い手必見！お任せ〜本家再現まで可能！
+                  - generic [ref=e1025]:
+                    - generic [ref=e1026]: 
+                    - generic [ref=e1027]: "5.0"
+                    - generic [ref=e1028]: (191)
+                  - generic [ref=e1029]:
+                    - img "矢野ちぃ菜" [ref=e1030]
+                    - generic [ref=e1031]: 矢野ちぃ菜
+                    - generic [ref=e1033]:
+                      - strong [ref=e1034]: 5,000
+                      - text: 円
+              - link "占い 恋愛・婚外・仕事・人間関係｜本音と今後を霊視ます 現実重視・アゲなし｜本質と今後の行動を具体的にお伝えします 恋愛・婚外・仕事・人間関係｜本音と今後を霊視ます 現実重視・アゲなし｜本質と今後の行動を具体的にお伝えします  4.9 (14317) toraramaro toraramaro 460 円 /分" [ref=e1035] [cursor=pointer]:
+                - /url: /services/587907
+                - generic [ref=e1036]:
+                  - img "占い"
+                - generic [ref=e1038]:
+                  - img "恋愛・婚外・仕事・人間関係｜本音と今後を霊視ます 現実重視・アゲなし｜本質と今後の行動を具体的にお伝えします"
+                - generic [ref=e1039]:
+                  - generic [ref=e1040]: 恋愛・婚外・仕事・人間関係｜本音と今後を霊視ます 現実重視・アゲなし｜本質と今後の行動を具体的にお伝えします
+                  - generic [ref=e1041]:
+                    - generic [ref=e1042]: 
+                    - generic [ref=e1043]: "4.9"
+                    - generic [ref=e1044]: (14317)
+                  - generic [ref=e1045]:
+                    - img "toraramaro" [ref=e1046]
+                    - generic [ref=e1047]: toraramaro
+                    - generic [ref=e1049]:
+                      - strong [ref=e1050]: "460"
+                      - text: 円 /分
+              - link "YouTube動画をプロが格安で編集します 集客・採用・ブランディングを加速させる動画制作 YouTube動画をプロが格安で編集します 集客・採用・ブランディングを加速させる動画制作  5.0 (62) バズムビ バズムビ 3,000 円" [ref=e1051] [cursor=pointer]:
+                - /url: /services/3763411
+                - generic [ref=e1053]:
+                  - img "YouTube動画をプロが格安で編集します 集客・採用・ブランディングを加速させる動画制作"
+                - generic [ref=e1054]:
+                  - generic [ref=e1055]: YouTube動画をプロが格安で編集します 集客・採用・ブランディングを加速させる動画制作
+                  - generic [ref=e1056]:
+                    - generic [ref=e1057]: 
+                    - generic [ref=e1058]: "5.0"
+                    - generic [ref=e1059]: (62)
+                  - generic [ref=e1060]:
+                    - img "バズムビ" [ref=e1061]
+                    - generic [ref=e1062]: バズムビ
+                    - generic [ref=e1064]:
+                      - strong [ref=e1065]: 3,000
+                      - text: 円
+              - link "実績1600件！最高品質Live2Dを制作します 全工程完結｜修正無制限・著作権譲渡込｜初心者も徹底支援 実績1600件！最高品質Live2Dを制作します 全工程完結｜修正無制限・著作権譲渡込｜初心者も徹底支援  5.0 (647) ユウシイ＠Vtuber制作 ユウシイ＠Vtuber制作 20,000 円" [ref=e1066] [cursor=pointer]:
+                - /url: /services/2756954
+                - generic [ref=e1068]:
+                  - img "実績1600件！最高品質Live2Dを制作します 全工程完結｜修正無制限・著作権譲渡込｜初心者も徹底支援"
+                - generic [ref=e1069]:
+                  - generic [ref=e1070]: 実績1600件！最高品質Live2Dを制作します 全工程完結｜修正無制限・著作権譲渡込｜初心者も徹底支援
+                  - generic [ref=e1071]:
+                    - generic [ref=e1072]: 
+                    - generic [ref=e1073]: "5.0"
+                    - generic [ref=e1074]: (647)
+                  - generic [ref=e1075]:
+                    - img "ユウシイ＠Vtuber制作" [ref=e1076]
+                    - generic [ref=e1077]: ユウシイ＠Vtuber制作
+                    - generic [ref=e1079]:
+                      - strong [ref=e1080]: 20,000
+                      - text: 円
+              - link "リピーター専用【ヒーリング】致します ☆波動を上げ、流れを良くします☆ リピーター専用【ヒーリング】致します ☆波動を上げ、流れを良くします☆  5.0 (20781) misa k misa k 1,500 円" [ref=e1081] [cursor=pointer]:
+                - /url: /services/339506
+                - generic [ref=e1083]:
+                  - img "リピーター専用【ヒーリング】致します ☆波動を上げ、流れを良くします☆"
+                - generic [ref=e1084]:
+                  - generic [ref=e1085]: リピーター専用【ヒーリング】致します ☆波動を上げ、流れを良くします☆
+                  - generic [ref=e1086]:
+                    - generic [ref=e1087]: 
+                    - generic [ref=e1088]: "5.0"
+                    - generic [ref=e1089]: (20781)
+                  - generic [ref=e1090]:
+                    - img "misa k" [ref=e1091]
+                    - generic [ref=e1092]: misa k
+                    - generic [ref=e1094]:
+                      - strong [ref=e1095]: 1,500
+                      - text: 円
+              - link "30年の霊視経験による【本格霊事鑑定】を行います 霊現象・家相・家系・先祖・土地・人間関係・悪縁・因縁・厄払い 30年の霊視経験による【本格霊事鑑定】を行います 霊現象・家相・家系・先祖・土地・人間関係・悪縁・因縁・厄払い  5.0 (376) 【霊能者】天晴 【霊能者】天晴 3,000 円" [ref=e1096] [cursor=pointer]:
+                - /url: /services/3852653
+                - generic [ref=e1098]:
+                  - img "30年の霊視経験による【本格霊事鑑定】を行います 霊現象・家相・家系・先祖・土地・人間関係・悪縁・因縁・厄払い"
+                - generic [ref=e1099]:
+                  - generic [ref=e1100]: 30年の霊視経験による【本格霊事鑑定】を行います 霊現象・家相・家系・先祖・土地・人間関係・悪縁・因縁・厄払い
+                  - generic [ref=e1101]:
+                    - generic [ref=e1102]: 
+                    - generic [ref=e1103]: "5.0"
+                    - generic [ref=e1104]: (376)
+                  - generic [ref=e1105]:
+                    - img "【霊能者】天晴" [ref=e1106]
+                    - generic [ref=e1107]: 【霊能者】天晴
+                    - generic [ref=e1109]:
+                      - strong [ref=e1110]: 3,000
+                      - text: 円
+              - link "あらゆる悩みに対して理想の未来への解決策を授けます 人生が上手くいかないと悩んでいる人に未来を好転させる魂の導き あらゆる悩みに対して理想の未来への解決策を授けます 人生が上手くいかないと悩んでいる人に未来を好転させる魂の導き  5.0 (837) 九条いつき【高次元宇宙霊視師】 九条いつき【高次元宇宙霊視師】 500 円" [ref=e1111] [cursor=pointer]:
+                - /url: /services/3743210
+                - generic [ref=e1113]:
+                  - img "あらゆる悩みに対して理想の未来への解決策を授けます 人生が上手くいかないと悩んでいる人に未来を好転させる魂の導き"
+                - generic [ref=e1114]:
+                  - generic [ref=e1115]: あらゆる悩みに対して理想の未来への解決策を授けます 人生が上手くいかないと悩んでいる人に未来を好転させる魂の導き
+                  - generic [ref=e1116]:
+                    - generic [ref=e1117]: 
+                    - generic [ref=e1118]: "5.0"
+                    - generic [ref=e1119]: (837)
+                  - generic [ref=e1120]:
+                    - img "九条いつき【高次元宇宙霊視師】" [ref=e1121]
+                    - generic [ref=e1122]: 九条いつき【高次元宇宙霊視師】
+                    - generic [ref=e1124]:
+                      - strong [ref=e1125]: "500"
+                      - text: 円
+              - link "PRO 迅速・高品質★YouTube動画編集代行します 【実績多数!!】企業・店舗・芸能事務所等ご依頼いただいてます 迅速・高品質★YouTube動画編集代行します 【実績多数!!】企業・店舗・芸能事務所等ご依頼いただいてます  5.0 (1016) つーくん┃動画編集屋 つーくん┃動画編集屋 10,000 円" [ref=e1126] [cursor=pointer]:
+                - /url: /services/1244353
+                - generic [ref=e1127]:
+                  - img "PRO"
+                - generic [ref=e1129]:
+                  - img "迅速・高品質★YouTube動画編集代行します 【実績多数!!】企業・店舗・芸能事務所等ご依頼いただいてます"
+                - generic [ref=e1130]:
+                  - generic [ref=e1131]: 迅速・高品質★YouTube動画編集代行します 【実績多数!!】企業・店舗・芸能事務所等ご依頼いただいてます
+                  - generic [ref=e1132]:
+                    - generic [ref=e1133]: 
+                    - generic [ref=e1134]: "5.0"
+                    - generic [ref=e1135]: (1016)
+                  - generic [ref=e1136]:
+                    - img "つーくん┃動画編集屋" [ref=e1137]
+                    - generic [ref=e1138]: つーくん┃動画編集屋
+                    - generic [ref=e1140]:
+                      - strong [ref=e1141]: 10,000
+                      - text: 円
+              - link "収益化可能！YouTube再生時間を増やします 先月に続くアルゴリズム更新の為、緊急メンテナンス中 収益化可能！YouTube再生時間を増やします 先月に続くアルゴリズム更新の為、緊急メンテナンス中  5.0 (55) YukkuriBlue／氷精 YukkuriBlue／氷精 1,500 円" [ref=e1142] [cursor=pointer]:
+                - /url: /services/4034360
+                - generic [ref=e1144]:
+                  - img "収益化可能！YouTube再生時間を増やします 先月に続くアルゴリズム更新の為、緊急メンテナンス中"
+                - generic [ref=e1145]:
+                  - generic [ref=e1146]: 収益化可能！YouTube再生時間を増やします 先月に続くアルゴリズム更新の為、緊急メンテナンス中
+                  - generic [ref=e1147]:
+                    - generic [ref=e1148]: 
+                    - generic [ref=e1149]: "5.0"
+                    - generic [ref=e1150]: (55)
+                  - generic [ref=e1151]:
+                    - img "YukkuriBlue／氷精" [ref=e1152]
+                    - generic [ref=e1153]: YukkuriBlue／氷精
+                    - generic [ref=e1155]:
+                      - strong [ref=e1156]: 1,500
+                      - text: 円
+              - link "にじさんじ実績有！高クオリティ✨MV制作いたします オリジナル曲/歌ってみた/ティザーPV/OPED/ライブVJ にじさんじ実績有！高クオリティ✨MV制作いたします オリジナル曲/歌ってみた/ティザーPV/OPED/ライブVJ  5.0 (146) SORA✿ SORA✿ 55,000 円" [ref=e1157] [cursor=pointer]:
+                - /url: /services/1331969
+                - generic [ref=e1159]:
+                  - img "にじさんじ実績有！高クオリティ✨MV制作いたします オリジナル曲/歌ってみた/ティザーPV/OPED/ライブVJ"
+                - generic [ref=e1160]:
+                  - generic [ref=e1161]: にじさんじ実績有！高クオリティ✨MV制作いたします オリジナル曲/歌ってみた/ティザーPV/OPED/ライブVJ
+                  - generic [ref=e1162]:
+                    - generic [ref=e1163]: 
+                    - generic [ref=e1164]: "5.0"
+                    - generic [ref=e1165]: (146)
+                  - generic [ref=e1166]:
+                    - img "SORA✿" [ref=e1167]
+                    - generic [ref=e1168]: SORA✿
+                    - generic [ref=e1170]:
+                      - strong [ref=e1171]: 55,000
+                      - text: 円
+              - link "配信 OP(待機画面) / EDを制作します Vtuber / 歌い手 / YouTuber さん向け！ 配信 OP(待機画面) / EDを制作します Vtuber / 歌い手 / YouTuber さん向け！  5.0 (312) MoMoqune MoMoqune 10,000 円" [ref=e1172] [cursor=pointer]:
+                - /url: /services/2347677
+                - generic [ref=e1174]:
+                  - img "配信 OP(待機画面) / EDを制作します Vtuber / 歌い手 / YouTuber さん向け！"
+                - generic [ref=e1175]:
+                  - generic [ref=e1176]: 配信 OP(待機画面) / EDを制作します Vtuber / 歌い手 / YouTuber さん向け！
+                  - generic [ref=e1177]:
+                    - generic [ref=e1178]: 
+                    - generic [ref=e1179]: "5.0"
+                    - generic [ref=e1180]: (312)
+                  - generic [ref=e1181]:
+                    - img "MoMoqune" [ref=e1182]
+                    - generic [ref=e1183]: MoMoqune
+                    - generic [ref=e1185]:
+                      - strong [ref=e1186]: 10,000
+                      - text: 円
+              - link "PRO プロがシンプルで洗練されたロゴを制作いたします 【プロ認定デザイナー】【JAGDA正会員】【評価 5.0】 プロがシンプルで洗練されたロゴを制作いたします 【プロ認定デザイナー】【JAGDA正会員】【評価 5.0】  5.0 (600) sgmr design sgmr design 100,000 円" [ref=e1187] [cursor=pointer]:
+                - /url: /services/1845632
+                - generic [ref=e1188]:
+                  - img "PRO"
+                - generic [ref=e1190]:
+                  - img "プロがシンプルで洗練されたロゴを制作いたします 【プロ認定デザイナー】【JAGDA正会員】【評価 5.0】"
+                - generic [ref=e1191]:
+                  - generic [ref=e1192]: プロがシンプルで洗練されたロゴを制作いたします 【プロ認定デザイナー】【JAGDA正会員】【評価 5.0】
+                  - generic [ref=e1193]:
+                    - generic [ref=e1194]: 
+                    - generic [ref=e1195]: "5.0"
+                    - generic [ref=e1196]: (600)
+                  - generic [ref=e1197]:
+                    - img "sgmr design" [ref=e1198]
+                    - generic [ref=e1199]: sgmr design
+                    - generic [ref=e1201]:
+                      - strong [ref=e1202]: 100,000
+                      - text: 円
+              - link "アニメ塗りでキャッチーで目立つイラストを描きます 動画用、スチル、アイコン等、目を引くイラストをご希望の方に！ アニメ塗りでキャッチーで目立つイラストを描きます 動画用、スチル、アイコン等、目を引くイラストをご希望の方に！  5.0 (481) こでびる こでびる 19,000 円" [ref=e1203] [cursor=pointer]:
+                - /url: /services/1273882
+                - generic [ref=e1205]:
+                  - img "アニメ塗りでキャッチーで目立つイラストを描きます 動画用、スチル、アイコン等、目を引くイラストをご希望の方に！"
+                - generic [ref=e1206]:
+                  - generic [ref=e1207]: アニメ塗りでキャッチーで目立つイラストを描きます 動画用、スチル、アイコン等、目を引くイラストをご希望の方に！
+                  - generic [ref=e1208]:
+                    - generic [ref=e1209]: 
+                    - generic [ref=e1210]: "5.0"
+                    - generic [ref=e1211]: (481)
+                  - generic [ref=e1212]:
+                    - img "こでびる" [ref=e1213]
+                    - generic [ref=e1214]: こでびる
+                    - generic [ref=e1216]:
+                      - strong [ref=e1217]: 19,000
+                      - text: 円
+              - link "企業VTuber並み！ロゴ、SDキャラも制作します デビュー徹底サポート！満足いくまで修正無制限、著作権譲渡 企業VTuber並み！ロゴ、SDキャラも制作します デビュー徹底サポート！満足いくまで修正無制限、著作権譲渡  5.0 (148) Rei ★ Rei ★ 110,000 円" [ref=e1218] [cursor=pointer]:
+                - /url: /services/3141529
+                - generic [ref=e1220]:
+                  - img "企業VTuber並み！ロゴ、SDキャラも制作します デビュー徹底サポート！満足いくまで修正無制限、著作権譲渡"
+                - generic [ref=e1221]:
+                  - generic [ref=e1222]: 企業VTuber並み！ロゴ、SDキャラも制作します デビュー徹底サポート！満足いくまで修正無制限、著作権譲渡
+                  - generic [ref=e1223]:
+                    - generic [ref=e1224]: 
+                    - generic [ref=e1225]: "5.0"
+                    - generic [ref=e1226]: (148)
+                  - generic [ref=e1227]:
+                    - img "Rei ★" [ref=e1228]
+                    - generic [ref=e1229]: Rei ★
+                    - generic [ref=e1231]:
+                      - strong [ref=e1232]: 110,000
+                      - text: 円
+              - link "金龍＆黒龍縁結びと【大富豪直伝】金貨の大魔術します 財運・くじ運・高額当選・臨時収入を呼び込む強力双龍神と縁結び 金龍＆黒龍縁結びと【大富豪直伝】金貨の大魔術します 財運・くじ運・高額当選・臨時収入を呼び込む強力双龍神と縁結び  5.0 (138) Maria☽セレスティアルマスター Maria☽セレスティアルマスター 30,000 円" [ref=e1233] [cursor=pointer]:
+                - /url: /services/3459962
+                - generic [ref=e1235]:
+                  - img "金龍＆黒龍縁結びと【大富豪直伝】金貨の大魔術します 財運・くじ運・高額当選・臨時収入を呼び込む強力双龍神と縁結び"
+                - generic [ref=e1236]:
+                  - generic [ref=e1237]: 金龍＆黒龍縁結びと【大富豪直伝】金貨の大魔術します 財運・くじ運・高額当選・臨時収入を呼び込む強力双龍神と縁結び
+                  - generic [ref=e1238]:
+                    - generic [ref=e1239]: 
+                    - generic [ref=e1240]: "5.0"
+                    - generic [ref=e1241]: (138)
+                  - generic [ref=e1242]:
+                    - img "Maria☽セレスティアルマスター" [ref=e1243]
+                    - generic [ref=e1244]: Maria☽セレスティアルマスター
+                    - generic [ref=e1246]:
+                      - strong [ref=e1247]: 30,000
+                      - text: 円
+              - link "YouTubeで3500万円稼ぐ私がコンサルします チャンネル登録・再生時間・宣伝・個人・マーケティング・収益化 YouTubeで3500万円稼ぐ私がコンサルします チャンネル登録・再生時間・宣伝・個人・マーケティング・収益化  5.0 (259) YouTubeで独立した人＠3500万円 YouTubeで独立した人＠3500万円 29,000 円" [ref=e1248] [cursor=pointer]:
+                - /url: /services/3484027
+                - generic [ref=e1250]:
+                  - img "YouTubeで3500万円稼ぐ私がコンサルします チャンネル登録・再生時間・宣伝・個人・マーケティング・収益化"
+                - generic [ref=e1251]:
+                  - generic [ref=e1252]: YouTubeで3500万円稼ぐ私がコンサルします チャンネル登録・再生時間・宣伝・個人・マーケティング・収益化
+                  - generic [ref=e1253]:
+                    - generic [ref=e1254]: 
+                    - generic [ref=e1255]: "5.0"
+                    - generic [ref=e1256]: (259)
+                  - generic [ref=e1257]:
+                    - img "YouTubeで独立した人＠3500万円" [ref=e1258]
+                    - generic [ref=e1259]: YouTubeで独立した人＠3500万円
+                    - generic [ref=e1261]:
+                      - strong [ref=e1262]: 29,000
+                      - text: 円
+              - link "PRO オリコン一位、ミリオンの実績あり、作編曲します ピアノが特に得意です。ピアノアレンジはお任せください。 オリコン一位、ミリオンの実績あり、作編曲します ピアノが特に得意です。ピアノアレンジはお任せください。  5.0 (418) 湖畔の音工房 湖畔の音工房 60,000 円" [ref=e1263] [cursor=pointer]:
+                - /url: /services/459828
+                - generic [ref=e1264]:
+                  - img "PRO"
+                - generic [ref=e1266]:
+                  - img "オリコン一位、ミリオンの実績あり、作編曲します ピアノが特に得意です。ピアノアレンジはお任せください。"
+                - generic [ref=e1267]:
+                  - generic [ref=e1268]: オリコン一位、ミリオンの実績あり、作編曲します ピアノが特に得意です。ピアノアレンジはお任せください。
+                  - generic [ref=e1269]:
+                    - generic [ref=e1270]: 
+                    - generic [ref=e1271]: "5.0"
+                    - generic [ref=e1272]: (418)
+                  - generic [ref=e1273]:
+                    - img "湖畔の音工房" [ref=e1274]
+                    - generic [ref=e1275]: 湖畔の音工房
+                    - generic [ref=e1277]:
+                      - strong [ref=e1278]: 60,000
+                      - text: 円
+              - link "別格！運上げ祈祷で運気を上げて願望成就早くします 金運・復縁・仕事・人間関係縁結び祈祷！願望・恋愛成就祈祷！ 別格！運上げ祈祷で運気を上げて願望成就早くします 金運・復縁・仕事・人間関係縁結び祈祷！願望・恋愛成就祈祷！  5.0 (627) 李桜凛プロ祈祷師・霊視占い＠霊感タロット 李桜凛プロ祈祷師・霊視占い＠霊感タロット 10,000 円" [ref=e1279] [cursor=pointer]:
+                - /url: /services/2574331
+                - generic [ref=e1281]:
+                  - img "別格！運上げ祈祷で運気を上げて願望成就早くします 金運・復縁・仕事・人間関係縁結び祈祷！願望・恋愛成就祈祷！"
+                - generic [ref=e1282]:
+                  - generic [ref=e1283]: 別格！運上げ祈祷で運気を上げて願望成就早くします 金運・復縁・仕事・人間関係縁結び祈祷！願望・恋愛成就祈祷！
+                  - generic [ref=e1284]:
+                    - generic [ref=e1285]: 
+                    - generic [ref=e1286]: "5.0"
+                    - generic [ref=e1287]: (627)
+                  - generic [ref=e1288]:
+                    - img "李桜凛プロ祈祷師・霊視占い＠霊感タロット" [ref=e1289]
+                    - generic [ref=e1290]: 李桜凛プロ祈祷師・霊視占い＠霊感タロット
+                    - generic [ref=e1292]:
+                      - strong [ref=e1293]: 10,000
+                      - text: 円
+              - link "アイコン、一枚絵☆立ち絵、目を引くイラスト描きます イリアム、サムネ、live2D、YouTube、歌ってみたも アイコン、一枚絵☆立ち絵、目を引くイラスト描きます イリアム、サムネ、live2D、YouTube、歌ってみたも  5.0 (324) 三笠える 三笠える 10,000 円" [ref=e1294] [cursor=pointer]:
+                - /url: /services/1734634
+                - generic [ref=e1296]:
+                  - img "アイコン、一枚絵☆立ち絵、目を引くイラスト描きます イリアム、サムネ、live2D、YouTube、歌ってみたも"
+                - generic [ref=e1297]:
+                  - generic [ref=e1298]: アイコン、一枚絵☆立ち絵、目を引くイラスト描きます イリアム、サムネ、live2D、YouTube、歌ってみたも
+                  - generic [ref=e1299]:
+                    - generic [ref=e1300]: 
+                    - generic [ref=e1301]: "5.0"
+                    - generic [ref=e1302]: (324)
+                  - generic [ref=e1303]:
+                    - img "三笠える" [ref=e1304]
+                    - generic [ref=e1305]: 三笠える
+                    - generic [ref=e1307]:
+                      - strong [ref=e1308]: 10,000
+                      - text: 円
+            - generic [ref=e1310] [cursor=pointer]: 
+        - generic [ref=e1311]:
+          - heading "よくある質問" [level=2] [ref=e1312]
+          - list [ref=e1314]:
+            - listitem [ref=e1315]:
+              - generic [ref=e1317] [cursor=pointer]:
+                - generic [ref=e1319]:
+                  - img "question"
+                - generic [ref=e1321]: 出生時間が不明でも依頼できますか？
+                - generic [ref=e1322]:
+                  - text: 回答を見る
+                  - generic [ref=e1323]: 
+            - listitem [ref=e1324]:
+              - generic [ref=e1326] [cursor=pointer]:
+                - generic [ref=e1328]:
+                  - img "question"
+                - generic [ref=e1330]: PDFはどのくらいの量ですか？
+                - generic [ref=e1331]:
+                  - text: 回答を見る
+                  - generic [ref=e1332]: 
+            - listitem [ref=e1333]:
+              - generic [ref=e1335] [cursor=pointer]:
+                - generic [ref=e1337]:
+                  - img "question"
+                - generic [ref=e1339]: 匿名で相談できますか？
+                - generic [ref=e1340]:
+                  - text: 回答を見る
+                  - generic [ref=e1341]: 
+            - listitem [ref=e1342]:
+              - generic [ref=e1344] [cursor=pointer]:
+                - generic [ref=e1346]:
+                  - img "question"
+                - generic [ref=e1348]: どんなテーマに向いていますか？
+                - generic [ref=e1349]:
+                  - text: 回答を見る
+                  - generic [ref=e1350]: 
+            - listitem [ref=e1351]:
+              - generic [ref=e1353] [cursor=pointer]:
+                - generic [ref=e1355]:
+                  - img "question"
+                - generic [ref=e1357]: 結果は必ず当たりますか？
+                - generic [ref=e1358]:
+                  - text: 回答を見る
+                  - generic [ref=e1359]: 
+            - listitem [ref=e1360]:
+              - generic [ref=e1362] [cursor=pointer]:
+                - generic [ref=e1364]:
+                  - img "question"
+                - generic [ref=e1366]: 対応できない内容はありますか？
+                - generic [ref=e1367]:
+                  - text: 回答を見る
+                  - generic [ref=e1368]: 
+        - generic [ref=e1369]:
+          - heading "トークルーム回答例" [level=2] [ref=e1370]
+          - list [ref=e1372]:
+            - listitem [ref=e1373]:
+              - generic [ref=e1375] [cursor=pointer]:
+                - generic [ref=e1378]: 
+                - generic [ref=e1379]: こんにちは。今回セットプランを購入させて頂きました！（例）１、拡散希望のYo...
+                - generic [ref=e1380]:
+                  - text: 詳細を見る
+                  - generic [ref=e1381]: 
+        - generic [ref=e1382]:
+          - heading "評価・感想（270件）- 非常に良かった" [level=2] [ref=e1383]
+          - generic [ref=e1384]:
+            - generic [ref=e1385]:
+              - generic [ref=e1386]:
+                - generic [ref=e1387]:
+                  - generic [ref=e1388]: 総合評価
+                  - generic [ref=e1389]: "4.9"
+                - generic [ref=e1391]:  
+              - generic [ref=e1392]:
+                - generic [ref=e1393] [cursor=pointer]:
+                  - generic [ref=e1394]: 星5 (非常に良かった)
+                  - generic [ref=e1398]: 258件
+                - generic [ref=e1399] [cursor=pointer]:
+                  - generic [ref=e1400]: 星4 (良かった)
+                  - generic [ref=e1404]: 5件
+                - generic [ref=e1405] [cursor=pointer]:
+                  - generic [ref=e1406]: 星3 (普通)
+                  - generic [ref=e1410]: 2件
+                - generic [ref=e1411] [cursor=pointer]:
+                  - generic [ref=e1412]: 星2 (悪かった)
+                  - generic [ref=e1416]: 1件
+                - generic [ref=e1417] [cursor=pointer]:
+                  - generic [ref=e1418]: 星1 (非常に悪かった)
+                  - generic [ref=e1422]: 4件
+              - generic [ref=e1423]:
+                - generic [ref=e1424]: 項目別評価
+                - generic [ref=e1425]:
+                  - generic [ref=e1426]:
+                    - generic [ref=e1427]:
+                      - text: サービス内容/提案のわかりやすさ
+                      - generic [ref=e1433]: 
+                    - generic [ref=e1435]:  
+                  - generic [ref=e1436]:
+                    - generic [ref=e1437]:
+                      - text: コミュニケーション
+                      - generic [ref=e1443]: 
+                    - generic [ref=e1445]:  
+                  - generic [ref=e1446]:
+                    - generic [ref=e1447]:
+                      - text: クオリティ
+                      - generic [ref=e1453]: 
+                    - generic [ref=e1455]:  
+                  - generic [ref=e1456]:
+                    - generic [ref=e1457]:
+                      - text: スケジュール
+                      - generic [ref=e1463]: 
+                    - generic [ref=e1465]:  
+            - generic [ref=e1466]:
+              - generic [ref=e1467]: 270件の評価
+              - generic [ref=e1469]:
+                - button " 評価で絞り込む" [ref=e1471] [cursor=pointer]:
+                  - generic [ref=e1472]: 
+                  - generic [ref=e1473]: 評価で絞り込む
+                - combobox [ref=e1475] [cursor=pointer]:
+                  - option "星5で絞り込み"
+                  - option "星4で絞り込み"
+                  - option "星3で絞り込み"
+                  - option "星2で絞り込み"
+                  - option "星1で絞り込み"
+            - list [ref=e1476]:
+              - listitem [ref=e1477]:
+                - generic [ref=e1480]:
+                  - generic [ref=e1481]:
+                    - generic [ref=e1482]:  
+                    - generic [ref=e1483]: 5月28日
+                  - generic [ref=e1484]: 女性
+                - generic [ref=e1486]: 素早い対応をしていただき、ありがとうございました！
+                - button "参考になった" [ref=e1488] [cursor=pointer]:
+                  - generic [ref=e1489]: 参考になった
+              - listitem [ref=e1490]:
+                - generic [ref=e1493]:
+                  - generic [ref=e1494]:
+                    - generic [ref=e1495]:  
+                    - generic [ref=e1496]: 5月29日
+                  - generic [ref=e1497]: 女性
+                - generic [ref=e1499]: 簡潔でわかりやすかったです。 この価格でこのボリュームはかなりお得だと思いました
+                - button "参考になった" [ref=e1501] [cursor=pointer]:
+                  - generic [ref=e1502]: 参考になった
+              - listitem [ref=e1503]:
+                - generic [ref=e1506]:
+                  - generic [ref=e1507]:
+                    - generic [ref=e1508]:  
+                    - generic [ref=e1509]: 5月21日
+                  - generic [ref=e1510]: 匿名
+                - generic [ref=e1512]: この度は迅速に対応いただき、ありがとうございました。いただいた分析も心当たりがあることばかりで自分のことを整理できたと思います。
+                - button "参考になった" [ref=e1514] [cursor=pointer]:
+                  - generic [ref=e1515]: 参考になった
+              - listitem [ref=e1516]:
+                - generic [ref=e1519]:
+                  - generic [ref=e1520]:
+                    - generic [ref=e1521]:  
+                    - generic [ref=e1522]: 5月18日
+                  - generic [ref=e1523]: 女性
+                - generic [ref=e1525]: 詳しく教えていただきありがとうございました。 心の友にしたいと思います。
+                - button "参考になった" [ref=e1527] [cursor=pointer]:
+                  - generic [ref=e1528]: 参考になった
+              - listitem [ref=e1529]:
+                - generic [ref=e1532]:
+                  - generic [ref=e1533]:
+                    - generic [ref=e1534]:  
+                    - generic [ref=e1535]: 5月9日
+                  - generic [ref=e1536]:
+                    - text: 連絡なしによる自動評価
+                    - generic [ref=e1537]: 途中終了した取引
+                - generic [ref=e1539]: （自動評価）この評価はシステムにより自動で入力されております。
+              - listitem [ref=e1540]:
+                - generic [ref=e1543]:
+                  - generic [ref=e1544]:
+                    - generic [ref=e1545]:  
+                    - generic [ref=e1546]: 2025年12月10日
+                  - generic [ref=e1547]: 男性
+                - generic [ref=e1549]: 質問に丁寧に答えていただき結果にも満足しています。 また機会がありましたらよろしくお願いします。
+                - button "参考になった" [ref=e1551] [cursor=pointer]:
+                  - generic [ref=e1552]: 参考になった
+              - listitem [ref=e1553]:
+                - generic [ref=e1556]:
+                  - generic [ref=e1557]:
+                    - generic [ref=e1558]:  
+                    - generic [ref=e1559]: 2025年11月12日
+                  - generic [ref=e1560]:
+                    - text: 連絡なしによる自動評価
+                    - generic [ref=e1561]: 途中終了した取引
+                - generic [ref=e1563]: （自動評価）この評価はシステムにより自動で入力されております。
+              - listitem [ref=e1564]:
+                - generic [ref=e1567]:
+                  - generic [ref=e1568]:
+                    - generic [ref=e1569]:  
+                    - generic [ref=e1570]: 2025年8月9日
+                  - generic [ref=e1571]:
+                    - text: 連絡なしによる自動評価
+                    - generic [ref=e1572]: 途中終了した取引
+                - generic [ref=e1574]: （自動評価）この評価はシステムにより自動で入力されております。
+              - listitem [ref=e1575]:
+                - generic [ref=e1578]:
+                  - generic [ref=e1579]:
+                    - generic [ref=e1580]:  
+                    - generic [ref=e1581]: 2025年8月7日
+                  - generic [ref=e1582]:
+                    - text: 連絡なしによる自動評価
+                    - generic [ref=e1583]: 途中終了した取引
+                - generic [ref=e1585]: （自動評価）この評価はシステムにより自動で入力されております。
+              - listitem [ref=e1586]:
+                - generic [ref=e1587]:
+                  - img "杉崎 仁志" [ref=e1589]
+                  - generic [ref=e1590]:
+                    - generic [ref=e1591]:
+                      - generic [ref=e1592]:  
+                      - generic [ref=e1593]: 2025年5月25日
+                    - generic [ref=e1594]: 杉崎 仁志
+                - generic [ref=e1596]: YouTube初めてまもないので大変助かりました。 収益化にすぐ繋げられたので本当に嬉しいです。 対応も良かったです 感謝
+                - button "参考になった" [ref=e1598] [cursor=pointer]:
+                  - generic [ref=e1599]: 参考になった
+              - text:                                                                                                 
+            - generic [ref=e1601] [cursor=pointer]:
+              - text: もっと見る
+              - generic [ref=e1602]: 
+        - generic [ref=e1604]:
+          - heading "自己分析・適性鑑定の人気サービス" [level=2] [ref=e1605]
+          - generic [ref=e1606]:
+            - generic [ref=e1609]:
+              - link "30年の霊視経験による【潜在能力鑑定】を行います あなたの秘めた力、眠る才能、潜在能力を開花・覚醒させます 30年の霊視経験による【潜在能力鑑定】を行います あなたの秘めた力、眠る才能、潜在能力を開花・覚醒させます  4.9 (202) 【霊能者】天晴 【霊能者】天晴 1,000 円" [ref=e1610] [cursor=pointer]:
+                - /url: /services/3758905
+                - generic [ref=e1612]:
+                  - img "30年の霊視経験による【潜在能力鑑定】を行います あなたの秘めた力、眠る才能、潜在能力を開花・覚醒させます"
+                - generic [ref=e1613]:
+                  - generic [ref=e1614]: 30年の霊視経験による【潜在能力鑑定】を行います あなたの秘めた力、眠る才能、潜在能力を開花・覚醒させます
+                  - generic [ref=e1615]:
+                    - generic [ref=e1616]: 
+                    - generic [ref=e1617]: "4.9"
+                    - generic [ref=e1618]: (202)
+                  - generic [ref=e1619]:
+                    - img "【霊能者】天晴" [ref=e1620]
+                    - generic [ref=e1621]: 【霊能者】天晴
+                    - generic [ref=e1623]:
+                      - strong [ref=e1624]: 1,000
+                      - text: 円
+              - link "スピリチュアル能力★霊能霊感の得意分野、占います ★スピリチュアル解説書付（見えない世界の仕組み） スピリチュアル能力★霊能霊感の得意分野、占います ★スピリチュアル解説書付（見えない世界の仕組み）  5.0 (8) 七宮舞☆多次元スピリチュアルカウンセラー 七宮舞☆多次元スピリチュアルカウンセラー 5,000 円" [ref=e1625] [cursor=pointer]:
+                - /url: /services/3956198
+                - generic [ref=e1627]:
+                  - img "スピリチュアル能力★霊能霊感の得意分野、占います ★スピリチュアル解説書付（見えない世界の仕組み）"
+                - generic [ref=e1628]:
+                  - generic [ref=e1629]: スピリチュアル能力★霊能霊感の得意分野、占います ★スピリチュアル解説書付（見えない世界の仕組み）
+                  - generic [ref=e1630]:
+                    - generic [ref=e1631]: 
+                    - generic [ref=e1632]: "5.0"
+                    - generic [ref=e1633]: (8)
+                  - generic [ref=e1634]:
+                    - img "七宮舞☆多次元スピリチュアルカウンセラー" [ref=e1635]
+                    - generic [ref=e1636]: 七宮舞☆多次元スピリチュアルカウンセラー
+                    - generic [ref=e1638]:
+                      - strong [ref=e1639]: 5,000
+                      - text: 円
+              - link "あなたの性格・才能をホロスコープで徹底分析します あなただけの星読みレポート4000字 あなたの性格・才能をホロスコープで徹底分析します あなただけの星読みレポート4000字  5.0 (58) hiyorikoひよりこ hiyorikoひよりこ 3,500 円" [ref=e1640] [cursor=pointer]:
+                - /url: /services/4144204
+                - generic [ref=e1642]:
+                  - img "あなたの性格・才能をホロスコープで徹底分析します あなただけの星読みレポート4000字"
+                - generic [ref=e1643]:
+                  - generic [ref=e1644]: あなたの性格・才能をホロスコープで徹底分析します あなただけの星読みレポート4000字
+                  - generic [ref=e1645]:
+                    - generic [ref=e1646]: 
+                    - generic [ref=e1647]: "5.0"
+                    - generic [ref=e1648]: (58)
+                  - generic [ref=e1649]:
+                    - img "hiyorikoひよりこ" [ref=e1650]
+                    - generic [ref=e1651]: hiyorikoひよりこ
+                    - generic [ref=e1653]:
+                      - strong [ref=e1654]: 3,500
+                      - text: 円
+              - link "基本鑑定| あなただけの成功法則を導き出します ヒューマンデザインでエネルギー設計図を可視化 基本鑑定| あなただけの成功法則を導き出します ヒューマンデザインでエネルギー設計図を可視化  5.0 (79) Kay ヒューマンデザイン鑑定士 Kay ヒューマンデザイン鑑定士 5,500 円" [ref=e1655] [cursor=pointer]:
+                - /url: /services/3394868
+                - generic [ref=e1657]:
+                  - img "基本鑑定| あなただけの成功法則を導き出します ヒューマンデザインでエネルギー設計図を可視化"
+                - generic [ref=e1658]:
+                  - generic [ref=e1659]: 基本鑑定| あなただけの成功法則を導き出します ヒューマンデザインでエネルギー設計図を可視化
+                  - generic [ref=e1660]:
+                    - generic [ref=e1661]: 
+                    - generic [ref=e1662]: "5.0"
+                    - generic [ref=e1663]: (79)
+                  - generic [ref=e1664]:
+                    - img "Kay ヒューマンデザイン鑑定士" [ref=e1665]
+                    - generic [ref=e1666]: Kay ヒューマンデザイン鑑定士
+                    - generic [ref=e1668]:
+                      - strong [ref=e1669]: 5,500
+                      - text: 円
+              - link "悩み鑑定｜顔写真から複雑な悩みを多角的に分析します エンパス持ちで顔写真を視るだけで全て分かります 悩み鑑定｜顔写真から複雑な悩みを多角的に分析します エンパス持ちで顔写真を視るだけで全て分かります  5.0 (443) mp2顔写真鑑定士ー顔写真から人生を分析 mp2顔写真鑑定士ー顔写真から人生を分析 3,500 円" [ref=e1670] [cursor=pointer]:
+                - /url: /services/2733109
+                - generic [ref=e1672]:
+                  - img "悩み鑑定｜顔写真から複雑な悩みを多角的に分析します エンパス持ちで顔写真を視るだけで全て分かります"
+                - generic [ref=e1673]:
+                  - generic [ref=e1674]: 悩み鑑定｜顔写真から複雑な悩みを多角的に分析します エンパス持ちで顔写真を視るだけで全て分かります
+                  - generic [ref=e1675]:
+                    - generic [ref=e1676]: 
+                    - generic [ref=e1677]: "5.0"
+                    - generic [ref=e1678]: (443)
+                  - generic [ref=e1679]:
+                    - img "mp2顔写真鑑定士ー顔写真から人生を分析" [ref=e1680]
+                    - generic [ref=e1681]: mp2顔写真鑑定士ー顔写真から人生を分析
+                    - generic [ref=e1683]:
+                      - strong [ref=e1684]: 3,500
+                      - text: 円
+              - link "占い 運気UP⭐️数秘心理学で本質、心理特性ご鑑定します ボリューム本格鑑定❤️あなたらしく生きる案内書⚛️ 運気UP⭐️数秘心理学で本質、心理特性ご鑑定します ボリューム本格鑑定❤️あなたらしく生きる案内書⚛️  5.0 (41) 倉嶋ひかり♡複雑愛あの人の本音と幸せの道 倉嶋ひかり♡複雑愛あの人の本音と幸せの道 6,500 円" [ref=e1685] [cursor=pointer]:
+                - /url: /services/375825
+                - generic [ref=e1686]:
+                  - img "占い"
+                - generic [ref=e1688]:
+                  - img "運気UP⭐️数秘心理学で本質、心理特性ご鑑定します ボリューム本格鑑定❤️あなたらしく生きる案内書⚛️"
+                - generic [ref=e1689]:
+                  - generic [ref=e1690]: 運気UP⭐️数秘心理学で本質、心理特性ご鑑定します ボリューム本格鑑定❤️あなたらしく生きる案内書⚛️
+                  - generic [ref=e1691]:
+                    - generic [ref=e1692]: 
+                    - generic [ref=e1693]: "5.0"
+                    - generic [ref=e1694]: (41)
+                  - generic [ref=e1695]:
+                    - img "倉嶋ひかり♡複雑愛あの人の本音と幸せの道" [ref=e1696]
+                    - generic [ref=e1697]: 倉嶋ひかり♡複雑愛あの人の本音と幸せの道
+                    - generic [ref=e1699]:
+                      - strong [ref=e1700]: 6,500
+                      - text: 円
+              - link "当日即納！あなたのトリセツ▶総合運◀お届けします ｜自分って何？。｜性格等｜運勢(9年分)｜大容量45P｜ 当日即納！あなたのトリセツ▶総合運◀お届けします ｜自分って何？。｜性格等｜運勢(9年分)｜大容量45P｜  4.9 (18571) ロジ→ ロジ→ 1,000 円" [ref=e1701] [cursor=pointer]:
+                - /url: /services/50952
+                - generic [ref=e1703]:
+                  - img "当日即納！あなたのトリセツ▶総合運◀お届けします ｜自分って何？。｜性格等｜運勢(9年分)｜大容量45P｜"
+                - generic [ref=e1704]:
+                  - generic [ref=e1705]: 当日即納！あなたのトリセツ▶総合運◀お届けします ｜自分って何？。｜性格等｜運勢(9年分)｜大容量45P｜
+                  - generic [ref=e1706]:
+                    - generic [ref=e1707]: 
+                    - generic [ref=e1708]: "4.9"
+                    - generic [ref=e1709]: (18571)
+                  - generic [ref=e1710]:
+                    - img "ロジ→" [ref=e1711]
+                    - generic [ref=e1712]: ロジ→
+                    - generic [ref=e1714]:
+                      - strong [ref=e1715]: 1,000
+                      - text: 円
+              - link "占星術で貴方の本質や性格・才能を視ます 自分でも気づかない貴方の正体を分析 占星術で貴方の本質や性格・才能を視ます 自分でも気づかない貴方の正体を分析  5.0 (2) ガジュモン ガジュモン 2,500 円" [ref=e1716] [cursor=pointer]:
+                - /url: /services/4237698
+                - generic [ref=e1718]:
+                  - img "占星術で貴方の本質や性格・才能を視ます 自分でも気づかない貴方の正体を分析"
+                - generic [ref=e1719]:
+                  - generic [ref=e1720]: 占星術で貴方の本質や性格・才能を視ます 自分でも気づかない貴方の正体を分析
+                  - generic [ref=e1721]:
+                    - generic [ref=e1722]: 
+                    - generic [ref=e1723]: "5.0"
+                    - generic [ref=e1724]: (2)
+                  - generic [ref=e1725]:
+                    - img "ガジュモン" [ref=e1726]
+                    - generic [ref=e1727]: ガジュモン
+                    - generic [ref=e1729]:
+                      - strong [ref=e1730]: 2,500
+                      - text: 円
+              - link "いくら努力しても垢抜けない原因を5視点で鑑定します 努力の空回りは卒業。運命×人相で分析する垢抜けない本当の理由 いくら努力しても垢抜けない原因を5視点で鑑定します 努力の空回りは卒業。運命×人相で分析する垢抜けない本当の理由  5.0 (10) つばさ 運命の取扱説明書をお渡します つばさ 運命の取扱説明書をお渡します 2,000 円" [ref=e1731] [cursor=pointer]:
+                - /url: /services/4025887
+                - generic [ref=e1733]:
+                  - img "いくら努力しても垢抜けない原因を5視点で鑑定します 努力の空回りは卒業。運命×人相で分析する垢抜けない本当の理由"
+                - generic [ref=e1734]:
+                  - generic [ref=e1735]: いくら努力しても垢抜けない原因を5視点で鑑定します 努力の空回りは卒業。運命×人相で分析する垢抜けない本当の理由
+                  - generic [ref=e1736]:
+                    - generic [ref=e1737]: 
+                    - generic [ref=e1738]: "5.0"
+                    - generic [ref=e1739]: (10)
+                  - generic [ref=e1740]:
+                    - img "つばさ 運命の取扱説明書をお渡します" [ref=e1741]
+                    - generic [ref=e1742]: つばさ 運命の取扱説明書をお渡します
+                    - generic [ref=e1744]:
+                      - strong [ref=e1745]: 2,000
+                      - text: 円
+              - link "ご先祖さまのお名前から“愛と守り”を読み解きます ☆見えない愛に気づいた時、人生は少しずつ動き始めます♪ 離席中 ご先祖さまのお名前から“愛と守り”を読み解きます ☆見えない愛に気づいた時、人生は少しずつ動き始めます♪  5.0 (23) 【マヤ暦☆ことだま】まやたま鑑定☆セレナ 【マヤ暦☆ことだま】まやたま鑑定☆セレナ 140 円 /分" [ref=e1746] [cursor=pointer]:
+                - /url: /services/3539553
+                - generic [ref=e1748]:
+                  - img "ご先祖さまのお名前から“愛と守り”を読み解きます ☆見えない愛に気づいた時、人生は少しずつ動き始めます♪"
+                  - generic [ref=e1751]: 離席中
+                - generic [ref=e1752]:
+                  - generic [ref=e1753]: ご先祖さまのお名前から“愛と守り”を読み解きます ☆見えない愛に気づいた時、人生は少しずつ動き始めます♪
+                  - generic [ref=e1754]:
+                    - generic [ref=e1755]: 
+                    - generic [ref=e1756]: "5.0"
+                    - generic [ref=e1757]: (23)
+                  - generic [ref=e1758]:
+                    - img "【マヤ暦☆ことだま】まやたま鑑定☆セレナ" [ref=e1759]
+                    - generic [ref=e1760]: 【マヤ暦☆ことだま】まやたま鑑定☆セレナ
+                    - generic [ref=e1762]:
+                      - strong [ref=e1763]: "140"
+                      - text: 円 /分
+              - link "四柱推命×算命学命式で生きづらさの原因がわかります 生きづらさの正体、命式で覗いてみませんか。 四柱推命×算命学命式で生きづらさの原因がわかります 生きづらさの正体、命式で覗いてみませんか。  5.0 (6) rio_amami rio_amami 3,000 円" [ref=e1764] [cursor=pointer]:
+                - /url: /services/4131111
+                - generic [ref=e1766]:
+                  - img "四柱推命×算命学命式で生きづらさの原因がわかります 生きづらさの正体、命式で覗いてみませんか。"
+                - generic [ref=e1767]:
+                  - generic [ref=e1768]: 四柱推命×算命学命式で生きづらさの原因がわかります 生きづらさの正体、命式で覗いてみませんか。
+                  - generic [ref=e1769]:
+                    - generic [ref=e1770]: 
+                    - generic [ref=e1771]: "5.0"
+                    - generic [ref=e1772]: (6)
+                  - generic [ref=e1773]:
+                    - img "rio_amami" [ref=e1774]
+                    - generic [ref=e1775]: rio_amami
+                    - generic [ref=e1777]:
+                      - strong [ref=e1778]: 3,000
+                      - text: 円
+              - link "やりたいこと迷子のあなたへ 才能と強みを鑑定します 自分軸が見つかり、自信を持って選択できる私へ やりたいこと迷子のあなたへ 才能と強みを鑑定します 自分軸が見つかり、自信を持って選択できる私へ  5.0 (4) はるね｜子どもの為の人生から自分の人生へ はるね｜子どもの為の人生から自分の人生へ 1,000 円" [ref=e1779] [cursor=pointer]:
+                - /url: /services/4276050
+                - generic [ref=e1781]:
+                  - img "やりたいこと迷子のあなたへ 才能と強みを鑑定します 自分軸が見つかり、自信を持って選択できる私へ"
+                - generic [ref=e1782]:
+                  - generic [ref=e1783]: やりたいこと迷子のあなたへ 才能と強みを鑑定します 自分軸が見つかり、自信を持って選択できる私へ
+                  - generic [ref=e1784]:
+                    - generic [ref=e1785]: 
+                    - generic [ref=e1786]: "5.0"
+                    - generic [ref=e1787]: (4)
+                  - generic [ref=e1788]:
+                    - img "はるね｜子どもの為の人生から自分の人生へ" [ref=e1789]
+                    - generic [ref=e1790]: はるね｜子どもの為の人生から自分の人生へ
+                    - generic [ref=e1792]:
+                      - strong [ref=e1793]: 1,000
+                      - text: 円
+              - link "あなたが気づいていない、あなたの魅力お伝えします 自己理解を深めて、自分に自信が持てるようお手伝いいたします。 あなたが気づいていない、あなたの魅力お伝えします 自己理解を深めて、自分に自信が持てるようお手伝いいたします。  5.0 (3) ことね✧誰にも言えない悩み｜霊視タロット ことね✧誰にも言えない悩み｜霊視タロット 500 円" [ref=e1794] [cursor=pointer]:
+                - /url: /services/4253268
+                - generic [ref=e1796]:
+                  - img "あなたが気づいていない、あなたの魅力お伝えします 自己理解を深めて、自分に自信が持てるようお手伝いいたします。"
+                - generic [ref=e1797]:
+                  - generic [ref=e1798]: あなたが気づいていない、あなたの魅力お伝えします 自己理解を深めて、自分に自信が持てるようお手伝いいたします。
+                  - generic [ref=e1799]:
+                    - generic [ref=e1800]: 
+                    - generic [ref=e1801]: "5.0"
+                    - generic [ref=e1802]: (3)
+                  - generic [ref=e1803]:
+                    - img "ことね✧誰にも言えない悩み｜霊視タロット" [ref=e1804]
+                    - generic [ref=e1805]: ことね✧誰にも言えない悩み｜霊視タロット
+                    - generic [ref=e1807]:
+                      - strong [ref=e1808]: "500"
+                      - text: 円
+              - link "四柱推命lite ❀あなたの取扱説明書お作りします 四柱推命で簡単自己分析！性格、強み、適職が分かります 四柱推命lite ❀あなたの取扱説明書お作りします 四柱推命で簡単自己分析！性格、強み、適職が分かります  4.9 (1378) まる＠ まる＠ 1,000 円" [ref=e1809] [cursor=pointer]:
+                - /url: /services/2465457
+                - generic [ref=e1811]:
+                  - img "四柱推命lite ❀あなたの取扱説明書お作りします 四柱推命で簡単自己分析！性格、強み、適職が分かります"
+                - generic [ref=e1812]:
+                  - generic [ref=e1813]: 四柱推命lite ❀あなたの取扱説明書お作りします 四柱推命で簡単自己分析！性格、強み、適職が分かります
+                  - generic [ref=e1814]:
+                    - generic [ref=e1815]: 
+                    - generic [ref=e1816]: "4.9"
+                    - generic [ref=e1817]: (1378)
+                  - generic [ref=e1818]:
+                    - img "まる＠" [ref=e1819]
+                    - generic [ref=e1820]: まる＠
+                    - generic [ref=e1822]:
+                      - strong [ref=e1823]: 1,000
+                      - text: 円
+              - link "タロットであなたの本音と対話します 一緒に、タロットと本音の会話してみませんか？ 今すぐ相談可能 予約受付中 タロットであなたの本音と対話します 一緒に、タロットと本音の会話してみませんか？  5.0 (7) わらの部屋。 わらの部屋。 100 円 /分" [ref=e1824] [cursor=pointer]:
+                - /url: /services/4150649
+                - generic [ref=e1826]:
+                  - img "タロットであなたの本音と対話します 一緒に、タロットと本音の会話してみませんか？"
+                  - generic [ref=e1828]:
+                    - generic [ref=e1829]: 今すぐ相談可能
+                    - generic [ref=e1830]: 予約受付中
+                - generic [ref=e1831]:
+                  - generic [ref=e1832]: タロットであなたの本音と対話します 一緒に、タロットと本音の会話してみませんか？
+                  - generic [ref=e1833]:
+                    - generic [ref=e1834]: 
+                    - generic [ref=e1835]: "5.0"
+                    - generic [ref=e1836]: (7)
+                  - generic [ref=e1837]:
+                    - img "わらの部屋。" [ref=e1838]
+                    - generic [ref=e1839]: わらの部屋。
+                    - generic [ref=e1841]:
+                      - strong [ref=e1842]: "100"
+                      - text: 円 /分
+              - link "あなたの本音を一緒に見つけます 自分の本音と向き合い整理するタロット鑑定です あなたの本音を一緒に見つけます 自分の本音と向き合い整理するタロット鑑定です  4.8 (19) 江崎ねこ 江崎ねこ 2,000 円" [ref=e1843] [cursor=pointer]:
+                - /url: /services/3285951
+                - generic [ref=e1845]:
+                  - img "あなたの本音を一緒に見つけます 自分の本音と向き合い整理するタロット鑑定です"
+                - generic [ref=e1846]:
+                  - generic [ref=e1847]: あなたの本音を一緒に見つけます 自分の本音と向き合い整理するタロット鑑定です
+                  - generic [ref=e1848]:
+                    - generic [ref=e1849]: 
+                    - generic [ref=e1850]: "4.8"
+                    - generic [ref=e1851]: (19)
+                  - generic [ref=e1852]:
+                    - img "江崎ねこ" [ref=e1853]
+                    - generic [ref=e1854]: 江崎ねこ
+                    - generic [ref=e1856]:
+                      - strong [ref=e1857]: 2,000
+                      - text: 円
+              - link "鑑定書作成★3つの占術で才能・運勢・質問 占います 西洋占星術（ホロスコープ）・四柱推命・カード占い 鑑定書作成★3つの占術で才能・運勢・質問 占います 西洋占星術（ホロスコープ）・四柱推命・カード占い  4.9 (227) makumin まくみん makumin まくみん 2,000 円" [ref=e1858] [cursor=pointer]:
+                - /url: /services/2928317
+                - generic [ref=e1860]:
+                  - img "鑑定書作成★3つの占術で才能・運勢・質問 占います 西洋占星術（ホロスコープ）・四柱推命・カード占い"
+                - generic [ref=e1861]:
+                  - generic [ref=e1862]: 鑑定書作成★3つの占術で才能・運勢・質問 占います 西洋占星術（ホロスコープ）・四柱推命・カード占い
+                  - generic [ref=e1863]:
+                    - generic [ref=e1864]: 
+                    - generic [ref=e1865]: "4.9"
+                    - generic [ref=e1866]: (227)
+                  - generic [ref=e1867]:
+                    - img "makumin まくみん" [ref=e1868]
+                    - generic [ref=e1869]: makumin まくみん
+                    - generic [ref=e1871]:
+                      - strong [ref=e1872]: 2,000
+                      - text: 円
+              - link "西洋占星術でホロスコープ鑑定をいたします お悩みのヒントを見つけ、一緒に紐解いていきましょう 離席中 西洋占星術でホロスコープ鑑定をいたします お悩みのヒントを見つけ、一緒に紐解いていきましょう  5.0 (2) 由宇｜星が紡ぐ物語 由宇｜星が紡ぐ物語 100 円 /分" [ref=e1873] [cursor=pointer]:
+                - /url: /services/4253884
+                - generic [ref=e1875]:
+                  - img "西洋占星術でホロスコープ鑑定をいたします お悩みのヒントを見つけ、一緒に紐解いていきましょう"
+                  - generic [ref=e1878]: 離席中
+                - generic [ref=e1879]:
+                  - generic [ref=e1880]: 西洋占星術でホロスコープ鑑定をいたします お悩みのヒントを見つけ、一緒に紐解いていきましょう
+                  - generic [ref=e1881]:
+                    - generic [ref=e1882]: 
+                    - generic [ref=e1883]: "5.0"
+                    - generic [ref=e1884]: (2)
+                  - generic [ref=e1885]:
+                    - img "由宇｜星が紡ぐ物語" [ref=e1886]
+                    - generic [ref=e1887]: 由宇｜星が紡ぐ物語
+                    - generic [ref=e1889]:
+                      - strong [ref=e1890]: "100"
+                      - text: 円 /分
+              - link "西洋占星術を使ってあなたの人生テーマを読み解きます 人生テーマ、活かすべき才能をレポートでお伝えします 西洋占星術を使ってあなたの人生テーマを読み解きます 人生テーマ、活かすべき才能をレポートでお伝えします  5.0 (4) 水鏡 晴子 水鏡 晴子 500 円" [ref=e1891] [cursor=pointer]:
+                - /url: /services/4176421
+                - generic [ref=e1893]:
+                  - img "西洋占星術を使ってあなたの人生テーマを読み解きます 人生テーマ、活かすべき才能をレポートでお伝えします"
+                - generic [ref=e1894]:
+                  - generic [ref=e1895]: 西洋占星術を使ってあなたの人生テーマを読み解きます 人生テーマ、活かすべき才能をレポートでお伝えします
+                  - generic [ref=e1896]:
+                    - generic [ref=e1897]: 
+                    - generic [ref=e1898]: "5.0"
+                    - generic [ref=e1899]: (4)
+                  - generic [ref=e1900]:
+                    - img "水鏡 晴子" [ref=e1901]
+                    - generic [ref=e1902]: 水鏡 晴子
+                    - generic [ref=e1904]:
+                      - strong [ref=e1905]: "500"
+                      - text: 円
+              - link "あなたの才能を6ページの鑑定書にして届けます！ます 資質・使命・人生の目的などを約4000字で総合鑑定します あなたの才能を6ページの鑑定書にして届けます！ます 資質・使命・人生の目的などを約4000字で総合鑑定します  5.0 (7) nakagenie nakagenie 1,000 円" [ref=e1906] [cursor=pointer]:
+                - /url: /services/4254118
+                - generic [ref=e1908]:
+                  - img "あなたの才能を6ページの鑑定書にして届けます！ます 資質・使命・人生の目的などを約4000字で総合鑑定します"
+                - generic [ref=e1909]:
+                  - generic [ref=e1910]: あなたの才能を6ページの鑑定書にして届けます！ます 資質・使命・人生の目的などを約4000字で総合鑑定します
+                  - generic [ref=e1911]:
+                    - generic [ref=e1912]: 
+                    - generic [ref=e1913]: "5.0"
+                    - generic [ref=e1914]: (7)
+                  - generic [ref=e1915]:
+                    - img "nakagenie" [ref=e1916]
+                    - generic [ref=e1917]: nakagenie
+                    - generic [ref=e1919]:
+                      - strong [ref=e1920]: 1,000
+                      - text: 円
+              - link "オーラ・性格の本質をスピリチュアル的能力で占います しっかりとした占いに抵抗がある方でもお気軽にご相談ください！ オーラ・性格の本質をスピリチュアル的能力で占います しっかりとした占いに抵抗がある方でもお気軽にご相談ください！  5.0 (84) キャンディーストア キャンディーストア 1,500 円" [ref=e1921] [cursor=pointer]:
+                - /url: /services/2966442
+                - generic [ref=e1923]:
+                  - img "オーラ・性格の本質をスピリチュアル的能力で占います しっかりとした占いに抵抗がある方でもお気軽にご相談ください！"
+                - generic [ref=e1924]:
+                  - generic [ref=e1925]: オーラ・性格の本質をスピリチュアル的能力で占います しっかりとした占いに抵抗がある方でもお気軽にご相談ください！
+                  - generic [ref=e1926]:
+                    - generic [ref=e1927]: 
+                    - generic [ref=e1928]: "5.0"
+                    - generic [ref=e1929]: (84)
+                  - generic [ref=e1930]:
+                    - img "キャンディーストア" [ref=e1931]
+                    - generic [ref=e1932]: キャンディーストア
+                    - generic [ref=e1934]:
+                      - strong [ref=e1935]: 1,500
+                      - text: 円
+              - link "貴方の性格☆輝く魅力ꕤ恋愛傾向♡トリセツ作成します 短所や苦手な事ִ⭐︎アドバイス໒꒱気分転換法付♡約4000字 貴方の性格☆輝く魅力ꕤ恋愛傾向♡トリセツ作成します 短所や苦手な事ִ⭐︎アドバイス໒꒱気分転換法付♡約4000字  5.0 (2) 愛と光 MARISA ☆ ライトワーカー 愛と光 MARISA ☆ ライトワーカー 500 円" [ref=e1936] [cursor=pointer]:
+                - /url: /services/4263004
+                - generic [ref=e1938]:
+                  - img "貴方の性格☆輝く魅力ꕤ恋愛傾向♡トリセツ作成します 短所や苦手な事ִ⭐︎アドバイス໒꒱気分転換法付♡約4000字"
+                - generic [ref=e1939]:
+                  - generic [ref=e1940]: 貴方の性格☆輝く魅力ꕤ恋愛傾向♡トリセツ作成します 短所や苦手な事ִ⭐︎アドバイス໒꒱気分転換法付♡約4000字
+                  - generic [ref=e1941]:
+                    - generic [ref=e1942]: 
+                    - generic [ref=e1943]: "5.0"
+                    - generic [ref=e1944]: (2)
+                  - generic [ref=e1945]:
+                    - img "愛と光 MARISA ☆ ライトワーカー" [ref=e1946]
+                    - generic [ref=e1947]: 愛と光 MARISA ☆ ライトワーカー
+                    - generic [ref=e1949]:
+                      - strong [ref=e1950]: "500"
+                      - text: 円
+              - link "これからの人生に活かせる姓名判断占いをします 旧字体姓名判断で、仕事・恋愛・金運など、開運のヒントを解説 これからの人生に活かせる姓名判断占いをします 旧字体姓名判断で、仕事・恋愛・金運など、開運のヒントを解説  5.0 (70) 青江灯磨☆幸せ引き寄せ、開運の専門家 青江灯磨☆幸せ引き寄せ、開運の専門家 1,000 円" [ref=e1951] [cursor=pointer]:
+                - /url: /services/2865823
+                - generic [ref=e1953]:
+                  - img "これからの人生に活かせる姓名判断占いをします 旧字体姓名判断で、仕事・恋愛・金運など、開運のヒントを解説"
+                - generic [ref=e1954]:
+                  - generic [ref=e1955]: これからの人生に活かせる姓名判断占いをします 旧字体姓名判断で、仕事・恋愛・金運など、開運のヒントを解説
+                  - generic [ref=e1956]:
+                    - generic [ref=e1957]: 
+                    - generic [ref=e1958]: "5.0"
+                    - generic [ref=e1959]: (70)
+                  - generic [ref=e1960]:
+                    - img "青江灯磨☆幸せ引き寄せ、開運の専門家" [ref=e1961]
+                    - generic [ref=e1962]: 青江灯磨☆幸せ引き寄せ、開運の専門家
+                    - generic [ref=e1964]:
+                      - strong [ref=e1965]: 1,000
+                      - text: 円
+              - link "あなた様の持っている魅力を占います エンジェルウィスダムタロットで魅力と恋愛、仕事アドバイス あなた様の持っている魅力を占います エンジェルウィスダムタロットで魅力と恋愛、仕事アドバイス  5.0 (45) ルノルマンRIHO ルノルマンRIHO 1,000 円" [ref=e1966] [cursor=pointer]:
+                - /url: /services/1985276
+                - generic [ref=e1968]:
+                  - img "あなた様の持っている魅力を占います エンジェルウィスダムタロットで魅力と恋愛、仕事アドバイス"
+                - generic [ref=e1969]:
+                  - generic [ref=e1970]: あなた様の持っている魅力を占います エンジェルウィスダムタロットで魅力と恋愛、仕事アドバイス
+                  - generic [ref=e1971]:
+                    - generic [ref=e1972]: 
+                    - generic [ref=e1973]: "5.0"
+                    - generic [ref=e1974]: (45)
+                  - generic [ref=e1975]:
+                    - img "ルノルマンRIHO" [ref=e1976]
+                    - generic [ref=e1977]: ルノルマンRIHO
+                    - generic [ref=e1979]:
+                      - strong [ref=e1980]: 1,000
+                      - text: 円
+            - generic [ref=e1982] [cursor=pointer]: 
+        - generic [ref=e1984]:
+          - heading "お気に入り登録が多いサービス" [level=2] [ref=e1985]
+          - generic [ref=e1986]:
+            - generic [ref=e1989]:
+              - link "当日即納！あなたのトリセツ▶総合運◀お届けします ｜自分って何？。｜性格等｜運勢(9年分)｜大容量45P｜ 当日即納！あなたのトリセツ▶総合運◀お届けします ｜自分って何？。｜性格等｜運勢(9年分)｜大容量45P｜  4.9 (18571) ロジ→ ロジ→ 1,000 円" [ref=e1990] [cursor=pointer]:
+                - /url: /services/50952
+                - generic [ref=e1992]:
+                  - img "当日即納！あなたのトリセツ▶総合運◀お届けします ｜自分って何？。｜性格等｜運勢(9年分)｜大容量45P｜"
+                - generic [ref=e1993]:
+                  - generic [ref=e1994]: 当日即納！あなたのトリセツ▶総合運◀お届けします ｜自分って何？。｜性格等｜運勢(9年分)｜大容量45P｜
+                  - generic [ref=e1995]:
+                    - generic [ref=e1996]: 
+                    - generic [ref=e1997]: "4.9"
+                    - generic [ref=e1998]: (18571)
+                  - generic [ref=e1999]:
+                    - img "ロジ→" [ref=e2000]
+                    - generic [ref=e2001]: ロジ→
+                    - generic [ref=e2003]:
+                      - strong [ref=e2004]: 1,000
+                      - text: 円
+              - link "あなたの取扱説明書PDFを大容量で作成します 本質・強み・恋愛・仕事・人間関係を総合鑑定 あなたの取扱説明書PDFを大容量で作成します 本質・強み・恋愛・仕事・人間関係を総合鑑定  4.9 (489) 透月｜恋と人生の整理占い 透月｜恋と人生の整理占い 500 円" [ref=e2005] [cursor=pointer]:
+                - /url: /services/1764475
+                - generic [ref=e2007]:
+                  - img "あなたの取扱説明書PDFを大容量で作成します 本質・強み・恋愛・仕事・人間関係を総合鑑定"
+                - generic [ref=e2008]:
+                  - generic [ref=e2009]: あなたの取扱説明書PDFを大容量で作成します 本質・強み・恋愛・仕事・人間関係を総合鑑定
+                  - generic [ref=e2010]:
+                    - generic [ref=e2011]: 
+                    - generic [ref=e2012]: "4.9"
+                    - generic [ref=e2013]: (489)
+                  - generic [ref=e2014]:
+                    - img "透月｜恋と人生の整理占い" [ref=e2015]
+                    - generic [ref=e2016]: 透月｜恋と人生の整理占い
+                    - generic [ref=e2018]:
+                      - strong [ref=e2019]: "500"
+                      - text: 円
+              - link "占い an·an/CREA掲載◆貴方の運勢を紐解きます 鑑定歴28年・占い講師のホロスコープ解説＋ご相談。満足度高！ an·an/CREA掲載◆貴方の運勢を紐解きます 鑑定歴28年・占い講師のホロスコープ解説＋ご相談。満足度高！  4.9 (492) 航海士ミライ 航海士ミライ 12,000 円" [ref=e2020] [cursor=pointer]:
+                - /url: /services/745816
+                - generic [ref=e2021]:
+                  - img "占い"
+                - generic [ref=e2023]:
+                  - img "an·an/CREA掲載◆貴方の運勢を紐解きます 鑑定歴28年・占い講師のホロスコープ解説＋ご相談。満足度高！"
+                - generic [ref=e2024]:
+                  - generic [ref=e2025]: an·an/CREA掲載◆貴方の運勢を紐解きます 鑑定歴28年・占い講師のホロスコープ解説＋ご相談。満足度高！
+                  - generic [ref=e2026]:
+                    - generic [ref=e2027]: 
+                    - generic [ref=e2028]: "4.9"
+                    - generic [ref=e2029]: (492)
+                  - generic [ref=e2030]:
+                    - img "航海士ミライ" [ref=e2031]
+                    - generic [ref=e2032]: 航海士ミライ
+                    - generic [ref=e2034]:
+                      - strong [ref=e2035]: 12,000
+                      - text: 円
+              - link "占い 人生の【原因】と【結果】が分かります 両手の手相はあなただけの未来設計図。現在地を知って掴む未来。 人生の【原因】と【結果】が分かります 両手の手相はあなただけの未来設計図。現在地を知って掴む未来。  4.9 (640) 天テン 天テン 10,000 円" [ref=e2036] [cursor=pointer]:
+                - /url: /services/2624245
+                - generic [ref=e2037]:
+                  - img "占い"
+                - generic [ref=e2039]:
+                  - img "人生の【原因】と【結果】が分かります 両手の手相はあなただけの未来設計図。現在地を知って掴む未来。"
+                - generic [ref=e2040]:
+                  - generic [ref=e2041]: 人生の【原因】と【結果】が分かります 両手の手相はあなただけの未来設計図。現在地を知って掴む未来。
+                  - generic [ref=e2042]:
+                    - generic [ref=e2043]: 
+                    - generic [ref=e2044]: "4.9"
+                    - generic [ref=e2045]: (640)
+                  - generic [ref=e2046]:
+                    - img "天テン" [ref=e2047]
+                    - generic [ref=e2048]: 天テン
+                    - generic [ref=e2050]:
+                      - strong [ref=e2051]: 10,000
+                      - text: 円
+              - link "四柱推命lite ❀あなたの取扱説明書お作りします 四柱推命で簡単自己分析！性格、強み、適職が分かります 四柱推命lite ❀あなたの取扱説明書お作りします 四柱推命で簡単自己分析！性格、強み、適職が分かります  4.9 (1378) まる＠ まる＠ 1,000 円" [ref=e2052] [cursor=pointer]:
+                - /url: /services/2465457
+                - generic [ref=e2054]:
+                  - img "四柱推命lite ❀あなたの取扱説明書お作りします 四柱推命で簡単自己分析！性格、強み、適職が分かります"
+                - generic [ref=e2055]:
+                  - generic [ref=e2056]: 四柱推命lite ❀あなたの取扱説明書お作りします 四柱推命で簡単自己分析！性格、強み、適職が分かります
+                  - generic [ref=e2057]:
+                    - generic [ref=e2058]: 
+                    - generic [ref=e2059]: "4.9"
+                    - generic [ref=e2060]: (1378)
+                  - generic [ref=e2061]:
+                    - img "まる＠" [ref=e2062]
+                    - generic [ref=e2063]: まる＠
+                    - generic [ref=e2065]:
+                      - strong [ref=e2066]: 1,000
+                      - text: 円
+              - link "占い あなただけの手相の鑑定書を手書きで丁寧に作ります 世界で1つのあなたの取説！自分の手が好きになりますよ！ あなただけの手相の鑑定書を手書きで丁寧に作ります 世界で1つのあなたの取説！自分の手が好きになりますよ！  5.0 (353) 手相占い☆ぱすてる 手相占い☆ぱすてる 7,000 円" [ref=e2067] [cursor=pointer]:
+                - /url: /services/1021070
+                - generic [ref=e2068]:
+                  - img "占い"
+                - generic [ref=e2070]:
+                  - img "あなただけの手相の鑑定書を手書きで丁寧に作ります 世界で1つのあなたの取説！自分の手が好きになりますよ！"
+                - generic [ref=e2071]:
+                  - generic [ref=e2072]: あなただけの手相の鑑定書を手書きで丁寧に作ります 世界で1つのあなたの取説！自分の手が好きになりますよ！
+                  - generic [ref=e2073]:
+                    - generic [ref=e2074]: 
+                    - generic [ref=e2075]: "5.0"
+                    - generic [ref=e2076]: (353)
+                  - generic [ref=e2077]:
+                    - img "手相占い☆ぱすてる" [ref=e2078]
+                    - generic [ref=e2079]: 手相占い☆ぱすてる
+                    - generic [ref=e2081]:
+                      - strong [ref=e2082]: 7,000
+                      - text: 円
+              - link "西洋占星術による総合鑑定をします 自分を深く知るための完全オーダーメイド本格詳細個人鑑定 西洋占星術による総合鑑定をします 自分を深く知るための完全オーダーメイド本格詳細個人鑑定  5.0 (324) 西洋占星術とタロット占い 西洋占星術とタロット占い 13,000 円" [ref=e2083] [cursor=pointer]:
+                - /url: /services/555733
+                - generic [ref=e2085]:
+                  - img "西洋占星術による総合鑑定をします 自分を深く知るための完全オーダーメイド本格詳細個人鑑定"
+                - generic [ref=e2086]:
+                  - generic [ref=e2087]: 西洋占星術による総合鑑定をします 自分を深く知るための完全オーダーメイド本格詳細個人鑑定
+                  - generic [ref=e2088]:
+                    - generic [ref=e2089]: 
+                    - generic [ref=e2090]: "5.0"
+                    - generic [ref=e2091]: (324)
+                  - generic [ref=e2092]:
+                    - img "西洋占星術とタロット占い" [ref=e2093]
+                    - generic [ref=e2094]: 西洋占星術とタロット占い
+                    - generic [ref=e2096]:
+                      - strong [ref=e2097]: 13,000
+                      - text: 円
+              - link "占い あなたの迷いに寄り添い必要な答えをお伝えします 人生の節目に、丁寧な言葉でお届けする鑑定です あなたの迷いに寄り添い必要な答えをお伝えします 人生の節目に、丁寧な言葉でお届けする鑑定です  5.0 (392) 手相占い☆ぱすてる 手相占い☆ぱすてる 7,000 円" [ref=e2098] [cursor=pointer]:
+                - /url: /services/216838
+                - generic [ref=e2099]:
+                  - img "占い"
+                - generic [ref=e2101]:
+                  - img "あなたの迷いに寄り添い必要な答えをお伝えします 人生の節目に、丁寧な言葉でお届けする鑑定です"
+                - generic [ref=e2102]:
+                  - generic [ref=e2103]: あなたの迷いに寄り添い必要な答えをお伝えします 人生の節目に、丁寧な言葉でお届けする鑑定です
+                  - generic [ref=e2104]:
+                    - generic [ref=e2105]: 
+                    - generic [ref=e2106]: "5.0"
+                    - generic [ref=e2107]: (392)
+                  - generic [ref=e2108]:
+                    - img "手相占い☆ぱすてる" [ref=e2109]
+                    - generic [ref=e2110]: 手相占い☆ぱすてる
+                    - generic [ref=e2112]:
+                      - strong [ref=e2113]: 7,000
+                      - text: 円
+              - link "霊視鑑定✴︎あなたの性格6選と助言をお伝えします 隠れた性格を徹底解剖し、今後の人生のヒントをお伝えします！ 霊視鑑定✴︎あなたの性格6選と助言をお伝えします 隠れた性格を徹底解剖し、今後の人生のヒントをお伝えします！  5.0 (468) 霊視鑑定師Mahina☪️ 霊視鑑定師Mahina☪️ 3,000 円" [ref=e2114] [cursor=pointer]:
+                - /url: /services/1782386
+                - generic [ref=e2116]:
+                  - img "霊視鑑定✴︎あなたの性格6選と助言をお伝えします 隠れた性格を徹底解剖し、今後の人生のヒントをお伝えします！"
+                - generic [ref=e2117]:
+                  - generic [ref=e2118]: 霊視鑑定✴︎あなたの性格6選と助言をお伝えします 隠れた性格を徹底解剖し、今後の人生のヒントをお伝えします！
+                  - generic [ref=e2119]:
+                    - generic [ref=e2120]: 
+                    - generic [ref=e2121]: "5.0"
+                    - generic [ref=e2122]: (468)
+                  - generic [ref=e2123]:
+                    - img "霊視鑑定師Mahina☪️" [ref=e2124]
+                    - generic [ref=e2125]: 霊視鑑定師Mahina☪️
+                    - generic [ref=e2127]:
+                      - strong [ref=e2128]: 3,000
+                      - text: 円
+              - link "占い ご新規様優先◆詳細１万字手相鑑定します 性格・恋愛・仕事・金運・健康(画像付)相談自由 満枠対応中 ご新規様優先◆詳細１万字手相鑑定します 性格・恋愛・仕事・金運・健康(画像付)相談自由  5.0 (331) 亜尾子惠与 AbikoKeito 亜尾子惠与 AbikoKeito 7,000 円" [ref=e2129] [cursor=pointer]:
+                - /url: /services/2357799
+                - generic [ref=e2130]:
+                  - img "占い"
+                - generic [ref=e2132]:
+                  - img "ご新規様優先◆詳細１万字手相鑑定します 性格・恋愛・仕事・金運・健康(画像付)相談自由"
+                  - generic [ref=e2134]: 満枠対応中
+                - generic [ref=e2135]:
+                  - generic [ref=e2136]: ご新規様優先◆詳細１万字手相鑑定します 性格・恋愛・仕事・金運・健康(画像付)相談自由
+                  - generic [ref=e2137]:
+                    - generic [ref=e2138]: 
+                    - generic [ref=e2139]: "5.0"
+                    - generic [ref=e2140]: (331)
+                  - generic [ref=e2141]:
+                    - img "亜尾子惠与 AbikoKeito" [ref=e2142]
+                    - generic [ref=e2143]: 亜尾子惠与 AbikoKeito
+                    - generic [ref=e2145]:
+                      - strong [ref=e2146]: 7,000
+                      - text: 円
+              - link "悩み鑑定｜顔写真から複雑な悩みを多角的に分析します エンパス持ちで顔写真を視るだけで全て分かります 悩み鑑定｜顔写真から複雑な悩みを多角的に分析します エンパス持ちで顔写真を視るだけで全て分かります  5.0 (443) mp2顔写真鑑定士ー顔写真から人生を分析 mp2顔写真鑑定士ー顔写真から人生を分析 3,500 円" [ref=e2147] [cursor=pointer]:
+                - /url: /services/2733109
+                - generic [ref=e2149]:
+                  - img "悩み鑑定｜顔写真から複雑な悩みを多角的に分析します エンパス持ちで顔写真を視るだけで全て分かります"
+                - generic [ref=e2150]:
+                  - generic [ref=e2151]: 悩み鑑定｜顔写真から複雑な悩みを多角的に分析します エンパス持ちで顔写真を視るだけで全て分かります
+                  - generic [ref=e2152]:
+                    - generic [ref=e2153]: 
+                    - generic [ref=e2154]: "5.0"
+                    - generic [ref=e2155]: (443)
+                  - generic [ref=e2156]:
+                    - img "mp2顔写真鑑定士ー顔写真から人生を分析" [ref=e2157]
+                    - generic [ref=e2158]: mp2顔写真鑑定士ー顔写真から人生を分析
+                    - generic [ref=e2160]:
+                      - strong [ref=e2161]: 3,500
+                      - text: 円
+              - link "占い 四柱推命の裏星から◤あなたの運命の詳細◢を伝えます 【星には表と裏がある】他にはない裏読み【使命に気づくヒント】 四柱推命の裏星から◤あなたの運命の詳細◢を伝えます 【星には表と裏がある】他にはない裏読み【使命に気づくヒント】  4.9 (149) 【現代流】四柱推命鑑定師ひろか 【現代流】四柱推命鑑定師ひろか 8,000 円" [ref=e2162] [cursor=pointer]:
+                - /url: /services/1480843
+                - generic [ref=e2163]:
+                  - img "占い"
+                - generic [ref=e2165]:
+                  - img "四柱推命の裏星から◤あなたの運命の詳細◢を伝えます 【星には表と裏がある】他にはない裏読み【使命に気づくヒント】"
+                - generic [ref=e2166]:
+                  - generic [ref=e2167]: 四柱推命の裏星から◤あなたの運命の詳細◢を伝えます 【星には表と裏がある】他にはない裏読み【使命に気づくヒント】
+                  - generic [ref=e2168]:
+                    - generic [ref=e2169]: 
+                    - generic [ref=e2170]: "4.9"
+                    - generic [ref=e2171]: (149)
+                  - generic [ref=e2172]:
+                    - img "【現代流】四柱推命鑑定師ひろか" [ref=e2173]
+                    - generic [ref=e2174]: 【現代流】四柱推命鑑定師ひろか
+                    - generic [ref=e2176]:
+                      - strong [ref=e2177]: 8,000
+                      - text: 円
+              - link "あなた本来の魅力！隠れた才能が見つかります 魂鑑定！ブループリント、愛と喜びと共に、自分らしく生きる為に あなた本来の魅力！隠れた才能が見つかります 魂鑑定！ブループリント、愛と喜びと共に、自分らしく生きる為に  4.9 (154) Miche☆Channel Miche☆Channel 10,000 円" [ref=e2178] [cursor=pointer]:
+                - /url: /services/180471
+                - generic [ref=e2180]:
+                  - img "あなた本来の魅力！隠れた才能が見つかります 魂鑑定！ブループリント、愛と喜びと共に、自分らしく生きる為に"
+                - generic [ref=e2181]:
+                  - generic [ref=e2182]: あなた本来の魅力！隠れた才能が見つかります 魂鑑定！ブループリント、愛と喜びと共に、自分らしく生きる為に
+                  - generic [ref=e2183]:
+                    - generic [ref=e2184]: 
+                    - generic [ref=e2185]: "4.9"
+                    - generic [ref=e2186]: (154)
+                  - generic [ref=e2187]:
+                    - img "Miche☆Channel" [ref=e2188]
+                    - generic [ref=e2189]: Miche☆Channel
+                    - generic [ref=e2191]:
+                      - strong [ref=e2192]: 10,000
+                      - text: 円
+              - link "出生占星術：出生図鑑定＋個別相談をお伺いします 自分の性質を整理し、選択の軸を見つける占星術鑑定 出生占星術：出生図鑑定＋個別相談をお伺いします 自分の性質を整理し、選択の軸を見つける占星術鑑定  4.9 (188) 「私の羅針盤」ミラーダ 「私の羅針盤」ミラーダ 15,000 円" [ref=e2193] [cursor=pointer]:
+                - /url: /services/544610
+                - generic [ref=e2195]:
+                  - img "出生占星術：出生図鑑定＋個別相談をお伺いします 自分の性質を整理し、選択の軸を見つける占星術鑑定"
+                - generic [ref=e2196]:
+                  - generic [ref=e2197]: 出生占星術：出生図鑑定＋個別相談をお伺いします 自分の性質を整理し、選択の軸を見つける占星術鑑定
+                  - generic [ref=e2198]:
+                    - generic [ref=e2199]: 
+                    - generic [ref=e2200]: "4.9"
+                    - generic [ref=e2201]: (188)
+                  - generic [ref=e2202]:
+                    - img "「私の羅針盤」ミラーダ" [ref=e2203]
+                    - generic [ref=e2204]: 「私の羅針盤」ミラーダ
+                    - generic [ref=e2206]:
+                      - strong [ref=e2207]: 15,000
+                      - text: 円
+              - link "鑑定書作成★3つの占術で才能・運勢・質問 占います 西洋占星術（ホロスコープ）・四柱推命・カード占い 鑑定書作成★3つの占術で才能・運勢・質問 占います 西洋占星術（ホロスコープ）・四柱推命・カード占い  4.9 (227) makumin まくみん makumin まくみん 2,000 円" [ref=e2208] [cursor=pointer]:
+                - /url: /services/2928317
+                - generic [ref=e2210]:
+                  - img "鑑定書作成★3つの占術で才能・運勢・質問 占います 西洋占星術（ホロスコープ）・四柱推命・カード占い"
+                - generic [ref=e2211]:
+                  - generic [ref=e2212]: 鑑定書作成★3つの占術で才能・運勢・質問 占います 西洋占星術（ホロスコープ）・四柱推命・カード占い
+                  - generic [ref=e2213]:
+                    - generic [ref=e2214]: 
+                    - generic [ref=e2215]: "4.9"
+                    - generic [ref=e2216]: (227)
+                  - generic [ref=e2217]:
+                    - img "makumin まくみん" [ref=e2218]
+                    - generic [ref=e2219]: makumin まくみん
+                    - generic [ref=e2221]:
+                      - strong [ref=e2222]: 2,000
+                      - text: 円
+              - link "30年の霊視経験による【潜在能力鑑定】を行います あなたの秘めた力、眠る才能、潜在能力を開花・覚醒させます 30年の霊視経験による【潜在能力鑑定】を行います あなたの秘めた力、眠る才能、潜在能力を開花・覚醒させます  4.9 (202) 【霊能者】天晴 【霊能者】天晴 1,000 円" [ref=e2223] [cursor=pointer]:
+                - /url: /services/3758905
+                - generic [ref=e2225]:
+                  - img "30年の霊視経験による【潜在能力鑑定】を行います あなたの秘めた力、眠る才能、潜在能力を開花・覚醒させます"
+                - generic [ref=e2226]:
+                  - generic [ref=e2227]: 30年の霊視経験による【潜在能力鑑定】を行います あなたの秘めた力、眠る才能、潜在能力を開花・覚醒させます
+                  - generic [ref=e2228]:
+                    - generic [ref=e2229]: 
+                    - generic [ref=e2230]: "4.9"
+                    - generic [ref=e2231]: (202)
+                  - generic [ref=e2232]:
+                    - img "【霊能者】天晴" [ref=e2233]
+                    - generic [ref=e2234]: 【霊能者】天晴
+                    - generic [ref=e2236]:
+                      - strong [ref=e2237]: 1,000
+                      - text: 円
+              - link "占い 四柱推命で◤あなたの人生を変える潜在本質◢伝えます 【客観的に自分直視】言い逃れできない【生まれ持つ本当の資質】 四柱推命で◤あなたの人生を変える潜在本質◢伝えます 【客観的に自分直視】言い逃れできない【生まれ持つ本当の資質】  5.0 (119) 【現代流】四柱推命鑑定師ひろか 【現代流】四柱推命鑑定師ひろか 6,000 円" [ref=e2238] [cursor=pointer]:
+                - /url: /services/1477502
+                - generic [ref=e2239]:
+                  - img "占い"
+                - generic [ref=e2241]:
+                  - img "四柱推命で◤あなたの人生を変える潜在本質◢伝えます 【客観的に自分直視】言い逃れできない【生まれ持つ本当の資質】"
+                - generic [ref=e2242]:
+                  - generic [ref=e2243]: 四柱推命で◤あなたの人生を変える潜在本質◢伝えます 【客観的に自分直視】言い逃れできない【生まれ持つ本当の資質】
+                  - generic [ref=e2244]:
+                    - generic [ref=e2245]: 
+                    - generic [ref=e2246]: "5.0"
+                    - generic [ref=e2247]: (119)
+                  - generic [ref=e2248]:
+                    - img "【現代流】四柱推命鑑定師ひろか" [ref=e2249]
+                    - generic [ref=e2250]: 【現代流】四柱推命鑑定師ひろか
+                    - generic [ref=e2252]:
+                      - strong [ref=e2253]: 6,000
+                      - text: 円
+              - link "四柱推命で◤無意識に発揮している強み◢がわかります 【当たり前すぎて気づいていない】あなたのリソースは金脈になる 四柱推命で◤無意識に発揮している強み◢がわかります 【当たり前すぎて気づいていない】あなたのリソースは金脈になる  5.0 (80) 【現代流】四柱推命鑑定師ひろか 【現代流】四柱推命鑑定師ひろか 9,000 円" [ref=e2254] [cursor=pointer]:
+                - /url: /services/1494398
+                - generic [ref=e2256]:
+                  - img "四柱推命で◤無意識に発揮している強み◢がわかります 【当たり前すぎて気づいていない】あなたのリソースは金脈になる"
+                - generic [ref=e2257]:
+                  - generic [ref=e2258]: 四柱推命で◤無意識に発揮している強み◢がわかります 【当たり前すぎて気づいていない】あなたのリソースは金脈になる
+                  - generic [ref=e2259]:
+                    - generic [ref=e2260]: 
+                    - generic [ref=e2261]: "5.0"
+                    - generic [ref=e2262]: (80)
+                  - generic [ref=e2263]:
+                    - img "【現代流】四柱推命鑑定師ひろか" [ref=e2264]
+                    - generic [ref=e2265]: 【現代流】四柱推命鑑定師ひろか
+                    - generic [ref=e2267]:
+                      - strong [ref=e2268]: 9,000
+                      - text: 円
+              - link "数秘でお悩み解決いたします 運気・資質・仕事・子育て 4000字★200件限定 数秘でお悩み解決いたします 運気・資質・仕事・子育て 4000字★200件限定  4.9 (188) nori_11 nori_11 3,000 円" [ref=e2269] [cursor=pointer]:
+                - /url: /services/832312
+                - generic [ref=e2271]:
+                  - img "数秘でお悩み解決いたします 運気・資質・仕事・子育て 4000字★200件限定"
+                - generic [ref=e2272]:
+                  - generic [ref=e2273]: 数秘でお悩み解決いたします 運気・資質・仕事・子育て 4000字★200件限定
+                  - generic [ref=e2274]:
+                    - generic [ref=e2275]: 
+                    - generic [ref=e2276]: "4.9"
+                    - generic [ref=e2277]: (188)
+                  - generic [ref=e2278]:
+                    - img "nori_11" [ref=e2279]
+                    - generic [ref=e2280]: nori_11
+                    - generic [ref=e2282]:
+                      - strong [ref=e2283]: 3,000
+                      - text: 円
+              - link "占い 魂の設計図をRPGキャラ化して読み解きます 才能・使命・生きやすい人生がわかる 魂の設計図をRPGキャラ化して読み解きます 才能・使命・生きやすい人生がわかる  5.0 (266) ゆめの にじこ ゆめの にじこ 2,000 円" [ref=e2284] [cursor=pointer]:
+                - /url: /services/694567
+                - generic [ref=e2285]:
+                  - img "占い"
+                - generic [ref=e2287]:
+                  - img "魂の設計図をRPGキャラ化して読み解きます 才能・使命・生きやすい人生がわかる"
+                - generic [ref=e2288]:
+                  - generic [ref=e2289]: 魂の設計図をRPGキャラ化して読み解きます 才能・使命・生きやすい人生がわかる
+                  - generic [ref=e2290]:
+                    - generic [ref=e2291]: 
+                    - generic [ref=e2292]: "5.0"
+                    - generic [ref=e2293]: (266)
+                  - generic [ref=e2294]:
+                    - img "ゆめの にじこ" [ref=e2295]
+                    - generic [ref=e2296]: ゆめの にじこ
+                    - generic [ref=e2298]:
+                      - strong [ref=e2299]: 2,000
+                      - text: 円
+              - link "占い 自己分析✴️才能/適職/仕事/恋愛結婚/金運みます 【プロ鑑定歴14年☪️】四柱推命×タロットで現実的アドバイス 今すぐ相談可能 自己分析✴️才能/適職/仕事/恋愛結婚/金運みます 【プロ鑑定歴14年☪️】四柱推命×タロットで現実的アドバイス  5.0 (251) 天命覚醒✴️開運コンサルタント☪️まさこ 天命覚醒✴️開運コンサルタント☪️まさこ 300 円 /分" [ref=e2300] [cursor=pointer]:
+                - /url: /services/2238159
+                - generic [ref=e2301]:
+                  - img "占い"
+                - generic [ref=e2303]:
+                  - img "自己分析✴️才能/適職/仕事/恋愛結婚/金運みます 【プロ鑑定歴14年☪️】四柱推命×タロットで現実的アドバイス"
+                  - generic [ref=e2306]: 今すぐ相談可能
+                - generic [ref=e2307]:
+                  - generic [ref=e2308]: 自己分析✴️才能/適職/仕事/恋愛結婚/金運みます 【プロ鑑定歴14年☪️】四柱推命×タロットで現実的アドバイス
+                  - generic [ref=e2309]:
+                    - generic [ref=e2310]: 
+                    - generic [ref=e2311]: "5.0"
+                    - generic [ref=e2312]: (251)
+                  - generic [ref=e2313]:
+                    - img "天命覚醒✴️開運コンサルタント☪️まさこ" [ref=e2314]
+                    - generic [ref=e2315]: 天命覚醒✴️開運コンサルタント☪️まさこ
+                    - generic [ref=e2317]:
+                      - strong [ref=e2318]: "300"
+                      - text: 円 /分
+              - link "言葉にできない不安☘️色で導き、潜在意識を整えます 直感の2色カラーセラピー☘️パワースポット級の癒やしをお届け 言葉にできない不安☘️色で導き、潜在意識を整えます 直感の2色カラーセラピー☘️パワースポット級の癒やしをお届け  5.0 (59) まな☆石との絆を整える占い師＆セラピスト まな☆石との絆を整える占い師＆セラピスト 1,500 円" [ref=e2319] [cursor=pointer]:
+                - /url: /services/553121
+                - generic [ref=e2321]:
+                  - img "言葉にできない不安☘️色で導き、潜在意識を整えます 直感の2色カラーセラピー☘️パワースポット級の癒やしをお届け"
+                - generic [ref=e2322]:
+                  - generic [ref=e2323]: 言葉にできない不安☘️色で導き、潜在意識を整えます 直感の2色カラーセラピー☘️パワースポット級の癒やしをお届け
+                  - generic [ref=e2324]:
+                    - generic [ref=e2325]: 
+                    - generic [ref=e2326]: "5.0"
+                    - generic [ref=e2327]: (59)
+                  - generic [ref=e2328]:
+                    - img "まな☆石との絆を整える占い師＆セラピスト" [ref=e2329]
+                    - generic [ref=e2330]: まな☆石との絆を整える占い師＆セラピスト
+                    - generic [ref=e2332]:
+                      - strong [ref=e2333]: 1,500
+                      - text: 円
+              - link "人生の羅針盤占い・四柱推命 × 紫微斗数鑑定します 【お試し鑑定】四柱推命 × 紫微斗数で人生を解き明かす 満枠対応中 人生の羅針盤占い・四柱推命 × 紫微斗数鑑定します 【お試し鑑定】四柱推命 × 紫微斗数で人生を解き明かす  5.0 (170) 祖乃果 祖乃果 4,000 円" [ref=e2334] [cursor=pointer]:
+                - /url: /services/3632613
+                - generic [ref=e2336]:
+                  - img "人生の羅針盤占い・四柱推命 × 紫微斗数鑑定します 【お試し鑑定】四柱推命 × 紫微斗数で人生を解き明かす"
+                  - generic [ref=e2338]: 満枠対応中
+                - generic [ref=e2339]:
+                  - generic [ref=e2340]: 人生の羅針盤占い・四柱推命 × 紫微斗数鑑定します 【お試し鑑定】四柱推命 × 紫微斗数で人生を解き明かす
+                  - generic [ref=e2341]:
+                    - generic [ref=e2342]: 
+                    - generic [ref=e2343]: "5.0"
+                    - generic [ref=e2344]: (170)
+                  - generic [ref=e2345]:
+                    - img "祖乃果" [ref=e2346]
+                    - generic [ref=e2347]: 祖乃果
+                    - generic [ref=e2349]:
+                      - strong [ref=e2350]: 4,000
+                      - text: 円
+              - link "もう我慢しないで「自分と繋がる鑑定書」を作成します 生まれてきた目的を思い出し心理学で本当の自分を生きるサポート もう我慢しないで「自分と繋がる鑑定書」を作成します 生まれてきた目的を思い出し心理学で本当の自分を生きるサポート  5.0 (36) 香西 浬希（こうざい りの）カウンセラー 香西 浬希（こうざい りの）カウンセラー 12,000 円" [ref=e2351] [cursor=pointer]:
+                - /url: /services/364599
+                - generic [ref=e2353]:
+                  - img "もう我慢しないで「自分と繋がる鑑定書」を作成します 生まれてきた目的を思い出し心理学で本当の自分を生きるサポート"
+                - generic [ref=e2354]:
+                  - generic [ref=e2355]: もう我慢しないで「自分と繋がる鑑定書」を作成します 生まれてきた目的を思い出し心理学で本当の自分を生きるサポート
+                  - generic [ref=e2356]:
+                    - generic [ref=e2357]: 
+                    - generic [ref=e2358]: "5.0"
+                    - generic [ref=e2359]: (36)
+                  - generic [ref=e2360]:
+                    - img "香西 浬希（こうざい りの）カウンセラー" [ref=e2361]
+                    - generic [ref=e2362]: 香西 浬希（こうざい りの）カウンセラー
+                    - generic [ref=e2364]:
+                      - strong [ref=e2365]: 12,000
+                      - text: 円
+            - generic [ref=e2367] [cursor=pointer]: 
+  - contentinfo [ref=e2372]:
+    - generic [ref=e2373]:
+      - generic [ref=e2377]:
+        - generic [ref=e2379]:
+          - generic [ref=e2380]: サービス一覧
+          - generic [ref=e2381]:
+            - paragraph [ref=e2382]: ウェブやアプリで依頼する
+            - list [ref=e2383]:
+              - listitem [ref=e2384]:
+                - link "ココナラスキルマーケット" [ref=e2386]:
+                  - /url: /
+                  - generic [ref=e2387] [cursor=pointer]: ココナラスキルマーケット
+              - listitem [ref=e2388]:
+                - link "ココナラ募集" [ref=e2390]:
+                  - /url: https://job-matching.coconala.com/client
+                  - generic [ref=e2391] [cursor=pointer]: ココナラ募集
+          - generic [ref=e2392]:
+            - paragraph [ref=e2393]: エージェントに依頼する
+            - list [ref=e2394]:
+              - listitem [ref=e2395]:
+                - link "ココナラアシスト" [ref=e2397]:
+                  - /url: https://assist.coconala.com
+                  - generic [ref=e2398] [cursor=pointer]: ココナラアシスト
+              - listitem [ref=e2399]:
+                - link "ココナラテック" [ref=e2401]:
+                  - /url: https://tech.coconala.com/ref-tracking/coconala?to=/enterprise/inquiry
+                  - generic [ref=e2402] [cursor=pointer]: ココナラテック
+              - listitem [ref=e2403]:
+                - link "ココナラプロ" [ref=e2405]:
+                  - /url: https://professional.coconala.com
+                  - generic [ref=e2406] [cursor=pointer]: ココナラプロ
+              - listitem [ref=e2407]:
+                - link "ココナラコンサル" [ref=e2409]:
+                  - /url: https://consul.coconala.com/talent
+                  - generic [ref=e2410] [cursor=pointer]: ココナラコンサル
+          - generic [ref=e2411]:
+            - paragraph [ref=e2412]: コンテンツを購入する
+            - list [ref=e2413]:
+              - listitem [ref=e2414]:
+                - link "ココナラコンテンツマーケット" [ref=e2416]:
+                  - /url: /contents_market/
+                  - generic [ref=e2417] [cursor=pointer]: ココナラコンテンツマーケット
+          - generic [ref=e2418]:
+            - paragraph [ref=e2419]: その他
+            - list [ref=e2420]:
+              - listitem [ref=e2421]:
+                - link "ココナラ法律相談" [ref=e2423]:
+                  - /url: https://legal.coconala.com
+                  - generic [ref=e2424] [cursor=pointer]: ココナラ法律相談
+        - generic [ref=e2426]:
+          - generic [ref=e2427]: 発注/クライアントの方へ
+          - generic [ref=e2428]:
+            - paragraph
+            - list [ref=e2429]:
+              - listitem [ref=e2430]:
+                - link "出品サービスを検索" [ref=e2432]:
+                  - /url: /search
+                  - generic [ref=e2433] [cursor=pointer]: 出品サービスを検索
+              - listitem [ref=e2434]:
+                - button "仕事・求人を投稿して募集" [ref=e2435] [cursor=pointer]
+              - listitem [ref=e2436]:
+                - link "プロ人材を探してスカウト" [ref=e2438]:
+                  - /url: /users
+                  - generic [ref=e2439] [cursor=pointer]: プロ人材を探してスカウト
+              - listitem [ref=e2440]:
+                - link "ビジネス代行・アシスタントを紹介してもらう" [ref=e2442]:
+                  - /url: https://assist.coconala.com
+                  - generic [ref=e2443] [cursor=pointer]: ビジネス代行・アシスタントを紹介してもらう
+              - listitem [ref=e2444]:
+                - link "業務委託エンジニアを 紹介してもらう" [ref=e2446]:
+                  - /url: https://tech.coconala.com/ref-tracking/coconala?to=/enterprise/inquiry
+                  - generic [ref=e2447] [cursor=pointer]:
+                    - text: 業務委託エンジニアを
+                    - text: 紹介してもらう
+              - listitem [ref=e2448]:
+                - link "非公開の実名クリエイターを 紹介してもらう" [ref=e2450]:
+                  - /url: https://professional.coconala.com
+                  - generic [ref=e2451] [cursor=pointer]:
+                    - text: 非公開の実名クリエイターを
+                    - text: 紹介してもらう
+              - listitem [ref=e2452]:
+                - link "コンサルタントを紹介してもらう" [ref=e2454]:
+                  - /url: https://consul.coconala.com/talent
+                  - generic [ref=e2455] [cursor=pointer]: コンサルタントを紹介してもらう
+              - listitem [ref=e2456]:
+                - link "ブログを探す" [ref=e2458]:
+                  - /url: /blogs
+                  - generic [ref=e2459] [cursor=pointer]: ブログを探す
+        - generic [ref=e2461]:
+          - generic [ref=e2462]: 出品/働きたい方へ
+          - generic [ref=e2463]:
+            - paragraph
+            - list [ref=e2464]:
+              - listitem [ref=e2465]:
+                - link "サービスを出品する" [ref=e2467]:
+                  - /url: /pages/lp_provider
+                  - generic [ref=e2468] [cursor=pointer]: サービスを出品する
+              - listitem [ref=e2469]:
+                - link "単発・スポットの仕事を探す" [ref=e2471]:
+                  - /url: /requests
+                  - generic [ref=e2472] [cursor=pointer]: 単発・スポットの仕事を探す
+              - listitem [ref=e2473]:
+                - link "継続（時給/月給）の仕事を探す" [ref=e2475]:
+                  - /url: /job_matching/outsources
+                  - generic [ref=e2476] [cursor=pointer]: 継続（時給/月給）の仕事を探す
+              - listitem [ref=e2477]:
+                - link "ビジネス代行業務委託で働く" [ref=e2479]:
+                  - /url: https://assist.coconala.com/talent
+                  - generic [ref=e2480] [cursor=pointer]: ビジネス代行業務委託で働く
+              - listitem [ref=e2481]:
+                - link "エンジニア業務委託で働く" [ref=e2483]:
+                  - /url: https://tech.coconala.com/ref-tracking/coconala?to=/
+                  - generic [ref=e2484] [cursor=pointer]: エンジニア業務委託で働く
+              - listitem [ref=e2485]:
+                - link "副業コンサルティングで働く" [ref=e2487]:
+                  - /url: https://consul.coconala.com/talent
+                  - generic [ref=e2488] [cursor=pointer]: 副業コンサルティングで働く
+              - listitem [ref=e2489]:
+                - button "スキル/経歴を登録する" [ref=e2490] [cursor=pointer]
+              - listitem [ref=e2491]:
+                - button "コンテンツを出品する" [ref=e2492] [cursor=pointer]
+              - listitem [ref=e2493]:
+                - button "ブログを投稿する" [ref=e2494] [cursor=pointer]
+              - listitem [ref=e2495]:
+                - link "ヘルプとガイド" [ref=e2497]:
+                  - /url: /pages/guide_top
+                  - generic [ref=e2498] [cursor=pointer]: ヘルプとガイド
+              - listitem [ref=e2499]:
+                - link "出品のコツ" [ref=e2501]:
+                  - /url: https://mag.coconala.com/category/knowhow
+                  - generic [ref=e2502] [cursor=pointer]: 出品のコツ
+              - listitem [ref=e2503]:
+                - link "PRO認定制度" [ref=e2505]:
+                  - /url: /pages/about_pro
+                  - generic [ref=e2506] [cursor=pointer]: PRO認定制度
+        - generic [ref=e2508]:
+          - generic [ref=e2509]: カテゴリ
+          - generic [ref=e2510]:
+            - paragraph
+            - list [ref=e2511]:
+              - listitem [ref=e2512]:
+                - link "イラスト作成・漫画制作" [ref=e2514]:
+                  - /url: /categories/9
+                  - generic [ref=e2515] [cursor=pointer]: イラスト作成・漫画制作
+              - listitem [ref=e2516]:
+                - link "デザイン制作" [ref=e2518]:
+                  - /url: /categories/18
+                  - generic [ref=e2519] [cursor=pointer]: デザイン制作
+              - listitem [ref=e2520]:
+                - link "Web制作・HP作成・EC構築" [ref=e2522]:
+                  - /url: /categories/22
+                  - generic [ref=e2523] [cursor=pointer]: Web制作・HP作成・EC構築
+              - listitem [ref=e2524]:
+                - link "動画編集・映像制作" [ref=e2526]:
+                  - /url: /categories/10
+                  - generic [ref=e2527] [cursor=pointer]: 動画編集・映像制作
+              - listitem [ref=e2528]:
+                - link "集客・マーケティング相談" [ref=e2530]:
+                  - /url: /categories/16
+                  - generic [ref=e2531] [cursor=pointer]: 集客・マーケティング相談
+              - listitem [ref=e2532]:
+                - link "ビジネス代行・事務代行" [ref=e2534]:
+                  - /url: /categories/13
+                  - generic [ref=e2535] [cursor=pointer]: ビジネス代行・事務代行
+              - listitem [ref=e2536]:
+                - link "音楽制作・ナレーション" [ref=e2538]:
+                  - /url: /categories/23
+                  - generic [ref=e2539] [cursor=pointer]: 音楽制作・ナレーション
+              - listitem [ref=e2540]:
+                - link "IT相談・システム開発" [ref=e2542]:
+                  - /url: /categories/11
+                  - generic [ref=e2543] [cursor=pointer]: IT相談・システム開発
+              - listitem [ref=e2544]:
+                - link "ライティング・翻訳" [ref=e2546]:
+                  - /url: /categories/19
+                  - generic [ref=e2547] [cursor=pointer]: ライティング・翻訳
+              - listitem [ref=e2548]:
+                - link "コンサルティング・士業" [ref=e2550]:
+                  - /url: /categories/27
+                  - generic [ref=e2551] [cursor=pointer]: コンサルティング・士業
+              - listitem [ref=e2552]:
+                - link "生成AI活用・開発・制作" [ref=e2554]:
+                  - /url: /categories/28
+                  - generic [ref=e2555] [cursor=pointer]: 生成AI活用・開発・制作
+              - listitem [ref=e2556]:
+                - link "占い" [ref=e2558]:
+                  - /url: /categories/3
+                  - generic [ref=e2559] [cursor=pointer]: 占い
+              - listitem [ref=e2560]:
+                - link "電話占い" [ref=e2562]:
+                  - /url: /categories/3?service_kind=1
+                  - generic [ref=e2563] [cursor=pointer]: 電話占い
+              - listitem [ref=e2564]:
+                - link "悩み相談・カウンセリング" [ref=e2566]:
+                  - /url: /categories/2
+                  - generic [ref=e2567] [cursor=pointer]: 悩み相談・カウンセリング
+              - listitem [ref=e2568]:
+                - link "学習指導・資格・キャリア相談" [ref=e2570]:
+                  - /url: /categories/12
+                  - generic [ref=e2571] [cursor=pointer]: 学習指導・資格・キャリア相談
+              - listitem [ref=e2572]:
+                - link "住まい・美容・生活相談" [ref=e2574]:
+                  - /url: /categories/5
+                  - generic [ref=e2575] [cursor=pointer]: 住まい・美容・生活相談
+              - listitem [ref=e2576]:
+                - link "オンラインレッスン・習い事" [ref=e2578]:
+                  - /url: /categories/26
+                  - generic [ref=e2579] [cursor=pointer]: オンラインレッスン・習い事
+              - listitem [ref=e2580]:
+                - link "ハンドメイド制作" [ref=e2582]:
+                  - /url: /categories/1001
+                  - generic [ref=e2583] [cursor=pointer]: ハンドメイド制作
+              - listitem [ref=e2584]:
+                - link "出張撮影・出張サービス" [ref=e2586]:
+                  - /url: /categories/29
+                  - generic [ref=e2587] [cursor=pointer]: 出張撮影・出張サービス
+              - listitem [ref=e2588]:
+                - link "資産運用・副業の相談" [ref=e2590]:
+                  - /url: /categories/17
+                  - generic [ref=e2591] [cursor=pointer]: 資産運用・副業の相談
+              - listitem [ref=e2592]:
+                - link "サイトマップ" [ref=e2594]:
+                  - /url: /categories/
+                  - generic [ref=e2595] [cursor=pointer]: サイトマップ
+        - generic [ref=e2597]:
+          - generic [ref=e2598]: はじめての方へ
+          - generic [ref=e2599]:
+            - paragraph
+            - list [ref=e2600]:
+              - listitem [ref=e2601]:
+                - link "よくある質問" [ref=e2603]:
+                  - /url: https://coconala-support.zendesk.com/hc/ja
+                  - generic [ref=e2604] [cursor=pointer]: よくある質問
+              - listitem [ref=e2605]:
+                - link "ご利用ガイド" [ref=e2607]:
+                  - /url: /pages/guide_top
+                  - generic [ref=e2608] [cursor=pointer]: ご利用ガイド
+              - listitem [ref=e2609]:
+                - link "ココナラのルール" [ref=e2611]:
+                  - /url: /pages/guide_rule
+                  - generic [ref=e2612] [cursor=pointer]: ココナラのルール
+              - listitem [ref=e2613]:
+                - link "お問い合わせ" [ref=e2615]:
+                  - /url: /inquiry
+                  - generic [ref=e2616] [cursor=pointer]: お問い合わせ
+              - listitem [ref=e2617]:
+                - button "ココナラクラブオフ" [ref=e2618] [cursor=pointer]
+              - listitem [ref=e2619]:
+                - button "招待コード" [ref=e2620] [cursor=pointer]
+        - generic [ref=e2622]:
+          - generic [ref=e2623]: ココナラについて
+          - generic [ref=e2624]:
+            - paragraph
+            - list [ref=e2625]:
+              - listitem [ref=e2626]:
+                - link "会社概要" [ref=e2628]:
+                  - /url: https://coconala.co.jp/company
+                  - generic [ref=e2629] [cursor=pointer]: 会社概要
+              - listitem [ref=e2630]:
+                - link "採用情報" [ref=e2632]:
+                  - /url: https://www.coconala.co.jp/recruit
+                  - generic [ref=e2633] [cursor=pointer]: 採用情報
+              - listitem [ref=e2634]:
+                - link "ココナラ活用Mag" [ref=e2636]:
+                  - /url: https://mag.coconala.com
+                  - generic [ref=e2637] [cursor=pointer]: ココナラ活用Mag
+              - listitem [ref=e2638]:
+                - link "ココナラマガジン" [ref=e2640]:
+                  - /url: https://coconala.com/magazine/
+                  - generic [ref=e2641] [cursor=pointer]: ココナラマガジン
+              - listitem [ref=e2642]:
+                - link "法人ビジネスご利用事例" [ref=e2644]:
+                  - /url: https://coconala.com/business_magazine/
+                  - generic [ref=e2645] [cursor=pointer]: 法人ビジネスご利用事例
+      - generic [ref=e2646]:
+        - generic [ref=e2649]:
+          - link "Download on the App Store" [ref=e2651] [cursor=pointer]:
+            - /url: https://itunes.apple.com/jp/app/id944884603
+            - img "Download on the App Store"
+          - generic [ref=e2652]:
+            - link "Android App on Google play":
+              - /url: https://play.google.com/store/apps/details?id=com.coconala.android.portal
+              - img "Android App on Google play"
+        - generic [ref=e2654]:
+          - paragraph [ref=e2655]: お問い合わせ
+          - generic [ref=e2656]:
+            - text: 不具合など、
+            - generic [ref=e2657]: 返信が必要な方はこちら
+          - link "お問い合わせ" [ref=e2659] [cursor=pointer]:
+            - /url: /inquiry
+            - button "お問い合わせ" [ref=e2661]:
+              - generic [ref=e2662]:
+                - generic: お問い合わせ
+        - generic [ref=e2665]:
+          - generic [ref=e2666]: ココナラへのご意見・ご要望
+          - generic [ref=e2667]: ※個人情報の入力はお控えください
+          - textbox "ご意見・ご要望をお聞かせください。" [ref=e2669]
+          - button "送信する" [ref=e2673]:
+            - generic [ref=e2674]:
+              - generic: 送信する
+    - generic [ref=e2676]:
+      - generic [ref=e2677]:
+        - generic [ref=e2678]:
+          - link [ref=e2679] [cursor=pointer]:
+            - /url: https://twitter.com/coconala
+            - img [ref=e2682]
+          - link [ref=e2684] [cursor=pointer]:
+            - /url: https://www.facebook.com/coconalajp
+            - img [ref=e2687]
+          - link [ref=e2690] [cursor=pointer]:
+            - /url: https://www.instagram.com/coconala_official
+            - img [ref=e2693]
+          - link [ref=e2696] [cursor=pointer]:
+            - /url: https://www.youtube.com/channel/UCMUoDRN3g4pZ5KyDuLrr1ag
+            - img [ref=e2699]
+        - generic [ref=e2701]:
+          - link "利用規約" [ref=e2702] [cursor=pointer]:
+            - /url: /pages/terms_user
+          - link "プライバシーポリシー" [ref=e2703] [cursor=pointer]:
+            - /url: /pages/privacy
+          - link "外部送信ポリシー" [ref=e2704] [cursor=pointer]:
+            - /url: /pages/cookie_policy
+          - link "特定商取引法に基づく表記" [ref=e2705] [cursor=pointer]:
+            - /url: /pages/tokushou
+          - link "加盟店規約" [ref=e2706] [cursor=pointer]:
+            - /url: /pages/terms_provider
+          - link "有償ポイントに関する特約" [ref=e2707] [cursor=pointer]:
+            - /url: /pages/terms_exchange_point
+          - link "資金決済法に基づく表記" [ref=e2708] [cursor=pointer]:
+            - /url: /pages/settlement
+      - generic [ref=e2710]: © 2012-2026 coconala Inc.

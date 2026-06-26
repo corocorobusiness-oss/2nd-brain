@@ -1,0 +1,2150 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e5]:
+    - generic [ref=e7]:
+      - link "ココナラ" [ref=e8] [cursor=pointer]:
+        - /url: /
+        - img "ココナラ" [ref=e9]
+      - generic [ref=e11]:
+        - generic [ref=e15] [cursor=pointer]: サービス
+        - generic [ref=e18]:
+          - textbox "キーワードで検索" [ref=e19]
+          - button
+      - generic [ref=e23]:
+        - generic [ref=e31] [cursor=pointer]:
+          - generic:
+            - generic:
+              - generic: サポート
+        - button "ログイン" [ref=e38] [cursor=pointer]:
+          - generic [ref=e39]:
+            - generic: ログイン
+        - button "会員登録" [ref=e42] [cursor=pointer]:
+          - generic [ref=e43]:
+            - generic: 会員登録
+    - generic [ref=e47]:
+      - link "サービスを探す" [ref=e51] [cursor=pointer]:
+        - /url: /search
+        - text: サービスを探す
+      - link "プロ人材を探す" [ref=e57] [cursor=pointer]:
+        - /url: /users/
+        - text: プロ人材を探す
+      - link "ノウハウ・素材を探す" [ref=e65] [cursor=pointer]:
+        - /url: /contents_market
+        - generic: ノウハウ・素材を探す
+      - link "ブログを探す" [ref=e71] [cursor=pointer]:
+        - /url: /blogs
+        - text: ブログを探す
+      - listitem [ref=e74] [cursor=pointer]:
+        - generic [ref=e76]:
+          - link "仕事を探す" [ref=e80]:
+            - /url: /job_matching/supplier
+            - generic: 仕事を探す
+          - generic: 単発の仕事
+          - generic: 継続（時給/月給）の仕事
+  - generic [ref=e93]:
+    - button "会員登録で「300円」+「10%」割引クーポンを獲得！ ※電話サービスはご利用不可" [ref=e95] [cursor=pointer]:
+      - generic [ref=e97]: 会員登録で「300円」+「10%」割引クーポンを獲得！ ※電話サービスはご利用不可
+    - generic [ref=e98]:
+      - generic [ref=e99]:
+        - navigation "breadcrumbs" [ref=e100]:
+          - list [ref=e101]:
+            - listitem [ref=e102]:
+              - link "ホーム" [ref=e103] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=e104]:
+              - text: ">"
+              - link "占い" [ref=e105] [cursor=pointer]:
+                - /url: /categories/3
+            - listitem [ref=e106]:
+              - text: ">"
+              - link "結婚占い" [ref=e107] [cursor=pointer]:
+                - /url: /categories/657
+            - listitem [ref=e108]:
+              - text: ">"
+              - link "運命の人鑑定" [ref=e109] [cursor=pointer]:
+                - /url: /categories/657/266
+        - generic [ref=e111]:
+          - generic [ref=e115]:
+            - heading "婚活・運命の人戦略書PDFを作成します" [level=1] [ref=e116]
+            - heading "相性の傾向と婚活の進め方を行動まで整理" [level=2] [ref=e117]
+          - generic [ref=e118]:
+            - generic [ref=e119]:
+              - generic [ref=e120]:
+                - generic [ref=e121]: 評価
+                - generic [ref=e123]:
+                  - generic [ref=e125]:
+                    - generic [ref=e126]:
+                      - generic [ref=e127]:  
+                      - text: 
+                    - generic [ref=e128]:
+                      - strong [ref=e129]: "4.9"
+                      - text: (458)
+                  - text:  
+              - generic [ref=e130]:
+                - generic [ref=e131]: 販売実績
+                - generic [ref=e132]:
+                  - strong [ref=e133]: "578"
+                  - text: 件
+            - generic [ref=e135]:
+              - generic [ref=e136]: 残り
+              - generic [ref=e137]:
+                - strong [ref=e138]: "2"
+                - text: 枠 / お願い中：
+                - strong [ref=e139]: "0"
+                - text: 人
+          - generic [ref=e140]:
+            - link "透月｜恋と人生の整理占い" [ref=e141] [cursor=pointer]:
+              - /url: "#providerProfile"
+              - img "透月｜恋と人生の整理占い" [ref=e142]
+            - generic [ref=e143]:
+              - link "透月｜恋と人生の整理占い 出品者ランク：ブロンズ" [ref=e144] [cursor=pointer]:
+                - /url: "#providerProfile"
+                - generic [ref=e145]: 透月｜恋と人生の整理占い
+                - generic [ref=e149]:
+                  - img "出品者ランク：ブロンズ" [ref=e152]
+                  - text: 
+              - link "総販売実績：1,771件" [ref=e153] [cursor=pointer]:
+                - /url: "#serviceContentsRating"
+      - generic [ref=e155]:
+        - button "サービス内容" [ref=e157] [cursor=pointer]:
+          - generic [ref=e158]: サービス内容
+        - button "購入時のお願い" [ref=e160] [cursor=pointer]:
+          - generic [ref=e161]: 購入時のお願い
+        - button "よくある質問" [ref=e163] [cursor=pointer]:
+          - generic [ref=e164]: よくある質問
+        - button "評価・感想" [ref=e166] [cursor=pointer]:
+          - generic [ref=e167]: 評価・感想
+        - generic [ref=e173] [cursor=pointer]:
+          - img [ref=e174]
+          - generic [ref=e176]: お気に入り（412）
+      - generic [ref=e179]:
+        - text: 
+        - generic [ref=e183]:
+          - generic [ref=e184]:
+            - term [ref=e185]: 鑑定
+            - definition [ref=e186]:
+              - generic [ref=e188]: 
+          - generic [ref=e189]:
+            - term [ref=e190]: カウンセリング
+            - definition [ref=e191]:
+              - generic [ref=e193]: 
+          - generic [ref=e194]:
+            - term [ref=e195]: お届け日数
+            - definition [ref=e196]:
+              - generic [ref=e197]: 3日（予定） / 約4日（実績）
+          - generic [ref=e198]:
+            - term [ref=e199]: 初回返答時間
+            - definition [ref=e200]:
+              - generic [ref=e201]: 1時間以内（実績）
+          - generic [ref=e202]:
+            - term [ref=e203]: スタイル
+            - definition [ref=e204]:
+              - generic [ref=e205]:
+                - link "具体的" [ref=e206] [cursor=pointer]:
+                  - /url: /categories/657?style_ids[]=22
+                - link "寄り添い" [ref=e207] [cursor=pointer]:
+                  - /url: /categories/657?style_ids[]=24
+                - link "まじめ" [ref=e208] [cursor=pointer]:
+                  - /url: /categories/657?style_ids[]=26
+                - link "初心者歓迎" [ref=e209] [cursor=pointer]:
+                  - /url: /categories/657?style_ids[]=28
+          - generic [ref=e210]:
+            - term [ref=e211]: 占術
+            - definition [ref=e212]:
+              - generic [ref=e213]:
+                - link "四柱推命" [ref=e214] [cursor=pointer]:
+                  - /url: /categories/657?technique_ids[]=24
+                - link "西洋占星術" [ref=e215] [cursor=pointer]:
+                  - /url: /categories/657?technique_ids[]=22
+                - link "数秘術" [ref=e216] [cursor=pointer]:
+                  - /url: /categories/657?technique_ids[]=23
+        - generic [ref=e217]:
+          - heading "高評価のレビュー" [level=2] [ref=e218]
+          - button "すべての評価・感想をみる" [ref=e219] [cursor=pointer]
+        - generic [ref=e222]:
+          - generic [ref=e225]:
+            - generic [ref=e228]:
+              - generic [ref=e229]:
+                - generic [ref=e232]:
+                  - generic [ref=e234]:  
+                  - generic [ref=e236]: 女性
+                - generic [ref=e237]: 1年前
+              - generic [ref=e239]: いつもお世話になっております。この度も迅速にご対応くださりありがとうございます。またどうぞよろしくお願いいたします。
+            - generic [ref=e243]:
+              - generic [ref=e244]:
+                - generic [ref=e247]:
+                  - generic [ref=e249]:  
+                  - generic [ref=e251]: 女性
+                - generic [ref=e252]: 2年前
+              - generic [ref=e253]:
+                - generic [ref=e254]: 迅速かつ丁寧なやりとりをしていただだけました！ また依頼させてください！
+                - button "もっと見る" [ref=e256] [cursor=pointer]
+            - generic [ref=e259]:
+              - generic [ref=e260]:
+                - generic [ref=e263]:
+                  - generic [ref=e265]:  
+                  - generic [ref=e267]: 女性
+                - generic [ref=e268]: 2年前
+              - generic [ref=e270]: この度はありがとうございます。購入から迅速に対応いただきました！また機会有りましたらよろしくお願いします！
+            - generic [ref=e274]:
+              - generic [ref=e275]:
+                - generic [ref=e278]:
+                  - generic [ref=e280]:  
+                  - generic [ref=e282]: 匿名
+                - generic [ref=e283]: 2年前
+              - generic [ref=e285]: スピーディーで丁寧なサービスでした。 是非また次回もお願いできればと思います。 ありがとうございました！
+            - generic [ref=e289]:
+              - generic [ref=e290]:
+                - generic [ref=e293]:
+                  - generic [ref=e295]:  
+                  - generic [ref=e296]:
+                    - generic [ref=e297]: kiseki2013
+                    - generic [ref=e298]: 見積り相談
+                - generic [ref=e299]: 1年前
+              - generic [ref=e300]:
+                - generic [ref=e301]: とても丁寧に対応頂きリピート依頼も させて頂いております。
+                - button "もっと見る" [ref=e303] [cursor=pointer]
+          - generic [ref=e305] [cursor=pointer]: 
+        - generic [ref=e312]:
+          - generic [ref=e314]:
+            - img "婚活・運命の人戦略書PDFを作成します 相性の傾向と婚活の進め方を行動まで整理 イメージ1" [ref=e317] [cursor=pointer]
+            - generic [ref=e318]:
+              - generic [ref=e320]:
+                - img "婚活・運命の人戦略書PDFを作成します 相性の傾向と婚活の進め方を行動まで整理 イメージ1" [ref=e322] [cursor=pointer]
+                - img "婚活・運命の人戦略書PDFを作成します 相性の傾向と婚活の進め方を行動まで整理 イメージ2" [ref=e324] [cursor=pointer]
+                - img "婚活・運命の人戦略書PDFを作成します 相性の傾向と婚活の進め方を行動まで整理 イメージ3" [ref=e326] [cursor=pointer]
+                - img "婚活・運命の人戦略書PDFを作成します 相性の傾向と婚活の進め方を行動まで整理 イメージ4" [ref=e328] [cursor=pointer]
+                - img "婚活・運命の人戦略書PDFを作成します 相性の傾向と婚活の進め方を行動まで整理 イメージ5" [ref=e330] [cursor=pointer]
+              - generic [ref=e333] [cursor=pointer]: 
+          - heading "サービス内容" [level=2] [ref=e335]
+          - generic [ref=e337]: 婚活でうまくいかない理由を、占いの視点と現実の行動整理で見える化します。 「出会えない」「続かない」「決められない」「相手選びで迷う」などの悩みに対して、合いやすい人の傾向と、次に変える行動をPDF戦略書にまとめます。 私は会社経営・人事の現場で4000人以上と向き合い、相性が合いやすい関係、すれ違いやすい関係、決断できなくなる場面を数多く見てきました。その視点を、婚活・結婚の行動プランに落とし込みます。 【鑑定内容】 ・あなたの恋愛、結婚傾向 ・合いやすい相手のタイプ ・避けた方が疲れやすい相性 ・婚活で止まりやすいポイント ・プロフィールや出会い方の見直しヒント ・今後30日の行動プラン ・運命の人を探すうえで大切にしたい軸 【納品形式】 ・初期PDF 6-8ページ目安 ・3000-4000字前後 ・納期3日 ・鑑定範囲内の確認1往復まで 公開初期のため、先着10名様まで500円で受付します。 結婚を保証する鑑定ではありませんが、自分に合う相手と行動を整理するための戦略書としてお使いください。
+          - heading "購入にあたってのお願い" [level=2] [ref=e339]
+          - generic [ref=e341]: "ご購入後、次の内容をお送りください。 1. お名前（ニックネーム可） 2. 生年月日（西暦） 3. 出生時間（任意） 4. 性別、希望するお相手の性別 5. 婚活状況: アプリ / 相談所 / 紹介 / 交際中 / 再婚活 / これから 6. 婚活歴、直近3か月の出会い数 7. 悩み: 出会えない / 続かない / 決められない / 相手選び / プロフィール / 疲れ 8. 理想の結婚生活、譲れない条件3つ 9. 過去にうまくいかなかったパターン 10. 納品トーン: やさしめ / 率直 / 実務的 医療、法律、投資、合否、生死に関する鑑定、成婚保証、相手を操作する内容は対応できません。"
+      - generic [ref=e343]:
+        - generic [ref=e344]:
+          - generic [ref=e346]: 500 円
+          - generic [ref=e347]: 3ポイント (0.5％) 獲得
+          - button " 購入画面に進む" [ref=e351] [cursor=pointer]:
+            - generic [ref=e352]:
+              - generic [ref=e353]: 
+              - text: 購入画面に進む
+          - text: 
+        - generic [ref=e355]:
+          - button " 出品者に質問" [ref=e357] [cursor=pointer]:
+            - generic [ref=e360]:
+              - generic [ref=e361]: 
+              - text: 出品者に質問
+          - button " フォロー 356" [ref=e364] [cursor=pointer]:
+            - generic [ref=e366]:
+              - generic [ref=e367]:
+                - generic [ref=e368]: 
+                - text: フォロー
+              - generic [ref=e369]: "356"
+        - list [ref=e372]:
+          - listitem [ref=e375] [cursor=pointer]:
+            - generic [ref=e377]: 
+          - listitem [ref=e380] [cursor=pointer]:
+            - generic [ref=e382]: 
+          - listitem [ref=e385] [cursor=pointer]:
+            - generic [ref=e386]: 
+          - listitem [ref=e389] [cursor=pointer]:
+            - generic [ref=e390]: 
+      - generic [ref=e392]:
+        - generic [ref=e395]:
+          - generic [ref=e397]:
+            - img "透月｜恋と人生の整理占い" [ref=e399]
+            - generic [ref=e400]:
+              - link "透月｜恋と人生の整理占い 出品者ランク：ブロンズ":
+                - /url: /users/2500940
+                - generic [ref=e401] [cursor=pointer]: 透月｜恋と人生の整理占い
+                - generic [ref=e406]:
+                  - img "出品者ランク：ブロンズ" [ref=e409] [cursor=pointer]
+                  - text: 
+              - generic [ref=e410]:
+                - generic [ref=e411]:
+                  - img [ref=e413]
+                  - generic [ref=e416]: 本人確認
+                  - generic [ref=e417]: 
+                - generic [ref=e418]:
+                  - img [ref=e420]
+                  - generic [ref=e422]: 機密保持契約(NDA)
+                  - generic [ref=e423]: 
+                - generic [ref=e424]:
+                  - img [ref=e426]
+                  - generic [ref=e428]: インボイス発行事業者
+                  - generic [ref=e429]: 
+                  - generic [ref=e430]: 未登録
+              - generic [ref=e431]:
+                - generic [ref=e432]:
+                  - generic [ref=e433]: 総販売実績
+                  - generic [ref=e434]: 1,771
+                - generic [ref=e435]:
+                  - generic [ref=e436]: 評価
+                  - generic [ref=e437]:
+                    - img [ref=e438]
+                    - generic [ref=e440]: "4.9"
+                - generic [ref=e441]:
+                  - generic [ref=e442]: フォロワー
+                  - generic [ref=e443]: "356"
+          - generic [ref=e444]:
+            - link "プロフィール詳細を見る" [ref=e445] [cursor=pointer]:
+              - /url: /users/2500940
+            - generic [ref=e447]:
+              - button " 出品者に質問" [ref=e449] [cursor=pointer]:
+                - generic [ref=e452]:
+                  - generic [ref=e453]: 
+                  - text: 出品者に質問
+              - button " フォロー 356" [ref=e456] [cursor=pointer]:
+                - generic [ref=e458]:
+                  - generic [ref=e459]:
+                    - generic [ref=e460]: 
+                    - text: フォロー
+                  - generic [ref=e461]: "356"
+          - generic [ref=e463]:
+            - generic [ref=e464]: スケジュール
+            - generic [ref=e465]: 公開初期のため、少人数ずつ丁寧に受付しています。 通常24時間以内に初回返信いたします。 鑑定書は商品ごとの納期に沿ってお届けします。 満枠時は受付を一時停止する場合があります。
+            - generic [ref=e467] [cursor=pointer]:
+              - text: すべて見る
+              - img [ref=e468]
+          - generic [ref=e472]:
+            - paragraph [ref=e474]: 得意分野
+            - generic [ref=e476]:
+              - paragraph [ref=e477]:
+                - text: 占い
+                - generic [ref=e478]: 恋愛・婚活・人生相談の占い
+              - generic [ref=e479]:
+                - generic [ref=e480]: 恋愛占い
+                - generic [ref=e481]: 相手の気持ち
+                - generic [ref=e482]: 婚活
+                - generic [ref=e483]: 復縁
+                - generic [ref=e484]: 相性
+                - generic [ref=e485]: 四柱推命
+                - generic [ref=e486]: ホロスコープ
+          - generic [ref=e488]:
+            - heading "出品者のその他の人気サービス" [level=2] [ref=e489]
+            - generic [ref=e490]:
+              - generic [ref=e493]:
+                - link "四柱推命×ホロスコープ自己理解鑑定書を作ります 本質・強み・恋愛・仕事の傾向をPDFに整理 四柱推命×ホロスコープ自己理解鑑定書を作ります 本質・強み・恋愛・仕事の傾向をPDFに整理 4.9 (295) 500 円" [ref=e494] [cursor=pointer]:
+                  - /url: /services/1764267
+                  - img "四柱推命×ホロスコープ自己理解鑑定書を作ります 本質・強み・恋愛・仕事の傾向をPDFに整理" [ref=e496]
+                  - generic [ref=e497]:
+                    - generic [ref=e498]: 四柱推命×ホロスコープ自己理解鑑定書を作ります 本質・強み・恋愛・仕事の傾向をPDFに整理
+                    - generic [ref=e499]:
+                      - generic [ref=e500]:
+                        - img [ref=e501]
+                        - generic [ref=e503]: "4.9"
+                        - generic [ref=e504]: (295)
+                      - generic [ref=e506]:
+                        - strong [ref=e507]: "500"
+                        - text: 円
+                - link "あなたの取扱説明書PDFを大容量で作成します 本質・強み・恋愛・仕事・人間関係を総合鑑定 あなたの取扱説明書PDFを大容量で作成します 本質・強み・恋愛・仕事・人間関係を総合鑑定 4.9 (489) 500 円" [ref=e508] [cursor=pointer]:
+                  - /url: /services/1764475
+                  - img "あなたの取扱説明書PDFを大容量で作成します 本質・強み・恋愛・仕事・人間関係を総合鑑定" [ref=e510]
+                  - generic [ref=e511]:
+                    - generic [ref=e512]: あなたの取扱説明書PDFを大容量で作成します 本質・強み・恋愛・仕事・人間関係を総合鑑定
+                    - generic [ref=e513]:
+                      - generic [ref=e514]:
+                        - img [ref=e515]
+                        - generic [ref=e517]: "4.9"
+                        - generic [ref=e518]: (489)
+                      - generic [ref=e520]:
+                        - strong [ref=e521]: "500"
+                        - text: 円
+                - link "恋愛｜相手の気持ちと本音、次の一手を占います 保存用PDF・質問2つまで。迷いを今日できる行動に整理 恋愛｜相手の気持ちと本音、次の一手を占います 保存用PDF・質問2つまで。迷いを今日できる行動に整理 5.0 (163) 500 円" [ref=e522] [cursor=pointer]:
+                  - /url: /services/1764502
+                  - img "恋愛｜相手の気持ちと本音、次の一手を占います 保存用PDF・質問2つまで。迷いを今日できる行動に整理" [ref=e524]
+                  - generic [ref=e525]:
+                    - generic [ref=e526]: 恋愛｜相手の気持ちと本音、次の一手を占います 保存用PDF・質問2つまで。迷いを今日できる行動に整理
+                    - generic [ref=e527]:
+                      - generic [ref=e528]:
+                        - img [ref=e529]
+                        - generic [ref=e531]: "5.0"
+                        - generic [ref=e532]: (163)
+                      - generic [ref=e534]:
+                        - strong [ref=e535]: "500"
+                        - text: 円
+                - link "30日運勢カレンダーPDFをあなた専用に作ります 毎朝1分で見返せる月間運勢ガイド 30日運勢カレンダーPDFをあなた専用に作ります 毎朝1分で見返せる月間運勢ガイド 4.5 (38) 1,000 円" [ref=e536] [cursor=pointer]:
+                  - /url: /services/3235430
+                  - img "30日運勢カレンダーPDFをあなた専用に作ります 毎朝1分で見返せる月間運勢ガイド" [ref=e538]
+                  - generic [ref=e539]:
+                    - generic [ref=e540]: 30日運勢カレンダーPDFをあなた専用に作ります 毎朝1分で見返せる月間運勢ガイド
+                    - generic [ref=e541]:
+                      - generic [ref=e542]:
+                        - img [ref=e543]
+                        - generic [ref=e545]: "4.5"
+                        - generic [ref=e546]: (38)
+                      - generic [ref=e548]:
+                        - strong [ref=e549]: 1,000
+                        - text: 円
+              - generic [ref=e551] [cursor=pointer]: 
+        - text:    
+        - generic [ref=e553]:
+          - heading "運命の人鑑定の関連サービス" [level=2] [ref=e554]
+          - generic [ref=e555]:
+            - generic [ref=e558]:
+              - link "本格深掘り鑑定♡あなたの運命の人を鑑定します 出会いの時期・人物像・結婚までの流れを本格リーディング 本格深掘り鑑定♡あなたの運命の人を鑑定します 出会いの時期・人物像・結婚までの流れを本格リーディング  5.0 (180) ここね＊心の声専門家 ここね＊心の声専門家 500 円" [ref=e559] [cursor=pointer]:
+                - /url: /services/3840687
+                - generic [ref=e561]:
+                  - img "本格深掘り鑑定♡あなたの運命の人を鑑定します 出会いの時期・人物像・結婚までの流れを本格リーディング"
+                - generic [ref=e562]:
+                  - generic [ref=e563]: 本格深掘り鑑定♡あなたの運命の人を鑑定します 出会いの時期・人物像・結婚までの流れを本格リーディング
+                  - generic [ref=e564]:
+                    - generic [ref=e565]: 
+                    - generic [ref=e566]: "5.0"
+                    - generic [ref=e567]: (180)
+                  - generic [ref=e568]:
+                    - img "ここね＊心の声専門家" [ref=e569]
+                    - generic [ref=e570]: ここね＊心の声専門家
+                    - generic [ref=e572]:
+                      - strong [ref=e573]: "500"
+                      - text: 円
+              - link "2026年運命の人の全貌を守護霊が暴きます 絶望の底を見た私だから視える、あなたを救い出す愛の実像 2026年運命の人の全貌を守護霊が暴きます 絶望の底を見た私だから視える、あなたを救い出す愛の実像  5.0 (26) 風_fuu霊視者 風_fuu霊視者 500 円" [ref=e574] [cursor=pointer]:
+                - /url: /services/4141907
+                - generic [ref=e576]:
+                  - img "2026年運命の人の全貌を守護霊が暴きます 絶望の底を見た私だから視える、あなたを救い出す愛の実像"
+                - generic [ref=e577]:
+                  - generic [ref=e578]: 2026年運命の人の全貌を守護霊が暴きます 絶望の底を見た私だから視える、あなたを救い出す愛の実像
+                  - generic [ref=e579]:
+                    - generic [ref=e580]: 
+                    - generic [ref=e581]: "5.0"
+                    - generic [ref=e582]: (26)
+                  - generic [ref=e583]:
+                    - img "風_fuu霊視者" [ref=e584]
+                    - generic [ref=e585]: 風_fuu霊視者
+                    - generic [ref=e587]:
+                      - strong [ref=e588]: "500"
+                      - text: 円
+              - link "周りは結婚。。。あなたの結婚相手と時期を霊視します 出会いがない焦り、婚活への疲れ、孤独への恐怖に終止符を 満枠対応中 周りは結婚。。。あなたの結婚相手と時期を霊視します 出会いがない焦り、婚活への疲れ、孤独への恐怖に終止符を  4.9 (27) 紬｜霊視 ✤ 魂読師 紬｜霊視 ✤ 魂読師 500 円" [ref=e589] [cursor=pointer]:
+                - /url: /services/4001227
+                - generic [ref=e591]:
+                  - img "周りは結婚。。。あなたの結婚相手と時期を霊視します 出会いがない焦り、婚活への疲れ、孤独への恐怖に終止符を"
+                  - generic [ref=e593]: 満枠対応中
+                - generic [ref=e594]:
+                  - generic [ref=e595]: 周りは結婚。。。あなたの結婚相手と時期を霊視します 出会いがない焦り、婚活への疲れ、孤独への恐怖に終止符を
+                  - generic [ref=e596]:
+                    - generic [ref=e597]: 
+                    - generic [ref=e598]: "4.9"
+                    - generic [ref=e599]: (27)
+                  - generic [ref=e600]:
+                    - img "紬｜霊視 ✤ 魂読師" [ref=e601]
+                    - generic [ref=e602]: 紬｜霊視 ✤ 魂読師
+                    - generic [ref=e604]:
+                      - strong [ref=e605]: "500"
+                      - text: 円
+              - link "運命の人かどうかを元探偵の視点で読み解きます 人物像・出会う時期・結婚へ進む流れを霊視します 運命の人かどうかを元探偵の視点で読み解きます 人物像・出会う時期・結婚へ進む流れを霊視します  5.0 (4) 凪｜元探偵・霊視鑑定士｜深層プロファイル 凪｜元探偵・霊視鑑定士｜深層プロファイル 500 円" [ref=e606] [cursor=pointer]:
+                - /url: /services/4270906
+                - generic [ref=e608]:
+                  - img "運命の人かどうかを元探偵の視点で読み解きます 人物像・出会う時期・結婚へ進む流れを霊視します"
+                - generic [ref=e609]:
+                  - generic [ref=e610]: 運命の人かどうかを元探偵の視点で読み解きます 人物像・出会う時期・結婚へ進む流れを霊視します
+                  - generic [ref=e611]:
+                    - generic [ref=e612]: 
+                    - generic [ref=e613]: "5.0"
+                    - generic [ref=e614]: (4)
+                  - generic [ref=e615]:
+                    - img "凪｜元探偵・霊視鑑定士｜深層プロファイル" [ref=e616]
+                    - generic [ref=e617]: 凪｜元探偵・霊視鑑定士｜深層プロファイル
+                    - generic [ref=e619]:
+                      - strong [ref=e620]: "500"
+                      - text: 円
+              - link "運命の人からのラブレター未来からお届けします 結婚するのはどんな人？どうやって出会った？質問受付ます 運命の人からのラブレター未来からお届けします 結婚するのはどんな人？どうやって出会った？質問受付ます  4.9 (238) 星宮ルナ✮愛されオーラ占い 星宮ルナ✮愛されオーラ占い 500 円" [ref=e621] [cursor=pointer]:
+                - /url: /services/3030364
+                - generic [ref=e623]:
+                  - img "運命の人からのラブレター未来からお届けします 結婚するのはどんな人？どうやって出会った？質問受付ます"
+                - generic [ref=e624]:
+                  - generic [ref=e625]: 運命の人からのラブレター未来からお届けします 結婚するのはどんな人？どうやって出会った？質問受付ます
+                  - generic [ref=e626]:
+                    - generic [ref=e627]: 
+                    - generic [ref=e628]: "4.9"
+                    - generic [ref=e629]: (238)
+                  - generic [ref=e630]:
+                    - img "星宮ルナ✮愛されオーラ占い" [ref=e631]
+                    - generic [ref=e632]: 星宮ルナ✮愛されオーラ占い
+                    - generic [ref=e634]:
+                      - strong [ref=e635]: "500"
+                      - text: 円
+              - link "未来の結婚相手と出会う時期を霊視します 「いつ出会うのか」「どんな人なのか」その曖昧な未来を確信に 未来の結婚相手と出会う時期を霊視します 「いつ出会うのか」「どんな人なのか」その曖昧な未来を確信に  5.0 (51) 霊視鑑定士 月詠 霊視鑑定士 月詠 500 円" [ref=e636] [cursor=pointer]:
+                - /url: /services/4143992
+                - generic [ref=e638]:
+                  - img "未来の結婚相手と出会う時期を霊視します 「いつ出会うのか」「どんな人なのか」その曖昧な未来を確信に"
+                - generic [ref=e639]:
+                  - generic [ref=e640]: 未来の結婚相手と出会う時期を霊視します 「いつ出会うのか」「どんな人なのか」その曖昧な未来を確信に
+                  - generic [ref=e641]:
+                    - generic [ref=e642]: 
+                    - generic [ref=e643]: "5.0"
+                    - generic [ref=e644]: (51)
+                  - generic [ref=e645]:
+                    - img "霊視鑑定士 月詠" [ref=e646]
+                    - generic [ref=e647]: 霊視鑑定士 月詠
+                    - generic [ref=e649]:
+                      - strong [ref=e650]: "500"
+                      - text: 円
+              - link "結婚運特化⭐あなたと共に生きる人を完全解明します 結婚相手が丸見え霊感で視る容姿・年齢・性格・経済力の全貌 結婚運特化⭐あなたと共に生きる人を完全解明します 結婚相手が丸見え霊感で視る容姿・年齢・性格・経済力の全貌  5.0 (38) 霊視アドバイザー 水鏡レイ 霊視アドバイザー 水鏡レイ 500 円" [ref=e651] [cursor=pointer]:
+                - /url: /services/3940738
+                - generic [ref=e653]:
+                  - img "結婚運特化⭐あなたと共に生きる人を完全解明します 結婚相手が丸見え霊感で視る容姿・年齢・性格・経済力の全貌"
+                - generic [ref=e654]:
+                  - generic [ref=e655]: 結婚運特化⭐あなたと共に生きる人を完全解明します 結婚相手が丸見え霊感で視る容姿・年齢・性格・経済力の全貌
+                  - generic [ref=e656]:
+                    - generic [ref=e657]: 
+                    - generic [ref=e658]: "5.0"
+                    - generic [ref=e659]: (38)
+                  - generic [ref=e660]:
+                    - img "霊視アドバイザー 水鏡レイ" [ref=e661]
+                    - generic [ref=e662]: 霊視アドバイザー 水鏡レイ
+                    - generic [ref=e664]:
+                      - strong [ref=e665]: "500"
+                      - text: 円
+              - link "あなたのパートナー運命の人？霊視鑑定いたします 運命の人とは？恋人や気になる相手が運命の人か知りたいあなたへ あなたのパートナー運命の人？霊視鑑定いたします 運命の人とは？恋人や気になる相手が運命の人か知りたいあなたへ  5.0 (14) 霊視アドバイザー 水鏡レイ 霊視アドバイザー 水鏡レイ 500 円" [ref=e666] [cursor=pointer]:
+                - /url: /services/3940753
+                - generic [ref=e668]:
+                  - img "あなたのパートナー運命の人？霊視鑑定いたします 運命の人とは？恋人や気になる相手が運命の人か知りたいあなたへ"
+                - generic [ref=e669]:
+                  - generic [ref=e670]: あなたのパートナー運命の人？霊視鑑定いたします 運命の人とは？恋人や気になる相手が運命の人か知りたいあなたへ
+                  - generic [ref=e671]:
+                    - generic [ref=e672]: 
+                    - generic [ref=e673]: "5.0"
+                    - generic [ref=e674]: (14)
+                  - generic [ref=e675]:
+                    - img "霊視アドバイザー 水鏡レイ" [ref=e676]
+                    - generic [ref=e677]: 霊視アドバイザー 水鏡レイ
+                    - generic [ref=e679]:
+                      - strong [ref=e680]: "500"
+                      - text: 円
+              - link "一向に動かない現実・サイレントの苦しみを打破します 高次元宇宙霊視で視る魂の設計図と魂の試練の根本原因と未来軌道 一向に動かない現実・サイレントの苦しみを打破します 高次元宇宙霊視で視る魂の設計図と魂の試練の根本原因と未来軌道  4.9 (50) 九条いつき【高次元宇宙霊視師】 九条いつき【高次元宇宙霊視師】 500 円" [ref=e681] [cursor=pointer]:
+                - /url: /services/4008348
+                - generic [ref=e683]:
+                  - img "一向に動かない現実・サイレントの苦しみを打破します 高次元宇宙霊視で視る魂の設計図と魂の試練の根本原因と未来軌道"
+                - generic [ref=e684]:
+                  - generic [ref=e685]: 一向に動かない現実・サイレントの苦しみを打破します 高次元宇宙霊視で視る魂の設計図と魂の試練の根本原因と未来軌道
+                  - generic [ref=e686]:
+                    - generic [ref=e687]: 
+                    - generic [ref=e688]: "4.9"
+                    - generic [ref=e689]: (50)
+                  - generic [ref=e690]:
+                    - img "九条いつき【高次元宇宙霊視師】" [ref=e691]
+                    - generic [ref=e692]: 九条いつき【高次元宇宙霊視師】
+                    - generic [ref=e694]:
+                      - strong [ref=e695]: "500"
+                      - text: 円
+              - link "あなたの運命の人と出会いの時期を占います 。宿曜・五星三心占い・九星気学で運命の人とのご縁を鑑定します あなたの運命の人と出会いの時期を占います 。宿曜・五星三心占い・九星気学で運命の人とのご縁を鑑定します  - ゆうじん鑑定室 ゆうじん鑑定室 500 円" [ref=e696] [cursor=pointer]:
+                - /url: /services/4123389
+                - generic [ref=e698]:
+                  - img "あなたの運命の人と出会いの時期を占います 。宿曜・五星三心占い・九星気学で運命の人とのご縁を鑑定します"
+                - generic [ref=e699]:
+                  - generic [ref=e700]: あなたの運命の人と出会いの時期を占います 。宿曜・五星三心占い・九星気学で運命の人とのご縁を鑑定します
+                  - generic [ref=e701]:
+                    - generic [ref=e702]: 
+                    - generic [ref=e703]: "-"
+                  - generic [ref=e704]:
+                    - img "ゆうじん鑑定室" [ref=e705]
+                    - generic [ref=e706]: ゆうじん鑑定室
+                    - generic [ref=e708]:
+                      - strong [ref=e709]: "500"
+                      - text: 円
+              - link "霊視鑑定と縁結びで恋愛成就のお手伝いをします 復縁、片思い、結婚などの問題を解決する霊感霊視とヒーリング 霊視鑑定と縁結びで恋愛成就のお手伝いをします 復縁、片思い、結婚などの問題を解決する霊感霊視とヒーリング  4.8 (19) 霊視鑑定士 月詠 霊視鑑定士 月詠 500 円" [ref=e710] [cursor=pointer]:
+                - /url: /services/4144282
+                - generic [ref=e712]:
+                  - img "霊視鑑定と縁結びで恋愛成就のお手伝いをします 復縁、片思い、結婚などの問題を解決する霊感霊視とヒーリング"
+                - generic [ref=e713]:
+                  - generic [ref=e714]: 霊視鑑定と縁結びで恋愛成就のお手伝いをします 復縁、片思い、結婚などの問題を解決する霊感霊視とヒーリング
+                  - generic [ref=e715]:
+                    - generic [ref=e716]: 
+                    - generic [ref=e717]: "4.8"
+                    - generic [ref=e718]: (19)
+                  - generic [ref=e719]:
+                    - img "霊視鑑定士 月詠" [ref=e720]
+                    - generic [ref=e721]: 霊視鑑定士 月詠
+                    - generic [ref=e723]:
+                      - strong [ref=e724]: "500"
+                      - text: 円
+              - link "結婚はいつ？どんな人？詳しくお答えします 結婚相手との相性・時期を霊視でお伝えします 結婚はいつ？どんな人？詳しくお答えします 結婚相手との相性・時期を霊視でお伝えします  5.0 (51) 高次元から運命を視る霊視鑑定｜叶園 高次元から運命を視る霊視鑑定｜叶園 500 円" [ref=e725] [cursor=pointer]:
+                - /url: /services/3829664
+                - generic [ref=e727]:
+                  - img "結婚はいつ？どんな人？詳しくお答えします 結婚相手との相性・時期を霊視でお伝えします"
+                - generic [ref=e728]:
+                  - generic [ref=e729]: 結婚はいつ？どんな人？詳しくお答えします 結婚相手との相性・時期を霊視でお伝えします
+                  - generic [ref=e730]:
+                    - generic [ref=e731]: 
+                    - generic [ref=e732]: "5.0"
+                    - generic [ref=e733]: (51)
+                  - generic [ref=e734]:
+                    - img "高次元から運命を視る霊視鑑定｜叶園" [ref=e735]
+                    - generic [ref=e736]: 高次元から運命を視る霊視鑑定｜叶園
+                    - generic [ref=e738]:
+                      - strong [ref=e739]: "500"
+                      - text: 円
+              - link "最高の出逢い 運命の相手はどんな人か占います 未来の恋人にいつ巡り会う？ 運命の流れを読み解きます 最高の出逢い 運命の相手はどんな人か占います 未来の恋人にいつ巡り会う？ 運命の流れを読み解きます  5.0 (2) 優安｜光明業層霊視師 優安｜光明業層霊視師 500 円" [ref=e740] [cursor=pointer]:
+                - /url: /services/4112271
+                - generic [ref=e742]:
+                  - img "最高の出逢い 運命の相手はどんな人か占います 未来の恋人にいつ巡り会う？ 運命の流れを読み解きます"
+                - generic [ref=e743]:
+                  - generic [ref=e744]: 最高の出逢い 運命の相手はどんな人か占います 未来の恋人にいつ巡り会う？ 運命の流れを読み解きます
+                  - generic [ref=e745]:
+                    - generic [ref=e746]: 
+                    - generic [ref=e747]: "5.0"
+                    - generic [ref=e748]: (2)
+                  - generic [ref=e749]:
+                    - img "優安｜光明業層霊視師" [ref=e750]
+                    - generic [ref=e751]: 優安｜光明業層霊視師
+                    - generic [ref=e753]:
+                      - strong [ref=e754]: "500"
+                      - text: 円
+              - link "偶然ではない 今つながる縁の意味を鑑定します 出会いや再会に隠された意味を詳しく読み解きます 偶然ではない 今つながる縁の意味を鑑定します 出会いや再会に隠された意味を詳しく読み解きます  - 占い師なな 占い師なな 500 円" [ref=e755] [cursor=pointer]:
+                - /url: /services/4275238
+                - generic [ref=e757]:
+                  - img "偶然ではない 今つながる縁の意味を鑑定します 出会いや再会に隠された意味を詳しく読み解きます"
+                - generic [ref=e758]:
+                  - generic [ref=e759]: 偶然ではない 今つながる縁の意味を鑑定します 出会いや再会に隠された意味を詳しく読み解きます
+                  - generic [ref=e760]:
+                    - generic [ref=e761]: 
+                    - generic [ref=e762]: "-"
+                  - generic [ref=e763]:
+                    - img "占い師なな" [ref=e764]
+                    - generic [ref=e765]: 占い師なな
+                    - generic [ref=e767]:
+                      - strong [ref=e768]: "500"
+                      - text: 円
+              - link "運命の入口。貴方の運命の人をお伝えします 恋愛がうまくいかない。もう失敗できない。お困りでは？ 運命の入口。貴方の運命の人をお伝えします 恋愛がうまくいかない。もう失敗できない。お困りでは？  4.9 (212) リライラ リライラ 500 円" [ref=e769] [cursor=pointer]:
+                - /url: /services/439096
+                - generic [ref=e771]:
+                  - img "運命の入口。貴方の運命の人をお伝えします 恋愛がうまくいかない。もう失敗できない。お困りでは？"
+                - generic [ref=e772]:
+                  - generic [ref=e773]: 運命の入口。貴方の運命の人をお伝えします 恋愛がうまくいかない。もう失敗できない。お困りでは？
+                  - generic [ref=e774]:
+                    - generic [ref=e775]: 
+                    - generic [ref=e776]: "4.9"
+                    - generic [ref=e777]: (212)
+                  - generic [ref=e778]:
+                    - img "リライラ" [ref=e779]
+                    - generic [ref=e780]: リライラ
+                    - generic [ref=e782]:
+                      - strong [ref=e783]: "500"
+                      - text: 円
+              - link "運命の人を加護石で具体的に占います ご職業・場所・時期等の7項目を大ボリューム即日でお届け☆ 運命の人を加護石で具体的に占います ご職業・場所・時期等の7項目を大ボリューム即日でお届け☆  4.9 (7748) ITボーイ☆加護石・イラスト占い師 ITボーイ☆加護石・イラスト占い師 1,000 円" [ref=e784] [cursor=pointer]:
+                - /url: /services/567316
+                - generic [ref=e786]:
+                  - img "運命の人を加護石で具体的に占います ご職業・場所・時期等の7項目を大ボリューム即日でお届け☆"
+                - generic [ref=e787]:
+                  - generic [ref=e788]: 運命の人を加護石で具体的に占います ご職業・場所・時期等の7項目を大ボリューム即日でお届け☆
+                  - generic [ref=e789]:
+                    - generic [ref=e790]: 
+                    - generic [ref=e791]: "4.9"
+                    - generic [ref=e792]: (7748)
+                  - generic [ref=e793]:
+                    - img "ITボーイ☆加護石・イラスト占い師" [ref=e794]
+                    - generic [ref=e795]: ITボーイ☆加護石・イラスト占い師
+                    - generic [ref=e797]:
+                      - strong [ref=e798]: 1,000
+                      - text: 円
+              - link "彼との結婚の可能性と未来を読み解きます 白狐が宿縁の先にある未来を照らします 彼との結婚の可能性と未来を読み解きます 白狐が宿縁の先にある未来を照らします  - KIZUNA◆ 月と白狐の導き KIZUNA◆ 月と白狐の導き 500 円" [ref=e799] [cursor=pointer]:
+                - /url: /services/3966101
+                - generic [ref=e801]:
+                  - img "彼との結婚の可能性と未来を読み解きます 白狐が宿縁の先にある未来を照らします"
+                - generic [ref=e802]:
+                  - generic [ref=e803]: 彼との結婚の可能性と未来を読み解きます 白狐が宿縁の先にある未来を照らします
+                  - generic [ref=e804]:
+                    - generic [ref=e805]: 
+                    - generic [ref=e806]: "-"
+                  - generic [ref=e807]:
+                    - img "KIZUNA◆ 月と白狐の導き" [ref=e808]
+                    - generic [ref=e809]: KIZUNA◆ 月と白狐の導き
+                    - generic [ref=e811]:
+                      - strong [ref=e812]: "500"
+                      - text: 円
+              - link "婚期・結婚｜なぜ出会えない？運命の良縁を霊視します 結婚を阻む見えない縁の滞りを視ます 満枠対応中 婚期・結婚｜なぜ出会えない？運命の良縁を霊視します 結婚を阻む見えない縁の滞りを視ます  5.0 (2) 臨｜恋愛成就の神託霊視師 臨｜恋愛成就の神託霊視師 500 円" [ref=e813] [cursor=pointer]:
+                - /url: /services/4278624
+                - generic [ref=e815]:
+                  - img "婚期・結婚｜なぜ出会えない？運命の良縁を霊視します 結婚を阻む見えない縁の滞りを視ます"
+                  - generic [ref=e817]: 満枠対応中
+                - generic [ref=e818]:
+                  - generic [ref=e819]: 婚期・結婚｜なぜ出会えない？運命の良縁を霊視します 結婚を阻む見えない縁の滞りを視ます
+                  - generic [ref=e820]:
+                    - generic [ref=e821]: 
+                    - generic [ref=e822]: "5.0"
+                    - generic [ref=e823]: (2)
+                  - generic [ref=e824]:
+                    - img "臨｜恋愛成就の神託霊視師" [ref=e825]
+                    - generic [ref=e826]: 臨｜恋愛成就の神託霊視師
+                    - generic [ref=e828]:
+                      - strong [ref=e829]: "500"
+                      - text: 円
+              - link "ツインレイの苦しさの正体を神言霊視で視ますます 縁の苦しさの正体を霊視占いで視たいあなたへ ツインレイの苦しさの正体を神言霊視で視ますます 縁の苦しさの正体を霊視占いで視たいあなたへ  5.0 (1) 白神蓮｜代々神職・霊能神主 白神蓮｜代々神職・霊能神主 500 円" [ref=e830] [cursor=pointer]:
+                - /url: /services/4233289
+                - generic [ref=e832]:
+                  - img "ツインレイの苦しさの正体を神言霊視で視ますます 縁の苦しさの正体を霊視占いで視たいあなたへ"
+                - generic [ref=e833]:
+                  - generic [ref=e834]: ツインレイの苦しさの正体を神言霊視で視ますます 縁の苦しさの正体を霊視占いで視たいあなたへ
+                  - generic [ref=e835]:
+                    - generic [ref=e836]: 
+                    - generic [ref=e837]: "5.0"
+                    - generic [ref=e838]: (1)
+                  - generic [ref=e839]:
+                    - img "白神蓮｜代々神職・霊能神主" [ref=e840]
+                    - generic [ref=e841]: 白神蓮｜代々神職・霊能神主
+                    - generic [ref=e843]:
+                      - strong [ref=e844]: "500"
+                      - text: 円
+              - link "魂が求める真実の出会い｜運命の人を深く霊視します その恋を続けるか、新しい愛を選ぶか。未来は動き出しています 魂が求める真実の出会い｜運命の人を深く霊視します その恋を続けるか、新しい愛を選ぶか。未来は動き出しています  5.0 (8) 【恋導師・龍話師】想 【恋導師・龍話師】想 500 円" [ref=e845] [cursor=pointer]:
+                - /url: /services/3945184
+                - generic [ref=e847]:
+                  - img "魂が求める真実の出会い｜運命の人を深く霊視します その恋を続けるか、新しい愛を選ぶか。未来は動き出しています"
+                - generic [ref=e848]:
+                  - generic [ref=e849]: 魂が求める真実の出会い｜運命の人を深く霊視します その恋を続けるか、新しい愛を選ぶか。未来は動き出しています
+                  - generic [ref=e850]:
+                    - generic [ref=e851]: 
+                    - generic [ref=e852]: "5.0"
+                    - generic [ref=e853]: (8)
+                  - generic [ref=e854]:
+                    - img "【恋導師・龍話師】想" [ref=e855]
+                    - generic [ref=e856]: 【恋導師・龍話師】想
+                    - generic [ref=e858]:
+                      - strong [ref=e859]: "500"
+                      - text: 円
+              - link "結婚鑑定♡「運命のお相手」引き寄せ方を伝授します ボリューム鑑定＋タイプ診断⁑24h以内⁑初心者さん＆お試しに 結婚鑑定♡「運命のお相手」引き寄せ方を伝授します ボリューム鑑定＋タイプ診断⁑24h以内⁑初心者さん＆お試しに  4.0 (1) スピリチュアルコーチ⭐︎占い師みつき スピリチュアルコーチ⭐︎占い師みつき 500 円" [ref=e860] [cursor=pointer]:
+                - /url: /services/3542192
+                - generic [ref=e862]:
+                  - img "結婚鑑定♡「運命のお相手」引き寄せ方を伝授します ボリューム鑑定＋タイプ診断⁑24h以内⁑初心者さん＆お試しに"
+                - generic [ref=e863]:
+                  - generic [ref=e864]: 結婚鑑定♡「運命のお相手」引き寄せ方を伝授します ボリューム鑑定＋タイプ診断⁑24h以内⁑初心者さん＆お試しに
+                  - generic [ref=e865]:
+                    - generic [ref=e866]: 
+                    - generic [ref=e867]: "4.0"
+                    - generic [ref=e868]: (1)
+                  - generic [ref=e869]:
+                    - img "スピリチュアルコーチ⭐︎占い師みつき" [ref=e870]
+                    - generic [ref=e871]: スピリチュアルコーチ⭐︎占い師みつき
+                    - generic [ref=e873]:
+                      - strong [ref=e874]: "500"
+                      - text: 円
+              - link "6h以内【婚活疲れ】今、残すべきご縁を占います やりとりに疲弊…タロット×ルノルマンで、切っていい人教えます 6h以内【婚活疲れ】今、残すべきご縁を占います やりとりに疲弊…タロット×ルノルマンで、切っていい人教えます  - 占い師 ナナ 占い師 ナナ 500 円" [ref=e875] [cursor=pointer]:
+                - /url: /services/4034493
+                - generic [ref=e877]:
+                  - img "6h以内【婚活疲れ】今、残すべきご縁を占います やりとりに疲弊…タロット×ルノルマンで、切っていい人教えます"
+                - generic [ref=e878]:
+                  - generic [ref=e879]: 6h以内【婚活疲れ】今、残すべきご縁を占います やりとりに疲弊…タロット×ルノルマンで、切っていい人教えます
+                  - generic [ref=e880]:
+                    - generic [ref=e881]: 
+                    - generic [ref=e882]: "-"
+                  - generic [ref=e883]:
+                    - img "占い師 ナナ" [ref=e884]
+                    - generic [ref=e885]: 占い師 ナナ
+                    - generic [ref=e887]:
+                      - strong [ref=e888]: "500"
+                      - text: 円
+              - link "占い 6月限定価格☆運命の人は誰？結婚相手を占います その人の特徴、愛し方まで…出会った時に気づくためのお守り鑑定 6月限定価格☆運命の人は誰？結婚相手を占います その人の特徴、愛し方まで…出会った時に気づくためのお守り鑑定  4.9 (50) 愛実＊心と体を癒す占いカウンセラー 愛実＊心と体を癒す占いカウンセラー 1,000 円" [ref=e889] [cursor=pointer]:
+                - /url: /services/2914372
+                - generic [ref=e890]:
+                  - img "占い"
+                - generic [ref=e892]:
+                  - img "6月限定価格☆運命の人は誰？結婚相手を占います その人の特徴、愛し方まで…出会った時に気づくためのお守り鑑定"
+                - generic [ref=e893]:
+                  - generic [ref=e894]: 6月限定価格☆運命の人は誰？結婚相手を占います その人の特徴、愛し方まで…出会った時に気づくためのお守り鑑定
+                  - generic [ref=e895]:
+                    - generic [ref=e896]: 
+                    - generic [ref=e897]: "4.9"
+                    - generic [ref=e898]: (50)
+                  - generic [ref=e899]:
+                    - img "愛実＊心と体を癒す占いカウンセラー" [ref=e900]
+                    - generic [ref=e901]: 愛実＊心と体を癒す占いカウンセラー
+                    - generic [ref=e903]:
+                      - strong [ref=e904]: 1,000
+                      - text: 円
+              - link "結婚・婚活⭐︎運命の人との出会いを占います 婚活中の方、結婚願望がある方や恋人との未来を知りたい方へ♡ 結婚・婚活⭐︎運命の人との出会いを占います 婚活中の方、結婚願望がある方や恋人との未来を知りたい方へ♡  5.0 (41) 言ノ葉 彗 ことのは すい 言ノ葉 彗 ことのは すい 1,000 円" [ref=e905] [cursor=pointer]:
+                - /url: /services/3750922
+                - generic [ref=e907]:
+                  - img "結婚・婚活⭐︎運命の人との出会いを占います 婚活中の方、結婚願望がある方や恋人との未来を知りたい方へ♡"
+                - generic [ref=e908]:
+                  - generic [ref=e909]: 結婚・婚活⭐︎運命の人との出会いを占います 婚活中の方、結婚願望がある方や恋人との未来を知りたい方へ♡
+                  - generic [ref=e910]:
+                    - generic [ref=e911]: 
+                    - generic [ref=e912]: "5.0"
+                    - generic [ref=e913]: (41)
+                  - generic [ref=e914]:
+                    - img "言ノ葉 彗 ことのは すい" [ref=e915]
+                    - generic [ref=e916]: 言ノ葉 彗 ことのは すい
+                    - generic [ref=e918]:
+                      - strong [ref=e919]: 1,000
+                      - text: 円
+            - generic [ref=e921] [cursor=pointer]: 
+        - generic [ref=e923]:
+          - heading "このサービスを見た人はこちらもチェックしています" [level=2] [ref=e924]
+          - generic [ref=e928]:
+            - link "本格深掘り鑑定♡あなたの運命の人を鑑定します 出会いの時期・人物像・結婚までの流れを本格リーディング 本格深掘り鑑定♡あなたの運命の人を鑑定します 出会いの時期・人物像・結婚までの流れを本格リーディング  5.0 (180) ここね＊心の声専門家 ここね＊心の声専門家 500 円" [ref=e929] [cursor=pointer]:
+              - /url: /services/3840687
+              - generic [ref=e931]:
+                - img "本格深掘り鑑定♡あなたの運命の人を鑑定します 出会いの時期・人物像・結婚までの流れを本格リーディング"
+              - generic [ref=e932]:
+                - generic [ref=e933]: 本格深掘り鑑定♡あなたの運命の人を鑑定します 出会いの時期・人物像・結婚までの流れを本格リーディング
+                - generic [ref=e934]:
+                  - generic [ref=e935]: 
+                  - generic [ref=e936]: "5.0"
+                  - generic [ref=e937]: (180)
+                - generic [ref=e938]:
+                  - img "ここね＊心の声専門家" [ref=e939]
+                  - generic [ref=e940]: ここね＊心の声専門家
+                  - generic [ref=e942]:
+                    - strong [ref=e943]: "500"
+                    - text: 円
+            - link "2026年に出会う？運命のお相手のイメージ視ます 私は1人…周りが結婚して焦る。婚活マッチングアプリ再婚離婚 2026年に出会う？運命のお相手のイメージ視ます 私は1人…周りが結婚して焦る。婚活マッチングアプリ再婚離婚  4.9 (948) まるで彼が話してるかのようにお届けl運子 まるで彼が話してるかのようにお届けl運子 1,000 円" [ref=e944] [cursor=pointer]:
+              - /url: /services/1186378
+              - generic [ref=e946]:
+                - img "2026年に出会う？運命のお相手のイメージ視ます 私は1人…周りが結婚して焦る。婚活マッチングアプリ再婚離婚"
+              - generic [ref=e947]:
+                - generic [ref=e948]: 2026年に出会う？運命のお相手のイメージ視ます 私は1人…周りが結婚して焦る。婚活マッチングアプリ再婚離婚
+                - generic [ref=e949]:
+                  - generic [ref=e950]: 
+                  - generic [ref=e951]: "4.9"
+                  - generic [ref=e952]: (948)
+                - generic [ref=e953]:
+                  - img "まるで彼が話してるかのようにお届けl運子" [ref=e954]
+                  - generic [ref=e955]: まるで彼が話してるかのようにお届けl運子
+                  - generic [ref=e957]:
+                    - strong [ref=e958]: 1,000
+                    - text: 円
+        - generic [ref=e959]:
+          - heading "よくある質問" [level=2] [ref=e960]
+          - list [ref=e962]:
+            - listitem [ref=e963]:
+              - generic [ref=e965] [cursor=pointer]:
+                - generic [ref=e967]:
+                  - img "question"
+                - generic [ref=e969]: 婚活中でなくても依頼できますか？
+                - generic [ref=e970]:
+                  - text: 回答を見る
+                  - generic [ref=e971]: 
+            - listitem [ref=e972]:
+              - generic [ref=e974] [cursor=pointer]:
+                - generic [ref=e976]:
+                  - img "question"
+                - generic [ref=e978]: 相手がいない状態でも見てもらえますか？
+                - generic [ref=e979]:
+                  - text: 回答を見る
+                  - generic [ref=e980]: 
+            - listitem [ref=e981]:
+              - generic [ref=e983] [cursor=pointer]:
+                - generic [ref=e985]:
+                  - img "question"
+                - generic [ref=e987]: 特定の相手との相性も見られますか？
+                - generic [ref=e988]:
+                  - text: 回答を見る
+                  - generic [ref=e989]: 
+            - listitem [ref=e990]:
+              - generic [ref=e992] [cursor=pointer]:
+                - generic [ref=e994]:
+                  - img "question"
+                - generic [ref=e996]: PDFはどのくらいの量ですか？
+                - generic [ref=e997]:
+                  - text: 回答を見る
+                  - generic [ref=e998]: 
+            - listitem [ref=e999]:
+              - generic [ref=e1001] [cursor=pointer]:
+                - generic [ref=e1003]:
+                  - img "question"
+                - generic [ref=e1005]: 成婚や復縁を保証できますか？
+                - generic [ref=e1006]:
+                  - text: 回答を見る
+                  - generic [ref=e1007]: 
+        - generic [ref=e1008]:
+          - heading "評価・感想（458件）- 非常に良かった" [level=2] [ref=e1009]
+          - generic [ref=e1010]:
+            - generic [ref=e1011]:
+              - generic [ref=e1012]:
+                - generic [ref=e1013]:
+                  - generic [ref=e1014]: 総合評価
+                  - generic [ref=e1015]: "4.9"
+                - generic [ref=e1017]:  
+              - generic [ref=e1018]:
+                - generic [ref=e1019] [cursor=pointer]:
+                  - generic [ref=e1020]: 星5 (非常に良かった)
+                  - generic [ref=e1024]: 443件
+                - generic [ref=e1025] [cursor=pointer]:
+                  - generic [ref=e1026]: 星4 (良かった)
+                  - generic [ref=e1030]: 9件
+                - generic [ref=e1031] [cursor=pointer]:
+                  - generic [ref=e1032]: 星3 (普通)
+                  - generic [ref=e1036]: 4件
+                - generic [ref=e1037]:
+                  - generic [ref=e1038]: 星2 (悪かった)
+                  - generic [ref=e1041]: 0件
+                - generic [ref=e1042] [cursor=pointer]:
+                  - generic [ref=e1043]: 星1 (非常に悪かった)
+                  - generic [ref=e1047]: 2件
+              - generic [ref=e1048]:
+                - generic [ref=e1049]: 項目別評価
+                - generic [ref=e1050]:
+                  - generic [ref=e1051]:
+                    - generic [ref=e1052]:
+                      - text: サービス内容/提案のわかりやすさ
+                      - generic [ref=e1058]: 
+                    - generic [ref=e1060]:  
+                  - generic [ref=e1061]:
+                    - generic [ref=e1062]:
+                      - text: コミュニケーション
+                      - generic [ref=e1068]: 
+                    - generic [ref=e1070]:  
+                  - generic [ref=e1071]:
+                    - generic [ref=e1072]:
+                      - text: クオリティ
+                      - generic [ref=e1078]: 
+                    - generic [ref=e1080]:  
+                  - generic [ref=e1081]:
+                    - generic [ref=e1082]:
+                      - text: スケジュール
+                      - generic [ref=e1088]: 
+                    - generic [ref=e1090]:  
+            - generic [ref=e1091]:
+              - generic [ref=e1092]: 458件の評価
+              - generic [ref=e1094]:
+                - button " 評価で絞り込む" [ref=e1096] [cursor=pointer]:
+                  - generic [ref=e1097]: 
+                  - generic [ref=e1098]: 評価で絞り込む
+                - combobox [ref=e1100] [cursor=pointer]:
+                  - option "星5で絞り込み"
+                  - option "星4で絞り込み"
+                  - option "星3で絞り込み"
+                  - option "星2で絞り込み"
+                  - option "星1で絞り込み"
+            - list [ref=e1101]:
+              - listitem [ref=e1102]:
+                - generic [ref=e1105]:
+                  - generic [ref=e1106]:
+                    - generic [ref=e1107]:  
+                    - generic [ref=e1108]: 2024年11月23日
+                  - generic [ref=e1109]: 女性
+                - generic [ref=e1111]: いつもお世話になっております。この度も迅速にご対応くださりありがとうございます。またどうぞよろしくお願いいたします。
+                - button "参考になった" [ref=e1113] [cursor=pointer]:
+                  - generic [ref=e1114]: 参考になった
+              - listitem [ref=e1115]:
+                - generic [ref=e1118]:
+                  - generic [ref=e1119]:
+                    - generic [ref=e1120]:  
+                    - generic [ref=e1121]: 2024年11月19日
+                  - generic [ref=e1122]:
+                    - text: 男性
+                    - generic [ref=e1123]: 見積り相談
+                - generic [ref=e1125]: レスが悪くこちらから催促しないと動かないので、主体的に動ける人向け。 完了から1週間しないぐらいで数百人フォロワーが剥がれたので購入する方はよくご検討くださいm(_ _)m 他は特に問題なかったです。
+                - button "参考になった" [ref=e1127] [cursor=pointer]:
+                  - generic [ref=e1128]: 参考になった
+              - listitem [ref=e1129]:
+                - generic [ref=e1132]:
+                  - generic [ref=e1133]:
+                    - generic [ref=e1134]:  
+                    - generic [ref=e1135]: 2024年11月15日
+                  - generic [ref=e1136]: 女性
+                - generic [ref=e1138]: 作業いただくまでに20日かかりました。それまでもそのように時間がかかるならキャンセルしたいと申し出ましたが、作業開始後はキャンセルできないとのこと。実際にフォロワーが増えてないので作業していない状態なので詐欺に合った気分です。また、作業に1ヶ月ぐらいかかると購入後に言われました。最終こちらが詰めたのでやっと完了した感じです。それならもっと早く出来たんじゃないかと思うので、後回しにされた感がハンパないです。とてもお金と時間を無駄にした取引きでした。
+                - button "参考になった" [ref=e1140] [cursor=pointer]:
+                  - generic [ref=e1141]: 参考になった
+              - listitem [ref=e1142]:
+                - generic [ref=e1145]:
+                  - generic [ref=e1146]:
+                    - generic [ref=e1147]:  
+                    - generic [ref=e1148]: 2024年10月23日
+                  - generic [ref=e1149]:
+                    - text: kiseki2013
+                    - generic [ref=e1150]: 見積り相談
+                - generic [ref=e1152]: 多数リピートさせて頂いてます。 また、何かあれば 宜しくお願い申し上げます。
+                - button "参考になった" [ref=e1154] [cursor=pointer]:
+                  - generic [ref=e1155]: 参考になった
+              - listitem [ref=e1156]:
+                - generic [ref=e1159]:
+                  - generic [ref=e1160]:
+                    - generic [ref=e1161]:  
+                    - generic [ref=e1162]: 2024年10月19日
+                  - generic [ref=e1163]: 男性
+                - generic [ref=e1165]: リアルなユーザーではなく、botだった。 対応に関しては柔軟ではない。
+                - button "参考になった" [ref=e1167] [cursor=pointer]:
+                  - generic [ref=e1168]: 参考になった
+              - listitem [ref=e1169]:
+                - generic [ref=e1172]:
+                  - generic [ref=e1173]:
+                    - generic [ref=e1174]:  
+                    - generic [ref=e1175]: 2024年10月14日
+                  - generic [ref=e1176]:
+                    - text: kiseki2013
+                    - generic [ref=e1177]: 見積り相談
+                - generic [ref=e1179]: 納期より前にミッション達成頂けた
+                - button "参考になった" [ref=e1181] [cursor=pointer]:
+                  - generic [ref=e1182]: 参考になった
+              - listitem [ref=e1183]:
+                - generic [ref=e1186]:
+                  - generic [ref=e1187]:
+                    - generic [ref=e1188]:  
+                    - generic [ref=e1189]: 2024年10月14日
+                  - generic [ref=e1190]:
+                    - text: kiseki2013
+                    - generic [ref=e1191]: 見積り相談
+                - generic [ref=e1193]: 納期より前にミッション達成頂けた。
+                - button "参考になった" [ref=e1195] [cursor=pointer]:
+                  - generic [ref=e1196]: 参考になった
+              - listitem [ref=e1197]:
+                - generic [ref=e1200]:
+                  - generic [ref=e1201]:
+                    - generic [ref=e1202]:  
+                    - generic [ref=e1203]: 2024年9月26日
+                  - generic [ref=e1204]:
+                    - text: kiseki2013
+                    - generic [ref=e1205]: 見積り相談
+                - generic [ref=e1207]: とても丁寧に対応頂きリピート依頼も させて頂いております。 今後もお力添え頂ければ幸いです。
+                - button "参考になった" [ref=e1209] [cursor=pointer]:
+                  - generic [ref=e1210]: 参考になった
+              - listitem [ref=e1211]:
+                - generic [ref=e1214]:
+                  - generic [ref=e1215]:
+                    - generic [ref=e1216]:  
+                    - generic [ref=e1217]: 2024年9月14日
+                  - generic [ref=e1218]: kiseki2013
+                - generic [ref=e1220]: とても丁寧かつ迅速に目的を達成して頂けた。 早速追加依頼もしたいと思います。
+                - button "参考になった" [ref=e1222] [cursor=pointer]:
+                  - generic [ref=e1223]: 参考になった
+              - listitem [ref=e1224]:
+                - generic [ref=e1227]:
+                  - generic [ref=e1228]:
+                    - generic [ref=e1229]:  
+                    - generic [ref=e1230]: 2024年8月27日
+                  - generic [ref=e1231]: Gemini合同会社
+                - generic [ref=e1233]: ありがとうございました！
+                - button "参考になった" [ref=e1235] [cursor=pointer]:
+                  - generic [ref=e1236]: 参考になった
+              - text:                                                                                                  
+            - generic [ref=e1238] [cursor=pointer]:
+              - text: もっと見る
+              - generic [ref=e1239]: 
+        - generic [ref=e1241]:
+          - heading "運命の人鑑定の人気サービス" [level=2] [ref=e1242]
+          - generic [ref=e1243]:
+            - generic [ref=e1246]:
+              - link "天啓により運命の人との出会いと結婚の流れを視ます 魂が惹かれ合うご縁の時期と流れを読み解きます 離席中 天啓により運命の人との出会いと結婚の流れを視ます 魂が惹かれ合うご縁の時期と流れを読み解きます  5.0 (84) 銀狼の使者★ミハエル 銀狼の使者★ミハエル 120 円 /分" [ref=e1247] [cursor=pointer]:
+                - /url: /services/3985819
+                - generic [ref=e1249]:
+                  - img "天啓により運命の人との出会いと結婚の流れを視ます 魂が惹かれ合うご縁の時期と流れを読み解きます"
+                  - generic [ref=e1252]: 離席中
+                - generic [ref=e1253]:
+                  - generic [ref=e1254]: 天啓により運命の人との出会いと結婚の流れを視ます 魂が惹かれ合うご縁の時期と流れを読み解きます
+                  - generic [ref=e1255]:
+                    - generic [ref=e1256]: 
+                    - generic [ref=e1257]: "5.0"
+                    - generic [ref=e1258]: (84)
+                  - generic [ref=e1259]:
+                    - img "銀狼の使者★ミハエル" [ref=e1260]
+                    - generic [ref=e1261]: 銀狼の使者★ミハエル
+                    - generic [ref=e1263]:
+                      - strong [ref=e1264]: "120"
+                      - text: 円 /分
+              - link "彼の本音と今の気持ちを魂から丁寧に読み解きます ✨音信不通・復縁の悩みに寄り添い魂の声をお伝えします 離席中 彼の本音と今の気持ちを魂から丁寧に読み解きます ✨音信不通・復縁の悩みに寄り添い魂の声をお伝えします  5.0 (38) 運命を導く占い師⭐天音⭐ Amane 運命を導く占い師⭐天音⭐ Amane 140 円 /分" [ref=e1265] [cursor=pointer]:
+                - /url: /services/3576788
+                - generic [ref=e1267]:
+                  - img "彼の本音と今の気持ちを魂から丁寧に読み解きます ✨音信不通・復縁の悩みに寄り添い魂の声をお伝えします"
+                  - generic [ref=e1270]: 離席中
+                - generic [ref=e1271]:
+                  - generic [ref=e1272]: 彼の本音と今の気持ちを魂から丁寧に読み解きます ✨音信不通・復縁の悩みに寄り添い魂の声をお伝えします
+                  - generic [ref=e1273]:
+                    - generic [ref=e1274]: 
+                    - generic [ref=e1275]: "5.0"
+                    - generic [ref=e1276]: (38)
+                  - generic [ref=e1277]:
+                    - img "運命を導く占い師⭐天音⭐ Amane" [ref=e1278]
+                    - generic [ref=e1279]: 運命を導く占い師⭐天音⭐ Amane
+                    - generic [ref=e1281]:
+                      - strong [ref=e1282]: "140"
+                      - text: 円 /分
+              - link "本格深掘り鑑定♡あなたの運命の人を鑑定します 出会いの時期・人物像・結婚までの流れを本格リーディング 本格深掘り鑑定♡あなたの運命の人を鑑定します 出会いの時期・人物像・結婚までの流れを本格リーディング  5.0 (180) ここね＊心の声専門家 ここね＊心の声専門家 500 円" [ref=e1283] [cursor=pointer]:
+                - /url: /services/3840687
+                - generic [ref=e1285]:
+                  - img "本格深掘り鑑定♡あなたの運命の人を鑑定します 出会いの時期・人物像・結婚までの流れを本格リーディング"
+                - generic [ref=e1286]:
+                  - generic [ref=e1287]: 本格深掘り鑑定♡あなたの運命の人を鑑定します 出会いの時期・人物像・結婚までの流れを本格リーディング
+                  - generic [ref=e1288]:
+                    - generic [ref=e1289]: 
+                    - generic [ref=e1290]: "5.0"
+                    - generic [ref=e1291]: (180)
+                  - generic [ref=e1292]:
+                    - img "ここね＊心の声専門家" [ref=e1293]
+                    - generic [ref=e1294]: ここね＊心の声専門家
+                    - generic [ref=e1296]:
+                      - strong [ref=e1297]: "500"
+                      - text: 円
+              - link "占い 運命の人の特徴と出逢う時期を本格鑑定書お届けします 魂で惹かれ合う赤い糸のご縁♡今後であう運命の人をリーディング 運命の人の特徴と出逢う時期を本格鑑定書お届けします 魂で惹かれ合う赤い糸のご縁♡今後であう運命の人をリーディング  5.0 (304) ゆめの にじこ ゆめの にじこ 3,000 円" [ref=e1298] [cursor=pointer]:
+                - /url: /services/2332763
+                - generic [ref=e1299]:
+                  - img "占い"
+                - generic [ref=e1301]:
+                  - img "運命の人の特徴と出逢う時期を本格鑑定書お届けします 魂で惹かれ合う赤い糸のご縁♡今後であう運命の人をリーディング"
+                - generic [ref=e1302]:
+                  - generic [ref=e1303]: 運命の人の特徴と出逢う時期を本格鑑定書お届けします 魂で惹かれ合う赤い糸のご縁♡今後であう運命の人をリーディング
+                  - generic [ref=e1304]:
+                    - generic [ref=e1305]: 
+                    - generic [ref=e1306]: "5.0"
+                    - generic [ref=e1307]: (304)
+                  - generic [ref=e1308]:
+                    - img "ゆめの にじこ" [ref=e1309]
+                    - generic [ref=e1310]: ゆめの にじこ
+                    - generic [ref=e1312]:
+                      - strong [ref=e1313]: 3,000
+                      - text: 円
+              - link "2026年に出会う？運命のお相手のイメージ視ます 私は1人…周りが結婚して焦る。婚活マッチングアプリ再婚離婚 2026年に出会う？運命のお相手のイメージ視ます 私は1人…周りが結婚して焦る。婚活マッチングアプリ再婚離婚  4.9 (948) まるで彼が話してるかのようにお届けl運子 まるで彼が話してるかのようにお届けl運子 1,000 円" [ref=e1314] [cursor=pointer]:
+                - /url: /services/1186378
+                - generic [ref=e1316]:
+                  - img "2026年に出会う？運命のお相手のイメージ視ます 私は1人…周りが結婚して焦る。婚活マッチングアプリ再婚離婚"
+                - generic [ref=e1317]:
+                  - generic [ref=e1318]: 2026年に出会う？運命のお相手のイメージ視ます 私は1人…周りが結婚して焦る。婚活マッチングアプリ再婚離婚
+                  - generic [ref=e1319]:
+                    - generic [ref=e1320]: 
+                    - generic [ref=e1321]: "4.9"
+                    - generic [ref=e1322]: (948)
+                  - generic [ref=e1323]:
+                    - img "まるで彼が話してるかのようにお届けl運子" [ref=e1324]
+                    - generic [ref=e1325]: まるで彼が話してるかのようにお届けl運子
+                    - generic [ref=e1327]:
+                      - strong [ref=e1328]: 1,000
+                      - text: 円
+              - link "占い 実績3000件。運命の人、特徴40項目を伝えます 外見・ 内面・職業・年収・出会う年・場所・成婚・入籍時期 実績3000件。運命の人、特徴40項目を伝えます 外見・ 内面・職業・年収・出会う年・場所・成婚・入籍時期  4.9 (3049) 三術統合鑑定師 優未華 三術統合鑑定師 優未華 3,000 円" [ref=e1329] [cursor=pointer]:
+                - /url: /services/378999
+                - generic [ref=e1330]:
+                  - img "占い"
+                - generic [ref=e1332]:
+                  - img "実績3000件。運命の人、特徴40項目を伝えます 外見・ 内面・職業・年収・出会う年・場所・成婚・入籍時期"
+                - generic [ref=e1333]:
+                  - generic [ref=e1334]: 実績3000件。運命の人、特徴40項目を伝えます 外見・ 内面・職業・年収・出会う年・場所・成婚・入籍時期
+                  - generic [ref=e1335]:
+                    - generic [ref=e1336]: 
+                    - generic [ref=e1337]: "4.9"
+                    - generic [ref=e1338]: (3049)
+                  - generic [ref=e1339]:
+                    - img "三術統合鑑定師 優未華" [ref=e1340]
+                    - generic [ref=e1341]: 三術統合鑑定師 優未華
+                    - generic [ref=e1343]:
+                      - strong [ref=e1344]: 3,000
+                      - text: 円
+              - link "霊視で運命の人との未来の出会いを読み解きます 出会いの兆しと魂の導きを、霊視でお伝えします 霊視で運命の人との未来の出会いを読み解きます 出会いの兆しと魂の導きを、霊視でお伝えします  5.0 (109) 霊視鑑定士 葉月（霊眼） 霊視鑑定士 葉月（霊眼） 1,500 円" [ref=e1345] [cursor=pointer]:
+                - /url: /services/3842724
+                - generic [ref=e1347]:
+                  - img "霊視で運命の人との未来の出会いを読み解きます 出会いの兆しと魂の導きを、霊視でお伝えします"
+                - generic [ref=e1348]:
+                  - generic [ref=e1349]: 霊視で運命の人との未来の出会いを読み解きます 出会いの兆しと魂の導きを、霊視でお伝えします
+                  - generic [ref=e1350]:
+                    - generic [ref=e1351]: 
+                    - generic [ref=e1352]: "5.0"
+                    - generic [ref=e1353]: (109)
+                  - generic [ref=e1354]:
+                    - img "霊視鑑定士 葉月（霊眼）" [ref=e1355]
+                    - generic [ref=e1356]: 霊視鑑定士 葉月（霊眼）
+                    - generic [ref=e1358]:
+                      - strong [ref=e1359]: 1,500
+                      - text: 円
+              - link "運命のお相手についてお教え致します 月の巫女が導く運命の相手を鑑定致します 運命のお相手についてお教え致します 月の巫女が導く運命の相手を鑑定致します  5.0 (57) 月の巫女Runa♡最高の恋愛引き寄せ 月の巫女Runa♡最高の恋愛引き寄せ 1,500 円" [ref=e1360] [cursor=pointer]:
+                - /url: /services/3429341
+                - generic [ref=e1362]:
+                  - img "運命のお相手についてお教え致します 月の巫女が導く運命の相手を鑑定致します"
+                - generic [ref=e1363]:
+                  - generic [ref=e1364]: 運命のお相手についてお教え致します 月の巫女が導く運命の相手を鑑定致します
+                  - generic [ref=e1365]:
+                    - generic [ref=e1366]: 
+                    - generic [ref=e1367]: "5.0"
+                    - generic [ref=e1368]: (57)
+                  - generic [ref=e1369]:
+                    - img "月の巫女Runa♡最高の恋愛引き寄せ" [ref=e1370]
+                    - generic [ref=e1371]: 月の巫女Runa♡最高の恋愛引き寄せ
+                    - generic [ref=e1373]:
+                      - strong [ref=e1374]: 1,500
+                      - text: 円
+              - link "占い あなたのこの先の出会いと結婚について拝見します この先、結婚できる人と出会う？どんな人と出会うの？ あなたのこの先の出会いと結婚について拝見します この先、結婚できる人と出会う？どんな人と出会うの？  4.9 (813) スピリチュアルカウンセラー沙耶美 スピリチュアルカウンセラー沙耶美 3,500 円" [ref=e1375] [cursor=pointer]:
+                - /url: /services/96435
+                - generic [ref=e1376]:
+                  - img "占い"
+                - generic [ref=e1378]:
+                  - img "あなたのこの先の出会いと結婚について拝見します この先、結婚できる人と出会う？どんな人と出会うの？"
+                - generic [ref=e1379]:
+                  - generic [ref=e1380]: あなたのこの先の出会いと結婚について拝見します この先、結婚できる人と出会う？どんな人と出会うの？
+                  - generic [ref=e1381]:
+                    - generic [ref=e1382]: 
+                    - generic [ref=e1383]: "4.9"
+                    - generic [ref=e1384]: (813)
+                  - generic [ref=e1385]:
+                    - img "スピリチュアルカウンセラー沙耶美" [ref=e1386]
+                    - generic [ref=e1387]: スピリチュアルカウンセラー沙耶美
+                    - generic [ref=e1389]:
+                      - strong [ref=e1390]: 3,500
+                      - text: 円
+              - link "運命の人の顔を占いリアルな似顔絵イラスト描きます 結婚相手選びや出会いの指針に是非☆24時間以内でお届け☆ 運命の人の顔を占いリアルな似顔絵イラスト描きます 結婚相手選びや出会いの指針に是非☆24時間以内でお届け☆  4.9 (878) ITボーイ☆加護石・イラスト占い師 ITボーイ☆加護石・イラスト占い師 1,500 円" [ref=e1391] [cursor=pointer]:
+                - /url: /services/1549069
+                - generic [ref=e1393]:
+                  - img "運命の人の顔を占いリアルな似顔絵イラスト描きます 結婚相手選びや出会いの指針に是非☆24時間以内でお届け☆"
+                - generic [ref=e1394]:
+                  - generic [ref=e1395]: 運命の人の顔を占いリアルな似顔絵イラスト描きます 結婚相手選びや出会いの指針に是非☆24時間以内でお届け☆
+                  - generic [ref=e1396]:
+                    - generic [ref=e1397]: 
+                    - generic [ref=e1398]: "4.9"
+                    - generic [ref=e1399]: (878)
+                  - generic [ref=e1400]:
+                    - img "ITボーイ☆加護石・イラスト占い師" [ref=e1401]
+                    - generic [ref=e1402]: ITボーイ☆加護石・イラスト占い師
+                    - generic [ref=e1404]:
+                      - strong [ref=e1405]: 1,500
+                      - text: 円
+              - link "結婚に繋がる運命の相手をじっくり詳しく霊視します 時期、場所、出会い方、お相手の特徴、引き寄せる方法伝えます 結婚に繋がる運命の相手をじっくり詳しく霊視します 時期、場所、出会い方、お相手の特徴、引き寄せる方法伝えます  5.0 (312) 心の奥を透視する鑑定士 蒼空みらい 心の奥を透視する鑑定士 蒼空みらい 1,500 円" [ref=e1406] [cursor=pointer]:
+                - /url: /services/3259543
+                - generic [ref=e1408]:
+                  - img "結婚に繋がる運命の相手をじっくり詳しく霊視します 時期、場所、出会い方、お相手の特徴、引き寄せる方法伝えます"
+                - generic [ref=e1409]:
+                  - generic [ref=e1410]: 結婚に繋がる運命の相手をじっくり詳しく霊視します 時期、場所、出会い方、お相手の特徴、引き寄せる方法伝えます
+                  - generic [ref=e1411]:
+                    - generic [ref=e1412]: 
+                    - generic [ref=e1413]: "5.0"
+                    - generic [ref=e1414]: (312)
+                  - generic [ref=e1415]:
+                    - img "心の奥を透視する鑑定士 蒼空みらい" [ref=e1416]
+                    - generic [ref=e1417]: 心の奥を透視する鑑定士 蒼空みらい
+                    - generic [ref=e1419]:
+                      - strong [ref=e1420]: 1,500
+                      - text: 円
+              - link "霊視で運命のお相手orキーパーソンの似顔絵描きます 未来に出逢う恋のお相手か重要人物の顔を視えたまま！縁結び！ 霊視で運命のお相手orキーパーソンの似顔絵描きます 未来に出逢う恋のお相手か重要人物の顔を視えたまま！縁結び！  5.0 (2909) 占術師gumi☆ 占術師gumi☆ 3,000 円" [ref=e1421] [cursor=pointer]:
+                - /url: /services/35372
+                - generic [ref=e1423]:
+                  - img "霊視で運命のお相手orキーパーソンの似顔絵描きます 未来に出逢う恋のお相手か重要人物の顔を視えたまま！縁結び！"
+                - generic [ref=e1424]:
+                  - generic [ref=e1425]: 霊視で運命のお相手orキーパーソンの似顔絵描きます 未来に出逢う恋のお相手か重要人物の顔を視えたまま！縁結び！
+                  - generic [ref=e1426]:
+                    - generic [ref=e1427]: 
+                    - generic [ref=e1428]: "5.0"
+                    - generic [ref=e1429]: (2909)
+                  - generic [ref=e1430]:
+                    - img "占術師gumi☆" [ref=e1431]
+                    - generic [ref=e1432]: 占術師gumi☆
+                    - generic [ref=e1434]:
+                      - strong [ref=e1435]: 3,000
+                      - text: 円
+              - link "運命の人からのラブレター未来からお届けします 結婚するのはどんな人？どうやって出会った？質問受付ます 運命の人からのラブレター未来からお届けします 結婚するのはどんな人？どうやって出会った？質問受付ます  4.9 (238) 星宮ルナ✮愛されオーラ占い 星宮ルナ✮愛されオーラ占い 500 円" [ref=e1436] [cursor=pointer]:
+                - /url: /services/3030364
+                - generic [ref=e1438]:
+                  - img "運命の人からのラブレター未来からお届けします 結婚するのはどんな人？どうやって出会った？質問受付ます"
+                - generic [ref=e1439]:
+                  - generic [ref=e1440]: 運命の人からのラブレター未来からお届けします 結婚するのはどんな人？どうやって出会った？質問受付ます
+                  - generic [ref=e1441]:
+                    - generic [ref=e1442]: 
+                    - generic [ref=e1443]: "4.9"
+                    - generic [ref=e1444]: (238)
+                  - generic [ref=e1445]:
+                    - img "星宮ルナ✮愛されオーラ占い" [ref=e1446]
+                    - generic [ref=e1447]: 星宮ルナ✮愛されオーラ占い
+                    - generic [ref=e1449]:
+                      - strong [ref=e1450]: "500"
+                      - text: 円
+              - link "いつ・どんな人と？『結婚・出会い』を鑑定します 結婚へ導かれるご縁の時期と、婚活の目詰まりをお伝えします 予約受付中 いつ・どんな人と？『結婚・出会い』を鑑定します 結婚へ導かれるご縁の時期と、婚活の目詰まりをお伝えします  5.0 (1) 糸と音｜魂の声を届ける姉妹【霊能鑑定師】 糸と音｜魂の声を届ける姉妹【霊能鑑定師】 100 円 /分" [ref=e1451] [cursor=pointer]:
+                - /url: /services/4230071
+                - generic [ref=e1453]:
+                  - img "いつ・どんな人と？『結婚・出会い』を鑑定します 結婚へ導かれるご縁の時期と、婚活の目詰まりをお伝えします"
+                  - generic [ref=e1456]: 予約受付中
+                - generic [ref=e1457]:
+                  - generic [ref=e1458]: いつ・どんな人と？『結婚・出会い』を鑑定します 結婚へ導かれるご縁の時期と、婚活の目詰まりをお伝えします
+                  - generic [ref=e1459]:
+                    - generic [ref=e1460]: 
+                    - generic [ref=e1461]: "5.0"
+                    - generic [ref=e1462]: (1)
+                  - generic [ref=e1463]:
+                    - img "糸と音｜魂の声を届ける姉妹【霊能鑑定師】" [ref=e1464]
+                    - generic [ref=e1465]: 糸と音｜魂の声を届ける姉妹【霊能鑑定師】
+                    - generic [ref=e1467]:
+                      - strong [ref=e1468]: "100"
+                      - text: 円 /分
+              - link "2026年運命の人の全貌を守護霊が暴きます 絶望の底を見た私だから視える、あなたを救い出す愛の実像 2026年運命の人の全貌を守護霊が暴きます 絶望の底を見た私だから視える、あなたを救い出す愛の実像  5.0 (26) 風_fuu霊視者 風_fuu霊視者 500 円" [ref=e1469] [cursor=pointer]:
+                - /url: /services/4141907
+                - generic [ref=e1471]:
+                  - img "2026年運命の人の全貌を守護霊が暴きます 絶望の底を見た私だから視える、あなたを救い出す愛の実像"
+                - generic [ref=e1472]:
+                  - generic [ref=e1473]: 2026年運命の人の全貌を守護霊が暴きます 絶望の底を見た私だから視える、あなたを救い出す愛の実像
+                  - generic [ref=e1474]:
+                    - generic [ref=e1475]: 
+                    - generic [ref=e1476]: "5.0"
+                    - generic [ref=e1477]: (26)
+                  - generic [ref=e1478]:
+                    - img "風_fuu霊視者" [ref=e1479]
+                    - generic [ref=e1480]: 風_fuu霊視者
+                    - generic [ref=e1482]:
+                      - strong [ref=e1483]: "500"
+                      - text: 円
+              - link "未来の結婚相手と出会う時期を霊視します 愛されるご縁の流れを具体的に読み解きます 未来の結婚相手と出会う時期を霊視します 愛されるご縁の流れを具体的に読み解きます  5.0 (378) 心結花 心結花 1,500 円" [ref=e1484] [cursor=pointer]:
+                - /url: /services/3550536
+                - generic [ref=e1486]:
+                  - img "未来の結婚相手と出会う時期を霊視します 愛されるご縁の流れを具体的に読み解きます"
+                - generic [ref=e1487]:
+                  - generic [ref=e1488]: 未来の結婚相手と出会う時期を霊視します 愛されるご縁の流れを具体的に読み解きます
+                  - generic [ref=e1489]:
+                    - generic [ref=e1490]: 
+                    - generic [ref=e1491]: "5.0"
+                    - generic [ref=e1492]: (378)
+                  - generic [ref=e1493]:
+                    - img "心結花" [ref=e1494]
+                    - generic [ref=e1495]: 心結花
+                    - generic [ref=e1497]:
+                      - strong [ref=e1498]: 1,500
+                      - text: 円
+              - link "運命の人を加護石で具体的に占います ご職業・場所・時期等の7項目を大ボリューム即日でお届け☆ 運命の人を加護石で具体的に占います ご職業・場所・時期等の7項目を大ボリューム即日でお届け☆  4.9 (7748) ITボーイ☆加護石・イラスト占い師 ITボーイ☆加護石・イラスト占い師 1,000 円" [ref=e1499] [cursor=pointer]:
+                - /url: /services/567316
+                - generic [ref=e1501]:
+                  - img "運命の人を加護石で具体的に占います ご職業・場所・時期等の7項目を大ボリューム即日でお届け☆"
+                - generic [ref=e1502]:
+                  - generic [ref=e1503]: 運命の人を加護石で具体的に占います ご職業・場所・時期等の7項目を大ボリューム即日でお届け☆
+                  - generic [ref=e1504]:
+                    - generic [ref=e1505]: 
+                    - generic [ref=e1506]: "4.9"
+                    - generic [ref=e1507]: (7748)
+                  - generic [ref=e1508]:
+                    - img "ITボーイ☆加護石・イラスト占い師" [ref=e1509]
+                    - generic [ref=e1510]: ITボーイ☆加護石・イラスト占い師
+                    - generic [ref=e1512]:
+                      - strong [ref=e1513]: 1,000
+                      - text: 円
+              - link "結婚に至る運命の人・出会いを霊視し未来を照らします 貴方の愛と未来を深く霊視し、結婚に向かう歩み方をお伝えします 結婚に至る運命の人・出会いを霊視し未来を照らします 貴方の愛と未来を深く霊視し、結婚に向かう歩み方をお伝えします  4.9 (1051) 三愛神占師 燦矢 さんや 三愛神占師 燦矢 さんや 1,000 円" [ref=e1514] [cursor=pointer]:
+                - /url: /services/2074919
+                - generic [ref=e1516]:
+                  - img "結婚に至る運命の人・出会いを霊視し未来を照らします 貴方の愛と未来を深く霊視し、結婚に向かう歩み方をお伝えします"
+                - generic [ref=e1517]:
+                  - generic [ref=e1518]: 結婚に至る運命の人・出会いを霊視し未来を照らします 貴方の愛と未来を深く霊視し、結婚に向かう歩み方をお伝えします
+                  - generic [ref=e1519]:
+                    - generic [ref=e1520]: 
+                    - generic [ref=e1521]: "4.9"
+                    - generic [ref=e1522]: (1051)
+                  - generic [ref=e1523]:
+                    - img "三愛神占師 燦矢 さんや" [ref=e1524]
+                    - generic [ref=e1525]: 三愛神占師 燦矢 さんや
+                    - generic [ref=e1527]:
+                      - strong [ref=e1528]: 1,000
+                      - text: 円
+              - link "あなたはどんな結婚する？結婚運判定します 幸せ掴むためのお手伝い、させてください！ あなたはどんな結婚する？結婚運判定します 幸せ掴むためのお手伝い、させてください！  5.0 (36) aki〜aorinko aki〜aorinko 4,000 円" [ref=e1529] [cursor=pointer]:
+                - /url: /services/1339545
+                - generic [ref=e1531]:
+                  - img "あなたはどんな結婚する？結婚運判定します 幸せ掴むためのお手伝い、させてください！"
+                - generic [ref=e1532]:
+                  - generic [ref=e1533]: あなたはどんな結婚する？結婚運判定します 幸せ掴むためのお手伝い、させてください！
+                  - generic [ref=e1534]:
+                    - generic [ref=e1535]: 
+                    - generic [ref=e1536]: "5.0"
+                    - generic [ref=e1537]: (36)
+                  - generic [ref=e1538]:
+                    - img "aki〜aorinko" [ref=e1539]
+                    - generic [ref=e1540]: aki〜aorinko
+                    - generic [ref=e1542]:
+                      - strong [ref=e1543]: 4,000
+                      - text: 円
+              - link "星が導く運命の出会い。魂の伴侶との未来を占います お相手の容姿やご職業、結ばれる奇跡の日までを深く優しく鑑定！ 星が導く運命の出会い。魂の伴侶との未来を占います お相手の容姿やご職業、結ばれる奇跡の日までを深く優しく鑑定！  5.0 (9) koeri｜深層変容の占星術師 koeri｜深層変容の占星術師 3,000 円" [ref=e1544] [cursor=pointer]:
+                - /url: /services/4099167
+                - generic [ref=e1546]:
+                  - img "星が導く運命の出会い。魂の伴侶との未来を占います お相手の容姿やご職業、結ばれる奇跡の日までを深く優しく鑑定！"
+                - generic [ref=e1547]:
+                  - generic [ref=e1548]: 星が導く運命の出会い。魂の伴侶との未来を占います お相手の容姿やご職業、結ばれる奇跡の日までを深く優しく鑑定！
+                  - generic [ref=e1549]:
+                    - generic [ref=e1550]: 
+                    - generic [ref=e1551]: "5.0"
+                    - generic [ref=e1552]: (9)
+                  - generic [ref=e1553]:
+                    - img "koeri｜深層変容の占星術師" [ref=e1554]
+                    - generic [ref=e1555]: koeri｜深層変容の占星術師
+                    - generic [ref=e1557]:
+                      - strong [ref=e1558]: 3,000
+                      - text: 円
+              - link "占い 好きな人との今世の課題or結婚のご縁をお調べします 気になる方との未来の指針に、過去に踏ん切りをつけたい方へ 好きな人との今世の課題or結婚のご縁をお調べします 気になる方との未来の指針に、過去に踏ん切りをつけたい方へ  5.0 (99) よいぼしのなぎうた よいぼしのなぎうた 3,500 円" [ref=e1559] [cursor=pointer]:
+                - /url: /services/484890
+                - generic [ref=e1560]:
+                  - img "占い"
+                - generic [ref=e1562]:
+                  - img "好きな人との今世の課題or結婚のご縁をお調べします 気になる方との未来の指針に、過去に踏ん切りをつけたい方へ"
+                - generic [ref=e1563]:
+                  - generic [ref=e1564]: 好きな人との今世の課題or結婚のご縁をお調べします 気になる方との未来の指針に、過去に踏ん切りをつけたい方へ
+                  - generic [ref=e1565]:
+                    - generic [ref=e1566]: 
+                    - generic [ref=e1567]: "5.0"
+                    - generic [ref=e1568]: (99)
+                  - generic [ref=e1569]:
+                    - img "よいぼしのなぎうた" [ref=e1570]
+                    - generic [ref=e1571]: よいぼしのなぎうた
+                    - generic [ref=e1573]:
+                      - strong [ref=e1574]: 3,500
+                      - text: 円
+              - link "結婚運特化⭐あなたと共に生きる人を完全解明します 結婚相手が丸見え霊感で視る容姿・年齢・性格・経済力の全貌 結婚運特化⭐あなたと共に生きる人を完全解明します 結婚相手が丸見え霊感で視る容姿・年齢・性格・経済力の全貌  5.0 (38) 霊視アドバイザー 水鏡レイ 霊視アドバイザー 水鏡レイ 500 円" [ref=e1575] [cursor=pointer]:
+                - /url: /services/3940738
+                - generic [ref=e1577]:
+                  - img "結婚運特化⭐あなたと共に生きる人を完全解明します 結婚相手が丸見え霊感で視る容姿・年齢・性格・経済力の全貌"
+                - generic [ref=e1578]:
+                  - generic [ref=e1579]: 結婚運特化⭐あなたと共に生きる人を完全解明します 結婚相手が丸見え霊感で視る容姿・年齢・性格・経済力の全貌
+                  - generic [ref=e1580]:
+                    - generic [ref=e1581]: 
+                    - generic [ref=e1582]: "5.0"
+                    - generic [ref=e1583]: (38)
+                  - generic [ref=e1584]:
+                    - img "霊視アドバイザー 水鏡レイ" [ref=e1585]
+                    - generic [ref=e1586]: 霊視アドバイザー 水鏡レイ
+                    - generic [ref=e1588]:
+                      - strong [ref=e1589]: "500"
+                      - text: 円
+              - link "24h以内鑑定可！完全版☆運命のお相手鑑定します 性格・外見・年・仕事・名前・出会いの時期ときっかけ・結婚生活 24h以内鑑定可！完全版☆運命のお相手鑑定します 性格・外見・年・仕事・名前・出会いの時期ときっかけ・結婚生活  5.0 (2358) マリーン マリーン 3,000 円" [ref=e1590] [cursor=pointer]:
+                - /url: /services/122654
+                - generic [ref=e1592]:
+                  - img "24h以内鑑定可！完全版☆運命のお相手鑑定します 性格・外見・年・仕事・名前・出会いの時期ときっかけ・結婚生活"
+                - generic [ref=e1593]:
+                  - generic [ref=e1594]: 24h以内鑑定可！完全版☆運命のお相手鑑定します 性格・外見・年・仕事・名前・出会いの時期ときっかけ・結婚生活
+                  - generic [ref=e1595]:
+                    - generic [ref=e1596]: 
+                    - generic [ref=e1597]: "5.0"
+                    - generic [ref=e1598]: (2358)
+                  - generic [ref=e1599]:
+                    - img "マリーン" [ref=e1600]
+                    - generic [ref=e1601]: マリーン
+                    - generic [ref=e1603]:
+                      - strong [ref=e1604]: 3,000
+                      - text: 円
+              - link "ずばり霊視霊感！結婚運を鑑定します 結婚縁／良縁と繋がる愛のメッセージを届けます ずばり霊視霊感！結婚運を鑑定します 結婚縁／良縁と繋がる愛のメッセージを届けます  5.0 (21) 美風♡きせき 霊感霊視鑑定×波動ヒーラー 美風♡きせき 霊感霊視鑑定×波動ヒーラー 1,000 円" [ref=e1605] [cursor=pointer]:
+                - /url: /services/2879023
+                - generic [ref=e1607]:
+                  - img "ずばり霊視霊感！結婚運を鑑定します 結婚縁／良縁と繋がる愛のメッセージを届けます"
+                - generic [ref=e1608]:
+                  - generic [ref=e1609]: ずばり霊視霊感！結婚運を鑑定します 結婚縁／良縁と繋がる愛のメッセージを届けます
+                  - generic [ref=e1610]:
+                    - generic [ref=e1611]: 
+                    - generic [ref=e1612]: "5.0"
+                    - generic [ref=e1613]: (21)
+                  - generic [ref=e1614]:
+                    - img "美風♡きせき 霊感霊視鑑定×波動ヒーラー" [ref=e1615]
+                    - generic [ref=e1616]: 美風♡きせき 霊感霊視鑑定×波動ヒーラー
+                    - generic [ref=e1618]:
+                      - strong [ref=e1619]: 1,000
+                      - text: 円
+            - generic [ref=e1621] [cursor=pointer]: 
+        - generic [ref=e1623]:
+          - heading "お気に入り登録が多いサービス" [level=2] [ref=e1624]
+          - generic [ref=e1625]:
+            - generic [ref=e1628]:
+              - link "運命の人を加護石で具体的に占います ご職業・場所・時期等の7項目を大ボリューム即日でお届け☆ 運命の人を加護石で具体的に占います ご職業・場所・時期等の7項目を大ボリューム即日でお届け☆  4.9 (7748) ITボーイ☆加護石・イラスト占い師 ITボーイ☆加護石・イラスト占い師 1,000 円" [ref=e1629] [cursor=pointer]:
+                - /url: /services/567316
+                - generic [ref=e1631]:
+                  - img "運命の人を加護石で具体的に占います ご職業・場所・時期等の7項目を大ボリューム即日でお届け☆"
+                - generic [ref=e1632]:
+                  - generic [ref=e1633]: 運命の人を加護石で具体的に占います ご職業・場所・時期等の7項目を大ボリューム即日でお届け☆
+                  - generic [ref=e1634]:
+                    - generic [ref=e1635]: 
+                    - generic [ref=e1636]: "4.9"
+                    - generic [ref=e1637]: (7748)
+                  - generic [ref=e1638]:
+                    - img "ITボーイ☆加護石・イラスト占い師" [ref=e1639]
+                    - generic [ref=e1640]: ITボーイ☆加護石・イラスト占い師
+                    - generic [ref=e1642]:
+                      - strong [ref=e1643]: 1,000
+                      - text: 円
+              - link "占い 実績3000件。運命の人、特徴40項目を伝えます 外見・ 内面・職業・年収・出会う年・場所・成婚・入籍時期 実績3000件。運命の人、特徴40項目を伝えます 外見・ 内面・職業・年収・出会う年・場所・成婚・入籍時期  4.9 (3049) 三術統合鑑定師 優未華 三術統合鑑定師 優未華 3,000 円" [ref=e1644] [cursor=pointer]:
+                - /url: /services/378999
+                - generic [ref=e1645]:
+                  - img "占い"
+                - generic [ref=e1647]:
+                  - img "実績3000件。運命の人、特徴40項目を伝えます 外見・ 内面・職業・年収・出会う年・場所・成婚・入籍時期"
+                - generic [ref=e1648]:
+                  - generic [ref=e1649]: 実績3000件。運命の人、特徴40項目を伝えます 外見・ 内面・職業・年収・出会う年・場所・成婚・入籍時期
+                  - generic [ref=e1650]:
+                    - generic [ref=e1651]: 
+                    - generic [ref=e1652]: "4.9"
+                    - generic [ref=e1653]: (3049)
+                  - generic [ref=e1654]:
+                    - img "三術統合鑑定師 優未華" [ref=e1655]
+                    - generic [ref=e1656]: 三術統合鑑定師 優未華
+                    - generic [ref=e1658]:
+                      - strong [ref=e1659]: 3,000
+                      - text: 円
+              - link "霊視で運命のお相手orキーパーソンの似顔絵描きます 未来に出逢う恋のお相手か重要人物の顔を視えたまま！縁結び！ 霊視で運命のお相手orキーパーソンの似顔絵描きます 未来に出逢う恋のお相手か重要人物の顔を視えたまま！縁結び！  5.0 (2909) 占術師gumi☆ 占術師gumi☆ 3,000 円" [ref=e1660] [cursor=pointer]:
+                - /url: /services/35372
+                - generic [ref=e1662]:
+                  - img "霊視で運命のお相手orキーパーソンの似顔絵描きます 未来に出逢う恋のお相手か重要人物の顔を視えたまま！縁結び！"
+                - generic [ref=e1663]:
+                  - generic [ref=e1664]: 霊視で運命のお相手orキーパーソンの似顔絵描きます 未来に出逢う恋のお相手か重要人物の顔を視えたまま！縁結び！
+                  - generic [ref=e1665]:
+                    - generic [ref=e1666]: 
+                    - generic [ref=e1667]: "5.0"
+                    - generic [ref=e1668]: (2909)
+                  - generic [ref=e1669]:
+                    - img "占術師gumi☆" [ref=e1670]
+                    - generic [ref=e1671]: 占術師gumi☆
+                    - generic [ref=e1673]:
+                      - strong [ref=e1674]: 3,000
+                      - text: 円
+              - link "24h以内鑑定可！完全版☆運命のお相手鑑定します 性格・外見・年・仕事・名前・出会いの時期ときっかけ・結婚生活 24h以内鑑定可！完全版☆運命のお相手鑑定します 性格・外見・年・仕事・名前・出会いの時期ときっかけ・結婚生活  5.0 (2358) マリーン マリーン 3,000 円" [ref=e1675] [cursor=pointer]:
+                - /url: /services/122654
+                - generic [ref=e1677]:
+                  - img "24h以内鑑定可！完全版☆運命のお相手鑑定します 性格・外見・年・仕事・名前・出会いの時期ときっかけ・結婚生活"
+                - generic [ref=e1678]:
+                  - generic [ref=e1679]: 24h以内鑑定可！完全版☆運命のお相手鑑定します 性格・外見・年・仕事・名前・出会いの時期ときっかけ・結婚生活
+                  - generic [ref=e1680]:
+                    - generic [ref=e1681]: 
+                    - generic [ref=e1682]: "5.0"
+                    - generic [ref=e1683]: (2358)
+                  - generic [ref=e1684]:
+                    - img "マリーン" [ref=e1685]
+                    - generic [ref=e1686]: マリーン
+                    - generic [ref=e1688]:
+                      - strong [ref=e1689]: 3,000
+                      - text: 円
+              - link "24h以内鑑定可☆あなたの結婚のご縁を視ます 結婚のご縁はある？この先訪れる？ズバリお伝えします☆ 24h以内鑑定可☆あなたの結婚のご縁を視ます 結婚のご縁はある？この先訪れる？ズバリお伝えします☆  4.9 (1328) マリーン マリーン 500 円" [ref=e1690] [cursor=pointer]:
+                - /url: /services/140912
+                - generic [ref=e1692]:
+                  - img "24h以内鑑定可☆あなたの結婚のご縁を視ます 結婚のご縁はある？この先訪れる？ズバリお伝えします☆"
+                - generic [ref=e1693]:
+                  - generic [ref=e1694]: 24h以内鑑定可☆あなたの結婚のご縁を視ます 結婚のご縁はある？この先訪れる？ズバリお伝えします☆
+                  - generic [ref=e1695]:
+                    - generic [ref=e1696]: 
+                    - generic [ref=e1697]: "4.9"
+                    - generic [ref=e1698]: (1328)
+                  - generic [ref=e1699]:
+                    - img "マリーン" [ref=e1700]
+                    - generic [ref=e1701]: マリーン
+                    - generic [ref=e1703]:
+                      - strong [ref=e1704]: "500"
+                      - text: 円
+              - link "占い 独身の方限定！あなたの未来のお相手を霊視いたします 出会いを待っているあなたの、未来のお相手を霊視します。 独身の方限定！あなたの未来のお相手を霊視いたします 出会いを待っているあなたの、未来のお相手を霊視します。  4.9 (762) bianca3 bianca3 1,500 円" [ref=e1705] [cursor=pointer]:
+                - /url: /services/689815
+                - generic [ref=e1706]:
+                  - img "占い"
+                - generic [ref=e1708]:
+                  - img "独身の方限定！あなたの未来のお相手を霊視いたします 出会いを待っているあなたの、未来のお相手を霊視します。"
+                - generic [ref=e1709]:
+                  - generic [ref=e1710]: 独身の方限定！あなたの未来のお相手を霊視いたします 出会いを待っているあなたの、未来のお相手を霊視します。
+                  - generic [ref=e1711]:
+                    - generic [ref=e1712]: 
+                    - generic [ref=e1713]: "4.9"
+                    - generic [ref=e1714]: (762)
+                  - generic [ref=e1715]:
+                    - img "bianca3" [ref=e1716]
+                    - generic [ref=e1717]: bianca3
+                    - generic [ref=e1719]:
+                      - strong [ref=e1720]: 1,500
+                      - text: 円
+              - link "結婚に至る運命の人・出会いを霊視し未来を照らします 貴方の愛と未来を深く霊視し、結婚に向かう歩み方をお伝えします 結婚に至る運命の人・出会いを霊視し未来を照らします 貴方の愛と未来を深く霊視し、結婚に向かう歩み方をお伝えします  4.9 (1051) 三愛神占師 燦矢 さんや 三愛神占師 燦矢 さんや 1,000 円" [ref=e1721] [cursor=pointer]:
+                - /url: /services/2074919
+                - generic [ref=e1723]:
+                  - img "結婚に至る運命の人・出会いを霊視し未来を照らします 貴方の愛と未来を深く霊視し、結婚に向かう歩み方をお伝えします"
+                - generic [ref=e1724]:
+                  - generic [ref=e1725]: 結婚に至る運命の人・出会いを霊視し未来を照らします 貴方の愛と未来を深く霊視し、結婚に向かう歩み方をお伝えします
+                  - generic [ref=e1726]:
+                    - generic [ref=e1727]: 
+                    - generic [ref=e1728]: "4.9"
+                    - generic [ref=e1729]: (1051)
+                  - generic [ref=e1730]:
+                    - img "三愛神占師 燦矢 さんや" [ref=e1731]
+                    - generic [ref=e1732]: 三愛神占師 燦矢 さんや
+                    - generic [ref=e1734]:
+                      - strong [ref=e1735]: 1,000
+                      - text: 円
+              - link "占い あなたのこの先の出会いと結婚について拝見します この先、結婚できる人と出会う？どんな人と出会うの？ あなたのこの先の出会いと結婚について拝見します この先、結婚できる人と出会う？どんな人と出会うの？  4.9 (813) スピリチュアルカウンセラー沙耶美 スピリチュアルカウンセラー沙耶美 3,500 円" [ref=e1736] [cursor=pointer]:
+                - /url: /services/96435
+                - generic [ref=e1737]:
+                  - img "占い"
+                - generic [ref=e1739]:
+                  - img "あなたのこの先の出会いと結婚について拝見します この先、結婚できる人と出会う？どんな人と出会うの？"
+                - generic [ref=e1740]:
+                  - generic [ref=e1741]: あなたのこの先の出会いと結婚について拝見します この先、結婚できる人と出会う？どんな人と出会うの？
+                  - generic [ref=e1742]:
+                    - generic [ref=e1743]: 
+                    - generic [ref=e1744]: "4.9"
+                    - generic [ref=e1745]: (813)
+                  - generic [ref=e1746]:
+                    - img "スピリチュアルカウンセラー沙耶美" [ref=e1747]
+                    - generic [ref=e1748]: スピリチュアルカウンセラー沙耶美
+                    - generic [ref=e1750]:
+                      - strong [ref=e1751]: 3,500
+                      - text: 円
+              - link "未来のダンナ様からのラブレターを読みます 私はどんな人と結婚するの？彼と結婚したらどんな結婚生活に？ 未来のダンナ様からのラブレターを読みます 私はどんな人と結婚するの？彼と結婚したらどんな結婚生活に？  5.0 (1463) 月村あかり 月村あかり 1,500 円" [ref=e1752] [cursor=pointer]:
+                - /url: /services/1703526
+                - generic [ref=e1754]:
+                  - img "未来のダンナ様からのラブレターを読みます 私はどんな人と結婚するの？彼と結婚したらどんな結婚生活に？"
+                - generic [ref=e1755]:
+                  - generic [ref=e1756]: 未来のダンナ様からのラブレターを読みます 私はどんな人と結婚するの？彼と結婚したらどんな結婚生活に？
+                  - generic [ref=e1757]:
+                    - generic [ref=e1758]: 
+                    - generic [ref=e1759]: "5.0"
+                    - generic [ref=e1760]: (1463)
+                  - generic [ref=e1761]:
+                    - img "月村あかり" [ref=e1762]
+                    - generic [ref=e1763]: 月村あかり
+                    - generic [ref=e1765]:
+                      - strong [ref=e1766]: 1,500
+                      - text: 円
+              - link "2026年に出会う？運命のお相手のイメージ視ます 私は1人…周りが結婚して焦る。婚活マッチングアプリ再婚離婚 2026年に出会う？運命のお相手のイメージ視ます 私は1人…周りが結婚して焦る。婚活マッチングアプリ再婚離婚  4.9 (948) まるで彼が話してるかのようにお届けl運子 まるで彼が話してるかのようにお届けl運子 1,000 円" [ref=e1767] [cursor=pointer]:
+                - /url: /services/1186378
+                - generic [ref=e1769]:
+                  - img "2026年に出会う？運命のお相手のイメージ視ます 私は1人…周りが結婚して焦る。婚活マッチングアプリ再婚離婚"
+                - generic [ref=e1770]:
+                  - generic [ref=e1771]: 2026年に出会う？運命のお相手のイメージ視ます 私は1人…周りが結婚して焦る。婚活マッチングアプリ再婚離婚
+                  - generic [ref=e1772]:
+                    - generic [ref=e1773]: 
+                    - generic [ref=e1774]: "4.9"
+                    - generic [ref=e1775]: (948)
+                  - generic [ref=e1776]:
+                    - img "まるで彼が話してるかのようにお届けl運子" [ref=e1777]
+                    - generic [ref=e1778]: まるで彼が話してるかのようにお届けl運子
+                    - generic [ref=e1780]:
+                      - strong [ref=e1781]: 1,000
+                      - text: 円
+              - link "選べる運氣アップヒーリング＋開運アドバイスします 人生をもっと楽しく♪願いを叶える♪恋愛・金運・仕事運アップ 選べる運氣アップヒーリング＋開運アドバイスします 人生をもっと楽しく♪願いを叶える♪恋愛・金運・仕事運アップ  4.9 (552) スピリチュアルマスター∞Naomi スピリチュアルマスター∞Naomi 500 円" [ref=e1782] [cursor=pointer]:
+                - /url: /services/71063
+                - generic [ref=e1784]:
+                  - img "選べる運氣アップヒーリング＋開運アドバイスします 人生をもっと楽しく♪願いを叶える♪恋愛・金運・仕事運アップ"
+                - generic [ref=e1785]:
+                  - generic [ref=e1786]: 選べる運氣アップヒーリング＋開運アドバイスします 人生をもっと楽しく♪願いを叶える♪恋愛・金運・仕事運アップ
+                  - generic [ref=e1787]:
+                    - generic [ref=e1788]: 
+                    - generic [ref=e1789]: "4.9"
+                    - generic [ref=e1790]: (552)
+                  - generic [ref=e1791]:
+                    - img "スピリチュアルマスター∞Naomi" [ref=e1792]
+                    - generic [ref=e1793]: スピリチュアルマスター∞Naomi
+                    - generic [ref=e1795]:
+                      - strong [ref=e1796]: "500"
+                      - text: 円
+              - link "占い 宇宙から超引き寄せ！あなたの結婚相手傾向鑑定します どんな結婚相手？特徴！どんな人？いつ出会う可能性がある？ 宇宙から超引き寄せ！あなたの結婚相手傾向鑑定します どんな結婚相手？特徴！どんな人？いつ出会う可能性がある？  4.9 (1284) 霊感霊視！30年！一万人鑑定 春うららか 霊感霊視！30年！一万人鑑定 春うららか 1,000 円" [ref=e1797] [cursor=pointer]:
+                - /url: /services/1608658
+                - generic [ref=e1798]:
+                  - img "占い"
+                - generic [ref=e1800]:
+                  - img "宇宙から超引き寄せ！あなたの結婚相手傾向鑑定します どんな結婚相手？特徴！どんな人？いつ出会う可能性がある？"
+                - generic [ref=e1801]:
+                  - generic [ref=e1802]: 宇宙から超引き寄せ！あなたの結婚相手傾向鑑定します どんな結婚相手？特徴！どんな人？いつ出会う可能性がある？
+                  - generic [ref=e1803]:
+                    - generic [ref=e1804]: 
+                    - generic [ref=e1805]: "4.9"
+                    - generic [ref=e1806]: (1284)
+                  - generic [ref=e1807]:
+                    - img "霊感霊視！30年！一万人鑑定 春うららか" [ref=e1808]
+                    - generic [ref=e1809]: 霊感霊視！30年！一万人鑑定 春うららか
+                    - generic [ref=e1811]:
+                      - strong [ref=e1812]: 1,000
+                      - text: 円
+              - link "運命の人の顔を占いリアルな似顔絵イラスト描きます 結婚相手選びや出会いの指針に是非☆24時間以内でお届け☆ 運命の人の顔を占いリアルな似顔絵イラスト描きます 結婚相手選びや出会いの指針に是非☆24時間以内でお届け☆  4.9 (878) ITボーイ☆加護石・イラスト占い師 ITボーイ☆加護石・イラスト占い師 1,500 円" [ref=e1813] [cursor=pointer]:
+                - /url: /services/1549069
+                - generic [ref=e1815]:
+                  - img "運命の人の顔を占いリアルな似顔絵イラスト描きます 結婚相手選びや出会いの指針に是非☆24時間以内でお届け☆"
+                - generic [ref=e1816]:
+                  - generic [ref=e1817]: 運命の人の顔を占いリアルな似顔絵イラスト描きます 結婚相手選びや出会いの指針に是非☆24時間以内でお届け☆
+                  - generic [ref=e1818]:
+                    - generic [ref=e1819]: 
+                    - generic [ref=e1820]: "4.9"
+                    - generic [ref=e1821]: (878)
+                  - generic [ref=e1822]:
+                    - img "ITボーイ☆加護石・イラスト占い師" [ref=e1823]
+                    - generic [ref=e1824]: ITボーイ☆加護石・イラスト占い師
+                    - generic [ref=e1826]:
+                      - strong [ref=e1827]: 1,500
+                      - text: 円
+              - link "占い 貴方にとっての運命の人って？？結婚運の全貌を視ます 【運命の人】霊感タロットで視る外見的特徴、年齢、人柄、財運 今すぐ相談可能 予約受付中 貴方にとっての運命の人って？？結婚運の全貌を視ます 【運命の人】霊感タロットで視る外見的特徴、年齢、人柄、財運  5.0 (147) 奇跡のサイキッカー 魂の鑑定師 ステラ 奇跡のサイキッカー 魂の鑑定師 ステラ 360 円 /分" [ref=e1828] [cursor=pointer]:
+                - /url: /services/2576272
+                - generic [ref=e1829]:
+                  - img "占い"
+                - generic [ref=e1831]:
+                  - img "貴方にとっての運命の人って？？結婚運の全貌を視ます 【運命の人】霊感タロットで視る外見的特徴、年齢、人柄、財運"
+                  - generic [ref=e1833]:
+                    - generic [ref=e1834]: 今すぐ相談可能
+                    - generic [ref=e1835]: 予約受付中
+                - generic [ref=e1836]:
+                  - generic [ref=e1837]: 貴方にとっての運命の人って？？結婚運の全貌を視ます 【運命の人】霊感タロットで視る外見的特徴、年齢、人柄、財運
+                  - generic [ref=e1838]:
+                    - generic [ref=e1839]: 
+                    - generic [ref=e1840]: "5.0"
+                    - generic [ref=e1841]: (147)
+                  - generic [ref=e1842]:
+                    - img "奇跡のサイキッカー 魂の鑑定師 ステラ" [ref=e1843]
+                    - generic [ref=e1844]: 奇跡のサイキッカー 魂の鑑定師 ステラ
+                    - generic [ref=e1846]:
+                      - strong [ref=e1847]: "360"
+                      - text: 円 /分
+              - link "結婚占い【●歳のいつ頃】あなたに運命が巡ってきます 外見、職業、性格、時期、場所等、全10項目具体的に鑑定します 結婚占い【●歳のいつ頃】あなたに運命が巡ってきます 外見、職業、性格、時期、場所等、全10項目具体的に鑑定します  5.0 (438) フォーセリア フォーセリア 1,000 円" [ref=e1848] [cursor=pointer]:
+                - /url: /services/2190339
+                - generic [ref=e1850]:
+                  - img "結婚占い【●歳のいつ頃】あなたに運命が巡ってきます 外見、職業、性格、時期、場所等、全10項目具体的に鑑定します"
+                - generic [ref=e1851]:
+                  - generic [ref=e1852]: 結婚占い【●歳のいつ頃】あなたに運命が巡ってきます 外見、職業、性格、時期、場所等、全10項目具体的に鑑定します
+                  - generic [ref=e1853]:
+                    - generic [ref=e1854]: 
+                    - generic [ref=e1855]: "5.0"
+                    - generic [ref=e1856]: (438)
+                  - generic [ref=e1857]:
+                    - img "フォーセリア" [ref=e1858]
+                    - generic [ref=e1859]: フォーセリア
+                    - generic [ref=e1861]:
+                      - strong [ref=e1862]: 1,000
+                      - text: 円
+              - link "魂の結婚＜換縁＞２人をツインレイとして解き放ちます ◆あの人と運命関係になりたい方◆＜ご依頼件数3954件超＞ 魂の結婚＜換縁＞２人をツインレイとして解き放ちます ◆あの人と運命関係になりたい方◆＜ご依頼件数3954件超＞  5.0 (439) 神楽【縁結びの言霊】 神楽【縁結びの言霊】 4,500 円" [ref=e1863] [cursor=pointer]:
+                - /url: /services/1066391
+                - generic [ref=e1865]:
+                  - img "魂の結婚＜換縁＞２人をツインレイとして解き放ちます ◆あの人と運命関係になりたい方◆＜ご依頼件数3954件超＞"
+                - generic [ref=e1866]:
+                  - generic [ref=e1867]: 魂の結婚＜換縁＞２人をツインレイとして解き放ちます ◆あの人と運命関係になりたい方◆＜ご依頼件数3954件超＞
+                  - generic [ref=e1868]:
+                    - generic [ref=e1869]: 
+                    - generic [ref=e1870]: "5.0"
+                    - generic [ref=e1871]: (439)
+                  - generic [ref=e1872]:
+                    - img "神楽【縁結びの言霊】" [ref=e1873]
+                    - generic [ref=e1874]: 神楽【縁結びの言霊】
+                    - generic [ref=e1876]:
+                      - strong [ref=e1877]: 4,500
+                      - text: 円
+              - link "占い 結婚占い★運命の王子様がくる時期をみます 結婚したいのに何故かできない！王子様がくるのはいつ頃？ 結婚占い★運命の王子様がくる時期をみます 結婚したいのに何故かできない！王子様がくるのはいつ頃？  5.0 (529) 占星師 Sophia 占星師 Sophia 2,000 円" [ref=e1878] [cursor=pointer]:
+                - /url: /services/447488
+                - generic [ref=e1879]:
+                  - img "占い"
+                - generic [ref=e1881]:
+                  - img "結婚占い★運命の王子様がくる時期をみます 結婚したいのに何故かできない！王子様がくるのはいつ頃？"
+                - generic [ref=e1882]:
+                  - generic [ref=e1883]: 結婚占い★運命の王子様がくる時期をみます 結婚したいのに何故かできない！王子様がくるのはいつ頃？
+                  - generic [ref=e1884]:
+                    - generic [ref=e1885]: 
+                    - generic [ref=e1886]: "5.0"
+                    - generic [ref=e1887]: (529)
+                  - generic [ref=e1888]:
+                    - img "占星師 Sophia" [ref=e1889]
+                    - generic [ref=e1890]: 占星師 Sophia
+                    - generic [ref=e1892]:
+                      - strong [ref=e1893]: 2,000
+                      - text: 円
+              - link "出会いを見逃さないために☆運命のお相手を鑑定します お相手のお顔の詳しい特徴・似ている芸能人をお伝えします☆ 出会いを見逃さないために☆運命のお相手を鑑定します お相手のお顔の詳しい特徴・似ている芸能人をお伝えします☆  5.0 (397) マリーン マリーン 1,000 円" [ref=e1894] [cursor=pointer]:
+                - /url: /services/127327
+                - generic [ref=e1896]:
+                  - img "出会いを見逃さないために☆運命のお相手を鑑定します お相手のお顔の詳しい特徴・似ている芸能人をお伝えします☆"
+                - generic [ref=e1897]:
+                  - generic [ref=e1898]: 出会いを見逃さないために☆運命のお相手を鑑定します お相手のお顔の詳しい特徴・似ている芸能人をお伝えします☆
+                  - generic [ref=e1899]:
+                    - generic [ref=e1900]: 
+                    - generic [ref=e1901]: "5.0"
+                    - generic [ref=e1902]: (397)
+                  - generic [ref=e1903]:
+                    - img "マリーン" [ref=e1904]
+                    - generic [ref=e1905]: マリーン
+                    - generic [ref=e1907]:
+                      - strong [ref=e1908]: 1,000
+                      - text: 円
+              - link "PRO 彼氏彼女がいない方の婚期を詳しく！占います an・anやVOGUE の連載が人気の占い師が鑑定！ 彼氏彼女がいない方の婚期を詳しく！占います an・anやVOGUE の連載が人気の占い師が鑑定！  4.9 (123) 藤島佑雪（ゆうせつ） 藤島佑雪（ゆうせつ） 12,000 円" [ref=e1909] [cursor=pointer]:
+                - /url: /services/1364742
+                - generic [ref=e1910]:
+                  - img "PRO"
+                - generic [ref=e1912]:
+                  - img "彼氏彼女がいない方の婚期を詳しく！占います an・anやVOGUE の連載が人気の占い師が鑑定！"
+                - generic [ref=e1913]:
+                  - generic [ref=e1914]: 彼氏彼女がいない方の婚期を詳しく！占います an・anやVOGUE の連載が人気の占い師が鑑定！
+                  - generic [ref=e1915]:
+                    - generic [ref=e1916]: 
+                    - generic [ref=e1917]: "4.9"
+                    - generic [ref=e1918]: (123)
+                  - generic [ref=e1919]:
+                    - img "藤島佑雪（ゆうせつ）" [ref=e1920]
+                    - generic [ref=e1921]: 藤島佑雪（ゆうせつ）
+                    - generic [ref=e1923]:
+                      - strong [ref=e1924]: 12,000
+                      - text: 円
+              - link "運命の出会いと結婚の時期を未来予想します ♡対面鑑定歴15年のプロ占い師の丁寧・安心鑑定 運命の出会いと結婚の時期を未来予想します ♡対面鑑定歴15年のプロ占い師の丁寧・安心鑑定  4.9 (358) LosCalo LosCalo 2,000 円" [ref=e1925] [cursor=pointer]:
+                - /url: /services/39733
+                - generic [ref=e1927]:
+                  - img "運命の出会いと結婚の時期を未来予想します ♡対面鑑定歴15年のプロ占い師の丁寧・安心鑑定"
+                - generic [ref=e1928]:
+                  - generic [ref=e1929]: 運命の出会いと結婚の時期を未来予想します ♡対面鑑定歴15年のプロ占い師の丁寧・安心鑑定
+                  - generic [ref=e1930]:
+                    - generic [ref=e1931]: 
+                    - generic [ref=e1932]: "4.9"
+                    - generic [ref=e1933]: (358)
+                  - generic [ref=e1934]:
+                    - img "LosCalo" [ref=e1935]
+                    - generic [ref=e1936]: LosCalo
+                    - generic [ref=e1938]:
+                      - strong [ref=e1939]: 2,000
+                      - text: 円
+              - link "霊視・出会い・結ばれる運命のお相手ズバリ視ます 【ご縁結びプロ鑑定歴25年・2万人】❤️恋愛❤️結婚❤️復縁 霊視・出会い・結ばれる運命のお相手ズバリ視ます 【ご縁結びプロ鑑定歴25年・2万人】❤️恋愛❤️結婚❤️復縁  5.0 (202) 大和こころ❤️ご縁結び師【鑑定歴25年】 大和こころ❤️ご縁結び師【鑑定歴25年】 22,000 円" [ref=e1940] [cursor=pointer]:
+                - /url: /services/514984
+                - generic [ref=e1942]:
+                  - img "霊視・出会い・結ばれる運命のお相手ズバリ視ます 【ご縁結びプロ鑑定歴25年・2万人】❤️恋愛❤️結婚❤️復縁"
+                - generic [ref=e1943]:
+                  - generic [ref=e1944]: 霊視・出会い・結ばれる運命のお相手ズバリ視ます 【ご縁結びプロ鑑定歴25年・2万人】❤️恋愛❤️結婚❤️復縁
+                  - generic [ref=e1945]:
+                    - generic [ref=e1946]: 
+                    - generic [ref=e1947]: "5.0"
+                    - generic [ref=e1948]: (202)
+                  - generic [ref=e1949]:
+                    - img "大和こころ❤️ご縁結び師【鑑定歴25年】" [ref=e1950]
+                    - generic [ref=e1951]: 大和こころ❤️ご縁結び師【鑑定歴25年】
+                    - generic [ref=e1953]:
+                      - strong [ref=e1954]: 22,000
+                      - text: 円
+              - link "これから出会うパートナーのフルネームを教えます 貴方の未来を強力霊視にて見通します。相手はどんな人？ これから出会うパートナーのフルネームを教えます 貴方の未来を強力霊視にて見通します。相手はどんな人？  4.9 (189) 霊視鑑定士 海 霊視鑑定士 海 8,000 円" [ref=e1955] [cursor=pointer]:
+                - /url: /services/1848605
+                - generic [ref=e1957]:
+                  - img "これから出会うパートナーのフルネームを教えます 貴方の未来を強力霊視にて見通します。相手はどんな人？"
+                - generic [ref=e1958]:
+                  - generic [ref=e1959]: これから出会うパートナーのフルネームを教えます 貴方の未来を強力霊視にて見通します。相手はどんな人？
+                  - generic [ref=e1960]:
+                    - generic [ref=e1961]: 
+                    - generic [ref=e1962]: "4.9"
+                    - generic [ref=e1963]: (189)
+                  - generic [ref=e1964]:
+                    - img "霊視鑑定士 海" [ref=e1965]
+                    - generic [ref=e1966]: 霊視鑑定士 海
+                    - generic [ref=e1968]:
+                      - strong [ref=e1969]: 8,000
+                      - text: 円
+              - link "占い ツインレイ鑑定でお相手との魂の相性を鑑定します 相手とのご縁を霊視し、さらに強く縁結びのお手伝いをします。 ツインレイ鑑定でお相手との魂の相性を鑑定します 相手とのご縁を霊視し、さらに強く縁結びのお手伝いをします。  4.9 (298) 紫龍杏◇秘伝の縁結び祈祷師 紫龍杏◇秘伝の縁結び祈祷師 1,500 円" [ref=e1970] [cursor=pointer]:
+                - /url: /services/3204235
+                - generic [ref=e1971]:
+                  - img "占い"
+                - generic [ref=e1973]:
+                  - img "ツインレイ鑑定でお相手との魂の相性を鑑定します 相手とのご縁を霊視し、さらに強く縁結びのお手伝いをします。"
+                - generic [ref=e1974]:
+                  - generic [ref=e1975]: ツインレイ鑑定でお相手との魂の相性を鑑定します 相手とのご縁を霊視し、さらに強く縁結びのお手伝いをします。
+                  - generic [ref=e1976]:
+                    - generic [ref=e1977]: 
+                    - generic [ref=e1978]: "4.9"
+                    - generic [ref=e1979]: (298)
+                  - generic [ref=e1980]:
+                    - img "紫龍杏◇秘伝の縁結び祈祷師" [ref=e1981]
+                    - generic [ref=e1982]: 紫龍杏◇秘伝の縁結び祈祷師
+                    - generic [ref=e1984]:
+                      - strong [ref=e1985]: 1,500
+                      - text: 円
+              - link "未来の結婚相手と出会う時期を霊視します 愛されるご縁の流れを具体的に読み解きます 未来の結婚相手と出会う時期を霊視します 愛されるご縁の流れを具体的に読み解きます  5.0 (378) 心結花 心結花 1,500 円" [ref=e1986] [cursor=pointer]:
+                - /url: /services/3550536
+                - generic [ref=e1988]:
+                  - img "未来の結婚相手と出会う時期を霊視します 愛されるご縁の流れを具体的に読み解きます"
+                - generic [ref=e1989]:
+                  - generic [ref=e1990]: 未来の結婚相手と出会う時期を霊視します 愛されるご縁の流れを具体的に読み解きます
+                  - generic [ref=e1991]:
+                    - generic [ref=e1992]: 
+                    - generic [ref=e1993]: "5.0"
+                    - generic [ref=e1994]: (378)
+                  - generic [ref=e1995]:
+                    - img "心結花" [ref=e1996]
+                    - generic [ref=e1997]: 心結花
+                    - generic [ref=e1999]:
+                      - strong [ref=e2000]: 1,500
+                      - text: 円
+            - generic [ref=e2002] [cursor=pointer]: 
+  - contentinfo [ref=e2007]:
+    - generic [ref=e2008]:
+      - generic [ref=e2012]:
+        - generic [ref=e2014]:
+          - generic [ref=e2015]: サービス一覧
+          - generic [ref=e2016]:
+            - paragraph [ref=e2017]: ウェブやアプリで依頼する
+            - list [ref=e2018]:
+              - listitem [ref=e2019]:
+                - link "ココナラスキルマーケット" [ref=e2021]:
+                  - /url: /
+                  - generic [ref=e2022] [cursor=pointer]: ココナラスキルマーケット
+              - listitem [ref=e2023]:
+                - link "ココナラ募集" [ref=e2025]:
+                  - /url: https://job-matching.coconala.com/client
+                  - generic [ref=e2026] [cursor=pointer]: ココナラ募集
+          - generic [ref=e2027]:
+            - paragraph [ref=e2028]: エージェントに依頼する
+            - list [ref=e2029]:
+              - listitem [ref=e2030]:
+                - link "ココナラアシスト" [ref=e2032]:
+                  - /url: https://assist.coconala.com
+                  - generic [ref=e2033] [cursor=pointer]: ココナラアシスト
+              - listitem [ref=e2034]:
+                - link "ココナラテック" [ref=e2036]:
+                  - /url: https://tech.coconala.com/ref-tracking/coconala?to=/enterprise/inquiry
+                  - generic [ref=e2037] [cursor=pointer]: ココナラテック
+              - listitem [ref=e2038]:
+                - link "ココナラプロ" [ref=e2040]:
+                  - /url: https://professional.coconala.com
+                  - generic [ref=e2041] [cursor=pointer]: ココナラプロ
+              - listitem [ref=e2042]:
+                - link "ココナラコンサル" [ref=e2044]:
+                  - /url: https://consul.coconala.com/talent
+                  - generic [ref=e2045] [cursor=pointer]: ココナラコンサル
+          - generic [ref=e2046]:
+            - paragraph [ref=e2047]: コンテンツを購入する
+            - list [ref=e2048]:
+              - listitem [ref=e2049]:
+                - link "ココナラコンテンツマーケット" [ref=e2051]:
+                  - /url: /contents_market/
+                  - generic [ref=e2052] [cursor=pointer]: ココナラコンテンツマーケット
+          - generic [ref=e2053]:
+            - paragraph [ref=e2054]: その他
+            - list [ref=e2055]:
+              - listitem [ref=e2056]:
+                - link "ココナラ法律相談" [ref=e2058]:
+                  - /url: https://legal.coconala.com
+                  - generic [ref=e2059] [cursor=pointer]: ココナラ法律相談
+        - generic [ref=e2061]:
+          - generic [ref=e2062]: 発注/クライアントの方へ
+          - generic [ref=e2063]:
+            - paragraph
+            - list [ref=e2064]:
+              - listitem [ref=e2065]:
+                - link "出品サービスを検索" [ref=e2067]:
+                  - /url: /search
+                  - generic [ref=e2068] [cursor=pointer]: 出品サービスを検索
+              - listitem [ref=e2069]:
+                - button "仕事・求人を投稿して募集" [ref=e2070] [cursor=pointer]
+              - listitem [ref=e2071]:
+                - link "プロ人材を探してスカウト" [ref=e2073]:
+                  - /url: /users
+                  - generic [ref=e2074] [cursor=pointer]: プロ人材を探してスカウト
+              - listitem [ref=e2075]:
+                - link "ビジネス代行・アシスタントを紹介してもらう" [ref=e2077]:
+                  - /url: https://assist.coconala.com
+                  - generic [ref=e2078] [cursor=pointer]: ビジネス代行・アシスタントを紹介してもらう
+              - listitem [ref=e2079]:
+                - link "業務委託エンジニアを 紹介してもらう" [ref=e2081]:
+                  - /url: https://tech.coconala.com/ref-tracking/coconala?to=/enterprise/inquiry
+                  - generic [ref=e2082] [cursor=pointer]:
+                    - text: 業務委託エンジニアを
+                    - text: 紹介してもらう
+              - listitem [ref=e2083]:
+                - link "非公開の実名クリエイターを 紹介してもらう" [ref=e2085]:
+                  - /url: https://professional.coconala.com
+                  - generic [ref=e2086] [cursor=pointer]:
+                    - text: 非公開の実名クリエイターを
+                    - text: 紹介してもらう
+              - listitem [ref=e2087]:
+                - link "コンサルタントを紹介してもらう" [ref=e2089]:
+                  - /url: https://consul.coconala.com/talent
+                  - generic [ref=e2090] [cursor=pointer]: コンサルタントを紹介してもらう
+              - listitem [ref=e2091]:
+                - link "ブログを探す" [ref=e2093]:
+                  - /url: /blogs
+                  - generic [ref=e2094] [cursor=pointer]: ブログを探す
+        - generic [ref=e2096]:
+          - generic [ref=e2097]: 出品/働きたい方へ
+          - generic [ref=e2098]:
+            - paragraph
+            - list [ref=e2099]:
+              - listitem [ref=e2100]:
+                - link "サービスを出品する" [ref=e2102]:
+                  - /url: /pages/lp_provider
+                  - generic [ref=e2103] [cursor=pointer]: サービスを出品する
+              - listitem [ref=e2104]:
+                - link "単発・スポットの仕事を探す" [ref=e2106]:
+                  - /url: /requests
+                  - generic [ref=e2107] [cursor=pointer]: 単発・スポットの仕事を探す
+              - listitem [ref=e2108]:
+                - link "継続（時給/月給）の仕事を探す" [ref=e2110]:
+                  - /url: /job_matching/outsources
+                  - generic [ref=e2111] [cursor=pointer]: 継続（時給/月給）の仕事を探す
+              - listitem [ref=e2112]:
+                - link "ビジネス代行業務委託で働く" [ref=e2114]:
+                  - /url: https://assist.coconala.com/talent
+                  - generic [ref=e2115] [cursor=pointer]: ビジネス代行業務委託で働く
+              - listitem [ref=e2116]:
+                - link "エンジニア業務委託で働く" [ref=e2118]:
+                  - /url: https://tech.coconala.com/ref-tracking/coconala?to=/
+                  - generic [ref=e2119] [cursor=pointer]: エンジニア業務委託で働く
+              - listitem [ref=e2120]:
+                - link "副業コンサルティングで働く" [ref=e2122]:
+                  - /url: https://consul.coconala.com/talent
+                  - generic [ref=e2123] [cursor=pointer]: 副業コンサルティングで働く
+              - listitem [ref=e2124]:
+                - button "スキル/経歴を登録する" [ref=e2125] [cursor=pointer]
+              - listitem [ref=e2126]:
+                - button "コンテンツを出品する" [ref=e2127] [cursor=pointer]
+              - listitem [ref=e2128]:
+                - button "ブログを投稿する" [ref=e2129] [cursor=pointer]
+              - listitem [ref=e2130]:
+                - link "ヘルプとガイド" [ref=e2132]:
+                  - /url: /pages/guide_top
+                  - generic [ref=e2133] [cursor=pointer]: ヘルプとガイド
+              - listitem [ref=e2134]:
+                - link "出品のコツ" [ref=e2136]:
+                  - /url: https://mag.coconala.com/category/knowhow
+                  - generic [ref=e2137] [cursor=pointer]: 出品のコツ
+              - listitem [ref=e2138]:
+                - link "PRO認定制度" [ref=e2140]:
+                  - /url: /pages/about_pro
+                  - generic [ref=e2141] [cursor=pointer]: PRO認定制度
+        - generic [ref=e2143]:
+          - generic [ref=e2144]: カテゴリ
+          - generic [ref=e2145]:
+            - paragraph
+            - list [ref=e2146]:
+              - listitem [ref=e2147]:
+                - link "イラスト作成・漫画制作" [ref=e2149]:
+                  - /url: /categories/9
+                  - generic [ref=e2150] [cursor=pointer]: イラスト作成・漫画制作
+              - listitem [ref=e2151]:
+                - link "デザイン制作" [ref=e2153]:
+                  - /url: /categories/18
+                  - generic [ref=e2154] [cursor=pointer]: デザイン制作
+              - listitem [ref=e2155]:
+                - link "Web制作・HP作成・EC構築" [ref=e2157]:
+                  - /url: /categories/22
+                  - generic [ref=e2158] [cursor=pointer]: Web制作・HP作成・EC構築
+              - listitem [ref=e2159]:
+                - link "動画編集・映像制作" [ref=e2161]:
+                  - /url: /categories/10
+                  - generic [ref=e2162] [cursor=pointer]: 動画編集・映像制作
+              - listitem [ref=e2163]:
+                - link "集客・マーケティング相談" [ref=e2165]:
+                  - /url: /categories/16
+                  - generic [ref=e2166] [cursor=pointer]: 集客・マーケティング相談
+              - listitem [ref=e2167]:
+                - link "ビジネス代行・事務代行" [ref=e2169]:
+                  - /url: /categories/13
+                  - generic [ref=e2170] [cursor=pointer]: ビジネス代行・事務代行
+              - listitem [ref=e2171]:
+                - link "音楽制作・ナレーション" [ref=e2173]:
+                  - /url: /categories/23
+                  - generic [ref=e2174] [cursor=pointer]: 音楽制作・ナレーション
+              - listitem [ref=e2175]:
+                - link "IT相談・システム開発" [ref=e2177]:
+                  - /url: /categories/11
+                  - generic [ref=e2178] [cursor=pointer]: IT相談・システム開発
+              - listitem [ref=e2179]:
+                - link "ライティング・翻訳" [ref=e2181]:
+                  - /url: /categories/19
+                  - generic [ref=e2182] [cursor=pointer]: ライティング・翻訳
+              - listitem [ref=e2183]:
+                - link "コンサルティング・士業" [ref=e2185]:
+                  - /url: /categories/27
+                  - generic [ref=e2186] [cursor=pointer]: コンサルティング・士業
+              - listitem [ref=e2187]:
+                - link "生成AI活用・開発・制作" [ref=e2189]:
+                  - /url: /categories/28
+                  - generic [ref=e2190] [cursor=pointer]: 生成AI活用・開発・制作
+              - listitem [ref=e2191]:
+                - link "占い" [ref=e2193]:
+                  - /url: /categories/3
+                  - generic [ref=e2194] [cursor=pointer]: 占い
+              - listitem [ref=e2195]:
+                - link "電話占い" [ref=e2197]:
+                  - /url: /categories/3?service_kind=1
+                  - generic [ref=e2198] [cursor=pointer]: 電話占い
+              - listitem [ref=e2199]:
+                - link "悩み相談・カウンセリング" [ref=e2201]:
+                  - /url: /categories/2
+                  - generic [ref=e2202] [cursor=pointer]: 悩み相談・カウンセリング
+              - listitem [ref=e2203]:
+                - link "学習指導・資格・キャリア相談" [ref=e2205]:
+                  - /url: /categories/12
+                  - generic [ref=e2206] [cursor=pointer]: 学習指導・資格・キャリア相談
+              - listitem [ref=e2207]:
+                - link "住まい・美容・生活相談" [ref=e2209]:
+                  - /url: /categories/5
+                  - generic [ref=e2210] [cursor=pointer]: 住まい・美容・生活相談
+              - listitem [ref=e2211]:
+                - link "オンラインレッスン・習い事" [ref=e2213]:
+                  - /url: /categories/26
+                  - generic [ref=e2214] [cursor=pointer]: オンラインレッスン・習い事
+              - listitem [ref=e2215]:
+                - link "ハンドメイド制作" [ref=e2217]:
+                  - /url: /categories/1001
+                  - generic [ref=e2218] [cursor=pointer]: ハンドメイド制作
+              - listitem [ref=e2219]:
+                - link "出張撮影・出張サービス" [ref=e2221]:
+                  - /url: /categories/29
+                  - generic [ref=e2222] [cursor=pointer]: 出張撮影・出張サービス
+              - listitem [ref=e2223]:
+                - link "資産運用・副業の相談" [ref=e2225]:
+                  - /url: /categories/17
+                  - generic [ref=e2226] [cursor=pointer]: 資産運用・副業の相談
+              - listitem [ref=e2227]:
+                - link "サイトマップ" [ref=e2229]:
+                  - /url: /categories/
+                  - generic [ref=e2230] [cursor=pointer]: サイトマップ
+        - generic [ref=e2232]:
+          - generic [ref=e2233]: はじめての方へ
+          - generic [ref=e2234]:
+            - paragraph
+            - list [ref=e2235]:
+              - listitem [ref=e2236]:
+                - link "よくある質問" [ref=e2238]:
+                  - /url: https://coconala-support.zendesk.com/hc/ja
+                  - generic [ref=e2239] [cursor=pointer]: よくある質問
+              - listitem [ref=e2240]:
+                - link "ご利用ガイド" [ref=e2242]:
+                  - /url: /pages/guide_top
+                  - generic [ref=e2243] [cursor=pointer]: ご利用ガイド
+              - listitem [ref=e2244]:
+                - link "ココナラのルール" [ref=e2246]:
+                  - /url: /pages/guide_rule
+                  - generic [ref=e2247] [cursor=pointer]: ココナラのルール
+              - listitem [ref=e2248]:
+                - link "お問い合わせ" [ref=e2250]:
+                  - /url: /inquiry
+                  - generic [ref=e2251] [cursor=pointer]: お問い合わせ
+              - listitem [ref=e2252]:
+                - button "ココナラクラブオフ" [ref=e2253] [cursor=pointer]
+              - listitem [ref=e2254]:
+                - button "招待コード" [ref=e2255] [cursor=pointer]
+        - generic [ref=e2257]:
+          - generic [ref=e2258]: ココナラについて
+          - generic [ref=e2259]:
+            - paragraph
+            - list [ref=e2260]:
+              - listitem [ref=e2261]:
+                - link "会社概要" [ref=e2263]:
+                  - /url: https://coconala.co.jp/company
+                  - generic [ref=e2264] [cursor=pointer]: 会社概要
+              - listitem [ref=e2265]:
+                - link "採用情報" [ref=e2267]:
+                  - /url: https://www.coconala.co.jp/recruit
+                  - generic [ref=e2268] [cursor=pointer]: 採用情報
+              - listitem [ref=e2269]:
+                - link "ココナラ活用Mag" [ref=e2271]:
+                  - /url: https://mag.coconala.com
+                  - generic [ref=e2272] [cursor=pointer]: ココナラ活用Mag
+              - listitem [ref=e2273]:
+                - link "ココナラマガジン" [ref=e2275]:
+                  - /url: https://coconala.com/magazine/
+                  - generic [ref=e2276] [cursor=pointer]: ココナラマガジン
+              - listitem [ref=e2277]:
+                - link "法人ビジネスご利用事例" [ref=e2279]:
+                  - /url: https://coconala.com/business_magazine/
+                  - generic [ref=e2280] [cursor=pointer]: 法人ビジネスご利用事例
+      - generic [ref=e2281]:
+        - generic [ref=e2284]:
+          - link "Download on the App Store" [ref=e2286] [cursor=pointer]:
+            - /url: https://itunes.apple.com/jp/app/id944884603
+            - img "Download on the App Store"
+          - generic [ref=e2287]:
+            - link "Android App on Google play":
+              - /url: https://play.google.com/store/apps/details?id=com.coconala.android.portal
+              - img "Android App on Google play"
+        - generic [ref=e2289]:
+          - paragraph [ref=e2290]: お問い合わせ
+          - generic [ref=e2291]:
+            - text: 不具合など、
+            - generic [ref=e2292]: 返信が必要な方はこちら
+          - link "お問い合わせ" [ref=e2294] [cursor=pointer]:
+            - /url: /inquiry
+            - button "お問い合わせ" [ref=e2296]:
+              - generic [ref=e2297]:
+                - generic: お問い合わせ
+        - generic [ref=e2300]:
+          - generic [ref=e2301]: ココナラへのご意見・ご要望
+          - generic [ref=e2302]: ※個人情報の入力はお控えください
+          - textbox "ご意見・ご要望をお聞かせください。" [ref=e2304]
+          - button "送信する" [ref=e2308]:
+            - generic [ref=e2309]:
+              - generic: 送信する
+    - generic [ref=e2311]:
+      - generic [ref=e2312]:
+        - generic [ref=e2313]:
+          - link [ref=e2314] [cursor=pointer]:
+            - /url: https://twitter.com/coconala
+            - img [ref=e2317]
+          - link [ref=e2319] [cursor=pointer]:
+            - /url: https://www.facebook.com/coconalajp
+            - img [ref=e2322]
+          - link [ref=e2325] [cursor=pointer]:
+            - /url: https://www.instagram.com/coconala_official
+            - img [ref=e2328]
+          - link [ref=e2331] [cursor=pointer]:
+            - /url: https://www.youtube.com/channel/UCMUoDRN3g4pZ5KyDuLrr1ag
+            - img [ref=e2334]
+        - generic [ref=e2336]:
+          - link "利用規約" [ref=e2337] [cursor=pointer]:
+            - /url: /pages/terms_user
+          - link "プライバシーポリシー" [ref=e2338] [cursor=pointer]:
+            - /url: /pages/privacy
+          - link "外部送信ポリシー" [ref=e2339] [cursor=pointer]:
+            - /url: /pages/cookie_policy
+          - link "特定商取引法に基づく表記" [ref=e2340] [cursor=pointer]:
+            - /url: /pages/tokushou
+          - link "加盟店規約" [ref=e2341] [cursor=pointer]:
+            - /url: /pages/terms_provider
+          - link "有償ポイントに関する特約" [ref=e2342] [cursor=pointer]:
+            - /url: /pages/terms_exchange_point
+          - link "資金決済法に基づく表記" [ref=e2343] [cursor=pointer]:
+            - /url: /pages/settlement
+      - generic [ref=e2345]: © 2012-2026 coconala Inc.

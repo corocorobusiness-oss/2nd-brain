@@ -1,0 +1,730 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e5]:
+    - generic [ref=e7]:
+      - link "ココナラ" [ref=e8] [cursor=pointer]:
+        - /url: /
+        - img "ココナラ" [ref=e9]
+      - generic [ref=e11]:
+        - generic [ref=e15] [cursor=pointer]: プロ人材
+        - generic [ref=e18]:
+          - textbox "キーワードで検索" [ref=e19]
+          - button
+      - generic [ref=e23]:
+        - generic [ref=e31] [cursor=pointer]:
+          - generic:
+            - generic:
+              - generic: サポート
+        - button "ログイン" [ref=e38] [cursor=pointer]:
+          - generic [ref=e39]:
+            - generic: ログイン
+        - button "会員登録" [ref=e42] [cursor=pointer]:
+          - generic [ref=e43]:
+            - generic: 会員登録
+    - generic [ref=e47]:
+      - link "サービスを探す" [ref=e51] [cursor=pointer]:
+        - /url: /search
+        - text: サービスを探す
+      - link "プロ人材を探す" [ref=e57] [cursor=pointer]:
+        - /url: /users/
+        - text: プロ人材を探す
+      - link "ノウハウ・素材を探す" [ref=e65] [cursor=pointer]:
+        - /url: /contents_market
+        - generic: ノウハウ・素材を探す
+      - link "ブログを探す" [ref=e71] [cursor=pointer]:
+        - /url: /blogs
+        - text: ブログを探す
+      - listitem [ref=e74] [cursor=pointer]:
+        - generic [ref=e76]:
+          - link "仕事を探す" [ref=e80]:
+            - /url: /job_matching/supplier
+            - generic: 仕事を探す
+          - generic: 単発の仕事
+          - generic: 継続（時給/月給）の仕事
+  - main [ref=e93]:
+    - generic [ref=e94]:
+      - list [ref=e96]:
+        - listitem [ref=e97]:
+          - link "ホーム" [ref=e98] [cursor=pointer]:
+            - /url: /users/2500940
+        - listitem [ref=e99]:
+          - link "出品一覧" [ref=e100] [cursor=pointer]:
+            - /url: /users/2500940#services
+        - listitem [ref=e101]:
+          - link "スキル・経歴" [ref=e102] [cursor=pointer]:
+            - /url: /users/2500940#skills
+        - listitem [ref=e103]:
+          - link "評価" [ref=e104] [cursor=pointer]:
+            - /url: /users/2500940#reviews
+      - separator [ref=e105]
+    - generic [ref=e106]:
+      - generic [ref=e108]:
+        - generic [ref=e110]:
+          - figure:
+            - img "透月｜恋と人生の整理占いのカバー画像" [ref=e111]
+        - generic [ref=e112]:
+          - generic [ref=e113]:
+            - generic [ref=e114]:
+              - link "透月｜恋と人生の整理占い" [ref=e115] [cursor=pointer]:
+                - /url: /users/2500940
+                - img "透月｜恋と人生の整理占い" [ref=e116]
+              - text: 
+              - generic [ref=e118]:
+                - generic [ref=e119]: 最終ログイン：2時間前
+                - generic [ref=e120]:
+                  - text: 稼働状況
+                  - generic [ref=e121]: 対応可能です
+            - generic [ref=e122]:
+              - generic [ref=e123]:
+                - generic [ref=e125]:
+                  - paragraph [ref=e126]:
+                    - link "透月｜恋と人生の整理占い" [ref=e127] [cursor=pointer]:
+                      - /url: /users/2500940
+                  - generic [ref=e131]:
+                    - img "出品者ランク：ブロンズ" [ref=e134] [cursor=pointer]
+                    - text: 
+                - generic [ref=e135]:
+                  - button [ref=e139] [cursor=pointer]:
+                    - img [ref=e140]
+                  - button [ref=e147] [cursor=pointer]:
+                    - img [ref=e148]
+              - generic [ref=e150]: 恋と人生の整理占い師 / 会社経営経験者 /男性
+              - generic [ref=e151]:
+                - list [ref=e153]:
+                  - listitem [ref=e154]:
+                    - img [ref=e155]
+                    - generic [ref=e158]: 本人確認
+                    - img [ref=e160]
+                  - listitem [ref=e162]:
+                    - img [ref=e163]
+                    - generic [ref=e165]: 機密保持契約(NDA)
+                    - img [ref=e167]
+                  - listitem [ref=e169]:
+                    - img [ref=e170]
+                    - generic [ref=e172]: インボイス発行事業者
+                    - generic [ref=e173]:
+                      - img [ref=e174]
+                      - generic [ref=e176]: 未登録
+                - list [ref=e178]:
+                  - listitem [ref=e179]:
+                    - generic [ref=e180]: 販売実績
+                    - generic [ref=e181]: 1,771
+                  - listitem [ref=e182]:
+                    - generic [ref=e183]: 評価
+                    - generic [ref=e184]:
+                      - img [ref=e185]
+                      - text: "4.9"
+                  - listitem [ref=e187]:
+                    - generic [ref=e188]: フォロワー
+                    - generic [ref=e189]: "356"
+            - generic [ref=e193]:
+              - generic [ref=e194]:
+                - button "無料で見積り相談" [ref=e196] [cursor=pointer]:
+                  - generic [ref=e197]: 無料で見積り相談
+                - button "メッセージを送る" [ref=e199] [cursor=pointer]:
+                  - img [ref=e201]
+                  - generic [ref=e204]: メッセージを送る
+              - button "依頼方法について" [ref=e206] [cursor=pointer]:
+                - img [ref=e207]
+                - generic [ref=e211]: 依頼方法について
+          - generic [ref=e213]:
+            - generic [ref=e214]: 納品ごとの予算目安
+            - list [ref=e215]:
+              - listitem [ref=e216]:
+                - link "占い" [ref=e217] [cursor=pointer]:
+                  - /url: /categories/3
+                  - generic [ref=e218]: 占い
+                - paragraph [ref=e220]: 恋愛・婚活・人生相談の占い 500円〜
+          - generic [ref=e221]:
+            - generic [ref=e222]:
+              - generic [ref=e224]: スケジュール
+              - paragraph [ref=e225]: 公開初期のため、少人数ずつ丁寧に受付しています。 通常24時間以内に初回返信いたします。 鑑定書は商品ごとの納期に沿ってお届けします。
+            - generic [ref=e227] [cursor=pointer]:
+              - generic [ref=e228]: もっと見る
+              - generic [ref=e229]: 
+      - generic [ref=e231]:
+        - generic [ref=e233]:
+          - heading "恋愛・婚活・人生の迷いを、占いと現実視点で整理します" [level=2] [ref=e234]
+          - paragraph [ref=e235]: はじめまして。 「透月｜恋と人生の整理占い」です。 相手の気持ち、復縁の迷い、婚活、仕事や人生の転機を、占いと現実的な視点で整理する鑑定をしています。 私は会社経営・人事の現場で、採用、配置、評価、相談などを通じて、これまで4000人以上と向き合ってきました。 恋愛で同じ不安を繰り返す人。 婚活で「選べない」「続かない」と立ち止まる人。 人間関係で疲れやすい人。 人生の転機で、どちらへ進めばいいか分からなくなる人。 人にはそれぞれ、迷いやすい場面、合いやすい相手、疲れやすい関係、力を発揮しやすい環境があります。 こちらでは、四柱推命、ホロスコープ、タロット、数秘術などの占いの視点に、人と向き合ってきた現実的な視点を重ねて、読み返せる鑑定文・PDFとしてお届けします。 鑑定では、未来を決めつけたり、不安を煽ったりすることはしません。 「今の自分は何に迷っているのか」 「相手や環境とどう向き合えばいいのか」 「次にどんな行動を取ると気持ちが整理しやすいのか」 を、できるだけ具体的に言葉にします。 得意なテーマは、恋愛占い、相手の気持ち、復縁、音信不通、婚活、結婚、運命の人、相性、仕事運、適職、転職、人間関係、自己理解、30日運勢カレンダーです。 占い結果は、未来や結果を保証するものではありません。 けれど、自分の傾向を知り、選択肢を整理し、次の一歩を考える材料にはなります。 現在は公開初期のため、モニター価格で少人数ずつ受付しています。 恋愛、婚活、仕事、自己理解で迷っている方は、安心してご相談ください。 対応できることは、恋愛占い、相手の気持ち、復縁の迷い、音信不通、婚活、結婚、運命の人、相性、仕事運、適職、転職、自己理解、読み返せるPDF鑑定書です。 医療、法律、投資判断、合否、生死に関する鑑定、第三者を傷つける内容、相手の意思を操作する内容、結果保証は対応しておりません。
+          - button " もっと見る" [ref=e237] [cursor=pointer]:
+            - generic [ref=e238]: 
+            - text: もっと見る
+        - generic [ref=e239]:
+          - heading "出品サービス（5件）" [level=2] [ref=e241]
+          - list [ref=e243]:
+            - listitem [ref=e244]:
+              - generic [ref=e245]:
+                - link "… 四柱推命×ホロスコープ自己理解鑑定書を作ります  4.9 実績 295 件 購入可能 500 円" [ref=e246] [cursor=pointer]:
+                  - /url: /services/1764267
+                  - generic [ref=e248]:
+                    - heading "… 四柱推命×ホロスコープ自己理解鑑定書を作ります" [level=3] [ref=e250]
+                    - generic [ref=e251]:
+                      - generic [ref=e252]:
+                        - generic [ref=e253]: 
+                        - text: "4.9"
+                      - generic:
+                        - text: 実績
+                        - strong [ref=e254]: "295"
+                        - text: 件
+                    - generic [ref=e255]:
+                      - generic [ref=e256]: 購入可能
+                      - generic [ref=e257]:
+                        - strong [ref=e258]: "500"
+                        - text: 円
+                - button "" [ref=e260] [cursor=pointer]:
+                  - generic [ref=e261]: 
+            - listitem [ref=e262]:
+              - generic [ref=e263]:
+                - link "… あなたの取扱説明書PDFを大容量で作成します  4.9 実績 489 件 購入可能 500 円" [ref=e264] [cursor=pointer]:
+                  - /url: /services/1764475
+                  - generic [ref=e266]:
+                    - heading "… あなたの取扱説明書PDFを大容量で作成します" [level=3] [ref=e268]
+                    - generic [ref=e269]:
+                      - generic [ref=e270]:
+                        - generic [ref=e271]: 
+                        - text: "4.9"
+                      - generic:
+                        - text: 実績
+                        - strong [ref=e272]: "489"
+                        - text: 件
+                    - generic [ref=e273]:
+                      - generic [ref=e274]: 購入可能
+                      - generic [ref=e275]:
+                        - strong [ref=e276]: "500"
+                        - text: 円
+                - button "" [ref=e278] [cursor=pointer]:
+                  - generic [ref=e279]: 
+            - listitem [ref=e280]:
+              - generic [ref=e281]:
+                - link "… 恋愛｜相手の気持ちと本音、次の一手を占います  5.0 実績 163 件 購入可能 500 円" [ref=e282] [cursor=pointer]:
+                  - /url: /services/1764502
+                  - generic [ref=e284]:
+                    - heading "… 恋愛｜相手の気持ちと本音、次の一手を占います" [level=3] [ref=e286]
+                    - generic [ref=e287]:
+                      - generic [ref=e288]:
+                        - generic [ref=e289]: 
+                        - text: "5.0"
+                      - generic:
+                        - text: 実績
+                        - strong [ref=e290]: "163"
+                        - text: 件
+                    - generic [ref=e291]:
+                      - generic [ref=e292]: 購入可能
+                      - generic [ref=e293]:
+                        - strong [ref=e294]: "500"
+                        - text: 円
+                - button "" [ref=e296] [cursor=pointer]:
+                  - generic [ref=e297]: 
+            - listitem [ref=e298]:
+              - generic [ref=e299]:
+                - link "… 婚活・運命の人戦略書PDFを作成します  4.9 実績 578 件 購入可能 500 円" [ref=e300] [cursor=pointer]:
+                  - /url: /services/1764526
+                  - generic [ref=e302]:
+                    - heading "… 婚活・運命の人戦略書PDFを作成します" [level=3] [ref=e304]
+                    - generic [ref=e305]:
+                      - generic [ref=e306]:
+                        - generic [ref=e307]: 
+                        - text: "4.9"
+                      - generic:
+                        - text: 実績
+                        - strong [ref=e308]: "578"
+                        - text: 件
+                    - generic [ref=e309]:
+                      - generic [ref=e310]: 購入可能
+                      - generic [ref=e311]:
+                        - strong [ref=e312]: "500"
+                        - text: 円
+                - button "" [ref=e314] [cursor=pointer]:
+                  - generic [ref=e315]: 
+            - listitem [ref=e316]:
+              - generic [ref=e317]:
+                - link "… 30日運勢カレンダーPDFをあなた専用に作ります  4.5 実績 38 件 購入可能 1,000 円" [ref=e318] [cursor=pointer]:
+                  - /url: /services/3235430
+                  - generic [ref=e320]:
+                    - heading "… 30日運勢カレンダーPDFをあなた専用に作ります" [level=3] [ref=e322]
+                    - generic [ref=e323]:
+                      - generic [ref=e324]:
+                        - generic [ref=e325]: 
+                        - text: "4.5"
+                      - generic:
+                        - text: 実績
+                        - strong [ref=e326]: "38"
+                        - text: 件
+                    - generic [ref=e327]:
+                      - generic [ref=e328]: 購入可能
+                      - generic [ref=e329]:
+                        - strong [ref=e330]: 1,000
+                        - text: 円
+                - button "" [ref=e332] [cursor=pointer]:
+                  - generic [ref=e333]: 
+        - generic [ref=e334]:
+          - heading "職種・スキル" [level=2] [ref=e336]
+          - generic [ref=e338]:
+            - heading "得意分野" [level=3] [ref=e340]
+            - list [ref=e343]:
+              - listitem [ref=e344]:
+                - generic [ref=e346]:
+                  - generic [ref=e347]:
+                    - link "占い" [ref=e348] [cursor=pointer]:
+                      - /url: /categories/3
+                      - paragraph [ref=e349]: 占い
+                    - button "無料で見積り相談" [ref=e351] [cursor=pointer]:
+                      - generic [ref=e352]: 無料で見積り相談
+                  - generic [ref=e353]:
+                    - paragraph [ref=e354]: ・恋愛・婚活・人生相談の占い 500円〜
+                    - paragraph [ref=e355]: 相手の気持ち、復縁、婚活、相性、仕事や人生の転機を、占いと4000人面談の現実視点で整理します。
+                  - list [ref=e357]:
+                    - listitem [ref=e358]: 恋愛占い
+                    - listitem [ref=e359]: 相手の気持ち
+                    - listitem [ref=e360]: 婚活
+                    - listitem [ref=e361]: 復縁
+                    - listitem [ref=e362]: 相性
+                    - listitem [ref=e363]: 四柱推命
+                    - listitem [ref=e364]: ホロスコープ
+        - generic [ref=e365]:
+          - heading "評価" [level=2] [ref=e367]
+          - generic [ref=e368]:
+            - generic [ref=e371]:
+              - generic [ref=e372]: 16日前
+              - paragraph [ref=e373]:
+                - generic [ref=e374]:  
+                - text: by 匿名
+              - paragraph [ref=e375]:
+                - link "占い" [ref=e376] [cursor=pointer]:
+                  - /url: /categories/3
+                - text: ">"
+                - link "総合運鑑定" [ref=e377] [cursor=pointer]:
+                  - /url: /categories/659
+              - paragraph [ref=e378]:
+                - link "あなたの取扱説明書PDFを大容量で作成します 本質・強み・恋愛・仕事・人間関係を総合鑑定" [ref=e379] [cursor=pointer]:
+                  - /url: /services/1764475
+              - generic [ref=e380]: ありがとうございました。
+              - button "参考になった" [ref=e382] [cursor=pointer]:
+                - generic [ref=e383]: 参考になった
+            - text:  
+          - generic [ref=e384]:
+            - generic [ref=e387]:
+              - generic [ref=e388]: 28日前
+              - paragraph [ref=e389]:
+                - generic [ref=e390]:  
+                - text: by 女性
+              - paragraph [ref=e391]:
+                - link "占い" [ref=e392] [cursor=pointer]:
+                  - /url: /categories/3
+                - text: ">"
+                - link "総合運鑑定" [ref=e393] [cursor=pointer]:
+                  - /url: /categories/659
+              - paragraph [ref=e394]:
+                - link "四柱推命×ホロスコープ自己理解鑑定書を作ります 本質・強み・恋愛・仕事の傾向をPDFに整理" [ref=e395] [cursor=pointer]:
+                  - /url: /services/1764267
+              - generic [ref=e396]: 素早い対応をしていただき、ありがとうございました！
+              - button "参考になった" [ref=e398] [cursor=pointer]:
+                - generic [ref=e399]: 参考になった
+            - text:  
+          - generic [ref=e400]:
+            - generic [ref=e403]:
+              - generic [ref=e404]: 27日前
+              - paragraph [ref=e405]:
+                - generic [ref=e406]:  
+                - text: by 女性
+              - paragraph [ref=e407]:
+                - link "占い" [ref=e408] [cursor=pointer]:
+                  - /url: /categories/3
+                - text: ">"
+                - link "総合運鑑定" [ref=e409] [cursor=pointer]:
+                  - /url: /categories/659
+              - paragraph [ref=e410]:
+                - link "四柱推命×ホロスコープ自己理解鑑定書を作ります 本質・強み・恋愛・仕事の傾向をPDFに整理" [ref=e411] [cursor=pointer]:
+                  - /url: /services/1764267
+              - generic [ref=e412]: 簡潔でわかりやすかったです。 この価格でこのボリュームはかなりお得だと思いました
+              - button "参考になった" [ref=e414] [cursor=pointer]:
+                - generic [ref=e415]: 参考になった
+            - text:  
+          - generic [ref=e416]:
+            - generic [ref=e419]:
+              - generic [ref=e420]: 1ヶ月前
+              - paragraph [ref=e421]:
+                - generic [ref=e422]:  
+                - text: by 匿名
+              - paragraph [ref=e423]:
+                - link "占い" [ref=e424] [cursor=pointer]:
+                  - /url: /categories/3
+                - text: ">"
+                - link "総合運鑑定" [ref=e425] [cursor=pointer]:
+                  - /url: /categories/659
+              - paragraph [ref=e426]:
+                - link "あなたの取扱説明書PDFを大容量で作成します 本質・強み・恋愛・仕事・人間関係を総合鑑定" [ref=e427] [cursor=pointer]:
+                  - /url: /services/1764475
+              - generic [ref=e428]: 自分の取説が形になり、自分自信をわかるきっかけになりました。 ありがとうございます
+              - button "参考になった" [ref=e430] [cursor=pointer]:
+                - generic [ref=e431]: 参考になった
+            - text:  
+          - generic [ref=e432]:
+            - generic [ref=e435]:
+              - generic [ref=e436]: 1ヶ月前
+              - paragraph [ref=e437]:
+                - generic [ref=e438]:  
+                - text: by 匿名
+              - paragraph [ref=e439]:
+                - link "占い" [ref=e440] [cursor=pointer]:
+                  - /url: /categories/3
+                - text: ">"
+                - link "総合運鑑定" [ref=e441] [cursor=pointer]:
+                  - /url: /categories/659
+              - paragraph [ref=e442]:
+                - link "四柱推命×ホロスコープ自己理解鑑定書を作ります 本質・強み・恋愛・仕事の傾向をPDFに整理" [ref=e443] [cursor=pointer]:
+                  - /url: /services/1764267
+              - generic [ref=e444]: この度は迅速に対応いただき、ありがとうございました。いただいた分析も心当たりがあることばかりで自分のことを整理できたと思います。
+              - button "参考になった" [ref=e446] [cursor=pointer]:
+                - generic [ref=e447]: 参考になった
+            - text:  
+          - button "もっと見る " [ref=e449] [cursor=pointer]:
+            - text: もっと見る
+            - generic [ref=e450]: 
+        - list [ref=e453]:
+          - listitem [ref=e454] [cursor=pointer]:
+            - generic [ref=e456]: 
+          - listitem [ref=e457] [cursor=pointer]:
+            - generic [ref=e459]: 
+          - listitem [ref=e460] [cursor=pointer]:
+            - img [ref=e461]
+        - generic [ref=e464]:
+          - button "Google Googleで登録する" [ref=e465] [cursor=pointer]:
+            - img "Google" [ref=e466]
+            - generic [ref=e467]: Googleで登録する
+          - button "Apple Appleで登録する" [ref=e468] [cursor=pointer]:
+            - img "Apple" [ref=e469]
+            - generic [ref=e470]: Appleで登録する
+          - button " メールアドレスで登録" [ref=e471] [cursor=pointer]:
+            - generic [ref=e472]: 
+            - text: メールアドレスで登録
+  - contentinfo [ref=e477]:
+    - generic [ref=e478]:
+      - generic [ref=e482]:
+        - generic [ref=e484]:
+          - generic [ref=e485]: サービス一覧
+          - generic [ref=e486]:
+            - paragraph [ref=e487]: ウェブやアプリで依頼する
+            - list [ref=e488]:
+              - listitem [ref=e489]:
+                - link "ココナラスキルマーケット" [ref=e491]:
+                  - /url: /
+                  - generic [ref=e492] [cursor=pointer]: ココナラスキルマーケット
+              - listitem [ref=e493]:
+                - link "ココナラ募集" [ref=e495]:
+                  - /url: https://job-matching.coconala.com/client
+                  - generic [ref=e496] [cursor=pointer]: ココナラ募集
+          - generic [ref=e497]:
+            - paragraph [ref=e498]: エージェントに依頼する
+            - list [ref=e499]:
+              - listitem [ref=e500]:
+                - link "ココナラアシスト" [ref=e502]:
+                  - /url: https://assist.coconala.com
+                  - generic [ref=e503] [cursor=pointer]: ココナラアシスト
+              - listitem [ref=e504]:
+                - link "ココナラテック" [ref=e506]:
+                  - /url: https://tech.coconala.com/ref-tracking/coconala?to=/enterprise/inquiry
+                  - generic [ref=e507] [cursor=pointer]: ココナラテック
+              - listitem [ref=e508]:
+                - link "ココナラプロ" [ref=e510]:
+                  - /url: https://professional.coconala.com
+                  - generic [ref=e511] [cursor=pointer]: ココナラプロ
+              - listitem [ref=e512]:
+                - link "ココナラコンサル" [ref=e514]:
+                  - /url: https://consul.coconala.com/talent
+                  - generic [ref=e515] [cursor=pointer]: ココナラコンサル
+          - generic [ref=e516]:
+            - paragraph [ref=e517]: コンテンツを購入する
+            - list [ref=e518]:
+              - listitem [ref=e519]:
+                - link "ココナラコンテンツマーケット" [ref=e521]:
+                  - /url: /contents_market/
+                  - generic [ref=e522] [cursor=pointer]: ココナラコンテンツマーケット
+          - generic [ref=e523]:
+            - paragraph [ref=e524]: その他
+            - list [ref=e525]:
+              - listitem [ref=e526]:
+                - link "ココナラ法律相談" [ref=e528]:
+                  - /url: https://legal.coconala.com
+                  - generic [ref=e529] [cursor=pointer]: ココナラ法律相談
+        - generic [ref=e531]:
+          - generic [ref=e532]: 発注/クライアントの方へ
+          - generic [ref=e533]:
+            - paragraph
+            - list [ref=e534]:
+              - listitem [ref=e535]:
+                - link "出品サービスを検索" [ref=e537]:
+                  - /url: /search
+                  - generic [ref=e538] [cursor=pointer]: 出品サービスを検索
+              - listitem [ref=e539]:
+                - button "仕事・求人を投稿して募集" [ref=e540] [cursor=pointer]
+              - listitem [ref=e541]:
+                - link "プロ人材を探してスカウト" [ref=e543]:
+                  - /url: /users
+                  - generic [ref=e544] [cursor=pointer]: プロ人材を探してスカウト
+              - listitem [ref=e545]:
+                - link "ビジネス代行・アシスタントを紹介してもらう" [ref=e547]:
+                  - /url: https://assist.coconala.com
+                  - generic [ref=e548] [cursor=pointer]: ビジネス代行・アシスタントを紹介してもらう
+              - listitem [ref=e549]:
+                - link "業務委託エンジニアを 紹介してもらう" [ref=e551]:
+                  - /url: https://tech.coconala.com/ref-tracking/coconala?to=/enterprise/inquiry
+                  - generic [ref=e552] [cursor=pointer]:
+                    - text: 業務委託エンジニアを
+                    - text: 紹介してもらう
+              - listitem [ref=e553]:
+                - link "非公開の実名クリエイターを 紹介してもらう" [ref=e555]:
+                  - /url: https://professional.coconala.com
+                  - generic [ref=e556] [cursor=pointer]:
+                    - text: 非公開の実名クリエイターを
+                    - text: 紹介してもらう
+              - listitem [ref=e557]:
+                - link "コンサルタントを紹介してもらう" [ref=e559]:
+                  - /url: https://consul.coconala.com/talent
+                  - generic [ref=e560] [cursor=pointer]: コンサルタントを紹介してもらう
+              - listitem [ref=e561]:
+                - link "ブログを探す" [ref=e563]:
+                  - /url: /blogs
+                  - generic [ref=e564] [cursor=pointer]: ブログを探す
+        - generic [ref=e566]:
+          - generic [ref=e567]: 出品/働きたい方へ
+          - generic [ref=e568]:
+            - paragraph
+            - list [ref=e569]:
+              - listitem [ref=e570]:
+                - link "サービスを出品する" [ref=e572]:
+                  - /url: /pages/lp_provider
+                  - generic [ref=e573] [cursor=pointer]: サービスを出品する
+              - listitem [ref=e574]:
+                - link "単発・スポットの仕事を探す" [ref=e576]:
+                  - /url: /requests
+                  - generic [ref=e577] [cursor=pointer]: 単発・スポットの仕事を探す
+              - listitem [ref=e578]:
+                - link "継続（時給/月給）の仕事を探す" [ref=e580]:
+                  - /url: /job_matching/outsources
+                  - generic [ref=e581] [cursor=pointer]: 継続（時給/月給）の仕事を探す
+              - listitem [ref=e582]:
+                - link "ビジネス代行業務委託で働く" [ref=e584]:
+                  - /url: https://assist.coconala.com/talent
+                  - generic [ref=e585] [cursor=pointer]: ビジネス代行業務委託で働く
+              - listitem [ref=e586]:
+                - link "エンジニア業務委託で働く" [ref=e588]:
+                  - /url: https://tech.coconala.com/ref-tracking/coconala?to=/
+                  - generic [ref=e589] [cursor=pointer]: エンジニア業務委託で働く
+              - listitem [ref=e590]:
+                - link "副業コンサルティングで働く" [ref=e592]:
+                  - /url: https://consul.coconala.com/talent
+                  - generic [ref=e593] [cursor=pointer]: 副業コンサルティングで働く
+              - listitem [ref=e594]:
+                - button "スキル/経歴を登録する" [ref=e595] [cursor=pointer]
+              - listitem [ref=e596]:
+                - button "コンテンツを出品する" [ref=e597] [cursor=pointer]
+              - listitem [ref=e598]:
+                - button "ブログを投稿する" [ref=e599] [cursor=pointer]
+              - listitem [ref=e600]:
+                - link "ヘルプとガイド" [ref=e602]:
+                  - /url: /pages/guide_top
+                  - generic [ref=e603] [cursor=pointer]: ヘルプとガイド
+              - listitem [ref=e604]:
+                - link "出品のコツ" [ref=e606]:
+                  - /url: https://mag.coconala.com/category/knowhow
+                  - generic [ref=e607] [cursor=pointer]: 出品のコツ
+              - listitem [ref=e608]:
+                - link "PRO認定制度" [ref=e610]:
+                  - /url: /pages/about_pro
+                  - generic [ref=e611] [cursor=pointer]: PRO認定制度
+        - generic [ref=e613]:
+          - generic [ref=e614]: カテゴリ
+          - generic [ref=e615]:
+            - paragraph
+            - list [ref=e616]:
+              - listitem [ref=e617]:
+                - link "イラスト作成・漫画制作" [ref=e619]:
+                  - /url: /categories/9
+                  - generic [ref=e620] [cursor=pointer]: イラスト作成・漫画制作
+              - listitem [ref=e621]:
+                - link "デザイン制作" [ref=e623]:
+                  - /url: /categories/18
+                  - generic [ref=e624] [cursor=pointer]: デザイン制作
+              - listitem [ref=e625]:
+                - link "Web制作・HP作成・EC構築" [ref=e627]:
+                  - /url: /categories/22
+                  - generic [ref=e628] [cursor=pointer]: Web制作・HP作成・EC構築
+              - listitem [ref=e629]:
+                - link "動画編集・映像制作" [ref=e631]:
+                  - /url: /categories/10
+                  - generic [ref=e632] [cursor=pointer]: 動画編集・映像制作
+              - listitem [ref=e633]:
+                - link "集客・マーケティング相談" [ref=e635]:
+                  - /url: /categories/16
+                  - generic [ref=e636] [cursor=pointer]: 集客・マーケティング相談
+              - listitem [ref=e637]:
+                - link "ビジネス代行・事務代行" [ref=e639]:
+                  - /url: /categories/13
+                  - generic [ref=e640] [cursor=pointer]: ビジネス代行・事務代行
+              - listitem [ref=e641]:
+                - link "音楽制作・ナレーション" [ref=e643]:
+                  - /url: /categories/23
+                  - generic [ref=e644] [cursor=pointer]: 音楽制作・ナレーション
+              - listitem [ref=e645]:
+                - link "IT相談・システム開発" [ref=e647]:
+                  - /url: /categories/11
+                  - generic [ref=e648] [cursor=pointer]: IT相談・システム開発
+              - listitem [ref=e649]:
+                - link "ライティング・翻訳" [ref=e651]:
+                  - /url: /categories/19
+                  - generic [ref=e652] [cursor=pointer]: ライティング・翻訳
+              - listitem [ref=e653]:
+                - link "コンサルティング・士業" [ref=e655]:
+                  - /url: /categories/27
+                  - generic [ref=e656] [cursor=pointer]: コンサルティング・士業
+              - listitem [ref=e657]:
+                - link "生成AI活用・開発・制作" [ref=e659]:
+                  - /url: /categories/28
+                  - generic [ref=e660] [cursor=pointer]: 生成AI活用・開発・制作
+              - listitem [ref=e661]:
+                - link "占い" [ref=e663]:
+                  - /url: /categories/3
+                  - generic [ref=e664] [cursor=pointer]: 占い
+              - listitem [ref=e665]:
+                - link "電話占い" [ref=e667]:
+                  - /url: /categories/3?service_kind=1
+                  - generic [ref=e668] [cursor=pointer]: 電話占い
+              - listitem [ref=e669]:
+                - link "悩み相談・カウンセリング" [ref=e671]:
+                  - /url: /categories/2
+                  - generic [ref=e672] [cursor=pointer]: 悩み相談・カウンセリング
+              - listitem [ref=e673]:
+                - link "学習指導・資格・キャリア相談" [ref=e675]:
+                  - /url: /categories/12
+                  - generic [ref=e676] [cursor=pointer]: 学習指導・資格・キャリア相談
+              - listitem [ref=e677]:
+                - link "住まい・美容・生活相談" [ref=e679]:
+                  - /url: /categories/5
+                  - generic [ref=e680] [cursor=pointer]: 住まい・美容・生活相談
+              - listitem [ref=e681]:
+                - link "オンラインレッスン・習い事" [ref=e683]:
+                  - /url: /categories/26
+                  - generic [ref=e684] [cursor=pointer]: オンラインレッスン・習い事
+              - listitem [ref=e685]:
+                - link "ハンドメイド制作" [ref=e687]:
+                  - /url: /categories/1001
+                  - generic [ref=e688] [cursor=pointer]: ハンドメイド制作
+              - listitem [ref=e689]:
+                - link "出張撮影・出張サービス" [ref=e691]:
+                  - /url: /categories/29
+                  - generic [ref=e692] [cursor=pointer]: 出張撮影・出張サービス
+              - listitem [ref=e693]:
+                - link "資産運用・副業の相談" [ref=e695]:
+                  - /url: /categories/17
+                  - generic [ref=e696] [cursor=pointer]: 資産運用・副業の相談
+              - listitem [ref=e697]:
+                - link "サイトマップ" [ref=e699]:
+                  - /url: /categories/
+                  - generic [ref=e700] [cursor=pointer]: サイトマップ
+        - generic [ref=e702]:
+          - generic [ref=e703]: はじめての方へ
+          - generic [ref=e704]:
+            - paragraph
+            - list [ref=e705]:
+              - listitem [ref=e706]:
+                - link "よくある質問" [ref=e708]:
+                  - /url: https://coconala-support.zendesk.com/hc/ja
+                  - generic [ref=e709] [cursor=pointer]: よくある質問
+              - listitem [ref=e710]:
+                - link "ご利用ガイド" [ref=e712]:
+                  - /url: /pages/guide_top
+                  - generic [ref=e713] [cursor=pointer]: ご利用ガイド
+              - listitem [ref=e714]:
+                - link "ココナラのルール" [ref=e716]:
+                  - /url: /pages/guide_rule
+                  - generic [ref=e717] [cursor=pointer]: ココナラのルール
+              - listitem [ref=e718]:
+                - link "お問い合わせ" [ref=e720]:
+                  - /url: /inquiry
+                  - generic [ref=e721] [cursor=pointer]: お問い合わせ
+              - listitem [ref=e722]:
+                - button "ココナラクラブオフ" [ref=e723] [cursor=pointer]
+              - listitem [ref=e724]:
+                - button "招待コード" [ref=e725] [cursor=pointer]
+        - generic [ref=e727]:
+          - generic [ref=e728]: ココナラについて
+          - generic [ref=e729]:
+            - paragraph
+            - list [ref=e730]:
+              - listitem [ref=e731]:
+                - link "会社概要" [ref=e733]:
+                  - /url: https://coconala.co.jp/company
+                  - generic [ref=e734] [cursor=pointer]: 会社概要
+              - listitem [ref=e735]:
+                - link "採用情報" [ref=e737]:
+                  - /url: https://www.coconala.co.jp/recruit
+                  - generic [ref=e738] [cursor=pointer]: 採用情報
+              - listitem [ref=e739]:
+                - link "ココナラ活用Mag" [ref=e741]:
+                  - /url: https://mag.coconala.com
+                  - generic [ref=e742] [cursor=pointer]: ココナラ活用Mag
+              - listitem [ref=e743]:
+                - link "ココナラマガジン" [ref=e745]:
+                  - /url: https://coconala.com/magazine/
+                  - generic [ref=e746] [cursor=pointer]: ココナラマガジン
+              - listitem [ref=e747]:
+                - link "法人ビジネスご利用事例" [ref=e749]:
+                  - /url: https://coconala.com/business_magazine/
+                  - generic [ref=e750] [cursor=pointer]: 法人ビジネスご利用事例
+      - generic [ref=e751]:
+        - generic [ref=e754]:
+          - link "Download on the App Store" [ref=e756] [cursor=pointer]:
+            - /url: https://itunes.apple.com/jp/app/id944884603
+            - img "Download on the App Store"
+          - generic [ref=e757]:
+            - link "Android App on Google play":
+              - /url: https://play.google.com/store/apps/details?id=com.coconala.android.portal
+              - img "Android App on Google play"
+        - generic [ref=e759]:
+          - paragraph [ref=e760]: お問い合わせ
+          - generic [ref=e761]:
+            - text: 不具合など、
+            - generic [ref=e762]: 返信が必要な方はこちら
+          - link "お問い合わせ" [ref=e764] [cursor=pointer]:
+            - /url: /inquiry
+            - button "お問い合わせ" [ref=e766]:
+              - generic [ref=e767]:
+                - generic: お問い合わせ
+        - generic [ref=e770]:
+          - generic [ref=e771]: ココナラへのご意見・ご要望
+          - generic [ref=e772]: ※個人情報の入力はお控えください
+          - textbox "ご意見・ご要望をお聞かせください。" [ref=e774]
+          - button "送信する" [ref=e778]:
+            - generic [ref=e779]:
+              - generic: 送信する
+    - generic [ref=e781]:
+      - generic [ref=e782]:
+        - generic [ref=e783]:
+          - link [ref=e784] [cursor=pointer]:
+            - /url: https://twitter.com/coconala
+            - img [ref=e787]
+          - link [ref=e789] [cursor=pointer]:
+            - /url: https://www.facebook.com/coconalajp
+            - img [ref=e792]
+          - link [ref=e795] [cursor=pointer]:
+            - /url: https://www.instagram.com/coconala_official
+            - img [ref=e798]
+          - link [ref=e801] [cursor=pointer]:
+            - /url: https://www.youtube.com/channel/UCMUoDRN3g4pZ5KyDuLrr1ag
+            - img [ref=e804]
+        - generic [ref=e806]:
+          - link "利用規約" [ref=e807] [cursor=pointer]:
+            - /url: /pages/terms_user
+          - link "プライバシーポリシー" [ref=e808] [cursor=pointer]:
+            - /url: /pages/privacy
+          - link "外部送信ポリシー" [ref=e809] [cursor=pointer]:
+            - /url: /pages/cookie_policy
+          - link "特定商取引法に基づく表記" [ref=e810] [cursor=pointer]:
+            - /url: /pages/tokushou
+          - link "加盟店規約" [ref=e811] [cursor=pointer]:
+            - /url: /pages/terms_provider
+          - link "有償ポイントに関する特約" [ref=e812] [cursor=pointer]:
+            - /url: /pages/terms_exchange_point
+          - link "資金決済法に基づく表記" [ref=e813] [cursor=pointer]:
+            - /url: /pages/settlement
+      - generic [ref=e815]: © 2012-2026 coconala Inc.
