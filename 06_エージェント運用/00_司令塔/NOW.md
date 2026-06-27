@@ -39,7 +39,7 @@
 - 会計正本はfreee。証憑正本はDrive/証憑保管側
 - `freee_registered_txns.json` は金額正本ではなく、二重登録防止キー台帳
 - 旧AI帳簿CSV・仕訳帳・収支管理は参考・凍結・非申告用
-- 現行kichoはCSV・収支管理・日誌を書き換えるため、記帳係としては停止/置換対象
+- 現行kichoはCSV・収支管理・日誌を書き換えるため、記帳係から外した。2026-06-27に `com.korokoro.kicho-weekly` は現セッションbootout済み
 - 後継を作る場合は、freee明細・証憑・補助台帳の差分を見る読み取り専用監査レポートにする
-- `kicho-weekly` の実停止、Watchtower期待リスト、LaunchAgent、台帳の完全整合は同一メンテで行う
+- `kicho-weekly` のplist退避、Watchtower期待リスト、LaunchAgent、台帳の完全整合は残タスク。plist退避とWatchtower本体編集はホーム配下書き込み制限で未実施
 - `freee-uncleared-monitor` は読み取り専用ジョブとして台帳に追記済み。ただしWatchtower期待リストは未整合、monthly-accountingと同時刻なので統合/時刻ずらしが残タスク
