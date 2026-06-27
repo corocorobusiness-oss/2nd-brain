@@ -44,3 +44,4 @@
 - 後継を作る場合は、freee明細・証憑・補助台帳の差分を見る読み取り専用監査レポートにする
 - `kicho-weekly` のplist退避、Watchtower期待リスト更新は残タスク。plist退避とWatchtower本体編集はホーム配下書き込み制限で未実施
 - `freee-uncleared-monitor` は2026-06-27にbootout＋disable済み。再開するならWatchtower期待リスト追加＋monthly-accountingとの時刻ずらし、またはmonthly-accountingへの統合が必要
+- 2026-06-27監査で、Watchtower期待リストと導入済み台帳の追加ズレも検知。Vault台帳は更新済みだが、`watchtower_local.py` 本体修正はホーム配下制限で未実施

@@ -91,12 +91,12 @@
 4. **当月ネタチャンネルの一括作成**: カレンダー確定時に、当月全ネタの `#MMDD-ネタ名` チャンネルをDiscord APIで🎬制作中カテゴリ（1512913497896259616）に一括作成し、`~/.claude/channels/discord/access.json` の groups にも追記する（作成はcurl必須。Python urllibはUAブロックで403）
 → 制作ボードは「今月の現在地だけ」、カレンダーは「月の計画と実績の記録」と役割を分ける
 
-## ネタチャンネル・ライフサイクル監視（2026-06-11導入・自動）
-- launchd `com.claude.channel-lifecycle`（旧Mac kojinn / 毎日9:30）が監視役
-- 動画公開+14日のチャンネルを検出 → 生ログを制作アーカイブへ全保存 → ナレッジを制作ログへ収穫 → #レポートに削除予告 → 24時間ストップなしで削除＋access.jsonから除去
+## ネタチャンネル・ライフサイクル監視（2026-06-11導入・2026-06-24退避済み）
+- launchd `com.claude.channel-lifecycle` は2026-06-24にplist退避済み。現時点では自動監視役としては動いていない
+- 復活する場合の設計: 動画公開+14日のチャンネルを検出 → 生ログを制作アーカイブへ全保存 → ナレッジを制作ログへ収穫 → #レポートに削除予告 → 24時間ストップなしで削除＋access.jsonから除去
 - 公開日はYouTube APIから直接取得（報告忘れがあっても動く）。対象なしの日は何も通知しない（沈黙が正常）
 - エラー時は必ず #レポート に自己申告する設計
-- 手順書: `~/.claude/scripts/channel_lifecycle.md` / 状態: `channel_lifecycle_state.json`
+- 手順書: `~/.claude/scripts/channel_lifecycle.md` / 状態: `channel_lifecycle_state.json`。再開時は `~/.claude/archived-launchagents/` からplistを戻し、Watchtower期待リストも同時整合する
 
 ## YouTube制作フロー
 1. ネタ候補を出す

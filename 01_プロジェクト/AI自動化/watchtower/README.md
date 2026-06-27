@@ -51,10 +51,12 @@ cd "/Users/kabushikikaishakorokoro/Library/CloudStorage/GoogleDrive-corocoro.bus
 
 ## 現在の注意
 
-2026-06-11時点で、Codexの実行環境からは `~/Library/LaunchAgents` への書き込みと `launchctl bootstrap` が許可されず、自動起動登録は未完了。
+2026-06-27時点で `com.korokoro.yuma-watchtower` はlaunchd登録済み。
+残りの論点は自動起動ではなく、`~/.claude/scripts/watchtower_local.py` の `EXPECTED_JOBS` と `導入済み.md` の整合。
 
-本体の手動実行は成功済み。
-Terminalから `watchtower_on.sh` を実行すればONにできる想定。
+- 期待リストから外す候補: 停止済み `com.korokoro.kicho-weekly`、退避済み `com.claude.channel-lifecycle`
+- 期待リストへ追加候補: `com.claude.corpus-collect` / `com.claude.thread-format-learning` / `com.claude.demaecan-reminder` / `com.claude.satellite-autocommit`
+- Codex環境からホーム配下の本体編集は権限制限で未実施
 
 ## 禁止事項
 
