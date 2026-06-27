@@ -1,7 +1,13 @@
 #!/usr/bin/env python3
-"""AI帳簿 週次自動記帳 v2「kicho」 — 家電型（エージェント不要で完走する）
+"""AI帳簿 週次自動記帳 v2「kicho」 — 凍結済み旧記帳系
 
-毎週月曜9:30にlaunchdから起動され、以下を無人実行する:
+2026-06-27整理:
+  会計の正本はfreee。旧CSV帳簿・収支管理は参考・凍結・非申告用。
+  このスクリプトはfreee明細を取得した後、旧CSV・仕訳帳・収支管理・日誌を
+  書き換える旧記帳系のため、既定では書き込み実行しない。
+
+旧動作:
+毎週月曜9:30にlaunchdから起動され、以下を無人実行していた:
   1. freee API（口座連携経由のGMOあおぞら銀行明細）から新規明細を取得
      - 認証は freee-mcp と共有（~/.config/freee-mcp/）。期限切れは自動リフレッシュ
   2. 表記ゆれを正規化し、(date, side, amount, balance) で重複排除して銀行明細CSVへ追記
@@ -18,7 +24,11 @@
 判断が必要な仕事（要確認の解消・月次監査・申告準備）はAIエージェントの担当。
 → 月初に「帳簿監査して」（02_経営/帳簿/README.md の月次ルーチン参照）
 
-実行: python3 kicho.py [--dry-run]
+実行:
+  python3 kicho.py --dry-run
+
+旧書き込みをどうしても実行する場合だけ、明示フラグと環境変数の両方を要求する:
+  KICHO_ALLOW_LEGACY_WRITE=1 python3 kicho.py --legacy-write
 """
 
 from __future__ import annotations
@@ -333,9 +343,25 @@ def append_daily_note(message: str, details: list[str]) -> None:
 # ================= メイン =================
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="AI帳簿 週次自動記帳 v2")
+    parser = argparse.ArgumentParser(description="AI帳簿 週次自動記帳 v2（凍結済み旧記帳系）")
     parser.add_argument("--dry-run", action="store_true", help="取得と判定のみ。書き込みしない")
+    parser.add_argument(
+        "--legacy-write",
+        action="store_true",
+        help="旧CSV/収支管理/日誌への書き込みを明示許可する（KICHO_ALLOW_LEGACY_WRITE=1 も必須）",
+    )
     args = parser.parse_args()
+
+    legacy_write_allowed = (
+        args.legacy_write and os.environ.get("KICHO_ALLOW_LEGACY_WRITE") == "1"
+    )
+    if not args.dry_run and not legacy_write_allowed:
+        print(
+            "[kicho] SAFETY STOP: 2026-06-27以降、旧CSV帳簿への記帳は既定停止。"
+            "会計正本はfreee。確認だけなら --dry-run、旧書き込みは"
+            " KICHO_ALLOW_LEGACY_WRITE=1 と --legacy-write の両方が必要です。"
+        )
+        return 0
 
     bank_before = read_bank_rows()
     since = last_bank_date(bank_before)
