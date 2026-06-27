@@ -40,6 +40,7 @@
 - `freee_registered_txns.json` は金額正本ではなく、二重登録防止キー台帳
 - 旧AI帳簿CSV・仕訳帳・収支管理は参考・凍結・非申告用
 - 現行kichoはCSV・収支管理・日誌を書き換えるため、記帳係から外した。2026-06-27に `com.korokoro.kicho-weekly` はbootout＋disable済み
+- 2026-06-27再確認: `launchctl print` では未ロード、`print-disabled` ではdisabled。通常実行の `kicho.py` は安全停止のみ
 - 後継を作る場合は、freee明細・証憑・補助台帳の差分を見る読み取り専用監査レポートにする
 - `kicho-weekly` のplist退避、Watchtower期待リスト更新は残タスク。plist退避とWatchtower本体編集はホーム配下書き込み制限で未実施
 - `freee-uncleared-monitor` は2026-06-27にbootout＋disable済み。再開するならWatchtower期待リスト追加＋monthly-accountingとの時刻ずらし、またはmonthly-accountingへの統合が必要

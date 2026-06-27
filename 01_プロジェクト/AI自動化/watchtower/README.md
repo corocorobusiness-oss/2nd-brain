@@ -2,10 +2,12 @@
 
 祐馬さんのSecond Brainと自動化の状態を毎朝確認する見張り役。
 
+> 2026-06-27追記: 旧「AI帳簿/weekly-kicho」は会計正本freee運用から外し、実機停止済み。Watchtowerの経理チェックは、freee正本・weekly-accounting・補助台帳・証憑の状態確認へ寄せる。
+
 ## 役割
 
 - 今日のデイリーノート確認
-- AI帳簿の週次記帳ログ確認
+- freee経理・weekly-accounting・補助台帳の状態確認
 - 自動化台帳の要注意項目確認
 - YouTube制作タスク確認
 - 今日の日誌に見るべきことを追記

@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
-"""AI帳簿 集計・検証ツール（恒久運用）
+"""凍結済み旧AI帳簿の参考集計・検証ツール。
+
+会計正本はfreee。このスクリプトは旧CSV仕訳帳の参考アーカイブを
+確認するためのもので、新規記帳や申告数字の正本には使わない。
 
 2026_仕訳帳.csv を読み込み、以下を生成する:
   - レポート/2026_試算表.md   （月次損益・B/S残高・検証結果）
@@ -146,7 +149,7 @@ def main():
 
     # 試算表md
     months = sorted(monthly)
-    lines = ["# 2026年 試算表（AI帳簿）", "",
+    lines = ["# 2026年 試算表（旧AI帳簿・参考）", "",
              f"仕訳数: {len(rows)} 件 ｜ 生成: ledger.py", ""]
     lines.append("## 月次損益")
     lines.append("| 科目 | " + " | ".join(f"{m}月" for m in months) + " | 累計 |")
@@ -173,7 +176,7 @@ def main():
         lines.append(f"| {a} | {abs(b):,}{'（貸方）' if b < 0 else ''} |")
 
     lines += ["", "## freee試算表との照合（移行検証）",
-              "| 月 | 科目 | freee | Claude帳簿 | 差異 | 判定 |", "|---|---|---:|---:|---:|---|"]
+              "| 月 | 科目 | freee | 旧CSV帳簿 | 差異 | 判定 |", "|---|---|---:|---:|---:|---|"]
     for m, a, fr, ours, diff, status in recon_lines:
         lines.append(f"| {m}月 | {a} | {fr:,} | {ours:,} | {diff:+,} | {status} |")
 

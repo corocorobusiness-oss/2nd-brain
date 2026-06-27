@@ -7,7 +7,7 @@
 ※旧称「Claude帳簿」（2026-06-10にエージェント非依存の名称へ変更）。
 
 2026-06-10にfreee会計から一時的にCSV帳簿へ移行実験。2026-06-12以降、方針はfreee正本へ戻した。
-2026-06-27時点では、現行 `kicho.py` の書き込み運用は停止/置換対象。後継を作る場合は、freee明細・証憑・二重登録防止キー台帳の差分を見る読み取り専用監査レポートにする。
+2026-06-27時点では、現行 `kicho.py` の書き込み運用は停止済み。後継を作る場合は、freee明細・証憑・二重登録防止キー台帳の差分を見る読み取り専用監査レポートにする。
 
 ## フォルダ構成
 
@@ -16,9 +16,9 @@
 | `2026_仕訳帳.csv`                  | 旧CSV仕訳帳スナップショット（参考・凍結・非申告用）                                |
 | `data/`                         | 旧元データ・バックアップ。監査証跡として保存                             |
 | `inbox/`                        | 旧CSV投入場所。新規記帳には使わない                               |
-| `scripts/kicho.py`              | 旧週次記帳スクリプト。freee明細を読み、CSV・仕訳帳・収支管理・日誌を書き換えるため、記帳係としては停止/置換対象 |
-| `scripts/kicho_on.sh / kicho_off.sh` | 旧週次記帳のスイッチ。実行する場合は自動化台帳・Watchtowerと同時整合する |
-| `scripts/com.korokoro.kicho-weekly.plist` | 旧launchd定義（毎週月曜9:30）。現行実体の停止/置換は承認後の同一メンテで実施 |
+| `scripts/kicho.py`              | 旧週次記帳スクリプト。freee明細を読み、CSV・仕訳帳・収支管理・日誌を書き換えるため、記帳係として停止済み。通常実行は安全停止する |
+| `scripts/kicho_on.sh / kicho_off.sh` | 旧週次記帳のスイッチ。`kicho_on.sh` は既定停止ガード済み |
+| `scripts/com.korokoro.kicho-weekly.plist` | 旧launchd定義（毎週月曜9:30）。実機 `com.korokoro.kicho-weekly` は2026-06-27にbootout＋disable済み。ホーム配下plist退避とWatchtower除外は権限制限により残タスク |
 | `scripts/ledger.py`             | 旧CSV仕訳帳から試算表・総勘定元帳を生成する検証ツール                                |
 | `scripts/build_2026_journal.py` | 旧CSV仕訳生成ルール。会計正本ではない |
 | `logs/`                         | kicho実行ログ                                |
@@ -57,7 +57,8 @@
 
 ### kichoの扱い
 - 現行 `scripts/kicho.py` は、freee明細を読むだけでなく、旧CSV・仕訳帳・収支管理・日誌を書き換える
-- そのため、記帳係としての継続運用は停止/置換対象
+- そのため、記帳係としての継続運用は停止済み
+- 実機状態: 2026-06-27に `launchctl print` で未ロード、`print-disabled` でdisabledを確認済み。通常実行の `python3 scripts/kicho.py` は安全停止メッセージのみで終了する
 - 後継を作る場合は、最初から読み取り専用の監査レポートとして小さく作る
   - 許可: freee明細、証憑、補助台帳、freee_exportの差分確認
   - 禁止: POST/PUT/PATCH/DELETE、取引作成、消込、紐付け変更、CSV/収支管理/日誌の自動更新
