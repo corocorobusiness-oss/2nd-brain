@@ -18,7 +18,7 @@
 | `inbox/`                        | 旧CSV投入場所。新規記帳には使わない                               |
 | `scripts/kicho.py`              | 旧週次記帳スクリプト。freee明細を読み、CSV・仕訳帳・収支管理・日誌を書き換えるため、記帳係として停止済み。通常実行は安全停止する |
 | `scripts/kicho_on.sh / kicho_off.sh` | 旧週次記帳のスイッチ。`kicho_on.sh` は既定停止ガード済み |
-| `scripts/com.korokoro.kicho-weekly.plist` | 旧launchd定義（毎週月曜9:30）。実機 `com.korokoro.kicho-weekly` は2026-06-27にbootout＋disable済み。ホーム配下plist退避とWatchtower除外は権限制限により残タスク |
+| `scripts/com.korokoro.kicho-weekly.plist` | 旧launchd定義（毎週月曜9:30）の控え。実機 `com.korokoro.kicho-weekly` は2026-06-27にbootout＋disable済み。✅同日夜にホーム配下の実機plistを `~/.claude/archived-launchagents/com.korokoro.kicho-weekly.plist.archived-20260627` へ退避、Watchtower `EXPECTED_JOBS` からも除外済み |
 | `scripts/ledger.py`             | 旧CSV仕訳帳から試算表・総勘定元帳を生成する検証ツール                                |
 | `scripts/build_2026_journal.py` | 旧CSV仕訳生成ルール。会計正本ではない |
 | `logs/`                         | kicho実行ログ                                |

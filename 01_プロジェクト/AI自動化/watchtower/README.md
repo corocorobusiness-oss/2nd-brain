@@ -52,11 +52,12 @@ cd "/Users/kabushikikaishakorokoro/Library/CloudStorage/GoogleDrive-corocoro.bus
 ## 現在の注意
 
 2026-06-27時点で `com.korokoro.yuma-watchtower` はlaunchd登録済み。
-残りの論点は自動起動ではなく、`~/.claude/scripts/watchtower_local.py` の `EXPECTED_JOBS` と `導入済み.md` の整合。
+✅2026-06-27夜（あおい/Claude Code環境）に `~/.claude/scripts/watchtower_local.py` の `EXPECTED_JOBS` と `導入済み.md` の整合を完了。
 
-- 期待リストから外す候補: 停止済み `com.korokoro.kicho-weekly`、退避済み `com.claude.channel-lifecycle`
-- 期待リストへ追加候補: `com.claude.corpus-collect` / `com.claude.thread-format-learning` / `com.claude.demaecan-reminder` / `com.claude.satellite-autocommit`
-- Codex環境からホーム配下の本体編集は権限制限で未実施
+- 期待リストから除外済み: 停止済み `com.korokoro.kicho-weekly`、退避済み `com.claude.channel-lifecycle`
+- 期待リストへ追加済み: `com.claude.corpus-collect` / `com.claude.thread-format-learning` / `com.claude.demaecan-reminder` / `com.claude.satellite-autocommit`（＋別セッションが `com.claude.weekly-stocktake` を並行追加）
+- 編集前に `watchtower_local.py.bak-20260627-231245` をバックアップ。手動実行（OK42/WARN1）＋独立エージェントで整合PASS、会計関連の警告ゼロを確認
+- 残WARNはスコープ外の `redrive配達` 滞留1件のみ（会計整理と無関係）
 
 ## 禁止事項
 

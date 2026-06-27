@@ -52,7 +52,7 @@
   - 未処理明細は **二重登録防止キー台帳**（`~/.claude/scripts/freee_registered_txns.json`）と突合してから登録する。このJSONは金額集計の正本ではなく、freee無料プランで作成30日超の取引がAPI不可視になる問題に備えた補助台帳
   - 台帳が読めない、欠損が疑わしい、freee画面/試算表との対応が不明な場合は登録せず「要確認」で止める
 - `kicho.py` / weekly-kicho はfreee取引登録係ではなく、ローカルCSV・仕訳帳・収支管理・日誌を書き換える旧記帳系。2026-06-27に実機の `com.korokoro.kicho-weekly` はbootout＋disable済みで、`kicho.py` / `kicho_on.sh` も既定停止ガード済み
-  - 残りはホーム配下のplist退避とWatchtower期待リスト更新。書き込み制限がある環境では、Vault側へ残タスクとして記録する
+  - ✅2026-06-27夜にホーム配下のplist退避（kicho/freee-uncleared → `~/.claude/archived-launchagents/`）とWatchtower `EXPECTED_JOBS` 整合を完了（編集前バックアップ取得・手動実行＋独立エージェントで会計関連の警告ゼロを確認）
   - 後継を作る場合は、freee明細・証憑・補助台帳の差分を見る **読み取り専用監査レポート** とし、POST/PUT/PATCH/DELETE・取引作成・消込・紐付け変更は禁止
   - 「記帳して」で `kicho.py` を呼ぶ導線は使わない
 - 判断に迷う明細（新しい店・大きな金額）は確認してから記帳する
