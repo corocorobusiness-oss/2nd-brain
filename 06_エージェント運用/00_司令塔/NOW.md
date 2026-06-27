@@ -42,6 +42,6 @@
 - 現行kichoはCSV・収支管理・日誌を書き換えるため、記帳係から外した。2026-06-27に `com.korokoro.kicho-weekly` はbootout＋disable済み
 - 2026-06-27再確認: `launchctl print` では未ロード、`print-disabled` ではdisabled。通常実行の `kicho.py` は安全停止のみ
 - 後継を作る場合は、freee明細・証憑・補助台帳の差分を見る読み取り専用監査レポートにする
-- `kicho-weekly` のplist退避、Watchtower期待リスト更新は残タスク。plist退避とWatchtower本体編集はホーム配下書き込み制限で未実施
-- `freee-uncleared-monitor` は2026-06-27にbootout＋disable済み。再開するならWatchtower期待リスト追加＋monthly-accountingとの時刻ずらし、またはmonthly-accountingへの統合が必要
-- 2026-06-27監査で、Watchtower期待リストと導入済み台帳の追加ズレも検知。Vault台帳は更新済みだが、`watchtower_local.py` 本体修正はホーム配下制限で未実施
+- ✅2026-06-27夜（あおい/Claude Code環境）: `com.korokoro.kicho-weekly` のplistを `~/Library/LaunchAgents/` から `~/.claude/archived-launchagents/com.korokoro.kicho-weekly.plist.archived-20260627` へ退避（削除せず）。`watchtower_local.py` の `EXPECTED_JOBS` からも除外。編集前に `watchtower_local.py.bak-20260627-231245` をバックアップ
+- `freee-uncleared-monitor` は2026-06-27にbootout＋disable済み。✅同日夜にplistも `~/.claude/archived-launchagents/com.claude.freee-uncleared-monitor.plist.archived-20260627` へ退避。再開するならplist復帰＋`launchctl enable`＋Watchtower期待リスト追加＋monthly-accounting(10:30)との時刻ずらし(10:45等)/統合が必要（停止整合は完了済み・残るのは再開可否の判断のみ）
+- ✅2026-06-27夜（あおい）: Watchtower `EXPECTED_JOBS` 整合完了（計28本）。除外=`channel-lifecycle`(6/24退避済)/`kicho-weekly`、追加=`corpus-collect`/`thread-format-learning`/`demaecan-reminder`/`satellite-autocommit`。手動実行で会計関連の警告（kicho/channel-lifecycle/freee-uncleared/台帳外ジョブ）が全消え・追加4本は全[OK]を確認。独立エージェントでもクロスチェックPASS（実装者≠確認者）
