@@ -42,3 +42,4 @@
 - 現行kichoはCSV・収支管理・日誌を書き換えるため、記帳係としては停止/置換対象
 - 後継を作る場合は、freee明細・証憑・補助台帳の差分を見る読み取り専用監査レポートにする
 - `kicho-weekly` の実停止、Watchtower期待リスト、LaunchAgent、台帳の完全整合は同一メンテで行う
+- `freee-uncleared-monitor` は読み取り専用ジョブとして台帳に追記済み。ただしWatchtower期待リストは未整合、monthly-accountingと同時刻なので統合/時刻ずらしが残タスク

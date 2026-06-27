@@ -6,6 +6,10 @@
   <key>Label</key>
   <string>com.korokoro.kicho-weekly</string>
 
+  <!-- 凍結済み旧weekly-kicho定義。
+       2026-06-27以降、会計正本はfreee。旧kichoはCSV/収支管理/日誌を書き換えるため記帳係から外す。
+       再有効化しない。停止/置換する場合はWatchtower・導入済み台帳・READMEと同一メンテで整合する。 -->
+
   <key>ProgramArguments</key>
   <array>
     <string>/usr/bin/python3</string>
