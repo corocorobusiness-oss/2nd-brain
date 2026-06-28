@@ -1,0 +1,3150 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2343]:
+    - banner [ref=e2344]:
+      - generic [ref=e2345]:
+        - link "trivago logo" [ref=e2346] [cursor=pointer]:
+          - /url: /
+          - img "trivago logo" [ref=e2348]
+        - generic [ref=e2360]:
+          - generic [ref=e2361]:
+            - combobox [ref=e2363]:
+              - button "スマート検索 消去" [ref=e3388] [cursor=pointer]:
+                - generic [ref=e2366]:
+                  - generic [ref=e2367]: スマート検索
+                  - searchbox "スマート検索" [ref=e3389]: OMO7横浜
+                - button "消去" [ref=e2369]:
+                  - generic [ref=e2370]:
+                    - img
+            - group [ref=e2371]:
+              - button "チェックイン, 水, 8月 5, 2026, チェックアウト, 木, 8月 6, 2026, 1 宿泊数" [ref=e2372] [cursor=pointer]:
+                - generic [ref=e2374]:
+                  - generic [ref=e2375]: チェックイン/アウト
+                  - generic [ref=e2376]: 8月5日 - 8月6日
+            - button "滞在人数と部屋数 4 人、1 部屋" [ref=e2379] [cursor=pointer]:
+              - generic [ref=e2381]:
+                - generic [ref=e2382]: 滞在人数と部屋数
+                - generic [ref=e2383]: 4 人、1 部屋
+          - button [ref=e2384] [cursor=pointer]:
+            - generic [ref=e2385]:
+              - img
+        - navigation [ref=e2386]:
+          - list [ref=e2387]:
+            - listitem [ref=e2388]:
+              - button "JA · ￥" [ref=e2389] [cursor=pointer]:
+                - generic [ref=e2390]:
+                  - img
+                - generic [ref=e2391]: JA · ￥
+            - listitem [ref=e2392]:
+              - button "ログイン" [ref=e2394] [cursor=pointer]:
+                - generic [ref=e2395]:
+                  - img
+                - generic [ref=e2396]: ログイン
+            - listitem [ref=e2397]:
+              - button "メニュー" [ref=e2399] [cursor=pointer]:
+                - generic [ref=e2400]:
+                  - img
+                - generic [ref=e2401]: メニュー
+      - generic [ref=e2402]:
+        - generic [ref=e2405]:
+          - list [ref=e2407]:
+            - listitem [ref=e2408]:
+              - button "絞り込み" [expanded] [ref=e2410] [cursor=pointer]:
+                - generic [ref=e2411]:
+                  - img
+                - generic [ref=e2412]: 絞り込み
+            - listitem [ref=e2413]:
+              - button "並べ替え" [ref=e2415] [cursor=pointer]:
+                - generic [ref=e2416]:
+                  - generic [ref=e2417]: 並べ替え
+                  - generic [ref=e2418]:
+                    - img
+            - listitem [ref=e2419]:
+              - button "料金" [ref=e2422] [cursor=pointer]:
+                - generic [ref=e2423]:
+                  - generic [ref=e2424]: 料金
+                  - generic [ref=e2425]:
+                    - img
+            - listitem [ref=e2426]:
+              - button "ロケーション" [ref=e2428] [cursor=pointer]:
+                - generic [ref=e2429]:
+                  - generic [ref=e2430]: ロケーション
+                  - generic [ref=e2431]:
+                    - img
+          - generic [ref=e2434]:
+            - list [ref=e2435]:
+              - listitem [ref=e3390]:
+                - checkbox "注目のお得情報"
+                - generic [ref=e3392] [cursor=pointer]: 注目のお得情報
+              - listitem [ref=e2436]:
+                - checkbox "ホテル"
+                - generic [ref=e2437] [cursor=pointer]: ホテル
+              - listitem [ref=e2439]:
+                - 'checkbox "ユーザー評価 : 8.0+"'
+                - generic [ref=e2441] [cursor=pointer]: "ユーザー評価 : 8.0+"
+              - listitem [ref=e3393]:
+                - checkbox "禁煙ルーム"
+                - generic [ref=e3395] [cursor=pointer]: 禁煙ルーム
+              - listitem [ref=e3396]:
+                - checkbox "朝食付き"
+                - generic [ref=e3398] [cursor=pointer]: 朝食付き
+              - listitem [ref=e3399]:
+                - checkbox "駐車場"
+                - generic [ref=e3401] [cursor=pointer]: 駐車場
+              - listitem [ref=e3402]:
+                - checkbox "WiFi"
+                - generic [ref=e3404] [cursor=pointer]: WiFi
+              - listitem [ref=e3405]:
+                - checkbox "サービス付きアパートメント"
+                - generic [ref=e3407] [cursor=pointer]: サービス付きアパートメント
+              - listitem [ref=e3408]:
+                - checkbox "柔軟なキャンセルポリシー"
+                - generic [ref=e3410] [cursor=pointer]: 柔軟なキャンセルポリシー
+              - listitem [ref=e3411]:
+                - checkbox "リゾート"
+                - generic [ref=e3413] [cursor=pointer]: リゾート
+              - listitem [ref=e3414]:
+                - checkbox "事前払い不要"
+                - generic [ref=e3416] [cursor=pointer]: 事前払い不要
+              - listitem [ref=e3417]:
+                - checkbox "ファミリー"
+                - generic [ref=e3419] [cursor=pointer]: ファミリー
+            - button "次" [ref=e3420] [cursor=pointer]:
+              - generic [ref=e3421]:
+                - img
+        - generic [ref=e2447]:
+          - generic [ref=e3423]:
+            - generic [ref=e3424]: ベータ版
+            - generic [ref=e3425]: これらの結果は指定された検索条件に基づいて AI が生成しています。
+          - link "弊社への手数料が検索結果に及ぼす影響について" [ref=e2448] [cursor=pointer]:
+            - /url: https://support.trivago.com/hc/ja/sections/360000014707
+            - generic [ref=e2449]:
+              - img
+            - paragraph [ref=e2450]: 弊社への手数料が検索結果に及ぼす影響について
+    - main [ref=e2454]:
+      - generic [ref=e2457]:
+        - button "ログインまたはアカウントを作成" [ref=e2462] [cursor=pointer]: ログインするとさらにお得
+        - button "閉じる" [ref=e2463] [cursor=pointer]:
+          - generic [ref=e2464]:
+            - img
+          - generic [ref=e2465]: 閉じる
+      - generic [ref=e2466]:
+        - region "絞り込み" [ref=e2469]:
+          - generic [ref=e2470]:
+            - generic [ref=e2471]:
+              - generic [ref=e2472]:
+                - img
+              - heading "絞り込み" [level=3] [ref=e2473]
+            - generic [ref=e2474]:
+              - button "リセット" [disabled] [ref=e2475]:
+                - generic [ref=e2476]:
+                  - img
+                - generic [ref=e2477]: リセット
+              - button "閉じる" [ref=e2478] [cursor=pointer]:
+                - generic [ref=e2479]:
+                  - img
+                - generic [ref=e2480]: 閉じる
+          - list [ref=e2481]:
+            - listitem "ホテルの評価" [ref=e2482]:
+              - generic [ref=e2485]:
+                - heading "ホテルの評価" [level=3] [ref=e2486]
+                - button [ref=e2487] [cursor=pointer]:
+                  - generic [ref=e2489]:
+                    - img
+              - group "ホテルの評価" [ref=e2491]:
+                - generic [ref=e2492]: ホテルの評価
+                - list [ref=e2493]:
+                  - listitem [ref=e2494]:
+                    - generic [ref=e2497] [cursor=pointer]:
+                      - checkbox "5つ星" [ref=e2498]
+                      - generic [ref=e2501]: 5つ星
+                  - listitem [ref=e2502]:
+                    - generic [ref=e2505] [cursor=pointer]:
+                      - checkbox "4つ星" [ref=e2506]
+                      - generic [ref=e2509]: 4つ星
+                  - listitem [ref=e2510]:
+                    - generic [ref=e2513] [cursor=pointer]:
+                      - checkbox "3つ星" [ref=e2514]
+                      - generic [ref=e2517]: 3つ星
+                  - listitem [ref=e2518]:
+                    - generic [ref=e2521] [cursor=pointer]:
+                      - checkbox "2つ星" [ref=e2522]
+                      - generic [ref=e2525]: 2つ星
+                  - listitem [ref=e2526]:
+                    - generic [ref=e2529] [cursor=pointer]:
+                      - checkbox "0～1つ星" [ref=e2530]
+                      - generic [ref=e2533]: 0～1つ星
+              - separator [ref=e2534]
+            - listitem "ユーザー評価" [ref=e2535]:
+              - heading "ユーザー評価" [level=3] [ref=e2537]
+              - list [ref=e2540]:
+                - listitem [ref=e2541]:
+                  - generic [ref=e2542] [cursor=pointer]:
+                    - radio "すべてのユーザー評価" [checked] [ref=e2543]
+                    - text: すべてのユーザー評価
+                - listitem [ref=e2544]:
+                  - generic [ref=e2545] [cursor=pointer]:
+                    - 'radio "大満足 : 8.5+" [ref=e2546]'
+                    - text: "大満足 : 8.5+"
+                - listitem [ref=e2547]:
+                  - generic [ref=e2548] [cursor=pointer]:
+                    - 'radio "満足 : 8+" [ref=e2549]'
+                    - text: "満足 : 8+"
+                - listitem [ref=e2550]:
+                  - generic [ref=e2551] [cursor=pointer]:
+                    - 'radio "良い : 7.5+" [ref=e2552]'
+                    - text: "良い : 7.5+"
+                - listitem [ref=e2553]:
+                  - generic [ref=e2554] [cursor=pointer]:
+                    - 'radio "まあまあ : 7+" [ref=e2555]'
+                    - text: "まあまあ : 7+"
+              - separator [ref=e2556]
+            - listitem "施設タイプ" [ref=e2557]:
+              - heading "施設タイプ" [level=3] [ref=e2559]
+              - list [ref=e3426]:
+                - listitem [ref=e3427]:
+                  - generic [ref=e3428]:
+                    - generic [ref=e3430] [cursor=pointer]:
+                      - checkbox "ホテル ホテル、リゾートなど" [ref=e3431]
+                      - generic [ref=e3432]:
+                        - generic [ref=e3435]: ホテル
+                        - generic [ref=e3436]: ホテル、リゾートなど
+                    - button "さらに表示 ホテル" [ref=e3437] [cursor=pointer]:
+                      - generic [ref=e3438]:
+                        - img
+                - listitem [ref=e3439]:
+                  - generic [ref=e3440]:
+                    - generic [ref=e3444] [cursor=pointer]:
+                      - checkbox "アパートメント バケーションレンタル (貸切)" [ref=e3445]
+                      - generic [ref=e3446]:
+                        - generic [ref=e3449]: アパートメント
+                        - generic [ref=e3450]: バケーションレンタル (貸切)
+                    - button "さらに表示 アパートメント" [ref=e3451] [cursor=pointer]:
+                      - generic [ref=e3452]:
+                        - img
+                - listitem [ref=e3453]:
+                  - generic [ref=e3454]:
+                    - generic [ref=e3458] [cursor=pointer]:
+                      - checkbox "格安宿泊施設 ベッド&ブレックファスト、ホステルなど" [ref=e3459]
+                      - generic [ref=e3460]:
+                        - generic [ref=e3463]: 格安宿泊施設
+                        - generic [ref=e3464]: ベッド&ブレックファスト、ホステルなど
+                    - button "さらに表示 格安宿泊施設" [ref=e3465] [cursor=pointer]:
+                      - generic [ref=e3466]:
+                        - img
+                - listitem [ref=e3467]:
+                  - generic [ref=e3470] [cursor=pointer]:
+                    - checkbox "旅館 日本の伝統的な宿泊施設" [ref=e3471]
+                    - generic [ref=e3472]:
+                      - generic [ref=e3475]: 旅館
+                      - generic [ref=e3476]: 日本の伝統的な宿泊施設
+              - separator [ref=e2564]
+            - listitem "支払い" [ref=e3477]:
+              - generic [ref=e3480]:
+                - heading "支払い" [level=3] [ref=e3482]
+                - generic [ref=e3483]:
+                  - img
+                - button "支払い" [ref=e3484] [cursor=pointer]
+              - separator [ref=e3485]
+            - listitem "食事のオプション" [ref=e3486]:
+              - generic [ref=e3489]:
+                - heading "食事のオプション" [level=3] [ref=e3491]
+                - generic [ref=e3492]:
+                  - img
+                - button "食事のオプション" [ref=e3493] [cursor=pointer]
+              - separator [ref=e3494]
+            - listitem "すべての設備 / サービス" [ref=e3495]:
+              - generic [ref=e3498]:
+                - heading "すべての設備 / サービス" [level=3] [ref=e3500]
+                - generic [ref=e3501]:
+                  - img
+                - button "すべての設備 / サービス" [ref=e3502] [cursor=pointer]
+              - separator [ref=e3503]
+            - listitem "スタイル" [ref=e3504]:
+              - generic [ref=e3507]:
+                - heading "スタイル" [level=3] [ref=e3509]
+                - generic [ref=e3510]:
+                  - img
+                - button "スタイル" [ref=e3511] [cursor=pointer]
+              - separator [ref=e3512]
+            - listitem "次の旅行者に人気" [ref=e3513]:
+              - generic [ref=e3516]:
+                - heading "次の旅行者に人気" [level=3] [ref=e3518]
+                - generic [ref=e3519]:
+                  - img
+                - button "次の旅行者に人気" [ref=e3520] [cursor=pointer]
+              - separator [ref=e3521]
+            - listitem "バリアフリー" [ref=e3522]:
+              - generic [ref=e3525]:
+                - heading "バリアフリー" [level=3] [ref=e3527]
+                - generic [ref=e3528]:
+                  - img
+                - button "バリアフリー" [ref=e3529] [cursor=pointer]
+              - separator [ref=e3530]
+            - listitem "家族向け" [ref=e3531]:
+              - generic [ref=e3534]:
+                - heading "家族向け" [level=3] [ref=e3536]
+                - generic [ref=e3537]:
+                  - img
+                - button "家族向け" [ref=e3538] [cursor=pointer]
+              - separator [ref=e3539]
+            - listitem "アクティビティ" [ref=e3540]:
+              - generic [ref=e3543]:
+                - heading "アクティビティ" [level=3] [ref=e3545]
+                - generic [ref=e3546]:
+                  - img
+                - button "アクティビティ" [ref=e3547] [cursor=pointer]
+              - separator [ref=e3548]
+            - listitem "スマートフィルター" [ref=e2565]:
+              - generic [ref=e2568]:
+                - generic [ref=e2571]:
+                  - generic [ref=e2572]:
+                    - img
+                  - generic [ref=e2573]: スマートフィルター
+                  - generic [ref=e2574]: ベータ版
+                - generic [ref=e2575]:
+                  - img
+                - button "スマートフィルター" [ref=e2576] [cursor=pointer]
+          - button "検索結果を表示" [ref=e3549] [cursor=pointer]:
+            - generic [ref=e3550]:
+              - img
+            - generic [ref=e3551]: 検索結果を表示
+        - generic [ref=e2584]:
+          - generic [ref=e2586]:
+            - list [ref=e3552]:
+              - listitem [ref=e3553]:
+                - article [ref=e3556]:
+                  - generic [ref=e3560]:
+                    - button "OMO7 大阪 by 星野リゾート, (大阪, 国内) 1 / 66" [ref=e3561] [cursor=pointer]:
+                      - img "OMO7 大阪 by 星野リゾート, (大阪, 国内)" [ref=e3564]
+                      - generic [ref=e3565]: 1 / 66
+                    - button "お気に入りに追加" [ref=e3571] [cursor=pointer]:
+                      - img [ref=e3572]
+                      - generic [ref=e3574]: お気に入りに追加
+                  - generic [ref=e3575]:
+                    - generic [ref=e3576]:
+                      - heading "OMO7 大阪 by 星野リゾート" [level=2] [ref=e3578]:
+                        - link "OMO7 大阪 by 星野リゾート" [ref=e3579] [cursor=pointer]:
+                          - /url: /ja/acd/?fpip=1&search=100-30931136;dr-20260805-20260806;drs-40;qs-OMO7%E6%A8%AA%E6%B5%9C;rc-1-2-7-4#::effects=logNewTab-30931136-1
+                      - button "5 ホテルのランク ホテル" [ref=e3581] [cursor=pointer]:
+                        - generic [ref=e3582]:
+                          - generic [ref=e3583]:
+                            - generic [ref=e3584]: 5 ホテルのランク
+                            - generic [ref=e3585]:
+                              - img
+                            - generic [ref=e3586]:
+                              - img
+                            - generic [ref=e3587]:
+                              - img
+                            - generic [ref=e3588]:
+                              - img
+                            - generic [ref=e3589]:
+                              - img
+                          - generic [ref=e3590]: ホテル
+                      - button "8.6 大満足 (5,428件の評価)" [ref=e3591] [cursor=pointer]:
+                        - generic [ref=e3593]:
+                          - generic [ref=e3594]: "8.6"
+                          - generic [ref=e3595]:
+                            - strong [ref=e3596]: 大満足
+                            - text: (5,428件の評価)
+                      - button "大阪, OMO7 Yokohama by Hoshino Resortsまで386.6 km" [ref=e3597] [cursor=pointer]:
+                        - generic [ref=e3598]:
+                          - generic [ref=e3599]:
+                            - img
+                          - text: 大阪, OMO7 Yokohama by Hoshino Resortsまで386.6 km
+                      - button "ご家族で快適に過ごせるテーマ性のあるお部屋, 地元の専門料理レストラン" [ref=e3601] [cursor=pointer]:
+                        - generic [ref=e3603]:
+                          - generic [ref=e3604]:
+                            - img
+                          - paragraph [ref=e3605]: ご家族で快適に過ごせるテーマ性のあるお部屋, 地元の専門料理レストラン
+                    - generic [ref=e3606]:
+                      - button "エクスペディア 柔軟なキャンセルポリシー 7月15日より前まで 現在の料金 ￥31,106 以前の料金 ￥35,969 料金プランを見る" [ref=e3607] [cursor=pointer]:
+                        - generic [ref=e3609]:
+                          - generic [ref=e3610]:
+                            - generic "エクスペディア" [ref=e3613]
+                            - list [ref=e3614]:
+                              - listitem "柔軟なキャンセルポリシー" [ref=e3615]:
+                                - button "柔軟なキャンセルポリシー 7月15日より前まで" [ref=e3616]:
+                                  - generic [ref=e3617]:
+                                    - img
+                                  - generic [ref=e3618]:
+                                    - generic [ref=e3619]: 柔軟なキャンセルポリシー
+                                    - generic [ref=e3620]: 7月15日より前まで
+                          - generic [ref=e3622]:
+                            - generic [ref=e3625]:
+                              - generic [ref=e3627]:
+                                - generic [ref=e3628]: 現在の料金
+                                - text: ￥31,106
+                              - button "以前の料金 ￥35,969" [ref=e3629]:
+                                - deletion [ref=e3632]:
+                                  - generic [ref=e3633]: 以前の料金
+                                  - text: ￥35,969
+                            - button "料金プランを見る" [ref=e3635]:
+                              - text: 料金プランを見る
+                              - generic [ref=e3636]:
+                                - img
+                      - button "￥31,064 Booking.com ￥32,373 Trip.com すべての料金を表示" [ref=e3637] [cursor=pointer]:
+                        - generic [ref=e3638]:
+                          - generic [ref=e3640]: ￥31,064
+                          - generic "Booking.com" [ref=e3642]
+                        - generic [ref=e3643]:
+                          - generic [ref=e3645]: ￥32,373
+                          - generic "Trip.com" [ref=e3647]
+                        - generic [ref=e3648]: すべての料金を表示
+                        - generic [ref=e3649]:
+                          - img
+              - listitem [ref=e3650]:
+                - article [ref=e3653]:
+                  - generic [ref=e3655]:
+                    - generic [ref=e3656]:
+                      - img
+                    - generic [ref=e3657]:
+                      - strong [ref=e3658]: OMO7 Yokohama by Hoshino Resorts
+                      - text: は、
+                      - strong [ref=e3659]: 横浜
+                      - text: での滞在に
+                      - strong [ref=e3660]: 無料Wi-Fi
+                      - text: と
+                      - strong [ref=e3661]: ランドリーサービス
+                      - text: を提供し、快適な旅をサポートします。
+                    - button [ref=e3663] [cursor=pointer]:
+                      - generic [ref=e3664]:
+                        - img
+                  - generic [ref=e3665]:
+                    - button "OMO7 Yokohama by Hoshino Resorts, (横浜, 国内) 1 / 70" [ref=e3666] [cursor=pointer]:
+                      - img "OMO7 Yokohama by Hoshino Resorts, (横浜, 国内)" [ref=e3669]
+                      - generic [ref=e3670]: 1 / 70
+                    - button "お気に入りに追加" [ref=e3676] [cursor=pointer]:
+                      - img [ref=e3677]
+                      - generic [ref=e3679]: お気に入りに追加
+                  - generic [ref=e3680]:
+                    - generic [ref=e3681]:
+                      - heading "OMO7 Yokohama by Hoshino Resorts" [level=2] [ref=e3683]:
+                        - link "OMO7 Yokohama by Hoshino Resorts" [ref=e3684] [cursor=pointer]:
+                          - /url: /ja/acd/?fpip=1&search=100-48005196;dr-20260805-20260806;drs-40;qs-OMO7%E6%A8%AA%E6%B5%9C;rc-1-2-7-4#::effects=logNewTab-48005196-1
+                      - button "3 ホテルのランク ホテル" [ref=e3686] [cursor=pointer]:
+                        - generic [ref=e3687]:
+                          - generic [ref=e3688]:
+                            - generic [ref=e3689]: 3 ホテルのランク
+                            - generic [ref=e3690]:
+                              - img
+                            - generic [ref=e3691]:
+                              - img
+                            - generic [ref=e3692]:
+                              - img
+                          - generic [ref=e3693]: ホテル
+                      - button "8.9 大満足 (7件の評価)" [ref=e3694] [cursor=pointer]:
+                        - generic [ref=e3696]:
+                          - generic [ref=e3697]: "8.9"
+                          - generic [ref=e3698]:
+                            - strong [ref=e3699]: 大満足
+                            - text: (7件の評価)
+                      - button "横浜, 街の中心まで4.2 km" [ref=e3700] [cursor=pointer]:
+                        - generic [ref=e3701]:
+                          - generic [ref=e3702]:
+                            - img
+                          - text: 横浜, 街の中心まで4.2 km
+                    - generic [ref=e3703]:
+                      - button "Booking.com 柔軟なキャンセルポリシー 7月14日より前まで トリバゴの最安値 ￥32,400 料金プランを見る" [ref=e3704] [cursor=pointer]:
+                        - generic [ref=e3706]:
+                          - generic [ref=e3707]:
+                            - generic "Booking.com" [ref=e3710]
+                            - list [ref=e3711]:
+                              - listitem "柔軟なキャンセルポリシー" [ref=e3712]:
+                                - button "柔軟なキャンセルポリシー 7月14日より前まで" [ref=e3713]:
+                                  - generic [ref=e3714]:
+                                    - img
+                                  - generic [ref=e3715]:
+                                    - generic [ref=e3716]: 柔軟なキャンセルポリシー
+                                    - generic [ref=e3717]: 7月14日より前まで
+                          - generic [ref=e3718]:
+                            - generic [ref=e3720]: トリバゴの最安値
+                            - generic [ref=e3721]:
+                              - generic [ref=e3726]: ￥32,400
+                              - button "料金プランを見る" [ref=e3728]:
+                                - text: 料金プランを見る
+                                - generic [ref=e3729]:
+                                  - img
+                      - button "￥35,640 エクスペディア ￥35,640 ホテルズドットコム すべての料金を表示" [ref=e3730] [cursor=pointer]:
+                        - generic [ref=e3731]:
+                          - generic [ref=e3733]: ￥35,640
+                          - generic "エクスペディア" [ref=e3735]
+                        - generic [ref=e3736]:
+                          - generic [ref=e3738]: ￥35,640
+                          - generic "ホテルズドットコム" [ref=e3740]
+                        - generic [ref=e3741]: すべての料金を表示
+                        - generic [ref=e3742]:
+                          - img
+              - listitem [ref=e3743]:
+                - article [ref=e3746]:
+                  - generic [ref=e3750]:
+                    - button "ホテルリブマックス横浜スタジアム前, (横浜, 国内) 1 / 30" [ref=e3751] [cursor=pointer]:
+                      - img "ホテルリブマックス横浜スタジアム前, (横浜, 国内)" [ref=e3754]
+                      - generic [ref=e3755]: 1 / 30
+                    - button "お気に入りに追加" [ref=e3761] [cursor=pointer]:
+                      - img [ref=e3762]
+                      - generic [ref=e3764]: お気に入りに追加
+                  - generic [ref=e3765]:
+                    - generic [ref=e3766]:
+                      - heading "ホテルリブマックス横浜スタジアム前" [level=2] [ref=e3768]:
+                        - link "ホテルリブマックス横浜スタジアム前" [ref=e3769] [cursor=pointer]:
+                          - /url: /ja/acd/?fpip=1&search=100-24516790;dr-20260805-20260806;drs-40;qs-OMO7%E6%A8%AA%E6%B5%9C;rc-1-2-7-4#::effects=logNewTab-24516790-1
+                      - button "3 ホテルのランク ホテル" [ref=e3771] [cursor=pointer]:
+                        - generic [ref=e3772]:
+                          - generic [ref=e3773]:
+                            - generic [ref=e3774]: 3 ホテルのランク
+                            - generic [ref=e3775]:
+                              - img
+                            - generic [ref=e3776]:
+                              - img
+                            - generic [ref=e3777]:
+                              - img
+                          - generic [ref=e3778]: ホテル
+                      - button "7.2 (1,831件の評価)" [ref=e3779] [cursor=pointer]:
+                        - generic [ref=e3781]:
+                          - generic [ref=e3782]: "7.2"
+                          - generic [ref=e3783]: (1,831件の評価)
+                      - button "横浜, OMO7 Yokohama by Hoshino Resortsまで0.6 km" [ref=e3784] [cursor=pointer]:
+                        - generic [ref=e3785]:
+                          - generic [ref=e3786]:
+                            - img
+                          - text: 横浜, OMO7 Yokohama by Hoshino Resortsまで0.6 km
+                      - button "ペットと泊まれる宿泊施設, 横浜スタジアムへのアクセス" [ref=e3788] [cursor=pointer]:
+                        - generic [ref=e3790]:
+                          - generic [ref=e3791]:
+                            - img
+                          - paragraph [ref=e3792]: ペットと泊まれる宿泊施設, 横浜スタジアムへのアクセス
+                    - generic [ref=e3793]:
+                      - button "Booking.com 柔軟なキャンセルポリシー 8月3日より前まで ￥17,472 料金プランを見る" [ref=e3794] [cursor=pointer]:
+                        - generic [ref=e3796]:
+                          - generic [ref=e3797]:
+                            - generic "Booking.com" [ref=e3800]
+                            - list [ref=e3801]:
+                              - listitem "柔軟なキャンセルポリシー" [ref=e3802]:
+                                - button "柔軟なキャンセルポリシー 8月3日より前まで" [ref=e3803]:
+                                  - generic [ref=e3804]:
+                                    - img
+                                  - generic [ref=e3805]:
+                                    - generic [ref=e3806]: 柔軟なキャンセルポリシー
+                                    - generic [ref=e3807]: 8月3日より前まで
+                          - generic [ref=e3809]:
+                            - generic [ref=e3814]: ￥17,472
+                            - button "料金プランを見る" [ref=e3816]:
+                              - text: 料金プランを見る
+                              - generic [ref=e3817]:
+                                - img
+                      - button "￥11,339 ログインしてアクセス ￥28,600 エクスペディア すべての料金を表示" [ref=e3818] [cursor=pointer]:
+                        - generic [ref=e3819]:
+                          - generic [ref=e3821]: ￥11,339
+                          - generic [ref=e3822]:
+                            - img
+                          - text: ログインしてアクセス
+                        - generic [ref=e3823]:
+                          - generic [ref=e3825]: ￥28,600
+                          - generic "エクスペディア" [ref=e3827]
+                        - generic [ref=e3828]: すべての料金を表示
+                        - generic [ref=e3829]:
+                          - img
+              - listitem [ref=e3830]:
+                - article [ref=e3833]:
+                  - generic [ref=e3834]:
+                    - button "横浜テクノタワーホテル, (横須賀, 国内) 1 / 64" [ref=e3835] [cursor=pointer]:
+                      - img "横浜テクノタワーホテル, (横須賀, 国内)" [ref=e3838]
+                      - generic [ref=e3839]: 1 / 64
+                    - list [ref=e3841]:
+                      - listitem [ref=e3842]:
+                        - button "人気施設" [ref=e3845] [cursor=pointer]:
+                          - generic [ref=e3847]: 人気施設
+                    - button "お気に入りに追加" [ref=e3853] [cursor=pointer]:
+                      - img [ref=e3854]
+                      - generic [ref=e3856]: お気に入りに追加
+                  - generic [ref=e3857]:
+                    - generic [ref=e3858]:
+                      - heading "横浜テクノタワーホテル" [level=2] [ref=e3860]:
+                        - link "横浜テクノタワーホテル" [ref=e3861] [cursor=pointer]:
+                          - /url: /ja/acd/?fpip=1&search=100-1052958;dr-20260805-20260806;drs-40;qs-OMO7%E6%A8%AA%E6%B5%9C;rc-1-2-7-4#::effects=logNewTab-1052958-1
+                      - button "4 ホテルのランク ホテル" [ref=e3863] [cursor=pointer]:
+                        - generic [ref=e3864]:
+                          - generic [ref=e3865]:
+                            - generic [ref=e3866]: 4 ホテルのランク
+                            - generic [ref=e3867]:
+                              - img
+                            - generic [ref=e3868]:
+                              - img
+                            - generic [ref=e3869]:
+                              - img
+                            - generic [ref=e3870]:
+                              - img
+                          - generic [ref=e3871]: ホテル
+                      - button "7.5 良い (1,529件の評価)" [ref=e3872] [cursor=pointer]:
+                        - generic [ref=e3874]:
+                          - generic [ref=e3875]: "7.5"
+                          - generic [ref=e3876]:
+                            - strong [ref=e3877]: 良い
+                            - text: (1,529件の評価)
+                      - button "横須賀, OMO7 Yokohama by Hoshino Resortsまで9.9 km" [ref=e3878] [cursor=pointer]:
+                        - generic [ref=e3879]:
+                          - generic [ref=e3880]:
+                            - img
+                          - text: 横須賀, OMO7 Yokohama by Hoshino Resortsまで9.9 km
+                      - button "高層階からのパノラマビュー, 多彩なダイニング体験" [ref=e3882] [cursor=pointer]:
+                        - generic [ref=e3884]:
+                          - generic [ref=e3885]:
+                            - img
+                          - paragraph [ref=e3886]: 高層階からのパノラマビュー, 多彩なダイニング体験
+                    - generic [ref=e3887]:
+                      - button "エクスペディア 柔軟なキャンセルポリシー 8月4日より前まで 事前払い不要 トリバゴの最安値 現在の料金 ￥27,119 以前の料金 ￥33,899 料金プランを見る" [ref=e3888] [cursor=pointer]:
+                        - generic [ref=e3890]:
+                          - generic [ref=e3891]:
+                            - generic "エクスペディア" [ref=e3894]
+                            - list [ref=e3895]:
+                              - listitem "柔軟なキャンセルポリシー" [ref=e3896]:
+                                - button "柔軟なキャンセルポリシー 8月4日より前まで" [ref=e3897]:
+                                  - generic [ref=e3898]:
+                                    - img
+                                  - generic [ref=e3899]:
+                                    - generic [ref=e3900]: 柔軟なキャンセルポリシー
+                                    - generic [ref=e3901]: 8月4日より前まで
+                              - listitem "事前払い不要" [ref=e3902]:
+                                - button "事前払い不要" [ref=e3903]:
+                                  - generic [ref=e3904]:
+                                    - img
+                                  - generic [ref=e3906]: 事前払い不要
+                          - generic [ref=e3907]:
+                            - generic [ref=e3909]: トリバゴの最安値
+                            - generic [ref=e3910]:
+                              - generic [ref=e3913]:
+                                - generic [ref=e3915]:
+                                  - generic [ref=e3916]: 現在の料金
+                                  - text: ￥27,119
+                                - button "以前の料金 ￥33,899" [ref=e3917]:
+                                  - deletion [ref=e3920]:
+                                    - generic [ref=e3921]: 以前の料金
+                                    - text: ￥33,899
+                              - button "料金プランを見る" [ref=e3923]:
+                                - text: 料金プランを見る
+                                - generic [ref=e3924]:
+                                  - img
+                      - button "￥27,119 ホテルズドットコム すべての料金を表示" [ref=e3925] [cursor=pointer]:
+                        - generic [ref=e3926]:
+                          - generic [ref=e3928]: ￥27,119
+                          - generic "ホテルズドットコム" [ref=e3930]
+                        - generic [ref=e3931]: すべての料金を表示
+                        - generic [ref=e3932]:
+                          - img
+              - listitem [ref=e3933]:
+                - article [ref=e3936]:
+                  - generic [ref=e3937]:
+                    - button "ホテルマイステイズプレミア大森, (東京, 国内) 1 / 73" [ref=e3938] [cursor=pointer]:
+                      - img "ホテルマイステイズプレミア大森, (東京, 国内)" [ref=e3941]
+                      - generic [ref=e3942]: 1 / 73
+                    - button "お気に入りに追加" [ref=e3948] [cursor=pointer]:
+                      - img [ref=e3949]
+                      - generic [ref=e3951]: お気に入りに追加
+                  - generic [ref=e3952]:
+                    - generic [ref=e3953]:
+                      - heading "ホテルマイステイズプレミア大森" [level=2] [ref=e3955]:
+                        - link "ホテルマイステイズプレミア大森" [ref=e3956] [cursor=pointer]:
+                          - /url: /ja/acd/?fpip=1&search=100-508561;dr-20260805-20260806;drs-40;qs-OMO7%E6%A8%AA%E6%B5%9C;rc-1-2-7-4#::effects=logNewTab-508561-1
+                      - button "4 ホテルのランク ホテル" [ref=e3958] [cursor=pointer]:
+                        - generic [ref=e3959]:
+                          - generic [ref=e3960]:
+                            - generic [ref=e3961]: 4 ホテルのランク
+                            - generic [ref=e3962]:
+                              - img
+                            - generic [ref=e3963]:
+                              - img
+                            - generic [ref=e3964]:
+                              - img
+                            - generic [ref=e3965]:
+                              - img
+                          - generic [ref=e3966]: ホテル
+                      - button "8.2 満足 (9,069件の評価)" [ref=e3967] [cursor=pointer]:
+                        - generic [ref=e3969]:
+                          - generic [ref=e3970]: "8.2"
+                          - generic [ref=e3971]:
+                            - strong [ref=e3972]: 満足
+                            - text: (9,069件の評価)
+                      - button "東京, OMO7 Yokohama by Hoshino Resortsまで18.5 km" [ref=e3973] [cursor=pointer]:
+                        - generic [ref=e3974]:
+                          - generic [ref=e3975]:
+                            - img
+                          - text: 東京, OMO7 Yokohama by Hoshino Resortsまで18.5 km
+                      - button "お部屋でスウェディッシュオイルマッサージ, ご家族でゆったり過ごせる広々としたお部屋" [ref=e3977] [cursor=pointer]:
+                        - generic [ref=e3979]:
+                          - generic [ref=e3980]:
+                            - img
+                          - paragraph [ref=e3981]: お部屋でスウェディッシュオイルマッサージ, ご家族でゆったり過ごせる広々としたお部屋
+                    - generic [ref=e3982]:
+                      - button "Trip.com 柔軟なキャンセルポリシー トリバゴの最安値 ￥8,640 料金プランを見る" [ref=e3983] [cursor=pointer]:
+                        - generic [ref=e3985]:
+                          - generic [ref=e3986]:
+                            - generic "Trip.com" [ref=e3989]
+                            - list [ref=e3990]:
+                              - listitem "柔軟なキャンセルポリシー" [ref=e3991]:
+                                - button "柔軟なキャンセルポリシー" [ref=e3992]:
+                                  - generic [ref=e3993]:
+                                    - img
+                                  - generic [ref=e3995]: 柔軟なキャンセルポリシー
+                          - generic [ref=e3996]:
+                            - generic [ref=e3998]: トリバゴの最安値
+                            - generic [ref=e3999]:
+                              - generic [ref=e4004]: ￥8,640
+                              - button "料金プランを見る" [ref=e4006]:
+                                - text: 料金プランを見る
+                                - generic [ref=e4007]:
+                                  - img
+                      - button "￥8,808 エクスペディア ￥8,808 ホテルズドットコム すべての料金を表示" [ref=e4008] [cursor=pointer]:
+                        - generic [ref=e4009]:
+                          - generic [ref=e4011]: ￥8,808
+                          - generic "エクスペディア" [ref=e4013]
+                        - generic [ref=e4014]:
+                          - generic [ref=e4016]: ￥8,808
+                          - generic "ホテルズドットコム" [ref=e4018]
+                        - generic [ref=e4019]: すべての料金を表示
+                        - generic [ref=e4020]:
+                          - img
+              - listitem [ref=e4021]:
+                - region "これらの結果はどの程度役に立ちましたか?" [ref=e4022]:
+                  - generic [ref=e4023]:
+                    - generic [ref=e4024]:
+                      - img
+                    - generic [ref=e4025]:
+                      - heading "これらの結果はどの程度役に立ちましたか?" [level=3] [ref=e4026]
+                      - paragraph [ref=e4027]: 簡単な評価でサービスの向上にご協力ください
+                    - button "閉じる" [ref=e4028] [cursor=pointer]:
+                      - generic [ref=e4029]:
+                        - img
+                  - generic [ref=e4030]:
+                    - generic [ref=e4031]:
+                      - button "rating-1" [ref=e4032] [cursor=pointer]: "1"
+                      - button "rating-2" [ref=e4033] [cursor=pointer]: "2"
+                      - button "rating-3" [ref=e4034] [cursor=pointer]: "3"
+                      - button "rating-4" [ref=e4035] [cursor=pointer]: "4"
+                      - button "rating-5" [ref=e4036] [cursor=pointer]: "5"
+                    - generic [ref=e4037]:
+                      - generic [ref=e4038]: 役に立たなかった
+                      - generic [ref=e4039]: とても役に立った
+              - listitem [ref=e4040]:
+                - article [ref=e4043]:
+                  - generic [ref=e4044]:
+                    - button "OMO5 Yokohama Bashamichi by Hoshino Resorts, (横浜, 国内) 1 / 48" [ref=e4045] [cursor=pointer]:
+                      - img "OMO5 Yokohama Bashamichi by Hoshino Resorts, (横浜, 国内)" [ref=e4048]
+                      - generic [ref=e4049]: 1 / 48
+                    - button "お気に入りに追加" [ref=e4055] [cursor=pointer]:
+                      - img [ref=e4056]
+                      - generic [ref=e4058]: お気に入りに追加
+                  - generic [ref=e4059]:
+                    - generic [ref=e4060]:
+                      - heading "OMO5 Yokohama Bashamichi by Hoshino Resorts" [level=2] [ref=e4062]:
+                        - link "OMO5 Yokohama Bashamichi by Hoshino Resorts" [ref=e4063] [cursor=pointer]:
+                          - /url: /ja/acd/?fpip=1&search=100-47931882;dr-20260805-20260806;drs-40;qs-OMO7%E6%A8%AA%E6%B5%9C;rc-1-2-7-4#::effects=logNewTab-47931882-1
+                      - button "3 ホテルのランク ホテル" [ref=e4065] [cursor=pointer]:
+                        - generic [ref=e4066]:
+                          - generic [ref=e4067]:
+                            - generic [ref=e4068]: 3 ホテルのランク
+                            - generic [ref=e4069]:
+                              - img
+                            - generic [ref=e4070]:
+                              - img
+                            - generic [ref=e4071]:
+                              - img
+                          - generic [ref=e4072]: ホテル
+                      - button "8.7 大満足 (19件の評価)" [ref=e4073] [cursor=pointer]:
+                        - generic [ref=e4075]:
+                          - generic [ref=e4076]: "8.7"
+                          - generic [ref=e4077]:
+                            - strong [ref=e4078]: 大満足
+                            - text: (19件の評価)
+                      - button "横浜, OMO7 Yokohama by Hoshino Resortsまで0.9 km" [ref=e4079] [cursor=pointer]:
+                        - generic [ref=e4080]:
+                          - generic [ref=e4081]:
+                            - img
+                          - text: 横浜, OMO7 Yokohama by Hoshino Resortsまで0.9 km
+                    - generic [ref=e4082]:
+                      - button "Booking.com 柔軟なキャンセルポリシー 7月14日より前まで トリバゴの最安値 ￥51,600 料金プランを見る" [ref=e4083] [cursor=pointer]:
+                        - generic [ref=e4085]:
+                          - generic [ref=e4086]:
+                            - generic "Booking.com" [ref=e4089]
+                            - list [ref=e4090]:
+                              - listitem "柔軟なキャンセルポリシー" [ref=e4091]:
+                                - button "柔軟なキャンセルポリシー 7月14日より前まで" [ref=e4092]:
+                                  - generic [ref=e4093]:
+                                    - img
+                                  - generic [ref=e4094]:
+                                    - generic [ref=e4095]: 柔軟なキャンセルポリシー
+                                    - generic [ref=e4096]: 7月14日より前まで
+                          - generic [ref=e4097]:
+                            - generic [ref=e4099]: トリバゴの最安値
+                            - generic [ref=e4100]:
+                              - generic [ref=e4105]: ￥51,600
+                              - button "料金プランを見る" [ref=e4107]:
+                                - text: 料金プランを見る
+                                - generic [ref=e4108]:
+                                  - img
+                      - button "￥56,760 エクスペディア ￥55,790 Trip.com すべての料金を表示" [ref=e4109] [cursor=pointer]:
+                        - generic [ref=e4110]:
+                          - generic [ref=e4112]: ￥56,760
+                          - generic "エクスペディア" [ref=e4114]
+                        - generic [ref=e4115]:
+                          - generic [ref=e4117]: ￥55,790
+                          - generic "Trip.com" [ref=e4119]
+                        - generic [ref=e4120]: すべての料金を表示
+                        - generic [ref=e4121]:
+                          - img
+              - listitem [ref=e4122]:
+                - article [ref=e4125]:
+                  - generic [ref=e4126]:
+                    - button "エイトホテル 湘南藤沢, (藤沢, 国内) 1 / 62" [ref=e4127] [cursor=pointer]:
+                      - img "エイトホテル 湘南藤沢, (藤沢, 国内)" [ref=e4130]
+                      - generic [ref=e4131]: 1 / 62
+                    - button "お気に入りに追加" [ref=e4137] [cursor=pointer]:
+                      - img [ref=e4138]
+                      - generic [ref=e4140]: お気に入りに追加
+                  - generic [ref=e4141]:
+                    - generic [ref=e4142]:
+                      - heading "エイトホテル 湘南藤沢" [level=2] [ref=e4144]:
+                        - link "エイトホテル 湘南藤沢" [ref=e4145] [cursor=pointer]:
+                          - /url: /ja/acd/?fpip=1&search=100-2043005;dr-20260805-20260806;drs-40;qs-OMO7%E6%A8%AA%E6%B5%9C;rc-1-2-7-4#::effects=logNewTab-2043005-0
+                      - button "3 ホテルのランク ホテル" [ref=e4147] [cursor=pointer]:
+                        - generic [ref=e4148]:
+                          - generic [ref=e4149]:
+                            - generic [ref=e4150]: 3 ホテルのランク
+                            - generic [ref=e4151]:
+                              - img
+                            - generic [ref=e4152]:
+                              - img
+                            - generic [ref=e4153]:
+                              - img
+                          - generic [ref=e4154]: ホテル
+                      - button "7.8 良い (3,023件の評価)" [ref=e4155] [cursor=pointer]:
+                        - generic [ref=e4157]:
+                          - generic [ref=e4158]: "7.8"
+                          - generic [ref=e4159]:
+                            - strong [ref=e4160]: 良い
+                            - text: (3,023件の評価)
+                      - button "藤沢, OMO7 Yokohama by Hoshino Resortsまで18.1 km" [ref=e4161] [cursor=pointer]:
+                        - generic [ref=e4162]:
+                          - generic [ref=e4163]:
+                            - img
+                          - text: 藤沢, OMO7 Yokohama by Hoshino Resortsまで18.1 km
+                      - button "藤沢駅近くの絶好のロケーション, 湘南にインスパイアされたアートとデザイン" [ref=e4165] [cursor=pointer]:
+                        - generic [ref=e4167]:
+                          - generic [ref=e4168]:
+                            - img
+                          - paragraph [ref=e4169]: 藤沢駅近くの絶好のロケーション, 湘南にインスパイアされたアートとデザイン
+                    - button "アゴダ 朝食付き ￥47,996 料金プランを見る" [ref=e4171] [cursor=pointer]:
+                      - generic [ref=e4173]:
+                        - generic [ref=e4174]:
+                          - generic "アゴダ" [ref=e4177]
+                          - list [ref=e4178]:
+                            - listitem "朝食付き" [ref=e4179]:
+                              - button "朝食付き" [ref=e4180]:
+                                - generic [ref=e4181]:
+                                  - img
+                                - generic [ref=e4183]: 朝食付き
+                        - generic [ref=e4185]:
+                          - generic [ref=e4190]: ￥47,996
+                          - button "料金プランを見る" [ref=e4192]:
+                            - text: 料金プランを見る
+                            - generic [ref=e4193]:
+                              - img
+              - listitem [ref=e4194]:
+                - article [ref=e4197]:
+                  - generic [ref=e4198]:
+                    - button "青葉台フォーラム, (横浜, 国内) 1 / 20" [ref=e4199] [cursor=pointer]:
+                      - img "青葉台フォーラム, (横浜, 国内)" [ref=e4202]
+                      - generic [ref=e4203]: 1 / 20
+                    - button "お気に入りに追加" [ref=e4209] [cursor=pointer]:
+                      - img [ref=e4210]
+                      - generic [ref=e4212]: お気に入りに追加
+                  - generic [ref=e4213]:
+                    - generic [ref=e4214]:
+                      - heading "青葉台フォーラム" [level=2] [ref=e4216]:
+                        - link "青葉台フォーラム" [ref=e4217] [cursor=pointer]:
+                          - /url: /ja/acd/?fpip=1&search=100-1045096;dr-20260805-20260806;drs-40;qs-OMO7%E6%A8%AA%E6%B5%9C;rc-1-2-7-4#::effects=logNewTab-1045096-0
+                      - button "3 ホテルのランク ホテル" [ref=e4219] [cursor=pointer]:
+                        - generic [ref=e4220]:
+                          - generic [ref=e4221]:
+                            - generic [ref=e4222]: 3 ホテルのランク
+                            - generic [ref=e4223]:
+                              - img
+                            - generic [ref=e4224]:
+                              - img
+                            - generic [ref=e4225]:
+                              - img
+                          - generic [ref=e4226]: ホテル
+                      - button "7.4 (348件の評価)" [ref=e4227] [cursor=pointer]:
+                        - generic [ref=e4229]:
+                          - generic [ref=e4230]: "7.4"
+                          - generic [ref=e4231]: (348件の評価)
+                      - button "横浜, OMO7 Yokohama by Hoshino Resortsまで15.4 km" [ref=e4232] [cursor=pointer]:
+                        - generic [ref=e4233]:
+                          - generic [ref=e4234]:
+                            - img
+                          - text: 横浜, OMO7 Yokohama by Hoshino Resortsまで15.4 km
+                      - button "明るく洗練されたダイニング体験, 趣のある、歴史を感じるホテルの雰囲気" [ref=e4236] [cursor=pointer]:
+                        - generic [ref=e4238]:
+                          - generic [ref=e4239]:
+                            - img
+                          - paragraph [ref=e4240]: 明るく洗練されたダイニング体験, 趣のある、歴史を感じるホテルの雰囲気
+                    - button "Trip.com 柔軟なキャンセルポリシー ￥31,200 料金プランを見る" [ref=e4242] [cursor=pointer]:
+                      - generic [ref=e4244]:
+                        - generic [ref=e4245]:
+                          - generic "Trip.com" [ref=e4248]
+                          - list [ref=e4249]:
+                            - listitem "柔軟なキャンセルポリシー" [ref=e4250]:
+                              - button "柔軟なキャンセルポリシー" [ref=e4251]:
+                                - generic [ref=e4252]:
+                                  - img
+                                - generic [ref=e4254]: 柔軟なキャンセルポリシー
+                        - generic [ref=e4256]:
+                          - generic [ref=e4261]: ￥31,200
+                          - button "料金プランを見る" [ref=e4263]:
+                            - text: 料金プランを見る
+                            - generic [ref=e4264]:
+                              - img
+              - listitem [ref=e4265]:
+                - article [ref=e4268]:
+                  - generic [ref=e4269]:
+                    - button "OMO5 東京五反田 by 星野リゾート, (東京, 国内) 1 / 80" [ref=e4270] [cursor=pointer]:
+                      - img "OMO5 東京五反田 by 星野リゾート, (東京, 国内)" [ref=e4273]
+                      - generic [ref=e4274]: 1 / 80
+                    - button "お気に入りに追加" [ref=e4280] [cursor=pointer]:
+                      - img [ref=e4281]
+                      - generic [ref=e4283]: お気に入りに追加
+                  - generic [ref=e4284]:
+                    - generic [ref=e4285]:
+                      - heading "OMO5 東京五反田 by 星野リゾート" [level=2] [ref=e4287]:
+                        - link "OMO5 東京五反田 by 星野リゾート" [ref=e4288] [cursor=pointer]:
+                          - /url: /ja/acd/?fpip=1&search=100-36948870;dr-20260805-20260806;drs-40;qs-OMO7%E6%A8%AA%E6%B5%9C;rc-1-2-7-4#::effects=logNewTab-36948870-1
+                      - button "3 ホテルのランク ホテル" [ref=e4290] [cursor=pointer]:
+                        - generic [ref=e4291]:
+                          - generic [ref=e4292]:
+                            - generic [ref=e4293]: 3 ホテルのランク
+                            - generic [ref=e4294]:
+                              - img
+                            - generic [ref=e4295]:
+                              - img
+                            - generic [ref=e4296]:
+                              - img
+                          - generic [ref=e4297]: ホテル
+                      - button "8.7 大満足 (1,673件の評価)" [ref=e4298] [cursor=pointer]:
+                        - generic [ref=e4300]:
+                          - generic [ref=e4301]: "8.7"
+                          - generic [ref=e4302]:
+                            - strong [ref=e4303]: 大満足
+                            - text: (1,673件の評価)
+                      - button "東京, OMO7 Yokohama by Hoshino Resortsまで21.3 km" [ref=e4304] [cursor=pointer]:
+                        - generic [ref=e4305]:
+                          - generic [ref=e4306]:
+                            - img
+                          - text: 東京, OMO7 Yokohama by Hoshino Resortsまで21.3 km
+                      - button "街と富士山のパノラマビュー, ユニークなだんだんルームのデザイン" [ref=e4308] [cursor=pointer]:
+                        - generic [ref=e4310]:
+                          - generic [ref=e4311]:
+                            - img
+                          - paragraph [ref=e4312]: 街と富士山のパノラマビュー, ユニークなだんだんルームのデザイン
+                    - generic [ref=e4313]:
+                      - button "エクスペディア 柔軟なキャンセルポリシー 7月15日より前まで ￥32,998 料金プランを見る" [ref=e4314] [cursor=pointer]:
+                        - generic [ref=e4316]:
+                          - generic [ref=e4317]:
+                            - generic "エクスペディア" [ref=e4320]
+                            - list [ref=e4321]:
+                              - listitem "柔軟なキャンセルポリシー" [ref=e4322]:
+                                - button "柔軟なキャンセルポリシー 7月15日より前まで" [ref=e4323]:
+                                  - generic [ref=e4324]:
+                                    - img
+                                  - generic [ref=e4325]:
+                                    - generic [ref=e4326]: 柔軟なキャンセルポリシー
+                                    - generic [ref=e4327]: 7月15日より前まで
+                          - generic [ref=e4329]:
+                            - generic [ref=e4334]: ￥32,998
+                            - button "料金プランを見る" [ref=e4336]:
+                              - text: 料金プランを見る
+                              - generic [ref=e4337]:
+                                - img
+                      - button "￥32,700 Booking.com ￥35,970 Trip.com すべての料金を表示" [ref=e4338] [cursor=pointer]:
+                        - generic [ref=e4339]:
+                          - generic [ref=e4341]: ￥32,700
+                          - generic "Booking.com" [ref=e4343]
+                        - generic [ref=e4344]:
+                          - generic [ref=e4346]: ￥35,970
+                          - generic "Trip.com" [ref=e4348]
+                        - generic [ref=e4349]: すべての料金を表示
+                        - generic [ref=e4350]:
+                          - img
+              - listitem [ref=e4351]:
+                - article [ref=e4354]:
+                  - generic [ref=e4355]:
+                    - button "Onsen Ryokan Yuen Shinjuku, (東京, 国内) 1 / 71" [ref=e4356] [cursor=pointer]:
+                      - img "Onsen Ryokan Yuen Shinjuku, (東京, 国内)" [ref=e4359]
+                      - generic [ref=e4360]: 1 / 71
+                    - button "お気に入りに追加" [ref=e4366] [cursor=pointer]:
+                      - img [ref=e4367]
+                      - generic [ref=e4369]: お気に入りに追加
+                  - generic [ref=e4370]:
+                    - generic [ref=e4371]:
+                      - heading "Onsen Ryokan Yuen Shinjuku" [level=2] [ref=e4373]:
+                        - link "Onsen Ryokan Yuen Shinjuku" [ref=e4374] [cursor=pointer]:
+                          - /url: /ja/acd/?fpip=1&search=100-12503714;dr-20260805-20260806;drs-40;qs-OMO7%E6%A8%AA%E6%B5%9C;rc-1-2-7-4#::effects=logNewTab-12503714-1
+                      - button "3 ホテルのランク ホテル" [ref=e4376] [cursor=pointer]:
+                        - generic [ref=e4377]:
+                          - generic [ref=e4378]:
+                            - generic [ref=e4379]: 3 ホテルのランク
+                            - generic [ref=e4380]:
+                              - img
+                            - generic [ref=e4381]:
+                              - img
+                            - generic [ref=e4382]:
+                              - img
+                          - generic [ref=e4383]: ホテル
+                      - button "8.8 大満足 (7,197件の評価)" [ref=e4384] [cursor=pointer]:
+                        - generic [ref=e4386]:
+                          - generic [ref=e4387]: "8.8"
+                          - generic [ref=e4388]:
+                            - strong [ref=e4389]: 大満足
+                            - text: (7,197件の評価)
+                      - button "東京, OMO7 Yokohama by Hoshino Resortsまで28.6 km" [ref=e4390] [cursor=pointer]:
+                        - generic [ref=e4391]:
+                          - generic [ref=e4392]:
+                            - img
+                          - text: 東京, OMO7 Yokohama by Hoshino Resortsまで28.6 km
+                      - button "モダンな和風デザイン, 本格的な和朝食体験" [ref=e4394] [cursor=pointer]:
+                        - generic [ref=e4396]:
+                          - generic [ref=e4397]:
+                            - img
+                          - paragraph [ref=e4398]: モダンな和風デザイン, 本格的な和朝食体験
+                    - generic [ref=e4399]:
+                      - button "エクスペディア 柔軟なキャンセルポリシー 8月3日より前まで 事前払い不要 トリバゴの最安値 現在の料金 ￥58,620 以前の料金 ￥81,300 料金プランを見る" [ref=e4400] [cursor=pointer]:
+                        - generic [ref=e4402]:
+                          - generic [ref=e4403]:
+                            - generic "エクスペディア" [ref=e4406]
+                            - list [ref=e4407]:
+                              - listitem "柔軟なキャンセルポリシー" [ref=e4408]:
+                                - button "柔軟なキャンセルポリシー 8月3日より前まで" [ref=e4409]:
+                                  - generic [ref=e4410]:
+                                    - img
+                                  - generic [ref=e4411]:
+                                    - generic [ref=e4412]: 柔軟なキャンセルポリシー
+                                    - generic [ref=e4413]: 8月3日より前まで
+                              - listitem "事前払い不要" [ref=e4414]:
+                                - button "事前払い不要" [ref=e4415]:
+                                  - generic [ref=e4416]:
+                                    - img
+                                  - generic [ref=e4418]: 事前払い不要
+                          - generic [ref=e4419]:
+                            - generic [ref=e4421]: トリバゴの最安値
+                            - generic [ref=e4422]:
+                              - generic [ref=e4425]:
+                                - generic [ref=e4427]:
+                                  - generic [ref=e4428]: 現在の料金
+                                  - text: ￥58,620
+                                - button "以前の料金 ￥81,300" [ref=e4429]:
+                                  - deletion [ref=e4432]:
+                                    - generic [ref=e4433]: 以前の料金
+                                    - text: ￥81,300
+                              - button "料金プランを見る" [ref=e4435]:
+                                - text: 料金プランを見る
+                                - generic [ref=e4436]:
+                                  - img
+                      - button "￥58,620 ホテルズドットコム すべての料金を表示" [ref=e4437] [cursor=pointer]:
+                        - generic [ref=e4438]:
+                          - generic [ref=e4440]: ￥58,620
+                          - generic "ホテルズドットコム" [ref=e4442]
+                        - generic [ref=e4443]: すべての料金を表示
+                        - generic [ref=e4444]:
+                          - img
+              - listitem [ref=e4445]:
+                - article [ref=e4448]:
+                  - generic [ref=e4449]:
+                    - button "hotel MONday Premium 豊洲, (東京, 国内) 1 / 69" [ref=e4450] [cursor=pointer]:
+                      - img "hotel MONday Premium 豊洲, (東京, 国内)" [ref=e4453]
+                      - generic [ref=e4454]: 1 / 69
+                    - button "お気に入りに追加" [ref=e4460] [cursor=pointer]:
+                      - img [ref=e4461]
+                      - generic [ref=e4463]: お気に入りに追加
+                  - generic [ref=e4464]:
+                    - generic [ref=e4465]:
+                      - heading "hotel MONday Premium 豊洲" [level=2] [ref=e4467]:
+                        - link "hotel MONday Premium 豊洲" [ref=e4468] [cursor=pointer]:
+                          - /url: /ja/acd/?fpip=1&search=100-11195970;dr-20260805-20260806;drs-40;qs-OMO7%E6%A8%AA%E6%B5%9C;rc-1-2-7-4#::effects=logNewTab-11195970-1
+                      - button "4 ホテルのランク ホテル" [ref=e4470] [cursor=pointer]:
+                        - generic [ref=e4471]:
+                          - generic [ref=e4472]:
+                            - generic [ref=e4473]: 4 ホテルのランク
+                            - generic [ref=e4474]:
+                              - img
+                            - generic [ref=e4475]:
+                              - img
+                            - generic [ref=e4476]:
+                              - img
+                            - generic [ref=e4477]:
+                              - img
+                          - generic [ref=e4478]: ホテル
+                      - button "8.5 大満足 (5,861件の評価)" [ref=e4479] [cursor=pointer]:
+                        - generic [ref=e4481]:
+                          - generic [ref=e4482]: "8.5"
+                          - generic [ref=e4483]:
+                            - strong [ref=e4484]: 大満足
+                            - text: (5,861件の評価)
+                      - button "東京, OMO7 Yokohama by Hoshino Resortsまで27.2 km" [ref=e4485] [cursor=pointer]:
+                        - generic [ref=e4486]:
+                          - generic [ref=e4487]:
+                            - img
+                          - text: 東京, OMO7 Yokohama by Hoshino Resortsまで27.2 km
+                      - button "景色を望む広々とした大浴場, モダンな和の美意識" [ref=e4489] [cursor=pointer]:
+                        - generic [ref=e4491]:
+                          - generic [ref=e4492]:
+                            - img
+                          - paragraph [ref=e4493]: 景色を望む広々とした大浴場, モダンな和の美意識
+                    - generic [ref=e4494]:
+                      - button "日本旅行 ￥52,000 料金プランを見る" [ref=e4495] [cursor=pointer]:
+                        - generic [ref=e4497]:
+                          - generic "日本旅行" [ref=e4501]
+                          - generic [ref=e4503]:
+                            - generic [ref=e4508]: ￥52,000
+                            - button "料金プランを見る" [ref=e4510]:
+                              - text: 料金プランを見る
+                              - generic [ref=e4511]:
+                                - img
+                      - button "￥43,000 ログインしてアクセス すべての料金を表示" [ref=e4512] [cursor=pointer]:
+                        - generic [ref=e4513]:
+                          - generic [ref=e4515]: ￥43,000
+                          - generic [ref=e4516]:
+                            - img
+                          - text: ログインしてアクセス
+                        - generic [ref=e4517]: すべての料金を表示
+                        - generic [ref=e4518]:
+                          - img
+              - listitem [ref=e4519]:
+                - article [ref=e4522]:
+                  - generic [ref=e4523]:
+                    - button "ホテルオークラ東京ベイ, (浦安市, 国内) 1 / 101" [ref=e4524] [cursor=pointer]:
+                      - img "ホテルオークラ東京ベイ, (浦安市, 国内)" [ref=e4527]
+                      - generic [ref=e4528]: 1 / 101
+                    - button "お気に入りに追加" [ref=e4534] [cursor=pointer]:
+                      - img [ref=e4535]
+                      - generic [ref=e4537]: お気に入りに追加
+                  - generic [ref=e4538]:
+                    - generic [ref=e4539]:
+                      - heading "ホテルオークラ東京ベイ" [level=2] [ref=e4541]:
+                        - link "ホテルオークラ東京ベイ" [ref=e4542] [cursor=pointer]:
+                          - /url: /ja/acd/?fpip=1&search=100-891093;dr-20260805-20260806;drs-40;qs-OMO7%E6%A8%AA%E6%B5%9C;rc-1-2-7-4#::effects=logNewTab-891093-1
+                      - button "5 ホテルのランク ホテル" [ref=e4544] [cursor=pointer]:
+                        - generic [ref=e4545]:
+                          - generic [ref=e4546]:
+                            - generic [ref=e4547]: 5 ホテルのランク
+                            - generic [ref=e4548]:
+                              - img
+                            - generic [ref=e4549]:
+                              - img
+                            - generic [ref=e4550]:
+                              - img
+                            - generic [ref=e4551]:
+                              - img
+                            - generic [ref=e4552]:
+                              - img
+                          - generic [ref=e4553]: ホテル
+                      - button "8.8 大満足 (12,714件の評価)" [ref=e4554] [cursor=pointer]:
+                        - generic [ref=e4556]:
+                          - generic [ref=e4557]: "8.8"
+                          - generic [ref=e4558]:
+                            - strong [ref=e4559]: 大満足
+                            - text: (12,714件の評価)
+                      - button "浦安市, OMO7 Yokohama by Hoshino Resortsまで29.6 km" [ref=e4560] [cursor=pointer]:
+                        - generic [ref=e4561]:
+                          - generic [ref=e4562]:
+                            - img
+                          - text: 浦安市, OMO7 Yokohama by Hoshino Resortsまで29.6 km
+                      - button "ディズニーリゾートラインへ直接アクセス, 充実したウェルネス＆ビューティー施設" [ref=e4564] [cursor=pointer]:
+                        - generic [ref=e4566]:
+                          - generic [ref=e4567]:
+                            - img
+                          - paragraph [ref=e4568]: ディズニーリゾートラインへ直接アクセス, 充実したウェルネス＆ビューティー施設
+                    - generic [ref=e4569]:
+                      - button "他のサイトより18%お得 Booking.com 柔軟なキャンセルポリシー 7月30日より前まで トリバゴの最安値 ￥27,594 料金プランを見る" [ref=e4570] [cursor=pointer]:
+                        - generic [ref=e4571]:
+                          - button "他のサイトより18%お得" [ref=e4573]:
+                            - generic [ref=e4577]: 他のサイトより18%お得
+                          - generic [ref=e4578]:
+                            - generic [ref=e4579]:
+                              - generic "Booking.com" [ref=e4582]
+                              - list [ref=e4583]:
+                                - listitem "柔軟なキャンセルポリシー" [ref=e4584]:
+                                  - button "柔軟なキャンセルポリシー 7月30日より前まで" [ref=e4585]:
+                                    - generic [ref=e4586]:
+                                      - img
+                                    - generic [ref=e4587]:
+                                      - generic [ref=e4588]: 柔軟なキャンセルポリシー
+                                      - generic [ref=e4589]: 7月30日より前まで
+                            - generic [ref=e4590]:
+                              - generic [ref=e4592]: トリバゴの最安値
+                              - generic [ref=e4593]:
+                                - generic [ref=e4598]: ￥27,594
+                                - button "料金プランを見る" [ref=e4600]:
+                                  - text: 料金プランを見る
+                                  - generic [ref=e4601]:
+                                    - img
+                      - button "￥36,544 近畿日本ツーリスト ￥33,507 ホテルズドットコム すべての料金を表示" [ref=e4602] [cursor=pointer]:
+                        - generic [ref=e4603]:
+                          - generic [ref=e4605]: ￥36,544
+                          - generic "近畿日本ツーリスト" [ref=e4607]
+                        - generic [ref=e4608]:
+                          - generic [ref=e4610]: ￥33,507
+                          - generic "ホテルズドットコム" [ref=e4612]
+                        - generic [ref=e4613]: すべての料金を表示
+                        - generic [ref=e4614]:
+                          - img
+              - listitem [ref=e4615]:
+                - article [ref=e4618]:
+                  - generic [ref=e4619]:
+                    - button "SOTETSU HOTELS THE SPLAISIR YOKOHAMA, (横浜, 国内) 1 / 68" [ref=e4620] [cursor=pointer]:
+                      - img "SOTETSU HOTELS THE SPLAISIR YOKOHAMA, (横浜, 国内)" [ref=e4623]
+                      - generic [ref=e4624]: 1 / 68
+                    - button "お気に入りに追加" [ref=e4630] [cursor=pointer]:
+                      - img [ref=e4631]
+                      - generic [ref=e4633]: お気に入りに追加
+                  - generic [ref=e4634]:
+                    - generic [ref=e4635]:
+                      - heading "SOTETSU HOTELS THE SPLAISIR YOKOHAMA" [level=2] [ref=e4637]:
+                        - link "SOTETSU HOTELS THE SPLAISIR YOKOHAMA" [ref=e4638] [cursor=pointer]:
+                          - /url: /ja/acd/?fpip=1&search=100-37008056;dr-20260805-20260806;drs-40;qs-OMO7%E6%A8%AA%E6%B5%9C;rc-1-2-7-4#::effects=logNewTab-37008056-0
+                      - button "4 ホテルのランク ホテル" [ref=e4640] [cursor=pointer]:
+                        - generic [ref=e4641]:
+                          - generic [ref=e4642]:
+                            - generic [ref=e4643]: 4 ホテルのランク
+                            - generic [ref=e4644]:
+                              - img
+                            - generic [ref=e4645]:
+                              - img
+                            - generic [ref=e4646]:
+                              - img
+                            - generic [ref=e4647]:
+                              - img
+                          - generic [ref=e4648]: ホテル
+                      - button "9.3 大満足 (2,222件の評価)" [ref=e4649] [cursor=pointer]:
+                        - generic [ref=e4651]:
+                          - generic [ref=e4652]: "9.3"
+                          - generic [ref=e4653]:
+                            - strong [ref=e4654]: 大満足
+                            - text: (2,222件の評価)
+                      - button "横浜, OMO7 Yokohama by Hoshino Resortsまで3.1 km" [ref=e4655] [cursor=pointer]:
+                        - generic [ref=e4656]:
+                          - generic [ref=e4657]:
+                            - img
+                          - text: 横浜, OMO7 Yokohama by Hoshino Resortsまで3.1 km
+                      - button "モダンなフィットネスセンター, セルフチェックインとクローク" [ref=e4659] [cursor=pointer]:
+                        - generic [ref=e4661]:
+                          - generic [ref=e4662]:
+                            - img
+                          - paragraph [ref=e4663]: モダンなフィットネスセンター, セルフチェックインとクローク
+                    - button "Trip.com 柔軟なキャンセルポリシー ￥41,277 料金プランを見る" [ref=e4665] [cursor=pointer]:
+                      - generic [ref=e4667]:
+                        - generic [ref=e4668]:
+                          - generic "Trip.com" [ref=e4671]
+                          - list [ref=e4672]:
+                            - listitem "柔軟なキャンセルポリシー" [ref=e4673]:
+                              - button "柔軟なキャンセルポリシー" [ref=e4674]:
+                                - generic [ref=e4675]:
+                                  - img
+                                - generic [ref=e4677]: 柔軟なキャンセルポリシー
+                        - generic [ref=e4679]:
+                          - generic [ref=e4684]: ￥41,277
+                          - button "料金プランを見る" [ref=e4686]:
+                            - text: 料金プランを見る
+                            - generic [ref=e4687]:
+                              - img
+              - listitem [ref=e4688]:
+                - article [ref=e4691]:
+                  - generic [ref=e4692]:
+                    - button "メルキュール横須賀, (横須賀, 国内) 1 / 90" [ref=e4693] [cursor=pointer]:
+                      - img "メルキュール横須賀, (横須賀, 国内)" [ref=e4696]
+                      - generic [ref=e4697]: 1 / 90
+                    - list [ref=e4699]:
+                      - listitem [ref=e4700]:
+                        - button "人気施設" [ref=e4703] [cursor=pointer]:
+                          - generic [ref=e4705]: 人気施設
+                    - button "お気に入りに追加" [ref=e4711] [cursor=pointer]:
+                      - img [ref=e4712]
+                      - generic [ref=e4714]: お気に入りに追加
+                  - generic [ref=e4715]:
+                    - generic [ref=e4716]:
+                      - heading "メルキュール横須賀" [level=2] [ref=e4718]:
+                        - link "メルキュール横須賀" [ref=e4719] [cursor=pointer]:
+                          - /url: /ja/acd/?fpip=1&search=100-1323165;dr-20260805-20260806;drs-40;qs-OMO7%E6%A8%AA%E6%B5%9C;rc-1-2-7-4#::effects=logNewTab-1323165-0
+                      - button "3 ホテルのランク ホテル" [ref=e4721] [cursor=pointer]:
+                        - generic [ref=e4722]:
+                          - generic [ref=e4723]:
+                            - generic [ref=e4724]: 3 ホテルのランク
+                            - generic [ref=e4725]:
+                              - img
+                            - generic [ref=e4726]:
+                              - img
+                            - generic [ref=e4727]:
+                              - img
+                          - generic [ref=e4728]: ホテル
+                      - button "8.3 満足 (4,751件の評価)" [ref=e4729] [cursor=pointer]:
+                        - generic [ref=e4731]:
+                          - generic [ref=e4732]: "8.3"
+                          - generic [ref=e4733]:
+                            - strong [ref=e4734]: 満足
+                            - text: (4,751件の評価)
+                      - button "横須賀, OMO7 Yokohama by Hoshino Resortsまで18.2 km" [ref=e4735] [cursor=pointer]:
+                        - generic [ref=e4736]:
+                          - generic [ref=e4737]:
+                            - img
+                          - text: 横須賀, OMO7 Yokohama by Hoshino Resortsまで18.2 km
+                      - button "汐入駅へダイレクトアクセス, 朝食に横須賀海軍カレー" [ref=e4739] [cursor=pointer]:
+                        - generic [ref=e4741]:
+                          - generic [ref=e4742]:
+                            - img
+                          - paragraph [ref=e4743]: 汐入駅へダイレクトアクセス, 朝食に横須賀海軍カレー
+                    - button "るるぶトラベル 柔軟なキャンセルポリシー 事前払い不要 ￥51,300 料金プランを見る" [ref=e4745] [cursor=pointer]:
+                      - generic [ref=e4747]:
+                        - generic [ref=e4748]:
+                          - generic "るるぶトラベル" [ref=e4751]
+                          - list [ref=e4752]:
+                            - listitem "柔軟なキャンセルポリシー" [ref=e4753]:
+                              - button "柔軟なキャンセルポリシー" [ref=e4754]:
+                                - generic [ref=e4755]:
+                                  - img
+                                - generic [ref=e4757]: 柔軟なキャンセルポリシー
+                            - listitem "事前払い不要" [ref=e4758]:
+                              - button "事前払い不要" [ref=e4759]:
+                                - generic [ref=e4760]:
+                                  - img
+                                - generic [ref=e4762]: 事前払い不要
+                        - generic [ref=e4764]:
+                          - generic [ref=e4769]: ￥51,300
+                          - button "料金プランを見る" [ref=e4771]:
+                            - text: 料金プランを見る
+                            - generic [ref=e4772]:
+                              - img
+              - listitem [ref=e4773]:
+                - article [ref=e4776]:
+                  - generic [ref=e4777]:
+                    - button "品川プリンスホテル, (東京, 国内) 1 / 94" [ref=e4778] [cursor=pointer]:
+                      - img "品川プリンスホテル, (東京, 国内)" [ref=e4781]
+                      - generic [ref=e4782]: 1 / 94
+                    - list [ref=e4784]:
+                      - listitem [ref=e4785]:
+                        - button "人気施設" [ref=e4788] [cursor=pointer]:
+                          - generic [ref=e4790]: 人気施設
+                    - button "お気に入りに追加" [ref=e4796] [cursor=pointer]:
+                      - img [ref=e4797]
+                      - generic [ref=e4799]: お気に入りに追加
+                  - generic [ref=e4800]:
+                    - generic [ref=e4801]:
+                      - heading "品川プリンスホテル" [level=2] [ref=e4803]:
+                        - link "品川プリンスホテル" [ref=e4804] [cursor=pointer]:
+                          - /url: /ja/acd/?fpip=1&search=100-103600;dr-20260805-20260806;drs-40;qs-OMO7%E6%A8%AA%E6%B5%9C;rc-1-2-7-4#::effects=logNewTab-103600-1
+                      - button "4 ホテルのランク ホテル" [ref=e4806] [cursor=pointer]:
+                        - generic [ref=e4807]:
+                          - generic [ref=e4808]:
+                            - generic [ref=e4809]: 4 ホテルのランク
+                            - generic [ref=e4810]:
+                              - img
+                            - generic [ref=e4811]:
+                              - img
+                            - generic [ref=e4812]:
+                              - img
+                            - generic [ref=e4813]:
+                              - img
+                          - generic [ref=e4814]: ホテル
+                      - button "7.9 良い (47,362件の評価)" [ref=e4815] [cursor=pointer]:
+                        - generic [ref=e4817]:
+                          - generic [ref=e4818]: "7.9"
+                          - generic [ref=e4819]:
+                            - strong [ref=e4820]: 良い
+                            - text: (47,362件の評価)
+                      - button "東京, OMO7 Yokohama by Hoshino Resortsまで22.4 km" [ref=e4821] [cursor=pointer]:
+                        - generic [ref=e4822]:
+                          - generic [ref=e4823]:
+                            - img
+                          - text: 東京, OMO7 Yokohama by Hoshino Resortsまで22.4 km
+                      - button "高層階から見渡すパノラマの街並み, マクセル アクアパーク品川が敷地内にございます" [ref=e4825] [cursor=pointer]:
+                        - generic [ref=e4827]:
+                          - generic [ref=e4828]:
+                            - img
+                          - paragraph [ref=e4829]: 高層階から見渡すパノラマの街並み, マクセル アクアパーク品川が敷地内にございます
+                    - generic [ref=e4830]:
+                      - button "ロイヤルティ料金プラン トリバゴの最安値 ￥20,475 お得に予約" [ref=e4831] [cursor=pointer]:
+                        - button "ロイヤルティ料金プラン" [ref=e4833]:
+                          - generic [ref=e4836]: ロイヤルティ料金プラン
+                        - generic [ref=e4838]: トリバゴの最安値
+                        - generic [ref=e4839]:
+                          - generic [ref=e4841]:
+                            - generic [ref=e4843]: ￥20,475
+                            - generic [ref=e4844]:
+                              - img
+                          - generic [ref=e4846]: お得に予約
+                      - button "エクスペディア 柔軟なキャンセルポリシー 8月4日より前まで 事前払い不要 現在の料金 ￥26,444 以前の料金 ￥33,053 料金プランを見る" [ref=e4847] [cursor=pointer]:
+                        - generic [ref=e4849]:
+                          - generic [ref=e4850]:
+                            - generic "エクスペディア" [ref=e4853]
+                            - list [ref=e4854]:
+                              - listitem "柔軟なキャンセルポリシー" [ref=e4855]:
+                                - button "柔軟なキャンセルポリシー 8月4日より前まで" [ref=e4856]:
+                                  - generic [ref=e4857]:
+                                    - img
+                                  - generic [ref=e4858]:
+                                    - generic [ref=e4859]: 柔軟なキャンセルポリシー
+                                    - generic [ref=e4860]: 8月4日より前まで
+                              - listitem "事前払い不要" [ref=e4861]:
+                                - button "事前払い不要" [ref=e4862]:
+                                  - generic [ref=e4863]:
+                                    - img
+                                  - generic [ref=e4865]: 事前払い不要
+                          - generic [ref=e4867]:
+                            - generic [ref=e4870]:
+                              - generic [ref=e4872]:
+                                - generic [ref=e4873]: 現在の料金
+                                - text: ￥26,444
+                              - button "以前の料金 ￥33,053" [ref=e4874]:
+                                - deletion [ref=e4877]:
+                                  - generic [ref=e4878]: 以前の料金
+                                  - text: ￥33,053
+                            - button "料金プランを見る" [ref=e4880]:
+                              - text: 料金プランを見る
+                              - generic [ref=e4881]:
+                                - img
+              - listitem [ref=e4882]:
+                - article [ref=e4885]:
+                  - generic [ref=e4886]:
+                    - button "HOTEL METROPOLITAN OIMACHI TRACKS Tokyo, (東京, 国内) 1 / 29" [ref=e4887] [cursor=pointer]:
+                      - img "HOTEL METROPOLITAN OIMACHI TRACKS Tokyo, (東京, 国内)" [ref=e4890]
+                      - generic [ref=e4891]: 1 / 29
+                    - button "お気に入りに追加" [ref=e4897] [cursor=pointer]:
+                      - img [ref=e4898]
+                      - generic [ref=e4900]: お気に入りに追加
+                  - generic [ref=e4901]:
+                    - generic [ref=e4902]:
+                      - heading "HOTEL METROPOLITAN OIMACHI TRACKS Tokyo" [level=2] [ref=e4904]:
+                        - link "HOTEL METROPOLITAN OIMACHI TRACKS Tokyo" [ref=e4905] [cursor=pointer]:
+                          - /url: /ja/acd/?fpip=1&search=100-48015578;dr-20260805-20260806;drs-40;qs-OMO7%E6%A8%AA%E6%B5%9C;rc-1-2-7-4#::effects=logNewTab-48015578-1
+                      - button "4 ホテルのランク ホテル" [ref=e4907] [cursor=pointer]:
+                        - generic [ref=e4908]:
+                          - generic [ref=e4909]:
+                            - generic [ref=e4910]: 4 ホテルのランク
+                            - generic [ref=e4911]:
+                              - img
+                            - generic [ref=e4912]:
+                              - img
+                            - generic [ref=e4913]:
+                              - img
+                            - generic [ref=e4914]:
+                              - img
+                          - generic [ref=e4915]: ホテル
+                      - button "9.5 大満足 (92件の評価)" [ref=e4916] [cursor=pointer]:
+                        - generic [ref=e4918]:
+                          - generic [ref=e4919]: "9.5"
+                          - generic [ref=e4920]:
+                            - strong [ref=e4921]: 大満足
+                            - text: (92件の評価)
+                      - button "東京, OMO7 Yokohama by Hoshino Resortsまで20.3 km" [ref=e4922] [cursor=pointer]:
+                        - generic [ref=e4923]:
+                          - generic [ref=e4924]:
+                            - img
+                          - text: 東京, OMO7 Yokohama by Hoshino Resortsまで20.3 km
+                    - generic [ref=e4925]:
+                      - button "エクスペディア 柔軟なキャンセルポリシー 8月4日より前まで トリバゴの最安値 ￥20,800 料金プランを見る" [ref=e4926] [cursor=pointer]:
+                        - generic [ref=e4928]:
+                          - generic [ref=e4929]:
+                            - generic "エクスペディア" [ref=e4932]
+                            - list [ref=e4933]:
+                              - listitem "柔軟なキャンセルポリシー" [ref=e4934]:
+                                - button "柔軟なキャンセルポリシー 8月4日より前まで" [ref=e4935]:
+                                  - generic [ref=e4936]:
+                                    - img
+                                  - generic [ref=e4937]:
+                                    - generic [ref=e4938]: 柔軟なキャンセルポリシー
+                                    - generic [ref=e4939]: 8月4日より前まで
+                          - generic [ref=e4940]:
+                            - generic [ref=e4942]: トリバゴの最安値
+                            - generic [ref=e4943]:
+                              - generic [ref=e4948]: ￥20,800
+                              - button "料金プランを見る" [ref=e4950]:
+                                - text: 料金プランを見る
+                                - generic [ref=e4951]:
+                                  - img
+                      - button "￥20,800 ホテルズドットコム すべての料金を表示" [ref=e4952] [cursor=pointer]:
+                        - generic [ref=e4953]:
+                          - generic [ref=e4955]: ￥20,800
+                          - generic "ホテルズドットコム" [ref=e4957]
+                        - generic [ref=e4958]: すべての料金を表示
+                        - generic [ref=e4959]:
+                          - img
+              - listitem [ref=e4960]:
+                - article [ref=e4963]:
+                  - generic [ref=e4964]:
+                    - button "ザ ブラッサム 日比谷, (東京, 国内) 1 / 83" [ref=e4965] [cursor=pointer]:
+                      - img "ザ ブラッサム 日比谷, (東京, 国内)" [ref=e4968]
+                      - generic [ref=e4969]: 1 / 83
+                    - button "お気に入りに追加" [ref=e4975] [cursor=pointer]:
+                      - img [ref=e4976]
+                      - generic [ref=e4978]: お気に入りに追加
+                  - generic [ref=e4979]:
+                    - generic [ref=e4980]:
+                      - heading "ザ ブラッサム 日比谷" [level=2] [ref=e4982]:
+                        - link "ザ ブラッサム 日比谷" [ref=e4983] [cursor=pointer]:
+                          - /url: /ja/acd/?fpip=1&search=100-12995482;dr-20260805-20260806;drs-40;qs-OMO7%E6%A8%AA%E6%B5%9C;rc-1-2-7-4#::effects=logNewTab-12995482-1
+                      - button "4 ホテルのランク ホテル" [ref=e4985] [cursor=pointer]:
+                        - generic [ref=e4986]:
+                          - generic [ref=e4987]:
+                            - generic [ref=e4988]: 4 ホテルのランク
+                            - generic [ref=e4989]:
+                              - img
+                            - generic [ref=e4990]:
+                              - img
+                            - generic [ref=e4991]:
+                              - img
+                            - generic [ref=e4992]:
+                              - img
+                          - generic [ref=e4993]: ホテル
+                      - button "9.1 大満足 (10,591件の評価)" [ref=e4994] [cursor=pointer]:
+                        - generic [ref=e4996]:
+                          - generic [ref=e4997]: "9.1"
+                          - generic [ref=e4998]:
+                            - strong [ref=e4999]: 大満足
+                            - text: (10,591件の評価)
+                      - button "東京, OMO7 Yokohama by Hoshino Resortsまで27.3 km" [ref=e5000] [cursor=pointer]:
+                        - generic [ref=e5001]:
+                          - generic [ref=e5002]:
+                            - img
+                          - text: 東京, OMO7 Yokohama by Hoshino Resortsまで27.3 km
+                      - button "東京の壮大なスカイラインパノラマ, モダンな設備を備えた、考え抜かれたデザインの客室" [ref=e5004] [cursor=pointer]:
+                        - generic [ref=e5006]:
+                          - generic [ref=e5007]:
+                            - img
+                          - paragraph [ref=e5008]: 東京の壮大なスカイラインパノラマ, モダンな設備を備えた、考え抜かれたデザインの客室
+                    - generic [ref=e5009]:
+                      - button "ホテルズドットコム 柔軟なキャンセルポリシー 8月4日より前まで 事前払い不要 トリバゴの最安値 ￥93,960 料金プランを見る" [ref=e5010] [cursor=pointer]:
+                        - generic [ref=e5012]:
+                          - generic [ref=e5013]:
+                            - generic "ホテルズドットコム" [ref=e5016]
+                            - list [ref=e5017]:
+                              - listitem "柔軟なキャンセルポリシー" [ref=e5018]:
+                                - button "柔軟なキャンセルポリシー 8月4日より前まで" [ref=e5019]:
+                                  - generic [ref=e5020]:
+                                    - img
+                                  - generic [ref=e5021]:
+                                    - generic [ref=e5022]: 柔軟なキャンセルポリシー
+                                    - generic [ref=e5023]: 8月4日より前まで
+                              - listitem "事前払い不要" [ref=e5024]:
+                                - button "事前払い不要" [ref=e5025]:
+                                  - generic [ref=e5026]:
+                                    - img
+                                  - generic [ref=e5028]: 事前払い不要
+                          - generic [ref=e5029]:
+                            - generic [ref=e5031]: トリバゴの最安値
+                            - generic [ref=e5032]:
+                              - generic [ref=e5037]: ￥93,960
+                              - button "料金プランを見る" [ref=e5039]:
+                                - text: 料金プランを見る
+                                - generic [ref=e5040]:
+                                  - img
+                      - button "￥93,960 エクスペディア すべての料金を表示" [ref=e5041] [cursor=pointer]:
+                        - generic [ref=e5042]:
+                          - generic [ref=e5044]: ￥93,960
+                          - generic "エクスペディア" [ref=e5046]
+                        - generic [ref=e5047]: すべての料金を表示
+                        - generic [ref=e5048]:
+                          - img
+              - listitem [ref=e5049]:
+                - article [ref=e5052]:
+                  - generic [ref=e5053]:
+                    - button "ヒルトン東京お台場, (東京, 国内) 1 / 115" [ref=e5054] [cursor=pointer]:
+                      - img "ヒルトン東京お台場, (東京, 国内)" [ref=e5057]
+                      - generic [ref=e5058]: 1 / 115
+                    - button "お気に入りに追加" [ref=e5064] [cursor=pointer]:
+                      - img [ref=e5065]
+                      - generic [ref=e5067]: お気に入りに追加
+                  - generic [ref=e5068]:
+                    - generic [ref=e5069]:
+                      - heading "ヒルトン東京お台場" [level=2] [ref=e5071]:
+                        - link "ヒルトン東京お台場" [ref=e5072] [cursor=pointer]:
+                          - /url: /ja/acd/?fpip=1&search=100-103503;dr-20260805-20260806;drs-40;qs-OMO7%E6%A8%AA%E6%B5%9C;rc-1-2-7-4#::effects=logNewTab-103503-1
+                      - button "5 ホテルのランク ホテル" [ref=e5074] [cursor=pointer]:
+                        - generic [ref=e5075]:
+                          - generic [ref=e5076]:
+                            - generic [ref=e5077]: 5 ホテルのランク
+                            - generic [ref=e5078]:
+                              - img
+                            - generic [ref=e5079]:
+                              - img
+                            - generic [ref=e5080]:
+                              - img
+                            - generic [ref=e5081]:
+                              - img
+                            - generic [ref=e5082]:
+                              - img
+                          - generic [ref=e5083]: ホテル
+                      - button "8.5 大満足 (15,004件の評価)" [ref=e5084] [cursor=pointer]:
+                        - generic [ref=e5086]:
+                          - generic [ref=e5087]: "8.5"
+                          - generic [ref=e5088]:
+                            - strong [ref=e5089]: 大満足
+                            - text: (15,004件の評価)
+                      - button "東京, OMO7 Yokohama by Hoshino Resortsまで23.6 km" [ref=e5090] [cursor=pointer]:
+                        - generic [ref=e5091]:
+                          - generic [ref=e5092]:
+                            - img
+                          - text: 東京, OMO7 Yokohama by Hoshino Resortsまで23.6 km
+                      - button "多彩なウォーターフロントダイニング, ユニークな曲線デザインの建築" [ref=e5094] [cursor=pointer]:
+                        - generic [ref=e5096]:
+                          - generic [ref=e5097]:
+                            - img
+                          - paragraph [ref=e5098]: 多彩なウォーターフロントダイニング, ユニークな曲線デザインの建築
+                    - generic [ref=e5099]:
+                      - button "Hilton ホテルに直接予約 トリバゴの最安値 ￥51,872 料金プランを見る" [ref=e5100] [cursor=pointer]:
+                        - generic [ref=e5102]:
+                          - generic [ref=e5104]:
+                            - generic "Hilton" [ref=e5106]
+                            - generic [ref=e5107]:
+                              - generic [ref=e5108]:
+                                - img
+                              - generic [ref=e5109]: ホテルに直接予約
+                          - generic [ref=e5110]:
+                            - generic [ref=e5112]: トリバゴの最安値
+                            - generic [ref=e5113]:
+                              - generic [ref=e5118]: ￥51,872
+                              - button "料金プランを見る" [ref=e5120]:
+                                - text: 料金プランを見る
+                                - generic [ref=e5121]:
+                                  - img
+                      - button "￥56,969 エクスペディア ￥56,969 ホテルズドットコム すべての料金を表示" [ref=e5122] [cursor=pointer]:
+                        - generic [ref=e5123]:
+                          - generic [ref=e5125]: ￥56,969
+                          - generic "エクスペディア" [ref=e5127]
+                        - generic [ref=e5128]:
+                          - generic [ref=e5130]: ￥56,969
+                          - generic "ホテルズドットコム" [ref=e5132]
+                        - generic [ref=e5133]: すべての料金を表示
+                        - generic [ref=e5134]:
+                          - img
+              - listitem [ref=e5135]:
+                - article [ref=e5138]:
+                  - generic [ref=e5139]:
+                    - button "ANA インターコンチネンタルホテル東京, (東京, 国内) 1 / 101" [ref=e5140] [cursor=pointer]:
+                      - img "ANA インターコンチネンタルホテル東京, (東京, 国内)" [ref=e5143]
+                      - generic [ref=e5144]: 1 / 101
+                    - button "お気に入りに追加" [ref=e5150] [cursor=pointer]:
+                      - img [ref=e5151]
+                      - generic [ref=e5153]: お気に入りに追加
+                  - generic [ref=e5154]:
+                    - generic [ref=e5155]:
+                      - heading "ANA インターコンチネンタルホテル東京" [level=2] [ref=e5157]:
+                        - link "ANA インターコンチネンタルホテル東京" [ref=e5158] [cursor=pointer]:
+                          - /url: /ja/acd/?fpip=1&search=100-103562;dr-20260805-20260806;drs-40;qs-OMO7%E6%A8%AA%E6%B5%9C;rc-1-2-7-4#::effects=logNewTab-103562-1
+                      - button "5 ホテルのランク ホテル" [ref=e5160] [cursor=pointer]:
+                        - generic [ref=e5161]:
+                          - generic [ref=e5162]:
+                            - generic [ref=e5163]: 5 ホテルのランク
+                            - generic [ref=e5164]:
+                              - img
+                            - generic [ref=e5165]:
+                              - img
+                            - generic [ref=e5166]:
+                              - img
+                            - generic [ref=e5167]:
+                              - img
+                            - generic [ref=e5168]:
+                              - img
+                          - generic [ref=e5169]: ホテル
+                      - button "8.6 大満足 (18,407件の評価)" [ref=e5170] [cursor=pointer]:
+                        - generic [ref=e5172]:
+                          - generic [ref=e5173]: "8.6"
+                          - generic [ref=e5174]:
+                            - strong [ref=e5175]: 大満足
+                            - text: (18,407件の評価)
+                      - button "東京, OMO7 Yokohama by Hoshino Resortsまで26.7 km" [ref=e5176] [cursor=pointer]:
+                        - generic [ref=e5177]:
+                          - generic [ref=e5178]:
+                            - img
+                          - text: 東京, OMO7 Yokohama by Hoshino Resortsまで26.7 km
+                      - button "東京タワーのパノラマビュー, 新しくスタイリッシュな客室" [ref=e5180] [cursor=pointer]:
+                        - generic [ref=e5182]:
+                          - generic [ref=e5183]:
+                            - img
+                          - paragraph [ref=e5184]: 東京タワーのパノラマビュー, 新しくスタイリッシュな客室
+                    - generic [ref=e5185]:
+                      - button "ロイヤルティ料金プラン トリバゴの最安値 ￥69,370 お得に予約" [ref=e5186] [cursor=pointer]:
+                        - button "ロイヤルティ料金プラン" [ref=e5188]:
+                          - generic [ref=e5191]: ロイヤルティ料金プラン
+                        - generic [ref=e5193]: トリバゴの最安値
+                        - generic [ref=e5194]:
+                          - generic [ref=e5196]:
+                            - generic [ref=e5198]: ￥69,370
+                            - generic [ref=e5199]:
+                              - img
+                          - generic [ref=e5201]: お得に予約
+                      - button "エクスペディア 柔軟なキャンセルポリシー 7月6日より前まで 事前払い不要 ￥72,600 料金プランを見る" [ref=e5202] [cursor=pointer]:
+                        - generic [ref=e5204]:
+                          - generic [ref=e5205]:
+                            - generic "エクスペディア" [ref=e5208]
+                            - list [ref=e5209]:
+                              - listitem "柔軟なキャンセルポリシー" [ref=e5210]:
+                                - button "柔軟なキャンセルポリシー 7月6日より前まで" [ref=e5211]:
+                                  - generic [ref=e5212]:
+                                    - img
+                                  - generic [ref=e5213]:
+                                    - generic [ref=e5214]: 柔軟なキャンセルポリシー
+                                    - generic [ref=e5215]: 7月6日より前まで
+                              - listitem "事前払い不要" [ref=e5216]:
+                                - button "事前払い不要" [ref=e5217]:
+                                  - generic [ref=e5218]:
+                                    - img
+                                  - generic [ref=e5220]: 事前払い不要
+                          - generic [ref=e5222]:
+                            - generic [ref=e5227]: ￥72,600
+                            - button "料金プランを見る" [ref=e5229]:
+                              - text: 料金プランを見る
+                              - generic [ref=e5230]:
+                                - img
+              - listitem [ref=e5231]:
+                - article [ref=e5234]:
+                  - generic [ref=e5235]:
+                    - button "ホテルメトロポリタン丸の内, (東京, 国内) 1 / 101" [ref=e5236] [cursor=pointer]:
+                      - img "ホテルメトロポリタン丸の内, (東京, 国内)" [ref=e5239]
+                      - generic [ref=e5240]: 1 / 101
+                    - button "お気に入りに追加" [ref=e5246] [cursor=pointer]:
+                      - img [ref=e5247]
+                      - generic [ref=e5249]: お気に入りに追加
+                  - generic [ref=e5250]:
+                    - generic [ref=e5251]:
+                      - heading "ホテルメトロポリタン丸の内" [level=2] [ref=e5253]:
+                        - link "ホテルメトロポリタン丸の内" [ref=e5254] [cursor=pointer]:
+                          - /url: /ja/acd/?fpip=1&search=100-1394854;dr-20260805-20260806;drs-40;qs-OMO7%E6%A8%AA%E6%B5%9C;rc-1-2-7-4#::effects=logNewTab-1394854-1
+                      - button "4 ホテルのランク ホテル" [ref=e5256] [cursor=pointer]:
+                        - generic [ref=e5257]:
+                          - generic [ref=e5258]:
+                            - generic [ref=e5259]: 4 ホテルのランク
+                            - generic [ref=e5260]:
+                              - img
+                            - generic [ref=e5261]:
+                              - img
+                            - generic [ref=e5262]:
+                              - img
+                            - generic [ref=e5263]:
+                              - img
+                          - generic [ref=e5264]: ホテル
+                      - button "8.8 大満足 (12,189件の評価)" [ref=e5265] [cursor=pointer]:
+                        - generic [ref=e5267]:
+                          - generic [ref=e5268]: "8.8"
+                          - generic [ref=e5269]:
+                            - strong [ref=e5270]: 大満足
+                            - text: (12,189件の評価)
+                      - button "東京, OMO7 Yokohama by Hoshino Resortsまで29.2 km" [ref=e5271] [cursor=pointer]:
+                        - generic [ref=e5272]:
+                          - generic [ref=e5273]:
+                            - img
+                          - text: 東京, OMO7 Yokohama by Hoshino Resortsまで29.2 km
+                      - button "高層階からの街と電車の眺め, 洗練されたフランス料理と日本料理" [ref=e5275] [cursor=pointer]:
+                        - generic [ref=e5277]:
+                          - generic [ref=e5278]:
+                            - img
+                          - paragraph [ref=e5279]: 高層階からの街と電車の眺め, 洗練されたフランス料理と日本料理
+                    - generic [ref=e5280]:
+                      - button "エクスペディア 柔軟なキャンセルポリシー 8月4日より前まで トリバゴの最安値 現在の料金 ￥62,768 以前の料金 ￥76,398 料金プランを見る" [ref=e5281] [cursor=pointer]:
+                        - generic [ref=e5283]:
+                          - generic [ref=e5284]:
+                            - generic "エクスペディア" [ref=e5287]
+                            - list [ref=e5288]:
+                              - listitem "柔軟なキャンセルポリシー" [ref=e5289]:
+                                - button "柔軟なキャンセルポリシー 8月4日より前まで" [ref=e5290]:
+                                  - generic [ref=e5291]:
+                                    - img
+                                  - generic [ref=e5292]:
+                                    - generic [ref=e5293]: 柔軟なキャンセルポリシー
+                                    - generic [ref=e5294]: 8月4日より前まで
+                          - generic [ref=e5295]:
+                            - generic [ref=e5297]: トリバゴの最安値
+                            - generic [ref=e5298]:
+                              - generic [ref=e5301]:
+                                - generic [ref=e5303]:
+                                  - generic [ref=e5304]: 現在の料金
+                                  - text: ￥62,768
+                                - button "以前の料金 ￥76,398" [ref=e5305]:
+                                  - deletion [ref=e5308]:
+                                    - generic [ref=e5309]: 以前の料金
+                                    - text: ￥76,398
+                              - button "料金プランを見る" [ref=e5311]:
+                                - text: 料金プランを見る
+                                - generic [ref=e5312]:
+                                  - img
+                      - button "￥62,768 ホテルズドットコム すべての料金を表示" [ref=e5313] [cursor=pointer]:
+                        - generic [ref=e5314]:
+                          - generic [ref=e5316]: ￥62,768
+                          - generic "ホテルズドットコム" [ref=e5318]
+                        - generic [ref=e5319]: すべての料金を表示
+                        - generic [ref=e5320]:
+                          - img
+              - listitem [ref=e5321]:
+                - article [ref=e5324]:
+                  - generic [ref=e5325]:
+                    - button "ホテルアマネク蒲田駅前, (東京, 国内) 1 / 81" [ref=e5326] [cursor=pointer]:
+                      - img "ホテルアマネク蒲田駅前, (東京, 国内)" [ref=e5329]
+                      - generic [ref=e5330]: 1 / 81
+                    - button "お気に入りに追加" [ref=e5336] [cursor=pointer]:
+                      - img [ref=e5337]
+                      - generic [ref=e5339]: お気に入りに追加
+                  - generic [ref=e5340]:
+                    - generic [ref=e5341]:
+                      - heading "ホテルアマネク蒲田駅前" [level=2] [ref=e5343]:
+                        - link "ホテルアマネク蒲田駅前" [ref=e5344] [cursor=pointer]:
+                          - /url: /ja/acd/?fpip=1&search=100-15308684;dr-20260805-20260806;drs-40;qs-OMO7%E6%A8%AA%E6%B5%9C;rc-1-2-7-4#::effects=logNewTab-15308684-1
+                      - button "3 ホテルのランク ホテル" [ref=e5346] [cursor=pointer]:
+                        - generic [ref=e5347]:
+                          - generic [ref=e5348]:
+                            - generic [ref=e5349]: 3 ホテルのランク
+                            - generic [ref=e5350]:
+                              - img
+                            - generic [ref=e5351]:
+                              - img
+                            - generic [ref=e5352]:
+                              - img
+                          - generic [ref=e5353]: ホテル
+                      - button "8.1 満足 (4,547件の評価)" [ref=e5354] [cursor=pointer]:
+                        - generic [ref=e5356]:
+                          - generic [ref=e5357]: "8.1"
+                          - generic [ref=e5358]:
+                            - strong [ref=e5359]: 満足
+                            - text: (4,547件の評価)
+                      - button "東京, OMO7 Yokohama by Hoshino Resortsまで15.1 km" [ref=e5360] [cursor=pointer]:
+                        - generic [ref=e5361]:
+                          - generic [ref=e5362]:
+                            - img
+                          - text: 東京, OMO7 Yokohama by Hoshino Resortsまで15.1 km
+                      - button "モダンで清潔感のある施設, タトゥーフレンドリーな温泉体験" [ref=e5364] [cursor=pointer]:
+                        - generic [ref=e5366]:
+                          - generic [ref=e5367]:
+                            - img
+                          - paragraph [ref=e5368]: モダンで清潔感のある施設, タトゥーフレンドリーな温泉体験
+                    - generic [ref=e5369]:
+                      - button "エクスペディア ￥22,470 料金プランを見る" [ref=e5370] [cursor=pointer]:
+                        - generic [ref=e5372]:
+                          - generic "エクスペディア" [ref=e5376]
+                          - generic [ref=e5378]:
+                            - generic [ref=e5383]: ￥22,470
+                            - button "料金プランを見る" [ref=e5385]:
+                              - text: 料金プランを見る
+                              - generic [ref=e5386]:
+                                - img
+                      - button "￥20,371 ログインしてアクセス すべての料金を表示" [ref=e5387] [cursor=pointer]:
+                        - generic [ref=e5388]:
+                          - generic [ref=e5390]: ￥20,371
+                          - generic [ref=e5391]:
+                            - img
+                          - text: ログインしてアクセス
+                        - generic [ref=e5392]: すべての料金を表示
+                        - generic [ref=e5393]:
+                          - img
+              - listitem [ref=e5394]:
+                - generic [ref=e5395]:
+                  - button "類似の宿泊施設より41%お得" [ref=e5397] [cursor=pointer]:
+                    - generic [ref=e5400]:
+                      - generic [ref=e5401]:
+                        - img
+                      - generic [ref=e5402]: 類似の宿泊施設より41%お得
+                  - article [ref=e5404]:
+                    - generic [ref=e5405]:
+                      - button "三井ガーデンホテル神宮外苑の杜プレミア, (東京, 国内) 1 / 84" [ref=e5406] [cursor=pointer]:
+                        - img "三井ガーデンホテル神宮外苑の杜プレミア, (東京, 国内)" [ref=e5409]
+                        - generic [ref=e5410]: 1 / 84
+                      - button "お気に入りに追加" [ref=e5416] [cursor=pointer]:
+                        - img [ref=e5417]
+                        - generic [ref=e5419]: お気に入りに追加
+                    - generic [ref=e5420]:
+                      - generic [ref=e5421]:
+                        - heading "三井ガーデンホテル神宮外苑の杜プレミア" [level=2] [ref=e5423]:
+                          - link "三井ガーデンホテル神宮外苑の杜プレミア" [ref=e5424] [cursor=pointer]:
+                            - /url: /ja/acd/?fpip=1&search=100-13189976;dr-20260805-20260806;drs-40;qs-OMO7%E6%A8%AA%E6%B5%9C;rc-1-2-7-4#::effects=logNewTab-13189976-1
+                        - button "5 ホテルのランク ホテル" [ref=e5426] [cursor=pointer]:
+                          - generic [ref=e5427]:
+                            - generic [ref=e5428]:
+                              - generic [ref=e5429]: 5 ホテルのランク
+                              - generic [ref=e5430]:
+                                - img
+                              - generic [ref=e5431]:
+                                - img
+                              - generic [ref=e5432]:
+                                - img
+                              - generic [ref=e5433]:
+                                - img
+                              - generic [ref=e5434]:
+                                - img
+                            - generic [ref=e5435]: ホテル
+                        - button "8.9 大満足 (9,330件の評価)" [ref=e5436] [cursor=pointer]:
+                          - generic [ref=e5438]:
+                            - generic [ref=e5439]: "8.9"
+                            - generic [ref=e5440]:
+                              - strong [ref=e5441]: 大満足
+                              - text: (9,330件の評価)
+                        - button "東京, OMO7 Yokohama by Hoshino Resortsまで27.2 km" [ref=e5442] [cursor=pointer]:
+                          - generic [ref=e5443]:
+                            - generic [ref=e5444]:
+                              - img
+                            - text: 東京, OMO7 Yokohama by Hoshino Resortsまで27.2 km
+                        - button "パノラマビューが楽しめるルーフトップテラス, 旧競技場プールエリアの公共浴場" [ref=e5446] [cursor=pointer]:
+                          - generic [ref=e5448]:
+                            - generic [ref=e5449]:
+                              - img
+                            - paragraph [ref=e5450]: パノラマビューが楽しめるルーフトップテラス, 旧競技場プールエリアの公共浴場
+                      - generic [ref=e5451]:
+                        - button "エクスペディア 柔軟なキャンセルポリシー 8月2日より前まで トリバゴの最安値 ￥42,799 料金プランを見る" [ref=e5452] [cursor=pointer]:
+                          - generic [ref=e5454]:
+                            - generic [ref=e5455]:
+                              - generic "エクスペディア" [ref=e5458]
+                              - list [ref=e5459]:
+                                - listitem "柔軟なキャンセルポリシー" [ref=e5460]:
+                                  - button "柔軟なキャンセルポリシー 8月2日より前まで" [ref=e5461]:
+                                    - generic [ref=e5462]:
+                                      - img
+                                    - generic [ref=e5463]:
+                                      - generic [ref=e5464]: 柔軟なキャンセルポリシー
+                                      - generic [ref=e5465]: 8月2日より前まで
+                            - generic [ref=e5466]:
+                              - generic [ref=e5468]: トリバゴの最安値
+                              - generic [ref=e5469]:
+                                - generic [ref=e5474]: ￥42,799
+                                - button "料金プランを見る" [ref=e5476]:
+                                  - text: 料金プランを見る
+                                  - generic [ref=e5477]:
+                                    - img
+                        - button "￥42,799 ホテルズドットコム すべての料金を表示" [ref=e5478] [cursor=pointer]:
+                          - generic [ref=e5479]:
+                            - generic [ref=e5481]: ￥42,799
+                            - generic "ホテルズドットコム" [ref=e5483]
+                          - generic [ref=e5484]: すべての料金を表示
+                          - generic [ref=e5485]:
+                            - img
+              - listitem [ref=e5486]:
+                - article [ref=e5489]:
+                  - generic [ref=e5490]:
+                    - button "東京イーストサイド ホテル 櫂会, (東京, 国内) 1 / 71" [ref=e5491] [cursor=pointer]:
+                      - img "東京イーストサイド ホテル 櫂会, (東京, 国内)" [ref=e5494]
+                      - generic [ref=e5495]: 1 / 71
+                    - button "お気に入りに追加" [ref=e5501] [cursor=pointer]:
+                      - img [ref=e5502]
+                      - generic [ref=e5504]: お気に入りに追加
+                  - generic [ref=e5505]:
+                    - generic [ref=e5506]:
+                      - heading "東京イーストサイド ホテル 櫂会" [level=2] [ref=e5508]:
+                        - link "東京イーストサイド ホテル 櫂会" [ref=e5509] [cursor=pointer]:
+                          - /url: /ja/acd/?fpip=1&search=100-17958180;dr-20260805-20260806;drs-40;qs-OMO7%E6%A8%AA%E6%B5%9C;rc-1-2-7-4#::effects=logNewTab-17958180-1
+                      - button "4 ホテルのランク ホテル" [ref=e5511] [cursor=pointer]:
+                        - generic [ref=e5512]:
+                          - generic [ref=e5513]:
+                            - generic [ref=e5514]: 4 ホテルのランク
+                            - generic [ref=e5515]:
+                              - img
+                            - generic [ref=e5516]:
+                              - img
+                            - generic [ref=e5517]:
+                              - img
+                            - generic [ref=e5518]:
+                              - img
+                          - generic [ref=e5519]: ホテル
+                      - button "9.1 大満足 (2,591件の評価)" [ref=e5520] [cursor=pointer]:
+                        - generic [ref=e5522]:
+                          - generic [ref=e5523]: "9.1"
+                          - generic [ref=e5524]:
+                            - strong [ref=e5525]: 大満足
+                            - text: (2,591件の評価)
+                      - button "東京, OMO7 Yokohama by Hoshino Resortsまで29.0 km" [ref=e5526] [cursor=pointer]:
+                        - generic [ref=e5527]:
+                          - generic [ref=e5528]:
+                            - img
+                          - text: 東京, OMO7 Yokohama by Hoshino Resortsまで29.0 km
+                      - button "畳のある和室, お庭とテラスでリラックス" [ref=e5530] [cursor=pointer]:
+                        - generic [ref=e5532]:
+                          - generic [ref=e5533]:
+                            - img
+                          - paragraph [ref=e5534]: 畳のある和室, お庭とテラスでリラックス
+                    - generic [ref=e5535]:
+                      - button "ホテルズドットコム 柔軟なキャンセルポリシー 8月3日より前まで 現在の料金 ￥47,148 以前の料金 ￥57,599 料金プランを見る" [ref=e5536] [cursor=pointer]:
+                        - generic [ref=e5538]:
+                          - generic [ref=e5539]:
+                            - generic "ホテルズドットコム" [ref=e5542]
+                            - list [ref=e5543]:
+                              - listitem "柔軟なキャンセルポリシー" [ref=e5544]:
+                                - button "柔軟なキャンセルポリシー 8月3日より前まで" [ref=e5545]:
+                                  - generic [ref=e5546]:
+                                    - img
+                                  - generic [ref=e5547]:
+                                    - generic [ref=e5548]: 柔軟なキャンセルポリシー
+                                    - generic [ref=e5549]: 8月3日より前まで
+                          - generic [ref=e5551]:
+                            - generic [ref=e5554]:
+                              - generic [ref=e5556]:
+                                - generic [ref=e5557]: 現在の料金
+                                - text: ￥47,148
+                              - button "以前の料金 ￥57,599" [ref=e5558]:
+                                - deletion [ref=e5561]:
+                                  - generic [ref=e5562]: 以前の料金
+                                  - text: ￥57,599
+                            - button "料金プランを見る" [ref=e5564]:
+                              - text: 料金プランを見る
+                              - generic [ref=e5565]:
+                                - img
+                      - button "￥25,554 ログインしてアクセス ￥50,080 Booking.com すべての料金を表示" [ref=e5566] [cursor=pointer]:
+                        - generic [ref=e5567]:
+                          - generic [ref=e5569]: ￥25,554
+                          - generic [ref=e5570]:
+                            - img
+                          - text: ログインしてアクセス
+                        - generic [ref=e5571]:
+                          - generic [ref=e5573]: ￥50,080
+                          - generic "Booking.com" [ref=e5575]
+                        - generic [ref=e5576]: すべての料金を表示
+                        - generic [ref=e5577]:
+                          - img
+              - listitem [ref=e5578]:
+                - article [ref=e5581]:
+                  - generic [ref=e5582]:
+                    - button "ホテル アジア会館, (東京, 国内) 1 / 62" [ref=e5583] [cursor=pointer]:
+                      - img "ホテル アジア会館, (東京, 国内)" [ref=e5586]
+                      - generic [ref=e5587]: 1 / 62
+                    - button "お気に入りに追加" [ref=e5593] [cursor=pointer]:
+                      - img [ref=e5594]
+                      - generic [ref=e5596]: お気に入りに追加
+                  - generic [ref=e5597]:
+                    - generic [ref=e5598]:
+                      - heading "ホテル アジア会館" [level=2] [ref=e5600]:
+                        - link "ホテル アジア会館" [ref=e5601] [cursor=pointer]:
+                          - /url: /ja/acd/?fpip=1&search=100-473701;dr-20260805-20260806;drs-40;qs-OMO7%E6%A8%AA%E6%B5%9C;rc-1-2-7-4#::effects=logNewTab-473701-1
+                      - button "3 ホテルのランク ホテル" [ref=e5603] [cursor=pointer]:
+                        - generic [ref=e5604]:
+                          - generic [ref=e5605]:
+                            - generic [ref=e5606]: 3 ホテルのランク
+                            - generic [ref=e5607]:
+                              - img
+                            - generic [ref=e5608]:
+                              - img
+                            - generic [ref=e5609]:
+                              - img
+                          - generic [ref=e5610]: ホテル
+                      - button "8.8 大満足 (7,644件の評価)" [ref=e5611] [cursor=pointer]:
+                        - generic [ref=e5613]:
+                          - generic [ref=e5614]: "8.8"
+                          - generic [ref=e5615]:
+                            - strong [ref=e5616]: 大満足
+                            - text: (7,644件の評価)
+                      - button "東京, OMO7 Yokohama by Hoshino Resortsまで26.5 km" [ref=e5617] [cursor=pointer]:
+                        - generic [ref=e5618]:
+                          - generic [ref=e5619]:
+                            - img
+                          - text: 東京, OMO7 Yokohama by Hoshino Resortsまで26.5 km
+                      - button "ホテル内レストラン SHIKI dining, 閑静なロケーションで穏やかなひとときを" [ref=e5621] [cursor=pointer]:
+                        - generic [ref=e5623]:
+                          - generic [ref=e5624]:
+                            - img
+                          - paragraph [ref=e5625]: ホテル内レストラン SHIKI dining, 閑静なロケーションで穏やかなひとときを
+                    - generic [ref=e5626]:
+                      - button "エクスペディア 柔軟なキャンセルポリシー 8月3日より前まで ￥24,006 料金プランを見る" [ref=e5627] [cursor=pointer]:
+                        - generic [ref=e5629]:
+                          - generic [ref=e5630]:
+                            - generic "エクスペディア" [ref=e5633]
+                            - list [ref=e5634]:
+                              - listitem "柔軟なキャンセルポリシー" [ref=e5635]:
+                                - button "柔軟なキャンセルポリシー 8月3日より前まで" [ref=e5636]:
+                                  - generic [ref=e5637]:
+                                    - img
+                                  - generic [ref=e5638]:
+                                    - generic [ref=e5639]: 柔軟なキャンセルポリシー
+                                    - generic [ref=e5640]: 8月3日より前まで
+                          - generic [ref=e5642]:
+                            - generic [ref=e5647]: ￥24,006
+                            - button "料金プランを見る" [ref=e5649]:
+                              - text: 料金プランを見る
+                              - generic [ref=e5650]:
+                                - img
+                      - button "￥20,726 ログインしてアクセス ￥25,872 るるぶトラベル すべての料金を表示" [ref=e5651] [cursor=pointer]:
+                        - generic [ref=e5652]:
+                          - generic [ref=e5654]: ￥20,726
+                          - generic [ref=e5655]:
+                            - img
+                          - text: ログインしてアクセス
+                        - generic [ref=e5656]:
+                          - generic [ref=e5658]: ￥25,872
+                          - generic "るるぶトラベル" [ref=e5660]
+                        - generic [ref=e5661]: すべての料金を表示
+                        - generic [ref=e5662]:
+                          - img
+              - listitem [ref=e5663]:
+                - article [ref=e5666]:
+                  - generic [ref=e5667]:
+                    - button "吉祥寺エクセルホテル東急, (武蔵野市, 国内) 1 / 79" [ref=e5668] [cursor=pointer]:
+                      - img "吉祥寺エクセルホテル東急, (武蔵野市, 国内)" [ref=e5671]
+                      - generic [ref=e5672]: 1 / 79
+                    - list [ref=e5674]:
+                      - listitem [ref=e5675]:
+                        - button "人気施設" [ref=e5678] [cursor=pointer]:
+                          - generic [ref=e5680]: 人気施設
+                    - button "お気に入りに追加" [ref=e5686] [cursor=pointer]:
+                      - img [ref=e5687]
+                      - generic [ref=e5689]: お気に入りに追加
+                  - generic [ref=e5690]:
+                    - generic [ref=e5691]:
+                      - heading "吉祥寺エクセルホテル東急" [level=2] [ref=e5693]:
+                        - link "吉祥寺エクセルホテル東急" [ref=e5694] [cursor=pointer]:
+                          - /url: /ja/acd/?fpip=1&search=100-922895;dr-20260805-20260806;drs-40;qs-OMO7%E6%A8%AA%E6%B5%9C;rc-1-2-7-4#::effects=logNewTab-922895-1
+                      - button "4 ホテルのランク ホテル" [ref=e5696] [cursor=pointer]:
+                        - generic [ref=e5697]:
+                          - generic [ref=e5698]:
+                            - generic [ref=e5699]: 4 ホテルのランク
+                            - generic [ref=e5700]:
+                              - img
+                            - generic [ref=e5701]:
+                              - img
+                            - generic [ref=e5702]:
+                              - img
+                            - generic [ref=e5703]:
+                              - img
+                          - generic [ref=e5704]: ホテル
+                      - button "8.6 大満足 (2,966件の評価)" [ref=e5705] [cursor=pointer]:
+                        - generic [ref=e5707]:
+                          - generic [ref=e5708]: "8.6"
+                          - generic [ref=e5709]:
+                            - strong [ref=e5710]: 大満足
+                            - text: (2,966件の評価)
+                      - button "武蔵野市, OMO7 Yokohama by Hoshino Resortsまで29.7 km" [ref=e5711] [cursor=pointer]:
+                        - generic [ref=e5712]:
+                          - generic [ref=e5713]:
+                            - img
+                          - text: 武蔵野市, OMO7 Yokohama by Hoshino Resortsまで29.7 km
+                      - button "ライブミュージックパフォーマンス, 温かいスープも楽しめるグルメ朝食ビュッフェ" [ref=e5715] [cursor=pointer]:
+                        - generic [ref=e5717]:
+                          - generic [ref=e5718]:
+                            - img
+                          - paragraph [ref=e5719]: ライブミュージックパフォーマンス, 温かいスープも楽しめるグルメ朝食ビュッフェ
+                    - generic [ref=e5720]:
+                      - button "エクスペディア 柔軟なキャンセルポリシー 8月3日より前まで トリバゴの最安値 ￥33,832 料金プランを見る" [ref=e5721] [cursor=pointer]:
+                        - generic [ref=e5723]:
+                          - generic [ref=e5724]:
+                            - generic "エクスペディア" [ref=e5727]
+                            - list [ref=e5728]:
+                              - listitem "柔軟なキャンセルポリシー" [ref=e5729]:
+                                - button "柔軟なキャンセルポリシー 8月3日より前まで" [ref=e5730]:
+                                  - generic [ref=e5731]:
+                                    - img
+                                  - generic [ref=e5732]:
+                                    - generic [ref=e5733]: 柔軟なキャンセルポリシー
+                                    - generic [ref=e5734]: 8月3日より前まで
+                          - generic [ref=e5735]:
+                            - generic [ref=e5737]: トリバゴの最安値
+                            - generic [ref=e5738]:
+                              - generic [ref=e5743]: ￥33,832
+                              - button "料金プランを見る" [ref=e5745]:
+                                - text: 料金プランを見る
+                                - generic [ref=e5746]:
+                                  - img
+                      - button "￥33,832 ホテルズドットコム すべての料金を表示" [ref=e5747] [cursor=pointer]:
+                        - generic [ref=e5748]:
+                          - generic [ref=e5750]: ￥33,832
+                          - generic "ホテルズドットコム" [ref=e5752]
+                        - generic [ref=e5753]: すべての料金を表示
+                        - generic [ref=e5754]:
+                          - img
+              - listitem [ref=e5755]:
+                - article [ref=e5758]:
+                  - generic [ref=e5759]:
+                    - button "東京豊洲 万葉倶楽部, (東京, 国内) 1 / 20" [ref=e5760] [cursor=pointer]:
+                      - img "東京豊洲 万葉倶楽部, (東京, 国内)" [ref=e5763]
+                      - generic [ref=e5764]: 1 / 20
+                    - button "お気に入りに追加" [ref=e5770] [cursor=pointer]:
+                      - img [ref=e5771]
+                      - generic [ref=e5773]: お気に入りに追加
+                  - generic [ref=e5774]:
+                    - generic [ref=e5775]:
+                      - heading "東京豊洲 万葉倶楽部" [level=2] [ref=e5777]:
+                        - link "東京豊洲 万葉倶楽部" [ref=e5778] [cursor=pointer]:
+                          - /url: /ja/acd/?fpip=1&search=100-38244438;dr-20260805-20260806;drs-40;qs-OMO7%E6%A8%AA%E6%B5%9C;rc-1-2-7-4#::effects=logNewTab-38244438-0
+                      - button "3 ホテルのランク ホテル" [ref=e5780] [cursor=pointer]:
+                        - generic [ref=e5781]:
+                          - generic [ref=e5782]:
+                            - generic [ref=e5783]: 3 ホテルのランク
+                            - generic [ref=e5784]:
+                              - img
+                            - generic [ref=e5785]:
+                              - img
+                            - generic [ref=e5786]:
+                              - img
+                          - generic [ref=e5787]: ホテル
+                      - button "8.3 満足 (1,901件の評価)" [ref=e5788] [cursor=pointer]:
+                        - generic [ref=e5790]:
+                          - generic [ref=e5791]: "8.3"
+                          - generic [ref=e5792]:
+                            - strong [ref=e5793]: 満足
+                            - text: (1,901件の評価)
+                      - button "東京, OMO7 Yokohama by Hoshino Resortsまで26.1 km" [ref=e5794] [cursor=pointer]:
+                        - generic [ref=e5795]:
+                          - generic [ref=e5796]:
+                            - img
+                          - text: 東京, OMO7 Yokohama by Hoshino Resortsまで26.1 km
+                      - button "屋上足湯からのパノラマビュー, 新鮮なシーフードが楽しめる食べ放題ビュッフェ" [ref=e5798] [cursor=pointer]:
+                        - generic [ref=e5800]:
+                          - generic [ref=e5801]:
+                            - img
+                          - paragraph [ref=e5802]: 屋上足湯からのパノラマビュー, 新鮮なシーフードが楽しめる食べ放題ビュッフェ
+                    - button "Trip.com 柔軟なキャンセルポリシー 朝食付き ￥100,000 料金プランを見る" [ref=e5804] [cursor=pointer]:
+                      - generic [ref=e5806]:
+                        - generic [ref=e5807]:
+                          - generic "Trip.com" [ref=e5810]
+                          - list [ref=e5811]:
+                            - listitem "柔軟なキャンセルポリシー" [ref=e5812]:
+                              - button "柔軟なキャンセルポリシー" [ref=e5813]:
+                                - generic [ref=e5814]:
+                                  - img
+                                - generic [ref=e5816]: 柔軟なキャンセルポリシー
+                            - listitem "朝食付き" [ref=e5817]:
+                              - button "朝食付き" [ref=e5818]:
+                                - generic [ref=e5819]:
+                                  - img
+                                - generic [ref=e5821]: 朝食付き
+                        - generic [ref=e5823]:
+                          - generic [ref=e5828]: ￥100,000
+                          - button "料金プランを見る" [ref=e5830]:
+                            - text: 料金プランを見る
+                            - generic [ref=e5831]:
+                              - img
+              - listitem [ref=e5832]:
+                - article [ref=e5835]:
+                  - generic [ref=e5836]:
+                    - button "KOKO HOTEL Shimbashi Onarimon, (東京, 国内) 1 / 101" [ref=e5837] [cursor=pointer]:
+                      - img "KOKO HOTEL Shimbashi Onarimon, (東京, 国内)" [ref=e5840]
+                      - generic [ref=e5841]: 1 / 101
+                    - button "お気に入りに追加" [ref=e5847] [cursor=pointer]:
+                      - img [ref=e5848]
+                      - generic [ref=e5850]: お気に入りに追加
+                  - generic [ref=e5851]:
+                    - generic [ref=e5852]:
+                      - heading "KOKO HOTEL Shimbashi Onarimon" [level=2] [ref=e5854]:
+                        - link "KOKO HOTEL Shimbashi Onarimon" [ref=e5855] [cursor=pointer]:
+                          - /url: /ja/acd/?fpip=1&search=100-13169326;dr-20260805-20260806;drs-40;qs-OMO7%E6%A8%AA%E6%B5%9C;rc-1-2-7-4#::effects=logNewTab-13169326-1
+                      - button "3 ホテルのランク ホテル" [ref=e5857] [cursor=pointer]:
+                        - generic [ref=e5858]:
+                          - generic [ref=e5859]:
+                            - generic [ref=e5860]: 3 ホテルのランク
+                            - generic [ref=e5861]:
+                              - img
+                            - generic [ref=e5862]:
+                              - img
+                            - generic [ref=e5863]:
+                              - img
+                          - generic [ref=e5864]: ホテル
+                      - button "8.6 大満足 (3,779件の評価)" [ref=e5865] [cursor=pointer]:
+                        - generic [ref=e5867]:
+                          - generic [ref=e5868]: "8.6"
+                          - generic [ref=e5869]:
+                            - strong [ref=e5870]: 大満足
+                            - text: (3,779件の評価)
+                      - button "東京, OMO7 Yokohama by Hoshino Resortsまで26.4 km" [ref=e5871] [cursor=pointer]:
+                        - generic [ref=e5872]:
+                          - generic [ref=e5873]:
+                            - img
+                          - text: 東京, OMO7 Yokohama by Hoshino Resortsまで26.4 km
+                      - button "漫画コレクションが楽しいロビー, 館内ランドリー設備" [ref=e5875] [cursor=pointer]:
+                        - generic [ref=e5877]:
+                          - generic [ref=e5878]:
+                            - img
+                          - paragraph [ref=e5879]: 漫画コレクションが楽しいロビー, 館内ランドリー設備
+                    - generic [ref=e5880]:
+                      - button "エクスペディア トリバゴの最安値 現在の料金 ￥18,400 以前の料金 ￥23,000 料金プランを見る" [ref=e5881] [cursor=pointer]:
+                        - generic [ref=e5883]:
+                          - generic "エクスペディア" [ref=e5887]
+                          - generic [ref=e5888]:
+                            - generic [ref=e5890]: トリバゴの最安値
+                            - generic [ref=e5891]:
+                              - generic [ref=e5894]:
+                                - generic [ref=e5896]:
+                                  - generic [ref=e5897]: 現在の料金
+                                  - text: ￥18,400
+                                - button "以前の料金 ￥23,000" [ref=e5898]:
+                                  - deletion [ref=e5901]:
+                                    - generic [ref=e5902]: 以前の料金
+                                    - text: ￥23,000
+                              - button "料金プランを見る" [ref=e5904]:
+                                - text: 料金プランを見る
+                                - generic [ref=e5905]:
+                                  - img
+                      - button "￥18,400 ホテルズドットコム すべての料金を表示" [ref=e5906] [cursor=pointer]:
+                        - generic [ref=e5907]:
+                          - generic [ref=e5909]: ￥18,400
+                          - generic "ホテルズドットコム" [ref=e5911]
+                        - generic [ref=e5912]: すべての料金を表示
+                        - generic [ref=e5913]:
+                          - img
+              - listitem [ref=e5914]:
+                - article [ref=e5917]:
+                  - generic [ref=e5918]:
+                    - button "三井ガーデンホテル汐留イタリア街, (東京, 国内) 1 / 64" [ref=e5919] [cursor=pointer]:
+                      - img "三井ガーデンホテル汐留イタリア街, (東京, 国内)" [ref=e5922]
+                      - generic [ref=e5923]: 1 / 64
+                    - button "お気に入りに追加" [ref=e5929] [cursor=pointer]:
+                      - img [ref=e5930]
+                      - generic [ref=e5932]: お気に入りに追加
+                  - generic [ref=e5933]:
+                    - generic [ref=e5934]:
+                      - heading "三井ガーデンホテル汐留イタリア街" [level=2] [ref=e5936]:
+                        - link "三井ガーデンホテル汐留イタリア街" [ref=e5937] [cursor=pointer]:
+                          - /url: /ja/acd/?fpip=1&search=100-1814295;dr-20260805-20260806;drs-40;qs-OMO7%E6%A8%AA%E6%B5%9C;rc-1-2-7-4#::effects=logNewTab-1814295-1
+                      - button "4 ホテルのランク ホテル" [ref=e5939] [cursor=pointer]:
+                        - generic [ref=e5940]:
+                          - generic [ref=e5941]:
+                            - generic [ref=e5942]: 4 ホテルのランク
+                            - generic [ref=e5943]:
+                              - img
+                            - generic [ref=e5944]:
+                              - img
+                            - generic [ref=e5945]:
+                              - img
+                            - generic [ref=e5946]:
+                              - img
+                          - generic [ref=e5947]: ホテル
+                      - button "8.2 満足 (12,440件の評価)" [ref=e5948] [cursor=pointer]:
+                        - generic [ref=e5950]:
+                          - generic [ref=e5951]: "8.2"
+                          - generic [ref=e5952]:
+                            - strong [ref=e5953]: 満足
+                            - text: (12,440件の評価)
+                      - button "東京, OMO7 Yokohama by Hoshino Resortsまで26.4 km" [ref=e5954] [cursor=pointer]:
+                        - generic [ref=e5955]:
+                          - generic [ref=e5956]:
+                            - img
+                          - text: 東京, OMO7 Yokohama by Hoshino Resortsまで26.4 km
+                      - button "東京タワーの景色を楽しめるお部屋, イタリア風の建築デザイン" [ref=e5958] [cursor=pointer]:
+                        - generic [ref=e5960]:
+                          - generic [ref=e5961]:
+                            - img
+                          - paragraph [ref=e5962]: 東京タワーの景色を楽しめるお部屋, イタリア風の建築デザイン
+                    - generic [ref=e5963]:
+                      - button "エクスペディア 柔軟なキャンセルポリシー 8月2日より前まで トリバゴの最安値 ￥34,419 料金プランを見る" [ref=e5964] [cursor=pointer]:
+                        - generic [ref=e5966]:
+                          - generic [ref=e5967]:
+                            - generic "エクスペディア" [ref=e5970]
+                            - list [ref=e5971]:
+                              - listitem "柔軟なキャンセルポリシー" [ref=e5972]:
+                                - button "柔軟なキャンセルポリシー 8月2日より前まで" [ref=e5973]:
+                                  - generic [ref=e5974]:
+                                    - img
+                                  - generic [ref=e5975]:
+                                    - generic [ref=e5976]: 柔軟なキャンセルポリシー
+                                    - generic [ref=e5977]: 8月2日より前まで
+                          - generic [ref=e5978]:
+                            - generic [ref=e5980]: トリバゴの最安値
+                            - generic [ref=e5981]:
+                              - generic [ref=e5986]: ￥34,419
+                              - button "料金プランを見る" [ref=e5988]:
+                                - text: 料金プランを見る
+                                - generic [ref=e5989]:
+                                  - img
+                      - button "￥34,419 ホテルズドットコム すべての料金を表示" [ref=e5990] [cursor=pointer]:
+                        - generic [ref=e5991]:
+                          - generic [ref=e5993]: ￥34,419
+                          - generic "ホテルズドットコム" [ref=e5995]
+                        - generic [ref=e5996]: すべての料金を表示
+                        - generic [ref=e5997]:
+                          - img
+              - listitem [ref=e5998]:
+                - article [ref=e6001]:
+                  - generic [ref=e6002]:
+                    - button "プロスタイル旅館 横浜馬車道, (横浜, 国内) 1 / 101" [ref=e6003] [cursor=pointer]:
+                      - img "プロスタイル旅館 横浜馬車道, (横浜, 国内)" [ref=e6006]
+                      - generic [ref=e6007]: 1 / 101
+                    - list [ref=e6009]:
+                      - listitem [ref=e6010]:
+                        - button "人気施設" [ref=e6013] [cursor=pointer]:
+                          - generic [ref=e6015]: 人気施設
+                    - button "お気に入りに追加" [ref=e6021] [cursor=pointer]:
+                      - img [ref=e6022]
+                      - generic [ref=e6024]: お気に入りに追加
+                  - generic [ref=e6025]:
+                    - generic [ref=e6026]:
+                      - heading "プロスタイル旅館 横浜馬車道" [level=2] [ref=e6028]:
+                        - link "プロスタイル旅館 横浜馬車道" [ref=e6029] [cursor=pointer]:
+                          - /url: /ja/acd/?fpip=1&search=100-10268300;dr-20260805-20260806;drs-40;qs-OMO7%E6%A8%AA%E6%B5%9C;rc-1-2-7-4#::effects=logNewTab-10268300-1
+                      - button "3 ホテルのランク 旅館" [ref=e6031] [cursor=pointer]:
+                        - generic [ref=e6032]:
+                          - generic [ref=e6033]:
+                            - generic [ref=e6034]: 3 ホテルのランク
+                            - generic [ref=e6035]:
+                              - img
+                            - generic [ref=e6036]:
+                              - img
+                            - generic [ref=e6037]:
+                              - img
+                          - generic [ref=e6038]: 旅館
+                      - button "7.9 良い (2,687件の評価)" [ref=e6039] [cursor=pointer]:
+                        - generic [ref=e6041]:
+                          - generic [ref=e6042]: "7.9"
+                          - generic [ref=e6043]:
+                            - strong [ref=e6044]: 良い
+                            - text: (2,687件の評価)
+                      - button "横浜, OMO7 Yokohama by Hoshino Resortsまで0.5 km" [ref=e6045] [cursor=pointer]:
+                        - generic [ref=e6046]:
+                          - generic [ref=e6047]:
+                            - img
+                          - text: 横浜, OMO7 Yokohama by Hoshino Resortsまで0.5 km
+                      - button "プライベートサウナで特別な体験を, ユニークなしゃぶしゃぶダイニング" [ref=e6049] [cursor=pointer]:
+                        - generic [ref=e6051]:
+                          - generic [ref=e6052]:
+                            - img
+                          - paragraph [ref=e6053]: プライベートサウナで特別な体験を, ユニークなしゃぶしゃぶダイニング
+                    - generic [ref=e6054]:
+                      - button "他のサイトより26%お得 エクスペディア 柔軟なキャンセルポリシー 8月3日より前まで 朝食付き トリバゴの最安値 ￥33,075 料金プランを見る" [ref=e6055] [cursor=pointer]:
+                        - generic [ref=e6056]:
+                          - button "他のサイトより26%お得" [ref=e6058]:
+                            - generic [ref=e6062]: 他のサイトより26%お得
+                          - generic [ref=e6063]:
+                            - generic [ref=e6064]:
+                              - generic "エクスペディア" [ref=e6067]
+                              - list [ref=e6068]:
+                                - listitem "柔軟なキャンセルポリシー" [ref=e6069]:
+                                  - button "柔軟なキャンセルポリシー 8月3日より前まで" [ref=e6070]:
+                                    - generic [ref=e6071]:
+                                      - img
+                                    - generic [ref=e6072]:
+                                      - generic [ref=e6073]: 柔軟なキャンセルポリシー
+                                      - generic [ref=e6074]: 8月3日より前まで
+                                - listitem "朝食付き" [ref=e6075]:
+                                  - button "朝食付き" [ref=e6076]:
+                                    - generic [ref=e6077]:
+                                      - img
+                                    - generic [ref=e6079]: 朝食付き
+                            - generic [ref=e6080]:
+                              - generic [ref=e6082]: トリバゴの最安値
+                              - generic [ref=e6083]:
+                                - generic [ref=e6088]: ￥33,075
+                                - button "料金プランを見る" [ref=e6090]:
+                                  - text: 料金プランを見る
+                                  - generic [ref=e6091]:
+                                    - img
+                      - button "￥49,925 Booking.com ￥44,598 るるぶトラベル すべての料金を表示" [ref=e6092] [cursor=pointer]:
+                        - generic [ref=e6093]:
+                          - generic [ref=e6095]: ￥49,925
+                          - generic "Booking.com" [ref=e6097]
+                        - generic [ref=e6098]:
+                          - generic [ref=e6100]: ￥44,598
+                          - generic "るるぶトラベル" [ref=e6102]
+                        - generic [ref=e6103]: すべての料金を表示
+                        - generic [ref=e6104]:
+                          - img
+              - listitem [ref=e6105]:
+                - article [ref=e6108]:
+                  - generic [ref=e6109]:
+                    - button "all day place shibuya, (東京, 国内) 1 / 101" [ref=e6110] [cursor=pointer]:
+                      - img "all day place shibuya, (東京, 国内)" [ref=e6113]
+                      - generic [ref=e6114]: 1 / 101
+                    - button "お気に入りに追加" [ref=e6120] [cursor=pointer]:
+                      - img [ref=e6121]
+                      - generic [ref=e6123]: お気に入りに追加
+                  - generic [ref=e6124]:
+                    - generic [ref=e6125]:
+                      - heading "all day place shibuya" [level=2] [ref=e6127]:
+                        - link "all day place shibuya" [ref=e6128] [cursor=pointer]:
+                          - /url: /ja/acd/?fpip=1&search=100-27943078;dr-20260805-20260806;drs-40;qs-OMO7%E6%A8%AA%E6%B5%9C;rc-1-2-7-4#::effects=logNewTab-27943078-1
+                      - button "4 ホテルのランク ホテル" [ref=e6130] [cursor=pointer]:
+                        - generic [ref=e6131]:
+                          - generic [ref=e6132]:
+                            - generic [ref=e6133]: 4 ホテルのランク
+                            - generic [ref=e6134]:
+                              - img
+                            - generic [ref=e6135]:
+                              - img
+                            - generic [ref=e6136]:
+                              - img
+                            - generic [ref=e6137]:
+                              - img
+                          - generic [ref=e6138]: ホテル
+                      - button "8.4 満足 (6,701件の評価)" [ref=e6139] [cursor=pointer]:
+                        - generic [ref=e6141]:
+                          - generic [ref=e6142]: "8.4"
+                          - generic [ref=e6143]:
+                            - strong [ref=e6144]: 満足
+                            - text: (6,701件の評価)
+                      - button "東京, OMO7 Yokohama by Hoshino Resortsまで25.0 km" [ref=e6145] [cursor=pointer]:
+                        - generic [ref=e6146]:
+                          - generic [ref=e6147]:
+                            - img
+                          - text: 東京, OMO7 Yokohama by Hoshino Resortsまで25.0 km
+                      - button "自家製チーズが自慢のピッツェリア, 機能的で静かな客室デザイン" [ref=e6149] [cursor=pointer]:
+                        - generic [ref=e6151]:
+                          - generic [ref=e6152]:
+                            - img
+                          - paragraph [ref=e6153]: 自家製チーズが自慢のピッツェリア, 機能的で静かな客室デザイン
+                    - generic [ref=e6154]:
+                      - button "ホテルズドットコム 柔軟なキャンセルポリシー 8月3日より前まで 事前払い不要 現在の料金 ￥104,742 以前の料金 ￥180,024 料金プランを見る" [ref=e6155] [cursor=pointer]:
+                        - generic [ref=e6157]:
+                          - generic [ref=e6158]:
+                            - generic "ホテルズドットコム" [ref=e6161]
+                            - list [ref=e6162]:
+                              - listitem "柔軟なキャンセルポリシー" [ref=e6163]:
+                                - button "柔軟なキャンセルポリシー 8月3日より前まで" [ref=e6164]:
+                                  - generic [ref=e6165]:
+                                    - img
+                                  - generic [ref=e6166]:
+                                    - generic [ref=e6167]: 柔軟なキャンセルポリシー
+                                    - generic [ref=e6168]: 8月3日より前まで
+                              - listitem "事前払い不要" [ref=e6169]:
+                                - button "事前払い不要" [ref=e6170]:
+                                  - generic [ref=e6171]:
+                                    - img
+                                  - generic [ref=e6173]: 事前払い不要
+                          - generic [ref=e6175]:
+                            - generic [ref=e6178]:
+                              - generic [ref=e6180]:
+                                - generic [ref=e6181]: 現在の料金
+                                - text: ￥104,742
+                              - button "以前の料金 ￥180,024" [ref=e6182]:
+                                - deletion [ref=e6185]:
+                                  - generic [ref=e6186]: 以前の料金
+                                  - text: ￥180,024
+                            - button "料金プランを見る" [ref=e6188]:
+                              - text: 料金プランを見る
+                              - generic [ref=e6189]:
+                                - img
+                      - button "￥83,131 ログインしてアクセス ￥104,742 エクスペディア すべての料金を表示" [ref=e6190] [cursor=pointer]:
+                        - generic [ref=e6191]:
+                          - generic [ref=e6193]: ￥83,131
+                          - generic [ref=e6194]:
+                            - img
+                          - text: ログインしてアクセス
+                        - generic [ref=e6195]:
+                          - generic [ref=e6197]: ￥104,742
+                          - generic "エクスペディア" [ref=e6199]
+                        - generic [ref=e6200]: すべての料金を表示
+                        - generic [ref=e6201]:
+                          - img
+              - listitem [ref=e6202]:
+                - article [ref=e6205]:
+                  - generic [ref=e6206]:
+                    - button "ダブルツリーbyヒルトン東京有明, (東京, 国内) 1 / 56" [ref=e6207] [cursor=pointer]:
+                      - img "ダブルツリーbyヒルトン東京有明, (東京, 国内)" [ref=e6210]
+                      - generic [ref=e6211]: 1 / 56
+                    - button "お気に入りに追加" [ref=e6217] [cursor=pointer]:
+                      - img [ref=e6218]
+                      - generic [ref=e6220]: お気に入りに追加
+                  - generic [ref=e6221]:
+                    - generic [ref=e6222]:
+                      - heading "ダブルツリーbyヒルトン東京有明" [level=2] [ref=e6224]:
+                        - link "ダブルツリーbyヒルトン東京有明" [ref=e6225] [cursor=pointer]:
+                          - /url: /ja/acd/?fpip=1&search=100-10201018;dr-20260805-20260806;drs-40;qs-OMO7%E6%A8%AA%E6%B5%9C;rc-1-2-7-4#::effects=logNewTab-10201018-1
+                      - button "4 ホテルのランク ホテル" [ref=e6227] [cursor=pointer]:
+                        - generic [ref=e6228]:
+                          - generic [ref=e6229]:
+                            - generic [ref=e6230]: 4 ホテルのランク
+                            - generic [ref=e6231]:
+                              - img
+                            - generic [ref=e6232]:
+                              - img
+                            - generic [ref=e6233]:
+                              - img
+                            - generic [ref=e6234]:
+                              - img
+                          - generic [ref=e6235]: ホテル
+                      - button "8.9 大満足 (4,844件の評価)" [ref=e6236] [cursor=pointer]:
+                        - generic [ref=e6238]:
+                          - generic [ref=e6239]: "8.9"
+                          - generic [ref=e6240]:
+                            - strong [ref=e6241]: 大満足
+                            - text: (4,844件の評価)
+                      - button "東京, OMO7 Yokohama by Hoshino Resortsまで25.4 km" [ref=e6242] [cursor=pointer]:
+                        - generic [ref=e6243]:
+                          - generic [ref=e6244]:
+                            - img
+                          - text: 東京, OMO7 Yokohama by Hoshino Resortsまで25.4 km
+                      - button "東京湾と街のランドマークを一望, 最新のフィットネスセンター" [ref=e6246] [cursor=pointer]:
+                        - generic [ref=e6248]:
+                          - generic [ref=e6249]:
+                            - img
+                          - paragraph [ref=e6250]: 東京湾と街のランドマークを一望, 最新のフィットネスセンター
+                    - generic [ref=e6251]:
+                      - button "Doubletree ホテルに直接予約 ￥30,155 料金プランを見る" [ref=e6252] [cursor=pointer]:
+                        - generic [ref=e6254]:
+                          - generic [ref=e6256]:
+                            - generic "Doubletree" [ref=e6258]
+                            - generic [ref=e6259]:
+                              - generic [ref=e6260]:
+                                - img
+                              - generic [ref=e6261]: ホテルに直接予約
+                          - generic [ref=e6263]:
+                            - generic [ref=e6268]: ￥30,155
+                            - button "料金プランを見る" [ref=e6270]:
+                              - text: 料金プランを見る
+                              - generic [ref=e6271]:
+                                - img
+                      - button "￥29,755 エクスペディア ￥29,755 Booking.com すべての料金を表示" [ref=e6272] [cursor=pointer]:
+                        - generic [ref=e6273]:
+                          - generic [ref=e6275]: ￥29,755
+                          - generic "エクスペディア" [ref=e6277]
+                        - generic [ref=e6278]:
+                          - generic [ref=e6280]: ￥29,755
+                          - generic "Booking.com" [ref=e6282]
+                        - generic [ref=e6283]: すべての料金を表示
+                        - generic [ref=e6284]:
+                          - img
+              - listitem [ref=e6285]:
+                - article [ref=e6288]:
+                  - generic [ref=e6289]:
+                    - button "横浜ベイシェラトン ホテル & タワーズ, (横浜, 国内) 1 / 102" [ref=e6290] [cursor=pointer]:
+                      - img "横浜ベイシェラトン ホテル & タワーズ, (横浜, 国内)" [ref=e6293]
+                      - generic [ref=e6294]: 1 / 102
+                    - button "お気に入りに追加" [ref=e6300] [cursor=pointer]:
+                      - img [ref=e6301]
+                      - generic [ref=e6303]: お気に入りに追加
+                  - generic [ref=e6304]:
+                    - generic [ref=e6305]:
+                      - heading "横浜ベイシェラトン ホテル & タワーズ" [level=2] [ref=e6307]:
+                        - link "横浜ベイシェラトン ホテル & タワーズ" [ref=e6308] [cursor=pointer]:
+                          - /url: /ja/acd/?fpip=1&search=100-552191;dr-20260805-20260806;drs-40;qs-OMO7%E6%A8%AA%E6%B5%9C;rc-1-2-7-4#::effects=logNewTab-552191-0
+                      - button "4 ホテルのランク ホテル" [ref=e6310] [cursor=pointer]:
+                        - generic [ref=e6311]:
+                          - generic [ref=e6312]:
+                            - generic [ref=e6313]: 4 ホテルのランク
+                            - generic [ref=e6314]:
+                              - img
+                            - generic [ref=e6315]:
+                              - img
+                            - generic [ref=e6316]:
+                              - img
+                            - generic [ref=e6317]:
+                              - img
+                          - generic [ref=e6318]: ホテル
+                      - button "8.4 満足 (9,013件の評価)" [ref=e6319] [cursor=pointer]:
+                        - generic [ref=e6321]:
+                          - generic [ref=e6322]: "8.4"
+                          - generic [ref=e6323]:
+                            - strong [ref=e6324]: 満足
+                            - text: (9,013件の評価)
+                      - button "横浜, OMO7 Yokohama by Hoshino Resortsまで3.0 km" [ref=e6325] [cursor=pointer]:
+                        - generic [ref=e6326]:
+                          - generic [ref=e6327]:
+                            - img
+                          - text: 横浜, OMO7 Yokohama by Hoshino Resortsまで3.0 km
+                      - button "コンパスレストランでの多彩なビュッフェ, シェラトン シグネチャー スリープ エクスペリエンス寝具" [ref=e6329] [cursor=pointer]:
+                        - generic [ref=e6331]:
+                          - generic [ref=e6332]:
+                            - img
+                          - paragraph [ref=e6333]: コンパスレストランでの多彩なビュッフェ, シェラトン シグネチャー スリープ エクスペリエンス寝具
+                    - button "るるぶトラベル ￥153,120 料金プランを見る" [ref=e6335] [cursor=pointer]:
+                      - generic [ref=e6337]:
+                        - generic "るるぶトラベル" [ref=e6341]
+                        - generic [ref=e6343]:
+                          - generic [ref=e6348]: ￥153,120
+                          - button "料金プランを見る" [ref=e6350]:
+                            - text: 料金プランを見る
+                            - generic [ref=e6351]:
+                              - img
+              - listitem [ref=e6352]:
+                - article [ref=e6355]:
+                  - generic [ref=e6356]:
+                    - button "新宿アーバンホテル, (東京, 国内) 1 / 82" [ref=e6357] [cursor=pointer]:
+                      - img "新宿アーバンホテル, (東京, 国内)" [ref=e6360]
+                      - generic [ref=e6361]: 1 / 82
+                    - button "お気に入りに追加" [ref=e6367] [cursor=pointer]:
+                      - img [ref=e6368]
+                      - generic [ref=e6370]: お気に入りに追加
+                  - generic [ref=e6371]:
+                    - generic [ref=e6372]:
+                      - heading "新宿アーバンホテル" [level=2] [ref=e6374]:
+                        - link "新宿アーバンホテル" [ref=e6375] [cursor=pointer]:
+                          - /url: /ja/acd/?fpip=1&search=100-3169893;dr-20260805-20260806;drs-40;qs-OMO7%E6%A8%AA%E6%B5%9C;rc-1-2-7-4#::effects=logNewTab-3169893-1
+                      - button "3 ホテルのランク ホテル" [ref=e6377] [cursor=pointer]:
+                        - generic [ref=e6378]:
+                          - generic [ref=e6379]:
+                            - generic [ref=e6380]: 3 ホテルのランク
+                            - generic [ref=e6381]:
+                              - img
+                            - generic [ref=e6382]:
+                              - img
+                            - generic [ref=e6383]:
+                              - img
+                          - generic [ref=e6384]: ホテル
+                      - button "8.1 満足 (1,075件の評価)" [ref=e6385] [cursor=pointer]:
+                        - generic [ref=e6387]:
+                          - generic [ref=e6388]: "8.1"
+                          - generic [ref=e6389]:
+                            - strong [ref=e6390]: 満足
+                            - text: (1,075件の評価)
+                      - button "東京, OMO7 Yokohama by Hoshino Resortsまで28.7 km" [ref=e6391] [cursor=pointer]:
+                        - generic [ref=e6392]:
+                          - generic [ref=e6393]:
+                            - img
+                          - text: 東京, OMO7 Yokohama by Hoshino Resortsまで28.7 km
+                      - button "かわいらしいアヒルのおもちゃ, 広々としたアパートメントスタイルの客室" [ref=e6395] [cursor=pointer]:
+                        - generic [ref=e6397]:
+                          - generic [ref=e6398]:
+                            - img
+                          - paragraph [ref=e6399]: かわいらしいアヒルのおもちゃ, 広々としたアパートメントスタイルの客室
+                    - generic [ref=e6400]:
+                      - button "Booking.com 柔軟なキャンセルポリシー 7月28日より前まで トリバゴの最安値 ￥51,200 料金プランを見る" [ref=e6401] [cursor=pointer]:
+                        - generic [ref=e6403]:
+                          - generic [ref=e6404]:
+                            - generic "Booking.com" [ref=e6407]
+                            - list [ref=e6408]:
+                              - listitem "柔軟なキャンセルポリシー" [ref=e6409]:
+                                - button "柔軟なキャンセルポリシー 7月28日より前まで" [ref=e6410]:
+                                  - generic [ref=e6411]:
+                                    - img
+                                  - generic [ref=e6412]:
+                                    - generic [ref=e6413]: 柔軟なキャンセルポリシー
+                                    - generic [ref=e6414]: 7月28日より前まで
+                          - generic [ref=e6415]:
+                            - generic [ref=e6417]: トリバゴの最安値
+                            - generic [ref=e6418]:
+                              - generic [ref=e6423]: ￥51,200
+                              - button "料金プランを見る" [ref=e6425]:
+                                - text: 料金プランを見る
+                                - generic [ref=e6426]:
+                                  - img
+                      - button "￥55,881 エクスペディア ￥55,881 ホテルズドットコム すべての料金を表示" [ref=e6427] [cursor=pointer]:
+                        - generic [ref=e6428]:
+                          - generic [ref=e6430]: ￥55,881
+                          - generic "エクスペディア" [ref=e6432]
+                        - generic [ref=e6433]:
+                          - generic [ref=e6435]: ￥55,881
+                          - generic "ホテルズドットコム" [ref=e6437]
+                        - generic [ref=e6438]: すべての料金を表示
+                        - generic [ref=e6439]:
+                          - img
+              - listitem [ref=e6440]:
+                - article [ref=e6443]:
+                  - generic [ref=e6444]:
+                    - button "ホテルマイステイズプレミア浜松町, (東京, 国内) 1 / 73" [ref=e6445] [cursor=pointer]:
+                      - img "ホテルマイステイズプレミア浜松町, (東京, 国内)" [ref=e6448]
+                      - generic [ref=e6449]: 1 / 73
+                    - button "お気に入りに追加" [ref=e6455] [cursor=pointer]:
+                      - img [ref=e6456]
+                      - generic [ref=e6458]: お気に入りに追加
+                  - generic [ref=e6459]:
+                    - generic [ref=e6460]:
+                      - heading "ホテルマイステイズプレミア浜松町" [level=2] [ref=e6462]:
+                        - link "ホテルマイステイズプレミア浜松町" [ref=e6463] [cursor=pointer]:
+                          - /url: /ja/acd/?fpip=1&search=100-1021083;dr-20260805-20260806;drs-40;qs-OMO7%E6%A8%AA%E6%B5%9C;rc-1-2-7-4#::effects=logNewTab-1021083-1
+                      - button "4 ホテルのランク ホテル" [ref=e6465] [cursor=pointer]:
+                        - generic [ref=e6466]:
+                          - generic [ref=e6467]:
+                            - generic [ref=e6468]: 4 ホテルのランク
+                            - generic [ref=e6469]:
+                              - img
+                            - generic [ref=e6470]:
+                              - img
+                            - generic [ref=e6471]:
+                              - img
+                            - generic [ref=e6472]:
+                              - img
+                          - generic [ref=e6473]: ホテル
+                      - button "8.5 大満足 (5,733件の評価)" [ref=e6474] [cursor=pointer]:
+                        - generic [ref=e6476]:
+                          - generic [ref=e6477]: "8.5"
+                          - generic [ref=e6478]:
+                            - strong [ref=e6479]: 大満足
+                            - text: (5,733件の評価)
+                      - button "東京, OMO7 Yokohama by Hoshino Resortsまで26.3 km" [ref=e6480] [cursor=pointer]:
+                        - generic [ref=e6481]:
+                          - generic [ref=e6482]:
+                            - img
+                          - text: 東京, OMO7 Yokohama by Hoshino Resortsまで26.3 km
+                      - button "和洋食の多彩な朝食, ご家族向けの特別なお部屋" [ref=e6484] [cursor=pointer]:
+                        - generic [ref=e6486]:
+                          - generic [ref=e6487]:
+                            - img
+                          - paragraph [ref=e6488]: 和洋食の多彩な朝食, ご家族向けの特別なお部屋
+                    - generic [ref=e6489]:
+                      - button "Booking.com 柔軟なキャンセルポリシー 7月7日より前まで ￥28,273 料金プランを見る" [ref=e6490] [cursor=pointer]:
+                        - generic [ref=e6492]:
+                          - generic [ref=e6493]:
+                            - generic "Booking.com" [ref=e6496]
+                            - list [ref=e6497]:
+                              - listitem "柔軟なキャンセルポリシー" [ref=e6498]:
+                                - button "柔軟なキャンセルポリシー 7月7日より前まで" [ref=e6499]:
+                                  - generic [ref=e6500]:
+                                    - img
+                                  - generic [ref=e6501]:
+                                    - generic [ref=e6502]: 柔軟なキャンセルポリシー
+                                    - generic [ref=e6503]: 7月7日より前まで
+                          - generic [ref=e6505]:
+                            - generic [ref=e6510]: ￥28,273
+                            - button "料金プランを見る" [ref=e6512]:
+                              - text: 料金プランを見る
+                              - generic [ref=e6513]:
+                                - img
+                      - button "￥27,810 エクスペディア ￥30,340 Trip.com すべての料金を表示" [ref=e6514] [cursor=pointer]:
+                        - generic [ref=e6515]:
+                          - generic [ref=e6517]: ￥27,810
+                          - generic "エクスペディア" [ref=e6519]
+                        - generic [ref=e6520]:
+                          - generic [ref=e6522]: ￥30,340
+                          - generic "Trip.com" [ref=e6524]
+                        - generic [ref=e6525]: すべての料金を表示
+                        - generic [ref=e6526]:
+                          - img
+              - listitem [ref=e6527]:
+                - article [ref=e6530]:
+                  - generic [ref=e6531]:
+                    - button "ザ・ペニンシュラ東京, (東京, 国内) 1 / 102" [ref=e6532] [cursor=pointer]:
+                      - img "ザ・ペニンシュラ東京, (東京, 国内)" [ref=e6535]
+                      - generic [ref=e6536]: 1 / 102
+                    - button "お気に入りに追加" [ref=e6542] [cursor=pointer]:
+                      - img [ref=e6543]
+                      - generic [ref=e6545]: お気に入りに追加
+                  - generic [ref=e6546]:
+                    - generic [ref=e6547]:
+                      - heading "ザ・ペニンシュラ東京" [level=2] [ref=e6549]:
+                        - link "ザ・ペニンシュラ東京" [ref=e6550] [cursor=pointer]:
+                          - /url: /ja/acd/?fpip=1&search=100-347081;dr-20260805-20260806;drs-40;qs-OMO7%E6%A8%AA%E6%B5%9C;rc-1-2-7-4#::effects=logNewTab-347081-1
+                      - button "5 ホテルのランク ホテル" [ref=e6552] [cursor=pointer]:
+                        - generic [ref=e6553]:
+                          - generic [ref=e6554]:
+                            - generic [ref=e6555]: 5 ホテルのランク
+                            - generic [ref=e6556]:
+                              - img
+                            - generic [ref=e6557]:
+                              - img
+                            - generic [ref=e6558]:
+                              - img
+                            - generic [ref=e6559]:
+                              - img
+                            - generic [ref=e6560]:
+                              - img
+                          - generic [ref=e6561]: ホテル
+                      - button "9.1 大満足 (8,307件の評価)" [ref=e6562] [cursor=pointer]:
+                        - generic [ref=e6564]:
+                          - generic [ref=e6565]: "9.1"
+                          - generic [ref=e6566]:
+                            - strong [ref=e6567]: 大満足
+                            - text: (8,307件の評価)
+                      - button "東京, OMO7 Yokohama by Hoshino Resortsまで28.0 km" [ref=e6568] [cursor=pointer]:
+                        - generic [ref=e6569]:
+                          - generic [ref=e6570]:
+                            - img
+                          - text: 東京, OMO7 Yokohama by Hoshino Resortsまで28.0 km
+                      - button "皇居のパノラマビュー, 多彩なグルメダイニング" [ref=e6572] [cursor=pointer]:
+                        - generic [ref=e6574]:
+                          - generic [ref=e6575]:
+                            - img
+                          - paragraph [ref=e6576]: 皇居のパノラマビュー, 多彩なグルメダイニング
+                    - generic [ref=e6577]:
+                      - button "エクスペディア トリバゴの最安値 ￥131,960 料金プランを見る" [ref=e6578] [cursor=pointer]:
+                        - generic [ref=e6580]:
+                          - generic "エクスペディア" [ref=e6584]
+                          - generic [ref=e6585]:
+                            - generic [ref=e6587]: トリバゴの最安値
+                            - generic [ref=e6588]:
+                              - generic [ref=e6593]: ￥131,960
+                              - button "料金プランを見る" [ref=e6595]:
+                                - text: 料金プランを見る
+                                - generic [ref=e6596]:
+                                  - img
+                      - button "￥131,960 ホテルのサイト ￥131,960 ホテルズドットコム すべての料金を表示" [ref=e6597] [cursor=pointer]:
+                        - generic [ref=e6598]:
+                          - generic [ref=e6600]: ￥131,960
+                          - generic [ref=e6601]:
+                            - generic [ref=e6602]:
+                              - img
+                            - generic "ホテルのサイト" [ref=e6603]
+                        - generic [ref=e6604]:
+                          - generic [ref=e6606]: ￥131,960
+                          - generic "ホテルズドットコム" [ref=e6608]
+                        - generic [ref=e6609]: すべての料金を表示
+                        - generic [ref=e6610]:
+                          - img
+            - navigation "wrapper" [ref=e6612]:
+              - list [ref=e6613]:
+                - listitem [ref=e6614]:
+                  - button "1" [ref=e6615] [cursor=pointer]
+                - listitem [ref=e6616]:
+                  - button "2" [ref=e6617] [cursor=pointer]
+                - listitem [ref=e6618]:
+                  - button "3" [ref=e6619] [cursor=pointer]
+                - listitem [ref=e6620]:
+                  - button "4" [ref=e6621] [cursor=pointer]
+                - listitem [ref=e6622]:
+                  - button "5" [ref=e6623] [cursor=pointer]
+                - listitem [ref=e6624]:
+                  - button "次" [ref=e6625] [cursor=pointer]:
+                    - generic [ref=e6626]:
+                      - img
+              - button "ページトップに戻る" [ref=e6627] [cursor=pointer]:
+                - generic [ref=e6628]:
+                  - img
+          - paragraph [ref=e3290]: 各予約サイトからトリバゴに提供される料金と空室状況は、継続的に変化しています。そのためトリバゴでご覧になった情報と同じ内容が、移動先の予約サイトにも表示されているとは限りません。
+        - generic [ref=e3294]:
+          - button "地図を拡大" [ref=e6631] [cursor=pointer]:
+            - generic [ref=e6632]:
+              - img
+            - generic: 地図を拡大
+          - button "satellite" [ref=e6635] [cursor=pointer]:
+            - img "satellite" [ref=e6636]
+          - generic [ref=e6638]:
+            - generic:
+              - button "キーボード ショートカット"
+            - region "マップ" [ref=e6639]
+            - generic [ref=e6640]:
+              - generic [ref=e6663]:
+                - generic:
+                  - generic:
+                    - button "￥31,106" [ref=e6666] [cursor=pointer]:
+                      - strong [ref=e6667]: ￥31,106
+                    - button "￥32,400" [ref=e6669] [cursor=pointer]:
+                      - strong [ref=e6670]: ￥32,400
+                    - button "￥17,472" [ref=e6672] [cursor=pointer]:
+                      - strong [ref=e6673]: ￥17,472
+                    - button "￥27,119" [ref=e6675] [cursor=pointer]:
+                      - strong [ref=e6676]: ￥27,119
+                    - button "￥8,640" [ref=e6678] [cursor=pointer]:
+                      - strong [ref=e6679]: ￥8,640
+                    - button "￥51,600" [ref=e6681] [cursor=pointer]:
+                      - strong [ref=e6682]: ￥51,600
+                    - button "￥47,996" [ref=e6684] [cursor=pointer]:
+                      - strong [ref=e6685]: ￥47,996
+                    - button "￥31,200" [ref=e6687] [cursor=pointer]:
+                      - strong [ref=e6688]: ￥31,200
+                    - button "￥52,000" [ref=e6690] [cursor=pointer]:
+                      - strong [ref=e6691]: ￥52,000
+                    - button "￥27,594" [ref=e6693] [cursor=pointer]:
+                      - strong [ref=e6694]: ￥27,594
+                    - button "￥41,277" [ref=e6696] [cursor=pointer]:
+                      - strong [ref=e6697]: ￥41,277
+                    - button "￥51,300" [ref=e6699] [cursor=pointer]:
+                      - strong [ref=e6700]: ￥51,300
+                    - button "￥72,600" [ref=e6702] [cursor=pointer]:
+                      - strong [ref=e6703]: ￥72,600
+                    - button "￥22,470" [ref=e6705] [cursor=pointer]:
+                      - strong [ref=e6706]: ￥22,470
+                    - button "￥24,006" [ref=e6708] [cursor=pointer]:
+                      - strong [ref=e6709]: ￥24,006
+                    - button "￥33,075" [ref=e6711] [cursor=pointer]:
+                      - strong [ref=e6712]: ￥33,075
+                    - button "￥104,742" [ref=e6714] [cursor=pointer]:
+                      - strong [ref=e6715]: ￥104,742
+                    - button "￥30,155" [ref=e6717] [cursor=pointer]:
+                      - strong [ref=e6718]: ￥30,155
+                    - button "￥153,120" [ref=e6720] [cursor=pointer]:
+                      - strong [ref=e6721]: ￥153,120
+                    - button "￥28,273" [ref=e6723] [cursor=pointer]:
+                      - strong [ref=e6724]: ￥28,273
+                    - button "￥131,960" [ref=e6726] [cursor=pointer]:
+                      - strong [ref=e6727]: ￥131,960
+                    - button "￥32,998" [ref=e6729] [cursor=pointer]:
+                      - strong [ref=e6730]: ￥32,998
+                    - button "￥58,620" [ref=e6732] [cursor=pointer]:
+                      - strong [ref=e6733]: ￥58,620
+                    - button "￥26,444" [ref=e6735] [cursor=pointer]:
+                      - strong [ref=e6736]: ￥26,444
+                    - button "￥20,800" [ref=e6738] [cursor=pointer]:
+                      - strong [ref=e6739]: ￥20,800
+                    - button "￥93,960" [ref=e6741] [cursor=pointer]:
+                      - strong [ref=e6742]: ￥93,960
+                    - button "￥51,872" [ref=e6744] [cursor=pointer]:
+                      - strong [ref=e6745]: ￥51,872
+                    - button "￥62,768" [ref=e6747] [cursor=pointer]:
+                      - strong [ref=e6748]: ￥62,768
+                    - button "￥42,799" [ref=e6750] [cursor=pointer]:
+                      - strong [ref=e6751]: ￥42,799
+                    - button "￥47,148" [ref=e6753] [cursor=pointer]:
+                      - strong [ref=e6754]: ￥47,148
+                    - button "￥33,832" [ref=e6756] [cursor=pointer]:
+                      - strong [ref=e6757]: ￥33,832
+                    - button "￥100,000" [ref=e6759] [cursor=pointer]:
+                      - strong [ref=e6760]: ￥100,000
+                    - button "￥18,400" [ref=e6762] [cursor=pointer]:
+                      - strong [ref=e6763]: ￥18,400
+                    - button "￥34,419" [ref=e6765] [cursor=pointer]:
+                      - strong [ref=e6766]: ￥34,419
+                    - button "￥51,200" [ref=e6768] [cursor=pointer]:
+                      - strong [ref=e6769]: ￥51,200
+              - iframe [ref=e6772]:
+                
+              - generic [ref=e6774]:
+                - button "zoom in" [ref=e6775] [cursor=pointer]:
+                  - generic [ref=e6776]:
+                    - img
+                - button "zoom out" [ref=e6778] [cursor=pointer]:
+                  - generic [ref=e6779]:
+                    - img
+              - generic [ref=e6781]: OpenStreetMapの位置データを使用
+              - link "Google マップでこの地域を開きます（新しいウィンドウが開きます）" [ref=e6783] [cursor=pointer]:
+                - /url: https://maps.google.com/maps?ll=35.443371,139.637756&z=16&t=m&hl=ja&gl=US&mapclient=apiv3
+                - img "Google" [ref=e6785]
+              - generic [ref=e6786]:
+                - button "キーボード ショートカット" [ref=e6792] [cursor=pointer]
+                - button "地図データ" [ref=e6798] [cursor=pointer]
+                - 'button "地図の縮尺: 51 ピクセルあたり 100 m" [ref=e6799] [cursor=pointer]':
+                  - generic [ref=e6802]: 100 m
+                - link "利用規約（新しいタブで開きます）" [ref=e6814] [cursor=pointer]:
+                  - /url: https://www.google.com/intl/ja_US/help/terms_maps.html
+                  - text: 利用規約
+                - link "地図の誤りを報告する（新しいタブで開きます）" [ref=e6819] [cursor=pointer]:
+                  - /url: https://www.google.com/maps/@35.4433708,139.6377563,16z/data=!10m1!1e1!12b1?source=apiv3&rapsrc=apiv3
+                  - text: 地図の誤りを報告する
+    - contentinfo [ref=e3296]:
+      - generic [ref=e3297]:
+        - img "trivago logo" [ref=e3298]
+        - list [ref=e3307]:
+          - listitem [ref=e3308]:
+            - link "Facebook" [ref=e3309] [cursor=pointer]:
+              - /url: https://www.facebook.com/trivago
+              - generic [ref=e3310]:
+                - img
+              - generic [ref=e3311]: Facebook
+          - listitem [ref=e3312]:
+            - link "Twitter" [ref=e3313] [cursor=pointer]:
+              - /url: https://twitter.com/trivago
+              - generic [ref=e3314]:
+                - img
+              - generic [ref=e3315]: Twitter
+          - listitem [ref=e3316]:
+            - link "Instagram" [ref=e3317] [cursor=pointer]:
+              - /url: https://instagram.com/trivago/
+              - generic [ref=e3318]:
+                - img
+              - generic [ref=e3319]: Instagram
+          - listitem [ref=e3320]:
+            - link "Youtube" [ref=e3321] [cursor=pointer]:
+              - /url: https://www.youtube.com/user/trivago
+              - generic [ref=e3322]:
+                - img
+              - generic [ref=e3323]: Youtube
+          - listitem [ref=e3324]:
+            - link "Linkedin" [ref=e3325] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/trivagonv/
+              - generic [ref=e3326]:
+                - img
+              - generic [ref=e3327]: Linkedin
+      - generic [ref=e3328]:
+        - generic [ref=e3329]:
+          - generic [ref=e3331]:
+            - combobox [ref=e3332] [cursor=pointer]:
+              - option "Arab World (العالم العربي)"
+              - option "Argentina"
+              - option "Australia"
+              - option "Austria (Österreich)"
+              - option "Belgium (België)"
+              - option "Brazil (Brasil)"
+              - option "Bulgaria (България)"
+              - option "Canada"
+              - option "Chile"
+              - option "Colombia"
+              - option "Croatia (Hrvatska)"
+              - option "Czechia (Česko)"
+              - option "Denmark (Danmark)"
+              - option "Ecuador"
+              - option "Finland (Suomi)"
+              - option "France"
+              - option "Germany (Deutschland)"
+              - option "Greece (Ελλάδα)"
+              - option "Hong Kong (香港)"
+              - option "Hungary (Magyarország)"
+              - option "India"
+              - option "Indonesia"
+              - option "Ireland"
+              - option "Israel (ישראל)"
+              - option "Italy (Italia)"
+              - option "Japan (日本)" [selected]
+              - option "Korea (한국)"
+              - option "Malaysia"
+              - option "Mexico (México)"
+              - option "Netherlands (Nederland)"
+              - option "New Zealand"
+              - option "Norway (Norge)"
+              - option "Peru (Perú)"
+              - option "Philippines (Pilipinas)"
+              - option "Poland (Polska)"
+              - option "Portugal"
+              - option "Romania (România)"
+              - option "Serbia (Srbija)"
+              - option "Singapore"
+              - option "Slovakia (Slovensko)"
+              - option "Slovenia (Slovenija)"
+              - option "South Africa"
+              - option "Spain (España)"
+              - option "Sweden (Sverige)"
+              - option "Switzerland (Schweiz)"
+              - option "Taiwan (台灣)"
+              - option "Thailand (ประเทศไทย)"
+              - option "Turkey (Türkiye)"
+              - option "UAE"
+              - option "United Kingdom"
+              - option "Uruguay"
+              - option "USA"
+              - option "Vietnam (Việt Nam)"
+            - generic:
+              - img
+          - generic [ref=e3333]:
+            - generic [ref=e3334]:
+              - button "トリバゴとは" [expanded]
+              - list [ref=e3335]:
+                - listitem [ref=e3336]:
+                  - link "トリバゴについて" [ref=e3337] [cursor=pointer]:
+                    - /url: https://company.trivago.com/
+                - listitem [ref=e3338]:
+                  - link "募集職種" [ref=e3339] [cursor=pointer]:
+                    - /url: https://company.trivago.com/open-positions/?gh_src=21d449cf2
+                - listitem [ref=e3340]:
+                  - link "投資家向け広報" [ref=e3341] [cursor=pointer]:
+                    - /url: https://ir.trivago.com/
+                - listitem [ref=e3342]:
+                  - link "プレスセンター" [ref=e3343] [cursor=pointer]:
+                    - /url: https://company.trivago.com/press/
+            - generic [ref=e3344]:
+              - button "弊社の製品" [expanded]
+              - list [ref=e3345]:
+                - listitem [ref=e3346]:
+                  - link "◆無料トリバゴ モバイルアプリのご紹介" [ref=e3347] [cursor=pointer]:
+                    - /url: https://www.trivago.jp/ja/app
+                - listitem [ref=e3348]:
+                  - link "ホテル関係者用トリバゴ" [ref=e3349] [cursor=pointer]:
+                    - /url: https://studio.trivago.com/home
+        - generic [ref=e3351]:
+          - generic [ref=e3352]:
+            - button "規約とポリシー" [expanded]
+            - list [ref=e3353]:
+              - listitem [ref=e3354]:
+                - link "利用規約" [ref=e3355] [cursor=pointer]:
+                  - /url: https://www.trivago.jp/ja/st/ご利用規約
+              - listitem [ref=e3356]:
+                - link "会社概要" [ref=e3357] [cursor=pointer]:
+                  - /url: https://www.trivago.jp/ja/sl/法的事項
+              - listitem [ref=e3358]:
+                - link "プライバシーに関する通知" [ref=e3359] [cursor=pointer]:
+                  - /url: https://www.trivago.jp/ja/sp/プライバシーポリシー
+              - listitem [ref=e3360]:
+                - link "DSA 情報" [ref=e3361] [cursor=pointer]:
+                  - /url: https://company.trivago.com/dsa-information/
+              - listitem [ref=e3362]:
+                - button "Cookieの設定" [ref=e3363] [cursor=pointer]
+              - listitem [ref=e3364]:
+                - link "脆弱性開示プログラム" [ref=e3365] [cursor=pointer]:
+                  - /url: https://vdp.trivago.com
+          - generic [ref=e3366]:
+            - button "サポート" [expanded]
+            - list [ref=e3367]:
+              - listitem [ref=e3368]:
+                - link "ヘルプセンター" [ref=e3369] [cursor=pointer]:
+                  - /url: https://support.trivago.com/hc/ja
+              - listitem [ref=e3370]:
+                - link "トリバゴの詳細" [ref=e3371] [cursor=pointer]:
+                  - /url: https://support.trivago.com/hc/ja/sections/360000014707
+        - generic [ref=e3372]:
+          - generic [ref=e3373]:
+            - heading "ログインして会員限定特典を利用しましょう" [level=2] [ref=e3374]
+            - list [ref=e3375]:
+              - listitem [ref=e3376]:
+                - generic [ref=e3377]:
+                  - img
+                - generic [ref=e3378]: 体験をカスタマイズ
+              - listitem [ref=e3379]:
+                - generic [ref=e3380]:
+                  - img
+                - generic [ref=e3381]: ロイヤルティ料金プランと会員価格
+            - button "ログイン" [ref=e3382] [cursor=pointer]:
+              - generic [ref=e3383]: ログイン
+          - generic [ref=e3384]:
+            - paragraph [ref=e3385]:
+              - strong [ref=e3386]: trivago N.V.
+              - text: ", Kesselstraße 5 – 7, 40221 Düsseldorf, Germany"
+            - paragraph [ref=e3387]: Copyright 2026 trivago | All rights reserved.
+  - alert [ref=e1511]: OMO7 Yokohama by Hoshino Resorts | 横浜, 国内のホテルを検索 & お得に予約【トリバゴ】
+  - complementary

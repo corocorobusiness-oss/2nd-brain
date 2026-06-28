@@ -1,0 +1,1937 @@
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - banner [ref=e6]:
+        - link "trivago logo" [ref=e8] [cursor=pointer]:
+          - /url: /
+          - img "trivago logo" [ref=e9]
+        - navigation [ref=e21]:
+          - list [ref=e22]:
+            - listitem [ref=e23]:
+              - button "JA · ￥" [ref=e24] [cursor=pointer]:
+                - generic [ref=e25]:
+                  - img
+                - generic [ref=e26]: JA · ￥
+            - listitem [ref=e27]:
+              - button "ログイン" [ref=e29] [cursor=pointer]:
+                - generic [ref=e30]:
+                  - img
+                - generic [ref=e31]: ログイン
+            - listitem [ref=e32]:
+              - button "メニュー" [ref=e34] [cursor=pointer]:
+                - generic [ref=e35]:
+                  - img
+                - generic [ref=e36]: メニュー
+      - generic [ref=e39]:
+        - generic [ref=e44]:
+          - paragraph [ref=e45]: 会員になるとお得なホテルのプロモーションで時間とお金を節約できます。
+          - button "アカウントを作成" [ref=e46] [cursor=pointer]:
+            - generic [ref=e47]:
+              - img
+            - generic [ref=e48]: アカウントを作成
+        - button "閉じる" [ref=e49] [cursor=pointer]:
+          - generic [ref=e50]:
+            - img
+          - generic [ref=e51]: 閉じる
+      - generic [ref=e52]:
+        - generic [ref=e53]:
+          - generic [ref=e56]:
+            - heading "次回の宿泊を最大50%お得に予約" [level=1] [ref=e57]
+            - heading "100を超えるサイトのホテル料金をトリバゴが比較します" [level=2] [ref=e58]
+          - generic [ref=e63]:
+            - generic [ref=e64]:
+              - combobox [ref=e66]:
+                - button "スマート検索 消去" [ref=e1612] [cursor=pointer]:
+                  - generic [ref=e70]:
+                    - img
+                  - generic [ref=e71]:
+                    - generic [ref=e72]: スマート検索
+                    - searchbox "スマート検索" [ref=e1613]: OMO7横浜
+                  - button "消去" [ref=e1525]:
+                    - generic [ref=e1526]:
+                      - img
+              - group [ref=e119]:
+                - button "日付を選択" [ref=e120] [cursor=pointer]:
+                  - generic [ref=e121]:
+                    - generic [ref=e122]:
+                      - img
+                    - generic [ref=e123]:
+                      - generic [ref=e124]: チェックイン/アウト
+                      - generic [ref=e125]: 日付を選択
+              - button "滞在人数と部屋数 2 人、1 部屋" [ref=e128] [cursor=pointer]:
+                - generic [ref=e129]:
+                  - generic [ref=e130]:
+                    - img
+                  - generic [ref=e131]:
+                    - generic [ref=e132]: 滞在人数と部屋数
+                    - generic [ref=e133]: 2 人、1 部屋
+            - button "検索" [ref=e134] [cursor=pointer]:
+              - generic [ref=e135]:
+                - generic [ref=e1615]:
+                  - img
+                - generic [ref=e136]: 検索
+            - region [ref=e1616]:
+              - generic [ref=e1619]:
+                - generic [ref=e1620]:
+                  - button "次" [active] [ref=e1621] [cursor=pointer]:
+                    - generic [ref=e1622]:
+                      - img
+                  - generic [ref=e1623]:
+                    - generic [ref=e1624]:
+                      - heading "2026年06月" [level=3] [ref=e1625]
+                      - generic [ref=e1626]:
+                        - generic [ref=e1627]:
+                          - generic [ref=e1628]: 日
+                          - text: 日
+                        - generic [ref=e1629]:
+                          - generic [ref=e1630]: 月
+                          - text: 月
+                        - generic [ref=e1631]:
+                          - generic [ref=e1632]: 火
+                          - text: 火
+                        - generic [ref=e1633]:
+                          - generic [ref=e1634]: 水
+                          - text: 水
+                        - generic [ref=e1635]:
+                          - generic [ref=e1636]: 木
+                          - text: 木
+                        - generic [ref=e1637]:
+                          - generic [ref=e1638]: 金
+                          - text: 金
+                        - generic [ref=e1639]:
+                          - generic [ref=e1640]: 土
+                          - text: 土
+                      - generic [ref=e1641]:
+                        - button "月, 6月 1, 2026" [disabled] [ref=e1642]:
+                          - time [ref=e1643]: "1"
+                        - button "火, 6月 2, 2026" [disabled] [ref=e1644]:
+                          - time [ref=e1645]: "2"
+                        - button "水, 6月 3, 2026" [disabled] [ref=e1646]:
+                          - time [ref=e1647]: "3"
+                        - button "木, 6月 4, 2026" [disabled] [ref=e1648]:
+                          - time [ref=e1649]: "4"
+                        - button "金, 6月 5, 2026" [disabled] [ref=e1650]:
+                          - time [ref=e1651]: "5"
+                        - button "土, 6月 6, 2026" [disabled] [ref=e1652]:
+                          - time [ref=e1653]: "6"
+                        - button "日, 6月 7, 2026" [disabled] [ref=e1654]:
+                          - time [ref=e1655]: "7"
+                        - button "月, 6月 8, 2026" [disabled] [ref=e1656]:
+                          - time [ref=e1657]: "8"
+                        - button "火, 6月 9, 2026" [disabled] [ref=e1658]:
+                          - time [ref=e1659]: "9"
+                        - button "水, 6月 10, 2026" [disabled] [ref=e1660]:
+                          - time [ref=e1661]: "10"
+                        - button "木, 6月 11, 2026" [disabled] [ref=e1662]:
+                          - time [ref=e1663]: "11"
+                        - button "金, 6月 12, 2026" [disabled] [ref=e1664]:
+                          - time [ref=e1665]: "12"
+                        - button "土, 6月 13, 2026" [disabled] [ref=e1666]:
+                          - time [ref=e1667]: "13"
+                        - button "日, 6月 14, 2026" [disabled] [ref=e1668]:
+                          - time [ref=e1669]: "14"
+                        - button "月, 6月 15, 2026" [disabled] [ref=e1670]:
+                          - time [ref=e1671]: "15"
+                        - button "火, 6月 16, 2026" [disabled] [ref=e1672]:
+                          - time [ref=e1673]: "16"
+                        - button "水, 6月 17, 2026" [disabled] [ref=e1674]:
+                          - time [ref=e1675]: "17"
+                        - button "木, 6月 18, 2026" [disabled] [ref=e1676]:
+                          - time [ref=e1677]: "18"
+                        - button "金, 6月 19, 2026" [disabled] [ref=e1678]:
+                          - time [ref=e1679]: "19"
+                        - button "土, 6月 20, 2026" [disabled] [ref=e1680]:
+                          - time [ref=e1681]: "20"
+                        - button "日, 6月 21, 2026" [disabled] [ref=e1682]:
+                          - time [ref=e1683]: "21"
+                        - button "月, 6月 22, 2026" [disabled] [ref=e1684]:
+                          - time [ref=e1685]: "22"
+                        - button "火, 6月 23, 2026" [disabled] [ref=e1686]:
+                          - time [ref=e1687]: "23"
+                        - button "水, 6月 24, 2026" [disabled] [ref=e1688]:
+                          - time [ref=e1689]: "24"
+                        - button "木, 6月 25, 2026" [disabled] [ref=e1690]:
+                          - time [ref=e1691]: "25"
+                        - button "金, 6月 26, 2026" [disabled] [ref=e1692]:
+                          - time [ref=e1693]: "26"
+                        - button "土, 6月 27, 2026" [disabled] [ref=e1694]:
+                          - time [ref=e1695]: "27"
+                        - button "日, 6月 28, 2026" [ref=e1696] [cursor=pointer]:
+                          - time [ref=e1697]: "28"
+                        - button "月, 6月 29, 2026" [ref=e1698] [cursor=pointer]:
+                          - time [ref=e1699]: "29"
+                        - button "火, 6月 30, 2026" [ref=e1700] [cursor=pointer]:
+                          - time [ref=e1701]: "30"
+                    - generic [ref=e1702]:
+                      - heading "2026年07月" [level=3] [ref=e1703]
+                      - generic [ref=e1704]:
+                        - generic [ref=e1705]:
+                          - generic [ref=e1706]: 日
+                          - text: 日
+                        - generic [ref=e1707]:
+                          - generic [ref=e1708]: 月
+                          - text: 月
+                        - generic [ref=e1709]:
+                          - generic [ref=e1710]: 火
+                          - text: 火
+                        - generic [ref=e1711]:
+                          - generic [ref=e1712]: 水
+                          - text: 水
+                        - generic [ref=e1713]:
+                          - generic [ref=e1714]: 木
+                          - text: 木
+                        - generic [ref=e1715]:
+                          - generic [ref=e1716]: 金
+                          - text: 金
+                        - generic [ref=e1717]:
+                          - generic [ref=e1718]: 土
+                          - text: 土
+                      - generic [ref=e1719]:
+                        - button "水, 7月 1, 2026" [ref=e1720] [cursor=pointer]:
+                          - time [ref=e1721]: "1"
+                        - button "木, 7月 2, 2026" [ref=e1722] [cursor=pointer]:
+                          - time [ref=e1723]: "2"
+                        - button "金, 7月 3, 2026" [ref=e1724] [cursor=pointer]:
+                          - time [ref=e1725]: "3"
+                        - button "土, 7月 4, 2026" [ref=e1726] [cursor=pointer]:
+                          - time [ref=e1727]: "4"
+                        - button "日, 7月 5, 2026" [ref=e1728] [cursor=pointer]:
+                          - time [ref=e1729]: "5"
+                        - button "月, 7月 6, 2026" [ref=e1730] [cursor=pointer]:
+                          - time [ref=e1731]: "6"
+                        - button "火, 7月 7, 2026" [ref=e1732] [cursor=pointer]:
+                          - time [ref=e1733]: "7"
+                        - button "水, 7月 8, 2026" [ref=e1734] [cursor=pointer]:
+                          - time [ref=e1735]: "8"
+                        - button "木, 7月 9, 2026" [ref=e1736] [cursor=pointer]:
+                          - time [ref=e1737]: "9"
+                        - button "金, 7月 10, 2026" [ref=e1738] [cursor=pointer]:
+                          - time [ref=e1739]: "10"
+                        - button "土, 7月 11, 2026" [ref=e1740] [cursor=pointer]:
+                          - time [ref=e1741]: "11"
+                        - button "日, 7月 12, 2026" [ref=e1742] [cursor=pointer]:
+                          - time [ref=e1743]: "12"
+                        - button "月, 7月 13, 2026" [ref=e1744] [cursor=pointer]:
+                          - time [ref=e1745]: "13"
+                        - button "火, 7月 14, 2026" [ref=e1746] [cursor=pointer]:
+                          - time [ref=e1747]: "14"
+                        - button "水, 7月 15, 2026" [ref=e1748] [cursor=pointer]:
+                          - time [ref=e1749]: "15"
+                        - button "木, 7月 16, 2026" [ref=e1750] [cursor=pointer]:
+                          - time [ref=e1751]: "16"
+                        - button "金, 7月 17, 2026" [ref=e1752] [cursor=pointer]:
+                          - time [ref=e1753]: "17"
+                        - button "土, 7月 18, 2026" [ref=e1754] [cursor=pointer]:
+                          - time [ref=e1755]: "18"
+                        - button "日, 7月 19, 2026" [ref=e1756] [cursor=pointer]:
+                          - time [ref=e1757]: "19"
+                        - button "月, 7月 20, 2026" [ref=e1758] [cursor=pointer]:
+                          - time [ref=e1759]: "20"
+                        - button "火, 7月 21, 2026" [ref=e1760] [cursor=pointer]:
+                          - time [ref=e1761]: "21"
+                        - button "水, 7月 22, 2026" [ref=e1762] [cursor=pointer]:
+                          - time [ref=e1763]: "22"
+                        - button "木, 7月 23, 2026" [ref=e1764] [cursor=pointer]:
+                          - time [ref=e1765]: "23"
+                        - button "金, 7月 24, 2026" [ref=e1766] [cursor=pointer]:
+                          - time [ref=e1767]: "24"
+                        - button "土, 7月 25, 2026" [ref=e1768] [cursor=pointer]:
+                          - time [ref=e1769]: "25"
+                        - button "日, 7月 26, 2026" [ref=e1770] [cursor=pointer]:
+                          - time [ref=e1771]: "26"
+                        - button "月, 7月 27, 2026" [ref=e1772] [cursor=pointer]:
+                          - time [ref=e1773]: "27"
+                        - button "火, 7月 28, 2026" [ref=e1774] [cursor=pointer]:
+                          - time [ref=e1775]: "28"
+                        - button "水, 7月 29, 2026" [ref=e1776] [cursor=pointer]:
+                          - time [ref=e1777]: "29"
+                        - button "木, 7月 30, 2026" [ref=e1778] [cursor=pointer]:
+                          - time [ref=e1779]: "30"
+                        - button "金, 7月 31, 2026" [ref=e1780] [cursor=pointer]:
+                          - time [ref=e1781]: "31"
+                - list [ref=e1783]:
+                  - listitem [ref=e1784]:
+                    - checkbox "本日"
+                    - generic [ref=e1785] [cursor=pointer]:
+                      - generic [ref=e1786]:
+                        - img
+                      - text: 本日
+                  - listitem [ref=e1787]:
+                    - checkbox "明日"
+                    - generic [ref=e1788] [cursor=pointer]:
+                      - generic [ref=e1789]:
+                        - img
+                      - text: 明日
+                  - listitem [ref=e1790]:
+                    - checkbox "今週末"
+                    - generic [ref=e1791] [cursor=pointer]:
+                      - generic [ref=e1792]:
+                        - img
+                      - text: 今週末
+                  - listitem [ref=e1793]:
+                    - checkbox "来週末"
+                    - generic [ref=e1794] [cursor=pointer]:
+                      - generic [ref=e1795]:
+                        - img
+                      - text: 来週末
+        - generic [ref=e137]:
+          - heading "パートナー" [level=2] [ref=e138]
+          - list "パートナー" [ref=e140]:
+            - listitem [ref=e141]
+            - listitem [ref=e142]
+            - listitem [ref=e143]
+            - listitem [ref=e144]
+            - listitem [ref=e145]
+            - listitem [ref=e146]
+            - listitem [ref=e147]
+            - listitem [ref=e148]: その他100を超えるサイト
+        - generic [ref=e156]:
+          - heading "お得情報を見つける近道" [level=3] [ref=e158]
+          - generic [ref=e159]:
+            - img "Hotel" [ref=e160]
+            - generic [ref=e161]:
+              - generic [ref=e162]: ホテルのサイト
+              - generic [ref=e163]:
+                - strong [ref=e164]: ￥31,302
+                - generic [ref=e165]: 1泊あたり
+            - generic [ref=e166]:
+              - img "Hotelleap logo" [ref=e168]
+              - generic [ref=e169]:
+                - strong [ref=e170]: ￥34,064
+                - generic [ref=e171]: 1泊あたり
+            - generic [ref=e172]:
+              - img "エクスペディア" [ref=e174]
+              - generic [ref=e175]:
+                - strong [ref=e176]: ￥22,096
+                - generic [ref=e177]: 1泊あたり
+            - generic [ref=e178]:
+              - img "ホテルズドットコム" [ref=e180]
+              - generic [ref=e181]:
+                - strong [ref=e182]: ￥29,461
+                - generic [ref=e183]: 1泊あたり
+      - generic [ref=e188]:
+        - generic [ref=e189]:
+          - heading "旅館のお得情報" [level=1] [ref=e190]
+          - link "他の料金プランを見る" [ref=e192] [cursor=pointer]:
+            - /url: /ja/df
+            - button "他の料金プランを見る" [ref=e193]:
+              - text: 他の料金プランを見る
+              - generic [ref=e194]:
+                - img
+        - generic [ref=e195]:
+          - list [ref=e197]:
+            - listitem [ref=e198]:
+              - generic [ref=e200]:
+                - img "ほてる白河 湯の蔵 (日光, 国内)" [ref=e203] [cursor=pointer]
+                - generic [ref=e205]:
+                  - generic [ref=e206] [cursor=pointer]:
+                    - button "ほてる白河 湯の蔵" [ref=e208]:
+                      - generic "ほてる白河 湯の蔵" [ref=e209]
+                    - generic [ref=e210]:
+                      - button "日光, 国内" [ref=e211]:
+                        - generic "日光, 国内" [ref=e212]
+                      - button "8.2 満足 (718)" [ref=e213]:
+                        - generic [ref=e214]:
+                          - strong [ref=e215]: "8.2"
+                          - generic [ref=e216]:
+                            - strong [ref=e217]: 満足
+                            - generic [ref=e218]: (718)
+                  - generic [ref=e220] [cursor=pointer]:
+                    - button "他のサイトより23%お得" [ref=e223]:
+                      - generic [ref=e227]: 他のサイトより23%お得
+                    - button "JTB" [ref=e228]:
+                      - generic "JTB" [ref=e230]
+                    - generic [ref=e231]:
+                      - generic [ref=e233]: ￥32,400
+                      - paragraph [ref=e234]: 1泊あたり
+                    - generic [ref=e235]:
+                      - generic [ref=e238]: 10月23日 - 10月24日
+                      - button "表示" [ref=e240]:
+                        - generic [ref=e241]:
+                          - img
+            - listitem [ref=e242]:
+              - generic [ref=e244]:
+                - img "松乃湯 (松江, 国内)" [ref=e247] [cursor=pointer]
+                - generic [ref=e249]:
+                  - generic [ref=e250] [cursor=pointer]:
+                    - button "松乃湯" [ref=e252]:
+                      - generic "松乃湯" [ref=e253]
+                    - generic [ref=e254]:
+                      - button "松江, 国内" [ref=e255]:
+                        - generic "松江, 国内" [ref=e256]
+                      - button "8.2 満足 (1,272)" [ref=e257]:
+                        - generic [ref=e258]:
+                          - strong [ref=e259]: "8.2"
+                          - generic [ref=e260]:
+                            - strong [ref=e261]: 満足
+                            - generic [ref=e262]: (1,272)
+                  - generic [ref=e264] [cursor=pointer]:
+                    - button "他のサイトより￥3,800お得" [ref=e267]:
+                      - generic [ref=e271]: 他のサイトより￥3,800お得
+                    - button "日本旅行" [ref=e272]:
+                      - generic "日本旅行" [ref=e274]
+                    - generic [ref=e275]:
+                      - generic [ref=e277]: ￥22,600
+                      - paragraph [ref=e278]: 1泊あたり
+                    - generic [ref=e279]:
+                      - generic [ref=e282]: 8月5日 - 8月6日
+                      - button "表示" [ref=e284]:
+                        - generic [ref=e285]:
+                          - img
+            - listitem [ref=e286]:
+              - generic [ref=e288]:
+                - img "ホテル瑞鳳 (仙台, 国内)" [ref=e291] [cursor=pointer]
+                - generic [ref=e293]:
+                  - generic [ref=e294] [cursor=pointer]:
+                    - button "ホテル瑞鳳" [ref=e296]:
+                      - generic "ホテル瑞鳳" [ref=e297]
+                    - generic [ref=e298]:
+                      - button "仙台, 国内" [ref=e299]:
+                        - generic "仙台, 国内" [ref=e300]
+                      - button "8.4 満足 (3,218)" [ref=e301]:
+                        - generic [ref=e302]:
+                          - strong [ref=e303]: "8.4"
+                          - generic [ref=e304]:
+                            - strong [ref=e305]: 満足
+                            - generic [ref=e306]: (3,218)
+                  - generic [ref=e308] [cursor=pointer]:
+                    - button "￥3,841 値下がり" [ref=e311]:
+                      - generic [ref=e314]:
+                        - generic [ref=e315]:
+                          - img
+                        - generic [ref=e316]: ￥3,841 値下がり
+                    - button "JTB" [ref=e317]:
+                      - generic "JTB" [ref=e319]
+                    - generic [ref=e320]:
+                      - generic [ref=e322]: ￥31,400
+                      - paragraph [ref=e323]: 1泊あたり
+                    - generic [ref=e324]:
+                      - generic [ref=e326]:
+                        - generic [ref=e327]: 9月1日 - 9月2日
+                        - generic [ref=e329]: １泊2食 (朝夕) 付き
+                      - button "表示" [ref=e331]:
+                        - generic [ref=e332]:
+                          - img
+            - listitem [ref=e333]:
+              - generic [ref=e335]:
+                - img "松田屋ホテル (山口, 国内)" [ref=e338] [cursor=pointer]
+                - generic [ref=e340]:
+                  - generic [ref=e341] [cursor=pointer]:
+                    - button "松田屋ホテル" [ref=e343]:
+                      - generic "松田屋ホテル" [ref=e344]
+                    - generic [ref=e345]:
+                      - button "山口, 国内" [ref=e346]:
+                        - generic "山口, 国内" [ref=e347]
+                      - button "9.1 大満足 (817)" [ref=e348]:
+                        - generic [ref=e349]:
+                          - strong [ref=e350]: "9.1"
+                          - generic [ref=e351]:
+                            - strong [ref=e352]: 大満足
+                            - generic [ref=e353]: (817)
+                  - generic [ref=e355] [cursor=pointer]:
+                    - button "￥6,143 値下がり" [ref=e358]:
+                      - generic [ref=e361]:
+                        - generic [ref=e362]:
+                          - img
+                        - generic [ref=e363]: ￥6,143 値下がり
+                    - button "近畿日本ツーリスト" [ref=e364]:
+                      - generic "近畿日本ツーリスト" [ref=e366]
+                    - generic [ref=e367]:
+                      - generic [ref=e369]: ￥45,100
+                      - paragraph [ref=e370]: 1泊あたり
+                    - generic [ref=e371]:
+                      - generic [ref=e373]:
+                        - generic [ref=e374]: 8月14日 - 8月15日
+                        - generic [ref=e376]: 柔軟なキャンセルポリシー
+                      - button "表示" [ref=e378]:
+                        - generic [ref=e379]:
+                          - img
+            - listitem [ref=e380]:
+              - generic [ref=e382]:
+                - img "月本屋旅館 (豊岡, 国内)" [ref=e385] [cursor=pointer]
+                - generic [ref=e387]:
+                  - generic [ref=e388] [cursor=pointer]:
+                    - button "月本屋旅館" [ref=e390]:
+                      - generic "月本屋旅館" [ref=e391]
+                    - generic [ref=e392]:
+                      - button "豊岡, 国内" [ref=e393]:
+                        - generic "豊岡, 国内" [ref=e394]
+                      - button "8.7 大満足 (1,058)" [ref=e395]:
+                        - generic [ref=e396]:
+                          - strong [ref=e397]: "8.7"
+                          - generic [ref=e398]:
+                            - strong [ref=e399]: 大満足
+                            - generic [ref=e400]: (1,058)
+                  - generic [ref=e402] [cursor=pointer]:
+                    - button "類似の宿泊施設より12%お得" [ref=e405]:
+                      - generic [ref=e409]: 類似の宿泊施設より12%お得
+                    - button "Booking.com" [ref=e410]:
+                      - generic "Booking.com" [ref=e412]
+                    - generic [ref=e413]:
+                      - generic [ref=e415]: ￥31,260
+                      - paragraph [ref=e416]: 1泊あたり
+                    - generic [ref=e417]:
+                      - generic [ref=e419]:
+                        - generic [ref=e420]: 7月11日 - 7月12日
+                        - generic [ref=e422]: 柔軟なキャンセルポリシー
+                      - button "表示" [ref=e424]:
+                        - generic [ref=e425]:
+                          - img
+            - listitem [ref=e426]:
+              - generic [ref=e428]:
+                - img "Sakahijiri Hotel In Nikko (日光, 国内)" [ref=e431] [cursor=pointer]
+                - generic [ref=e433]:
+                  - generic [ref=e434] [cursor=pointer]:
+                    - button "Sakahijiri Hotel In Nikko" [ref=e436]:
+                      - generic "Sakahijiri Hotel In Nikko" [ref=e437]
+                    - generic [ref=e438]:
+                      - button "日光, 国内" [ref=e439]:
+                        - generic "日光, 国内" [ref=e440]
+                      - button "8.0 満足 (755)" [ref=e441]:
+                        - generic [ref=e442]:
+                          - strong [ref=e443]: "8.0"
+                          - generic [ref=e444]:
+                            - strong [ref=e445]: 満足
+                            - generic [ref=e446]: (755)
+                  - generic [ref=e448] [cursor=pointer]:
+                    - button "他の人気サイトより 11% お得" [ref=e451]:
+                      - generic [ref=e455]: 他の人気サイトより 11% お得
+                    - button "Booking.com" [ref=e456]:
+                      - generic "Booking.com" [ref=e458]
+                    - generic [ref=e459]:
+                      - generic [ref=e461]: ￥12,800
+                      - paragraph [ref=e462]: 1泊あたり
+                    - generic [ref=e463]:
+                      - generic [ref=e466]: 7月22日 - 7月23日
+                      - button "表示" [ref=e468]:
+                        - generic [ref=e469]:
+                          - img
+            - listitem [ref=e470]:
+              - button "お目当ての料金プランが見つかりませんでしたか?" [ref=e471] [cursor=pointer]:
+                - generic [ref=e472]:
+                  - generic [ref=e474]:
+                    - heading "お目当ての料金プランが見つかりませんでしたか?" [level=2] [ref=e475]
+                    - paragraph [ref=e476]: トリバゴなら次回のご宿泊が最大 50% OFF になります!
+                  - generic [ref=e478]: 料金プランをもっと見る
+          - button "次" [ref=e480] [cursor=pointer]:
+            - generic [ref=e481]: 次
+            - generic [ref=e482]:
+              - img
+      - complementary [ref=e484]:
+        - generic [ref=e485]:
+          - paragraph [ref=e489]:
+            - strong [ref=e490]: お得な料金プランをお探しですか?
+            - text: 次回の宿泊先をお得に予約できるようお手伝いいたします!
+          - button "お得な料金プランを検索" [ref=e492] [cursor=pointer]:
+            - generic [ref=e493]:
+              - img
+            - generic [ref=e494]: お得な料金プランを検索
+      - generic [ref=e498]:
+        - heading "宿泊施設の予約に最適な時期をチェック" [level=2] [ref=e499]
+        - generic [ref=e500]:
+          - generic [ref=e505]:
+            - tablist [ref=e507]:
+              - tab "東京" [selected] [ref=e509] [cursor=pointer]:
+                - generic [ref=e510]: 東京
+              - tab "札幌" [ref=e512] [cursor=pointer]:
+                - generic [ref=e513]: 札幌
+              - tab "福岡" [ref=e515] [cursor=pointer]:
+                - generic [ref=e516]: 福岡
+              - tab "大阪" [ref=e518] [cursor=pointer]:
+                - generic [ref=e519]: 大阪
+              - tab "名古屋" [ref=e521] [cursor=pointer]:
+                - generic [ref=e522]: 名古屋
+              - tab "仙台" [ref=e524] [cursor=pointer]:
+                - generic [ref=e525]: 仙台
+              - tab "横浜" [ref=e527] [cursor=pointer]:
+                - generic [ref=e528]: 横浜
+              - tab "広島" [ref=e530] [cursor=pointer]:
+                - generic [ref=e531]: 広島
+              - tab "京都" [ref=e533] [cursor=pointer]:
+                - generic [ref=e534]: 京都
+              - tab "函館" [ref=e536] [cursor=pointer]:
+                - generic [ref=e537]: 函館
+            - tabpanel "東京"
+          - generic [ref=e538]:
+            - generic [ref=e541]:
+              - button "6月 ￥9,100 - ￥31,440" [ref=e542] [cursor=pointer]:
+                - generic [ref=e543]: 6月
+                - generic [ref=e544]:
+                  - text: ￥9,100 - ￥31,440
+                  - generic [ref=e545]:
+                    - img
+              - button "7月 ￥11,290 - ￥34,825" [ref=e546] [cursor=pointer]:
+                - generic [ref=e547]: 7月
+                - generic [ref=e548]:
+                  - text: ￥11,290 - ￥34,825
+                  - generic [ref=e549]:
+                    - img
+              - button "8月 ￥11,180 - ￥33,810" [ref=e550] [cursor=pointer]:
+                - generic [ref=e551]: 8月
+                - generic [ref=e552]:
+                  - text: ￥11,180 - ￥33,810
+                  - generic [ref=e553]:
+                    - img
+              - button "9月 ￥13,315 - ￥39,855" [ref=e554] [cursor=pointer]:
+                - generic [ref=e555]: 9月
+                - generic [ref=e556]:
+                  - text: ￥13,315 - ￥39,855
+                  - generic [ref=e557]:
+                    - img
+              - button "10月 ￥16,935 - ￥51,125" [ref=e558] [cursor=pointer]:
+                - generic [ref=e559]: 10月
+                - generic [ref=e560]:
+                  - text: ￥16,935 - ￥51,125
+                  - generic [ref=e561]:
+                    - img
+              - button "11月 ￥16,860 - ￥51,650" [ref=e562] [cursor=pointer]:
+                - generic [ref=e563]: 11月
+                - generic [ref=e564]:
+                  - text: ￥16,860 - ￥51,650
+                  - generic [ref=e565]:
+                    - img
+              - button "12月 ￥15,965 - ￥51,630" [ref=e566] [cursor=pointer]:
+                - generic [ref=e567]: 12月
+                - generic [ref=e568]:
+                  - text: ￥15,965 - ￥51,630
+                  - generic [ref=e569]:
+                    - img
+              - button "1月 ￥13,400 - ￥45,350" [ref=e570] [cursor=pointer]:
+                - generic [ref=e571]: 1月
+                - generic [ref=e572]:
+                  - text: ￥13,400 - ￥45,350
+                  - generic [ref=e573]:
+                    - img
+              - button "2月 ￥14,780 - ￥48,265" [ref=e574] [cursor=pointer]:
+                - generic [ref=e575]: 2月
+                - generic [ref=e576]:
+                  - text: ￥14,780 - ￥48,265
+                  - generic [ref=e577]:
+                    - img
+              - button "3月 ￥17,310 - ￥55,135" [ref=e578] [cursor=pointer]:
+                - generic [ref=e579]: 3月
+                - generic [ref=e580]:
+                  - text: ￥17,310 - ￥55,135
+                  - generic [ref=e581]:
+                    - img
+              - button "4月 ￥18,620 - ￥59,770" [ref=e582] [cursor=pointer]:
+                - generic [ref=e583]: 4月
+                - generic [ref=e584]:
+                  - text: ￥18,620 - ￥59,770
+                  - generic [ref=e585]:
+                    - img
+              - button "5月 ￥16,455 - ￥56,010" [ref=e586] [cursor=pointer]:
+                - generic [ref=e587]: 5月
+                - generic [ref=e588]:
+                  - text: ￥16,455 - ￥56,010
+                  - generic [ref=e589]:
+                    - img
+            - paragraph [ref=e590]: 料金は1泊あたりで、3つ星ホテルの平均的な料金範囲が基準となっています。
+      - generic [ref=e591]:
+        - generic [ref=e594]:
+          - heading "人気の検索内容" [level=2] [ref=e595]
+          - tablist [ref=e597]:
+            - tab "都市" [selected] [ref=e599] [cursor=pointer]:
+              - generic [ref=e600]: 都市
+            - tab "目的地" [ref=e602] [cursor=pointer]:
+              - generic [ref=e603]: 目的地
+          - tabpanel "都市" [ref=e605]:
+            - generic [ref=e606]:
+              - list [ref=e607]:
+                - listitem [ref=e608]:
+                  - link "東京 5,783軒 ￥21,843 平均料金" [ref=e611] [cursor=pointer]:
+                    - /url: /ja/odr/%E8%BB%92-%E6%9D%B1%E4%BA%AC-%E5%9B%BD%E5%86%85?search=200-71462
+                    - generic [ref=e614]:
+                      - heading "東京" [level=3] [ref=e615]
+                      - paragraph [ref=e616]: 5,783軒
+                      - paragraph [ref=e617]: ￥21,843 平均料金
+                - listitem [ref=e618]:
+                  - link "札幌 830軒 ￥26,332 平均料金" [ref=e621] [cursor=pointer]:
+                    - /url: /ja/odr/%E8%BB%92-%E6%9C%AD%E5%B9%8C-%E5%9B%BD%E5%86%85?search=200-72178
+                    - generic [ref=e624]:
+                      - heading "札幌" [level=3] [ref=e625]
+                      - paragraph [ref=e626]: 830軒
+                      - paragraph [ref=e627]: ￥26,332 平均料金
+                - listitem [ref=e628]:
+                  - link "福岡 1,018軒 ￥22,504 平均料金" [ref=e631] [cursor=pointer]:
+                    - /url: /ja/odr/%E8%BB%92-%E7%A6%8F%E5%B2%A1-%E5%9B%BD%E5%86%85?search=200-70491
+                    - generic [ref=e634]:
+                      - heading "福岡" [level=3] [ref=e635]
+                      - paragraph [ref=e636]: 1,018軒
+                      - paragraph [ref=e637]: ￥22,504 平均料金
+                - listitem [ref=e638]:
+                  - link "大阪 4,189軒 ￥15,320 平均料金" [ref=e641] [cursor=pointer]:
+                    - /url: /ja/odr/%E8%BB%92-%E5%A4%A7%E9%98%AA-%E5%9B%BD%E5%86%85?search=200-71692
+                    - generic [ref=e644]:
+                      - heading "大阪" [level=3] [ref=e645]
+                      - paragraph [ref=e646]: 4,189軒
+                      - paragraph [ref=e647]: ￥15,320 平均料金
+                - listitem [ref=e648]:
+                  - link "名古屋 482軒 ￥15,611 平均料金" [ref=e651] [cursor=pointer]:
+                    - /url: /ja/odr/%E8%BB%92-%E5%90%8D%E5%8F%A4%E5%B1%8B-%E5%9B%BD%E5%86%85?search=200-69847
+                    - generic [ref=e654]:
+                      - heading "名古屋" [level=3] [ref=e655]
+                      - paragraph [ref=e656]: 482軒
+                      - paragraph [ref=e657]: ￥15,611 平均料金
+                - listitem [ref=e658]:
+                  - link "仙台 253軒 ￥17,778 平均料金" [ref=e661] [cursor=pointer]:
+                    - /url: /ja/odr/%E8%BB%92-%E4%BB%99%E5%8F%B0-%E5%9B%BD%E5%86%85?search=200-72325
+                    - generic [ref=e664]:
+                      - heading "仙台" [level=3] [ref=e665]
+                      - paragraph [ref=e666]: 253軒
+                      - paragraph [ref=e667]: ￥17,778 平均料金
+                - listitem [ref=e668]:
+                  - link "横浜 344軒 ￥19,820 平均料金" [ref=e671] [cursor=pointer]:
+                    - /url: /ja/odr/%E8%BB%92-%E6%A8%AA%E6%B5%9C-%E5%9B%BD%E5%86%85?search=200-71293
+                    - generic [ref=e674]:
+                      - heading "横浜" [level=3] [ref=e675]
+                      - paragraph [ref=e676]: 344軒
+                      - paragraph [ref=e677]: ￥19,820 平均料金
+              - button "次" [ref=e680] [cursor=pointer]:
+                - generic [ref=e681]: 次
+                - generic [ref=e682]:
+                  - img
+        - complementary [ref=e684]:
+          - generic [ref=e685]:
+            - paragraph [ref=e688]:
+              - strong [ref=e689]: ログインして会員価格や会員特典を利用しよう
+              - text: 会員として続行
+            - button "ログイン" [ref=e691] [cursor=pointer]:
+              - generic [ref=e692]:
+                - img
+              - generic [ref=e693]: ログイン
+        - generic [ref=e695]:
+          - generic [ref=e697]:
+            - heading "人気の検索内容" [level=2] [ref=e698]
+            - list "人気の検索内容" [ref=e702]:
+              - listitem [ref=e703]:
+                - link "東京のホテル" [ref=e704] [cursor=pointer]:
+                  - /url: /ja/odr/軒-東京-国内?search=200-71462
+              - listitem [ref=e705]:
+                - link "札幌のホテル" [ref=e706] [cursor=pointer]:
+                  - /url: /ja/odr/軒-札幌-国内?search=200-72178
+              - listitem [ref=e707]:
+                - link "福岡のホテル" [ref=e708] [cursor=pointer]:
+                  - /url: /ja/odr/軒-福岡-国内?search=200-70491
+              - listitem [ref=e709]:
+                - link "大阪のホテル" [ref=e710] [cursor=pointer]:
+                  - /url: /ja/odr/軒-大阪-国内?search=200-71692
+              - listitem [ref=e711]:
+                - link "名古屋のホテル" [ref=e712] [cursor=pointer]:
+                  - /url: /ja/odr/軒-名古屋-国内?search=200-69847
+              - listitem [ref=e713]:
+                - link "仙台のホテル" [ref=e714] [cursor=pointer]:
+                  - /url: /ja/odr/軒-仙台-国内?search=200-72325
+              - listitem [ref=e715]:
+                - link "横浜のホテル" [ref=e716] [cursor=pointer]:
+                  - /url: /ja/odr/軒-横浜-国内?search=200-71293
+              - listitem [ref=e717]:
+                - link "広島のホテル" [ref=e718] [cursor=pointer]:
+                  - /url: /ja/odr/軒-広島-国内?search=200-70295
+              - listitem [ref=e719]:
+                - link "京都のホテル" [ref=e720] [cursor=pointer]:
+                  - /url: /ja/odr/軒-京都-国内?search=200-71539
+              - listitem [ref=e721]:
+                - link "函館のホテル" [ref=e722] [cursor=pointer]:
+                  - /url: /ja/odr/軒-函館-国内?search=200-72073
+              - listitem [ref=e723]:
+                - link "神戸のホテル" [ref=e724] [cursor=pointer]:
+                  - /url: /ja/odr/軒-神戸-国内?search=200-71488
+              - listitem [ref=e725]:
+                - link "那覇のホテル" [ref=e726] [cursor=pointer]:
+                  - /url: /ja/odr/軒-那覇-国内?search=200-71821
+              - listitem [ref=e727]:
+                - link "ソウルのホテル" [ref=e728] [cursor=pointer]:
+                  - /url: /ja/odr/軒-ソウル-韓国?search=200-81393
+              - listitem [ref=e729]:
+                - link "熱海のホテル" [ref=e730] [cursor=pointer]:
+                  - /url: /ja/odr/軒-熱海-国内?search=200-70166
+              - listitem [ref=e731]:
+                - link "金沢市のホテル" [ref=e732] [cursor=pointer]:
+                  - /url: /ja/odr/軒-金沢市-国内?search=200-69971
+              - listitem [ref=e733]:
+                - link "浦安市のホテル" [ref=e734] [cursor=pointer]:
+                  - /url: /ja/odr/軒-浦安市-国内?search=200-71133
+              - listitem [ref=e735]:
+                - link "新潟市のホテル" [ref=e736] [cursor=pointer]:
+                  - /url: /ja/odr/軒-新潟市-国内?search=200-70144
+              - listitem [ref=e737]:
+                - link "熊本のホテル" [ref=e738] [cursor=pointer]:
+                  - /url: /ja/odr/軒-熊本-国内?search=200-70681
+              - listitem [ref=e739]:
+                - link "長崎のホテル" [ref=e740] [cursor=pointer]:
+                  - /url: /ja/odr/軒-長崎-国内?search=200-70807
+              - listitem [ref=e741]:
+                - link "別府のホテル" [ref=e742] [cursor=pointer]:
+                  - /url: /ja/odr/軒-別府-国内?search=200-70829
+              - listitem [ref=e743]:
+                - link "鹿児島のホテル" [ref=e744] [cursor=pointer]:
+                  - /url: /ja/odr/軒-鹿児島-国内?search=200-70593
+              - listitem [ref=e745]:
+                - link "宮崎のホテル" [ref=e746] [cursor=pointer]:
+                  - /url: /ja/odr/軒-宮崎-国内?search=200-70756
+              - listitem [ref=e747]:
+                - link "旭川のホテル" [ref=e748] [cursor=pointer]:
+                  - /url: /ja/odr/軒-旭川-国内?search=200-72045
+              - listitem [ref=e749]:
+                - link "高知のホテル" [ref=e750] [cursor=pointer]:
+                  - /url: /ja/odr/軒-高知-国内?search=200-70991
+              - listitem [ref=e751]:
+                - link "箱根のホテル" [ref=e752] [cursor=pointer]:
+                  - /url: /ja/odr/軒-箱根-国内?search=200-71269
+              - listitem [ref=e753]:
+                - link "岡山のホテル" [ref=e754] [cursor=pointer]:
+                  - /url: /ja/odr/軒-岡山-国内?search=200-70337
+              - listitem [ref=e755]:
+                - link "松山のホテル" [ref=e756] [cursor=pointer]:
+                  - /url: /ja/odr/軒-松山-国内?search=200-70924
+              - listitem [ref=e757]:
+                - link "松本のホテル" [ref=e758] [cursor=pointer]:
+                  - /url: /ja/odr/軒-松本-国内?search=200-70047
+              - listitem [ref=e759]:
+                - link "姫路のホテル" [ref=e760] [cursor=pointer]:
+                  - /url: /ja/odr/軒-姫路-国内?search=200-71475
+              - listitem [ref=e761]:
+                - link "帯広のホテル" [ref=e762] [cursor=pointer]:
+                  - /url: /ja/odr/軒-帯広-国内?search=200-72152
+              - listitem [ref=e763]:
+                - link "千葉のホテル" [ref=e764] [cursor=pointer]:
+                  - /url: /ja/odr/軒-千葉-国内?search=200-71065
+              - listitem [ref=e765]:
+                - link "大分のホテル" [ref=e766] [cursor=pointer]:
+                  - /url: /ja/odr/軒-大分-国内?search=200-70863
+              - listitem [ref=e767]:
+                - link "軽井沢のホテル" [ref=e768] [cursor=pointer]:
+                  - /url: /ja/odr/軒-軽井沢-国内?search=200-70035
+              - listitem [ref=e769]:
+                - link "高松のホテル" [ref=e770] [cursor=pointer]:
+                  - /url: /ja/odr/軒-高松-国内?search=200-70966
+              - listitem [ref=e771]:
+                - link "秋田のホテル" [ref=e772] [cursor=pointer]:
+                  - /url: /ja/odr/軒-秋田-国内?search=200-71844
+              - listitem [ref=e773]:
+                - link "盛岡のホテル" [ref=e774] [cursor=pointer]:
+                  - /url: /ja/odr/軒-盛岡-国内?search=200-72273
+              - listitem [ref=e775]:
+                - link "浜松のホテル" [ref=e776] [cursor=pointer]:
+                  - /url: /ja/odr/軒-浜松-国内?search=200-70174
+              - listitem [ref=e777]:
+                - link "宮古島のホテル" [ref=e778] [cursor=pointer]:
+                  - /url: /ja/odr/軒-宮古島-国内?search=200-387895
+              - listitem [ref=e779]:
+                - link "小樽のホテル" [ref=e780] [cursor=pointer]:
+                  - /url: /ja/odr/軒-小樽-国内?search=200-72163
+              - listitem [ref=e781]:
+                - link "青森のホテル" [ref=e782] [cursor=pointer]:
+                  - /url: /ja/odr/軒-青森-国内?search=200-71893
+              - listitem [ref=e783]:
+                - link "奈良のホテル" [ref=e784] [cursor=pointer]:
+                  - /url: /ja/odr/軒-奈良-国内?search=200-71644
+              - listitem [ref=e785]:
+                - link "長野のホテル" [ref=e786] [cursor=pointer]:
+                  - /url: /ja/odr/軒-長野-国内?search=200-70060
+              - listitem [ref=e787]:
+                - link "白浜のホテル" [ref=e788] [cursor=pointer]:
+                  - /url: /ja/odr/軒-白浜-国内?search=200-71783
+              - listitem [ref=e789]:
+                - link "静岡のホテル" [ref=e790] [cursor=pointer]:
+                  - /url: /ja/odr/軒-静岡-国内?search=200-70212
+              - listitem [ref=e791]:
+                - link "石垣のホテル" [ref=e792] [cursor=pointer]:
+                  - /url: /ja/odr/軒-石垣-国内?search=200-71806
+              - listitem [ref=e793]:
+                - link "釧路のホテル" [ref=e794] [cursor=pointer]:
+                  - /url: /ja/odr/軒-釧路-国内?search=200-72116
+              - listitem [ref=e795]:
+                - link "松江のホテル" [ref=e796] [cursor=pointer]:
+                  - /url: /ja/odr/軒-松江-国内?search=200-70380
+              - listitem [ref=e797]:
+                - link "伊勢のホテル" [ref=e798] [cursor=pointer]:
+                  - /url: /ja/odr/軒-伊勢-国内?search=200-71576
+              - listitem [ref=e799]:
+                - link "出雲のホテル" [ref=e800] [cursor=pointer]:
+                  - /url: /ja/odr/軒-出雲-国内?search=200-70370
+              - listitem [ref=e801]:
+                - link "鳥羽のホテル" [ref=e802] [cursor=pointer]:
+                  - /url: /ja/odr/軒-鳥羽-国内?search=200-71615
+              - listitem [ref=e803]:
+                - link "富山市のホテル" [ref=e804] [cursor=pointer]:
+                  - /url: /ja/odr/軒-富山市-国内?search=200-70241
+              - listitem [ref=e805]:
+                - link "千歳のホテル" [ref=e806] [cursor=pointer]:
+                  - /url: /ja/odr/軒-千歳-国内?search=200-72058
+              - listitem [ref=e807]:
+                - link "会津若松のホテル" [ref=e808] [cursor=pointer]:
+                  - /url: /ja/odr/軒-会津若松-国内?search=200-71957
+              - listitem [ref=e809]:
+                - link "山形のホテル" [ref=e810] [cursor=pointer]:
+                  - /url: /ja/odr/軒-山形-国内?search=200-72380
+              - listitem [ref=e811]:
+                - link "草津町のホテル" [ref=e812] [cursor=pointer]:
+                  - /url: /ja/odr/軒-草津町-国内?search=200-71164
+              - listitem [ref=e813]:
+                - link "北九州市のホテル" [ref=e814] [cursor=pointer]:
+                  - /url: /ja/odr/軒-北九州市-国内?search=200-70514
+              - listitem [ref=e815]:
+                - link "徳島のホテル" [ref=e816] [cursor=pointer]:
+                  - /url: /ja/odr/軒-徳島-国内?search=200-71058
+              - listitem [ref=e817]:
+                - link "倉敷のホテル" [ref=e818] [cursor=pointer]:
+                  - /url: /ja/odr/軒-倉敷-国内?search=200-70329
+              - listitem [ref=e819]:
+                - link "米子市のホテル" [ref=e820] [cursor=pointer]:
+                  - /url: /ja/odr/軒-米子市-国内?search=200-70436
+              - listitem [ref=e821]:
+                - link "和歌山のホテル" [ref=e822] [cursor=pointer]:
+                  - /url: /ja/odr/軒-和歌山-国内?search=200-71788
+              - listitem [ref=e823]:
+                - link "八戸のホテル" [ref=e824] [cursor=pointer]:
+                  - /url: /ja/odr/軒-八戸-国内?search=200-71899
+              - listitem [ref=e825]:
+                - link "台北のホテル" [ref=e826] [cursor=pointer]:
+                  - /url: /ja/odr/軒-台北-台湾?search=200-72526
+              - listitem [ref=e827]:
+                - link "恩納のホテル" [ref=e828] [cursor=pointer]:
+                  - /url: /ja/odr/軒-恩納-国内?search=200-71826
+              - listitem [ref=e829]:
+                - link "日光のホテル" [ref=e830] [cursor=pointer]:
+                  - /url: /ja/odr/軒-日光-国内?search=200-71407
+              - listitem [ref=e831]:
+                - link "弘前のホテル" [ref=e832] [cursor=pointer]:
+                  - /url: /ja/odr/軒-弘前-国内?search=200-71904
+              - listitem [ref=e833]:
+                - link "登別のホテル" [ref=e834] [cursor=pointer]:
+                  - /url: /ja/odr/軒-登別-国内?search=200-72150
+              - listitem [ref=e835]:
+                - link "岐阜のホテル" [ref=e836] [cursor=pointer]:
+                  - /url: /ja/odr/軒-岐阜-国内?search=200-69922
+              - listitem [ref=e837]:
+                - link "沼津のホテル" [ref=e838] [cursor=pointer]:
+                  - /url: /ja/odr/軒-沼津-国内?search=200-70201
+              - listitem [ref=e839]:
+                - link "阿蘇のホテル" [ref=e840] [cursor=pointer]:
+                  - /url: /ja/odr/軒-阿蘇-国内?search=200-70653
+              - listitem [ref=e841]:
+                - link "佐世保のホテル" [ref=e842] [cursor=pointer]:
+                  - /url: /ja/odr/軒-佐世保-国内?search=200-70815
+              - listitem [ref=e843]:
+                - link "郡山のホテル" [ref=e844] [cursor=pointer]:
+                  - /url: /ja/odr/軒-郡山-国内?search=200-71991
+              - listitem [ref=e845]:
+                - link "伊豆市のホテル" [ref=e846] [cursor=pointer]:
+                  - /url: /ja/odr/軒-伊豆市-国内?search=200-70182
+              - listitem [ref=e847]:
+                - link "長岡のホテル" [ref=e848] [cursor=pointer]:
+                  - /url: /ja/odr/軒-長岡-国内?search=200-70142
+              - listitem [ref=e849]:
+                - link "高山のホテル" [ref=e850] [cursor=pointer]:
+                  - /url: /ja/odr/軒-高山-国内?search=200-69958
+              - listitem [ref=e851]:
+                - link "福島のホテル" [ref=e852] [cursor=pointer]:
+                  - /url: /ja/odr/軒-福島-国内?search=200-71962
+              - listitem [ref=e853]:
+                - link "富良野のホテル" [ref=e854] [cursor=pointer]:
+                  - /url: /ja/odr/軒-富良野-国内?search=200-72069
+              - listitem [ref=e855]:
+                - link "大津のホテル" [ref=e856] [cursor=pointer]:
+                  - /url: /ja/odr/軒-大津-国内?search=200-71731
+              - listitem [ref=e857]:
+                - link "宇都宮のホテル" [ref=e858] [cursor=pointer]:
+                  - /url: /ja/odr/軒-宇都宮-国内?search=200-71421
+              - listitem [ref=e859]:
+                - link "霧島のホテル" [ref=e860] [cursor=pointer]:
+                  - /url: /ja/odr/軒-霧島-国内?search=200-70607
+              - listitem [ref=e861]:
+                - link "佐渡のホテル" [ref=e862] [cursor=pointer]:
+                  - /url: /ja/odr/軒-佐渡-国内?search=200-70146
+              - listitem [ref=e863]:
+                - link "彦根のホテル" [ref=e864] [cursor=pointer]:
+                  - /url: /ja/odr/軒-彦根-国内?search=200-71716
+              - listitem [ref=e865]:
+                - link "川崎市のホテル" [ref=e866] [cursor=pointer]:
+                  - /url: /ja/odr/軒-川崎市-国内?search=200-71275
+              - listitem [ref=e867]:
+                - link "いわきのホテル" [ref=e868] [cursor=pointer]:
+                  - /url: /ja/odr/軒-いわき-国内?search=200-71977
+              - listitem [ref=e869]:
+                - link "松島のホテル" [ref=e870] [cursor=pointer]:
+                  - /url: /ja/odr/軒-松島-国内?search=200-72312
+              - listitem [ref=e871]:
+                - link "伊東のホテル" [ref=e872] [cursor=pointer]:
+                  - /url: /ja/odr/軒-伊東-国内?search=200-70180
+              - listitem [ref=e873]:
+                - link "下関のホテル" [ref=e874] [cursor=pointer]:
+                  - /url: /ja/odr/軒-下関-国内?search=200-70466
+              - listitem [ref=e875]:
+                - link "那須町のホテル" [ref=e876] [cursor=pointer]:
+                  - /url: /ja/odr/軒-那須町-国内?search=200-424536
+              - listitem [ref=e877]:
+                - link "佐賀のホテル" [ref=e878] [cursor=pointer]:
+                  - /url: /ja/odr/軒-佐賀-国内?search=200-70904
+              - listitem [ref=e879]:
+                - link "富士河口湖のホテル" [ref=e880] [cursor=pointer]:
+                  - /url: /ja/odr/軒-富士河口湖-国内?search=200-70251
+              - listitem [ref=e881]:
+                - link "福山のホテル" [ref=e882] [cursor=pointer]:
+                  - /url: /ja/odr/軒-福山-国内?search=200-70292
+              - listitem [ref=e883]:
+                - link "稚内のホテル" [ref=e884] [cursor=pointer]:
+                  - /url: /ja/odr/軒-稚内-国内?search=200-72234
+              - listitem [ref=e885]:
+                - link "福井のホテル" [ref=e886] [cursor=pointer]:
+                  - /url: /ja/odr/軒-福井-国内?search=200-69893
+              - listitem [ref=e887]:
+                - link "御殿場のホテル" [ref=e888] [cursor=pointer]:
+                  - /url: /ja/odr/軒-御殿場-国内?search=200-70172
+              - listitem [ref=e889]:
+                - link "苫小牧のホテル" [ref=e890] [cursor=pointer]:
+                  - /url: /ja/odr/軒-苫小牧-国内?search=200-72218
+              - listitem [ref=e891]:
+                - link "甲府のホテル" [ref=e892] [cursor=pointer]:
+                  - /url: /ja/odr/軒-甲府-国内?search=200-70261
+              - listitem [ref=e893]:
+                - link "鎌倉のホテル" [ref=e894] [cursor=pointer]:
+                  - /url: /ja/odr/軒-鎌倉-国内?search=200-71274
+              - listitem [ref=e895]:
+                - link "北見のホテル" [ref=e896] [cursor=pointer]:
+                  - /url: /ja/odr/軒-北見-国内?search=200-72109
+              - listitem [ref=e897]:
+                - link "バンコクのホテル" [ref=e898] [cursor=pointer]:
+                  - /url: /ja/odr/軒-バンコク-タイ?search=200-15893
+              - listitem [ref=e899]:
+                - link "成田市のホテル" [ref=e900] [cursor=pointer]:
+                  - /url: /ja/odr/軒-成田市-国内?search=200-71103
+              - listitem [ref=e901]:
+                - link "那須塩原市のホテル" [ref=e902] [cursor=pointer]:
+                  - /url: /ja/odr/軒-那須塩原市-国内?search=200-71406
+              - listitem [ref=e903]:
+                - link "シンガポールのホテル" [ref=e904] [cursor=pointer]:
+                  - /url: /ja/odr/軒-シンガポール?search=200-25025
+              - listitem [ref=e905]:
+                - link "釜山のホテル" [ref=e906] [cursor=pointer]:
+                  - /url: /ja/odr/軒-釜山-韓国?search=200-81491
+              - listitem [ref=e907]:
+                - link "水戸のホテル" [ref=e908] [cursor=pointer]:
+                  - /url: /ja/odr/軒-水戸-国内?search=200-71233
+              - listitem [ref=e909]:
+                - link "尾道市のホテル" [ref=e910] [cursor=pointer]:
+                  - /url: /ja/odr/軒-尾道市-国内?search=200-424602
+              - listitem [ref=e911]:
+                - link "あわらのホテル" [ref=e912] [cursor=pointer]:
+                  - /url: /ja/odr/軒-あわら-国内?search=200-69890
+              - listitem [ref=e913]:
+                - link "鶴岡のホテル" [ref=e914] [cursor=pointer]:
+                  - /url: /ja/odr/軒-鶴岡-国内?search=200-72379
+              - listitem [ref=e915]:
+                - link "洞爺湖町のホテル" [ref=e916] [cursor=pointer]:
+                  - /url: /ja/odr/軒-洞爺湖町-国内?search=200-394415
+              - listitem [ref=e917]:
+                - link "船橋のホテル" [ref=e918] [cursor=pointer]:
+                  - /url: /ja/odr/軒-船橋-国内?search=200-71070
+              - listitem [ref=e919]:
+                - link "下呂市のホテル" [ref=e920] [cursor=pointer]:
+                  - /url: /ja/odr/軒-下呂市-国内?search=200-69921
+              - listitem [ref=e921]:
+                - link "網走のホテル" [ref=e922] [cursor=pointer]:
+                  - /url: /ja/odr/軒-網走-国内?search=200-72038
+              - listitem [ref=e923]:
+                - link "高崎市のホテル" [ref=e924] [cursor=pointer]:
+                  - /url: /ja/odr/軒-高崎市-国内?search=200-71190
+              - listitem [ref=e925]:
+                - link "大洗のホテル" [ref=e926] [cursor=pointer]:
+                  - /url: /ja/odr/軒-大洗-国内?search=200-71237
+              - listitem [ref=e927]:
+                - link "四日市のホテル" [ref=e928] [cursor=pointer]:
+                  - /url: /ja/odr/軒-四日市-国内?search=200-71621
+              - listitem [ref=e929]:
+                - link "今治のホテル" [ref=e930] [cursor=pointer]:
+                  - /url: /ja/odr/軒-今治-国内?search=200-70917
+              - listitem [ref=e931]:
+                - link "花巻市のホテル" [ref=e932] [cursor=pointer]:
+                  - /url: /ja/odr/軒-花巻市-国内?search=200-72247
+              - listitem [ref=e933]:
+                - link "指宿のホテル" [ref=e934] [cursor=pointer]:
+                  - /url: /ja/odr/軒-指宿-国内?search=200-70588
+              - listitem [ref=e935]:
+                - link "小豆島のホテル" [ref=e936] [cursor=pointer]:
+                  - /url: /ja/odr/軒-小豆島-国内?search=200-394605
+              - listitem [ref=e937]:
+                - link "諏訪市のホテル" [ref=e938] [cursor=pointer]:
+                  - /url: /ja/odr/軒-諏訪市-国内?search=200-70095
+              - listitem [ref=e939]:
+                - link "掛川市のホテル" [ref=e940] [cursor=pointer]:
+                  - /url: /ja/odr/軒-掛川市-国内?search=200-70184
+              - listitem [ref=e941]:
+                - link "ダナン市のホテル" [ref=e942] [cursor=pointer]:
+                  - /url: /ja/odr/軒-ダナン市-ベトナム?search=200-68104
+              - listitem [ref=e943]:
+                - link "鳥取のホテル" [ref=e944] [cursor=pointer]:
+                  - /url: /ja/odr/軒-鳥取-国内?search=200-70433
+              - listitem [ref=e945]:
+                - link "立川のホテル" [ref=e946] [cursor=pointer]:
+                  - /url: /ja/odr/軒-立川-国内?search=200-71460
+              - listitem [ref=e947]:
+                - link "尼崎のホテル" [ref=e948] [cursor=pointer]:
+                  - /url: /ja/odr/軒-尼崎-国内?search=200-71467
+              - listitem [ref=e949]:
+                - link "北谷のホテル" [ref=e950] [cursor=pointer]:
+                  - /url: /ja/odr/軒-北谷-国内?search=200-71792
+              - listitem [ref=e951]:
+                - link "北上市のホテル" [ref=e952] [cursor=pointer]:
+                  - /url: /ja/odr/軒-北上市-国内?search=200-72263
+              - listitem [ref=e953]:
+                - link "つくばのホテル" [ref=e954] [cursor=pointer]:
+                  - /url: /ja/odr/軒-つくば-国内?search=200-71254
+              - listitem [ref=e955]:
+                - link "豊岡のホテル" [ref=e956] [cursor=pointer]:
+                  - /url: /ja/odr/軒-豊岡-国内?search=200-71516
+              - listitem [ref=e957]:
+                - link "丸亀のホテル" [ref=e958] [cursor=pointer]:
+                  - /url: /ja/odr/軒-丸亀-国内?search=200-70953
+              - listitem [ref=e959]:
+                - link "名護のホテル" [ref=e960] [cursor=pointer]:
+                  - /url: /ja/odr/軒-名護-国内?search=200-71820
+              - listitem [ref=e961]:
+                - link "下田のホテル" [ref=e962] [cursor=pointer]:
+                  - /url: /ja/odr/軒-下田-国内?search=200-70211
+              - listitem [ref=e963]:
+                - link "都城のホテル" [ref=e964] [cursor=pointer]:
+                  - /url: /ja/odr/軒-都城-国内?search=200-70755
+              - listitem [ref=e965]:
+                - link "久留米のホテル" [ref=e966] [cursor=pointer]:
+                  - /url: /ja/odr/軒-久留米-国内?search=200-70520
+              - listitem [ref=e967]:
+                - link "パリのホテル" [ref=e968] [cursor=pointer]:
+                  - /url: /ja/odr/軒-パリ-フランス?search=200-22235
+              - listitem [ref=e969]:
+                - link "志摩市のホテル" [ref=e970] [cursor=pointer]:
+                  - /url: /ja/odr/軒-志摩市-国内?search=200-71610
+              - listitem [ref=e971]:
+                - link "鴨川のホテル" [ref=e972] [cursor=pointer]:
+                  - /url: /ja/odr/軒-鴨川-国内?search=200-71083
+              - listitem [ref=e973]:
+                - link "香港のホテル" [ref=e974] [cursor=pointer]:
+                  - /url: /ja/odr/軒-香港?search=200-31497
+              - listitem [ref=e975]:
+                - link "敦賀のホテル" [ref=e976] [cursor=pointer]:
+                  - /url: /ja/odr/軒-敦賀-国内?search=200-69918
+              - listitem [ref=e977]:
+                - link "津のホテル" [ref=e978] [cursor=pointer]:
+                  - /url: /ja/odr/軒-津-国内?search=200-71617
+              - listitem [ref=e979]:
+                - link "八王子のホテル" [ref=e980] [cursor=pointer]:
+                  - /url: /ja/odr/軒-八王子-国内?search=200-71431
+              - listitem [ref=e981]:
+                - link "上越のホテル" [ref=e982] [cursor=pointer]:
+                  - /url: /ja/odr/軒-上越-国内?search=200-70129
+              - listitem [ref=e983]:
+                - link "三島のホテル" [ref=e984] [cursor=pointer]:
+                  - /url: /ja/odr/軒-三島-国内?search=200-70196
+              - listitem [ref=e985]:
+                - link "米沢のホテル" [ref=e986] [cursor=pointer]:
+                  - /url: /ja/odr/軒-米沢-国内?search=200-72383
+              - listitem [ref=e987]:
+                - link "天草のホテル" [ref=e988] [cursor=pointer]:
+                  - /url: /ja/odr/軒-天草-国内?search=200-70648
+              - listitem [ref=e989]:
+                - link "淡路市のホテル" [ref=e990] [cursor=pointer]:
+                  - /url: /ja/odr/軒-淡路市-国内?search=200-71470
+              - listitem [ref=e991]:
+                - link "本部のホテル" [ref=e992] [cursor=pointer]:
+                  - /url: /ja/odr/軒-本部-国内?search=200-71819
+              - listitem [ref=e993]:
+                - link "山口のホテル" [ref=e994] [cursor=pointer]:
+                  - /url: /ja/odr/軒-山口-国内?search=200-70477
+              - listitem [ref=e995]:
+                - link "石巻のホテル" [ref=e996] [cursor=pointer]:
+                  - /url: /ja/odr/軒-石巻-国内?search=200-72300
+              - listitem [ref=e997]:
+                - link "豊橋のホテル" [ref=e998] [cursor=pointer]:
+                  - /url: /ja/odr/軒-豊橋-国内?search=200-69881
+              - listitem [ref=e999]:
+                - link "さいたまのホテル" [ref=e1000] [cursor=pointer]:
+                  - /url: /ja/odr/軒-さいたま-国内?search=200-71359
+              - listitem [ref=e1001]:
+                - link "秩父のホテル" [ref=e1002] [cursor=pointer]:
+                  - /url: /ja/odr/軒-秩父-国内?search=200-71300
+              - listitem [ref=e1003]:
+                - link "沖縄のホテル" [ref=e1004] [cursor=pointer]:
+                  - /url: /ja/odr/軒-沖縄-国内?search=200-69796
+              - listitem [ref=e1005]:
+                - link "国内のホテル" [ref=e1006] [cursor=pointer]:
+                  - /url: /ja/odr/軒-国内?search=200-85
+              - listitem [ref=e1007]:
+                - link "北海道のホテル" [ref=e1008] [cursor=pointer]:
+                  - /url: /ja/odr/軒-北海道-国内?search=200-69800
+              - listitem [ref=e1009]:
+                - link "東京都のホテル" [ref=e1010] [cursor=pointer]:
+                  - /url: /ja/odr/軒-東京都-国内?search=200-69788
+              - listitem [ref=e1011]:
+                - link "三重県のホテル" [ref=e1012] [cursor=pointer]:
+                  - /url: /ja/odr/軒-三重県-国内?search=200-69791
+              - listitem [ref=e1013]:
+                - link "福井のホテル" [ref=e1014] [cursor=pointer]:
+                  - /url: /ja/odr/軒-福井-国内?search=200-69758
+              - listitem [ref=e1015]:
+                - link "滋賀県のホテル" [ref=e1016] [cursor=pointer]:
+                  - /url: /ja/odr/軒-滋賀県-国内?search=200-69794
+              - listitem [ref=e1017]:
+                - link "香川県のホテル" [ref=e1018] [cursor=pointer]:
+                  - /url: /ja/odr/軒-香川県-国内?search=200-69779
+              - listitem [ref=e1019]:
+                - link "大阪府のホテル" [ref=e1020] [cursor=pointer]:
+                  - /url: /ja/odr/軒-大阪府-国内?search=200-69793
+              - listitem [ref=e1021]:
+                - link "宮城県のホテル" [ref=e1022] [cursor=pointer]:
+                  - /url: /ja/odr/軒-宮城県-国内?search=200-69802
+              - listitem [ref=e1023]:
+                - link "新潟県のホテル" [ref=e1024] [cursor=pointer]:
+                  - /url: /ja/odr/軒-新潟県-国内?search=200-69762
+              - listitem [ref=e1025]:
+                - link "鳥取県のホテル" [ref=e1026] [cursor=pointer]:
+                  - /url: /ja/odr/軒-鳥取県-国内?search=200-69769
+              - listitem [ref=e1027]:
+                - link "関東地方のホテル" [ref=e1028] [cursor=pointer]:
+                  - /url: /ja/odr/軒-関東地方-国内?search=200-69753
+              - listitem [ref=e1029]:
+                - link "兵庫県のホテル" [ref=e1030] [cursor=pointer]:
+                  - /url: /ja/odr/軒-兵庫県-国内?search=200-69789
+              - listitem [ref=e1031]:
+                - link "愛知県のホテル" [ref=e1032] [cursor=pointer]:
+                  - /url: /ja/odr/軒-愛知県-国内?search=200-69757
+              - listitem [ref=e1033]:
+                - link "山梨県のホテル" [ref=e1034] [cursor=pointer]:
+                  - /url: /ja/odr/軒-山梨県-国内?search=200-69765
+              - listitem [ref=e1035]:
+                - link "神奈川県のホテル" [ref=e1036] [cursor=pointer]:
+                  - /url: /ja/odr/軒-神奈川県-国内?search=200-69785
+              - listitem [ref=e1037]:
+                - link "石川県のホテル" [ref=e1038] [cursor=pointer]:
+                  - /url: /ja/odr/軒-石川県-国内?search=200-69760
+              - listitem [ref=e1039]:
+                - link "九州地方のホテル" [ref=e1040] [cursor=pointer]:
+                  - /url: /ja/odr/軒-九州地方-国内?search=200-69751
+              - listitem [ref=e1041]:
+                - link "島根県のホテル" [ref=e1042] [cursor=pointer]:
+                  - /url: /ja/odr/軒-島根県-国内?search=200-69768
+              - listitem [ref=e1043]:
+                - link "近畿地方のホテル" [ref=e1044] [cursor=pointer]:
+                  - /url: /ja/odr/軒-近畿地方-国内?search=200-69754
+              - listitem [ref=e1045]:
+                - link "岩手県のホテル" [ref=e1046] [cursor=pointer]:
+                  - /url: /ja/odr/軒-岩手県-国内?search=200-69801
+              - listitem [ref=e1047]:
+                - link "群馬県のホテル" [ref=e1048] [cursor=pointer]:
+                  - /url: /ja/odr/軒-群馬県-国内?search=200-69783
+              - listitem [ref=e1049]:
+                - link "栃木のホテル" [ref=e1050] [cursor=pointer]:
+                  - /url: /ja/odr/軒-栃木-国内?search=200-69787
+              - listitem [ref=e1051]:
+                - link "京都府のホテル" [ref=e1052] [cursor=pointer]:
+                  - /url: /ja/odr/軒-京都府-国内?search=200-69790
+              - listitem [ref=e1053]:
+                - link "茨城県のホテル" [ref=e1054] [cursor=pointer]:
+                  - /url: /ja/odr/軒-茨城県-国内?search=200-69784
+              - listitem [ref=e1055]:
+                - link "山口のホテル" [ref=e1056] [cursor=pointer]:
+                  - /url: /ja/odr/軒-山口-国内?search=200-69770
+              - listitem [ref=e1057]:
+                - link "愛媛県のホテル" [ref=e1058] [cursor=pointer]:
+                  - /url: /ja/odr/軒-愛媛県-国内?search=200-69778
+              - listitem [ref=e1059]:
+                - link "グアムのホテル" [ref=e1060] [cursor=pointer]:
+                  - /url: /ja/odr/軒-グアム?search=200-69
+              - listitem [ref=e1061]:
+                - link "長野のホテル" [ref=e1062] [cursor=pointer]:
+                  - /url: /ja/odr/軒-長野-国内?search=200-69761
+              - listitem [ref=e1063]:
+                - link "埼玉県のホテル" [ref=e1064] [cursor=pointer]:
+                  - /url: /ja/odr/軒-埼玉県-国内?search=200-69786
+              - listitem [ref=e1065]:
+                - link "千葉のホテル" [ref=e1066] [cursor=pointer]:
+                  - /url: /ja/odr/軒-千葉-国内?search=200-69782
+              - listitem [ref=e1067]:
+                - link "韓国のホテル" [ref=e1068] [cursor=pointer]:
+                  - /url: /ja/odr/軒-韓国?search=200-188
+              - listitem [ref=e1069]:
+                - link "四国地方のホテル" [ref=e1070] [cursor=pointer]:
+                  - /url: /ja/odr/軒-四国地方-国内?search=200-69752
+              - listitem [ref=e1071]:
+                - link "静岡のホテル" [ref=e1072] [cursor=pointer]:
+                  - /url: /ja/odr/軒-静岡-国内?search=200-69763
+              - listitem [ref=e1073]:
+                - link "東北地方のホテル" [ref=e1074] [cursor=pointer]:
+                  - /url: /ja/odr/軒-東北地方-国内?search=200-69756
+              - listitem [ref=e1075]:
+                - link "熊本のホテル" [ref=e1076] [cursor=pointer]:
+                  - /url: /ja/odr/軒-熊本-国内?search=200-69773
+              - listitem [ref=e1077]:
+                - link "福岡のホテル" [ref=e1078] [cursor=pointer]:
+                  - /url: /ja/odr/軒-福岡-国内?search=200-69771
+              - listitem [ref=e1079]:
+                - link "高知のホテル" [ref=e1080] [cursor=pointer]:
+                  - /url: /ja/odr/軒-高知-国内?search=200-69780
+              - listitem [ref=e1081]:
+                - link "中部/北陸地方のホテル" [ref=e1082] [cursor=pointer]:
+                  - /url: /ja/odr/軒-中部-北陸地方-国内?search=200-69749
+              - listitem [ref=e1083]:
+                - link "富山のホテル" [ref=e1084] [cursor=pointer]:
+                  - /url: /ja/odr/軒-富山-国内?search=200-69764
+              - listitem [ref=e1085]:
+                - link "台北県のホテル" [ref=e1086] [cursor=pointer]:
+                  - /url: /ja/odr/軒-台北県-台湾?search=200-72525
+              - listitem [ref=e1087]:
+                - link "山形のホテル" [ref=e1088] [cursor=pointer]:
+                  - /url: /ja/odr/軒-山形-国内?search=200-69803
+              - listitem [ref=e1089]:
+                - link "広島のホテル" [ref=e1090] [cursor=pointer]:
+                  - /url: /ja/odr/軒-広島-国内?search=200-69766
+              - listitem [ref=e1091]:
+                - link "バリ島のホテル" [ref=e1092] [cursor=pointer]:
+                  - /url: /ja/odr/軒-バリ島-インドネシア?search=200-72435
+              - listitem [ref=e1093]:
+                - link "ソウルのホテル" [ref=e1094] [cursor=pointer]:
+                  - /url: /ja/odr/軒-ソウル-韓国?search=200-81322
+              - listitem [ref=e1095]:
+                - link "和歌山のホテル" [ref=e1096] [cursor=pointer]:
+                  - /url: /ja/odr/軒-和歌山-国内?search=200-69795
+              - listitem [ref=e1097]:
+                - link "長崎のホテル" [ref=e1098] [cursor=pointer]:
+                  - /url: /ja/odr/軒-長崎-国内?search=200-69775
+              - listitem [ref=e1099]:
+                - link "大分のホテル" [ref=e1100] [cursor=pointer]:
+                  - /url: /ja/odr/軒-大分-国内?search=200-69776
+              - listitem [ref=e1101]:
+                - link "青森のホテル" [ref=e1102] [cursor=pointer]:
+                  - /url: /ja/odr/軒-青森-国内?search=200-69798
+              - listitem [ref=e1103]:
+                - link "北海道のホテル" [ref=e1104] [cursor=pointer]:
+                  - /url: /ja/odr/軒-北海道-国内?search=200-394794
+              - listitem [ref=e1105]:
+                - link "オアフ島のホテル" [ref=e1106] [cursor=pointer]:
+                  - /url: /ja/odr/軒-オアフ島-ハワイ?search=200-14397
+              - listitem [ref=e1107]:
+                - link "岡山のホテル" [ref=e1108] [cursor=pointer]:
+                  - /url: /ja/odr/軒-岡山-国内?search=200-69767
+              - listitem [ref=e1109]:
+                - link "福島のホテル" [ref=e1110] [cursor=pointer]:
+                  - /url: /ja/odr/軒-福島-国内?search=200-69799
+              - listitem [ref=e1111]:
+                - link "セブ島のホテル" [ref=e1112] [cursor=pointer]:
+                  - /url: /ja/odr/軒-セブ島-フィリピン?search=200-119596
+              - listitem [ref=e1113]:
+                - link "奈良のホテル" [ref=e1114] [cursor=pointer]:
+                  - /url: /ja/odr/軒-奈良-国内?search=200-69792
+              - listitem [ref=e1115]:
+                - link "鹿児島のホテル" [ref=e1116] [cursor=pointer]:
+                  - /url: /ja/odr/軒-鹿児島-国内?search=200-69772
+              - listitem [ref=e1117]:
+                - link "秋田のホテル" [ref=e1118] [cursor=pointer]:
+                  - /url: /ja/odr/軒-秋田-国内?search=200-69797
+              - listitem [ref=e1119]:
+                - link "徳島のホテル" [ref=e1120] [cursor=pointer]:
+                  - /url: /ja/odr/軒-徳島-国内?search=200-69781
+              - listitem [ref=e1121]:
+                - link "中国地方のホテル" [ref=e1122] [cursor=pointer]:
+                  - /url: /ja/odr/軒-中国地方-国内?search=200-69750
+              - listitem [ref=e1123]:
+                - link "サムイ島のホテル" [ref=e1124] [cursor=pointer]:
+                  - /url: /ja/odr/軒-サムイ島-タイ?search=200-16017
+              - listitem [ref=e1125]:
+                - link "佐賀のホテル" [ref=e1126] [cursor=pointer]:
+                  - /url: /ja/odr/軒-佐賀-国内?search=200-69777
+              - listitem [ref=e1127]:
+                - link "マクタン島のホテル" [ref=e1128] [cursor=pointer]:
+                  - /url: /ja/odr/軒-マクタン島-フィリピン?search=200-119626
+              - listitem [ref=e1129]:
+                - link "台湾のホテル" [ref=e1130] [cursor=pointer]:
+                  - /url: /ja/odr/軒-台湾?search=200-194
+              - listitem [ref=e1131]:
+                - link "ボラカイ島のホテル" [ref=e1132] [cursor=pointer]:
+                  - /url: /ja/odr/軒-ボラカイ島-フィリピン?search=200-119571
+              - listitem [ref=e1133]:
+                - link "チューリッヒのホテル" [ref=e1134] [cursor=pointer]:
+                  - /url: /ja/odr/軒-チューリッヒ-スイス?search=200-27636
+              - listitem [ref=e1135]:
+                - link "ハワイのホテル" [ref=e1136] [cursor=pointer]:
+                  - /url: /ja/odr/軒-ハワイ?search=200-14151
+              - listitem [ref=e1137]:
+                - link "済州島 （チェジュド）のホテル" [ref=e1138] [cursor=pointer]:
+                  - /url: /ja/odr/軒-済州島-チェジュド-韓国?search=200-81328
+              - listitem [ref=e1139]:
+                - link "マドリードのホテル" [ref=e1140] [cursor=pointer]:
+                  - /url: /ja/odr/軒-マドリード-スペイン?search=200-13344
+              - listitem [ref=e1141]:
+                - link "プーケットのホテル" [ref=e1142] [cursor=pointer]:
+                  - /url: /ja/odr/軒-プーケット-タイ?search=200-16019
+              - listitem [ref=e1143]:
+                - link "高雄市のホテル" [ref=e1144] [cursor=pointer]:
+                  - /url: /ja/odr/軒-高雄市-台湾?search=200-130986
+              - listitem [ref=e1145]:
+                - link "岐阜のホテル" [ref=e1146] [cursor=pointer]:
+                  - /url: /ja/odr/軒-岐阜-国内?search=200-69759
+              - listitem [ref=e1147]:
+                - link "ゴールド コーストのホテル" [ref=e1148] [cursor=pointer]:
+                  - /url: /ja/odr/軒-ゴールド-コースト-オーストラリア?search=200-73658
+              - listitem [ref=e1149]:
+                - link "宮崎のホテル" [ref=e1150] [cursor=pointer]:
+                  - /url: /ja/odr/軒-宮崎-国内?search=200-69774
+              - listitem [ref=e1151]:
+                - link "イスタンブールのホテル" [ref=e1152] [cursor=pointer]:
+                  - /url: /ja/odr/軒-イスタンブール-トルコ?search=200-413602
+              - listitem [ref=e1153]:
+                - link "モルディブのホテル" [ref=e1154] [cursor=pointer]:
+                  - /url: /ja/odr/軒-モルディブ?search=200-121
+              - listitem [ref=e1155]:
+                - link "サントリーニ島のホテル" [ref=e1156] [cursor=pointer]:
+                  - /url: /ja/odr/軒-サントリーニ島-ギリシャ?search=200-389397
+              - listitem [ref=e1157]:
+                - link "シンガポールのホテル" [ref=e1158] [cursor=pointer]:
+                  - /url: /ja/odr/軒-シンガポール?search=200-180
+              - listitem [ref=e1159]:
+                - link "香港のホテル" [ref=e1160] [cursor=pointer]:
+                  - /url: /ja/odr/軒-香港?search=200-75
+              - listitem [ref=e1161]:
+                - link "ランカウイ島のホテル" [ref=e1162] [cursor=pointer]:
+                  - /url: /ja/odr/軒-ランカウイ島-マレーシア?search=200-74464
+              - listitem [ref=e1163]:
+                - link "カルフォルニアのホテル" [ref=e1164] [cursor=pointer]:
+                  - /url: /ja/odr/軒-カルフォルニア?search=200-14145
+              - listitem [ref=e1165]:
+                - link "ハワイ島のホテル" [ref=e1166] [cursor=pointer]:
+                  - /url: /ja/odr/軒-ハワイ島-ハワイ?search=200-14385
+              - listitem [ref=e1167]:
+                - link "マカオのホテル" [ref=e1168] [cursor=pointer]:
+                  - /url: /ja/odr/軒-マカオ-中国?search=200-31463
+              - listitem [ref=e1169]:
+                - link "ペナン島のホテル" [ref=e1170] [cursor=pointer]:
+                  - /url: /ja/odr/軒-ペナン島-マレーシア?search=200-74533
+              - listitem [ref=e1171]:
+                - link "Metro Manilaのホテル" [ref=e1172] [cursor=pointer]:
+                  - /url: /ja/odr/軒-metro-manila-フィリピン?search=200-123026
+              - listitem [ref=e1173]:
+                - link "スリランカのホテル" [ref=e1174] [cursor=pointer]:
+                  - /url: /ja/odr/軒-スリランカ?search=200-185
+              - listitem [ref=e1175]:
+                - link "ダナン市のホテル" [ref=e1176] [cursor=pointer]:
+                  - /url: /ja/odr/軒-ダナン市-ベトナム?search=200-68057
+              - listitem [ref=e1177]:
+                - link "タイのホテル" [ref=e1178] [cursor=pointer]:
+                  - /url: /ja/odr/軒-タイ?search=200-196
+              - listitem [ref=e1179]:
+                - link "ホーチミンのホテル" [ref=e1180] [cursor=pointer]:
+                  - /url: /ja/odr/軒-ホーチミン-ベトナム?search=200-68064
+              - listitem [ref=e1181]:
+                - link "京畿道のホテル" [ref=e1182] [cursor=pointer]:
+                  - /url: /ja/odr/軒-京畿道-韓国?search=200-81323
+              - listitem [ref=e1183]:
+                - link "北京市のホテル" [ref=e1184] [cursor=pointer]:
+                  - /url: /ja/odr/軒-北京市-中国?search=200-31445
+              - listitem [ref=e1185]:
+                - link "マレーシアのホテル" [ref=e1186] [cursor=pointer]:
+                  - /url: /ja/odr/軒-マレーシア?search=200-120
+              - listitem [ref=e1187]:
+                - link "ベトナムのホテル" [ref=e1188] [cursor=pointer]:
+                  - /url: /ja/odr/軒-ベトナム?search=200-217
+              - listitem [ref=e1189]:
+                - link "フィジーのホテル" [ref=e1190] [cursor=pointer]:
+                  - /url: /ja/odr/軒-フィジー?search=200-54
+              - listitem [ref=e1191]:
+                - link "ニューヨーク州のホテル" [ref=e1192] [cursor=pointer]:
+                  - /url: /ja/odr/軒-ニューヨーク州?search=200-14172
+              - listitem [ref=e1193]:
+                - link "上海市のホテル" [ref=e1194] [cursor=pointer]:
+                  - /url: /ja/odr/軒-上海市-中国?search=200-31469
+              - listitem [ref=e1195]:
+                - link "スランゴール州のホテル" [ref=e1196] [cursor=pointer]:
+                  - /url: /ja/odr/軒-スランゴール州-マレーシア?search=200-55484
+              - listitem [ref=e1197]:
+                - link "ヴィサヤス諸島のホテル" [ref=e1198] [cursor=pointer]:
+                  - /url: /ja/odr/軒-ヴィサヤス諸島-フィリピン?search=200-108981
+              - listitem [ref=e1199]:
+                - link "中国のホテル" [ref=e1200] [cursor=pointer]:
+                  - /url: /ja/odr/軒-中国?search=200-39
+              - listitem [ref=e1201]:
+                - link "シャモニー モンブランのホテル" [ref=e1202] [cursor=pointer]:
+                  - /url: /ja/odr/軒-シャモニー-モンブラン-フランス?search=200-21340
+              - listitem [ref=e1203]:
+                - link "クアラルンプール首都周辺のホテル" [ref=e1204] [cursor=pointer]:
+                  - /url: /ja/odr/軒-クアラルンプール首都周辺-マレーシア?search=200-74495
+              - listitem [ref=e1205]:
+                - link "アイスランドのホテル" [ref=e1206] [cursor=pointer]:
+                  - /url: /ja/odr/軒-アイスランド?search=200-81
+              - listitem [ref=e1207]:
+                - link "キルギスのホテル" [ref=e1208] [cursor=pointer]:
+                  - /url: /ja/odr/軒-キルギス?search=200-97
+              - listitem [ref=e1209]:
+                - link "フィリピンのホテル" [ref=e1210] [cursor=pointer]:
+                  - /url: /ja/odr/軒-フィリピン?search=200-156
+              - listitem [ref=e1211]:
+                - link "ニューサウスウェールズ州のホテル" [ref=e1212] [cursor=pointer]:
+                  - /url: /ja/odr/軒-ニューサウスウェールズ州-オーストラリア?search=200-25053
+              - listitem [ref=e1213]:
+                - link "パラオ島のホテル" [ref=e1214] [cursor=pointer]:
+                  - /url: /ja/odr/軒-パラオ島-パラオ?search=200-66458
+              - listitem [ref=e1215]:
+                - link "パングラオ島のホテル" [ref=e1216] [cursor=pointer]:
+                  - /url: /ja/odr/軒-パングラオ島-フィリピン?search=200-119681
+              - listitem [ref=e1217]:
+                - link "カプリ島のホテル" [ref=e1218] [cursor=pointer]:
+                  - /url: /ja/odr/軒-カプリ島-イタリア?search=200-400707
+              - listitem [ref=e1219]:
+                - link "ブルガリアのホテル" [ref=e1220] [cursor=pointer]:
+                  - /url: /ja/odr/軒-ブルガリア?search=200-35
+              - listitem [ref=e1221]:
+                - link "パラオのホテル" [ref=e1222] [cursor=pointer]:
+                  - /url: /ja/odr/軒-パラオ?search=200-151
+              - listitem [ref=e1223]:
+                - link "テキサス州のホテル" [ref=e1224] [cursor=pointer]:
+                  - /url: /ja/odr/軒-テキサス州?search=200-14183
+              - listitem [ref=e1225]:
+                - link "南部のホテル" [ref=e1226] [cursor=pointer]:
+                  - /url: /ja/odr/軒-南部-タイ?search=200-15813
+              - listitem [ref=e1227]:
+                - link "パリのホテル" [ref=e1228] [cursor=pointer]:
+                  - /url: /ja/odr/軒-パリ-フランス?search=200-21303
+              - listitem [ref=e1229]:
+                - link "プラハ市のホテル" [ref=e1230] [cursor=pointer]:
+                  - /url: /ja/odr/軒-プラハ市-チェコ?search=200-23441
+              - listitem [ref=e1231]:
+                - link "クアラ・ルンプールのホテル" [ref=e1232] [cursor=pointer]:
+                  - /url: /ja/odr/軒-クアラ-ルンプール-マレーシア?search=200-55488
+              - listitem [ref=e1233]:
+                - link "チンクエテッレのホテル" [ref=e1234] [cursor=pointer]:
+                  - /url: /ja/odr/軒-チンクエテッレ-イタリア?search=200-68564
+              - listitem [ref=e1235]:
+                - link "冲縄地方のホテル" [ref=e1236] [cursor=pointer]:
+                  - /url: /ja/odr/軒-冲縄地方-国内?search=200-69755
+              - listitem [ref=e1237]:
+                - link "基隆市のホテル" [ref=e1238] [cursor=pointer]:
+                  - /url: /ja/odr/軒-基隆市-台湾?search=200-348241
+              - listitem [ref=e1239]:
+                - link "桃園県のホテル" [ref=e1240] [cursor=pointer]:
+                  - /url: /ja/odr/軒-桃園県-台湾?search=200-385871
+              - listitem [ref=e1241]:
+                - link "ビンタン島のホテル" [ref=e1242] [cursor=pointer]:
+                  - /url: /ja/odr/軒-ビンタン島-インドネシア?search=200-417596
+              - listitem [ref=e1243]:
+                - link "ブルネイのホテル" [ref=e1244] [cursor=pointer]:
+                  - /url: /ja/odr/軒-ブルネイ?search=200-34
+              - listitem [ref=e1245]:
+                - link "フランスのホテル" [ref=e1246] [cursor=pointer]:
+                  - /url: /ja/odr/軒-フランス?search=200-56
+              - listitem [ref=e1247]:
+                - link "インドネシアのホテル" [ref=e1248] [cursor=pointer]:
+                  - /url: /ja/odr/軒-インドネシア?search=200-77
+              - listitem [ref=e1249]:
+                - link "モンゴルのホテル" [ref=e1250] [cursor=pointer]:
+                  - /url: /ja/odr/軒-モンゴル?search=200-132
+              - listitem [ref=e1251]:
+                - link "ベルリンのホテル" [ref=e1252] [cursor=pointer]:
+                  - /url: /ja/odr/軒-ベルリン-ドイツ?search=200-224
+              - listitem [ref=e1253]:
+                - link "マウイ島のホテル" [ref=e1254] [cursor=pointer]:
+                  - /url: /ja/odr/軒-マウイ島-ハワイ?search=200-14395
+              - listitem [ref=e1255]:
+                - link "マラッカのホテル" [ref=e1256] [cursor=pointer]:
+                  - /url: /ja/odr/軒-マラッカ-マレーシア?search=200-55478
+              - listitem [ref=e1257]:
+                - link "Phu Quocのホテル" [ref=e1258] [cursor=pointer]:
+                  - /url: /ja/odr/軒-phu-quoc-ベトナム?search=200-99336
+              - listitem [ref=e1259]:
+                - link "バタム島のホテル" [ref=e1260] [cursor=pointer]:
+                  - /url: /ja/odr/軒-バタム島-インドネシア?search=200-341601
+              - listitem [ref=e1261]:
+                - link "台南県のホテル" [ref=e1262] [cursor=pointer]:
+                  - /url: /ja/odr/軒-台南県-台湾?search=200-347446
+              - listitem [ref=e1263]:
+                - link "Koh Lipeのホテル" [ref=e1264] [cursor=pointer]:
+                  - /url: /ja/odr/軒-koh-lipe-タイ?search=200-387485
+              - listitem [ref=e1265]:
+                - link "スイスのホテル" [ref=e1266] [cursor=pointer]:
+                  - /url: /ja/odr/軒-スイス?search=200-174
+              - listitem [ref=e1267]:
+                - link "ニュージャージーのホテル" [ref=e1268] [cursor=pointer]:
+                  - /url: /ja/odr/軒-ニュージャージー?search=200-14170
+              - listitem [ref=e1269]:
+                - link "アッレゲのホテル" [ref=e1270] [cursor=pointer]:
+                  - /url: /ja/odr/軒-アッレゲ?search=200-15353
+              - listitem [ref=e1271]:
+                - link "Bani Suwayfのホテル" [ref=e1272] [cursor=pointer]:
+                  - /url: /ja/odr/軒-bani-suwayf-エジプト?search=200-15690
+              - listitem [ref=e1273]:
+                - link "Yasawa Groupのホテル" [ref=e1274] [cursor=pointer]:
+                  - /url: /ja/odr/軒-yasawa-group-フィジー?search=200-83131
+              - listitem [ref=e1275]:
+                - link "クアンナムのホテル" [ref=e1276] [cursor=pointer]:
+                  - /url: /ja/odr/軒-クアンナム-ベトナム?search=200-99331
+              - listitem [ref=e1277]:
+                - link "台東のホテル" [ref=e1278] [cursor=pointer]:
+                  - /url: /ja/odr/軒-台東-台湾?search=200-389190
+              - listitem [ref=e1279]:
+                - link "ウィーンのホテル" [ref=e1280] [cursor=pointer]:
+                  - /url: /ja/odr/軒-ウィーン-オーストリア?search=200-398335
+              - listitem [ref=e1281]:
+                - link "サンシャイン コーストのホテル" [ref=e1282] [cursor=pointer]:
+                  - /url: /ja/odr/軒-サンシャイン-コースト-オーストラリア?search=200-419574
+              - listitem [ref=e1283]:
+                - link "カンボジアのホテル" [ref=e1284] [cursor=pointer]:
+                  - /url: /ja/odr/軒-カンボジア?search=200-90
+              - listitem [ref=e1285]:
+                - link "ルクセンブルクのホテル" [ref=e1286] [cursor=pointer]:
+                  - /url: /ja/odr/軒-ルクセンブルク?search=200-115
+              - listitem [ref=e1287]:
+                - link "キール港のホテル" [ref=e1288] [cursor=pointer]:
+                  - /url: /ja/odr/軒-キール港-ドイツ?search=200-13227
+              - listitem [ref=e1289]:
+                - link "アンダルシア州のホテル" [ref=e1290] [cursor=pointer]:
+                  - /url: /ja/odr/軒-アンダルシア州-スペイン?search=200-13331
+              - listitem [ref=e1291]:
+                - link "カウアイ島のホテル" [ref=e1292] [cursor=pointer]:
+                  - /url: /ja/odr/軒-カウアイ島-ハワイ?search=200-14390
+              - listitem [ref=e1293]:
+                - link "イル ド フランスのホテル" [ref=e1294] [cursor=pointer]:
+                  - /url: /ja/odr/軒-イル-ド-フランス-フランス?search=200-21221
+              - listitem [ref=e1295]:
+                - link "ウイーンのホテル" [ref=e1296] [cursor=pointer]:
+                  - /url: /ja/odr/軒-ウイーン-オーストリア?search=200-23452
+              - listitem [ref=e1297]:
+                - link "ミッティラント地域のホテル" [ref=e1298] [cursor=pointer]:
+                  - /url: /ja/odr/軒-ミッティラント地域-デンマーク?search=200-25717
+              - listitem [ref=e1299]:
+                - link "マルタ島のホテル" [ref=e1300] [cursor=pointer]:
+                  - /url: /ja/odr/軒-マルタ島-マルタ?search=200-27429
+              - listitem [ref=e1301]:
+                - link "リマのホテル" [ref=e1302] [cursor=pointer]:
+                  - /url: /ja/odr/軒-リマ-ペルー?search=200-66614
+          - generic [ref=e1305]:
+            - heading "トリバゴの各国・地域版サイト" [level=2] [ref=e1306]
+            - list "トリバゴの各国・地域版サイト" [ref=e1310]:
+              - listitem [ref=e1311]:
+                - link "trivago‏ UAE" [ref=e1312] [cursor=pointer]:
+                  - /url: https://www.trivago.ae
+              - listitem [ref=e1313]:
+                - link "trivago‏ Argentina" [ref=e1314] [cursor=pointer]:
+                  - /url: https://www.trivago.com.ar
+              - listitem [ref=e1315]:
+                - link "trivago‏ Österreich" [ref=e1316] [cursor=pointer]:
+                  - /url: https://www.trivago.at
+              - listitem [ref=e1317]:
+                - link "trivago‏ Australia" [ref=e1318] [cursor=pointer]:
+                  - /url: https://www.trivago.com.au
+              - listitem [ref=e1319]:
+                - link "trivago‏ België" [ref=e1320] [cursor=pointer]:
+                  - /url: https://www.trivago.be
+              - listitem [ref=e1321]:
+                - link "trivago‏ България" [ref=e1322] [cursor=pointer]:
+                  - /url: https://www.trivago.bg
+              - listitem [ref=e1323]:
+                - link "trivago‏ Brasil" [ref=e1324] [cursor=pointer]:
+                  - /url: https://www.trivago.com.br
+              - listitem [ref=e1325]:
+                - link "trivago‏ Canada" [ref=e1326] [cursor=pointer]:
+                  - /url: https://www.trivago.ca
+              - listitem [ref=e1327]:
+                - link "trivago‏ Schweiz" [ref=e1328] [cursor=pointer]:
+                  - /url: https://www.trivago.ch
+              - listitem [ref=e1329]:
+                - link "trivago‏ Chile" [ref=e1330] [cursor=pointer]:
+                  - /url: https://www.trivago.cl
+              - listitem [ref=e1331]:
+                - link "trivago‏ Colombia" [ref=e1332] [cursor=pointer]:
+                  - /url: https://www.trivago.com.co
+              - listitem [ref=e1333]:
+                - link "trivago‏ Česko" [ref=e1334] [cursor=pointer]:
+                  - /url: https://www.trivago.cz
+              - listitem [ref=e1335]:
+                - link "trivago‏ Deutschland" [ref=e1336] [cursor=pointer]:
+                  - /url: https://www.trivago.de
+              - listitem [ref=e1337]:
+                - link "trivago‏ Danmark" [ref=e1338] [cursor=pointer]:
+                  - /url: https://www.trivago.dk
+              - listitem [ref=e1339]:
+                - link "trivago‏ Ecuador" [ref=e1340] [cursor=pointer]:
+                  - /url: https://www.trivago.com.ec
+              - listitem [ref=e1341]:
+                - link "trivago‏ España" [ref=e1342] [cursor=pointer]:
+                  - /url: https://www.trivago.es
+              - listitem [ref=e1343]:
+                - link "trivago‏ Suomi" [ref=e1344] [cursor=pointer]:
+                  - /url: https://www.trivago.fi
+              - listitem [ref=e1345]:
+                - link "trivago‏ France" [ref=e1346] [cursor=pointer]:
+                  - /url: https://www.trivago.fr
+              - listitem [ref=e1347]:
+                - link "trivago‏ Ελλάδα" [ref=e1348] [cursor=pointer]:
+                  - /url: https://www.trivago.gr
+              - listitem [ref=e1349]:
+                - link "trivago‏ 香港" [ref=e1350] [cursor=pointer]:
+                  - /url: https://www.trivago.hk
+              - listitem [ref=e1351]:
+                - link "trivago‏ Hrvatska" [ref=e1352] [cursor=pointer]:
+                  - /url: https://www.trivago.hr
+              - listitem [ref=e1353]:
+                - link "trivago‏ Magyarország" [ref=e1354] [cursor=pointer]:
+                  - /url: https://www.trivago.hu
+              - listitem [ref=e1355]:
+                - link "trivago‏ Indonesia" [ref=e1356] [cursor=pointer]:
+                  - /url: https://www.trivago.co.id
+              - listitem [ref=e1357]:
+                - link "trivago‏ Ireland" [ref=e1358] [cursor=pointer]:
+                  - /url: https://www.trivago.ie
+              - listitem [ref=e1359]:
+                - link "trivago‏ ישראל" [ref=e1360] [cursor=pointer]:
+                  - /url: https://www.trivago.co.il
+              - listitem [ref=e1361]:
+                - link "trivago‏ India" [ref=e1362] [cursor=pointer]:
+                  - /url: https://www.trivago.in
+              - listitem [ref=e1363]:
+                - link "trivago‏ Italia" [ref=e1364] [cursor=pointer]:
+                  - /url: https://www.trivago.it
+              - listitem [ref=e1365]:
+                - link "trivago‏ 日本" [ref=e1366] [cursor=pointer]:
+                  - /url: https://www.trivago.jp
+              - listitem [ref=e1367]:
+                - link "trivago‏ 한국" [ref=e1368] [cursor=pointer]:
+                  - /url: https://www.trivago.co.kr
+              - listitem [ref=e1369]:
+                - link "trivago‏ México" [ref=e1370] [cursor=pointer]:
+                  - /url: https://www.trivago.com.mx
+              - listitem [ref=e1371]:
+                - link "trivago‏ Malaysia" [ref=e1372] [cursor=pointer]:
+                  - /url: https://www.trivago.com.my
+              - listitem [ref=e1373]:
+                - link "trivago‏ Nederland" [ref=e1374] [cursor=pointer]:
+                  - /url: https://www.trivago.nl
+              - listitem [ref=e1375]:
+                - link "trivago‏ Norge" [ref=e1376] [cursor=pointer]:
+                  - /url: https://www.trivago.no
+              - listitem [ref=e1377]:
+                - link "trivago‏ New Zealand" [ref=e1378] [cursor=pointer]:
+                  - /url: https://www.trivago.co.nz
+              - listitem [ref=e1379]:
+                - link "trivago‏ Perú" [ref=e1380] [cursor=pointer]:
+                  - /url: https://www.trivago.pe
+              - listitem [ref=e1381]:
+                - link "trivago‏ Pilipinas" [ref=e1382] [cursor=pointer]:
+                  - /url: https://www.trivago.com.ph
+              - listitem [ref=e1383]:
+                - link "trivago‏ Polska" [ref=e1384] [cursor=pointer]:
+                  - /url: https://www.trivago.pl
+              - listitem [ref=e1385]:
+                - link "trivago‏ Portugal" [ref=e1386] [cursor=pointer]:
+                  - /url: https://www.trivago.pt
+              - listitem [ref=e1387]:
+                - link "trivago‏ România" [ref=e1388] [cursor=pointer]:
+                  - /url: https://www.trivago.ro
+              - listitem [ref=e1389]:
+                - link "trivago‏ Srbija" [ref=e1390] [cursor=pointer]:
+                  - /url: https://www.trivago.rs
+              - listitem [ref=e1391]:
+                - link "trivago‏ Sverige" [ref=e1392] [cursor=pointer]:
+                  - /url: https://www.trivago.se
+              - listitem [ref=e1393]:
+                - link "trivago‏ Singapore" [ref=e1394] [cursor=pointer]:
+                  - /url: https://www.trivago.sg
+              - listitem [ref=e1395]:
+                - link "trivago‏ العالم العربي" [ref=e1396] [cursor=pointer]:
+                  - /url: https://ar.trivago.com
+              - listitem [ref=e1397]:
+                - link "trivago‏ Slovenija" [ref=e1398] [cursor=pointer]:
+                  - /url: https://www.trivago.si
+              - listitem [ref=e1399]:
+                - link "trivago‏ Slovensko" [ref=e1400] [cursor=pointer]:
+                  - /url: https://www.trivago.sk
+              - listitem [ref=e1401]:
+                - link "trivago‏ ประเทศไทย" [ref=e1402] [cursor=pointer]:
+                  - /url: https://www.trivago.co.th
+              - listitem [ref=e1403]:
+                - link "trivago‏ Türkiye" [ref=e1404] [cursor=pointer]:
+                  - /url: https://www.trivago.com.tr
+              - listitem [ref=e1405]:
+                - link "trivago‏ 台灣" [ref=e1406] [cursor=pointer]:
+                  - /url: https://www.trivago.com.tw
+              - listitem [ref=e1407]:
+                - link "trivago‏ United Kingdom" [ref=e1408] [cursor=pointer]:
+                  - /url: https://www.trivago.co.uk
+              - listitem [ref=e1409]:
+                - link "trivago‏ USA" [ref=e1410] [cursor=pointer]:
+                  - /url: https://www.trivago.com
+              - listitem [ref=e1411]:
+                - link "trivago‏ Uruguay" [ref=e1412] [cursor=pointer]:
+                  - /url: https://www.trivago.com.uy
+              - listitem [ref=e1413]:
+                - link "trivago‏ Việt Nam" [ref=e1414] [cursor=pointer]:
+                  - /url: https://www.trivago.vn
+              - listitem [ref=e1415]:
+                - link "trivago‏ South Africa" [ref=e1416] [cursor=pointer]:
+                  - /url: https://www.trivago.co.za
+    - contentinfo [ref=e1419]:
+      - generic [ref=e1420]:
+        - img "trivago logo" [ref=e1421]
+        - list [ref=e1430]:
+          - listitem [ref=e1431]:
+            - link "Facebook" [ref=e1432] [cursor=pointer]:
+              - /url: https://www.facebook.com/trivago
+              - generic [ref=e1433]:
+                - img
+              - generic [ref=e1434]: Facebook
+          - listitem [ref=e1435]:
+            - link "Twitter" [ref=e1436] [cursor=pointer]:
+              - /url: https://twitter.com/trivago
+              - generic [ref=e1437]:
+                - img
+              - generic [ref=e1438]: Twitter
+          - listitem [ref=e1439]:
+            - link "Instagram" [ref=e1440] [cursor=pointer]:
+              - /url: https://instagram.com/trivago/
+              - generic [ref=e1441]:
+                - img
+              - generic [ref=e1442]: Instagram
+          - listitem [ref=e1443]:
+            - link "Youtube" [ref=e1444] [cursor=pointer]:
+              - /url: https://www.youtube.com/user/trivago
+              - generic [ref=e1445]:
+                - img
+              - generic [ref=e1446]: Youtube
+          - listitem [ref=e1447]:
+            - link "Linkedin" [ref=e1448] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/trivagonv/
+              - generic [ref=e1449]:
+                - img
+              - generic [ref=e1450]: Linkedin
+      - generic [ref=e1451]:
+        - generic [ref=e1452]:
+          - generic [ref=e1454]:
+            - combobox [ref=e1455] [cursor=pointer]:
+              - option "Arab World (العالم العربي)"
+              - option "Argentina"
+              - option "Australia"
+              - option "Austria (Österreich)"
+              - option "Belgium (België)"
+              - option "Brazil (Brasil)"
+              - option "Bulgaria (България)"
+              - option "Canada"
+              - option "Chile"
+              - option "Colombia"
+              - option "Croatia (Hrvatska)"
+              - option "Czechia (Česko)"
+              - option "Denmark (Danmark)"
+              - option "Ecuador"
+              - option "Finland (Suomi)"
+              - option "France"
+              - option "Germany (Deutschland)"
+              - option "Greece (Ελλάδα)"
+              - option "Hong Kong (香港)"
+              - option "Hungary (Magyarország)"
+              - option "India"
+              - option "Indonesia"
+              - option "Ireland"
+              - option "Israel (ישראל)"
+              - option "Italy (Italia)"
+              - option "Japan (日本)" [selected]
+              - option "Korea (한국)"
+              - option "Malaysia"
+              - option "Mexico (México)"
+              - option "Netherlands (Nederland)"
+              - option "New Zealand"
+              - option "Norway (Norge)"
+              - option "Peru (Perú)"
+              - option "Philippines (Pilipinas)"
+              - option "Poland (Polska)"
+              - option "Portugal"
+              - option "Romania (România)"
+              - option "Serbia (Srbija)"
+              - option "Singapore"
+              - option "Slovakia (Slovensko)"
+              - option "Slovenia (Slovenija)"
+              - option "South Africa"
+              - option "Spain (España)"
+              - option "Sweden (Sverige)"
+              - option "Switzerland (Schweiz)"
+              - option "Taiwan (台灣)"
+              - option "Thailand (ประเทศไทย)"
+              - option "Turkey (Türkiye)"
+              - option "UAE"
+              - option "United Kingdom"
+              - option "Uruguay"
+              - option "USA"
+              - option "Vietnam (Việt Nam)"
+            - generic:
+              - img
+          - generic [ref=e1456]:
+            - generic [ref=e1457]:
+              - button "トリバゴとは" [expanded]
+              - list [ref=e1458]:
+                - listitem [ref=e1459]:
+                  - link "トリバゴについて" [ref=e1460] [cursor=pointer]:
+                    - /url: https://company.trivago.com/
+                - listitem [ref=e1461]:
+                  - link "募集職種" [ref=e1462] [cursor=pointer]:
+                    - /url: https://company.trivago.com/open-positions/?gh_src=21d449cf2
+                - listitem [ref=e1463]:
+                  - link "投資家向け広報" [ref=e1464] [cursor=pointer]:
+                    - /url: https://ir.trivago.com/
+                - listitem [ref=e1465]:
+                  - link "プレスセンター" [ref=e1466] [cursor=pointer]:
+                    - /url: https://company.trivago.com/press/
+            - generic [ref=e1467]:
+              - button "弊社の製品" [expanded]
+              - list [ref=e1468]:
+                - listitem [ref=e1469]:
+                  - link "◆無料トリバゴ モバイルアプリのご紹介" [ref=e1470] [cursor=pointer]:
+                    - /url: https://www.trivago.jp/ja/app
+                - listitem [ref=e1471]:
+                  - link "ホテル関係者用トリバゴ" [ref=e1472] [cursor=pointer]:
+                    - /url: https://studio.trivago.com/home
+        - generic [ref=e1474]:
+          - generic [ref=e1475]:
+            - button "規約とポリシー" [expanded]
+            - list [ref=e1476]:
+              - listitem [ref=e1477]:
+                - link "利用規約" [ref=e1478] [cursor=pointer]:
+                  - /url: https://www.trivago.jp/ja/st/ご利用規約
+              - listitem [ref=e1479]:
+                - link "会社概要" [ref=e1480] [cursor=pointer]:
+                  - /url: https://www.trivago.jp/ja/sl/法的事項
+              - listitem [ref=e1481]:
+                - link "プライバシーに関する通知" [ref=e1482] [cursor=pointer]:
+                  - /url: https://www.trivago.jp/ja/sp/プライバシーポリシー
+              - listitem [ref=e1483]:
+                - link "DSA 情報" [ref=e1484] [cursor=pointer]:
+                  - /url: https://company.trivago.com/dsa-information/
+              - listitem [ref=e1485]:
+                - button "Cookieの設定" [ref=e1486] [cursor=pointer]
+              - listitem [ref=e1487]:
+                - link "脆弱性開示プログラム" [ref=e1488] [cursor=pointer]:
+                  - /url: https://vdp.trivago.com
+          - generic [ref=e1489]:
+            - button "サポート" [expanded]
+            - list [ref=e1490]:
+              - listitem [ref=e1491]:
+                - link "ヘルプセンター" [ref=e1492] [cursor=pointer]:
+                  - /url: https://support.trivago.com/hc/ja
+              - listitem [ref=e1493]:
+                - link "トリバゴの詳細" [ref=e1494] [cursor=pointer]:
+                  - /url: https://support.trivago.com/hc/ja/sections/360000014707
+        - generic [ref=e1495]:
+          - generic [ref=e1496]:
+            - heading "ログインして会員限定特典を利用しましょう" [level=2] [ref=e1497]
+            - list [ref=e1498]:
+              - listitem [ref=e1499]:
+                - generic [ref=e1500]:
+                  - img
+                - generic [ref=e1501]: 体験をカスタマイズ
+              - listitem [ref=e1502]:
+                - generic [ref=e1503]:
+                  - img
+                - generic [ref=e1504]: ロイヤルティ料金プランと会員価格
+            - button "ログイン" [ref=e1505] [cursor=pointer]:
+              - generic [ref=e1506]: ログイン
+          - generic [ref=e1507]:
+            - paragraph [ref=e1508]:
+              - strong [ref=e1509]: trivago N.V.
+              - text: ", Kesselstraße 5 – 7, 40221 Düsseldorf, Germany"
+            - paragraph [ref=e1510]: Copyright 2026 trivago | All rights reserved.
+  - alert [ref=e1511]
+  - complementary

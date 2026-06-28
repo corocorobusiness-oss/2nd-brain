@@ -1,0 +1,355 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2343]:
+    - banner [ref=e2344]:
+      - generic [ref=e2345]:
+        - link "trivago logo" [ref=e2346] [cursor=pointer]:
+          - /url: /
+          - img "trivago logo" [ref=e2348]
+        - generic [ref=e2360]:
+          - generic [ref=e2361]:
+            - combobox [ref=e2363]:
+              - button "目的地 消去" [ref=e2365] [cursor=pointer]:
+                - generic [ref=e2366]:
+                  - generic [ref=e2367]: 目的地
+                  - searchbox "目的地" [ref=e2368]: OMO7横浜
+                - button "消去" [ref=e2369]:
+                  - generic [ref=e2370]:
+                    - img
+            - group [ref=e2371]:
+              - button "チェックイン, 水, 8月 5, 2026, チェックアウト, 木, 8月 6, 2026, 1 宿泊数" [ref=e2372] [cursor=pointer]:
+                - generic [ref=e2374]:
+                  - generic [ref=e2375]: チェックイン/アウト
+                  - generic [ref=e2376]: 8月5日 - 8月6日
+            - button "滞在人数と部屋数 4 人、1 部屋" [ref=e2379] [cursor=pointer]:
+              - generic [ref=e2381]:
+                - generic [ref=e2382]: 滞在人数と部屋数
+                - generic [ref=e2383]: 4 人、1 部屋
+          - button [ref=e2384] [cursor=pointer]:
+            - generic [ref=e2385]:
+              - img
+        - navigation [ref=e2386]:
+          - list [ref=e2387]:
+            - listitem [ref=e2388]:
+              - button "JA · ￥" [ref=e2389] [cursor=pointer]:
+                - generic [ref=e2390]:
+                  - img
+                - generic [ref=e2391]: JA · ￥
+            - listitem [ref=e2392]:
+              - button "ログイン" [ref=e2394] [cursor=pointer]:
+                - generic [ref=e2395]:
+                  - img
+                - generic [ref=e2396]: ログイン
+            - listitem [ref=e2397]:
+              - button "メニュー" [ref=e2399] [cursor=pointer]:
+                - generic [ref=e2400]:
+                  - img
+                - generic [ref=e2401]: メニュー
+      - generic [ref=e2402]:
+        - generic [ref=e2405]:
+          - list [ref=e2407]:
+            - listitem [ref=e2408]:
+              - button "絞り込み" [expanded] [ref=e2410] [cursor=pointer]:
+                - generic [ref=e2411]:
+                  - img
+                - generic [ref=e2412]: 絞り込み
+            - listitem [ref=e2413]:
+              - button "並べ替え" [ref=e2415] [cursor=pointer]:
+                - generic [ref=e2416]:
+                  - generic [ref=e2417]: 並べ替え
+                  - generic [ref=e2418]:
+                    - img
+            - listitem [ref=e2419]:
+              - button "料金" [ref=e2422] [cursor=pointer]:
+                - generic [ref=e2423]:
+                  - generic [ref=e2424]: 料金
+                  - generic [ref=e2425]:
+                    - img
+            - listitem [ref=e2426]:
+              - button "ロケーション" [ref=e2428] [cursor=pointer]:
+                - generic [ref=e2429]:
+                  - generic [ref=e2430]: ロケーション
+                  - generic [ref=e2431]:
+                    - img
+          - list [ref=e2435]:
+            - listitem [ref=e2436]:
+              - checkbox "Loading..." [disabled]
+              - generic [ref=e2438]: Loading...
+            - listitem [ref=e2439]:
+              - 'checkbox "ユーザー評価 : 8.0+"'
+              - generic [ref=e2441] [cursor=pointer]: "ユーザー評価 : 8.0+"
+        - link "弊社への手数料が検索結果に及ぼす影響について" [ref=e2448] [cursor=pointer]:
+          - /url: https://support.trivago.com/hc/ja/sections/360000014707
+          - generic [ref=e2449]:
+            - img
+          - paragraph [ref=e2450]: 弊社への手数料が検索結果に及ぼす影響について
+    - main [ref=e2454]:
+      - generic [ref=e2457]:
+        - button "ログインまたはアカウントを作成" [ref=e2462] [cursor=pointer]: ログインするとさらにお得
+        - button "閉じる" [ref=e2463] [cursor=pointer]:
+          - generic [ref=e2464]:
+            - img
+          - generic [ref=e2465]: 閉じる
+      - generic [ref=e2466]:
+        - region "絞り込み" [ref=e2469]:
+          - generic [ref=e2470]:
+            - generic [ref=e2471]:
+              - generic [ref=e2472]:
+                - img
+              - heading "絞り込み" [level=3] [ref=e2473]
+            - generic [ref=e2474]:
+              - button "リセット" [disabled] [ref=e2475]:
+                - generic [ref=e2476]:
+                  - img
+                - generic [ref=e2477]: リセット
+              - button "閉じる" [ref=e2478] [cursor=pointer]:
+                - generic [ref=e2479]:
+                  - img
+                - generic [ref=e2480]: 閉じる
+          - list [ref=e2481]:
+            - listitem "ホテルの評価" [ref=e2482]:
+              - generic [ref=e2485]:
+                - heading "ホテルの評価" [level=3] [ref=e2486]
+                - button [ref=e2487] [cursor=pointer]:
+                  - generic [ref=e2489]:
+                    - img
+              - group "ホテルの評価" [ref=e2491]:
+                - generic [ref=e2492]: ホテルの評価
+                - list [ref=e2493]:
+                  - listitem [ref=e2494]:
+                    - generic [ref=e2497] [cursor=pointer]:
+                      - checkbox "5つ星" [ref=e2498]
+                      - generic [ref=e2501]: 5つ星
+                  - listitem [ref=e2502]:
+                    - generic [ref=e2505] [cursor=pointer]:
+                      - checkbox "4つ星" [ref=e2506]
+                      - generic [ref=e2509]: 4つ星
+                  - listitem [ref=e2510]:
+                    - generic [ref=e2513] [cursor=pointer]:
+                      - checkbox "3つ星" [ref=e2514]
+                      - generic [ref=e2517]: 3つ星
+                  - listitem [ref=e2518]:
+                    - generic [ref=e2521] [cursor=pointer]:
+                      - checkbox "2つ星" [ref=e2522]
+                      - generic [ref=e2525]: 2つ星
+                  - listitem [ref=e2526]:
+                    - generic [ref=e2529] [cursor=pointer]:
+                      - checkbox "0～1つ星" [ref=e2530]
+                      - generic [ref=e2533]: 0～1つ星
+              - separator [ref=e2534]
+            - listitem "ユーザー評価" [ref=e2535]:
+              - heading "ユーザー評価" [level=3] [ref=e2537]
+              - list [ref=e2540]:
+                - listitem [ref=e2541]:
+                  - generic [ref=e2542] [cursor=pointer]:
+                    - radio "すべてのユーザー評価" [checked] [ref=e2543]
+                    - text: すべてのユーザー評価
+                - listitem [ref=e2544]:
+                  - generic [ref=e2545] [cursor=pointer]:
+                    - 'radio "大満足 : 8.5+" [ref=e2546]'
+                    - text: "大満足 : 8.5+"
+                - listitem [ref=e2547]:
+                  - generic [ref=e2548] [cursor=pointer]:
+                    - 'radio "満足 : 8+" [ref=e2549]'
+                    - text: "満足 : 8+"
+                - listitem [ref=e2550]:
+                  - generic [ref=e2551] [cursor=pointer]:
+                    - 'radio "良い : 7.5+" [ref=e2552]'
+                    - text: "良い : 7.5+"
+                - listitem [ref=e2553]:
+                  - generic [ref=e2554] [cursor=pointer]:
+                    - 'radio "まあまあ : 7+" [ref=e2555]'
+                    - text: "まあまあ : 7+"
+              - separator [ref=e2556]
+            - listitem "施設タイプ" [ref=e2557]:
+              - heading "施設タイプ" [level=3] [ref=e2559]
+              - generic [ref=e2560]:
+                - generic [ref=e2561]: Loading...
+                - generic [ref=e2562]: Loading...
+                - generic [ref=e2563]: Loading...
+              - separator [ref=e2564]
+            - listitem "スマートフィルター" [ref=e2565]:
+              - generic [ref=e2568]:
+                - generic [ref=e2571]:
+                  - generic [ref=e2572]:
+                    - img
+                  - generic [ref=e2573]: スマートフィルター
+                  - generic [ref=e2574]: ベータ版
+                - generic [ref=e2575]:
+                  - img
+                - button "スマートフィルター" [ref=e2576] [cursor=pointer]
+          - button "検索結果を表示 Loader" [ref=e2578] [cursor=pointer]:
+            - generic [ref=e2579]:
+              - text: 検索結果を表示
+              - generic "Loader" [ref=e2580]
+        - generic [ref=e2584]:
+          - status [ref=e2587]: ロード中
+          - paragraph [ref=e3290]: 各予約サイトからトリバゴに提供される料金と空室状況は、継続的に変化しています。そのためトリバゴでご覧になった情報と同じ内容が、移動先の予約サイトにも表示されているとは限りません。
+    - contentinfo [ref=e3296]:
+      - generic [ref=e3297]:
+        - img "trivago logo" [ref=e3298]
+        - list [ref=e3307]:
+          - listitem [ref=e3308]:
+            - link "Facebook" [ref=e3309] [cursor=pointer]:
+              - /url: https://www.facebook.com/trivago
+              - generic [ref=e3310]:
+                - img
+              - generic [ref=e3311]: Facebook
+          - listitem [ref=e3312]:
+            - link "Twitter" [ref=e3313] [cursor=pointer]:
+              - /url: https://twitter.com/trivago
+              - generic [ref=e3314]:
+                - img
+              - generic [ref=e3315]: Twitter
+          - listitem [ref=e3316]:
+            - link "Instagram" [ref=e3317] [cursor=pointer]:
+              - /url: https://instagram.com/trivago/
+              - generic [ref=e3318]:
+                - img
+              - generic [ref=e3319]: Instagram
+          - listitem [ref=e3320]:
+            - link "Youtube" [ref=e3321] [cursor=pointer]:
+              - /url: https://www.youtube.com/user/trivago
+              - generic [ref=e3322]:
+                - img
+              - generic [ref=e3323]: Youtube
+          - listitem [ref=e3324]:
+            - link "Linkedin" [ref=e3325] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/trivagonv/
+              - generic [ref=e3326]:
+                - img
+              - generic [ref=e3327]: Linkedin
+      - generic [ref=e3328]:
+        - generic [ref=e3329]:
+          - generic [ref=e3331]:
+            - combobox [ref=e3332] [cursor=pointer]:
+              - option "Arab World (العالم العربي)"
+              - option "Argentina"
+              - option "Australia"
+              - option "Austria (Österreich)"
+              - option "Belgium (België)"
+              - option "Brazil (Brasil)"
+              - option "Bulgaria (България)"
+              - option "Canada"
+              - option "Chile"
+              - option "Colombia"
+              - option "Croatia (Hrvatska)"
+              - option "Czechia (Česko)"
+              - option "Denmark (Danmark)"
+              - option "Ecuador"
+              - option "Finland (Suomi)"
+              - option "France"
+              - option "Germany (Deutschland)"
+              - option "Greece (Ελλάδα)"
+              - option "Hong Kong (香港)"
+              - option "Hungary (Magyarország)"
+              - option "India"
+              - option "Indonesia"
+              - option "Ireland"
+              - option "Israel (ישראל)"
+              - option "Italy (Italia)"
+              - option "Japan (日本)" [selected]
+              - option "Korea (한국)"
+              - option "Malaysia"
+              - option "Mexico (México)"
+              - option "Netherlands (Nederland)"
+              - option "New Zealand"
+              - option "Norway (Norge)"
+              - option "Peru (Perú)"
+              - option "Philippines (Pilipinas)"
+              - option "Poland (Polska)"
+              - option "Portugal"
+              - option "Romania (România)"
+              - option "Serbia (Srbija)"
+              - option "Singapore"
+              - option "Slovakia (Slovensko)"
+              - option "Slovenia (Slovenija)"
+              - option "South Africa"
+              - option "Spain (España)"
+              - option "Sweden (Sverige)"
+              - option "Switzerland (Schweiz)"
+              - option "Taiwan (台灣)"
+              - option "Thailand (ประเทศไทย)"
+              - option "Turkey (Türkiye)"
+              - option "UAE"
+              - option "United Kingdom"
+              - option "Uruguay"
+              - option "USA"
+              - option "Vietnam (Việt Nam)"
+            - generic:
+              - img
+          - generic [ref=e3333]:
+            - generic [ref=e3334]:
+              - button "トリバゴとは" [expanded]
+              - list [ref=e3335]:
+                - listitem [ref=e3336]:
+                  - link "トリバゴについて" [ref=e3337] [cursor=pointer]:
+                    - /url: https://company.trivago.com/
+                - listitem [ref=e3338]:
+                  - link "募集職種" [ref=e3339] [cursor=pointer]:
+                    - /url: https://company.trivago.com/open-positions/?gh_src=21d449cf2
+                - listitem [ref=e3340]:
+                  - link "投資家向け広報" [ref=e3341] [cursor=pointer]:
+                    - /url: https://ir.trivago.com/
+                - listitem [ref=e3342]:
+                  - link "プレスセンター" [ref=e3343] [cursor=pointer]:
+                    - /url: https://company.trivago.com/press/
+            - generic [ref=e3344]:
+              - button "弊社の製品" [expanded]
+              - list [ref=e3345]:
+                - listitem [ref=e3346]:
+                  - link "◆無料トリバゴ モバイルアプリのご紹介" [ref=e3347] [cursor=pointer]:
+                    - /url: https://www.trivago.jp/ja/app
+                - listitem [ref=e3348]:
+                  - link "ホテル関係者用トリバゴ" [ref=e3349] [cursor=pointer]:
+                    - /url: https://studio.trivago.com/home
+        - generic [ref=e3351]:
+          - generic [ref=e3352]:
+            - button "規約とポリシー" [expanded]
+            - list [ref=e3353]:
+              - listitem [ref=e3354]:
+                - link "利用規約" [ref=e3355] [cursor=pointer]:
+                  - /url: https://www.trivago.jp/ja/st/ご利用規約
+              - listitem [ref=e3356]:
+                - link "会社概要" [ref=e3357] [cursor=pointer]:
+                  - /url: https://www.trivago.jp/ja/sl/法的事項
+              - listitem [ref=e3358]:
+                - link "プライバシーに関する通知" [ref=e3359] [cursor=pointer]:
+                  - /url: https://www.trivago.jp/ja/sp/プライバシーポリシー
+              - listitem [ref=e3360]:
+                - link "DSA 情報" [ref=e3361] [cursor=pointer]:
+                  - /url: https://company.trivago.com/dsa-information/
+              - listitem [ref=e3362]:
+                - button "Cookieの設定" [ref=e3363] [cursor=pointer]
+              - listitem [ref=e3364]:
+                - link "脆弱性開示プログラム" [ref=e3365] [cursor=pointer]:
+                  - /url: https://vdp.trivago.com
+          - generic [ref=e3366]:
+            - button "サポート" [expanded]
+            - list [ref=e3367]:
+              - listitem [ref=e3368]:
+                - link "ヘルプセンター" [ref=e3369] [cursor=pointer]:
+                  - /url: https://support.trivago.com/hc/ja
+              - listitem [ref=e3370]:
+                - link "トリバゴの詳細" [ref=e3371] [cursor=pointer]:
+                  - /url: https://support.trivago.com/hc/ja/sections/360000014707
+        - generic [ref=e3372]:
+          - generic [ref=e3373]:
+            - heading "ログインして会員限定特典を利用しましょう" [level=2] [ref=e3374]
+            - list [ref=e3375]:
+              - listitem [ref=e3376]:
+                - generic [ref=e3377]:
+                  - img
+                - generic [ref=e3378]: 体験をカスタマイズ
+              - listitem [ref=e3379]:
+                - generic [ref=e3380]:
+                  - img
+                - generic [ref=e3381]: ロイヤルティ料金プランと会員価格
+            - button "ログイン" [ref=e3382] [cursor=pointer]:
+              - generic [ref=e3383]: ログイン
+          - generic [ref=e3384]:
+            - paragraph [ref=e3385]:
+              - strong [ref=e3386]: trivago N.V.
+              - text: ", Kesselstraße 5 – 7, 40221 Düsseldorf, Germany"
+            - paragraph [ref=e3387]: Copyright 2026 trivago | All rights reserved.
+  - alert [ref=e1511]: OMO7 Yokohama by Hoshino Resorts | 横浜, 国内のホテルを検索 & お得に予約【トリバゴ】
+  - complementary
