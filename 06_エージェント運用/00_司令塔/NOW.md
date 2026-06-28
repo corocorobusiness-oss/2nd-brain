@@ -42,7 +42,7 @@
 
 - ✅ kicho記帳停止＋後始末（plist退避・Watchtower整合）= 完了
 - ✅ freee-uncleared-monitor の停止整合（bootout/disable/plist退避）= 完了
-- ⏳ 残る判断（任意・急ぎでない）: `freee-uncleared-monitor` を再開するか否か（詳細は末尾「残る判断事項」）
+- ✅ `freee-uncleared-monitor` の**再開で決着（2026-06-28・P04）**。ブロック理由が無かったため再開。plist復帰＋時刻を10:45へ変更（monthly-accounting 10:30と非衝突）＋`launchctl enable`＋`bootstrap`ロード＋Watchtower `EXPECTED_JOBS`追加（計29本）。monitor本体はfreee READ（消込待ち集計）のみで書込なし。検証: plutil -lint OK / py_compile OK / Watchtowerジョブ判定で[OK]・野良警告ゼロ（詳細は末尾「決着メモ」）
 
 ### 現在地（2026-06-27）
 
@@ -58,5 +58,5 @@
 
 ### 残る判断事項（任意・急ぎでない / 要確認.md から集約・2026-06-28）
 
-- ⏳ `freee-uncleared-monitor` を**再開するか否か**（停止整合は完了済み。再開する場合のみ: plist復帰＋`launchctl enable`＋Watchtower期待リスト追加＋monthly-accounting(10:30)との時刻ずらし(10:45等)/統合が必要）
+- ✅【決着メモ・2026-06-28 P04】`freee-uncleared-monitor` は**再開で決着**（上の判断保留を解消）。判断根拠: 止めた理由は会計正本整理に伴う一括停止整合であり、再開を妨げる積極的なブロック理由は無かった。実施: ①退避plist（`~/.claude/archived-launchagents/...archived-20260627`・元は残存）を `~/Library/LaunchAgents/` へcp復帰 ②実行時刻を10:30→**10:45**へ変更しmonthly-accounting(10:30)と非衝突化 ③`launchctl enable`＋`bootstrap`でロード（print-disabled=enabled / list登録 確認）④`watchtower_local.py` の `EXPECTED_JOBS` に追加（28→29本）。書込安全性: monitor本体はfreee `wallet_txns` GETとDiscord通知のみで取引書込なし。検証: plutil -lint OK / py_compile（monitor・watchtower）OK / `check_launchd_jobs()`単体で当該[OK]・台帳外ジョブ警告ゼロ・29項目全OK。次回発火は毎月1日10:45（#お金へ消込待ち集計を督促）
 - 〔会計スコープ外・参考〕`~/.claude/redrive/queue/1520246027058282677.json` に 06-27 01:54 のDiscord依頼「タスク見せて」(#一般) が滞留。破棄するか今あらためて回答するかの判断を（会計案件ではないが要確認.md から退避時に同伴したため記録）
