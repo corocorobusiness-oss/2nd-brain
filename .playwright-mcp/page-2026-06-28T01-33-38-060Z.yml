@@ -1,0 +1,1282 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e3]:
+    - link "毎月20日から！じゃらんのお得な10日間" [ref=e7] [cursor=pointer]:
+      - /url: /theme/otoku_10days/?ccnt=otoku10days_260620_02
+      - img "毎月20日から！じゃらんのお得な10日間" [ref=e8]
+    - generic [ref=e10]:
+      - paragraph [ref=e11]: 国内旅行・海外旅行や宿・ホテルの宿泊予約はじゃらんnet ～日本最大級の宿・ホテル予約サイト～
+      - list [ref=e12]:
+        - listitem [ref=e13]:
+          - link "サイトのご利用方法" [ref=e14] [cursor=pointer]:
+            - /url: /jalan/doc/howto/01goriyou.html
+        - listitem [ref=e15]:
+          - link "ヘルプ/問い合わせ" [ref=e16] [cursor=pointer]:
+            - /url: https://help.jalan.net/s/
+    - generic [ref=e18]:
+      - paragraph [ref=e19]:
+        - link "じゃらん PRODUCED BY RECRUIT" [ref=e20] [cursor=pointer]:
+          - /url: /
+          - img "じゃらん PRODUCED BY RECRUIT" [ref=e21]
+      - generic [ref=e22]:
+        - generic [ref=e23]:
+          - paragraph [ref=e24]: こんにちは♪ゲストさん
+          - list [ref=e25]:
+            - listitem [ref=e26]:
+              - link "ログイン" [ref=e27] [cursor=pointer]:
+                - /url: /ji/pc/jit6001LoginBack.do?TEMP1=smlCdParam%2B140202%23lrgCdParam%2B140200%23distCd%2B01%23corpLogo%2B%23yadNo%2B341758%23ikisakiHtml%2B%2Fikisaki%2Fmap%2Fkanagawa%2F%23screenId%2BUWW3001%23crawlerFlgParam%2B%23lrgName%2B%89%A1%95%6C%23returnUIFlg%2B0%23kenCdParam%2B140000%23agtWebFlg%2B%23kenName%2B%90%5F%93%DE%90%EC%8C%A7%23yadName%2B%82%6E%82%6C%82%6E%82%56%89%A1%95%6C%81%40%82%82%82%99%81%40%90%AF%96%EC%83%8A%83%5D%81%5B%83%67%23dispScreenId%2BUWW3001%23targetPgId%2BUWW3001%23smlName%2B%89%A1%95%6C%81%45%83%78%83%43%83%47%83%8A%83%41%23yadoSEOName%2B%82%6E%82%6C%82%6E%82%56%89%A1%95%6C%81%40%82%82%82%99%81%40%90%AF%96%EC%83%8A%83%5D%81%5B%83%67&TEMP4=LEVEL_K&TEMP5=https://www.jalan.net/uw/common/actualUrlRewrite3001.do
+            - listitem [ref=e28]:
+              - link "会員登録" [ref=e29] [cursor=pointer]:
+                - /url: /ji/pc/jit2001.do?FNC=JIPFN004
+          - link "ステージプログラム お得な特典をみる" [ref=e30] [cursor=pointer]:
+            - /url: /theme/jalan_stage_program/index.html?ccnt=global_navi
+            - paragraph [ref=e31]:
+              - img "ステージプログラム" [ref=e32]
+              - generic [ref=e33]: お得な特典をみる
+          - list [ref=e34]:
+            - listitem [ref=e35]:
+              - link "予約照会・変更・キャンセル" [ref=e36] [cursor=pointer]:
+                - /url: /jalan/doc/howto/03yoyaku.html
+            - listitem [ref=e37]:
+              - link "マイページ" [ref=e38] [cursor=pointer]:
+                - /url: /uw/uwp8000/uww8010.do
+        - navigation [ref=e41]:
+          - list [ref=e42]:
+            - listitem [ref=e43]:
+              - link "宿・ホテル" [ref=e44] [cursor=pointer]:
+                - /url: /?ccnt=global_navi
+            - listitem [ref=e45]:
+              - link "じゃらんパック （交通＋宿泊）" [ref=e46] [cursor=pointer]:
+                - /url: /dp/?ccnt=global_navi
+                - text: じゃらんパック
+                - text: （交通＋宿泊）
+            - listitem [ref=e47]:
+              - link "遊び・体験" [ref=e48] [cursor=pointer]:
+                - /url: /activity/?ccnt=global_navi
+            - listitem [ref=e49]:
+              - link "観光ガイド" [ref=e50] [cursor=pointer]:
+                - /url: /travel/?ccnt=global_navi
+            - listitem [ref=e51]:
+              - link "レンタカー" [ref=e52] [cursor=pointer]:
+                - /url: /rentacar/?vos=cpjalaprocap0170608001&ccnt=global_navi
+            - listitem [ref=e53]:
+              - link "航空券" [ref=e54] [cursor=pointer]:
+                - /url: /airticket/?ccnt=global_navi
+            - listitem [ref=e55]:
+              - link "ゴルフ" [ref=e56] [cursor=pointer]:
+                - /url: https://golf-jalan.net/?vos=cpjgfprocap0121113001
+            - listitem [ref=e57]:
+              - link "海外 航空券" [ref=e58] [cursor=pointer]:
+                - /url: /kaigai/air/?ccnt=global_navi
+                - text: 海外
+                - generic [ref=e59]: 航空券
+            - listitem [ref=e60]:
+              - link "海外 航空券+ホテル" [ref=e61] [cursor=pointer]:
+                - /url: /kaigai/air_hotel/?ccnt=global_navi
+                - text: 海外
+                - generic [ref=e62]: 航空券+ホテル
+    - generic [ref=e65]:
+      - paragraph [ref=e66]: 宿・ホテル
+      - list [ref=e67]:
+        - listitem [ref=e68]:
+          - link "出張ビジネス" [ref=e69] [cursor=pointer]:
+            - /url: /biz/?ccnt=global_navi
+        - listitem [ref=e70]:
+          - link "温泉・露天" [ref=e71] [cursor=pointer]:
+            - /url: /onsen/?ccnt=global_navi
+        - listitem [ref=e72]:
+          - link "高級宿" [ref=e73] [cursor=pointer]:
+            - /url: /highclass/?ccnt=global_navi
+        - listitem [ref=e74]:
+          - link "日帰り・デイユース" [ref=e75] [cursor=pointer]:
+            - /url: /dayuse/?ccnt=global_navi
+    - list [ref=e78]:
+      - listitem [ref=e79]:
+        - link "ポイントがたまる・つかえる dポイント Pontaポイント" [ref=e80] [cursor=pointer]:
+          - /url: https://point.recruit.co.jp/member/relExpCont?siteCd=JLN
+          - text: ポイントがたまる・つかえる
+          - img "dポイント" [ref=e81]
+          - img "Pontaポイント" [ref=e82]
+  - generic [ref=e85]:
+    - link "宿・ホテル" [ref=e86] [cursor=pointer]:
+      - /url: //www.jalan.net
+    - text: ">"
+    - link "神奈川県" [ref=e87] [cursor=pointer]:
+      - /url: //www.jalan.net/ikisaki/map/kanagawa/
+    - text: ">"
+    - link "横浜" [ref=e88] [cursor=pointer]:
+      - /url: /140000/LRG_140200/
+    - text: ">"
+    - link "横浜・ベイエリア" [ref=e89] [cursor=pointer]:
+      - /url: /140000/LRG_140200/SML_140202/
+    - text: "> ＯＭＯ７横浜 ｂｙ 星野リゾート"
+  - generic [ref=e90]:
+    - generic [ref=e91]:
+      - generic [ref=e92]:
+        - generic [ref=e93]:
+          - generic [ref=e94]:
+            - link "ＯＭＯ７横浜 ｂｙ 星野リゾート" [ref=e95] [cursor=pointer]:
+              - /url: javascript:staticChangeTab('1', 'form','', '', '', '', '','341758');
+            - generic [ref=e96]:
+              - paragraph [ref=e98]: JR根岸線「関内」駅徒歩1分、横浜市営地下鉄ブルーライン「関内」駅徒歩1分、
+              - list [ref=e99]:
+                - listitem [ref=e100]: ハイクラス
+                - listitem
+                - listitem
+              - paragraph
+          - list [ref=e102]:
+            - listitem [ref=e103]:
+              - link "空室検索・予約" [ref=e104] [cursor=pointer]:
+                - /url: javascript:staticChangeTab('2', 'form', '&ccnt=yads1', '', '', '', '','341758');
+            - listitem [ref=e105]:
+              - generic [ref=e106] [cursor=pointer]: クリップする
+        - list [ref=e108]:
+          - listitem [ref=e109]:
+            - generic [ref=e110]: 基本情報
+          - listitem [ref=e111]:
+            - link "料金・宿泊プラン" [ref=e112] [cursor=pointer]:
+              - /url: https://www.jalan.net/yad341758/plan/?distCd=01&roomCount=1&dateUndecided=1&roomCrack=200000&screenId=UWW3001&smlCd=140202&stayCount=1&adultNum=2&yadNo=341758&ccnt=yads2
+              - generic [ref=e113]: 料金・宿泊プラン
+          - listitem [ref=e114]:
+            - link "写真" [ref=e115] [cursor=pointer]:
+              - /url: https://www.jalan.net/yad341758/photo/?distCd=01&roomCount=1&dateUndecided=1&roomCrack=200000&screenId=UWW3001&smlCd=140202&stayCount=1&adultNum=2&yadNo=341758&ccnt=lean-photo-tab
+              - generic [ref=e116]: 写真
+          - listitem [ref=e117]:
+            - link "地図・ アクセス" [ref=e118] [cursor=pointer]:
+              - /url: https://www.jalan.net/yad341758/access/?distCd=01&roomCount=1&dateUndecided=1&roomCrack=200000&screenId=UWW3001&smlCd=140202&stayCount=1&adultNum=2&yadNo=341758&ccnt=lean-map-tab
+              - generic [ref=e119]:
+                - text: 地図・
+                - text: アクセス
+          - listitem [ref=e120]:
+            - link "お知らせ・ ブログ" [ref=e121] [cursor=pointer]:
+              - /url: https://www.jalan.net/yad341758/topics/?distCd=01&roomCount=1&dateUndecided=1&roomCrack=200000&screenId=UWW3001&smlCd=140202&stayCount=1&adultNum=2&yadNo=341758
+              - generic [ref=e122]:
+                - text: お知らせ・
+                - text: ブログ
+          - listitem [ref=e123]:
+            - link "周辺観光" [ref=e124] [cursor=pointer]:
+              - /url: https://www.jalan.net/yad341758/kankou/?distCd=01&roomCount=1&dateUndecided=1&roomCrack=200000&screenId=UWW3001&smlCd=140202&stayCount=1&adultNum=2&yadNo=341758
+              - generic [ref=e125]: 周辺観光
+          - listitem [ref=e126]:
+            - link "クーポン 一覧 配布中" [ref=e127] [cursor=pointer]:
+              - /url: https://www.jalan.net/yad341758/coupon/?distCd=01&roomCount=1&dateUndecided=1&roomCrack=200000&screenId=UWW3001&smlCd=140202&stayCount=1&adultNum=2&yadNo=341758
+              - generic [ref=e128]:
+                - text: クーポン
+                - text: 一覧
+              - generic [ref=e129]: 配布中
+          - listitem [ref=e130]:
+            - link "クチコミ (72件)" [ref=e131] [cursor=pointer]:
+              - /url: https://www.jalan.net/yad341758/kuchikomi/?distCd=01&roomCount=1&dateUndecided=1&roomCrack=200000&screenId=UWW3001&smlCd=140202&stayCount=1&adultNum=2&yadNo=341758&ccnt=lean-kuchikomi-tab
+              - generic [ref=e132]:
+                - text: クチコミ
+                - emphasis [ref=e133]: (72件)
+        - list [ref=e135]:
+          - listitem [ref=e136]: 施設概要
+          - listitem [ref=e137]:
+            - link "部屋" [ref=e138] [cursor=pointer]:
+              - /url: https://www.jalan.net/yad341758/room/?distCd=01&roomCount=1&dateUndecided=1&roomCrack=200000&screenId=UWW3001&smlCd=140202&stayCount=1&adultNum=2&yadNo=341758&yadoDetailMode=3
+          - listitem [ref=e139]:
+            - link "風呂・温泉・その他" [ref=e140] [cursor=pointer]:
+              - /url: https://www.jalan.net/yad341758/shisetu/?distCd=01&roomCount=1&dateUndecided=1&roomCrack=200000&screenId=UWW3001&smlCd=140202&stayCount=1&adultNum=2&yadNo=341758&yadoDetailMode=4
+          - listitem [ref=e141]:
+            - link "レストラン・食事" [ref=e142] [cursor=pointer]:
+              - /url: https://www.jalan.net/yad341758/food/?distCd=01&roomCount=1&dateUndecided=1&roomCrack=200000&screenId=UWW3001&smlCd=140202&stayCount=1&adultNum=2&yadNo=341758&yadoDetailMode=5
+          - listitem [ref=e143]:
+            - link "朝食" [ref=e144] [cursor=pointer]:
+              - /url: https://www.jalan.net/yad341758/morning/?distCd=01&roomCount=1&dateUndecided=1&roomCrack=200000&screenId=UWW3001&smlCd=140202&stayCount=1&adultNum=2&yadNo=341758&pageNm=morning
+          - listitem [ref=e145]:
+            - link "ペット" [ref=e146] [cursor=pointer]:
+              - /url: https://www.jalan.net/yad341758/pet/?distCd=01&roomCount=1&dateUndecided=1&roomCrack=200000&screenId=UWW3001&smlCd=140202&stayCount=1&adultNum=2&yadNo=341758&pageNm=pet
+          - listitem [ref=e147]:
+            - link "イチオシ紹介" [ref=e148] [cursor=pointer]:
+              - /url: https://www.jalan.net/yad341758/features/?distCd=01&roomCount=1&dateUndecided=1&roomCrack=200000&screenId=UWW3001&smlCd=140202&stayCount=1&adultNum=2&yadNo=341758&pageNm=features
+        - heading "ＯＭＯ７横浜 ｂｙ 星野リゾートの施設概要" [level=1] [ref=e149]
+      - generic [ref=e150]:
+        - generic [ref=e151]:
+          - generic [ref=e155]:
+            - generic [ref=e156]:
+              - generic [ref=e157]:
+                - text: 空室情報
+                - generic [ref=e159] [cursor=pointer]:  
+              - generic [ref=e160]:
+                - generic: 
+                - generic [ref=e161]: 2026年6月
+                - generic [ref=e164] [cursor=pointer]: 
+            - table [ref=e165]:
+              - rowgroup [ref=e166]:
+                - row "月 火 水 木 金 土 日" [ref=e167]:
+                  - columnheader "月" [ref=e168]
+                  - columnheader "火" [ref=e169]
+                  - columnheader "水" [ref=e170]
+                  - columnheader "木" [ref=e171]
+                  - columnheader "金" [ref=e172]
+                  - columnheader "土" [ref=e173]
+                  - columnheader "日" [ref=e174]
+              - rowgroup [ref=e175]:
+                - row "1 2 3 4 5 6 7" [ref=e176]:
+                  - cell "1" [ref=e177]:
+                    - generic [ref=e178]: "1"
+                  - cell "2" [ref=e179]:
+                    - generic [ref=e180]: "2"
+                  - cell "3" [ref=e181]:
+                    - generic [ref=e182]: "3"
+                  - cell "4" [ref=e183]:
+                    - generic [ref=e184]: "4"
+                  - cell "5" [ref=e185]:
+                    - generic [ref=e186]: "5"
+                  - cell "6" [ref=e187]:
+                    - generic [ref=e188]: "6"
+                  - cell "7" [ref=e189]:
+                    - generic [ref=e190]: "7"
+                - row "8 9 10 11 12 13 14" [ref=e191]:
+                  - cell "8" [ref=e192]:
+                    - generic [ref=e193]: "8"
+                  - cell "9" [ref=e194]:
+                    - generic [ref=e195]: "9"
+                  - cell "10" [ref=e196]:
+                    - generic [ref=e197]: "10"
+                  - cell "11" [ref=e198]:
+                    - generic [ref=e199]: "11"
+                  - cell "12" [ref=e200]:
+                    - generic [ref=e201]: "12"
+                  - cell "13" [ref=e202]:
+                    - generic [ref=e203]: "13"
+                  - cell "14" [ref=e204]:
+                    - generic [ref=e205]: "14"
+                - row "15 16 17 18 19 20 21" [ref=e206]:
+                  - cell "15" [ref=e207]:
+                    - generic [ref=e208]: "15"
+                  - cell "16" [ref=e209]:
+                    - generic [ref=e210]: "16"
+                  - cell "17" [ref=e211]:
+                    - generic [ref=e212]: "17"
+                  - cell "18" [ref=e213]:
+                    - generic [ref=e214]: "18"
+                  - cell "19" [ref=e215]:
+                    - generic [ref=e216]: "19"
+                  - cell "20" [ref=e217]:
+                    - generic [ref=e218]: "20"
+                  - cell "21" [ref=e219]:
+                    - generic [ref=e220]: "21"
+                - row "22 23 24 25 26 27 28 ○" [ref=e221]:
+                  - cell "22" [ref=e222]:
+                    - generic [ref=e223]: "22"
+                  - cell "23" [ref=e224]:
+                    - generic [ref=e225]: "23"
+                  - cell "24" [ref=e226]:
+                    - generic [ref=e227]: "24"
+                  - cell "25" [ref=e228]:
+                    - generic [ref=e229]: "25"
+                  - cell "26" [ref=e230]:
+                    - generic [ref=e231]: "26"
+                  - cell "27" [ref=e232]:
+                    - generic [ref=e233]: "27"
+                  - cell "28 ○" [ref=e234] [cursor=pointer]:
+                    - generic [ref=e235]: "28"
+                    - emphasis [ref=e237]: ○
+                - row "29 ○ 30 ○" [ref=e238]:
+                  - cell "29 ○" [ref=e239] [cursor=pointer]:
+                    - generic [ref=e240]: "29"
+                    - emphasis [ref=e242]: ○
+                  - cell "30 ○" [ref=e243] [cursor=pointer]:
+                    - generic [ref=e244]: "30"
+                    - emphasis [ref=e246]: ○
+                  - cell [ref=e247]
+                  - cell [ref=e248]
+                  - cell [ref=e249]
+                  - cell [ref=e250]
+                  - cell [ref=e251]
+                - row "※1泊時の空室情報となります。連泊の場合は日付をご指定ください。" [ref=e252]:
+                  - cell "※1泊時の空室情報となります。連泊の場合は日付をご指定ください。" [ref=e253]
+          - generic [ref=e255]:
+            - paragraph [ref=e256]:
+              - generic [ref=e257]:  
+              - text: 宿泊プランを探す
+            - generic [ref=e258]:
+              - generic [ref=e259]:
+                - paragraph [ref=e260]: チェックイン
+                - generic [ref=e262]:
+                  - textbox [ref=e263] [cursor=pointer]: 2026/06/29
+                  - text: 
+                - paragraph [ref=e264]: チェックアウト
+                - generic [ref=e266]:
+                  - textbox [ref=e267] [cursor=pointer]: 2026/06/30
+                  - text: 
+                - generic [ref=e268] [cursor=pointer]: 日付未定
+              - generic [ref=e270]:
+                - paragraph [ref=e271]: 部屋数・人数
+                - combobox [ref=e273] [cursor=pointer]:
+                  - option "1部屋" [selected]
+                  - option "2部屋"
+                  - option "3部屋"
+                  - option "4部屋"
+                  - option "5部屋"
+                  - option "6部屋"
+                  - option "7部屋"
+                  - option "8部屋"
+                  - option "9部屋"
+                  - option "10部屋"
+                - generic [ref=e274]:
+                  - paragraph [ref=e275]: 大人
+                  - paragraph [ref=e276]:
+                    - combobox [ref=e277] [cursor=pointer]:
+                      - option "1名"
+                      - option "2名" [selected]
+                      - option "3名"
+                      - option "4名"
+                      - option "5名"
+                      - option "6名"
+                      - option "7名"
+                      - option "8名"
+                      - option "9名～"
+                  - paragraph [ref=e278]: 子供
+                  - paragraph [ref=e279]:
+                    - link "0名" [ref=e280] [cursor=pointer]:
+                      - /url: "#noMove"
+              - button "再検索" [ref=e281] [cursor=pointer]
+          - paragraph [ref=e282]:
+            - link " 検索条件とアイコンについて" [ref=e283] [cursor=pointer]:
+              - /url: //www.jalan.net/jalan/doc/howto/sibori_exp.html
+              - generic [ref=e284]: 
+              - text: 検索条件とアイコンについて
+        - generic [ref=e285]:
+          - list [ref=e287]:
+            - generic [ref=e290]:
+              - listitem [ref=e291]:
+                - img [ref=e292]
+                - generic [ref=e294]: 5/5 外観：ハマっ子に親しまれた旧横浜市庁舎の景観を継承し、レガシーホテルとして活用しています。
+              - listitem [ref=e295]:
+                - img [ref=e296]
+                - generic [ref=e298]: 1/5 OMOベース（レセプション）：旧議会棟本会議場の円形照明を再解釈した照明がエントランスを彩ります。
+              - listitem [ref=e299]:
+                - paragraph:
+                  - img "HAMAKAZEテラス：浜風を感じるルーフトップテラスでは、横浜・関内の街を見渡し、のんびり寛げる特別な空間" [ref=e300]
+                - generic [ref=e302]: 2/5 HAMAKAZEテラス：浜風を感じるルーフトップテラスでは、横浜・関内の街を見渡し、のんびり寛げる特別な空間
+              - listitem [ref=e303]:
+                - img [ref=e304]
+                - generic [ref=e306]: 3/5 かたりばルーム：おこもりスペースとゆったり寛げるソファを備えた上質なお部屋。2名でもグループでも快適
+              - listitem [ref=e307]:
+                - img [ref=e308]
+                - generic [ref=e310]: 4/5 【朝食ビュッフェ】Yokohama Morning Specialties
+              - listitem [ref=e311]:
+                - img [ref=e312]
+                - generic [ref=e314]: 5/5 外観：ハマっ子に親しまれた旧横浜市庁舎の景観を継承し、レガシーホテルとして活用しています。
+              - listitem [ref=e315]:
+                - img [ref=e316]
+                - generic [ref=e318]: 1/5 OMOベース（レセプション）：旧議会棟本会議場の円形照明を再解釈した照明がエントランスを彩ります。
+              - listitem [ref=e319]:
+                - img [ref=e320]
+                - generic [ref=e322]: 2/5 HAMAKAZEテラス：浜風を感じるルーフトップテラスでは、横浜・関内の街を見渡し、のんびり寛げる特別な空間
+              - listitem [ref=e323]:
+                - img [ref=e324]
+                - generic [ref=e326]: 3/5 かたりばルーム：おこもりスペースとゆったり寛げるソファを備えた上質なお部屋。2名でもグループでも快適
+              - listitem [ref=e327]:
+                - img [ref=e328]
+                - generic [ref=e330]: 4/5 【朝食ビュッフェ】Yokohama Morning Specialties
+              - listitem [ref=e331]:
+                - img [ref=e332]
+                - generic [ref=e334]: 5/5 外観：ハマっ子に親しまれた旧横浜市庁舎の景観を継承し、レガシーホテルとして活用しています。
+              - listitem [ref=e335]:
+                - img [ref=e336]
+                - generic [ref=e338]: 1/5 OMOベース（レセプション）：旧議会棟本会議場の円形照明を再解釈した照明がエントランスを彩ります。
+              - listitem [ref=e339]:
+                - img [ref=e340]
+                - generic [ref=e342]: 2/5 HAMAKAZEテラス：浜風を感じるルーフトップテラスでは、横浜・関内の街を見渡し、のんびり寛げる特別な空間
+              - listitem [ref=e343]:
+                - img [ref=e344]
+                - generic [ref=e346]: 3/5 かたりばルーム：おこもりスペースとゆったり寛げるソファを備えた上質なお部屋。2名でもグループでも快適
+              - listitem [ref=e347]:
+                - img [ref=e348]
+                - generic [ref=e350]: 4/5 【朝食ビュッフェ】Yokohama Morning Specialties
+              - listitem [ref=e351]:
+                - img [ref=e352]
+                - generic [ref=e354]: 5/5 外観：ハマっ子に親しまれた旧横浜市庁舎の景観を継承し、レガシーホテルとして活用しています。
+              - listitem [ref=e355]:
+                - img [ref=e356]
+                - generic [ref=e358]: 1/5 OMOベース（レセプション）：旧議会棟本会議場の円形照明を再解釈した照明がエントランスを彩ります。
+              - listitem [ref=e359]:
+                - img [ref=e360]
+                - generic [ref=e362]: 2/5 HAMAKAZEテラス：浜風を感じるルーフトップテラスでは、横浜・関内の街を見渡し、のんびり寛げる特別な空間
+              - listitem [ref=e363]:
+                - img [ref=e364]
+                - generic [ref=e366]: 3/5 かたりばルーム：おこもりスペースとゆったり寛げるソファを備えた上質なお部屋。2名でもグループでも快適
+              - listitem [ref=e367]:
+                - img [ref=e368]
+                - generic [ref=e370]: 4/5 【朝食ビュッフェ】Yokohama Morning Specialties
+              - listitem [ref=e371]:
+                - img [ref=e372]
+                - generic [ref=e374]: 5/5 外観：ハマっ子に親しまれた旧横浜市庁舎の景観を継承し、レガシーホテルとして活用しています。
+          - generic [ref=e376]:
+            - img "OMOベーカリー：カレー伝来の地になぞらえて5種類のこだわりカレーパンをご用意しています。" [ref=e378] [cursor=pointer]
+            - img "ライブラリーラウンジ" [ref=e380] [cursor=pointer]
+            - img "このさき、ゆくさき" [ref=e382] [cursor=pointer]
+            - img "【朝食ビュッフェ】Yokohama Morning Specialties" [ref=e384] [cursor=pointer]
+          - generic [ref=e385]:
+            - list [ref=e386]:
+              - listitem [ref=e387]:
+                - link "部屋の写真" [ref=e388] [cursor=pointer]:
+                  - /url: javascript:void(0);
+                  - paragraph [ref=e389]: 部屋の写真
+                  - img [ref=e391]
+              - listitem [ref=e392]:
+                - link "風呂の写真" [ref=e393] [cursor=pointer]:
+                  - /url: javascript:void(0);
+                  - paragraph [ref=e394]: 風呂の写真
+                  - img [ref=e396]
+              - listitem [ref=e397]:
+                - link "料理の写真" [ref=e398] [cursor=pointer]:
+                  - /url: javascript:void(0);
+                  - paragraph [ref=e399]: 料理の写真
+                  - img [ref=e401]
+              - listitem [ref=e402]:
+                - link "施設の写真" [ref=e403] [cursor=pointer]:
+                  - /url: javascript:void(0);
+                  - paragraph [ref=e404]: 施設の写真
+                  - img [ref=e406]
+            - paragraph [ref=e407]:
+              - link "すべての写真をみる" [ref=e408] [cursor=pointer]:
+                - /url: https://www.jalan.net/yad341758/photo/?stayCount=1&roomCount=1&dateUndecided=1&adultNum=2&distCd=01&smlCd=140202&yadNo=341758&screenId=UWW3001&ccnt=lean-photo-link-lean
+          - generic [ref=e411]:
+            - term [ref=e412]: 2026年4月開業！村野藤吾建築で横浜を満喫できるレガシーホテル
+            - definition [ref=e413]:
+              - paragraph [ref=e414]: 中華街まで徒歩5分。建築家 村野藤吾氏が手がけた旧横浜市庁舎を継承し、クラシックとモダンが融合したレガシーホテルです。開放的なルーフトップテラスで横浜発祥の文化や食を堪能し、心弾む滞在を。
+              - paragraph [ref=e415]:
+                - link "宿泊のご予約はこちらから" [ref=e416] [cursor=pointer]:
+                  - /url: https://www.jalan.net/yad341758/plan/?stayCount=1&roomCount=1&dateUndecided=1&adultNum=2&distCd=01&smlCd=140202&yadNo=341758&screenId=UWW3001&ccnt=yads4
+          - generic [ref=e417]:
+            - generic [ref=e418]:
+              - generic [ref=e419]:
+                - term [ref=e420]: クチコミ総合
+                - definition [ref=e421]:
+                  - generic [ref=e422]: "4.5"
+                  - generic [ref=e435]: (72件)
+              - paragraph [ref=e436]:
+                - generic [ref=e437]:
+                  - emphasis [ref=e438]: 清潔感
+                  - text: 高評価
+                - generic [ref=e439]:
+                  - emphasis [ref=e440]: 朝食
+                  - text: 高評価
+                - generic [ref=e441]:
+                  - emphasis [ref=e442]: 接客
+                  - text: 高評価
+                - generic [ref=e443]:
+                  - emphasis [ref=e444]: 部屋
+                  - text: 高評価
+                - generic [ref=e445]:
+                  - emphasis [ref=e446]: 風呂
+                  - text: 高評価
+            - generic [ref=e450]:
+              - term [ref=e451]: 「清潔感」を高評価したクチコミ
+              - definition [ref=e452]:
+                - list [ref=e453]:
+                  - listitem [ref=e454]:
+                    - paragraph [ref=e455]: 学生時代の友人達と宿泊しました。 やぐらスイートは広々していて四人でもかなり余裕があり良かったです。 テーブルに座ってずっとおしゃべりしてました笑 若干、灯りが暗めなので、もう少し明るいといいなぁと思いましたが 問題ない範囲です。 はまかぜテラスに行ってみましたが、横浜スタジアムがしっかり見えて、野球好きな方はかなり良いんじゃないでしょうか。 夕食は中華街まで行きましたが、近くて良かったです。 今回は素泊まりにしましたが、次回は素敵なカフェで朝ごはんをいただきたいと思います。
+                    - paragraph [ref=e456]: ゆうたくママさん / 女性 / 40代
+                    - generic [ref=e457]:
+                      - link "続きをみる" [ref=e458] [cursor=pointer]:
+                        - /url: javascript:void(0)
+                      - text: "| | | | |"
+                  - listitem [ref=e459]:
+                    - paragraph [ref=e460]: 部屋の中はデザインが素敵で、部屋自体はそんなに広くはないのですが、大満足でした！朝食のビュッフェも美味しかったです！また利用したいと思います！
+                    - paragraph [ref=e461]: ずーさん / 女性 / 30代
+                    - generic [ref=e462]:
+                      - link "続きをみる" [ref=e463] [cursor=pointer]:
+                        - /url: javascript:void(0)
+                      - text: "| | | | |"
+            - paragraph [ref=e464]:
+              - link "クチコミ一覧をみる" [ref=e466] [cursor=pointer]:
+                - /url: javascript:staticChangeTab('13', 'form','&activeSort=7&ccnt=lean-kuchikomi-link-1','','','','','341758');
+          - table [ref=e468]:
+            - rowgroup [ref=e469]:
+              - row "宿からのお知らせ" [ref=e470]:
+                - cell "宿からのお知らせ" [ref=e471]:
+                  - heading "宿からのお知らせ" [level=3] [ref=e472]
+          - table [ref=e474]:
+            - rowgroup [ref=e475]:
+              - row "【宿泊施設ブログ】愛犬と楽しむ、初夏の大阪旅 オススメ 【宿泊施設ブログ】朝食ビュッフェ 「Yokohama Morning Specialties」 オススメ 【宿泊施設ブログ】横浜スタジアムを望む「HAMAKAZEテラス」 オススメ 【宿泊施設ブログ】ローカルリズムナイト「気分上々、ハマナイト」 オススメ 【宿泊施設ブログ】2026年4月21日開業！唯一無二のレガシーホテル オススメ" [ref=e476]:
+                - cell "【宿泊施設ブログ】愛犬と楽しむ、初夏の大阪旅 オススメ 【宿泊施設ブログ】朝食ビュッフェ 「Yokohama Morning Specialties」 オススメ 【宿泊施設ブログ】横浜スタジアムを望む「HAMAKAZEテラス」 オススメ 【宿泊施設ブログ】ローカルリズムナイト「気分上々、ハマナイト」 オススメ 【宿泊施設ブログ】2026年4月21日開業！唯一無二のレガシーホテル オススメ" [ref=e477]:
+                  - list [ref=e478]:
+                    - listitem [ref=e479]:
+                      - link "【宿泊施設ブログ】愛犬と楽しむ、初夏の大阪旅" [ref=e480] [cursor=pointer]:
+                        - /url: /yad341758/blog/entry0006707267.html?stayCount=1&roomCount=1&dateUndecided=1&adultNum=2&distCd=01&yadNo=341758&smlCd=140202&screenId=UWW3091&aid=0006707267
+                      - generic [ref=e481]: オススメ
+                    - listitem [ref=e482]:
+                      - link "【宿泊施設ブログ】朝食ビュッフェ 「Yokohama Morning Specialties」" [ref=e483] [cursor=pointer]:
+                        - /url: /yad341758/blog/entry0006682588.html?stayCount=1&roomCount=1&dateUndecided=1&adultNum=2&distCd=01&yadNo=341758&smlCd=140202&screenId=UWW3091&aid=0006682588
+                      - generic [ref=e484]: オススメ
+                    - listitem [ref=e485]:
+                      - link "【宿泊施設ブログ】横浜スタジアムを望む「HAMAKAZEテラス」" [ref=e486] [cursor=pointer]:
+                        - /url: /yad341758/blog/entry0006682590.html?stayCount=1&roomCount=1&dateUndecided=1&adultNum=2&distCd=01&yadNo=341758&smlCd=140202&screenId=UWW3091&aid=0006682590
+                      - generic [ref=e487]: オススメ
+                    - listitem [ref=e488]:
+                      - link "【宿泊施設ブログ】ローカルリズムナイト「気分上々、ハマナイト」" [ref=e489] [cursor=pointer]:
+                        - /url: /yad341758/blog/entry0006682595.html?stayCount=1&roomCount=1&dateUndecided=1&adultNum=2&distCd=01&yadNo=341758&smlCd=140202&screenId=UWW3091&aid=0006682595
+                      - generic [ref=e490]: オススメ
+                    - listitem [ref=e491]:
+                      - link "【宿泊施設ブログ】2026年4月21日開業！唯一無二のレガシーホテル" [ref=e492] [cursor=pointer]:
+                        - /url: /yad341758/blog/entry0006597808.html?stayCount=1&roomCount=1&dateUndecided=1&adultNum=2&distCd=01&yadNo=341758&smlCd=140202&screenId=UWW3091&aid=0006597808
+                      - generic [ref=e493]: オススメ
+          - table [ref=e495]:
+            - rowgroup [ref=e496]:
+              - row "アクセス・パーキング 情報の見方・説明" [ref=e497]:
+                - cell "アクセス・パーキング" [ref=e498]:
+                  - heading "アクセス・パーキング" [level=3] [ref=e499]
+                - cell "情報の見方・説明" [ref=e500]:
+                  - link "情報の見方・説明" [ref=e502] [cursor=pointer]:
+                    - /url: //www.jalan.net/jalan/doc/howto/yadoyougo.html
+          - table [ref=e504]:
+            - rowgroup [ref=e505]:
+              - row "住所 神奈川県横浜市中区港町１丁目１番１ 大きな地図をみる" [ref=e506]:
+                - rowheader "住所" [ref=e507]
+                - cell "神奈川県横浜市中区港町１丁目１番１ 大きな地図をみる" [ref=e508]:
+                  - text: 神奈川県横浜市中区港町１丁目１番１
+                  - link [ref=e510] [cursor=pointer]:
+                    - /url: javascript:staticChangeTab('30', 'form','&ccnt=lean-map-link-1','','','','','341758' );
+                    - img [ref=e511]
+                  - link "大きな地図をみる" [ref=e513] [cursor=pointer]:
+                    - /url: javascript:staticChangeTab('30', 'form','&ccnt=lean-map-link-2','','','','','341758' );
+              - row "アクセス JR根岸線「関内」駅徒歩1分、横浜市営地下鉄ブルーライン「関内」駅徒歩1分、 駅から徒歩5分以内 コンビニまで徒歩5分以内 新横浜： 車以外／JRもしくは横浜市営地下鉄ブルーライン「関内」駅南口 徒歩1分 羽田空港： 車以外／京浜急行 空港線「横浜」駅→JR根岸線「関内」駅南口 徒歩1分" [ref=e514]:
+                - rowheader "アクセス" [ref=e515]
+                - cell "JR根岸線「関内」駅徒歩1分、横浜市営地下鉄ブルーライン「関内」駅徒歩1分、 駅から徒歩5分以内 コンビニまで徒歩5分以内 新横浜： 車以外／JRもしくは横浜市営地下鉄ブルーライン「関内」駅南口 徒歩1分 羽田空港： 車以外／京浜急行 空港線「横浜」駅→JR根岸線「関内」駅南口 徒歩1分" [ref=e516]:
+                  - generic [ref=e517]: JR根岸線「関内」駅徒歩1分、横浜市営地下鉄ブルーライン「関内」駅徒歩1分、
+                  - generic [ref=e518]:
+                    - generic [ref=e519]: 駅から徒歩5分以内
+                    - generic [ref=e520]: コンビニまで徒歩5分以内
+                  - table [ref=e522]:
+                    - rowgroup [ref=e523]:
+                      - row "新横浜： 車以外／JRもしくは横浜市営地下鉄ブルーライン「関内」駅南口 徒歩1分 羽田空港： 車以外／京浜急行 空港線「横浜」駅→JR根岸線「関内」駅南口 徒歩1分" [ref=e524]:
+                        - cell "新横浜： 車以外／JRもしくは横浜市営地下鉄ブルーライン「関内」駅南口 徒歩1分 羽田空港： 車以外／京浜急行 空港線「横浜」駅→JR根岸線「関内」駅南口 徒歩1分" [ref=e525]:
+                          - text: 新横浜：
+                          - text: 車以外／JRもしくは横浜市営地下鉄ブルーライン「関内」駅南口 徒歩1分
+                          - text: 羽田空港：
+                          - text: 車以外／京浜急行 空港線「横浜」駅→JR根岸線「関内」駅南口 徒歩1分
+              - row "パーキング 有り（2,000円／24時間）" [ref=e526]:
+                - rowheader "パーキング" [ref=e527]
+                - cell "有り（2,000円／24時間）" [ref=e528]
+              - row "アクセス・パーキングに関する補足 ※ 車 ⁄ BASEGATE横浜関内 敷地内駐車場（タワー棟1階） 料金：24時間2000円 営業時間：7:30～23:00 ＊宿泊者限定料金のため駐車券をフロントにご持参ください。 ＊営業時間外や満車の場合、敷地外駐車場をご利用可能です。詳細は公式サイトをご確認ください。" [ref=e529]:
+                - rowheader "アクセス・パーキングに関する補足" [ref=e530]
+                - cell "※ 車 ⁄ BASEGATE横浜関内 敷地内駐車場（タワー棟1階） 料金：24時間2000円 営業時間：7:30～23:00 ＊宿泊者限定料金のため駐車券をフロントにご持参ください。 ＊営業時間外や満車の場合、敷地外駐車場をご利用可能です。詳細は公式サイトをご確認ください。" [ref=e531]:
+                  - text: ※ 車 ⁄ BASEGATE横浜関内 敷地内駐車場（タワー棟1階）
+                  - text: 料金：24時間2000円
+                  - text: 営業時間：7:30～23:00
+                  - text: ＊宿泊者限定料金のため駐車券をフロントにご持参ください。
+                  - text: ＊営業時間外や満車の場合、敷地外駐車場をご利用可能です。詳細は公式サイトをご確認ください。
+          - table [ref=e533]:
+            - rowgroup [ref=e534]:
+              - row "部屋・部屋施設 情報の見方・説明" [ref=e535]:
+                - cell "部屋・部屋施設" [ref=e536]:
+                  - heading "部屋・部屋施設" [level=3] [ref=e537]
+                - cell "情報の見方・説明" [ref=e538]:
+                  - link "情報の見方・説明" [ref=e540] [cursor=pointer]:
+                    - /url: //www.jalan.net/jalan/doc/howto/yadoyougo.html
+          - list [ref=e542]:
+            - listitem [ref=e543] [cursor=pointer]:
+              - img "かたりばルーム：おこもりスペースとゆったり寛げるソファを備えた上質なお部屋。2名でもグループでも快適" [ref=e545]
+            - listitem [ref=e546] [cursor=pointer]:
+              - img "やぐらルーム：特徴的なやぐら寝台はベッドを清潔なまま保てるため、夜も心地よくお休みいただけます。" [ref=e548]
+            - listitem [ref=e549] [cursor=pointer]:
+              - img "やぐらスイート：十分な広さと高さのダイニングとソファを備え、ご家族やグループ利用におすすめのお部屋。" [ref=e551]
+            - listitem [ref=e552] [cursor=pointer]:
+              - link "部屋の写真":
+                - /url: javascript:void(0);
+                - paragraph [ref=e553]: 部屋の写真
+                - img [ref=e555]
+          - table [ref=e557]:
+            - rowgroup [ref=e558]:
+              - row "洋室 和室 和洋室 その他 総部屋数 276室 0室 0室 0室 276室" [ref=e559]:
+                - cell "洋室 和室 和洋室 その他 総部屋数 276室 0室 0室 0室 276室" [ref=e560]:
+                  - table [ref=e562]:
+                    - rowgroup [ref=e563]:
+                      - row "洋室 和室 和洋室 その他 総部屋数" [ref=e564]:
+                        - columnheader "洋室" [ref=e565]
+                        - columnheader "和室" [ref=e566]
+                        - columnheader "和洋室" [ref=e567]
+                        - columnheader "その他" [ref=e568]
+                        - columnheader "総部屋数" [ref=e569]
+                      - row "276室 0室 0室 0室 276室" [ref=e570]:
+                        - cell "276室" [ref=e571]
+                        - cell "0室" [ref=e572]
+                        - cell "0室" [ref=e573]
+                        - cell "0室" [ref=e574]
+                        - cell "276室" [ref=e575]
+              - row [ref=e576]:
+                - cell [ref=e577]:
+                  - paragraph [ref=e578]
+              - row "標準的な部屋設備 全室バストイレ・全室シャワー・全室冷暖房・テレビ・空の冷蔵庫 インターネット関連 全室対応 [接続方法] 無線LAN [PC貸し出し] なし [インターネット接続] 無料" [ref=e579]:
+                - cell "標準的な部屋設備 全室バストイレ・全室シャワー・全室冷暖房・テレビ・空の冷蔵庫 インターネット関連 全室対応 [接続方法] 無線LAN [PC貸し出し] なし [インターネット接続] 無料" [ref=e580]:
+                  - table [ref=e582]:
+                    - rowgroup [ref=e583]:
+                      - row "標準的な部屋設備 全室バストイレ・全室シャワー・全室冷暖房・テレビ・空の冷蔵庫" [ref=e584]:
+                        - rowheader "標準的な部屋設備" [ref=e585]
+                        - cell "全室バストイレ・全室シャワー・全室冷暖房・テレビ・空の冷蔵庫" [ref=e586]
+                      - row "インターネット関連 全室対応 [接続方法] 無線LAN [PC貸し出し] なし [インターネット接続] 無料" [ref=e587]:
+                        - rowheader "インターネット関連" [ref=e588]
+                        - cell "全室対応 [接続方法] 無線LAN [PC貸し出し] なし [インターネット接続] 無料" [ref=e589]:
+                          - text: 全室対応
+                          - text: "[接続方法] 無線LAN"
+                          - text: "[PC貸し出し] なし"
+                          - text: "[インターネット接続] 無料"
+          - table [ref=e591]:
+            - rowgroup [ref=e592]:
+              - row "温泉・風呂 情報の見方・説明" [ref=e593]:
+                - cell "温泉・風呂" [ref=e594]:
+                  - heading "温泉・風呂" [level=3] [ref=e595]
+                - cell "情報の見方・説明" [ref=e596]:
+                  - link "情報の見方・説明" [ref=e598] [cursor=pointer]:
+                    - /url: //www.jalan.net/jalan/doc/howto/yadoyougo.html
+          - list [ref=e600]:
+            - listitem [ref=e601] [cursor=pointer]:
+              - img "バスタブ" [ref=e603]
+            - listitem [ref=e604] [cursor=pointer]:
+              - link "風呂の写真":
+                - /url: javascript:void(0);
+                - paragraph [ref=e605]: 風呂の写真
+                - img [ref=e607]
+          - table [ref=e609]:
+            - rowgroup [ref=e610]:
+              - row "温泉 無し" [ref=e611]:
+                - rowheader "温泉" [ref=e612]
+                - cell "無し" [ref=e613]
+          - table [ref=e615]:
+            - rowgroup [ref=e616]:
+              - row "アメニティ・施設・サービス 情報の見方・説明" [ref=e617]:
+                - cell "アメニティ・施設・サービス" [ref=e618]:
+                  - heading "アメニティ・施設・サービス" [level=3] [ref=e619]
+                - cell "情報の見方・説明" [ref=e620]:
+                  - link "情報の見方・説明" [ref=e622] [cursor=pointer]:
+                    - /url: //www.jalan.net/jalan/doc/howto/yadoyougo.html
+          - list [ref=e624]:
+            - listitem [ref=e625] [cursor=pointer]:
+              - img "OMOベース：村野藤吾建築である旧横浜市庁舎を活かしたレガシーホテルを体感できます。" [ref=e627]
+            - listitem [ref=e628] [cursor=pointer]:
+              - img "OMOベース（レセプション）：旧議会棟本会議場の円形照明を再解釈した照明がエントランスを彩ります。" [ref=e630]
+            - listitem [ref=e631] [cursor=pointer]:
+              - img "HAMAKAZEテラス：浜風を感じるルーフトップテラスでは、横浜・関内の街を見渡し、のんびり寛げる特別な空間" [ref=e633]
+            - listitem [ref=e634] [cursor=pointer]:
+              - link "施設の写真":
+                - /url: javascript:void(0);
+                - paragraph [ref=e635]: 施設の写真
+                - img [ref=e637]
+          - table [ref=e639]:
+            - rowgroup [ref=e640]:
+              - row "○ ハンドタオル ○ ボディソープ ○ ドライヤー ○ 温水洗浄トイレ" [ref=e641]:
+                - cell "○" [ref=e642]
+                - cell "ハンドタオル" [ref=e643]
+                - cell "○" [ref=e644]
+                - cell "ボディソープ" [ref=e645]
+                - cell "○" [ref=e646]
+                - cell "ドライヤー" [ref=e647]
+                - cell "○" [ref=e648]
+                - cell "温水洗浄トイレ" [ref=e649]
+              - row "○ 歯ブラシ・歯磨き粉 ○ 石けん ○ 羽毛布団 ○ くし・ブラシ" [ref=e650]:
+                - cell "○" [ref=e651]
+                - cell "歯ブラシ・歯磨き粉" [ref=e652]
+                - cell "○" [ref=e653]
+                - cell "石けん" [ref=e654]
+                - cell "○" [ref=e655]
+                - cell "羽毛布団" [ref=e656]
+                - cell "○" [ref=e657]
+                - cell "くし・ブラシ" [ref=e658]
+              - row "○ バスタオル × 浴衣 ○ 髭剃り ○ バストイレ別" [ref=e659]:
+                - cell "○" [ref=e660]
+                - cell "バスタオル" [ref=e661]
+                - cell "×" [ref=e662]
+                - cell "浴衣" [ref=e663]
+                - cell "○" [ref=e664]
+                - cell "髭剃り" [ref=e665]
+                - cell "○" [ref=e666]
+                - cell "バストイレ別" [ref=e667]
+              - row "○ シャンプー (ﾘﾝｽｲﾝｼｬﾝﾌﾟｰ含む) ○ パジャマ × シャワーキャップ" [ref=e668]:
+                - cell "○" [ref=e669]
+                - cell "シャンプー (ﾘﾝｽｲﾝｼｬﾝﾌﾟｰ含む)" [ref=e670]:
+                  - text: シャンプー
+                  - text: (ﾘﾝｽｲﾝｼｬﾝﾌﾟｰ含む)
+                - cell "○" [ref=e671]
+                - cell "パジャマ" [ref=e672]
+                - cell "×" [ref=e673]
+                - cell "シャワーキャップ" [ref=e674]
+                - cell [ref=e675]
+                - cell [ref=e676]
+              - row "○ リンス × バスローブ ○ 綿棒" [ref=e677]:
+                - cell "○" [ref=e678]
+                - cell "リンス" [ref=e679]
+                - cell "×" [ref=e680]
+                - cell "バスローブ" [ref=e681]
+                - cell "○" [ref=e682]
+                - cell "綿棒" [ref=e683]
+                - cell [ref=e684]
+                - cell [ref=e685]
+              - row "○ パジャマ(ズボンつき) × パジャマ(シャツ) ○ シャワー独立" [ref=e686]:
+                - cell "○" [ref=e687]
+                - cell "パジャマ(ズボンつき)" [ref=e688]
+                - cell "×" [ref=e689]
+                - cell "パジャマ(シャツ)" [ref=e690]
+                - cell "○" [ref=e691]
+                - cell "シャワー独立" [ref=e692]
+                - cell [ref=e693]
+                - cell [ref=e694]
+          - table [ref=e696]:
+            - rowgroup [ref=e697]:
+              - row "施設内容 ラウンジ・禁煙ルーム・製氷機" [ref=e698]:
+                - rowheader "施設内容" [ref=e699]
+                - cell "ラウンジ・禁煙ルーム・製氷機" [ref=e700]
+              - row "サービス&レジャー （手配含む） ペットOK（有料）(ケージ持込/部屋・ラウンジ持込OK)" [ref=e701]:
+                - rowheader "サービス&レジャー （手配含む）" [ref=e702]:
+                  - text: サービス&レジャー
+                  - text: （手配含む）
+                - cell "ペットOK（有料）(ケージ持込/部屋・ラウンジ持込OK)" [ref=e703]
+              - row "現地で利用可能なクレジットカード ＪＣＢ・ＶＩＳＡ・マスター・ＡＭＥＸ・ダイナース ※オンラインカード決済で利用可能なクレジットカードとは異なる場合がございます。" [ref=e704]:
+                - rowheader "現地で利用可能なクレジットカード" [ref=e705]
+                - cell "ＪＣＢ・ＶＩＳＡ・マスター・ＡＭＥＸ・ダイナース ※オンラインカード決済で利用可能なクレジットカードとは異なる場合がございます。" [ref=e706]:
+                  - text: ＪＣＢ・ＶＩＳＡ・マスター・ＡＭＥＸ・ダイナース
+                  - text: ※オンラインカード決済で利用可能なクレジットカードとは異なる場合がございます。
+              - row "領収書（インボイス制度対応） 適格請求書（インボイス）の要件を満たした領収書を発行します。 ※適格請求書発行事業者の登録状態については、国税庁公表サイトを確認するか、宿泊施設にご確認ください。" [ref=e707]:
+                - rowheader "領収書（インボイス制度対応）" [ref=e708]
+                - cell "適格請求書（インボイス）の要件を満たした領収書を発行します。 ※適格請求書発行事業者の登録状態については、国税庁公表サイトを確認するか、宿泊施設にご確認ください。" [ref=e709]:
+                  - text: 適格請求書（インボイス）の要件を満たした領収書を発行します。
+                  - text: ※適格請求書発行事業者の登録状態については、国税庁公表サイトを確認するか、宿泊施設にご確認ください。
+              - row "標準的な チェックイン時間 15:00～ ※宿泊プランごとにチェックイン時間の設定がある場合は、そちらが優先されます。" [ref=e710]:
+                - rowheader "標準的な チェックイン時間" [ref=e711]:
+                  - text: 標準的な
+                  - text: チェックイン時間
+                - cell "15:00～ ※宿泊プランごとにチェックイン時間の設定がある場合は、そちらが優先されます。" [ref=e712]
+              - row "標準的な チェックアウト時間 ～11:00 ※宿泊プランごとにチェックアウト時間の設定がある場合は、そちらが優先されます。" [ref=e713]:
+                - rowheader "標準的な チェックアウト時間" [ref=e714]:
+                  - text: 標準的な
+                  - text: チェックアウト時間
+                - cell "～11:00 ※宿泊プランごとにチェックアウト時間の設定がある場合は、そちらが優先されます。" [ref=e715]
+          - table [ref=e717]:
+            - rowgroup [ref=e718]:
+              - row "バリアフリー対応 情報の見方・説明" [ref=e719]:
+                - cell "バリアフリー対応" [ref=e720]:
+                  - heading "バリアフリー対応" [level=3] [ref=e721]
+                - cell "情報の見方・説明" [ref=e722]:
+                  - link "情報の見方・説明" [ref=e724] [cursor=pointer]:
+                    - /url: //www.jalan.net/jalan/doc/howto/yadoyougo.html
+          - table [ref=e726]:
+            - rowgroup [ref=e727]:
+              - row "× 玄関前の車椅子用スロープ ○ 車椅子の貸し出し" [ref=e728]:
+                - cell "×" [ref=e729]
+                - cell "玄関前の車椅子用スロープ" [ref=e730]
+                - cell "○" [ref=e731]
+                - cell "車椅子の貸し出し" [ref=e732]
+              - row "△ 館内の通路・階段に手すり ○ バリアフリールーム" [ref=e733]:
+                - cell "△" [ref=e734]
+                - cell "館内の通路・階段に手すり" [ref=e735]
+                - cell "○" [ref=e736]
+                - cell "バリアフリールーム" [ref=e737]
+              - row "× 大浴場に手すり × 館内通路に点字ブロック" [ref=e738]:
+                - cell "×" [ref=e739]
+                - cell "大浴場に手すり" [ref=e740]
+                - cell "×" [ref=e741]
+                - cell "館内通路に点字ブロック" [ref=e742]
+              - row "× 介助者なしでの館内車椅子移動 × 館内案内に点字表示" [ref=e743]:
+                - cell "×" [ref=e744]
+                - cell "介助者なしでの館内車椅子移動" [ref=e745]
+                - cell "×" [ref=e746]
+                - cell "館内案内に点字表示" [ref=e747]
+              - row "○ フロア移動時のエレベーター利用 ○ 非常用館内放送設備" [ref=e748]:
+                - cell "○" [ref=e749]
+                - cell "フロア移動時のエレベーター利用" [ref=e750]
+                - cell "○" [ref=e751]
+                - cell "非常用館内放送設備" [ref=e752]
+              - row "× 駐車場の優先スペース設置 × フロント従業員が手話で対応" [ref=e753]:
+                - cell "×" [ref=e754]
+                - cell "駐車場の優先スペース設置" [ref=e755]
+                - cell "×" [ref=e756]
+                - cell "フロント従業員が手話で対応" [ref=e757]
+              - row "○ 車椅子対応共用トイレ × 耳の不自由な方向けの警報ランプ対応客室" [ref=e758]:
+                - cell "○" [ref=e759]
+                - cell "車椅子対応共用トイレ" [ref=e760]
+                - cell "×" [ref=e761]
+                - cell "耳の不自由な方向けの警報ランプ対応客室" [ref=e762]
+          - table [ref=e764]:
+            - rowgroup [ref=e765]:
+              - row "○：対応あり / △：一部対応あり / ×：対応なし ※宿泊施設によって、バリアフリー設備内容や、対応できるサービス範囲が異なります。ご不便なく安心してご利用いただくために、あらかじめ宿泊施設へ直接ご確認ください。" [ref=e766]:
+                - cell "○：対応あり / △：一部対応あり / ×：対応なし ※宿泊施設によって、バリアフリー設備内容や、対応できるサービス範囲が異なります。ご不便なく安心してご利用いただくために、あらかじめ宿泊施設へ直接ご確認ください。" [ref=e767]:
+                  - text: ○：対応あり / △：一部対応あり / ×：対応なし
+                  - text: ※宿泊施設によって、バリアフリー設備内容や、対応できるサービス範囲が異なります。ご不便なく安心してご利用いただくために、あらかじめ宿泊施設へ直接ご確認ください。
+          - table [ref=e769]:
+            - rowgroup [ref=e770]:
+              - row "クチコミ評価 クチコミ評価の見方・説明" [ref=e771]:
+                - cell "クチコミ評価" [ref=e772]:
+                  - heading "クチコミ評価" [level=3] [ref=e773]
+                - cell "クチコミ評価の見方・説明" [ref=e774]:
+                  - link "クチコミ評価の見方・説明" [ref=e776] [cursor=pointer]:
+                    - /url: //www.jalan.net/jalan/doc/howto/kuchikomi.html
+          - generic [ref=e779]:
+            - generic [ref=e780]:
+              - term [ref=e781]: 総合
+              - definition [ref=e782]:
+                - generic [ref=e784]: "4.5"
+            - generic [ref=e797]:
+              - generic [ref=e798]:
+                - term [ref=e799]: クチコミ
+                - definition [ref=e800]:
+                  - generic [ref=e801]: "72"
+                  - text: 件
+              - link "クチコミ投稿を読む" [ref=e803] [cursor=pointer]:
+                - /url: https://www.jalan.net/yad341758/kuchikomi/?stayCount=1&roomCount=1&dateUndecided=1&adultNum=2&distCd=01&smlCd=140202&yadNo=341758&screenId=UWW3001&ccnt=lean-kuchikomi-link-2
+          - generic [ref=e804]:
+            - table [ref=e805]:
+              - rowgroup [ref=e806]:
+                - row "部屋 4.4 風呂 4.3 料理（朝食） 4.5" [ref=e807]:
+                  - rowheader "部屋" [ref=e808]
+                  - cell "4.4" [ref=e809]
+                  - cell [ref=e810]
+                  - rowheader "風呂" [ref=e823]
+                  - cell "4.3" [ref=e824]
+                  - cell [ref=e825]
+                  - rowheader "料理（朝食）" [ref=e838]
+                  - cell "4.5" [ref=e839]
+                  - cell [ref=e840]
+                - row "料理（夕食） - 接客・サービス 4.5 清潔感 4.8" [ref=e853]:
+                  - rowheader "料理（夕食）" [ref=e854]
+                  - cell "-" [ref=e855]
+                  - cell [ref=e856]
+                  - rowheader "接客・サービス" [ref=e857]
+                  - cell "4.5" [ref=e858]
+                  - cell [ref=e859]
+                  - rowheader "清潔感" [ref=e872]
+                  - cell "4.8" [ref=e873]
+                  - cell [ref=e874]
+            - paragraph [ref=e887]: （「普通＝3.0」が評価時の基準です）
+          - generic [ref=e888]:
+            - paragraph [ref=e889]: 宿泊のご予約はこちらから
+            - link "料金・宿泊プラン一覧" [ref=e890] [cursor=pointer]:
+              - /url: https://www.jalan.net/yad341758/plan/?stayCount=1&roomCount=1&dateUndecided=1&adultNum=2&distCd=01&smlCd=140202&yadNo=341758&screenId=UWW3001&ccnt=yads5
+            - paragraph [ref=e891]: 宿番号：341758
+            - generic [ref=e892]:
+              - link "宿メルマガ登録" [ref=e893] [cursor=pointer]:
+                - /url: https://www.jalan.net/uw/uwp3900/uww3901.do?yadNo=341758
+              - link "メールで送る" [ref=e894] [cursor=pointer]:
+                - /url: https://www.jalan.net/uw/uwp7100/uww7101.do?yadNo=341758&afCd=
+          - generic [ref=e896]:
+            - generic [ref=e897]:
+              - heading "この宿をみた人は他にこんな宿をみています" [level=3] [ref=e898]
+              - paragraph [ref=e899]: ※ご指定の検索条件に合致しない宿が表示される場合がございます。
+            - generic [ref=e903]:
+              - link [ref=e905] [cursor=pointer]:
+                - /url: /yad339603/?screenId=UWW3001&smlCd=140202&distCd=01
+                - generic [ref=e908]:
+                  - heading [level=4] [ref=e909]: ホテルプラム (HOTEL PLUMM) 横浜
+                  - generic [ref=e910]: "4.5"
+                  - paragraph [ref=e913]:
+                    - generic [ref=e914]: 1泊 大人2名 合計(税込)
+                    - text: 6,800円～ 1名 3,400円～
+                  - paragraph [ref=e915]: 【ＪＲ・私鉄／横浜駅】西口出口、【横浜市営地下鉄／横浜駅】９番出口より徒歩7分。
+              - link [ref=e917] [cursor=pointer]:
+                - /url: /yad340325/?screenId=UWW3001&smlCd=140202&distCd=01
+                - generic [ref=e920]:
+                  - heading [level=4] [ref=e921]: ダイワロイネットホテル横浜関内
+                  - generic [ref=e922]: "4.5"
+                  - paragraph [ref=e925]:
+                    - generic [ref=e926]: 1泊 大人2名 合計(税込)
+                    - text: 8,360円～ 1名 4,180円～
+                  - paragraph [ref=e927]: JR「関内駅」北口より徒歩約3分／市営地下鉄ブルーライン「伊勢佐木長者町駅」3番出口徒歩約3分
+              - link [ref=e929] [cursor=pointer]:
+                - /url: /yad344255/?screenId=UWW3001&smlCd=140202&distCd=01
+                - generic [ref=e932]:
+                  - heading [level=4] [ref=e933]: 【ナビオス横浜】みなとみらい×赤レンガ☆360度極上夜景☆
+                  - generic [ref=e934]: "4.2"
+                  - paragraph [ref=e937]:
+                    - generic [ref=e938]: 1泊 大人2名 合計(税込)
+                    - text: 10,700円～ 1名 5,350円～
+                  - paragraph [ref=e939]: JR桜木町駅下車徒歩10分、MM21線馬車道駅下車徒歩3分。首都高みなとみらいICより5分。
+              - link [ref=e941] [cursor=pointer]:
+                - /url: /yad347270/?screenId=UWW3001&smlCd=140202&distCd=01
+                - generic [ref=e944]:
+                  - heading [level=4] [ref=e945]: リッチモンドホテル横浜馬車道
+                  - generic [ref=e946]: "4.4"
+                  - paragraph [ref=e949]:
+                    - generic [ref=e950]: 1泊 大人2名 合計(税込)
+                    - text: 8,540円～ 1名 4,270円～
+                  - paragraph [ref=e951]: ＪＲ関内駅北口徒歩５分、横浜市営地下鉄関内駅９番出口より徒歩１分、ＭＭ線馬車道駅５番出口より徒歩３分
+              - link "ＪＲ東日本ホテルメッツ 横浜 4.4 1泊 大人2名 合計(税込) 8,800円～ 1名 4,400円～ 横浜駅 きた西改札口より徒歩約３分" [ref=e953] [cursor=pointer]:
+                - /url: /yad307794/?screenId=UWW3001&smlCd=140202&distCd=01
+                - generic [ref=e956]:
+                  - heading "ＪＲ東日本ホテルメッツ 横浜" [level=4] [ref=e957]
+                  - generic [ref=e958]: "4.4"
+                  - paragraph [ref=e961]:
+                    - generic [ref=e962]: 1泊 大人2名 合計(税込)
+                    - text: 8,800円～
+                    - text: 1名 4,400円～
+                  - paragraph [ref=e963]: 横浜駅 きた西改札口より徒歩約３分
+              - link "スーパーホテル横浜・関内 4.5 1泊 大人2名 合計(税込) 8,900円～ 1名 4,450円～ ★地下鉄・関内駅/8分（1番出口★JR・関内駅/約8分（南口）★みなとみらい線・日本大通り駅/約5分（3番出口" [ref=e965] [cursor=pointer]:
+                - /url: /yad319565/?screenId=UWW3001&smlCd=140202&distCd=01
+                - generic [ref=e968]:
+                  - heading "スーパーホテル横浜・関内" [level=4] [ref=e969]
+                  - generic [ref=e970]: "4.5"
+                  - paragraph [ref=e973]:
+                    - generic [ref=e974]: 1泊 大人2名 合計(税込)
+                    - text: 8,900円～
+                    - text: 1名 4,450円～
+                  - paragraph [ref=e975]: ★地下鉄・関内駅/8分（1番出口★JR・関内駅/約8分（南口）★みなとみらい線・日本大通り駅/約5分（3番出口
+              - link "横浜桜木町ワシントンホテル 4.2 1泊 大人2名 合計(税込) 11,100円～ 1名 5,550円～ JR線桜木町駅 南改札東口徒歩1分・市営地下鉄桜木町駅 北1口徒歩2分・みなとみらい線馬車道駅徒歩３分" [ref=e977] [cursor=pointer]:
+                - /url: /yad322644/?screenId=UWW3001&smlCd=140202&distCd=01
+                - generic [ref=e980]:
+                  - heading "横浜桜木町ワシントンホテル" [level=4] [ref=e981]
+                  - generic [ref=e982]: "4.2"
+                  - paragraph [ref=e985]:
+                    - generic [ref=e986]: 1泊 大人2名 合計(税込)
+                    - text: 11,100円～
+                    - text: 1名 5,550円～
+                  - paragraph [ref=e987]: JR線桜木町駅 南改札東口徒歩1分・市営地下鉄桜木町駅 北1口徒歩2分・みなとみらい線馬車道駅徒歩３分
+              - link "ローズホテル横浜 4.3 1泊 大人2名 合計(税込) 12,000円～ 1名 6,000円～ みなとみらい線 元町中華街駅2番出口徒歩約2分。JR石川町駅北口徒歩約10分。首都高速新山下ICより車で約5分" [ref=e989] [cursor=pointer]:
+                - /url: /yad326825/?screenId=UWW3001&smlCd=140202&distCd=01
+                - generic [ref=e992]:
+                  - heading "ローズホテル横浜" [level=4] [ref=e993]
+                  - generic [ref=e994]: "4.3"
+                  - paragraph [ref=e997]:
+                    - generic [ref=e998]: 1泊 大人2名 合計(税込)
+                    - text: 12,000円～
+                    - text: 1名 6,000円～
+                  - paragraph [ref=e999]: みなとみらい線 元町中華街駅2番出口徒歩約2分。JR石川町駅北口徒歩約10分。首都高速新山下ICより車で約5分
+              - link [ref=e1001] [cursor=pointer]:
+                - /url: /yad328766/?screenId=UWW3001&smlCd=140202&distCd=01
+                - generic [ref=e1004]:
+                  - heading [level=4] [ref=e1005]: ＯＭＯ５横浜馬車道 ｂｙ 星野リゾート
+                  - generic [ref=e1006]: "4.6"
+                  - paragraph [ref=e1009]:
+                    - generic [ref=e1010]: 1泊 大人2名 合計(税込)
+                    - text: 21,600円～ 1名 10,800円～
+                  - paragraph [ref=e1011]: みなとみらい線 馬車道駅直結／JR線 桜木町駅より徒歩８分
+              - link [ref=e1013] [cursor=pointer]:
+                - /url: /yad336041/?screenId=UWW3001&smlCd=140202&distCd=01
+                - generic [ref=e1016]:
+                  - heading [level=4] [ref=e1017]: 横浜ベイホテル東急
+                  - generic [ref=e1018]: "4.6"
+                  - paragraph [ref=e1021]:
+                    - generic [ref=e1022]: 1泊 大人2名 合計(税込)
+                    - text: 20,160円～ 1名 10,080円～
+                  - paragraph [ref=e1023]: MM線みなとみらい駅徒歩1分。JR・地下鉄桜木町駅徒歩10分。首都高速横羽線みなとみらい出口2分
+              - link [ref=e1025] [cursor=pointer]:
+                - /url: /yad339603/?screenId=UWW3001&smlCd=140202&distCd=01
+                - generic [ref=e1028]:
+                  - heading [level=4] [ref=e1029]: ホテルプラム (HOTEL PLUMM) 横浜
+                  - generic [ref=e1030]: "4.5"
+                  - paragraph [ref=e1033]:
+                    - generic [ref=e1034]: 1泊 大人2名 合計(税込)
+                    - text: 6,800円～ 1名 3,400円～
+                  - paragraph [ref=e1035]: 【ＪＲ・私鉄／横浜駅】西口出口、【横浜市営地下鉄／横浜駅】９番出口より徒歩7分。
+              - link [ref=e1037] [cursor=pointer]:
+                - /url: /yad340325/?screenId=UWW3001&smlCd=140202&distCd=01
+                - generic [ref=e1040]:
+                  - heading [level=4] [ref=e1041]: ダイワロイネットホテル横浜関内
+                  - generic [ref=e1042]: "4.5"
+                  - paragraph [ref=e1045]:
+                    - generic [ref=e1046]: 1泊 大人2名 合計(税込)
+                    - text: 8,360円～ 1名 4,180円～
+                  - paragraph [ref=e1047]: JR「関内駅」北口より徒歩約3分／市営地下鉄ブルーライン「伊勢佐木長者町駅」3番出口徒歩約3分
+              - link [ref=e1049] [cursor=pointer]:
+                - /url: /yad344255/?screenId=UWW3001&smlCd=140202&distCd=01
+                - generic [ref=e1052]:
+                  - heading [level=4] [ref=e1053]: 【ナビオス横浜】みなとみらい×赤レンガ☆360度極上夜景☆
+                  - generic [ref=e1054]: "4.2"
+                  - paragraph [ref=e1057]:
+                    - generic [ref=e1058]: 1泊 大人2名 合計(税込)
+                    - text: 10,700円～ 1名 5,350円～
+                  - paragraph [ref=e1059]: JR桜木町駅下車徒歩10分、MM21線馬車道駅下車徒歩3分。首都高みなとみらいICより5分。
+              - link [ref=e1061] [cursor=pointer]:
+                - /url: /yad347270/?screenId=UWW3001&smlCd=140202&distCd=01
+                - generic [ref=e1064]:
+                  - heading [level=4] [ref=e1065]: リッチモンドホテル横浜馬車道
+                  - generic [ref=e1066]: "4.4"
+                  - paragraph [ref=e1069]:
+                    - generic [ref=e1070]: 1泊 大人2名 合計(税込)
+                    - text: 8,540円～ 1名 4,270円～
+                  - paragraph [ref=e1071]: ＪＲ関内駅北口徒歩５分、横浜市営地下鉄関内駅９番出口より徒歩１分、ＭＭ線馬車道駅５番出口より徒歩３分
+              - link [ref=e1073] [cursor=pointer]:
+                - /url: /yad307794/?screenId=UWW3001&smlCd=140202&distCd=01
+                - generic [ref=e1076]:
+                  - heading [level=4] [ref=e1077]: ＪＲ東日本ホテルメッツ 横浜
+                  - generic [ref=e1078]: "4.4"
+                  - paragraph [ref=e1081]:
+                    - generic [ref=e1082]: 1泊 大人2名 合計(税込)
+                    - text: 8,800円～ 1名 4,400円～
+                  - paragraph [ref=e1083]: 横浜駅 きた西改札口より徒歩約３分
+              - link [ref=e1085] [cursor=pointer]:
+                - /url: /yad319565/?screenId=UWW3001&smlCd=140202&distCd=01
+                - generic [ref=e1088]:
+                  - heading [level=4] [ref=e1089]: スーパーホテル横浜・関内
+                  - generic [ref=e1090]: "4.5"
+                  - paragraph [ref=e1093]:
+                    - generic [ref=e1094]: 1泊 大人2名 合計(税込)
+                    - text: 8,900円～ 1名 4,450円～
+                  - paragraph [ref=e1095]: ★地下鉄・関内駅/8分（1番出口★JR・関内駅/約8分（南口）★みなとみらい線・日本大通り駅/約5分（3番出口
+              - link [ref=e1097] [cursor=pointer]:
+                - /url: /yad322644/?screenId=UWW3001&smlCd=140202&distCd=01
+                - generic [ref=e1100]:
+                  - heading [level=4] [ref=e1101]: 横浜桜木町ワシントンホテル
+                  - generic [ref=e1102]: "4.2"
+                  - paragraph [ref=e1105]:
+                    - generic [ref=e1106]: 1泊 大人2名 合計(税込)
+                    - text: 11,100円～ 1名 5,550円～
+                  - paragraph [ref=e1107]: JR線桜木町駅 南改札東口徒歩1分・市営地下鉄桜木町駅 北1口徒歩2分・みなとみらい線馬車道駅徒歩３分
+              - link [ref=e1109] [cursor=pointer]:
+                - /url: /yad326825/?screenId=UWW3001&smlCd=140202&distCd=01
+                - generic [ref=e1112]:
+                  - heading [level=4] [ref=e1113]: ローズホテル横浜
+                  - generic [ref=e1114]: "4.3"
+                  - paragraph [ref=e1117]:
+                    - generic [ref=e1118]: 1泊 大人2名 合計(税込)
+                    - text: 12,000円～ 1名 6,000円～
+                  - paragraph [ref=e1119]: みなとみらい線 元町中華街駅2番出口徒歩約2分。JR石川町駅北口徒歩約10分。首都高速新山下ICより車で約5分
+              - link [ref=e1121] [cursor=pointer]:
+                - /url: /yad328766/?screenId=UWW3001&smlCd=140202&distCd=01
+                - generic [ref=e1124]:
+                  - heading [level=4] [ref=e1125]: ＯＭＯ５横浜馬車道 ｂｙ 星野リゾート
+                  - generic [ref=e1126]: "4.6"
+                  - paragraph [ref=e1129]:
+                    - generic [ref=e1130]: 1泊 大人2名 合計(税込)
+                    - text: 21,600円～ 1名 10,800円～
+                  - paragraph [ref=e1131]: みなとみらい線 馬車道駅直結／JR線 桜木町駅より徒歩８分
+              - link [ref=e1133] [cursor=pointer]:
+                - /url: /yad336041/?screenId=UWW3001&smlCd=140202&distCd=01
+                - generic [ref=e1136]:
+                  - heading [level=4] [ref=e1137]: 横浜ベイホテル東急
+                  - generic [ref=e1138]: "4.6"
+                  - paragraph [ref=e1141]:
+                    - generic [ref=e1142]: 1泊 大人2名 合計(税込)
+                    - text: 20,160円～ 1名 10,080円～
+                  - paragraph [ref=e1143]: MM線みなとみらい駅徒歩1分。JR・地下鉄桜木町駅徒歩10分。首都高速横羽線みなとみらい出口2分
+              - link [ref=e1145] [cursor=pointer]:
+                - /url: /yad339603/?screenId=UWW3001&smlCd=140202&distCd=01
+                - generic [ref=e1148]:
+                  - heading [level=4] [ref=e1149]: ホテルプラム (HOTEL PLUMM) 横浜
+                  - generic [ref=e1150]: "4.5"
+                  - paragraph [ref=e1153]:
+                    - generic [ref=e1154]: 1泊 大人2名 合計(税込)
+                    - text: 6,800円～ 1名 3,400円～
+                  - paragraph [ref=e1155]: 【ＪＲ・私鉄／横浜駅】西口出口、【横浜市営地下鉄／横浜駅】９番出口より徒歩7分。
+              - link [ref=e1157] [cursor=pointer]:
+                - /url: /yad340325/?screenId=UWW3001&smlCd=140202&distCd=01
+                - generic [ref=e1160]:
+                  - heading [level=4] [ref=e1161]: ダイワロイネットホテル横浜関内
+                  - generic [ref=e1162]: "4.5"
+                  - paragraph [ref=e1165]:
+                    - generic [ref=e1166]: 1泊 大人2名 合計(税込)
+                    - text: 8,360円～ 1名 4,180円～
+                  - paragraph [ref=e1167]: JR「関内駅」北口より徒歩約3分／市営地下鉄ブルーライン「伊勢佐木長者町駅」3番出口徒歩約3分
+              - link [ref=e1169] [cursor=pointer]:
+                - /url: /yad344255/?screenId=UWW3001&smlCd=140202&distCd=01
+                - generic [ref=e1172]:
+                  - heading [level=4] [ref=e1173]: 【ナビオス横浜】みなとみらい×赤レンガ☆360度極上夜景☆
+                  - generic [ref=e1174]: "4.2"
+                  - paragraph [ref=e1177]:
+                    - generic [ref=e1178]: 1泊 大人2名 合計(税込)
+                    - text: 10,700円～ 1名 5,350円～
+                  - paragraph [ref=e1179]: JR桜木町駅下車徒歩10分、MM21線馬車道駅下車徒歩3分。首都高みなとみらいICより5分。
+              - link [ref=e1181] [cursor=pointer]:
+                - /url: /yad347270/?screenId=UWW3001&smlCd=140202&distCd=01
+                - generic [ref=e1184]:
+                  - heading [level=4] [ref=e1185]: リッチモンドホテル横浜馬車道
+                  - generic [ref=e1186]: "4.4"
+                  - paragraph [ref=e1189]:
+                    - generic [ref=e1190]: 1泊 大人2名 合計(税込)
+                    - text: 8,540円～ 1名 4,270円～
+                  - paragraph [ref=e1191]: ＪＲ関内駅北口徒歩５分、横浜市営地下鉄関内駅９番出口より徒歩１分、ＭＭ線馬車道駅５番出口より徒歩３分
+          - generic [ref=e1193]:
+            - heading "神奈川県のじゃらんニュース関連記事" [level=3] [ref=e1194]
+            - list [ref=e1195]:
+              - listitem [ref=e1196]:
+                - link "【最新】横浜駅で買えるお土産おすすめ26選！絶対はずさない定番から最新スイーツまで" [ref=e1197] [cursor=pointer]:
+                  - /url: /news/article/269787/
+                  - img "【最新】横浜駅で買えるお土産おすすめ26選！絶対はずさない定番から最新スイーツまで" [ref=e1198]
+                - generic [ref=e1199]:
+                  - paragraph [ref=e1200]: 【最新】横浜駅で買えるお土産おすすめ26選！絶対はずさない定番から最新スイーツまで
+                  - link "続きをみる" [ref=e1202] [cursor=pointer]:
+                    - /url: /news/article/269787/
+              - listitem [ref=e1203]:
+                - link "喜ばれる神奈川のお土産21選！地元民「人気ランキング」＆編集部おすすめを紹介" [ref=e1204] [cursor=pointer]:
+                  - /url: /news/article/95648/
+                  - img "喜ばれる神奈川のお土産21選！地元民「人気ランキング」＆編集部おすすめを紹介" [ref=e1205]
+                - generic [ref=e1206]:
+                  - paragraph [ref=e1207]: 喜ばれる神奈川のお土産21選！地元民「人気ランキング」＆編集部おすすめを紹介
+                  - link "続きをみる" [ref=e1209] [cursor=pointer]:
+                    - /url: /news/article/95648/
+              - listitem [ref=e1210]:
+                - link "【2024】横浜中華街の食べ歩きにおすすめの店9選！小籠包や肉まん、北京ダックも！" [ref=e1211] [cursor=pointer]:
+                  - /url: /news/article/234298/
+                  - img "【2024】横浜中華街の食べ歩きにおすすめの店9選！小籠包や肉まん、北京ダックも！" [ref=e1212]
+                - generic [ref=e1213]:
+                  - paragraph [ref=e1214]: 【2024】横浜中華街の食べ歩きにおすすめの店9選！小籠包や肉まん、北京ダックも！
+                  - link "続きをみる" [ref=e1216] [cursor=pointer]:
+                    - /url: /news/article/234298/
+              - listitem [ref=e1217]:
+                - link "【2025】神奈川・日帰りドライブスポット23選！横浜や箱根のおすすめの絶景など" [ref=e1218] [cursor=pointer]:
+                  - /url: /news/article/207408/
+                  - img "【2025】神奈川・日帰りドライブスポット23選！横浜や箱根のおすすめの絶景など" [ref=e1219]
+                - generic [ref=e1220]:
+                  - paragraph [ref=e1221]: 【2025】神奈川・日帰りドライブスポット23選！横浜や箱根のおすすめの絶景など
+                  - link "続きをみる" [ref=e1223] [cursor=pointer]:
+                    - /url: /news/article/207408/
+          - generic [ref=e1224]:
+            - generic [ref=e1225]:
+              - link "ページの先頭に戻る" [ref=e1227] [cursor=pointer]:
+                - /url: "#top"
+              - generic [ref=e1228]: "[ホテル]ＯＭＯ７横浜 ｂｙ 星野リゾート じゃらんnet"
+            - generic [ref=e1229]:
+              - paragraph [ref=e1230]: 他のホテルを探す場合はこちら
+              - generic [ref=e1231]:
+                - generic [ref=e1232]:
+                  - paragraph [ref=e1233]: ビジネスホテルを探す
+                  - paragraph [ref=e1234]:
+                    - link "神奈川県" [ref=e1235] [cursor=pointer]:
+                      - /url: /biz/140000/
+                    - text: ">"
+                    - link "横浜" [ref=e1236] [cursor=pointer]:
+                      - /url: /biz/140000/LRG_140200/
+                    - text: ">"
+                    - link "横浜・ベイエリア" [ref=e1237] [cursor=pointer]:
+                      - /url: /biz/140000/LRG_140200/SML_140202/
+                    - text: ">"
+                    - link "関内駅" [ref=e1238] [cursor=pointer]:
+                      - /url: /biz/140000/STA_990219/
+                - generic [ref=e1239]:
+                  - paragraph [ref=e1240]: 旅館・高級ホテルを探す
+                  - paragraph [ref=e1241]:
+                    - link "神奈川県" [ref=e1242] [cursor=pointer]:
+                      - /url: /highclass/yado/C01_ALL_140000.html
+                - generic [ref=e1243]:
+                  - paragraph [ref=e1244]: エリアからホテルを探す
+                  - paragraph [ref=e1245]:
+                    - link "神奈川県" [ref=e1246] [cursor=pointer]:
+                      - /url: /ikisaki/map/kanagawa/
+                    - text: ">"
+                    - link "横浜" [ref=e1247] [cursor=pointer]:
+                      - /url: /140000/LRG_140200/
+                    - text: ">"
+                    - link "横浜・ベイエリア" [ref=e1248] [cursor=pointer]:
+                      - /url: /140000/LRG_140200/SML_140202/
+                    - text: ">"
+                    - link "関内駅" [ref=e1249] [cursor=pointer]:
+                      - /url: /140000/STA_990219/
+                - generic [ref=e1250]:
+                  - paragraph [ref=e1251]: 近隣駅・空港からホテルを探す
+                  - paragraph [ref=e1252]:
+                    - link "関内駅" [ref=e1253] [cursor=pointer]:
+                      - /url: /140000/STA_990219/
+                    - text: "|"
+                    - link "伊勢佐木長者町駅" [ref=e1254] [cursor=pointer]:
+                      - /url: /140000/STA_033910/
+                    - text: "|"
+                    - link "日本大通り駅" [ref=e1255] [cursor=pointer]:
+                      - /url: /140000/STA_044510/
+                    - text: "|"
+                    - link "馬車道駅" [ref=e1256] [cursor=pointer]:
+                      - /url: /140000/STA_044506/
+                    - text: "|"
+                    - link "石川町駅" [ref=e1257] [cursor=pointer]:
+                      - /url: /140000/STA_044350/
+                - generic [ref=e1258]:
+                  - paragraph [ref=e1259]: ホテルグループから探す
+                  - paragraph [ref=e1260]:
+                    - link "全国のOMO by 星野リゾート" [ref=e1261] [cursor=pointer]:
+                      - /url: /biz/group/CHAIN0259.html
+                    - text: ">"
+                    - link "神奈川のOMO by 星野リゾート" [ref=e1262] [cursor=pointer]:
+                      - /url: /biz/group/140000_CHAIN0259.html
+                    - text: ">"
+                    - link "ＯＭＯ５横浜馬車道 ｂｙ 星野リゾート" [ref=e1263] [cursor=pointer]:
+                      - /url: https://www.jalan.net/yad328766/?roomCount=1&dateUndecided=1&roomCrack=200000&screenId=UWW3001&stayCount=1&adultNum=2&yadNo=328766
+    - generic [ref=e1264]:
+      - generic [ref=e1265]:
+        - generic [ref=e1266]:
+          - img "注目" [ref=e1267]
+          - paragraph [ref=e1268]: 神奈川県の宿・ホテル[PR]
+        - generic [ref=e1269]:
+          - heading "旅館 松島(横浜)" [level=4] [ref=e1270]:
+            - link "旅館 松島" [ref=e1271] [cursor=pointer]:
+              - /url: https://www.jalan.net/uw/uwp0700/uww0701.do?detailURL=https%3A%2F%2Fwww.jalan.net%2Fuw%2Fuwp3000%2Fuww3001.do%3FyadNo%3D341919%26rootCd%3D63%26adFlg%3Dclick_UWW3001&pref=140000&l_area=140200&yado_no=341919&root_cd=63&from_id=UWW3001&pub_order=1
+            - text: (横浜)
+          - paragraph [ref=e1272]:
+            - link [ref=e1273] [cursor=pointer]:
+              - /url: https://www.jalan.net/uw/uwp0700/uww0701.do?detailURL=https%3A%2F%2Fwww.jalan.net%2Fuw%2Fuwp3000%2Fuww3001.do%3FyadNo%3D341919%26rootCd%3D63%26adFlg%3Dclick_UWW3001&pref=140000&l_area=140200&yado_no=341919&root_cd=63&from_id=UWW3001&pub_order=1
+          - paragraph [ref=e1274]: 【じゃらん限定ポイントアップ】お食事付きでゆったりプラン
+        - generic [ref=e1275]:
+          - heading "箱根温泉旅館 玉の湯(箱根)" [level=4] [ref=e1276]:
+            - link "箱根温泉旅館 玉の湯" [ref=e1277] [cursor=pointer]:
+              - /url: https://www.jalan.net/uw/uwp0700/uww0701.do?detailURL=https%3A%2F%2Fwww.jalan.net%2Fuw%2Fuwp3000%2Fuww3001.do%3FyadNo%3D312448%26rootCd%3D63%26adFlg%3Dclick_UWW3001&pref=140000&l_area=140200&yado_no=312448&root_cd=63&from_id=UWW3001&pub_order=2
+            - text: (箱根)
+          - paragraph [ref=e1278]:
+            - link [ref=e1279] [cursor=pointer]:
+              - /url: https://www.jalan.net/uw/uwp0700/uww0701.do?detailURL=https%3A%2F%2Fwww.jalan.net%2Fuw%2Fuwp3000%2Fuww3001.do%3FyadNo%3D312448%26rootCd%3D63%26adFlg%3Dclick_UWW3001&pref=140000&l_area=140200&yado_no=312448&root_cd=63&from_id=UWW3001&pub_order=2
+          - paragraph [ref=e1280]: ♪源泉かけ流しと地元食材を使った手作り料理で満腹に♪
+        - generic [ref=e1281]:
+          - heading "橋本パークホテル(相模原)" [level=4] [ref=e1282]:
+            - link "橋本パークホテル" [ref=e1283] [cursor=pointer]:
+              - /url: https://www.jalan.net/uw/uwp0700/uww0701.do?detailURL=https%3A%2F%2Fwww.jalan.net%2Fuw%2Fuwp3000%2Fuww3001.do%3FyadNo%3D310732%26rootCd%3D63%26adFlg%3Dclick_UWW3001&pref=140000&l_area=140200&yado_no=310732&root_cd=63&from_id=UWW3001&pub_order=3
+            - text: (相模原)
+          - paragraph [ref=e1284]:
+            - link [ref=e1285] [cursor=pointer]:
+              - /url: https://www.jalan.net/uw/uwp0700/uww0701.do?detailURL=https%3A%2F%2Fwww.jalan.net%2Fuw%2Fuwp3000%2Fuww3001.do%3FyadNo%3D310732%26rootCd%3D63%26adFlg%3Dclick_UWW3001&pref=140000&l_area=140200&yado_no=310732&root_cd=63&from_id=UWW3001&pub_order=3
+          - paragraph [ref=e1286]: 焼立てパンもある、朝の無料ドリンクバーが好評です。
+        - generic [ref=e1287]:
+          - heading "スカイハートホテル川崎(川崎)" [level=4] [ref=e1288]:
+            - link "スカイハートホテル川崎" [ref=e1289] [cursor=pointer]:
+              - /url: https://www.jalan.net/uw/uwp0700/uww0701.do?detailURL=https%3A%2F%2Fwww.jalan.net%2Fuw%2Fuwp3100%2Fuww3101.do%3FyadNo%3D346352%26rootCd%3D63%26adFlg%3Dclick_UWW3001&pref=140000&l_area=140200&yado_no=346352&root_cd=63&from_id=UWW3001&pub_order=4
+            - text: (川崎)
+          - paragraph [ref=e1290]:
+            - link [ref=e1291] [cursor=pointer]:
+              - /url: https://www.jalan.net/uw/uwp0700/uww0701.do?detailURL=https%3A%2F%2Fwww.jalan.net%2Fuw%2Fuwp3100%2Fuww3101.do%3FyadNo%3D346352%26rootCd%3D63%26adFlg%3Dclick_UWW3001&pref=140000&l_area=140200&yado_no=346352&root_cd=63&from_id=UWW3001&pub_order=4
+          - paragraph [ref=e1292]: 横浜駅より川崎駅までＪＲで１駅！
+        - generic [ref=e1293]:
+          - heading "横浜ベイホテル東急(横浜)" [level=4] [ref=e1294]:
+            - link "横浜ベイホテル東急" [ref=e1295] [cursor=pointer]:
+              - /url: https://www.jalan.net/uw/uwp0700/uww0701.do?detailURL=https%3A%2F%2Fwww.jalan.net%2Fuw%2Fuwp3000%2Fuww3001.do%3FyadNo%3D336041%26rootCd%3D63%26adFlg%3Dclick_UWW3001&pref=140000&l_area=140200&yado_no=336041&root_cd=63&from_id=UWW3001&pub_order=5&creative_id=00189803
+            - text: (横浜)
+          - paragraph [ref=e1296]: みなとみらいの中心♪横浜港を一望できるアーバンリゾート。
+        - generic [ref=e1297]:
+          - heading "横浜東急ＲＥＩホテル(横浜)" [level=4] [ref=e1298]:
+            - link "横浜東急ＲＥＩホテル" [ref=e1299] [cursor=pointer]:
+              - /url: https://www.jalan.net/uw/uwp0700/uww0701.do?detailURL=https%3A%2F%2Fwww.jalan.net%2Fuw%2Fuwp3000%2Fuww3001.do%3FyadNo%3D399663%26rootCd%3D63%26adFlg%3Dclick_UWW3001&pref=140000&l_area=140200&yado_no=399663&root_cd=63&from_id=UWW3001&pub_order=6&creative_id=00187155
+            - text: (横浜)
+          - paragraph [ref=e1300]: 月の引力のように人と人、様々なシーンを結びつけます
+        - generic [ref=e1301]: ※「注目の宿・ホテル」とは、ご覧になっている県の注目宿・ホテルをご紹介しております。
+        - img [ref=e1302]
+      - generic [ref=e1303]:
+        - generic [ref=e1304]:
+          - generic [ref=e1305]:
+            - paragraph [ref=e1306]: クリップリスト
+            - heading "クリップした宿" [level=2] [ref=e1307]:
+              - img "クリップした宿" [ref=e1308]
+            - paragraph [ref=e1309]:
+              - text: "0"
+              - img "軒" [ref=e1310]
+            - paragraph [ref=e1311]:
+              - link "クリップした宿とは？" [ref=e1312] [cursor=pointer]:
+                - /url: javascript:void(0)
+          - heading "最近見た宿" [level=3] [ref=e1313]:
+            - img "最近見た宿" [ref=e1314]
+          - paragraph [ref=e1315]:
+            - text: "0"
+            - img "軒" [ref=e1316]
+          - paragraph [ref=e1317]:
+            - link "最近見た宿とは？" [ref=e1318] [cursor=pointer]:
+              - /url: javascript:void(0)
+        - generic [ref=e1319]:
+          - heading "周辺の宿をMAPで見る" [level=3] [ref=e1320]:
+            - img "周辺の宿をMAPで見る" [ref=e1321]
+          - link "この宿周辺のMAPを表示" [ref=e1322] [cursor=pointer]:
+            - /url: JavaScript:openMapYad('14');
+            - paragraph [ref=e1323]
+            - paragraph [ref=e1324]: この宿周辺のMAPを表示
+          - list [ref=e1325]:
+            - listitem [ref=e1326]:
+              - link "関内駅周辺の宿" [ref=e1327] [cursor=pointer]:
+                - /url: JavaScript:openMapLandmark('010000000044346','01','14');
+            - listitem [ref=e1328]:
+              - link "桜木町駅周辺の宿" [ref=e1329] [cursor=pointer]:
+                - /url: JavaScript:openMapLandmark('010000000044342','01','14');
+      - iframe [ref=e1331]:
+        - iframe [ref=f1e2]:
+          - link [ref=f2e2] [cursor=pointer]:
+            - /url: //s9.r-ad.ne.jp/r?__aga=343616149&__imp=YJD7kK8u_n60H4qcYrZ85mVFikMOor6cJmX1FrNpy7k.DMb4g87dG3M.S7_4HMOfNQtCwLEzUROkRn4d3Kn92fopTlNo2dMySR4&f=754
+            - img [ref=f2e3]
+  - generic [ref=e1334]:
+    - link "(C) Recruit Co., Ltd." [ref=e1335] [cursor=pointer]:
+      - /url: https://www.recruit.co.jp/
+      - img "(C) Recruit Co., Ltd." [ref=e1336]
+    - link "プライバシーポリシー" [ref=e1337] [cursor=pointer]:
+      - /url: https://cdn.p.recruit.co.jp/terms/cmn-t-1001/index.html

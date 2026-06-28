@@ -1,0 +1,2972 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e3]:
+    - link "毎月20日から！じゃらんのお得な10日間" [ref=e7] [cursor=pointer]:
+      - /url: /theme/otoku_10days/?ccnt=otoku10days_260620_02
+      - img "毎月20日から！じゃらんのお得な10日間" [ref=e8]
+    - generic [ref=e10]:
+      - paragraph [ref=e11]: 国内旅行・海外旅行や宿・ホテルの宿泊予約はじゃらんnet ～日本最大級の宿・ホテル予約サイト～
+      - list [ref=e12]:
+        - listitem [ref=e13]:
+          - link "サイトのご利用方法" [ref=e14] [cursor=pointer]:
+            - /url: /jalan/doc/howto/01goriyou.html
+        - listitem [ref=e15]:
+          - link "ヘルプ/問い合わせ" [ref=e16] [cursor=pointer]:
+            - /url: https://help.jalan.net/s/
+    - generic [ref=e18]:
+      - paragraph [ref=e19]:
+        - link "じゃらん PRODUCED BY RECRUIT" [ref=e20] [cursor=pointer]:
+          - /url: /
+          - img "じゃらん PRODUCED BY RECRUIT" [ref=e21]
+      - generic [ref=e22]:
+        - generic [ref=e23]:
+          - paragraph [ref=e24]: こんにちは♪ゲストさん
+          - list [ref=e25]:
+            - listitem [ref=e26]:
+              - link "ログイン" [ref=e27] [cursor=pointer]:
+                - /url: /ji/pc/jit6001LoginBack.do?TEMP1=lrgCdParam%2B140200%23distCd%2B01%23stayMonth%2B08%23ikisakiHtml%2B%2Fikisaki%2Fmap%2Fkanagawa%2F%23kenCdParam%2B140000%23stayCount%2B1%23agtWebFlg%2B%23dispScreenId%2BUWW3101%23targetPgId%2BUWW3101%23yadoSEOName%2B%82%6E%82%6C%82%6E%82%56%89%A1%95%6C%81%40%82%82%82%99%81%40%90%AF%96%EC%83%8A%83%5D%81%5B%83%67%23roomCount%2B1%23smlCdParam%2B140202%23adultNum%2B2%23stayYear%2B2026%23yadNo%2B341758%23stayDay%2B05%23crawlerFlgParam%2B%23lrgName%2B%89%A1%95%6C%23returnUIFlg%2B0%23kenName%2B%90%5F%93%DE%90%EC%8C%A7%23yadName%2B%82%6E%82%6C%82%6E%82%56%89%A1%95%6C%81%40%82%82%82%99%81%40%90%AF%96%EC%83%8A%83%5D%81%5B%83%67%23litleChildNum%2B0%23smlName%2B%89%A1%95%6C%81%45%83%78%83%43%83%47%83%8A%83%41&TEMP4=LEVEL_K&TEMP5=https://www.jalan.net/uw/common/actualUrlRewrite3101.do
+            - listitem [ref=e28]:
+              - link "会員登録" [ref=e29] [cursor=pointer]:
+                - /url: /ji/pc/jit2001.do?FNC=JIPFN004
+          - link "ステージプログラム お得な特典をみる" [ref=e30] [cursor=pointer]:
+            - /url: /theme/jalan_stage_program/index.html?ccnt=global_navi
+            - paragraph [ref=e31]:
+              - img "ステージプログラム" [ref=e32]
+              - generic [ref=e33]: お得な特典をみる
+          - list [ref=e34]:
+            - listitem [ref=e35]:
+              - link "予約照会・変更・キャンセル" [ref=e36] [cursor=pointer]:
+                - /url: /jalan/doc/howto/03yoyaku.html
+            - listitem [ref=e37]:
+              - link "マイページ" [ref=e38] [cursor=pointer]:
+                - /url: /uw/uwp8000/uww8010.do
+        - navigation [ref=e41]:
+          - list [ref=e42]:
+            - listitem [ref=e43]:
+              - link "宿・ホテル" [ref=e44] [cursor=pointer]:
+                - /url: /?ccnt=global_navi
+            - listitem [ref=e45]:
+              - link "じゃらんパック （交通＋宿泊）" [ref=e46] [cursor=pointer]:
+                - /url: /dp/?ccnt=global_navi
+                - text: じゃらんパック
+                - text: （交通＋宿泊）
+            - listitem [ref=e47]:
+              - link "遊び・体験" [ref=e48] [cursor=pointer]:
+                - /url: /activity/?ccnt=global_navi
+            - listitem [ref=e49]:
+              - link "観光ガイド" [ref=e50] [cursor=pointer]:
+                - /url: /travel/?ccnt=global_navi
+            - listitem [ref=e51]:
+              - link "レンタカー" [ref=e52] [cursor=pointer]:
+                - /url: /rentacar/?vos=cpjalaprocap0170608001&ccnt=global_navi
+            - listitem [ref=e53]:
+              - link "航空券" [ref=e54] [cursor=pointer]:
+                - /url: /airticket/?ccnt=global_navi
+            - listitem [ref=e55]:
+              - link "ゴルフ" [ref=e56] [cursor=pointer]:
+                - /url: https://golf-jalan.net/?vos=cpjgfprocap0121113001
+            - listitem [ref=e57]:
+              - link "海外 航空券" [ref=e58] [cursor=pointer]:
+                - /url: /kaigai/air/?ccnt=global_navi
+                - text: 海外
+                - generic [ref=e59]: 航空券
+            - listitem [ref=e60]:
+              - link "海外 航空券+ホテル" [ref=e61] [cursor=pointer]:
+                - /url: /kaigai/air_hotel/?ccnt=global_navi
+                - text: 海外
+                - generic [ref=e62]: 航空券+ホテル
+    - generic [ref=e65]:
+      - paragraph [ref=e66]: 宿・ホテル
+      - list [ref=e67]:
+        - listitem [ref=e68]:
+          - link "出張ビジネス" [ref=e69] [cursor=pointer]:
+            - /url: /biz/?ccnt=global_navi
+        - listitem [ref=e70]:
+          - link "温泉・露天" [ref=e71] [cursor=pointer]:
+            - /url: /onsen/?ccnt=global_navi
+        - listitem [ref=e72]:
+          - link "高級宿" [ref=e73] [cursor=pointer]:
+            - /url: /highclass/?ccnt=global_navi
+        - listitem [ref=e74]:
+          - link "日帰り・デイユース" [ref=e75] [cursor=pointer]:
+            - /url: /dayuse/?ccnt=global_navi
+    - list [ref=e78]:
+      - listitem [ref=e79]:
+        - link "ポイントがたまる・つかえる dポイント Pontaポイント" [ref=e80] [cursor=pointer]:
+          - /url: https://point.recruit.co.jp/member/relExpCont?siteCd=JLN
+          - text: ポイントがたまる・つかえる
+          - img "dポイント" [ref=e81]
+          - img "Pontaポイント" [ref=e82]
+  - generic [ref=e83]:
+    - generic [ref=e86]:
+      - link "宿・ホテル" [ref=e87] [cursor=pointer]:
+        - /url: //www.jalan.net
+      - text: ">"
+      - link "神奈川県" [ref=e88] [cursor=pointer]:
+        - /url: //www.jalan.net/ikisaki/map/kanagawa/
+      - text: ">"
+      - link "横浜" [ref=e89] [cursor=pointer]:
+        - /url: /140000/LRG_140200/
+      - text: ">"
+      - link "横浜・ベイエリア" [ref=e90] [cursor=pointer]:
+        - /url: /140000/LRG_140200/SML_140202/
+      - text: ">"
+      - link "ＯＭＯ７横浜 ｂｙ 星野リゾート" [ref=e91] [cursor=pointer]:
+        - /url: https://www.jalan.net/yad341758/?screenId=UWW3101&roomCrack=200000&stayYear=2026&stayMonth=8&stayDay=5&stayCount=1&roomCount=1&adultNum=2&minPrice=0&maxPrice=999999
+      - text: "> 料金・宿泊プラン"
+    - generic [ref=e92]:
+      - generic [ref=e93]:
+        - generic [ref=e94]:
+          - generic [ref=e95]:
+            - generic [ref=e96]:
+              - link "ＯＭＯ７横浜 ｂｙ 星野リゾート" [ref=e97] [cursor=pointer]:
+                - /url: javascript:staticChangeTab('1', 'tmpForm','', '', '', '', '','341758');
+              - generic [ref=e98]:
+                - paragraph [ref=e100]: JR根岸線「関内」駅徒歩1分、横浜市営地下鉄ブルーライン「関内」駅徒歩1分、
+                - list [ref=e101]:
+                  - listitem [ref=e102]: ハイクラス
+                  - listitem
+                  - listitem
+                - paragraph
+            - list [ref=e104]:
+              - listitem [ref=e105]:
+                - generic [ref=e106] [cursor=pointer]: クリップする
+          - list [ref=e108]:
+            - listitem [ref=e109]:
+              - link "基本情報" [ref=e110] [cursor=pointer]:
+                - /url: https://www.jalan.net/yad341758/?distCd=01&stayMonth=08&screenId=UWW3101&smlCd=140202&stayCount=1&roomCount=1&adultNum=2&stayYear=2026&yadNo=341758&stayDay=05&yadoDetailMode=1
+                - generic [ref=e111]: 基本情報
+            - listitem [ref=e112]:
+              - generic [ref=e113]: 料金・宿泊プラン
+            - listitem [ref=e114]:
+              - link "写真" [ref=e115] [cursor=pointer]:
+                - /url: https://www.jalan.net/yad341758/photo/?distCd=01&stayMonth=08&screenId=UWW3101&smlCd=140202&stayCount=1&roomCount=1&adultNum=2&stayYear=2026&yadNo=341758&stayDay=05
+                - generic [ref=e116]: 写真
+            - listitem [ref=e117]:
+              - link "地図・ アクセス" [ref=e118] [cursor=pointer]:
+                - /url: https://www.jalan.net/yad341758/access/?distCd=01&stayMonth=08&screenId=UWW3101&smlCd=140202&stayCount=1&roomCount=1&adultNum=2&stayYear=2026&yadNo=341758&stayDay=05
+                - generic [ref=e119]:
+                  - text: 地図・
+                  - text: アクセス
+            - listitem [ref=e120]:
+              - link "お知らせ・ ブログ" [ref=e121] [cursor=pointer]:
+                - /url: https://www.jalan.net/yad341758/topics/?distCd=01&stayMonth=08&screenId=UWW3101&smlCd=140202&stayCount=1&roomCount=1&adultNum=2&stayYear=2026&yadNo=341758&stayDay=05
+                - generic [ref=e122]:
+                  - text: お知らせ・
+                  - text: ブログ
+            - listitem [ref=e123]:
+              - link "周辺観光" [ref=e124] [cursor=pointer]:
+                - /url: https://www.jalan.net/yad341758/kankou/?distCd=01&stayMonth=08&screenId=UWW3101&smlCd=140202&stayCount=1&roomCount=1&adultNum=2&stayYear=2026&yadNo=341758&stayDay=05
+                - generic [ref=e125]: 周辺観光
+            - listitem [ref=e126]:
+              - link "クーポン 一覧 配布中" [ref=e127] [cursor=pointer]:
+                - /url: https://www.jalan.net/yad341758/coupon/?distCd=01&stayMonth=08&screenId=UWW3101&smlCd=140202&stayCount=1&roomCount=1&adultNum=2&stayYear=2026&yadNo=341758&stayDay=05
+                - generic [ref=e128]:
+                  - text: クーポン
+                  - text: 一覧
+                - generic [ref=e129]: 配布中
+            - listitem [ref=e130]:
+              - link "クチコミ (72件)" [ref=e131] [cursor=pointer]:
+                - /url: https://www.jalan.net/yad341758/kuchikomi/?distCd=01&stayMonth=08&screenId=UWW3101&smlCd=140202&stayCount=1&roomCount=1&adultNum=2&stayYear=2026&yadNo=341758&stayDay=05
+                - generic [ref=e132]:
+                  - text: クチコミ
+                  - emphasis [ref=e133]: (72件)
+          - heading "ＯＭＯ７横浜 ｂｙ 星野リゾートの料金・宿泊プラン" [level=1] [ref=e134]
+        - generic [ref=e135]:
+          - generic [ref=e136]:
+            - generic [ref=e140]:
+              - generic [ref=e141]:
+                - generic [ref=e142]:
+                  - text: 空室情報
+                  - generic [ref=e144] [cursor=pointer]:  
+                - generic [ref=e145]:
+                  - generic [ref=e148] [cursor=pointer]: 
+                  - generic [ref=e149]: 2026年8月
+                  - generic [ref=e152] [cursor=pointer]: 
+              - table [ref=e153]:
+                - rowgroup [ref=e154]:
+                  - row "月 火 水 木 金 土 日" [ref=e155]:
+                    - columnheader "月" [ref=e156]
+                    - columnheader "火" [ref=e157]
+                    - columnheader "水" [ref=e158]
+                    - columnheader "木" [ref=e159]
+                    - columnheader "金" [ref=e160]
+                    - columnheader "土" [ref=e161]
+                    - columnheader "日" [ref=e162]
+                - rowgroup [ref=e163]:
+                  - row "1 ○ 2 ○" [ref=e164]:
+                    - cell [ref=e165]
+                    - cell [ref=e166]
+                    - cell [ref=e167]
+                    - cell [ref=e168]
+                    - cell [ref=e169]
+                    - cell "1 ○" [ref=e170] [cursor=pointer]:
+                      - generic [ref=e171]: "1"
+                      - emphasis [ref=e173]: ○
+                    - cell "2 ○" [ref=e174] [cursor=pointer]:
+                      - generic [ref=e175]: "2"
+                      - emphasis [ref=e177]: ○
+                  - row "3 ○ 4 ○ 5 ○ 6 ○ 7 ○ 8 ○ 9 ○" [ref=e178]:
+                    - cell "3 ○" [ref=e179] [cursor=pointer]:
+                      - generic [ref=e180]: "3"
+                      - emphasis [ref=e182]: ○
+                    - cell "4 ○" [ref=e183] [cursor=pointer]:
+                      - generic [ref=e184]: "4"
+                      - emphasis [ref=e186]: ○
+                    - cell "5 ○":
+                      - generic: "5"
+                      - generic:
+                        - emphasis: ○
+                    - cell "6 ○" [ref=e187] [cursor=pointer]:
+                      - generic [ref=e188]: "6"
+                      - emphasis [ref=e190]: ○
+                    - cell "7 ○" [ref=e191] [cursor=pointer]:
+                      - generic [ref=e192]: "7"
+                      - emphasis [ref=e194]: ○
+                    - cell "8 ○" [ref=e195] [cursor=pointer]:
+                      - generic [ref=e196]: "8"
+                      - emphasis [ref=e198]: ○
+                    - cell "9 ○" [ref=e199] [cursor=pointer]:
+                      - generic [ref=e200]: "9"
+                      - emphasis [ref=e202]: ○
+                  - row "10 ○ 11 ○ 12 ○ 13 ○ 14 ○ 15 ○ 16 ○" [ref=e203]:
+                    - cell "10 ○" [ref=e204] [cursor=pointer]:
+                      - generic [ref=e205]: "10"
+                      - emphasis [ref=e207]: ○
+                    - cell "11 ○" [ref=e208] [cursor=pointer]:
+                      - generic [ref=e209]: "11"
+                      - emphasis [ref=e211]: ○
+                    - cell "12 ○" [ref=e212] [cursor=pointer]:
+                      - generic [ref=e213]: "12"
+                      - emphasis [ref=e215]: ○
+                    - cell "13 ○" [ref=e216] [cursor=pointer]:
+                      - generic [ref=e217]: "13"
+                      - emphasis [ref=e219]: ○
+                    - cell "14 ○" [ref=e220] [cursor=pointer]:
+                      - generic [ref=e221]: "14"
+                      - emphasis [ref=e223]: ○
+                    - cell "15 ○" [ref=e224] [cursor=pointer]:
+                      - generic [ref=e225]: "15"
+                      - emphasis [ref=e227]: ○
+                    - cell "16 ○" [ref=e228] [cursor=pointer]:
+                      - generic [ref=e229]: "16"
+                      - emphasis [ref=e231]: ○
+                  - row "17 ○ 18 ○ 19 ○ 20 ○ 21 ○ 22 ○ 23 ○" [ref=e232]:
+                    - cell "17 ○" [ref=e233] [cursor=pointer]:
+                      - generic [ref=e234]: "17"
+                      - emphasis [ref=e236]: ○
+                    - cell "18 ○" [ref=e237] [cursor=pointer]:
+                      - generic [ref=e238]: "18"
+                      - emphasis [ref=e240]: ○
+                    - cell "19 ○" [ref=e241] [cursor=pointer]:
+                      - generic [ref=e242]: "19"
+                      - emphasis [ref=e244]: ○
+                    - cell "20 ○" [ref=e245] [cursor=pointer]:
+                      - generic [ref=e246]: "20"
+                      - emphasis [ref=e248]: ○
+                    - cell "21 ○" [ref=e249] [cursor=pointer]:
+                      - generic [ref=e250]: "21"
+                      - emphasis [ref=e252]: ○
+                    - cell "22 ○" [ref=e253] [cursor=pointer]:
+                      - generic [ref=e254]: "22"
+                      - emphasis [ref=e256]: ○
+                    - cell "23 ○" [ref=e257] [cursor=pointer]:
+                      - generic [ref=e258]: "23"
+                      - emphasis [ref=e260]: ○
+                  - row "24 ○ 25 ○ 26 ○ 27 ○ 28 ○ 29 ○ 30 ○" [ref=e261]:
+                    - cell "24 ○" [ref=e262] [cursor=pointer]:
+                      - generic [ref=e263]: "24"
+                      - emphasis [ref=e265]: ○
+                    - cell "25 ○" [ref=e266] [cursor=pointer]:
+                      - generic [ref=e267]: "25"
+                      - emphasis [ref=e269]: ○
+                    - cell "26 ○" [ref=e270] [cursor=pointer]:
+                      - generic [ref=e271]: "26"
+                      - emphasis [ref=e273]: ○
+                    - cell "27 ○" [ref=e274] [cursor=pointer]:
+                      - generic [ref=e275]: "27"
+                      - emphasis [ref=e277]: ○
+                    - cell "28 ○" [ref=e278] [cursor=pointer]:
+                      - generic [ref=e279]: "28"
+                      - emphasis [ref=e281]: ○
+                    - cell "29 ○" [ref=e282] [cursor=pointer]:
+                      - generic [ref=e283]: "29"
+                      - emphasis [ref=e285]: ○
+                    - cell "30 ○" [ref=e286] [cursor=pointer]:
+                      - generic [ref=e287]: "30"
+                      - emphasis [ref=e289]: ○
+                  - row "31 ○" [ref=e290]:
+                    - cell "31 ○" [ref=e291] [cursor=pointer]:
+                      - generic [ref=e292]: "31"
+                      - emphasis [ref=e294]: ○
+                    - cell [ref=e295]
+                    - cell [ref=e296]
+                    - cell [ref=e297]
+                    - cell [ref=e298]
+                    - cell [ref=e299]
+                    - cell [ref=e300]
+            - generic [ref=e302]:
+              - paragraph [ref=e303]:
+                - generic [ref=e304]:  
+                - text: 宿泊プランを探す
+              - generic [ref=e305]:
+                - paragraph [ref=e306]: セール対象プランで絞り込む
+                - generic [ref=e309]:
+                  - text: じゃらんのお得な10日間
+                  - text: セール対象のプラン
+              - generic [ref=e310]:
+                - generic [ref=e311]:
+                  - paragraph [ref=e312]: チェックイン
+                  - generic [ref=e314]:
+                    - textbox [ref=e315] [cursor=pointer]: 2026/08/05
+                    - text: 
+                  - paragraph [ref=e316]: チェックアウト
+                  - generic [ref=e318]:
+                    - textbox [ref=e319] [cursor=pointer]: 2026/08/06
+                    - text: 
+                  - generic [ref=e320] [cursor=pointer]: 日付未定
+                - generic [ref=e322]:
+                  - paragraph [ref=e323]: 部屋数・人数
+                  - combobox [ref=e325] [cursor=pointer]:
+                    - option "1部屋" [selected]
+                    - option "2部屋"
+                    - option "3部屋"
+                    - option "4部屋"
+                    - option "5部屋"
+                    - option "6部屋"
+                    - option "7部屋"
+                    - option "8部屋"
+                    - option "9部屋"
+                    - option "10部屋"
+                  - generic [ref=e326]:
+                    - paragraph [ref=e327]: 大人
+                    - paragraph [ref=e328]:
+                      - combobox [ref=e329] [cursor=pointer]:
+                        - option "1名"
+                        - option "2名" [selected]
+                        - option "3名"
+                        - option "4名"
+                        - option "5名"
+                        - option "6名"
+                        - option "7名"
+                        - option "8名"
+                        - option "9名～"
+                    - paragraph [ref=e330]: 子供
+                    - paragraph [ref=e331]:
+                      - link "0名" [ref=e332] [cursor=pointer]:
+                        - /url: "#noMove"
+                - button "再検索" [ref=e333] [cursor=pointer]
+              - generic [ref=e334]:
+                - generic [ref=e335]:
+                  - paragraph [ref=e336]: 部屋タイプ
+                  - generic [ref=e337]:
+                    - button "部屋タイプを指定" [ref=e338] [cursor=pointer]
+                    - text: 
+                - generic [ref=e339]:
+                  - paragraph [ref=e340]: 予算1部屋1泊あたり
+                  - generic [ref=e341]:
+                    - combobox [ref=e343] [cursor=pointer]:
+                      - option "下限なし" [selected]
+                      - option "5000円"
+                      - option "6000円"
+                      - option "7000円"
+                      - option "8000円"
+                      - option "9000円"
+                      - option "10000円"
+                      - option "12000円"
+                      - option "14000円"
+                      - option "16000円"
+                      - option "18000円"
+                      - option "20000円"
+                      - option "30000円"
+                      - option "40000円"
+                      - option "50000円"
+                    - generic [ref=e344]: ～
+                    - combobox [ref=e346] [cursor=pointer]:
+                      - option "5000円"
+                      - option "6000円"
+                      - option "7000円"
+                      - option "8000円"
+                      - option "9000円"
+                      - option "10000円"
+                      - option "12000円"
+                      - option "14000円"
+                      - option "16000円"
+                      - option "18000円"
+                      - option "20000円"
+                      - option "30000円"
+                      - option "40000円"
+                      - option "50000円"
+                      - option "上限なし" [selected]
+                - generic [ref=e347]:
+                  - paragraph [ref=e348]: 食事タイプ
+                  - combobox [ref=e350] [cursor=pointer]:
+                    - option "指定しない" [selected]
+                    - option "食事なし"
+                    - option "朝のみ"
+                    - option "夕のみ"
+                    - option "朝/夕あり"
+                - generic [ref=e351]:
+                  - paragraph [ref=e352]: こだわり
+                  - generic [ref=e353] [cursor=pointer]: 禁煙ルーム
+                - button "絞り込んで再検索" [ref=e355] [cursor=pointer]
+            - paragraph [ref=e356]:
+              - link " 検索条件とアイコンについて" [ref=e357] [cursor=pointer]:
+                - /url: //www.jalan.net/jalan/doc/howto/sibori_exp.html
+                - generic [ref=e358]: 
+                - text: 検索条件とアイコンについて
+          - generic [ref=e359]:
+            - generic [ref=e361]:
+              - generic [ref=e362]:
+                - generic [ref=e365] [cursor=pointer]:
+                  - generic [ref=e366]:
+                    - paragraph [ref=e367]: 航空券付き宿泊プラン
+                    - paragraph [ref=e368]: ※福岡⇔羽田を利用した際の参考価格です
+                  - list [ref=e369]:
+                    - listitem [ref=e370]:
+                      - img "JAL" [ref=e372]
+                      - generic [ref=e373]:
+                        - paragraph [ref=e374]:
+                          - generic [ref=e375]: 交通＋宿泊セット
+                          - text: 1泊2日
+                          - generic [ref=e376]: 大人1名(税込)
+                        - paragraph [ref=e377]:
+                          - generic [ref=e378]: 56,800円～
+                          - generic [ref=e379]:
+                            - generic [ref=e380]:  
+                            - text: プラン情報
+                    - listitem [ref=e381]:
+                      - img "ANA" [ref=e383]
+                      - generic [ref=e384]:
+                        - paragraph [ref=e385]:
+                          - generic [ref=e386]: 交通＋宿泊セット
+                          - text: 1泊2日
+                          - generic [ref=e387]: 大人1名(税込)
+                        - paragraph [ref=e388]:
+                          - generic [ref=e389]: 50,800円～
+                          - generic [ref=e390]:
+                            - generic [ref=e391]:  
+                            - text: プラン情報
+                - paragraph [ref=e393] [cursor=pointer]:
+                  - generic [ref=e394]:
+                    - text: 往復航空券
+                    - img "JAL" [ref=e395]
+                    - img "ANA" [ref=e396]
+                  - generic [ref=e397]: や
+                  - generic [ref=e398]:
+                    - text: 新幹線・特急
+                    - img "JR" [ref=e399]
+                  - generic [ref=e400]: とセットでお得なプランをみる
+              - table [ref=e401]:
+                - rowgroup [ref=e402]:
+                  - row "12件の宿泊プランがありました。 おすすめ順 料金が安い順 料金が高い順" [ref=e403]:
+                    - cell "12件の宿泊プランがありました。 おすすめ順 料金が安い順 料金が高い順" [ref=e404]:
+                      - paragraph [ref=e405]: 12件の宿泊プランがありました。
+                      - list [ref=e407]:
+                        - listitem [ref=e408]:
+                          - link "おすすめ順":
+                            - /url: javascript:changeSORT('0')
+                        - listitem [ref=e409]:
+                          - link "料金が安い順" [ref=e410] [cursor=pointer]:
+                            - /url: javascript:changeSORT('17')
+                        - listitem [ref=e411]:
+                          - link "料金が高い順" [ref=e412] [cursor=pointer]:
+                            - /url: javascript:changeSORT('18')
+              - paragraph [ref=e413]:
+                - generic [ref=e414]:
+                  - generic [ref=e415]:
+                    - generic [ref=e416]: "7"
+                    - text: 名がこの宿を見ています
+                  - generic [ref=e417]:
+                    - generic [ref=e418]: 39分
+                    - text: 前に予約されました
+            - list [ref=e420]:
+              - listitem [ref=e421]:
+                - generic [ref=e422]:
+                  - paragraph [ref=e423]: おもたび。（朝食：OMOダイニング ビュッフェ付)
+                  - list:
+                    - listitem [ref=e424]: オンラインカード決済可
+                - generic [ref=e425]:
+                  - generic [ref=e426]:
+                    - link [ref=e428] [cursor=pointer]:
+                      - /url: /uw/uwp3200/uww3201init.do?roomCrack=200000&stayCount=1&roomCount=1&adultNum=2&distCd=01&smlCd=140202&stayYear=2026&stayMonth=08&stayDay=05&yadNo=341758&screenId=UWW3101&planCd=04176529&roomTypeCd=0597319&planListNumPlan=12__0&groupBookingFlg=&ccnt=planlist_cp_y_2500_sale_n_0_pp_n_0
+                      - img [ref=e429]
+                    - generic [ref=e430]:
+                      - generic [ref=e431]:
+                        - generic [ref=e432]:
+                          - term [ref=e433]: 食事：
+                          - definition [ref=e434]: 朝のみ
+                        - generic [ref=e435]:
+                          - term [ref=e436]: チェックイン
+                          - definition [ref=e437]: 15:00～
+                        - generic [ref=e438]:
+                          - term [ref=e439]: チェックアウト
+                          - definition [ref=e440]: ～11:00
+                      - paragraph [ref=e441]: 【朝食ビュッフェ】Yokohama Morning Specialties
+                      - paragraph [ref=e442]: 1名がこのプランを見ています
+                  - table [ref=e443]:
+                    - rowgroup [ref=e444]:
+                      - row "部屋タイプ・詳細 加算予定ポイント 加算予定スコア 大人1名(税込) 合計(税込) 1泊 大人2名" [ref=e445]:
+                        - columnheader "部屋タイプ・詳細" [ref=e446]:
+                          - generic [ref=e447]: 部屋タイプ・詳細
+                        - columnheader "加算予定ポイント 加算予定スコア" [ref=e448]:
+                          - generic [ref=e449]:
+                            - generic [ref=e450]: 加算予定ポイント
+                            - generic [ref=e451]: 加算予定スコア
+                        - columnheader "大人1名(税込)" [ref=e454]
+                        - columnheader "合計(税込) 1泊 大人2名" [ref=e455]:
+                          - text: 合計(税込)
+                          - generic [ref=e456]: 1泊 大人2名
+                    - rowgroup [ref=e457]:
+                      - row "やぐらスイート ポイント2% 特別室・離れ・スイート 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET 4ベッド 1,180ポイント 59,000スコア 29,500円 59,000円" [ref=e458]:
+                        - cell "やぐらスイート ポイント2% 特別室・離れ・スイート 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET 4ベッド" [ref=e459]:
+                          - generic [ref=e460]:
+                            - generic [ref=e461]:
+                              - term [ref=e462]:
+                                - paragraph [ref=e463]:
+                                  - img [ref=e464]
+                              - definition [ref=e465]:
+                                - link "やぐらスイート" [ref=e466] [cursor=pointer]:
+                                  - /url: /uw/uwp3200/uww3201init.do?roomCrack=200000&stayCount=1&roomCount=1&adultNum=2&distCd=01&smlCd=140202&stayYear=2026&stayMonth=08&stayDay=05&yadNo=341758&screenId=UWW3101&planCd=04176529&roomTypeCd=0597319&planListNumPlan=12_0_0&groupBookingFlg=&ccnt=pc-plan-sort-341758-04176529-1-0597319-1-detail-button
+                                - list [ref=e467]:
+                                  - listitem [ref=e468]: ポイント2%
+                                  - listitem [ref=e469]: 特別室・離れ・スイート
+                                  - listitem [ref=e470]: 禁煙ルーム
+                                  - listitem [ref=e471]: 部屋でインターネットOK
+                            - paragraph [ref=e473]:
+                              - generic [ref=e474]:
+                                - text: 2,500円クーポンを獲得してお得に泊まる
+                                - link "クーポンGET" [ref=e475] [cursor=pointer]:
+                                  - /url: javascript:void(0)
+                          - list [ref=e477]:
+                            - listitem [ref=e478]: 4ベッド
+                        - cell "1,180ポイント 59,000スコア" [ref=e479]:
+                          - generic [ref=e480]:
+                            - emphasis [ref=e481]: 1,180
+                            - text: ポイント
+                          - generic [ref=e482]: 59,000スコア
+                        - cell "29,500円" [ref=e483]
+                        - cell "59,000円" [ref=e484]:
+                          - generic [ref=e485]:
+                            - emphasis [ref=e486]: 59,000
+                            - text: 円
+                    - rowgroup [ref=e487]:
+                      - row "かたりばルーム ポイント2% 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET ツイン 1,020ポイント 51,000スコア 25,500円 51,000円" [ref=e488]:
+                        - cell "かたりばルーム ポイント2% 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET ツイン" [ref=e489]:
+                          - generic [ref=e490]:
+                            - generic [ref=e491]:
+                              - term [ref=e492]:
+                                - paragraph [ref=e493]:
+                                  - img [ref=e494]
+                              - definition [ref=e495]:
+                                - link "かたりばルーム" [ref=e496] [cursor=pointer]:
+                                  - /url: /uw/uwp3200/uww3201init.do?roomCrack=200000&stayCount=1&roomCount=1&adultNum=2&distCd=01&smlCd=140202&stayYear=2026&stayMonth=08&stayDay=05&yadNo=341758&screenId=UWW3101&planCd=04176529&roomTypeCd=0597317&planListNumPlan=12_0_1&groupBookingFlg=&ccnt=pc-plan-sort-341758-04176529-1-0597317-2-detail-button
+                                - list [ref=e497]:
+                                  - listitem [ref=e498]: ポイント2%
+                                  - listitem [ref=e499]: 禁煙ルーム
+                                  - listitem [ref=e500]: 部屋でインターネットOK
+                            - paragraph [ref=e502]:
+                              - generic [ref=e503]:
+                                - text: 2,500円クーポンを獲得してお得に泊まる
+                                - link "クーポンGET" [ref=e504] [cursor=pointer]:
+                                  - /url: javascript:void(0)
+                          - list [ref=e506]:
+                            - listitem [ref=e507]: ツイン
+                        - cell "1,020ポイント 51,000スコア" [ref=e508]:
+                          - generic [ref=e509]:
+                            - emphasis [ref=e510]: 1,020
+                            - text: ポイント
+                          - generic [ref=e511]: 51,000スコア
+                        - cell "25,500円" [ref=e512]
+                        - cell "51,000円" [ref=e513]:
+                          - generic [ref=e514]:
+                            - emphasis [ref=e515]: 51,000
+                            - text: 円
+                    - rowgroup [ref=e516]:
+                      - row "デラックスルーム（ユニバーサル仕様） ポイント2% 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET ツイン 940ポイント 47,000スコア 23,500円 47,000円" [ref=e517]:
+                        - cell "デラックスルーム（ユニバーサル仕様） ポイント2% 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET ツイン" [ref=e518]:
+                          - generic [ref=e519]:
+                            - generic [ref=e520]:
+                              - term [ref=e521]:
+                                - paragraph [ref=e522]:
+                                  - img [ref=e523]
+                              - definition [ref=e524]:
+                                - link "デラックスルーム（ユニバーサル仕様）" [ref=e525] [cursor=pointer]:
+                                  - /url: /uw/uwp3200/uww3201init.do?roomCrack=200000&stayCount=1&roomCount=1&adultNum=2&distCd=01&smlCd=140202&stayYear=2026&stayMonth=08&stayDay=05&yadNo=341758&screenId=UWW3101&planCd=04176529&roomTypeCd=0597602&planListNumPlan=12_0_2&groupBookingFlg=&ccnt=pc-plan-sort-341758-04176529-1-0597602-3-detail-button
+                                - list [ref=e526]:
+                                  - listitem [ref=e527]: ポイント2%
+                                  - listitem [ref=e528]: 禁煙ルーム
+                                  - listitem [ref=e529]: 部屋でインターネットOK
+                            - paragraph [ref=e531]:
+                              - generic [ref=e532]:
+                                - text: 2,500円クーポンを獲得してお得に泊まる
+                                - link "クーポンGET" [ref=e533] [cursor=pointer]:
+                                  - /url: javascript:void(0)
+                          - list [ref=e535]:
+                            - listitem [ref=e536]: ツイン
+                        - cell "940ポイント 47,000スコア" [ref=e537]:
+                          - generic [ref=e538]:
+                            - emphasis [ref=e539]: "940"
+                            - text: ポイント
+                          - generic [ref=e540]: 47,000スコア
+                        - cell "23,500円" [ref=e541]
+                        - cell "47,000円" [ref=e542]:
+                          - generic [ref=e543]:
+                            - emphasis [ref=e544]: 47,000
+                            - text: 円
+                      - row "あと3部屋" [ref=e545]:
+                        - cell "あと3部屋" [ref=e546]:
+                          - generic [ref=e547]: あと3部屋
+                      - row [ref=e548]:
+                        - cell [ref=e549]
+                    - rowgroup [ref=e550]:
+                      - row "やぐらルーム ポイント2% 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET ツイン 740ポイント 37,000スコア 18,500円 37,000円" [ref=e551]:
+                        - cell "やぐらルーム ポイント2% 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET ツイン" [ref=e552]:
+                          - generic [ref=e553]:
+                            - generic [ref=e554]:
+                              - term [ref=e555]:
+                                - paragraph [ref=e556]:
+                                  - img [ref=e557]
+                              - definition [ref=e558]:
+                                - link "やぐらルーム" [ref=e559] [cursor=pointer]:
+                                  - /url: /uw/uwp3200/uww3201init.do?roomCrack=200000&stayCount=1&roomCount=1&adultNum=2&distCd=01&smlCd=140202&stayYear=2026&stayMonth=08&stayDay=05&yadNo=341758&screenId=UWW3101&planCd=04176529&roomTypeCd=0597315&planListNumPlan=12_0_3&groupBookingFlg=&ccnt=pc-plan-sort-341758-04176529-1-0597315-4-detail-button
+                                - list [ref=e560]:
+                                  - listitem [ref=e561]: ポイント2%
+                                  - listitem [ref=e562]: 禁煙ルーム
+                                  - listitem [ref=e563]: 部屋でインターネットOK
+                            - paragraph [ref=e565]:
+                              - generic [ref=e566]:
+                                - text: 2,500円クーポンを獲得してお得に泊まる
+                                - link "クーポンGET" [ref=e567] [cursor=pointer]:
+                                  - /url: javascript:void(0)
+                          - list [ref=e569]:
+                            - listitem [ref=e570]: ツイン
+                        - cell "740ポイント 37,000スコア" [ref=e571]:
+                          - generic [ref=e572]:
+                            - emphasis [ref=e573]: "740"
+                            - text: ポイント
+                          - generic [ref=e574]: 37,000スコア
+                        - cell "18,500円" [ref=e575]
+                        - cell "37,000円" [ref=e576]:
+                          - generic [ref=e577]:
+                            - emphasis [ref=e578]: 37,000
+                            - text: 円
+                    - rowgroup [ref=e579]:
+                      - row "ダブルルーム ポイント2% 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET ダブル 700ポイント 35,000スコア 17,500円 35,000円" [ref=e580]:
+                        - cell "ダブルルーム ポイント2% 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET ダブル" [ref=e581]:
+                          - generic [ref=e582]:
+                            - generic [ref=e583]:
+                              - term [ref=e584]:
+                                - paragraph [ref=e585]:
+                                  - img [ref=e586]
+                              - definition [ref=e587]:
+                                - link "ダブルルーム" [ref=e588] [cursor=pointer]:
+                                  - /url: /uw/uwp3200/uww3201init.do?roomCrack=200000&stayCount=1&roomCount=1&adultNum=2&distCd=01&smlCd=140202&stayYear=2026&stayMonth=08&stayDay=05&yadNo=341758&screenId=UWW3101&planCd=04176529&roomTypeCd=0597316&planListNumPlan=12_0_4&groupBookingFlg=&ccnt=pc-plan-sort-341758-04176529-1-0597316-5-detail-button
+                                - list [ref=e589]:
+                                  - listitem [ref=e590]: ポイント2%
+                                  - listitem [ref=e591]: 禁煙ルーム
+                                  - listitem [ref=e592]: 部屋でインターネットOK
+                            - paragraph [ref=e594]:
+                              - generic [ref=e595]:
+                                - text: 2,500円クーポンを獲得してお得に泊まる
+                                - link "クーポンGET" [ref=e596] [cursor=pointer]:
+                                  - /url: javascript:void(0)
+                          - list [ref=e598]:
+                            - listitem [ref=e599]: ダブル
+                        - cell "700ポイント 35,000スコア" [ref=e600]:
+                          - generic [ref=e601]:
+                            - emphasis [ref=e602]: "700"
+                            - text: ポイント
+                          - generic [ref=e603]: 35,000スコア
+                        - cell "17,500円" [ref=e604]
+                        - cell "35,000円" [ref=e605]:
+                          - generic [ref=e606]:
+                            - emphasis [ref=e607]: 35,000
+                            - text: 円
+              - listitem [ref=e608]:
+                - generic [ref=e609]:
+                  - paragraph [ref=e610]: 【じゃらんのお得な10日間】おもたび。（朝食：OMOダイニング ビュッフェ付）
+                  - list:
+                    - listitem [ref=e611]: 終了間近
+                    - listitem [ref=e612]: じゃらんのお得な10日間
+                    - listitem [ref=e613]: オンラインカード決済専用
+                - generic [ref=e614]:
+                  - generic [ref=e615]:
+                    - link [ref=e617] [cursor=pointer]:
+                      - /url: /uw/uwp3200/uww3201init.do?roomCrack=200000&stayCount=1&roomCount=1&adultNum=2&distCd=01&smlCd=140202&stayYear=2026&stayMonth=08&stayDay=05&yadNo=341758&screenId=UWW3101&planCd=04194780&roomTypeCd=0597319&planListNumPlan=12__0&groupBookingFlg=&ccnt=planlist_cp_y_2500_sale_y_5_pp_n_0
+                      - img [ref=e618]
+                    - generic [ref=e619]:
+                      - generic [ref=e621]:
+                        - term [ref=e622]: 【予約受付期間】
+                        - definition [ref=e623]: 2026年6月18日～2026年6月29日
+                      - generic [ref=e624]:
+                        - generic [ref=e625]:
+                          - term [ref=e626]: 食事：
+                          - definition [ref=e627]: 朝のみ
+                        - generic [ref=e628]:
+                          - term [ref=e629]: チェックイン
+                          - definition [ref=e630]: 15:00～
+                        - generic [ref=e631]:
+                          - term [ref=e632]: チェックアウト
+                          - definition [ref=e633]: ～11:00
+                      - paragraph [ref=e634]: 朝食ビュッフェ「Yokohama Morning Specialties」素材選びから調理・提供方法まで徹底的にこだわっています
+                      - paragraph [ref=e635]: 2名がこのプランを見ています
+                  - table [ref=e636]:
+                    - rowgroup [ref=e637]:
+                      - row "部屋タイプ・詳細 加算予定ポイント 加算予定スコア 大人1名(税込) 合計(税込) 1泊 大人2名" [ref=e638]:
+                        - columnheader "部屋タイプ・詳細" [ref=e639]:
+                          - generic [ref=e640]: 部屋タイプ・詳細
+                        - columnheader "加算予定ポイント 加算予定スコア" [ref=e641]:
+                          - generic [ref=e642]:
+                            - generic [ref=e643]: 加算予定ポイント
+                            - generic [ref=e644]: 加算予定スコア
+                        - columnheader "大人1名(税込)" [ref=e647]
+                        - columnheader "合計(税込) 1泊 大人2名" [ref=e648]:
+                          - text: 合計(税込)
+                          - generic [ref=e649]: 1泊 大人2名
+                    - rowgroup [ref=e650]:
+                      - row "やぐらスイート ポイント2% 特別室・離れ・スイート 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET 4ベッド 1,120ポイント 56,050スコア 29,500円 28,025円 通常料金 59,000円 56,050円 5% OFF" [ref=e651]:
+                        - cell "やぐらスイート ポイント2% 特別室・離れ・スイート 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET 4ベッド" [ref=e652]:
+                          - generic [ref=e653]:
+                            - generic [ref=e654]:
+                              - term [ref=e655]:
+                                - paragraph [ref=e656]:
+                                  - img [ref=e657]
+                              - definition [ref=e658]:
+                                - link "やぐらスイート" [ref=e659] [cursor=pointer]:
+                                  - /url: /uw/uwp3200/uww3201init.do?roomCrack=200000&stayCount=1&roomCount=1&adultNum=2&distCd=01&smlCd=140202&stayYear=2026&stayMonth=08&stayDay=05&yadNo=341758&screenId=UWW3101&planCd=04194780&roomTypeCd=0597319&planListNumPlan=12_1_0&groupBookingFlg=&ccnt=pc-plan-sort-341758-04194780-2-0597319-1-detail-button
+                                - list [ref=e660]:
+                                  - listitem [ref=e661]: ポイント2%
+                                  - listitem [ref=e662]: 特別室・離れ・スイート
+                                  - listitem [ref=e663]: 禁煙ルーム
+                                  - listitem [ref=e664]: 部屋でインターネットOK
+                            - paragraph [ref=e666]:
+                              - generic [ref=e667]:
+                                - text: 2,500円クーポンを獲得してお得に泊まる
+                                - link "クーポンGET" [ref=e668] [cursor=pointer]:
+                                  - /url: javascript:void(0)
+                          - list [ref=e670]:
+                            - listitem [ref=e671]: 4ベッド
+                        - cell "1,120ポイント 56,050スコア" [ref=e672]:
+                          - generic [ref=e673]:
+                            - emphasis [ref=e674]: 1,120
+                            - text: ポイント
+                          - generic [ref=e675]: 56,050スコア
+                        - cell "29,500円 28,025円" [ref=e676]:
+                          - text: 29,500円
+                          - generic [ref=e677]: 28,025円
+                        - cell "通常料金 59,000円 56,050円 5% OFF" [ref=e678]:
+                          - paragraph [ref=e679]: 通常料金
+                          - generic [ref=e680]: 59,000円
+                          - generic [ref=e681]:
+                            - emphasis [ref=e682]: 56,050
+                            - text: 円
+                          - paragraph [ref=e683]: 5% OFF
+                    - rowgroup [ref=e684]:
+                      - row "かたりばルーム ポイント2% 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET ツイン 968ポイント 48,450スコア 25,500円 24,225円 通常料金 51,000円 48,450円 5% OFF" [ref=e685]:
+                        - cell "かたりばルーム ポイント2% 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET ツイン" [ref=e686]:
+                          - generic [ref=e687]:
+                            - generic [ref=e688]:
+                              - term [ref=e689]:
+                                - paragraph [ref=e690]:
+                                  - img [ref=e691]
+                              - definition [ref=e692]:
+                                - link "かたりばルーム" [ref=e693] [cursor=pointer]:
+                                  - /url: /uw/uwp3200/uww3201init.do?roomCrack=200000&stayCount=1&roomCount=1&adultNum=2&distCd=01&smlCd=140202&stayYear=2026&stayMonth=08&stayDay=05&yadNo=341758&screenId=UWW3101&planCd=04194780&roomTypeCd=0597317&planListNumPlan=12_1_1&groupBookingFlg=&ccnt=pc-plan-sort-341758-04194780-2-0597317-2-detail-button
+                                - list [ref=e694]:
+                                  - listitem [ref=e695]: ポイント2%
+                                  - listitem [ref=e696]: 禁煙ルーム
+                                  - listitem [ref=e697]: 部屋でインターネットOK
+                            - paragraph [ref=e699]:
+                              - generic [ref=e700]:
+                                - text: 2,500円クーポンを獲得してお得に泊まる
+                                - link "クーポンGET" [ref=e701] [cursor=pointer]:
+                                  - /url: javascript:void(0)
+                          - list [ref=e703]:
+                            - listitem [ref=e704]: ツイン
+                        - cell "968ポイント 48,450スコア" [ref=e705]:
+                          - generic [ref=e706]:
+                            - emphasis [ref=e707]: "968"
+                            - text: ポイント
+                          - generic [ref=e708]: 48,450スコア
+                        - cell "25,500円 24,225円" [ref=e709]:
+                          - text: 25,500円
+                          - generic [ref=e710]: 24,225円
+                        - cell "通常料金 51,000円 48,450円 5% OFF" [ref=e711]:
+                          - paragraph [ref=e712]: 通常料金
+                          - generic [ref=e713]: 51,000円
+                          - generic [ref=e714]:
+                            - emphasis [ref=e715]: 48,450
+                            - text: 円
+                          - paragraph [ref=e716]: 5% OFF
+                    - rowgroup [ref=e717]:
+                      - row "デラックスルーム（ユニバーサル仕様） ポイント2% 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET ツイン 892ポイント 44,650スコア 23,500円 22,325円 通常料金 47,000円 44,650円 5% OFF" [ref=e718]:
+                        - cell "デラックスルーム（ユニバーサル仕様） ポイント2% 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET ツイン" [ref=e719]:
+                          - generic [ref=e720]:
+                            - generic [ref=e721]:
+                              - term [ref=e722]:
+                                - paragraph [ref=e723]:
+                                  - img [ref=e724]
+                              - definition [ref=e725]:
+                                - link "デラックスルーム（ユニバーサル仕様）" [ref=e726] [cursor=pointer]:
+                                  - /url: /uw/uwp3200/uww3201init.do?roomCrack=200000&stayCount=1&roomCount=1&adultNum=2&distCd=01&smlCd=140202&stayYear=2026&stayMonth=08&stayDay=05&yadNo=341758&screenId=UWW3101&planCd=04194780&roomTypeCd=0597602&planListNumPlan=12_1_2&groupBookingFlg=&ccnt=pc-plan-sort-341758-04194780-2-0597602-3-detail-button
+                                - list [ref=e727]:
+                                  - listitem [ref=e728]: ポイント2%
+                                  - listitem [ref=e729]: 禁煙ルーム
+                                  - listitem [ref=e730]: 部屋でインターネットOK
+                            - paragraph [ref=e732]:
+                              - generic [ref=e733]:
+                                - text: 2,500円クーポンを獲得してお得に泊まる
+                                - link "クーポンGET" [ref=e734] [cursor=pointer]:
+                                  - /url: javascript:void(0)
+                          - list [ref=e736]:
+                            - listitem [ref=e737]: ツイン
+                        - cell "892ポイント 44,650スコア" [ref=e738]:
+                          - generic [ref=e739]:
+                            - emphasis [ref=e740]: "892"
+                            - text: ポイント
+                          - generic [ref=e741]: 44,650スコア
+                        - cell "23,500円 22,325円" [ref=e742]:
+                          - text: 23,500円
+                          - generic [ref=e743]: 22,325円
+                        - cell "通常料金 47,000円 44,650円 5% OFF" [ref=e744]:
+                          - paragraph [ref=e745]: 通常料金
+                          - generic [ref=e746]: 47,000円
+                          - generic [ref=e747]:
+                            - emphasis [ref=e748]: 44,650
+                            - text: 円
+                          - paragraph [ref=e749]: 5% OFF
+                      - row "あと3部屋" [ref=e750]:
+                        - cell "あと3部屋" [ref=e751]:
+                          - generic [ref=e752]: あと3部屋
+                      - row [ref=e753]:
+                        - cell [ref=e754]
+                    - rowgroup [ref=e755]:
+                      - row "やぐらルーム ポイント2% 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET ツイン 702ポイント 35,150スコア 18,500円 17,575円 通常料金 37,000円 35,150円 5% OFF" [ref=e756]:
+                        - cell "やぐらルーム ポイント2% 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET ツイン" [ref=e757]:
+                          - generic [ref=e758]:
+                            - generic [ref=e759]:
+                              - term [ref=e760]:
+                                - paragraph [ref=e761]:
+                                  - img [ref=e762]
+                              - definition [ref=e763]:
+                                - link "やぐらルーム" [ref=e764] [cursor=pointer]:
+                                  - /url: /uw/uwp3200/uww3201init.do?roomCrack=200000&stayCount=1&roomCount=1&adultNum=2&distCd=01&smlCd=140202&stayYear=2026&stayMonth=08&stayDay=05&yadNo=341758&screenId=UWW3101&planCd=04194780&roomTypeCd=0597315&planListNumPlan=12_1_3&groupBookingFlg=&ccnt=pc-plan-sort-341758-04194780-2-0597315-4-detail-button
+                                - list [ref=e765]:
+                                  - listitem [ref=e766]: ポイント2%
+                                  - listitem [ref=e767]: 禁煙ルーム
+                                  - listitem [ref=e768]: 部屋でインターネットOK
+                            - paragraph [ref=e770]:
+                              - generic [ref=e771]:
+                                - text: 2,500円クーポンを獲得してお得に泊まる
+                                - link "クーポンGET" [ref=e772] [cursor=pointer]:
+                                  - /url: javascript:void(0)
+                          - list [ref=e774]:
+                            - listitem [ref=e775]: ツイン
+                        - cell "702ポイント 35,150スコア" [ref=e776]:
+                          - generic [ref=e777]:
+                            - emphasis [ref=e778]: "702"
+                            - text: ポイント
+                          - generic [ref=e779]: 35,150スコア
+                        - cell "18,500円 17,575円" [ref=e780]:
+                          - text: 18,500円
+                          - generic [ref=e781]: 17,575円
+                        - cell "通常料金 37,000円 35,150円 5% OFF" [ref=e782]:
+                          - paragraph [ref=e783]: 通常料金
+                          - generic [ref=e784]: 37,000円
+                          - generic [ref=e785]:
+                            - emphasis [ref=e786]: 35,150
+                            - text: 円
+                          - paragraph [ref=e787]: 5% OFF
+                    - rowgroup [ref=e788]:
+                      - row "ダブルルーム ポイント2% 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET ダブル 664ポイント 33,250スコア 17,500円 16,625円 通常料金 35,000円 33,250円 5% OFF" [ref=e789]:
+                        - cell "ダブルルーム ポイント2% 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET ダブル" [ref=e790]:
+                          - generic [ref=e791]:
+                            - generic [ref=e792]:
+                              - term [ref=e793]:
+                                - paragraph [ref=e794]:
+                                  - img [ref=e795]
+                              - definition [ref=e796]:
+                                - link "ダブルルーム" [ref=e797] [cursor=pointer]:
+                                  - /url: /uw/uwp3200/uww3201init.do?roomCrack=200000&stayCount=1&roomCount=1&adultNum=2&distCd=01&smlCd=140202&stayYear=2026&stayMonth=08&stayDay=05&yadNo=341758&screenId=UWW3101&planCd=04194780&roomTypeCd=0597316&planListNumPlan=12_1_4&groupBookingFlg=&ccnt=pc-plan-sort-341758-04194780-2-0597316-5-detail-button
+                                - list [ref=e798]:
+                                  - listitem [ref=e799]: ポイント2%
+                                  - listitem [ref=e800]: 禁煙ルーム
+                                  - listitem [ref=e801]: 部屋でインターネットOK
+                            - paragraph [ref=e803]:
+                              - generic [ref=e804]:
+                                - text: 2,500円クーポンを獲得してお得に泊まる
+                                - link "クーポンGET" [ref=e805] [cursor=pointer]:
+                                  - /url: javascript:void(0)
+                          - list [ref=e807]:
+                            - listitem [ref=e808]: ダブル
+                        - cell "664ポイント 33,250スコア" [ref=e809]:
+                          - generic [ref=e810]:
+                            - emphasis [ref=e811]: "664"
+                            - text: ポイント
+                          - generic [ref=e812]: 33,250スコア
+                        - cell "17,500円 16,625円" [ref=e813]:
+                          - text: 17,500円
+                          - generic [ref=e814]: 16,625円
+                        - cell "通常料金 35,000円 33,250円 5% OFF" [ref=e815]:
+                          - paragraph [ref=e816]: 通常料金
+                          - generic [ref=e817]: 35,000円
+                          - generic [ref=e818]:
+                            - emphasis [ref=e819]: 33,250
+                            - text: 円
+                          - paragraph [ref=e820]: 5% OFF
+              - listitem [ref=e821]:
+                - generic [ref=e822]:
+                  - paragraph [ref=e823]: 【じゃらんのお得な10日間】おもたび。（朝食：OMOベーカリー セット付)
+                  - list:
+                    - listitem [ref=e824]: 終了間近
+                    - listitem [ref=e825]: じゃらんのお得な10日間
+                    - listitem [ref=e826]: オンラインカード決済専用
+                - generic [ref=e827]:
+                  - generic [ref=e828]:
+                    - link [ref=e830] [cursor=pointer]:
+                      - /url: /uw/uwp3200/uww3201init.do?roomCrack=200000&stayCount=1&roomCount=1&adultNum=2&distCd=01&smlCd=140202&stayYear=2026&stayMonth=08&stayDay=05&yadNo=341758&screenId=UWW3101&planCd=04194781&roomTypeCd=0597319&planListNumPlan=12__0&groupBookingFlg=&ccnt=planlist_cp_y_2500_sale_y_9_pp_n_0
+                      - img [ref=e831]
+                    - generic [ref=e832]:
+                      - generic [ref=e834]:
+                        - term [ref=e835]: 【予約受付期間】
+                        - definition [ref=e836]: 2026年6月18日～2026年6月29日
+                      - generic [ref=e837]:
+                        - generic [ref=e838]:
+                          - term [ref=e839]: 食事：
+                          - definition [ref=e840]: 朝のみ
+                        - generic [ref=e841]:
+                          - term [ref=e842]: チェックイン
+                          - definition [ref=e843]: 15:00～
+                        - generic [ref=e844]:
+                          - term [ref=e845]: チェックアウト
+                          - definition [ref=e846]: ～11:00
+                      - paragraph [ref=e847]: 【朝食】10種類のパンから2種類選べるベーカリーセット
+                      - paragraph [ref=e848]: 3名がこのプランを見ています
+                  - table [ref=e849]:
+                    - rowgroup [ref=e850]:
+                      - row "部屋タイプ・詳細 加算予定ポイント 加算予定スコア 大人1名(税込) 合計(税込) 1泊 大人2名" [ref=e851]:
+                        - columnheader "部屋タイプ・詳細" [ref=e852]:
+                          - generic [ref=e853]: 部屋タイプ・詳細
+                        - columnheader "加算予定ポイント 加算予定スコア" [ref=e854]:
+                          - generic [ref=e855]:
+                            - generic [ref=e856]: 加算予定ポイント
+                            - generic [ref=e857]: 加算予定スコア
+                        - columnheader "大人1名(税込)" [ref=e860]
+                        - columnheader "合計(税込) 1泊 大人2名" [ref=e861]:
+                          - text: 合計(税込)
+                          - generic [ref=e862]: 1泊 大人2名
+                    - rowgroup [ref=e863]:
+                      - row "やぐらスイート ポイント2% 特別室・離れ・スイート 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET 4ベッド 984ポイント 49,276スコア 27,300円 24,638円 通常料金 54,600円 49,276円 9% OFF" [ref=e864]:
+                        - cell "やぐらスイート ポイント2% 特別室・離れ・スイート 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET 4ベッド" [ref=e865]:
+                          - generic [ref=e866]:
+                            - generic [ref=e867]:
+                              - term [ref=e868]:
+                                - paragraph [ref=e869]:
+                                  - img [ref=e870]
+                              - definition [ref=e871]:
+                                - link "やぐらスイート" [ref=e872] [cursor=pointer]:
+                                  - /url: /uw/uwp3200/uww3201init.do?roomCrack=200000&stayCount=1&roomCount=1&adultNum=2&distCd=01&smlCd=140202&stayYear=2026&stayMonth=08&stayDay=05&yadNo=341758&screenId=UWW3101&planCd=04194781&roomTypeCd=0597319&planListNumPlan=12_2_0&groupBookingFlg=&ccnt=pc-plan-sort-341758-04194781-3-0597319-1-detail-button
+                                - list [ref=e873]:
+                                  - listitem [ref=e874]: ポイント2%
+                                  - listitem [ref=e875]: 特別室・離れ・スイート
+                                  - listitem [ref=e876]: 禁煙ルーム
+                                  - listitem [ref=e877]: 部屋でインターネットOK
+                            - paragraph [ref=e879]:
+                              - generic [ref=e880]:
+                                - text: 2,500円クーポンを獲得してお得に泊まる
+                                - link "クーポンGET" [ref=e881] [cursor=pointer]:
+                                  - /url: javascript:void(0)
+                          - list [ref=e883]:
+                            - listitem [ref=e884]: 4ベッド
+                        - cell "984ポイント 49,276スコア" [ref=e885]:
+                          - generic [ref=e886]:
+                            - emphasis [ref=e887]: "984"
+                            - text: ポイント
+                          - generic [ref=e888]: 49,276スコア
+                        - cell "27,300円 24,638円" [ref=e889]:
+                          - text: 27,300円
+                          - generic [ref=e890]: 24,638円
+                        - cell "通常料金 54,600円 49,276円 9% OFF" [ref=e891]:
+                          - paragraph [ref=e892]: 通常料金
+                          - generic [ref=e893]: 54,600円
+                          - generic [ref=e894]:
+                            - emphasis [ref=e895]: 49,276
+                            - text: 円
+                          - paragraph [ref=e896]: 9% OFF
+                    - rowgroup [ref=e897]:
+                      - row "かたりばルーム ポイント2% 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET ツイン 840ポイント 42,056スコア 23,300円 21,028円 通常料金 46,600円 42,056円 9% OFF" [ref=e898]:
+                        - cell "かたりばルーム ポイント2% 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET ツイン" [ref=e899]:
+                          - generic [ref=e900]:
+                            - generic [ref=e901]:
+                              - term [ref=e902]:
+                                - paragraph [ref=e903]:
+                                  - img [ref=e904]
+                              - definition [ref=e905]:
+                                - link "かたりばルーム" [ref=e906] [cursor=pointer]:
+                                  - /url: /uw/uwp3200/uww3201init.do?roomCrack=200000&stayCount=1&roomCount=1&adultNum=2&distCd=01&smlCd=140202&stayYear=2026&stayMonth=08&stayDay=05&yadNo=341758&screenId=UWW3101&planCd=04194781&roomTypeCd=0597317&planListNumPlan=12_2_1&groupBookingFlg=&ccnt=pc-plan-sort-341758-04194781-3-0597317-2-detail-button
+                                - list [ref=e907]:
+                                  - listitem [ref=e908]: ポイント2%
+                                  - listitem [ref=e909]: 禁煙ルーム
+                                  - listitem [ref=e910]: 部屋でインターネットOK
+                            - paragraph [ref=e912]:
+                              - generic [ref=e913]:
+                                - text: 2,500円クーポンを獲得してお得に泊まる
+                                - link "クーポンGET" [ref=e914] [cursor=pointer]:
+                                  - /url: javascript:void(0)
+                          - list [ref=e916]:
+                            - listitem [ref=e917]: ツイン
+                        - cell "840ポイント 42,056スコア" [ref=e918]:
+                          - generic [ref=e919]:
+                            - emphasis [ref=e920]: "840"
+                            - text: ポイント
+                          - generic [ref=e921]: 42,056スコア
+                        - cell "23,300円 21,028円" [ref=e922]:
+                          - text: 23,300円
+                          - generic [ref=e923]: 21,028円
+                        - cell "通常料金 46,600円 42,056円 9% OFF" [ref=e924]:
+                          - paragraph [ref=e925]: 通常料金
+                          - generic [ref=e926]: 46,600円
+                          - generic [ref=e927]:
+                            - emphasis [ref=e928]: 42,056
+                            - text: 円
+                          - paragraph [ref=e929]: 9% OFF
+                    - rowgroup [ref=e930]:
+                      - row "デラックスルーム（ユニバーサル仕様） ポイント2% 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET ツイン 768ポイント 38,446スコア 21,300円 19,223円 通常料金 42,600円 38,446円 9% OFF" [ref=e931]:
+                        - cell "デラックスルーム（ユニバーサル仕様） ポイント2% 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET ツイン" [ref=e932]:
+                          - generic [ref=e933]:
+                            - generic [ref=e934]:
+                              - term [ref=e935]:
+                                - paragraph [ref=e936]:
+                                  - img [ref=e937]
+                              - definition [ref=e938]:
+                                - link "デラックスルーム（ユニバーサル仕様）" [ref=e939] [cursor=pointer]:
+                                  - /url: /uw/uwp3200/uww3201init.do?roomCrack=200000&stayCount=1&roomCount=1&adultNum=2&distCd=01&smlCd=140202&stayYear=2026&stayMonth=08&stayDay=05&yadNo=341758&screenId=UWW3101&planCd=04194781&roomTypeCd=0597602&planListNumPlan=12_2_2&groupBookingFlg=&ccnt=pc-plan-sort-341758-04194781-3-0597602-3-detail-button
+                                - list [ref=e940]:
+                                  - listitem [ref=e941]: ポイント2%
+                                  - listitem [ref=e942]: 禁煙ルーム
+                                  - listitem [ref=e943]: 部屋でインターネットOK
+                            - paragraph [ref=e945]:
+                              - generic [ref=e946]:
+                                - text: 2,500円クーポンを獲得してお得に泊まる
+                                - link "クーポンGET" [ref=e947] [cursor=pointer]:
+                                  - /url: javascript:void(0)
+                          - list [ref=e949]:
+                            - listitem [ref=e950]: ツイン
+                        - cell "768ポイント 38,446スコア" [ref=e951]:
+                          - generic [ref=e952]:
+                            - emphasis [ref=e953]: "768"
+                            - text: ポイント
+                          - generic [ref=e954]: 38,446スコア
+                        - cell "21,300円 19,223円" [ref=e955]:
+                          - text: 21,300円
+                          - generic [ref=e956]: 19,223円
+                        - cell "通常料金 42,600円 38,446円 9% OFF" [ref=e957]:
+                          - paragraph [ref=e958]: 通常料金
+                          - generic [ref=e959]: 42,600円
+                          - generic [ref=e960]:
+                            - emphasis [ref=e961]: 38,446
+                            - text: 円
+                          - paragraph [ref=e962]: 9% OFF
+                      - row "あと3部屋" [ref=e963]:
+                        - cell "あと3部屋" [ref=e964]:
+                          - generic [ref=e965]: あと3部屋
+                      - row [ref=e966]:
+                        - cell [ref=e967]
+                    - rowgroup [ref=e968]:
+                      - row "やぐらルーム ポイント2% 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET ツイン 588ポイント 29,420スコア 16,300円 14,710円 通常料金 32,600円 29,420円 9% OFF" [ref=e969]:
+                        - cell "やぐらルーム ポイント2% 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET ツイン" [ref=e970]:
+                          - generic [ref=e971]:
+                            - generic [ref=e972]:
+                              - term [ref=e973]:
+                                - paragraph [ref=e974]:
+                                  - img [ref=e975]
+                              - definition [ref=e976]:
+                                - link "やぐらルーム" [ref=e977] [cursor=pointer]:
+                                  - /url: /uw/uwp3200/uww3201init.do?roomCrack=200000&stayCount=1&roomCount=1&adultNum=2&distCd=01&smlCd=140202&stayYear=2026&stayMonth=08&stayDay=05&yadNo=341758&screenId=UWW3101&planCd=04194781&roomTypeCd=0597315&planListNumPlan=12_2_3&groupBookingFlg=&ccnt=pc-plan-sort-341758-04194781-3-0597315-4-detail-button
+                                - list [ref=e978]:
+                                  - listitem [ref=e979]: ポイント2%
+                                  - listitem [ref=e980]: 禁煙ルーム
+                                  - listitem [ref=e981]: 部屋でインターネットOK
+                            - paragraph [ref=e983]:
+                              - generic [ref=e984]:
+                                - text: 2,500円クーポンを獲得してお得に泊まる
+                                - link "クーポンGET" [ref=e985] [cursor=pointer]:
+                                  - /url: javascript:void(0)
+                          - list [ref=e987]:
+                            - listitem [ref=e988]: ツイン
+                        - cell "588ポイント 29,420スコア" [ref=e989]:
+                          - generic [ref=e990]:
+                            - emphasis [ref=e991]: "588"
+                            - text: ポイント
+                          - generic [ref=e992]: 29,420スコア
+                        - cell "16,300円 14,710円" [ref=e993]:
+                          - text: 16,300円
+                          - generic [ref=e994]: 14,710円
+                        - cell "通常料金 32,600円 29,420円 9% OFF" [ref=e995]:
+                          - paragraph [ref=e996]: 通常料金
+                          - generic [ref=e997]: 32,600円
+                          - generic [ref=e998]:
+                            - emphasis [ref=e999]: 29,420
+                            - text: 円
+                          - paragraph [ref=e1000]: 9% OFF
+                    - rowgroup [ref=e1001]:
+                      - row "ダブルルーム ポイント2% 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET ダブル 552ポイント 27,616スコア 15,300円 13,808円 通常料金 30,600円 27,616円 9% OFF" [ref=e1002]:
+                        - cell "ダブルルーム ポイント2% 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET ダブル" [ref=e1003]:
+                          - generic [ref=e1004]:
+                            - generic [ref=e1005]:
+                              - term [ref=e1006]:
+                                - paragraph [ref=e1007]:
+                                  - img [ref=e1008]
+                              - definition [ref=e1009]:
+                                - link "ダブルルーム" [ref=e1010] [cursor=pointer]:
+                                  - /url: /uw/uwp3200/uww3201init.do?roomCrack=200000&stayCount=1&roomCount=1&adultNum=2&distCd=01&smlCd=140202&stayYear=2026&stayMonth=08&stayDay=05&yadNo=341758&screenId=UWW3101&planCd=04194781&roomTypeCd=0597316&planListNumPlan=12_2_4&groupBookingFlg=&ccnt=pc-plan-sort-341758-04194781-3-0597316-5-detail-button
+                                - list [ref=e1011]:
+                                  - listitem [ref=e1012]: ポイント2%
+                                  - listitem [ref=e1013]: 禁煙ルーム
+                                  - listitem [ref=e1014]: 部屋でインターネットOK
+                            - paragraph [ref=e1016]:
+                              - generic [ref=e1017]:
+                                - text: 2,500円クーポンを獲得してお得に泊まる
+                                - link "クーポンGET" [ref=e1018] [cursor=pointer]:
+                                  - /url: javascript:void(0)
+                          - list [ref=e1020]:
+                            - listitem [ref=e1021]: ダブル
+                        - cell "552ポイント 27,616スコア" [ref=e1022]:
+                          - generic [ref=e1023]:
+                            - emphasis [ref=e1024]: "552"
+                            - text: ポイント
+                          - generic [ref=e1025]: 27,616スコア
+                        - cell "15,300円 13,808円" [ref=e1026]:
+                          - text: 15,300円
+                          - generic [ref=e1027]: 13,808円
+                        - cell "通常料金 30,600円 27,616円 9% OFF" [ref=e1028]:
+                          - paragraph [ref=e1029]: 通常料金
+                          - generic [ref=e1030]: 30,600円
+                          - generic [ref=e1031]:
+                            - emphasis [ref=e1032]: 27,616
+                            - text: 円
+                          - paragraph [ref=e1033]: 9% OFF
+              - listitem [ref=e1034]:
+                - generic [ref=e1035]:
+                  - paragraph [ref=e1036]: 【愛犬と楽しむ“街ナカ”ステイ】おもたび。（朝食：OMOベーカリー セット付)
+                  - list:
+                    - listitem [ref=e1037]: オンラインカード決済可
+                - generic [ref=e1038]:
+                  - generic [ref=e1039]:
+                    - link [ref=e1041] [cursor=pointer]:
+                      - /url: /uw/uwp3200/uww3201init.do?roomCrack=200000&stayCount=1&roomCount=1&adultNum=2&distCd=01&smlCd=140202&stayYear=2026&stayMonth=08&stayDay=05&yadNo=341758&screenId=UWW3101&planCd=04181667&roomTypeCd=0597334&planListNumPlan=12__0&groupBookingFlg=&ccnt=planlist_cp_y_2500_sale_n_0_pp_n_0
+                      - img [ref=e1042]
+                    - generic [ref=e1043]:
+                      - generic [ref=e1044]:
+                        - generic [ref=e1045]:
+                          - term [ref=e1046]: 食事：
+                          - definition [ref=e1047]: 朝のみ
+                        - generic [ref=e1048]:
+                          - term [ref=e1049]: チェックイン
+                          - definition [ref=e1050]: 15:00～
+                        - generic [ref=e1051]:
+                          - term [ref=e1052]: チェックアウト
+                          - definition [ref=e1053]: ～11:00
+                      - paragraph [ref=e1054]: 【朝食】OMOベーカリー
+                      - paragraph [ref=e1055]: 5名がこのプランを見ています
+                  - table [ref=e1056]:
+                    - rowgroup [ref=e1057]:
+                      - row "部屋タイプ・詳細 加算予定ポイント 加算予定スコア 大人1名(税込) 合計(税込) 1泊 大人2名" [ref=e1058]:
+                        - columnheader "部屋タイプ・詳細" [ref=e1059]:
+                          - generic [ref=e1060]: 部屋タイプ・詳細
+                        - columnheader "加算予定ポイント 加算予定スコア" [ref=e1061]:
+                          - generic [ref=e1062]:
+                            - generic [ref=e1063]: 加算予定ポイント
+                            - generic [ref=e1064]: 加算予定スコア
+                        - columnheader "大人1名(税込)" [ref=e1067]
+                        - columnheader "合計(税込) 1泊 大人2名" [ref=e1068]:
+                          - text: 合計(税込)
+                          - generic [ref=e1069]: 1泊 大人2名
+                    - rowgroup [ref=e1070]:
+                      - row "ドッグフレンドリースイート ポイント2% 特別室・離れ・スイート 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET 4ベッド 1,332ポイント 66,600スコア 33,300円 66,600円" [ref=e1071]:
+                        - cell "ドッグフレンドリースイート ポイント2% 特別室・離れ・スイート 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET 4ベッド" [ref=e1072]:
+                          - generic [ref=e1073]:
+                            - generic [ref=e1074]:
+                              - term [ref=e1075]:
+                                - paragraph [ref=e1076]:
+                                  - img [ref=e1077]
+                              - definition [ref=e1078]:
+                                - link "ドッグフレンドリースイート" [ref=e1079] [cursor=pointer]:
+                                  - /url: /uw/uwp3200/uww3201init.do?roomCrack=200000&stayCount=1&roomCount=1&adultNum=2&distCd=01&smlCd=140202&stayYear=2026&stayMonth=08&stayDay=05&yadNo=341758&screenId=UWW3101&planCd=04181667&roomTypeCd=0597334&planListNumPlan=12_3_0&groupBookingFlg=&ccnt=pc-plan-sort-341758-04181667-4-0597334-1-detail-button
+                                - list [ref=e1080]:
+                                  - listitem [ref=e1081]: ポイント2%
+                                  - listitem [ref=e1082]: 特別室・離れ・スイート
+                                  - listitem [ref=e1083]: 禁煙ルーム
+                                  - listitem [ref=e1084]: 部屋でインターネットOK
+                            - paragraph [ref=e1086]:
+                              - generic [ref=e1087]:
+                                - text: 2,500円クーポンを獲得してお得に泊まる
+                                - link "クーポンGET" [ref=e1088] [cursor=pointer]:
+                                  - /url: javascript:void(0)
+                          - list [ref=e1090]:
+                            - listitem [ref=e1091]: 4ベッド
+                        - cell "1,332ポイント 66,600スコア" [ref=e1092]:
+                          - generic [ref=e1093]:
+                            - emphasis [ref=e1094]: 1,332
+                            - text: ポイント
+                          - generic [ref=e1095]: 66,600スコア
+                        - cell "33,300円" [ref=e1096]
+                        - cell "66,600円" [ref=e1097]:
+                          - generic [ref=e1098]:
+                            - emphasis [ref=e1099]: 66,600
+                            - text: 円
+                      - row "あと3部屋" [ref=e1100]:
+                        - cell "あと3部屋" [ref=e1101]:
+                          - generic [ref=e1102]: あと3部屋
+                      - row [ref=e1103]:
+                        - cell [ref=e1104]
+                    - rowgroup [ref=e1105]:
+                      - row "ドッグフレンドリーデラックスルーム ポイント2% 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET ツイン 812ポイント 40,600スコア 20,300円 40,600円" [ref=e1106]:
+                        - cell "ドッグフレンドリーデラックスルーム ポイント2% 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET ツイン" [ref=e1107]:
+                          - generic [ref=e1108]:
+                            - generic [ref=e1109]:
+                              - term [ref=e1110]:
+                                - paragraph [ref=e1111]:
+                                  - img [ref=e1112]
+                              - definition [ref=e1113]:
+                                - link "ドッグフレンドリーデラックスルーム" [ref=e1114] [cursor=pointer]:
+                                  - /url: /uw/uwp3200/uww3201init.do?roomCrack=200000&stayCount=1&roomCount=1&adultNum=2&distCd=01&smlCd=140202&stayYear=2026&stayMonth=08&stayDay=05&yadNo=341758&screenId=UWW3101&planCd=04181667&roomTypeCd=0597333&planListNumPlan=12_3_1&groupBookingFlg=&ccnt=pc-plan-sort-341758-04181667-4-0597333-2-detail-button
+                                - list [ref=e1115]:
+                                  - listitem [ref=e1116]: ポイント2%
+                                  - listitem [ref=e1117]: 禁煙ルーム
+                                  - listitem [ref=e1118]: 部屋でインターネットOK
+                            - paragraph [ref=e1120]:
+                              - generic [ref=e1121]:
+                                - text: 2,500円クーポンを獲得してお得に泊まる
+                                - link "クーポンGET" [ref=e1122] [cursor=pointer]:
+                                  - /url: javascript:void(0)
+                          - list [ref=e1124]:
+                            - listitem [ref=e1125]: ツイン
+                        - cell "812ポイント 40,600スコア" [ref=e1126]:
+                          - generic [ref=e1127]:
+                            - emphasis [ref=e1128]: "812"
+                            - text: ポイント
+                          - generic [ref=e1129]: 40,600スコア
+                        - cell "20,300円" [ref=e1130]
+                        - cell "40,600円" [ref=e1131]:
+                          - generic [ref=e1132]:
+                            - emphasis [ref=e1133]: 40,600
+                            - text: 円
+                    - rowgroup [ref=e1134]:
+                      - row "ドッグフレンドリーダブルルーム ポイント2% 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET ダブル 612ポイント 30,600スコア 15,300円 30,600円" [ref=e1135]:
+                        - cell "ドッグフレンドリーダブルルーム ポイント2% 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET ダブル" [ref=e1136]:
+                          - generic [ref=e1137]:
+                            - generic [ref=e1138]:
+                              - term [ref=e1139]:
+                                - paragraph [ref=e1140]:
+                                  - img [ref=e1141]
+                              - definition [ref=e1142]:
+                                - link "ドッグフレンドリーダブルルーム" [ref=e1143] [cursor=pointer]:
+                                  - /url: /uw/uwp3200/uww3201init.do?roomCrack=200000&stayCount=1&roomCount=1&adultNum=2&distCd=01&smlCd=140202&stayYear=2026&stayMonth=08&stayDay=05&yadNo=341758&screenId=UWW3101&planCd=04181667&roomTypeCd=0597322&planListNumPlan=12_3_2&groupBookingFlg=&ccnt=pc-plan-sort-341758-04181667-4-0597322-3-detail-button
+                                - list [ref=e1144]:
+                                  - listitem [ref=e1145]: ポイント2%
+                                  - listitem [ref=e1146]: 禁煙ルーム
+                                  - listitem [ref=e1147]: 部屋でインターネットOK
+                            - paragraph [ref=e1149]:
+                              - generic [ref=e1150]:
+                                - text: 2,500円クーポンを獲得してお得に泊まる
+                                - link "クーポンGET" [ref=e1151] [cursor=pointer]:
+                                  - /url: javascript:void(0)
+                          - list [ref=e1153]:
+                            - listitem [ref=e1154]: ダブル
+                        - cell "612ポイント 30,600スコア" [ref=e1155]:
+                          - generic [ref=e1156]:
+                            - emphasis [ref=e1157]: "612"
+                            - text: ポイント
+                          - generic [ref=e1158]: 30,600スコア
+                        - cell "15,300円" [ref=e1159]
+                        - cell "30,600円" [ref=e1160]:
+                          - generic [ref=e1161]:
+                            - emphasis [ref=e1162]: 30,600
+                            - text: 円
+                      - row "空室わずか" [ref=e1163]:
+                        - cell "空室わずか" [ref=e1164]:
+                          - generic [ref=e1165]: 空室わずか
+                      - row:
+                        - cell
+              - listitem [ref=e1166]:
+                - generic [ref=e1167]:
+                  - paragraph [ref=e1168]: おもたび。（朝食：OMOベーカリー セット付)
+                  - list:
+                    - listitem [ref=e1169]: オンラインカード決済可
+                - generic [ref=e1170]:
+                  - generic [ref=e1171]:
+                    - link [ref=e1173] [cursor=pointer]:
+                      - /url: /uw/uwp3200/uww3201init.do?roomCrack=200000&stayCount=1&roomCount=1&adultNum=2&distCd=01&smlCd=140202&stayYear=2026&stayMonth=08&stayDay=05&yadNo=341758&screenId=UWW3101&planCd=04176578&roomTypeCd=0597319&planListNumPlan=12__0&groupBookingFlg=&ccnt=planlist_cp_y_2500_sale_n_0_pp_n_0
+                      - img [ref=e1174]
+                    - generic [ref=e1175]:
+                      - generic [ref=e1176]:
+                        - generic [ref=e1177]:
+                          - term [ref=e1178]: 食事：
+                          - definition [ref=e1179]: 朝のみ
+                        - generic [ref=e1180]:
+                          - term [ref=e1181]: チェックイン
+                          - definition [ref=e1182]: 15:00～
+                        - generic [ref=e1183]:
+                          - term [ref=e1184]: チェックアウト
+                          - definition [ref=e1185]: ～11:00
+                      - paragraph [ref=e1186]: 【朝食】10種類のパンから2種類選べるベーカリーセット
+                      - paragraph [ref=e1187]: 1名がこのプランを見ています
+                  - table [ref=e1188]:
+                    - rowgroup [ref=e1189]:
+                      - row "部屋タイプ・詳細 加算予定ポイント 加算予定スコア 大人1名(税込) 合計(税込) 1泊 大人2名" [ref=e1190]:
+                        - columnheader "部屋タイプ・詳細" [ref=e1191]:
+                          - generic [ref=e1192]: 部屋タイプ・詳細
+                        - columnheader "加算予定ポイント 加算予定スコア" [ref=e1193]:
+                          - generic [ref=e1194]:
+                            - generic [ref=e1195]: 加算予定ポイント
+                            - generic [ref=e1196]: 加算予定スコア
+                        - columnheader "大人1名(税込)" [ref=e1199]
+                        - columnheader "合計(税込) 1泊 大人2名" [ref=e1200]:
+                          - text: 合計(税込)
+                          - generic [ref=e1201]: 1泊 大人2名
+                    - rowgroup [ref=e1202]:
+                      - row "やぐらスイート ポイント2% 特別室・離れ・スイート 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET 4ベッド 1,092ポイント 54,600スコア 27,300円 54,600円" [ref=e1203]:
+                        - cell "やぐらスイート ポイント2% 特別室・離れ・スイート 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET 4ベッド" [ref=e1204]:
+                          - generic [ref=e1205]:
+                            - generic [ref=e1206]:
+                              - term [ref=e1207]:
+                                - paragraph [ref=e1208]:
+                                  - img [ref=e1209]
+                              - definition [ref=e1210]:
+                                - link "やぐらスイート" [ref=e1211] [cursor=pointer]:
+                                  - /url: /uw/uwp3200/uww3201init.do?roomCrack=200000&stayCount=1&roomCount=1&adultNum=2&distCd=01&smlCd=140202&stayYear=2026&stayMonth=08&stayDay=05&yadNo=341758&screenId=UWW3101&planCd=04176578&roomTypeCd=0597319&planListNumPlan=12_4_0&groupBookingFlg=&ccnt=pc-plan-sort-341758-04176578-5-0597319-1-detail-button
+                                - list [ref=e1212]:
+                                  - listitem [ref=e1213]: ポイント2%
+                                  - listitem [ref=e1214]: 特別室・離れ・スイート
+                                  - listitem [ref=e1215]: 禁煙ルーム
+                                  - listitem [ref=e1216]: 部屋でインターネットOK
+                            - paragraph [ref=e1218]:
+                              - generic [ref=e1219]:
+                                - text: 2,500円クーポンを獲得してお得に泊まる
+                                - link "クーポンGET" [ref=e1220] [cursor=pointer]:
+                                  - /url: javascript:void(0)
+                          - list [ref=e1222]:
+                            - listitem [ref=e1223]: 4ベッド
+                        - cell "1,092ポイント 54,600スコア" [ref=e1224]:
+                          - generic [ref=e1225]:
+                            - emphasis [ref=e1226]: 1,092
+                            - text: ポイント
+                          - generic [ref=e1227]: 54,600スコア
+                        - cell "27,300円" [ref=e1228]
+                        - cell "54,600円" [ref=e1229]:
+                          - generic [ref=e1230]:
+                            - emphasis [ref=e1231]: 54,600
+                            - text: 円
+                    - rowgroup [ref=e1232]:
+                      - row "かたりばルーム ポイント2% 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET ツイン 932ポイント 46,600スコア 23,300円 46,600円" [ref=e1233]:
+                        - cell "かたりばルーム ポイント2% 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET ツイン" [ref=e1234]:
+                          - generic [ref=e1235]:
+                            - generic [ref=e1236]:
+                              - term [ref=e1237]:
+                                - paragraph [ref=e1238]:
+                                  - img [ref=e1239]
+                              - definition [ref=e1240]:
+                                - link "かたりばルーム" [ref=e1241] [cursor=pointer]:
+                                  - /url: /uw/uwp3200/uww3201init.do?roomCrack=200000&stayCount=1&roomCount=1&adultNum=2&distCd=01&smlCd=140202&stayYear=2026&stayMonth=08&stayDay=05&yadNo=341758&screenId=UWW3101&planCd=04176578&roomTypeCd=0597317&planListNumPlan=12_4_1&groupBookingFlg=&ccnt=pc-plan-sort-341758-04176578-5-0597317-2-detail-button
+                                - list [ref=e1242]:
+                                  - listitem [ref=e1243]: ポイント2%
+                                  - listitem [ref=e1244]: 禁煙ルーム
+                                  - listitem [ref=e1245]: 部屋でインターネットOK
+                            - paragraph [ref=e1247]:
+                              - generic [ref=e1248]:
+                                - text: 2,500円クーポンを獲得してお得に泊まる
+                                - link "クーポンGET" [ref=e1249] [cursor=pointer]:
+                                  - /url: javascript:void(0)
+                          - list [ref=e1251]:
+                            - listitem [ref=e1252]: ツイン
+                        - cell "932ポイント 46,600スコア" [ref=e1253]:
+                          - generic [ref=e1254]:
+                            - emphasis [ref=e1255]: "932"
+                            - text: ポイント
+                          - generic [ref=e1256]: 46,600スコア
+                        - cell "23,300円" [ref=e1257]
+                        - cell "46,600円" [ref=e1258]:
+                          - generic [ref=e1259]:
+                            - emphasis [ref=e1260]: 46,600
+                            - text: 円
+                    - rowgroup [ref=e1261]:
+                      - row "デラックスルーム（ユニバーサル仕様） ポイント2% 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET ツイン 852ポイント 42,600スコア 21,300円 42,600円" [ref=e1262]:
+                        - cell "デラックスルーム（ユニバーサル仕様） ポイント2% 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET ツイン" [ref=e1263]:
+                          - generic [ref=e1264]:
+                            - generic [ref=e1265]:
+                              - term [ref=e1266]:
+                                - paragraph [ref=e1267]:
+                                  - img [ref=e1268]
+                              - definition [ref=e1269]:
+                                - link "デラックスルーム（ユニバーサル仕様）" [ref=e1270] [cursor=pointer]:
+                                  - /url: /uw/uwp3200/uww3201init.do?roomCrack=200000&stayCount=1&roomCount=1&adultNum=2&distCd=01&smlCd=140202&stayYear=2026&stayMonth=08&stayDay=05&yadNo=341758&screenId=UWW3101&planCd=04176578&roomTypeCd=0597602&planListNumPlan=12_4_2&groupBookingFlg=&ccnt=pc-plan-sort-341758-04176578-5-0597602-3-detail-button
+                                - list [ref=e1271]:
+                                  - listitem [ref=e1272]: ポイント2%
+                                  - listitem [ref=e1273]: 禁煙ルーム
+                                  - listitem [ref=e1274]: 部屋でインターネットOK
+                            - paragraph [ref=e1276]:
+                              - generic [ref=e1277]:
+                                - text: 2,500円クーポンを獲得してお得に泊まる
+                                - link "クーポンGET" [ref=e1278] [cursor=pointer]:
+                                  - /url: javascript:void(0)
+                          - list [ref=e1280]:
+                            - listitem [ref=e1281]: ツイン
+                        - cell "852ポイント 42,600スコア" [ref=e1282]:
+                          - generic [ref=e1283]:
+                            - emphasis [ref=e1284]: "852"
+                            - text: ポイント
+                          - generic [ref=e1285]: 42,600スコア
+                        - cell "21,300円" [ref=e1286]
+                        - cell "42,600円" [ref=e1287]:
+                          - generic [ref=e1288]:
+                            - emphasis [ref=e1289]: 42,600
+                            - text: 円
+                      - row "あと3部屋" [ref=e1290]:
+                        - cell "あと3部屋" [ref=e1291]:
+                          - generic [ref=e1292]: あと3部屋
+                      - row [ref=e1293]:
+                        - cell [ref=e1294]
+                    - rowgroup [ref=e1295]:
+                      - row "やぐらルーム ポイント2% 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET ツイン 652ポイント 32,600スコア 16,300円 32,600円" [ref=e1296]:
+                        - cell "やぐらルーム ポイント2% 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET ツイン" [ref=e1297]:
+                          - generic [ref=e1298]:
+                            - generic [ref=e1299]:
+                              - term [ref=e1300]:
+                                - paragraph [ref=e1301]:
+                                  - img [ref=e1302]
+                              - definition [ref=e1303]:
+                                - link "やぐらルーム" [ref=e1304] [cursor=pointer]:
+                                  - /url: /uw/uwp3200/uww3201init.do?roomCrack=200000&stayCount=1&roomCount=1&adultNum=2&distCd=01&smlCd=140202&stayYear=2026&stayMonth=08&stayDay=05&yadNo=341758&screenId=UWW3101&planCd=04176578&roomTypeCd=0597315&planListNumPlan=12_4_3&groupBookingFlg=&ccnt=pc-plan-sort-341758-04176578-5-0597315-4-detail-button
+                                - list [ref=e1305]:
+                                  - listitem [ref=e1306]: ポイント2%
+                                  - listitem [ref=e1307]: 禁煙ルーム
+                                  - listitem [ref=e1308]: 部屋でインターネットOK
+                            - paragraph [ref=e1310]:
+                              - generic [ref=e1311]:
+                                - text: 2,500円クーポンを獲得してお得に泊まる
+                                - link "クーポンGET" [ref=e1312] [cursor=pointer]:
+                                  - /url: javascript:void(0)
+                          - list [ref=e1314]:
+                            - listitem [ref=e1315]: ツイン
+                        - cell "652ポイント 32,600スコア" [ref=e1316]:
+                          - generic [ref=e1317]:
+                            - emphasis [ref=e1318]: "652"
+                            - text: ポイント
+                          - generic [ref=e1319]: 32,600スコア
+                        - cell "16,300円" [ref=e1320]
+                        - cell "32,600円" [ref=e1321]:
+                          - generic [ref=e1322]:
+                            - emphasis [ref=e1323]: 32,600
+                            - text: 円
+                    - rowgroup [ref=e1324]:
+                      - row "ダブルルーム ポイント2% 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET ダブル 612ポイント 30,600スコア 15,300円 30,600円" [ref=e1325]:
+                        - cell "ダブルルーム ポイント2% 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET ダブル" [ref=e1326]:
+                          - generic [ref=e1327]:
+                            - generic [ref=e1328]:
+                              - term [ref=e1329]:
+                                - paragraph [ref=e1330]:
+                                  - img [ref=e1331]
+                              - definition [ref=e1332]:
+                                - link "ダブルルーム" [ref=e1333] [cursor=pointer]:
+                                  - /url: /uw/uwp3200/uww3201init.do?roomCrack=200000&stayCount=1&roomCount=1&adultNum=2&distCd=01&smlCd=140202&stayYear=2026&stayMonth=08&stayDay=05&yadNo=341758&screenId=UWW3101&planCd=04176578&roomTypeCd=0597316&planListNumPlan=12_4_4&groupBookingFlg=&ccnt=pc-plan-sort-341758-04176578-5-0597316-5-detail-button
+                                - list [ref=e1334]:
+                                  - listitem [ref=e1335]: ポイント2%
+                                  - listitem [ref=e1336]: 禁煙ルーム
+                                  - listitem [ref=e1337]: 部屋でインターネットOK
+                            - paragraph [ref=e1339]:
+                              - generic [ref=e1340]:
+                                - text: 2,500円クーポンを獲得してお得に泊まる
+                                - link "クーポンGET" [ref=e1341] [cursor=pointer]:
+                                  - /url: javascript:void(0)
+                          - list [ref=e1343]:
+                            - listitem [ref=e1344]: ダブル
+                        - cell "612ポイント 30,600スコア" [ref=e1345]:
+                          - generic [ref=e1346]:
+                            - emphasis [ref=e1347]: "612"
+                            - text: ポイント
+                          - generic [ref=e1348]: 30,600スコア
+                        - cell "15,300円" [ref=e1349]
+                        - cell "30,600円" [ref=e1350]:
+                          - generic [ref=e1351]:
+                            - emphasis [ref=e1352]: 30,600
+                            - text: 円
+              - listitem [ref=e1353]:
+                - generic [ref=e1354]:
+                  - paragraph [ref=e1355]: 【じゃらんのお得な10日間】おもたび。（食事なし）～JR関内駅 街ナカホテル～
+                  - list:
+                    - listitem [ref=e1356]: 終了間近
+                    - listitem [ref=e1357]: じゃらんのお得な10日間
+                    - listitem [ref=e1358]: オンラインカード決済専用
+                - generic [ref=e1359]:
+                  - generic [ref=e1360]:
+                    - link [ref=e1362] [cursor=pointer]:
+                      - /url: /uw/uwp3200/uww3201init.do?roomCrack=200000&stayCount=1&roomCount=1&adultNum=2&distCd=01&smlCd=140202&stayYear=2026&stayMonth=08&stayDay=05&yadNo=341758&screenId=UWW3101&planCd=04194779&roomTypeCd=0597319&planListNumPlan=12__0&groupBookingFlg=&ccnt=planlist_cp_y_2500_sale_y_5_pp_n_0
+                      - img [ref=e1363]
+                    - generic [ref=e1364]:
+                      - generic [ref=e1366]:
+                        - term [ref=e1367]: 【予約受付期間】
+                        - definition [ref=e1368]: 2026年6月18日～2026年6月29日
+                      - generic [ref=e1369]:
+                        - generic [ref=e1370]:
+                          - term [ref=e1371]: 食事：
+                          - definition [ref=e1372]: 食事なし
+                        - generic [ref=e1373]:
+                          - term [ref=e1374]: チェックイン
+                          - definition [ref=e1375]: 15:00～
+                        - generic [ref=e1376]:
+                          - term [ref=e1377]: チェックアウト
+                          - definition [ref=e1378]: ～11:00
+                      - paragraph [ref=e1379]: HAMAKAZEテラス：浜風を感じるルーフトップテラスでは、横浜・関内の街を見渡し、のんびり寛げる特別な空間
+                      - paragraph [ref=e1380]: 2名がこのプランを見ています
+                  - table [ref=e1381]:
+                    - rowgroup [ref=e1382]:
+                      - row "部屋タイプ・詳細 加算予定ポイント 加算予定スコア 大人1名(税込) 合計(税込) 1泊 大人2名" [ref=e1383]:
+                        - columnheader "部屋タイプ・詳細" [ref=e1384]:
+                          - generic [ref=e1385]: 部屋タイプ・詳細
+                        - columnheader "加算予定ポイント 加算予定スコア" [ref=e1386]:
+                          - generic [ref=e1387]:
+                            - generic [ref=e1388]: 加算予定ポイント
+                            - generic [ref=e1389]: 加算予定スコア
+                        - columnheader "大人1名(税込)" [ref=e1392]
+                        - columnheader "合計(税込) 1泊 大人2名" [ref=e1393]:
+                          - text: 合計(税込)
+                          - generic [ref=e1394]: 1泊 大人2名
+                    - rowgroup [ref=e1395]:
+                      - row "やぐらスイート ポイント2% 特別室・離れ・スイート 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET 4ベッド 968ポイント 48,450スコア 25,500円 24,225円 通常料金 51,000円 48,450円 5% OFF" [ref=e1396]:
+                        - cell "やぐらスイート ポイント2% 特別室・離れ・スイート 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET 4ベッド" [ref=e1397]:
+                          - generic [ref=e1398]:
+                            - generic [ref=e1399]:
+                              - term [ref=e1400]:
+                                - paragraph [ref=e1401]:
+                                  - img [ref=e1402]
+                              - definition [ref=e1403]:
+                                - link "やぐらスイート" [ref=e1404] [cursor=pointer]:
+                                  - /url: /uw/uwp3200/uww3201init.do?roomCrack=200000&stayCount=1&roomCount=1&adultNum=2&distCd=01&smlCd=140202&stayYear=2026&stayMonth=08&stayDay=05&yadNo=341758&screenId=UWW3101&planCd=04194779&roomTypeCd=0597319&planListNumPlan=12_5_0&groupBookingFlg=&ccnt=pc-plan-sort-341758-04194779-6-0597319-1-detail-button
+                                - list [ref=e1405]:
+                                  - listitem [ref=e1406]: ポイント2%
+                                  - listitem [ref=e1407]: 特別室・離れ・スイート
+                                  - listitem [ref=e1408]: 禁煙ルーム
+                                  - listitem [ref=e1409]: 部屋でインターネットOK
+                            - paragraph [ref=e1411]:
+                              - generic [ref=e1412]:
+                                - text: 2,500円クーポンを獲得してお得に泊まる
+                                - link "クーポンGET" [ref=e1413] [cursor=pointer]:
+                                  - /url: javascript:void(0)
+                          - list [ref=e1415]:
+                            - listitem [ref=e1416]: 4ベッド
+                        - cell "968ポイント 48,450スコア" [ref=e1417]:
+                          - generic [ref=e1418]:
+                            - emphasis [ref=e1419]: "968"
+                            - text: ポイント
+                          - generic [ref=e1420]: 48,450スコア
+                        - cell "25,500円 24,225円" [ref=e1421]:
+                          - text: 25,500円
+                          - generic [ref=e1422]: 24,225円
+                        - cell "通常料金 51,000円 48,450円 5% OFF" [ref=e1423]:
+                          - paragraph [ref=e1424]: 通常料金
+                          - generic [ref=e1425]: 51,000円
+                          - generic [ref=e1426]:
+                            - emphasis [ref=e1427]: 48,450
+                            - text: 円
+                          - paragraph [ref=e1428]: 5% OFF
+                    - rowgroup [ref=e1429]:
+                      - row "かたりばルーム ポイント2% 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET ツイン 816ポイント 40,850スコア 21,500円 20,425円 通常料金 43,000円 40,850円 5% OFF" [ref=e1430]:
+                        - cell "かたりばルーム ポイント2% 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET ツイン" [ref=e1431]:
+                          - generic [ref=e1432]:
+                            - generic [ref=e1433]:
+                              - term [ref=e1434]:
+                                - paragraph [ref=e1435]:
+                                  - img [ref=e1436]
+                              - definition [ref=e1437]:
+                                - link "かたりばルーム" [ref=e1438] [cursor=pointer]:
+                                  - /url: /uw/uwp3200/uww3201init.do?roomCrack=200000&stayCount=1&roomCount=1&adultNum=2&distCd=01&smlCd=140202&stayYear=2026&stayMonth=08&stayDay=05&yadNo=341758&screenId=UWW3101&planCd=04194779&roomTypeCd=0597317&planListNumPlan=12_5_1&groupBookingFlg=&ccnt=pc-plan-sort-341758-04194779-6-0597317-2-detail-button
+                                - list [ref=e1439]:
+                                  - listitem [ref=e1440]: ポイント2%
+                                  - listitem [ref=e1441]: 禁煙ルーム
+                                  - listitem [ref=e1442]: 部屋でインターネットOK
+                            - paragraph [ref=e1444]:
+                              - generic [ref=e1445]:
+                                - text: 2,500円クーポンを獲得してお得に泊まる
+                                - link "クーポンGET" [ref=e1446] [cursor=pointer]:
+                                  - /url: javascript:void(0)
+                          - list [ref=e1448]:
+                            - listitem [ref=e1449]: ツイン
+                        - cell "816ポイント 40,850スコア" [ref=e1450]:
+                          - generic [ref=e1451]:
+                            - emphasis [ref=e1452]: "816"
+                            - text: ポイント
+                          - generic [ref=e1453]: 40,850スコア
+                        - cell "21,500円 20,425円" [ref=e1454]:
+                          - text: 21,500円
+                          - generic [ref=e1455]: 20,425円
+                        - cell "通常料金 43,000円 40,850円 5% OFF" [ref=e1456]:
+                          - paragraph [ref=e1457]: 通常料金
+                          - generic [ref=e1458]: 43,000円
+                          - generic [ref=e1459]:
+                            - emphasis [ref=e1460]: 40,850
+                            - text: 円
+                          - paragraph [ref=e1461]: 5% OFF
+                    - rowgroup [ref=e1462]:
+                      - row "デラックスルーム（ユニバーサル仕様） ポイント2% 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET ツイン 740ポイント 37,050スコア 19,500円 18,525円 通常料金 39,000円 37,050円 5% OFF" [ref=e1463]:
+                        - cell "デラックスルーム（ユニバーサル仕様） ポイント2% 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET ツイン" [ref=e1464]:
+                          - generic [ref=e1465]:
+                            - generic [ref=e1466]:
+                              - term [ref=e1467]:
+                                - paragraph [ref=e1468]:
+                                  - img [ref=e1469]
+                              - definition [ref=e1470]:
+                                - link "デラックスルーム（ユニバーサル仕様）" [ref=e1471] [cursor=pointer]:
+                                  - /url: /uw/uwp3200/uww3201init.do?roomCrack=200000&stayCount=1&roomCount=1&adultNum=2&distCd=01&smlCd=140202&stayYear=2026&stayMonth=08&stayDay=05&yadNo=341758&screenId=UWW3101&planCd=04194779&roomTypeCd=0597602&planListNumPlan=12_5_2&groupBookingFlg=&ccnt=pc-plan-sort-341758-04194779-6-0597602-3-detail-button
+                                - list [ref=e1472]:
+                                  - listitem [ref=e1473]: ポイント2%
+                                  - listitem [ref=e1474]: 禁煙ルーム
+                                  - listitem [ref=e1475]: 部屋でインターネットOK
+                            - paragraph [ref=e1477]:
+                              - generic [ref=e1478]:
+                                - text: 2,500円クーポンを獲得してお得に泊まる
+                                - link "クーポンGET" [ref=e1479] [cursor=pointer]:
+                                  - /url: javascript:void(0)
+                          - list [ref=e1481]:
+                            - listitem [ref=e1482]: ツイン
+                        - cell "740ポイント 37,050スコア" [ref=e1483]:
+                          - generic [ref=e1484]:
+                            - emphasis [ref=e1485]: "740"
+                            - text: ポイント
+                          - generic [ref=e1486]: 37,050スコア
+                        - cell "19,500円 18,525円" [ref=e1487]:
+                          - text: 19,500円
+                          - generic [ref=e1488]: 18,525円
+                        - cell "通常料金 39,000円 37,050円 5% OFF" [ref=e1489]:
+                          - paragraph [ref=e1490]: 通常料金
+                          - generic [ref=e1491]: 39,000円
+                          - generic [ref=e1492]:
+                            - emphasis [ref=e1493]: 37,050
+                            - text: 円
+                          - paragraph [ref=e1494]: 5% OFF
+                      - row "あと3部屋" [ref=e1495]:
+                        - cell "あと3部屋" [ref=e1496]:
+                          - generic [ref=e1497]: あと3部屋
+                      - row [ref=e1498]:
+                        - cell [ref=e1499]
+                    - rowgroup [ref=e1500]:
+                      - row "やぐらルーム ポイント2% 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET ツイン 550ポイント 27,550スコア 14,500円 13,775円 通常料金 29,000円 27,550円 5% OFF" [ref=e1501]:
+                        - cell "やぐらルーム ポイント2% 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET ツイン" [ref=e1502]:
+                          - generic [ref=e1503]:
+                            - generic [ref=e1504]:
+                              - term [ref=e1505]:
+                                - paragraph [ref=e1506]:
+                                  - img [ref=e1507]
+                              - definition [ref=e1508]:
+                                - link "やぐらルーム" [ref=e1509] [cursor=pointer]:
+                                  - /url: /uw/uwp3200/uww3201init.do?roomCrack=200000&stayCount=1&roomCount=1&adultNum=2&distCd=01&smlCd=140202&stayYear=2026&stayMonth=08&stayDay=05&yadNo=341758&screenId=UWW3101&planCd=04194779&roomTypeCd=0597315&planListNumPlan=12_5_3&groupBookingFlg=&ccnt=pc-plan-sort-341758-04194779-6-0597315-4-detail-button
+                                - list [ref=e1510]:
+                                  - listitem [ref=e1511]: ポイント2%
+                                  - listitem [ref=e1512]: 禁煙ルーム
+                                  - listitem [ref=e1513]: 部屋でインターネットOK
+                            - paragraph [ref=e1515]:
+                              - generic [ref=e1516]:
+                                - text: 2,500円クーポンを獲得してお得に泊まる
+                                - link "クーポンGET" [ref=e1517] [cursor=pointer]:
+                                  - /url: javascript:void(0)
+                          - list [ref=e1519]:
+                            - listitem [ref=e1520]: ツイン
+                        - cell "550ポイント 27,550スコア" [ref=e1521]:
+                          - generic [ref=e1522]:
+                            - emphasis [ref=e1523]: "550"
+                            - text: ポイント
+                          - generic [ref=e1524]: 27,550スコア
+                        - cell "14,500円 13,775円" [ref=e1525]:
+                          - text: 14,500円
+                          - generic [ref=e1526]: 13,775円
+                        - cell "通常料金 29,000円 27,550円 5% OFF" [ref=e1527]:
+                          - paragraph [ref=e1528]: 通常料金
+                          - generic [ref=e1529]: 29,000円
+                          - generic [ref=e1530]:
+                            - emphasis [ref=e1531]: 27,550
+                            - text: 円
+                          - paragraph [ref=e1532]: 5% OFF
+                    - rowgroup [ref=e1533]:
+                      - row "ダブルルーム ポイント2% 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET ダブル 512ポイント 25,650スコア 13,500円 12,825円 通常料金 27,000円 25,650円 5% OFF" [ref=e1534]:
+                        - cell "ダブルルーム ポイント2% 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET ダブル" [ref=e1535]:
+                          - generic [ref=e1536]:
+                            - generic [ref=e1537]:
+                              - term [ref=e1538]:
+                                - paragraph [ref=e1539]:
+                                  - img [ref=e1540]
+                              - definition [ref=e1541]:
+                                - link "ダブルルーム" [ref=e1542] [cursor=pointer]:
+                                  - /url: /uw/uwp3200/uww3201init.do?roomCrack=200000&stayCount=1&roomCount=1&adultNum=2&distCd=01&smlCd=140202&stayYear=2026&stayMonth=08&stayDay=05&yadNo=341758&screenId=UWW3101&planCd=04194779&roomTypeCd=0597316&planListNumPlan=12_5_4&groupBookingFlg=&ccnt=pc-plan-sort-341758-04194779-6-0597316-5-detail-button
+                                - list [ref=e1543]:
+                                  - listitem [ref=e1544]: ポイント2%
+                                  - listitem [ref=e1545]: 禁煙ルーム
+                                  - listitem [ref=e1546]: 部屋でインターネットOK
+                            - paragraph [ref=e1548]:
+                              - generic [ref=e1549]:
+                                - text: 2,500円クーポンを獲得してお得に泊まる
+                                - link "クーポンGET" [ref=e1550] [cursor=pointer]:
+                                  - /url: javascript:void(0)
+                          - list [ref=e1552]:
+                            - listitem [ref=e1553]: ダブル
+                        - cell "512ポイント 25,650スコア" [ref=e1554]:
+                          - generic [ref=e1555]:
+                            - emphasis [ref=e1556]: "512"
+                            - text: ポイント
+                          - generic [ref=e1557]: 25,650スコア
+                        - cell "13,500円 12,825円" [ref=e1558]:
+                          - text: 13,500円
+                          - generic [ref=e1559]: 12,825円
+                        - cell "通常料金 27,000円 25,650円 5% OFF" [ref=e1560]:
+                          - paragraph [ref=e1561]: 通常料金
+                          - generic [ref=e1562]: 27,000円
+                          - generic [ref=e1563]:
+                            - emphasis [ref=e1564]: 25,650
+                            - text: 円
+                          - paragraph [ref=e1565]: 5% OFF
+              - listitem [ref=e1566]:
+                - generic [ref=e1567]:
+                  - paragraph [ref=e1568]: おもたび。（食事なし）～JR関内駅 街ナカホテル～
+                  - list:
+                    - listitem [ref=e1569]: オンラインカード決済可
+                - generic [ref=e1570]:
+                  - generic [ref=e1571]:
+                    - link [ref=e1573] [cursor=pointer]:
+                      - /url: /uw/uwp3200/uww3201init.do?roomCrack=200000&stayCount=1&roomCount=1&adultNum=2&distCd=01&smlCd=140202&stayYear=2026&stayMonth=08&stayDay=05&yadNo=341758&screenId=UWW3101&planCd=04169212&roomTypeCd=0597319&planListNumPlan=12__0&groupBookingFlg=&ccnt=planlist_cp_y_2500_sale_n_0_pp_n_0
+                      - img [ref=e1574]
+                    - generic [ref=e1575]:
+                      - generic [ref=e1576]:
+                        - generic [ref=e1577]:
+                          - term [ref=e1578]: 食事：
+                          - definition [ref=e1579]: 食事なし
+                        - generic [ref=e1580]:
+                          - term [ref=e1581]: チェックイン
+                          - definition [ref=e1582]: 15:00～
+                        - generic [ref=e1583]:
+                          - term [ref=e1584]: チェックアウト
+                          - definition [ref=e1585]: ～11:00
+                      - paragraph [ref=e1586]: HAMAKAZEテラス
+                      - paragraph [ref=e1587]: 2名がこのプランを見ています
+                  - table [ref=e1588]:
+                    - rowgroup [ref=e1589]:
+                      - row "部屋タイプ・詳細 加算予定ポイント 加算予定スコア 大人1名(税込) 合計(税込) 1泊 大人2名" [ref=e1590]:
+                        - columnheader "部屋タイプ・詳細" [ref=e1591]:
+                          - generic [ref=e1592]: 部屋タイプ・詳細
+                        - columnheader "加算予定ポイント 加算予定スコア" [ref=e1593]:
+                          - generic [ref=e1594]:
+                            - generic [ref=e1595]: 加算予定ポイント
+                            - generic [ref=e1596]: 加算予定スコア
+                        - columnheader "大人1名(税込)" [ref=e1599]
+                        - columnheader "合計(税込) 1泊 大人2名" [ref=e1600]:
+                          - text: 合計(税込)
+                          - generic [ref=e1601]: 1泊 大人2名
+                    - rowgroup [ref=e1602]:
+                      - row "やぐらスイート ポイント2% 特別室・離れ・スイート 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET 4ベッド 1,020ポイント 51,000スコア 25,500円 51,000円" [ref=e1603]:
+                        - cell "やぐらスイート ポイント2% 特別室・離れ・スイート 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET 4ベッド" [ref=e1604]:
+                          - generic [ref=e1605]:
+                            - generic [ref=e1606]:
+                              - term [ref=e1607]:
+                                - paragraph [ref=e1608]:
+                                  - img [ref=e1609]
+                              - definition [ref=e1610]:
+                                - link "やぐらスイート" [ref=e1611] [cursor=pointer]:
+                                  - /url: /uw/uwp3200/uww3201init.do?roomCrack=200000&stayCount=1&roomCount=1&adultNum=2&distCd=01&smlCd=140202&stayYear=2026&stayMonth=08&stayDay=05&yadNo=341758&screenId=UWW3101&planCd=04169212&roomTypeCd=0597319&planListNumPlan=12_6_0&groupBookingFlg=&ccnt=pc-plan-sort-341758-04169212-7-0597319-1-detail-button
+                                - list [ref=e1612]:
+                                  - listitem [ref=e1613]: ポイント2%
+                                  - listitem [ref=e1614]: 特別室・離れ・スイート
+                                  - listitem [ref=e1615]: 禁煙ルーム
+                                  - listitem [ref=e1616]: 部屋でインターネットOK
+                            - paragraph [ref=e1618]:
+                              - generic [ref=e1619]:
+                                - text: 2,500円クーポンを獲得してお得に泊まる
+                                - link "クーポンGET" [ref=e1620] [cursor=pointer]:
+                                  - /url: javascript:void(0)
+                          - list [ref=e1622]:
+                            - listitem [ref=e1623]: 4ベッド
+                        - cell "1,020ポイント 51,000スコア" [ref=e1624]:
+                          - generic [ref=e1625]:
+                            - emphasis [ref=e1626]: 1,020
+                            - text: ポイント
+                          - generic [ref=e1627]: 51,000スコア
+                        - cell "25,500円" [ref=e1628]
+                        - cell "51,000円" [ref=e1629]:
+                          - generic [ref=e1630]:
+                            - emphasis [ref=e1631]: 51,000
+                            - text: 円
+                    - rowgroup [ref=e1632]:
+                      - row "かたりばルーム ポイント2% 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET ツイン 860ポイント 43,000スコア 21,500円 43,000円" [ref=e1633]:
+                        - cell "かたりばルーム ポイント2% 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET ツイン" [ref=e1634]:
+                          - generic [ref=e1635]:
+                            - generic [ref=e1636]:
+                              - term [ref=e1637]:
+                                - paragraph [ref=e1638]:
+                                  - img [ref=e1639]
+                              - definition [ref=e1640]:
+                                - link "かたりばルーム" [ref=e1641] [cursor=pointer]:
+                                  - /url: /uw/uwp3200/uww3201init.do?roomCrack=200000&stayCount=1&roomCount=1&adultNum=2&distCd=01&smlCd=140202&stayYear=2026&stayMonth=08&stayDay=05&yadNo=341758&screenId=UWW3101&planCd=04169212&roomTypeCd=0597317&planListNumPlan=12_6_1&groupBookingFlg=&ccnt=pc-plan-sort-341758-04169212-7-0597317-2-detail-button
+                                - list [ref=e1642]:
+                                  - listitem [ref=e1643]: ポイント2%
+                                  - listitem [ref=e1644]: 禁煙ルーム
+                                  - listitem [ref=e1645]: 部屋でインターネットOK
+                            - paragraph [ref=e1647]:
+                              - generic [ref=e1648]:
+                                - text: 2,500円クーポンを獲得してお得に泊まる
+                                - link "クーポンGET" [ref=e1649] [cursor=pointer]:
+                                  - /url: javascript:void(0)
+                          - list [ref=e1651]:
+                            - listitem [ref=e1652]: ツイン
+                        - cell "860ポイント 43,000スコア" [ref=e1653]:
+                          - generic [ref=e1654]:
+                            - emphasis [ref=e1655]: "860"
+                            - text: ポイント
+                          - generic [ref=e1656]: 43,000スコア
+                        - cell "21,500円" [ref=e1657]
+                        - cell "43,000円" [ref=e1658]:
+                          - generic [ref=e1659]:
+                            - emphasis [ref=e1660]: 43,000
+                            - text: 円
+                    - rowgroup [ref=e1661]:
+                      - row "デラックスルーム（ユニバーサル仕様） ポイント2% 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET ツイン 780ポイント 39,000スコア 19,500円 39,000円" [ref=e1662]:
+                        - cell "デラックスルーム（ユニバーサル仕様） ポイント2% 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET ツイン" [ref=e1663]:
+                          - generic [ref=e1664]:
+                            - generic [ref=e1665]:
+                              - term [ref=e1666]:
+                                - paragraph [ref=e1667]:
+                                  - img [ref=e1668]
+                              - definition [ref=e1669]:
+                                - link "デラックスルーム（ユニバーサル仕様）" [ref=e1670] [cursor=pointer]:
+                                  - /url: /uw/uwp3200/uww3201init.do?roomCrack=200000&stayCount=1&roomCount=1&adultNum=2&distCd=01&smlCd=140202&stayYear=2026&stayMonth=08&stayDay=05&yadNo=341758&screenId=UWW3101&planCd=04169212&roomTypeCd=0597602&planListNumPlan=12_6_2&groupBookingFlg=&ccnt=pc-plan-sort-341758-04169212-7-0597602-3-detail-button
+                                - list [ref=e1671]:
+                                  - listitem [ref=e1672]: ポイント2%
+                                  - listitem [ref=e1673]: 禁煙ルーム
+                                  - listitem [ref=e1674]: 部屋でインターネットOK
+                            - paragraph [ref=e1676]:
+                              - generic [ref=e1677]:
+                                - text: 2,500円クーポンを獲得してお得に泊まる
+                                - link "クーポンGET" [ref=e1678] [cursor=pointer]:
+                                  - /url: javascript:void(0)
+                          - list [ref=e1680]:
+                            - listitem [ref=e1681]: ツイン
+                        - cell "780ポイント 39,000スコア" [ref=e1682]:
+                          - generic [ref=e1683]:
+                            - emphasis [ref=e1684]: "780"
+                            - text: ポイント
+                          - generic [ref=e1685]: 39,000スコア
+                        - cell "19,500円" [ref=e1686]
+                        - cell "39,000円" [ref=e1687]:
+                          - generic [ref=e1688]:
+                            - emphasis [ref=e1689]: 39,000
+                            - text: 円
+                      - row "あと3部屋" [ref=e1690]:
+                        - cell "あと3部屋" [ref=e1691]:
+                          - generic [ref=e1692]: あと3部屋
+                      - row [ref=e1693]:
+                        - cell [ref=e1694]
+                    - rowgroup [ref=e1695]:
+                      - row "やぐらルーム ポイント2% 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET ツイン 580ポイント 29,000スコア 14,500円 29,000円" [ref=e1696]:
+                        - cell "やぐらルーム ポイント2% 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET ツイン" [ref=e1697]:
+                          - generic [ref=e1698]:
+                            - generic [ref=e1699]:
+                              - term [ref=e1700]:
+                                - paragraph [ref=e1701]:
+                                  - img [ref=e1702]
+                              - definition [ref=e1703]:
+                                - link "やぐらルーム" [ref=e1704] [cursor=pointer]:
+                                  - /url: /uw/uwp3200/uww3201init.do?roomCrack=200000&stayCount=1&roomCount=1&adultNum=2&distCd=01&smlCd=140202&stayYear=2026&stayMonth=08&stayDay=05&yadNo=341758&screenId=UWW3101&planCd=04169212&roomTypeCd=0597315&planListNumPlan=12_6_3&groupBookingFlg=&ccnt=pc-plan-sort-341758-04169212-7-0597315-4-detail-button
+                                - list [ref=e1705]:
+                                  - listitem [ref=e1706]: ポイント2%
+                                  - listitem [ref=e1707]: 禁煙ルーム
+                                  - listitem [ref=e1708]: 部屋でインターネットOK
+                            - paragraph [ref=e1710]:
+                              - generic [ref=e1711]:
+                                - text: 2,500円クーポンを獲得してお得に泊まる
+                                - link "クーポンGET" [ref=e1712] [cursor=pointer]:
+                                  - /url: javascript:void(0)
+                          - list [ref=e1714]:
+                            - listitem [ref=e1715]: ツイン
+                        - cell "580ポイント 29,000スコア" [ref=e1716]:
+                          - generic [ref=e1717]:
+                            - emphasis [ref=e1718]: "580"
+                            - text: ポイント
+                          - generic [ref=e1719]: 29,000スコア
+                        - cell "14,500円" [ref=e1720]
+                        - cell "29,000円" [ref=e1721]:
+                          - generic [ref=e1722]:
+                            - emphasis [ref=e1723]: 29,000
+                            - text: 円
+                    - rowgroup [ref=e1724]:
+                      - row "ダブルルーム ポイント2% 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET ダブル 540ポイント 27,000スコア 13,500円 27,000円" [ref=e1725]:
+                        - cell "ダブルルーム ポイント2% 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET ダブル" [ref=e1726]:
+                          - generic [ref=e1727]:
+                            - generic [ref=e1728]:
+                              - term [ref=e1729]:
+                                - paragraph [ref=e1730]:
+                                  - img [ref=e1731]
+                              - definition [ref=e1732]:
+                                - link "ダブルルーム" [ref=e1733] [cursor=pointer]:
+                                  - /url: /uw/uwp3200/uww3201init.do?roomCrack=200000&stayCount=1&roomCount=1&adultNum=2&distCd=01&smlCd=140202&stayYear=2026&stayMonth=08&stayDay=05&yadNo=341758&screenId=UWW3101&planCd=04169212&roomTypeCd=0597316&planListNumPlan=12_6_4&groupBookingFlg=&ccnt=pc-plan-sort-341758-04169212-7-0597316-5-detail-button
+                                - list [ref=e1734]:
+                                  - listitem [ref=e1735]: ポイント2%
+                                  - listitem [ref=e1736]: 禁煙ルーム
+                                  - listitem [ref=e1737]: 部屋でインターネットOK
+                            - paragraph [ref=e1739]:
+                              - generic [ref=e1740]:
+                                - text: 2,500円クーポンを獲得してお得に泊まる
+                                - link "クーポンGET" [ref=e1741] [cursor=pointer]:
+                                  - /url: javascript:void(0)
+                          - list [ref=e1743]:
+                            - listitem [ref=e1744]: ダブル
+                        - cell "540ポイント 27,000スコア" [ref=e1745]:
+                          - generic [ref=e1746]:
+                            - emphasis [ref=e1747]: "540"
+                            - text: ポイント
+                          - generic [ref=e1748]: 27,000スコア
+                        - cell "13,500円" [ref=e1749]
+                        - cell "27,000円" [ref=e1750]:
+                          - generic [ref=e1751]:
+                            - emphasis [ref=e1752]: 27,000
+                            - text: 円
+              - listitem [ref=e1753]:
+                - generic [ref=e1754]:
+                  - paragraph [ref=e1755]: 【愛犬と楽しむ“街ナカ”ステイ】おもたび。（食事なし）
+                  - list:
+                    - listitem [ref=e1756]: オンラインカード決済可
+                - generic [ref=e1757]:
+                  - generic [ref=e1758]:
+                    - link [ref=e1760] [cursor=pointer]:
+                      - /url: /uw/uwp3200/uww3201init.do?roomCrack=200000&stayCount=1&roomCount=1&adultNum=2&distCd=01&smlCd=140202&stayYear=2026&stayMonth=08&stayDay=05&yadNo=341758&screenId=UWW3101&planCd=04181249&roomTypeCd=0597334&planListNumPlan=12__0&groupBookingFlg=&ccnt=planlist_cp_y_2500_sale_n_0_pp_n_0
+                      - img [ref=e1761]
+                    - generic [ref=e1762]:
+                      - generic [ref=e1763]:
+                        - generic [ref=e1764]:
+                          - term [ref=e1765]: 食事：
+                          - definition [ref=e1766]: 食事なし
+                        - generic [ref=e1767]:
+                          - term [ref=e1768]: チェックイン
+                          - definition [ref=e1769]: 15:00～
+                        - generic [ref=e1770]:
+                          - term [ref=e1771]: チェックアウト
+                          - definition [ref=e1772]: ～11:00
+                      - paragraph [ref=e1773]: OMOドッグガーデン：屋外ドッグランと屋内ラウンジを備えた、愛犬との宿泊者専用の空間です。
+                      - paragraph [ref=e1774]: 2名がこのプランを見ています
+                  - table [ref=e1775]:
+                    - rowgroup [ref=e1776]:
+                      - row "部屋タイプ・詳細 加算予定ポイント 加算予定スコア 大人1名(税込) 合計(税込) 1泊 大人2名" [ref=e1777]:
+                        - columnheader "部屋タイプ・詳細" [ref=e1778]:
+                          - generic [ref=e1779]: 部屋タイプ・詳細
+                        - columnheader "加算予定ポイント 加算予定スコア" [ref=e1780]:
+                          - generic [ref=e1781]:
+                            - generic [ref=e1782]: 加算予定ポイント
+                            - generic [ref=e1783]: 加算予定スコア
+                        - columnheader "大人1名(税込)" [ref=e1786]
+                        - columnheader "合計(税込) 1泊 大人2名" [ref=e1787]:
+                          - text: 合計(税込)
+                          - generic [ref=e1788]: 1泊 大人2名
+                    - rowgroup [ref=e1789]:
+                      - row "ドッグフレンドリースイート ポイント2% 特別室・離れ・スイート 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET 4ベッド 1,260ポイント 63,000スコア 31,500円 63,000円" [ref=e1790]:
+                        - cell "ドッグフレンドリースイート ポイント2% 特別室・離れ・スイート 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET 4ベッド" [ref=e1791]:
+                          - generic [ref=e1792]:
+                            - generic [ref=e1793]:
+                              - term [ref=e1794]:
+                                - paragraph [ref=e1795]:
+                                  - img [ref=e1796]
+                              - definition [ref=e1797]:
+                                - link "ドッグフレンドリースイート" [ref=e1798] [cursor=pointer]:
+                                  - /url: /uw/uwp3200/uww3201init.do?roomCrack=200000&stayCount=1&roomCount=1&adultNum=2&distCd=01&smlCd=140202&stayYear=2026&stayMonth=08&stayDay=05&yadNo=341758&screenId=UWW3101&planCd=04181249&roomTypeCd=0597334&planListNumPlan=12_7_0&groupBookingFlg=&ccnt=pc-plan-sort-341758-04181249-8-0597334-1-detail-button
+                                - list [ref=e1799]:
+                                  - listitem [ref=e1800]: ポイント2%
+                                  - listitem [ref=e1801]: 特別室・離れ・スイート
+                                  - listitem [ref=e1802]: 禁煙ルーム
+                                  - listitem [ref=e1803]: 部屋でインターネットOK
+                            - paragraph [ref=e1805]:
+                              - generic [ref=e1806]:
+                                - text: 2,500円クーポンを獲得してお得に泊まる
+                                - link "クーポンGET" [ref=e1807] [cursor=pointer]:
+                                  - /url: javascript:void(0)
+                          - list [ref=e1809]:
+                            - listitem [ref=e1810]: 4ベッド
+                        - cell "1,260ポイント 63,000スコア" [ref=e1811]:
+                          - generic [ref=e1812]:
+                            - emphasis [ref=e1813]: 1,260
+                            - text: ポイント
+                          - generic [ref=e1814]: 63,000スコア
+                        - cell "31,500円" [ref=e1815]
+                        - cell "63,000円" [ref=e1816]:
+                          - generic [ref=e1817]:
+                            - emphasis [ref=e1818]: 63,000
+                            - text: 円
+                      - row "あと3部屋" [ref=e1819]:
+                        - cell "あと3部屋" [ref=e1820]:
+                          - generic [ref=e1821]: あと3部屋
+                      - row [ref=e1822]:
+                        - cell [ref=e1823]
+                    - rowgroup [ref=e1824]:
+                      - row "ドッグフレンドリーデラックスルーム ポイント2% 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET ツイン 740ポイント 37,000スコア 18,500円 37,000円" [ref=e1825]:
+                        - cell "ドッグフレンドリーデラックスルーム ポイント2% 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET ツイン" [ref=e1826]:
+                          - generic [ref=e1827]:
+                            - generic [ref=e1828]:
+                              - term [ref=e1829]:
+                                - paragraph [ref=e1830]:
+                                  - img [ref=e1831]
+                              - definition [ref=e1832]:
+                                - link "ドッグフレンドリーデラックスルーム" [ref=e1833] [cursor=pointer]:
+                                  - /url: /uw/uwp3200/uww3201init.do?roomCrack=200000&stayCount=1&roomCount=1&adultNum=2&distCd=01&smlCd=140202&stayYear=2026&stayMonth=08&stayDay=05&yadNo=341758&screenId=UWW3101&planCd=04181249&roomTypeCd=0597333&planListNumPlan=12_7_1&groupBookingFlg=&ccnt=pc-plan-sort-341758-04181249-8-0597333-2-detail-button
+                                - list [ref=e1834]:
+                                  - listitem [ref=e1835]: ポイント2%
+                                  - listitem [ref=e1836]: 禁煙ルーム
+                                  - listitem [ref=e1837]: 部屋でインターネットOK
+                            - paragraph [ref=e1839]:
+                              - generic [ref=e1840]:
+                                - text: 2,500円クーポンを獲得してお得に泊まる
+                                - link "クーポンGET" [ref=e1841] [cursor=pointer]:
+                                  - /url: javascript:void(0)
+                          - list [ref=e1843]:
+                            - listitem [ref=e1844]: ツイン
+                        - cell "740ポイント 37,000スコア" [ref=e1845]:
+                          - generic [ref=e1846]:
+                            - emphasis [ref=e1847]: "740"
+                            - text: ポイント
+                          - generic [ref=e1848]: 37,000スコア
+                        - cell "18,500円" [ref=e1849]
+                        - cell "37,000円" [ref=e1850]:
+                          - generic [ref=e1851]:
+                            - emphasis [ref=e1852]: 37,000
+                            - text: 円
+                    - rowgroup [ref=e1853]:
+                      - row "ドッグフレンドリーダブルルーム ポイント2% 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET ダブル 540ポイント 27,000スコア 13,500円 27,000円" [ref=e1854]:
+                        - cell "ドッグフレンドリーダブルルーム ポイント2% 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET ダブル" [ref=e1855]:
+                          - generic [ref=e1856]:
+                            - generic [ref=e1857]:
+                              - term [ref=e1858]:
+                                - paragraph [ref=e1859]:
+                                  - img [ref=e1860]
+                              - definition [ref=e1861]:
+                                - link "ドッグフレンドリーダブルルーム" [ref=e1862] [cursor=pointer]:
+                                  - /url: /uw/uwp3200/uww3201init.do?roomCrack=200000&stayCount=1&roomCount=1&adultNum=2&distCd=01&smlCd=140202&stayYear=2026&stayMonth=08&stayDay=05&yadNo=341758&screenId=UWW3101&planCd=04181249&roomTypeCd=0597322&planListNumPlan=12_7_2&groupBookingFlg=&ccnt=pc-plan-sort-341758-04181249-8-0597322-3-detail-button
+                                - list [ref=e1863]:
+                                  - listitem [ref=e1864]: ポイント2%
+                                  - listitem [ref=e1865]: 禁煙ルーム
+                                  - listitem [ref=e1866]: 部屋でインターネットOK
+                            - paragraph [ref=e1868]:
+                              - generic [ref=e1869]:
+                                - text: 2,500円クーポンを獲得してお得に泊まる
+                                - link "クーポンGET" [ref=e1870] [cursor=pointer]:
+                                  - /url: javascript:void(0)
+                          - list [ref=e1872]:
+                            - listitem [ref=e1873]: ダブル
+                        - cell "540ポイント 27,000スコア" [ref=e1874]:
+                          - generic [ref=e1875]:
+                            - emphasis [ref=e1876]: "540"
+                            - text: ポイント
+                          - generic [ref=e1877]: 27,000スコア
+                        - cell "13,500円" [ref=e1878]
+                        - cell "27,000円" [ref=e1879]:
+                          - generic [ref=e1880]:
+                            - emphasis [ref=e1881]: 27,000
+                            - text: 円
+                      - row "空室わずか" [ref=e1882]:
+                        - cell "空室わずか" [ref=e1883]:
+                          - generic [ref=e1884]: 空室わずか
+                      - row:
+                        - cell
+              - listitem [ref=e1885]:
+                - generic [ref=e1886]:
+                  - paragraph [ref=e1887]: 【じゃらんのお得な10日間】＜愛犬と楽しむ“街ナカ”ステイ＞おもたび。（朝食：ベーカリーセット付）
+                  - list:
+                    - listitem [ref=e1888]: 終了間近
+                    - listitem [ref=e1889]: じゃらんのお得な10日間
+                    - listitem [ref=e1890]: オンラインカード決済専用
+                - generic [ref=e1891]:
+                  - generic [ref=e1892]:
+                    - link [ref=e1894] [cursor=pointer]:
+                      - /url: /uw/uwp3200/uww3201init.do?roomCrack=200000&stayCount=1&roomCount=1&adultNum=2&distCd=01&smlCd=140202&stayYear=2026&stayMonth=08&stayDay=05&yadNo=341758&screenId=UWW3101&planCd=04303073&roomTypeCd=0597334&planListNumPlan=12__0&groupBookingFlg=&ccnt=planlist_cp_y_2500_sale_y_9_pp_n_0
+                      - img [ref=e1895]
+                    - generic [ref=e1896]:
+                      - generic [ref=e1898]:
+                        - term [ref=e1899]: 【予約受付期間】
+                        - definition [ref=e1900]: 2026年6月18日～2026年6月29日
+                      - generic [ref=e1901]:
+                        - generic [ref=e1902]:
+                          - term [ref=e1903]: 食事：
+                          - definition [ref=e1904]: 朝のみ
+                        - generic [ref=e1905]:
+                          - term [ref=e1906]: チェックイン
+                          - definition [ref=e1907]: 15:00～
+                        - generic [ref=e1908]:
+                          - term [ref=e1909]: チェックアウト
+                          - definition [ref=e1910]: ～11:00
+                      - paragraph [ref=e1911]: 【朝食】OMOベーカリー
+                      - paragraph [ref=e1912]: 1名がこのプランを見ています
+                  - table [ref=e1913]:
+                    - rowgroup [ref=e1914]:
+                      - row "部屋タイプ・詳細 加算予定ポイント 加算予定スコア 大人1名(税込) 合計(税込) 1泊 大人2名" [ref=e1915]:
+                        - columnheader "部屋タイプ・詳細" [ref=e1916]:
+                          - generic [ref=e1917]: 部屋タイプ・詳細
+                        - columnheader "加算予定ポイント 加算予定スコア" [ref=e1918]:
+                          - generic [ref=e1919]:
+                            - generic [ref=e1920]: 加算予定ポイント
+                            - generic [ref=e1921]: 加算予定スコア
+                        - columnheader "大人1名(税込)" [ref=e1924]
+                        - columnheader "合計(税込) 1泊 大人2名" [ref=e1925]:
+                          - text: 合計(税込)
+                          - generic [ref=e1926]: 1泊 大人2名
+                    - rowgroup [ref=e1927]:
+                      - row "ドッグフレンドリースイート ポイント2% 特別室・離れ・スイート 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET 4ベッド 1,202ポイント 60,106スコア 33,300円 30,053円 通常料金 66,600円 60,106円 9% OFF" [ref=e1928]:
+                        - cell "ドッグフレンドリースイート ポイント2% 特別室・離れ・スイート 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET 4ベッド" [ref=e1929]:
+                          - generic [ref=e1930]:
+                            - generic [ref=e1931]:
+                              - term [ref=e1932]:
+                                - paragraph [ref=e1933]:
+                                  - img [ref=e1934]
+                              - definition [ref=e1935]:
+                                - link "ドッグフレンドリースイート" [ref=e1936] [cursor=pointer]:
+                                  - /url: /uw/uwp3200/uww3201init.do?roomCrack=200000&stayCount=1&roomCount=1&adultNum=2&distCd=01&smlCd=140202&stayYear=2026&stayMonth=08&stayDay=05&yadNo=341758&screenId=UWW3101&planCd=04303073&roomTypeCd=0597334&planListNumPlan=12_8_0&groupBookingFlg=&ccnt=pc-plan-sort-341758-04303073-9-0597334-1-detail-button
+                                - list [ref=e1937]:
+                                  - listitem [ref=e1938]: ポイント2%
+                                  - listitem [ref=e1939]: 特別室・離れ・スイート
+                                  - listitem [ref=e1940]: 禁煙ルーム
+                                  - listitem [ref=e1941]: 部屋でインターネットOK
+                            - paragraph [ref=e1943]:
+                              - generic [ref=e1944]:
+                                - text: 2,500円クーポンを獲得してお得に泊まる
+                                - link "クーポンGET" [ref=e1945] [cursor=pointer]:
+                                  - /url: javascript:void(0)
+                          - list [ref=e1947]:
+                            - listitem [ref=e1948]: 4ベッド
+                        - cell "1,202ポイント 60,106スコア" [ref=e1949]:
+                          - generic [ref=e1950]:
+                            - emphasis [ref=e1951]: 1,202
+                            - text: ポイント
+                          - generic [ref=e1952]: 60,106スコア
+                        - cell "33,300円 30,053円" [ref=e1953]:
+                          - text: 33,300円
+                          - generic [ref=e1954]: 30,053円
+                        - cell "通常料金 66,600円 60,106円 9% OFF" [ref=e1955]:
+                          - paragraph [ref=e1956]: 通常料金
+                          - generic [ref=e1957]: 66,600円
+                          - generic [ref=e1958]:
+                            - emphasis [ref=e1959]: 60,106
+                            - text: 円
+                          - paragraph [ref=e1960]: 9% OFF
+                      - row "あと3部屋" [ref=e1961]:
+                        - cell "あと3部屋" [ref=e1962]:
+                          - generic [ref=e1963]: あと3部屋
+                      - row [ref=e1964]:
+                        - cell [ref=e1965]
+                    - rowgroup [ref=e1966]:
+                      - row "ドッグフレンドリーデラックスルーム ポイント2% 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET ツイン 732ポイント 36,640スコア 20,300円 18,320円 通常料金 40,600円 36,640円 9% OFF" [ref=e1967]:
+                        - cell "ドッグフレンドリーデラックスルーム ポイント2% 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET ツイン" [ref=e1968]:
+                          - generic [ref=e1969]:
+                            - generic [ref=e1970]:
+                              - term [ref=e1971]:
+                                - paragraph [ref=e1972]:
+                                  - img [ref=e1973]
+                              - definition [ref=e1974]:
+                                - link "ドッグフレンドリーデラックスルーム" [ref=e1975] [cursor=pointer]:
+                                  - /url: /uw/uwp3200/uww3201init.do?roomCrack=200000&stayCount=1&roomCount=1&adultNum=2&distCd=01&smlCd=140202&stayYear=2026&stayMonth=08&stayDay=05&yadNo=341758&screenId=UWW3101&planCd=04303073&roomTypeCd=0597333&planListNumPlan=12_8_1&groupBookingFlg=&ccnt=pc-plan-sort-341758-04303073-9-0597333-2-detail-button
+                                - list [ref=e1976]:
+                                  - listitem [ref=e1977]: ポイント2%
+                                  - listitem [ref=e1978]: 禁煙ルーム
+                                  - listitem [ref=e1979]: 部屋でインターネットOK
+                            - paragraph [ref=e1981]:
+                              - generic [ref=e1982]:
+                                - text: 2,500円クーポンを獲得してお得に泊まる
+                                - link "クーポンGET" [ref=e1983] [cursor=pointer]:
+                                  - /url: javascript:void(0)
+                          - list [ref=e1985]:
+                            - listitem [ref=e1986]: ツイン
+                        - cell "732ポイント 36,640スコア" [ref=e1987]:
+                          - generic [ref=e1988]:
+                            - emphasis [ref=e1989]: "732"
+                            - text: ポイント
+                          - generic [ref=e1990]: 36,640スコア
+                        - cell "20,300円 18,320円" [ref=e1991]:
+                          - text: 20,300円
+                          - generic [ref=e1992]: 18,320円
+                        - cell "通常料金 40,600円 36,640円 9% OFF" [ref=e1993]:
+                          - paragraph [ref=e1994]: 通常料金
+                          - generic [ref=e1995]: 40,600円
+                          - generic [ref=e1996]:
+                            - emphasis [ref=e1997]: 36,640
+                            - text: 円
+                          - paragraph [ref=e1998]: 9% OFF
+                    - rowgroup [ref=e1999]:
+                      - row "ドッグフレンドリーダブルルーム ポイント2% 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET ダブル 552ポイント 27,616スコア 15,300円 13,808円 通常料金 30,600円 27,616円 9% OFF" [ref=e2000]:
+                        - cell "ドッグフレンドリーダブルルーム ポイント2% 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET ダブル" [ref=e2001]:
+                          - generic [ref=e2002]:
+                            - generic [ref=e2003]:
+                              - term [ref=e2004]:
+                                - paragraph [ref=e2005]:
+                                  - img [ref=e2006]
+                              - definition [ref=e2007]:
+                                - link "ドッグフレンドリーダブルルーム" [ref=e2008] [cursor=pointer]:
+                                  - /url: /uw/uwp3200/uww3201init.do?roomCrack=200000&stayCount=1&roomCount=1&adultNum=2&distCd=01&smlCd=140202&stayYear=2026&stayMonth=08&stayDay=05&yadNo=341758&screenId=UWW3101&planCd=04303073&roomTypeCd=0597322&planListNumPlan=12_8_2&groupBookingFlg=&ccnt=pc-plan-sort-341758-04303073-9-0597322-3-detail-button
+                                - list [ref=e2009]:
+                                  - listitem [ref=e2010]: ポイント2%
+                                  - listitem [ref=e2011]: 禁煙ルーム
+                                  - listitem [ref=e2012]: 部屋でインターネットOK
+                            - paragraph [ref=e2014]:
+                              - generic [ref=e2015]:
+                                - text: 2,500円クーポンを獲得してお得に泊まる
+                                - link "クーポンGET" [ref=e2016] [cursor=pointer]:
+                                  - /url: javascript:void(0)
+                          - list [ref=e2018]:
+                            - listitem [ref=e2019]: ダブル
+                        - cell "552ポイント 27,616スコア" [ref=e2020]:
+                          - generic [ref=e2021]:
+                            - emphasis [ref=e2022]: "552"
+                            - text: ポイント
+                          - generic [ref=e2023]: 27,616スコア
+                        - cell "15,300円 13,808円" [ref=e2024]:
+                          - text: 15,300円
+                          - generic [ref=e2025]: 13,808円
+                        - cell "通常料金 30,600円 27,616円 9% OFF" [ref=e2026]:
+                          - paragraph [ref=e2027]: 通常料金
+                          - generic [ref=e2028]: 30,600円
+                          - generic [ref=e2029]:
+                            - emphasis [ref=e2030]: 27,616
+                            - text: 円
+                          - paragraph [ref=e2031]: 9% OFF
+                      - row "空室わずか" [ref=e2032]:
+                        - cell "空室わずか" [ref=e2033]:
+                          - generic [ref=e2034]: 空室わずか
+                      - row:
+                        - cell
+              - listitem [ref=e2035]:
+                - generic [ref=e2036]:
+                  - paragraph [ref=e2037]: 【愛犬と楽しむ“街ナカ”ステイ】おもたび。（朝食：OMOダイニング ビュッフェ付)
+                  - list:
+                    - listitem [ref=e2038]: オンラインカード決済可
+                - generic [ref=e2039]:
+                  - generic [ref=e2040]:
+                    - link [ref=e2042] [cursor=pointer]:
+                      - /url: /uw/uwp3200/uww3201init.do?roomCrack=200000&stayCount=1&roomCount=1&adultNum=2&distCd=01&smlCd=140202&stayYear=2026&stayMonth=08&stayDay=05&yadNo=341758&screenId=UWW3101&planCd=04181665&roomTypeCd=0597334&planListNumPlan=12__0&groupBookingFlg=&ccnt=planlist_cp_y_2500_sale_n_0_pp_n_0
+                      - img [ref=e2043]
+                    - generic [ref=e2044]:
+                      - generic [ref=e2045]:
+                        - generic [ref=e2046]:
+                          - term [ref=e2047]: 食事：
+                          - definition [ref=e2048]: 朝のみ
+                        - generic [ref=e2049]:
+                          - term [ref=e2050]: チェックイン
+                          - definition [ref=e2051]: 15:00～
+                        - generic [ref=e2052]:
+                          - term [ref=e2053]: チェックアウト
+                          - definition [ref=e2054]: ～11:00
+                      - paragraph [ref=e2055]: OMOダイニング：新スタイル朝食ビュッフェ「Yokohama Morning Specialties」
+                      - paragraph [ref=e2056]: 1名がこのプランを見ています
+                  - table [ref=e2057]:
+                    - rowgroup [ref=e2058]:
+                      - row "部屋タイプ・詳細 加算予定ポイント 加算予定スコア 大人1名(税込) 合計(税込) 1泊 大人2名" [ref=e2059]:
+                        - columnheader "部屋タイプ・詳細" [ref=e2060]:
+                          - generic [ref=e2061]: 部屋タイプ・詳細
+                        - columnheader "加算予定ポイント 加算予定スコア" [ref=e2062]:
+                          - generic [ref=e2063]:
+                            - generic [ref=e2064]: 加算予定ポイント
+                            - generic [ref=e2065]: 加算予定スコア
+                        - columnheader "大人1名(税込)" [ref=e2068]
+                        - columnheader "合計(税込) 1泊 大人2名" [ref=e2069]:
+                          - text: 合計(税込)
+                          - generic [ref=e2070]: 1泊 大人2名
+                    - rowgroup [ref=e2071]:
+                      - row "ドッグフレンドリースイート ポイント2% 特別室・離れ・スイート 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET 4ベッド 1,420ポイント 71,000スコア 35,500円 71,000円" [ref=e2072]:
+                        - cell "ドッグフレンドリースイート ポイント2% 特別室・離れ・スイート 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET 4ベッド" [ref=e2073]:
+                          - generic [ref=e2074]:
+                            - generic [ref=e2075]:
+                              - term [ref=e2076]:
+                                - paragraph [ref=e2077]:
+                                  - img [ref=e2078]
+                              - definition [ref=e2079]:
+                                - link "ドッグフレンドリースイート" [ref=e2080] [cursor=pointer]:
+                                  - /url: /uw/uwp3200/uww3201init.do?roomCrack=200000&stayCount=1&roomCount=1&adultNum=2&distCd=01&smlCd=140202&stayYear=2026&stayMonth=08&stayDay=05&yadNo=341758&screenId=UWW3101&planCd=04181665&roomTypeCd=0597334&planListNumPlan=12_9_0&groupBookingFlg=&ccnt=pc-plan-sort-341758-04181665-10-0597334-1-detail-button
+                                - list [ref=e2081]:
+                                  - listitem [ref=e2082]: ポイント2%
+                                  - listitem [ref=e2083]: 特別室・離れ・スイート
+                                  - listitem [ref=e2084]: 禁煙ルーム
+                                  - listitem [ref=e2085]: 部屋でインターネットOK
+                            - paragraph [ref=e2087]:
+                              - generic [ref=e2088]:
+                                - text: 2,500円クーポンを獲得してお得に泊まる
+                                - link "クーポンGET" [ref=e2089] [cursor=pointer]:
+                                  - /url: javascript:void(0)
+                          - list [ref=e2091]:
+                            - listitem [ref=e2092]: 4ベッド
+                        - cell "1,420ポイント 71,000スコア" [ref=e2093]:
+                          - generic [ref=e2094]:
+                            - emphasis [ref=e2095]: 1,420
+                            - text: ポイント
+                          - generic [ref=e2096]: 71,000スコア
+                        - cell "35,500円" [ref=e2097]
+                        - cell "71,000円" [ref=e2098]:
+                          - generic [ref=e2099]:
+                            - emphasis [ref=e2100]: 71,000
+                            - text: 円
+                      - row "あと3部屋" [ref=e2101]:
+                        - cell "あと3部屋" [ref=e2102]:
+                          - generic [ref=e2103]: あと3部屋
+                      - row [ref=e2104]:
+                        - cell [ref=e2105]
+                    - rowgroup [ref=e2106]:
+                      - row "ドッグフレンドリーデラックスルーム ポイント2% 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET ツイン 900ポイント 45,000スコア 22,500円 45,000円" [ref=e2107]:
+                        - cell "ドッグフレンドリーデラックスルーム ポイント2% 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET ツイン" [ref=e2108]:
+                          - generic [ref=e2109]:
+                            - generic [ref=e2110]:
+                              - term [ref=e2111]:
+                                - paragraph [ref=e2112]:
+                                  - img [ref=e2113]
+                              - definition [ref=e2114]:
+                                - link "ドッグフレンドリーデラックスルーム" [ref=e2115] [cursor=pointer]:
+                                  - /url: /uw/uwp3200/uww3201init.do?roomCrack=200000&stayCount=1&roomCount=1&adultNum=2&distCd=01&smlCd=140202&stayYear=2026&stayMonth=08&stayDay=05&yadNo=341758&screenId=UWW3101&planCd=04181665&roomTypeCd=0597333&planListNumPlan=12_9_1&groupBookingFlg=&ccnt=pc-plan-sort-341758-04181665-10-0597333-2-detail-button
+                                - list [ref=e2116]:
+                                  - listitem [ref=e2117]: ポイント2%
+                                  - listitem [ref=e2118]: 禁煙ルーム
+                                  - listitem [ref=e2119]: 部屋でインターネットOK
+                            - paragraph [ref=e2121]:
+                              - generic [ref=e2122]:
+                                - text: 2,500円クーポンを獲得してお得に泊まる
+                                - link "クーポンGET" [ref=e2123] [cursor=pointer]:
+                                  - /url: javascript:void(0)
+                          - list [ref=e2125]:
+                            - listitem [ref=e2126]: ツイン
+                        - cell "900ポイント 45,000スコア" [ref=e2127]:
+                          - generic [ref=e2128]:
+                            - emphasis [ref=e2129]: "900"
+                            - text: ポイント
+                          - generic [ref=e2130]: 45,000スコア
+                        - cell "22,500円" [ref=e2131]
+                        - cell "45,000円" [ref=e2132]:
+                          - generic [ref=e2133]:
+                            - emphasis [ref=e2134]: 45,000
+                            - text: 円
+                    - rowgroup [ref=e2135]:
+                      - row "ドッグフレンドリーダブルルーム ポイント2% 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET ダブル 700ポイント 35,000スコア 17,500円 35,000円" [ref=e2136]:
+                        - cell "ドッグフレンドリーダブルルーム ポイント2% 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET ダブル" [ref=e2137]:
+                          - generic [ref=e2138]:
+                            - generic [ref=e2139]:
+                              - term [ref=e2140]:
+                                - paragraph [ref=e2141]:
+                                  - img [ref=e2142]
+                              - definition [ref=e2143]:
+                                - link "ドッグフレンドリーダブルルーム" [ref=e2144] [cursor=pointer]:
+                                  - /url: /uw/uwp3200/uww3201init.do?roomCrack=200000&stayCount=1&roomCount=1&adultNum=2&distCd=01&smlCd=140202&stayYear=2026&stayMonth=08&stayDay=05&yadNo=341758&screenId=UWW3101&planCd=04181665&roomTypeCd=0597322&planListNumPlan=12_9_2&groupBookingFlg=&ccnt=pc-plan-sort-341758-04181665-10-0597322-3-detail-button
+                                - list [ref=e2145]:
+                                  - listitem [ref=e2146]: ポイント2%
+                                  - listitem [ref=e2147]: 禁煙ルーム
+                                  - listitem [ref=e2148]: 部屋でインターネットOK
+                            - paragraph [ref=e2150]:
+                              - generic [ref=e2151]:
+                                - text: 2,500円クーポンを獲得してお得に泊まる
+                                - link "クーポンGET" [ref=e2152] [cursor=pointer]:
+                                  - /url: javascript:void(0)
+                          - list [ref=e2154]:
+                            - listitem [ref=e2155]: ダブル
+                        - cell "700ポイント 35,000スコア" [ref=e2156]:
+                          - generic [ref=e2157]:
+                            - emphasis [ref=e2158]: "700"
+                            - text: ポイント
+                          - generic [ref=e2159]: 35,000スコア
+                        - cell "17,500円" [ref=e2160]
+                        - cell "35,000円" [ref=e2161]:
+                          - generic [ref=e2162]:
+                            - emphasis [ref=e2163]: 35,000
+                            - text: 円
+                      - row "空室わずか" [ref=e2164]:
+                        - cell "空室わずか" [ref=e2165]:
+                          - generic [ref=e2166]: 空室わずか
+                      - row:
+                        - cell
+              - listitem [ref=e2167]:
+                - generic [ref=e2168]:
+                  - paragraph [ref=e2169]: 【じゃらんのお得な10日間】＜愛犬と楽しむ“街ナカ”ステイ＞おもたび。（食事なし）
+                  - list:
+                    - listitem [ref=e2170]: 終了間近
+                    - listitem [ref=e2171]: じゃらんのお得な10日間
+                    - listitem [ref=e2172]: オンラインカード決済専用
+                - generic [ref=e2173]:
+                  - generic [ref=e2174]:
+                    - link [ref=e2176] [cursor=pointer]:
+                      - /url: /uw/uwp3200/uww3201init.do?roomCrack=200000&stayCount=1&roomCount=1&adultNum=2&distCd=01&smlCd=140202&stayYear=2026&stayMonth=08&stayDay=05&yadNo=341758&screenId=UWW3101&planCd=04303071&roomTypeCd=0597334&planListNumPlan=12__0&groupBookingFlg=&ccnt=planlist_cp_y_2500_sale_y_5_pp_n_0
+                      - img [ref=e2177]
+                    - generic [ref=e2178]:
+                      - generic [ref=e2180]:
+                        - term [ref=e2181]: 【予約受付期間】
+                        - definition [ref=e2182]: 2026年6月18日～2026年6月29日
+                      - generic [ref=e2183]:
+                        - generic [ref=e2184]:
+                          - term [ref=e2185]: 食事：
+                          - definition [ref=e2186]: 食事なし
+                        - generic [ref=e2187]:
+                          - term [ref=e2188]: チェックイン
+                          - definition [ref=e2189]: 15:00～
+                        - generic [ref=e2190]:
+                          - term [ref=e2191]: チェックアウト
+                          - definition [ref=e2192]: ～11:00
+                      - paragraph [ref=e2193]: OMOドッグガーデン（屋外ドッグランイメージ）開放的で広々としており、リードを外して思いきり遊べます。
+                      - paragraph [ref=e2194]: 1名がこのプランを見ています
+                  - table [ref=e2195]:
+                    - rowgroup [ref=e2196]:
+                      - row "部屋タイプ・詳細 加算予定ポイント 加算予定スコア 大人1名(税込) 合計(税込) 1泊 大人2名" [ref=e2197]:
+                        - columnheader "部屋タイプ・詳細" [ref=e2198]:
+                          - generic [ref=e2199]: 部屋タイプ・詳細
+                        - columnheader "加算予定ポイント 加算予定スコア" [ref=e2200]:
+                          - generic [ref=e2201]:
+                            - generic [ref=e2202]: 加算予定ポイント
+                            - generic [ref=e2203]: 加算予定スコア
+                        - columnheader "大人1名(税込)" [ref=e2206]
+                        - columnheader "合計(税込) 1泊 大人2名" [ref=e2207]:
+                          - text: 合計(税込)
+                          - generic [ref=e2208]: 1泊 大人2名
+                    - rowgroup [ref=e2209]:
+                      - row "ドッグフレンドリースイート ポイント2% 特別室・離れ・スイート 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET 4ベッド 1,196ポイント 59,850スコア 31,500円 29,925円 通常料金 63,000円 59,850円 5% OFF" [ref=e2210]:
+                        - cell "ドッグフレンドリースイート ポイント2% 特別室・離れ・スイート 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET 4ベッド" [ref=e2211]:
+                          - generic [ref=e2212]:
+                            - generic [ref=e2213]:
+                              - term [ref=e2214]:
+                                - paragraph [ref=e2215]:
+                                  - img [ref=e2216]
+                              - definition [ref=e2217]:
+                                - link "ドッグフレンドリースイート" [ref=e2218] [cursor=pointer]:
+                                  - /url: /uw/uwp3200/uww3201init.do?roomCrack=200000&stayCount=1&roomCount=1&adultNum=2&distCd=01&smlCd=140202&stayYear=2026&stayMonth=08&stayDay=05&yadNo=341758&screenId=UWW3101&planCd=04303071&roomTypeCd=0597334&planListNumPlan=12_10_0&groupBookingFlg=&ccnt=pc-plan-sort-341758-04303071-11-0597334-1-detail-button
+                                - list [ref=e2219]:
+                                  - listitem [ref=e2220]: ポイント2%
+                                  - listitem [ref=e2221]: 特別室・離れ・スイート
+                                  - listitem [ref=e2222]: 禁煙ルーム
+                                  - listitem [ref=e2223]: 部屋でインターネットOK
+                            - paragraph [ref=e2225]:
+                              - generic [ref=e2226]:
+                                - text: 2,500円クーポンを獲得してお得に泊まる
+                                - link "クーポンGET" [ref=e2227] [cursor=pointer]:
+                                  - /url: javascript:void(0)
+                          - list [ref=e2229]:
+                            - listitem [ref=e2230]: 4ベッド
+                        - cell "1,196ポイント 59,850スコア" [ref=e2231]:
+                          - generic [ref=e2232]:
+                            - emphasis [ref=e2233]: 1,196
+                            - text: ポイント
+                          - generic [ref=e2234]: 59,850スコア
+                        - cell "31,500円 29,925円" [ref=e2235]:
+                          - text: 31,500円
+                          - generic [ref=e2236]: 29,925円
+                        - cell "通常料金 63,000円 59,850円 5% OFF" [ref=e2237]:
+                          - paragraph [ref=e2238]: 通常料金
+                          - generic [ref=e2239]: 63,000円
+                          - generic [ref=e2240]:
+                            - emphasis [ref=e2241]: 59,850
+                            - text: 円
+                          - paragraph [ref=e2242]: 5% OFF
+                      - row "あと3部屋" [ref=e2243]:
+                        - cell "あと3部屋" [ref=e2244]:
+                          - generic [ref=e2245]: あと3部屋
+                      - row [ref=e2246]:
+                        - cell [ref=e2247]
+                    - rowgroup [ref=e2248]:
+                      - row "ドッグフレンドリーデラックスルーム ポイント2% 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET ツイン 702ポイント 35,150スコア 18,500円 17,575円 通常料金 37,000円 35,150円 5% OFF" [ref=e2249]:
+                        - cell "ドッグフレンドリーデラックスルーム ポイント2% 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET ツイン" [ref=e2250]:
+                          - generic [ref=e2251]:
+                            - generic [ref=e2252]:
+                              - term [ref=e2253]:
+                                - paragraph [ref=e2254]:
+                                  - img [ref=e2255]
+                              - definition [ref=e2256]:
+                                - link "ドッグフレンドリーデラックスルーム" [ref=e2257] [cursor=pointer]:
+                                  - /url: /uw/uwp3200/uww3201init.do?roomCrack=200000&stayCount=1&roomCount=1&adultNum=2&distCd=01&smlCd=140202&stayYear=2026&stayMonth=08&stayDay=05&yadNo=341758&screenId=UWW3101&planCd=04303071&roomTypeCd=0597333&planListNumPlan=12_10_1&groupBookingFlg=&ccnt=pc-plan-sort-341758-04303071-11-0597333-2-detail-button
+                                - list [ref=e2258]:
+                                  - listitem [ref=e2259]: ポイント2%
+                                  - listitem [ref=e2260]: 禁煙ルーム
+                                  - listitem [ref=e2261]: 部屋でインターネットOK
+                            - paragraph [ref=e2263]:
+                              - generic [ref=e2264]:
+                                - text: 2,500円クーポンを獲得してお得に泊まる
+                                - link "クーポンGET" [ref=e2265] [cursor=pointer]:
+                                  - /url: javascript:void(0)
+                          - list [ref=e2267]:
+                            - listitem [ref=e2268]: ツイン
+                        - cell "702ポイント 35,150スコア" [ref=e2269]:
+                          - generic [ref=e2270]:
+                            - emphasis [ref=e2271]: "702"
+                            - text: ポイント
+                          - generic [ref=e2272]: 35,150スコア
+                        - cell "18,500円 17,575円" [ref=e2273]:
+                          - text: 18,500円
+                          - generic [ref=e2274]: 17,575円
+                        - cell "通常料金 37,000円 35,150円 5% OFF" [ref=e2275]:
+                          - paragraph [ref=e2276]: 通常料金
+                          - generic [ref=e2277]: 37,000円
+                          - generic [ref=e2278]:
+                            - emphasis [ref=e2279]: 35,150
+                            - text: 円
+                          - paragraph [ref=e2280]: 5% OFF
+                    - rowgroup [ref=e2281]:
+                      - row "ドッグフレンドリーダブルルーム ポイント2% 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET ダブル 512ポイント 25,650スコア 13,500円 12,825円 通常料金 27,000円 25,650円 5% OFF" [ref=e2282]:
+                        - cell "ドッグフレンドリーダブルルーム ポイント2% 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET ダブル" [ref=e2283]:
+                          - generic [ref=e2284]:
+                            - generic [ref=e2285]:
+                              - term [ref=e2286]:
+                                - paragraph [ref=e2287]:
+                                  - img [ref=e2288]
+                              - definition [ref=e2289]:
+                                - link "ドッグフレンドリーダブルルーム" [ref=e2290] [cursor=pointer]:
+                                  - /url: /uw/uwp3200/uww3201init.do?roomCrack=200000&stayCount=1&roomCount=1&adultNum=2&distCd=01&smlCd=140202&stayYear=2026&stayMonth=08&stayDay=05&yadNo=341758&screenId=UWW3101&planCd=04303071&roomTypeCd=0597322&planListNumPlan=12_10_2&groupBookingFlg=&ccnt=pc-plan-sort-341758-04303071-11-0597322-3-detail-button
+                                - list [ref=e2291]:
+                                  - listitem [ref=e2292]: ポイント2%
+                                  - listitem [ref=e2293]: 禁煙ルーム
+                                  - listitem [ref=e2294]: 部屋でインターネットOK
+                            - paragraph [ref=e2296]:
+                              - generic [ref=e2297]:
+                                - text: 2,500円クーポンを獲得してお得に泊まる
+                                - link "クーポンGET" [ref=e2298] [cursor=pointer]:
+                                  - /url: javascript:void(0)
+                          - list [ref=e2300]:
+                            - listitem [ref=e2301]: ダブル
+                        - cell "512ポイント 25,650スコア" [ref=e2302]:
+                          - generic [ref=e2303]:
+                            - emphasis [ref=e2304]: "512"
+                            - text: ポイント
+                          - generic [ref=e2305]: 25,650スコア
+                        - cell "13,500円 12,825円" [ref=e2306]:
+                          - text: 13,500円
+                          - generic [ref=e2307]: 12,825円
+                        - cell "通常料金 27,000円 25,650円 5% OFF" [ref=e2308]:
+                          - paragraph [ref=e2309]: 通常料金
+                          - generic [ref=e2310]: 27,000円
+                          - generic [ref=e2311]:
+                            - emphasis [ref=e2312]: 25,650
+                            - text: 円
+                          - paragraph [ref=e2313]: 5% OFF
+                      - row "空室わずか" [ref=e2314]:
+                        - cell "空室わずか" [ref=e2315]:
+                          - generic [ref=e2316]: 空室わずか
+                      - row:
+                        - cell
+              - listitem [ref=e2317]:
+                - generic [ref=e2318]:
+                  - paragraph [ref=e2319]: 【じゃらんのお得な10日間】＜愛犬と楽しむ“街ナカ”ステイ＞おもたび。（朝食：ビュッフェ付)
+                  - list:
+                    - listitem [ref=e2320]: 終了間近
+                    - listitem [ref=e2321]: オンラインカード決済専用
+                - generic [ref=e2322]:
+                  - generic [ref=e2323]:
+                    - link [ref=e2325] [cursor=pointer]:
+                      - /url: /uw/uwp3200/uww3201init.do?roomCrack=200000&stayCount=1&roomCount=1&adultNum=2&distCd=01&smlCd=140202&stayYear=2026&stayMonth=08&stayDay=05&yadNo=341758&screenId=UWW3101&planCd=04303077&roomTypeCd=0597334&planListNumPlan=12__0&groupBookingFlg=&ccnt=planlist_cp_y_2500_sale_n_0_pp_n_0
+                      - img [ref=e2326]
+                    - generic [ref=e2327]:
+                      - generic [ref=e2329]:
+                        - term [ref=e2330]: 【予約受付期間】
+                        - definition [ref=e2331]: 2026年6月18日～2026年6月29日
+                      - generic [ref=e2332]:
+                        - generic [ref=e2333]:
+                          - term [ref=e2334]: 食事：
+                          - definition [ref=e2335]: 朝のみ
+                        - generic [ref=e2336]:
+                          - term [ref=e2337]: チェックイン
+                          - definition [ref=e2338]: 15:00～
+                        - generic [ref=e2339]:
+                          - term [ref=e2340]: チェックアウト
+                          - definition [ref=e2341]: ～11:00
+                      - paragraph [ref=e2342]: 【朝食ビュッフェ】Yokohama Morning Specialties
+                      - paragraph [ref=e2343]: 1名がこのプランを見ています
+                  - table [ref=e2344]:
+                    - rowgroup [ref=e2345]:
+                      - row "部屋タイプ・詳細 加算予定ポイント 加算予定スコア 大人1名(税込) 合計(税込) 1泊 大人2名" [ref=e2346]:
+                        - columnheader "部屋タイプ・詳細" [ref=e2347]:
+                          - generic [ref=e2348]: 部屋タイプ・詳細
+                        - columnheader "加算予定ポイント 加算予定スコア" [ref=e2349]:
+                          - generic [ref=e2350]:
+                            - generic [ref=e2351]: 加算予定ポイント
+                            - generic [ref=e2352]: 加算予定スコア
+                        - columnheader "大人1名(税込)" [ref=e2355]
+                        - columnheader "合計(税込) 1泊 大人2名" [ref=e2356]:
+                          - text: 合計(税込)
+                          - generic [ref=e2357]: 1泊 大人2名
+                    - rowgroup [ref=e2358]:
+                      - row "ドッグフレンドリースイート ポイント2% 特別室・離れ・スイート 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET 4ベッド 1,348ポイント 67,450スコア 33,725円 67,450円" [ref=e2359]:
+                        - cell "ドッグフレンドリースイート ポイント2% 特別室・離れ・スイート 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET 4ベッド" [ref=e2360]:
+                          - generic [ref=e2361]:
+                            - generic [ref=e2362]:
+                              - term [ref=e2363]:
+                                - paragraph [ref=e2364]:
+                                  - img [ref=e2365]
+                              - definition [ref=e2366]:
+                                - link "ドッグフレンドリースイート" [ref=e2367] [cursor=pointer]:
+                                  - /url: /uw/uwp3200/uww3201init.do?roomCrack=200000&stayCount=1&roomCount=1&adultNum=2&distCd=01&smlCd=140202&stayYear=2026&stayMonth=08&stayDay=05&yadNo=341758&screenId=UWW3101&planCd=04303077&roomTypeCd=0597334&planListNumPlan=12_11_0&groupBookingFlg=&ccnt=pc-plan-sort-341758-04303077-12-0597334-1-detail-button
+                                - list [ref=e2368]:
+                                  - listitem [ref=e2369]: ポイント2%
+                                  - listitem [ref=e2370]: 特別室・離れ・スイート
+                                  - listitem [ref=e2371]: 禁煙ルーム
+                                  - listitem [ref=e2372]: 部屋でインターネットOK
+                            - paragraph [ref=e2374]:
+                              - generic [ref=e2375]:
+                                - text: 2,500円クーポンを獲得してお得に泊まる
+                                - link "クーポンGET" [ref=e2376] [cursor=pointer]:
+                                  - /url: javascript:void(0)
+                          - list [ref=e2378]:
+                            - listitem [ref=e2379]: 4ベッド
+                        - cell "1,348ポイント 67,450スコア" [ref=e2380]:
+                          - generic [ref=e2381]:
+                            - emphasis [ref=e2382]: 1,348
+                            - text: ポイント
+                          - generic [ref=e2383]: 67,450スコア
+                        - cell "33,725円" [ref=e2384]
+                        - cell "67,450円" [ref=e2385]:
+                          - generic [ref=e2386]:
+                            - emphasis [ref=e2387]: 67,450
+                            - text: 円
+                      - row "あと3部屋" [ref=e2388]:
+                        - cell "あと3部屋" [ref=e2389]:
+                          - generic [ref=e2390]: あと3部屋
+                      - row [ref=e2391]:
+                        - cell [ref=e2392]
+                    - rowgroup [ref=e2393]:
+                      - row "ドッグフレンドリーデラックスルーム ポイント2% 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET ツイン 854ポイント 42,750スコア 21,375円 42,750円" [ref=e2394]:
+                        - cell "ドッグフレンドリーデラックスルーム ポイント2% 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET ツイン" [ref=e2395]:
+                          - generic [ref=e2396]:
+                            - generic [ref=e2397]:
+                              - term [ref=e2398]:
+                                - paragraph [ref=e2399]:
+                                  - img [ref=e2400]
+                              - definition [ref=e2401]:
+                                - link "ドッグフレンドリーデラックスルーム" [ref=e2402] [cursor=pointer]:
+                                  - /url: /uw/uwp3200/uww3201init.do?roomCrack=200000&stayCount=1&roomCount=1&adultNum=2&distCd=01&smlCd=140202&stayYear=2026&stayMonth=08&stayDay=05&yadNo=341758&screenId=UWW3101&planCd=04303077&roomTypeCd=0597333&planListNumPlan=12_11_1&groupBookingFlg=&ccnt=pc-plan-sort-341758-04303077-12-0597333-2-detail-button
+                                - list [ref=e2403]:
+                                  - listitem [ref=e2404]: ポイント2%
+                                  - listitem [ref=e2405]: 禁煙ルーム
+                                  - listitem [ref=e2406]: 部屋でインターネットOK
+                            - paragraph [ref=e2408]:
+                              - generic [ref=e2409]:
+                                - text: 2,500円クーポンを獲得してお得に泊まる
+                                - link "クーポンGET" [ref=e2410] [cursor=pointer]:
+                                  - /url: javascript:void(0)
+                          - list [ref=e2412]:
+                            - listitem [ref=e2413]: ツイン
+                        - cell "854ポイント 42,750スコア" [ref=e2414]:
+                          - generic [ref=e2415]:
+                            - emphasis [ref=e2416]: "854"
+                            - text: ポイント
+                          - generic [ref=e2417]: 42,750スコア
+                        - cell "21,375円" [ref=e2418]
+                        - cell "42,750円" [ref=e2419]:
+                          - generic [ref=e2420]:
+                            - emphasis [ref=e2421]: 42,750
+                            - text: 円
+                    - rowgroup [ref=e2422]:
+                      - row "ドッグフレンドリーダブルルーム ポイント2% 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET ダブル 664ポイント 33,250スコア 16,625円 33,250円" [ref=e2423]:
+                        - cell "ドッグフレンドリーダブルルーム ポイント2% 禁煙ルーム 部屋でインターネットOK 2,500円クーポンを獲得してお得に泊まる クーポンGET ダブル" [ref=e2424]:
+                          - generic [ref=e2425]:
+                            - generic [ref=e2426]:
+                              - term [ref=e2427]:
+                                - paragraph [ref=e2428]:
+                                  - img [ref=e2429]
+                              - definition [ref=e2430]:
+                                - link "ドッグフレンドリーダブルルーム" [ref=e2431] [cursor=pointer]:
+                                  - /url: /uw/uwp3200/uww3201init.do?roomCrack=200000&stayCount=1&roomCount=1&adultNum=2&distCd=01&smlCd=140202&stayYear=2026&stayMonth=08&stayDay=05&yadNo=341758&screenId=UWW3101&planCd=04303077&roomTypeCd=0597322&planListNumPlan=12_11_2&groupBookingFlg=&ccnt=pc-plan-sort-341758-04303077-12-0597322-3-detail-button
+                                - list [ref=e2432]:
+                                  - listitem [ref=e2433]: ポイント2%
+                                  - listitem [ref=e2434]: 禁煙ルーム
+                                  - listitem [ref=e2435]: 部屋でインターネットOK
+                            - paragraph [ref=e2437]:
+                              - generic [ref=e2438]:
+                                - text: 2,500円クーポンを獲得してお得に泊まる
+                                - link "クーポンGET" [ref=e2439] [cursor=pointer]:
+                                  - /url: javascript:void(0)
+                          - list [ref=e2441]:
+                            - listitem [ref=e2442]: ダブル
+                        - cell "664ポイント 33,250スコア" [ref=e2443]:
+                          - generic [ref=e2444]:
+                            - emphasis [ref=e2445]: "664"
+                            - text: ポイント
+                          - generic [ref=e2446]: 33,250スコア
+                        - cell "16,625円" [ref=e2447]
+                        - cell "33,250円" [ref=e2448]:
+                          - generic [ref=e2449]:
+                            - emphasis [ref=e2450]: 33,250
+                            - text: 円
+                      - row "空室わずか" [ref=e2451]:
+                        - cell "空室わずか" [ref=e2452]:
+                          - generic [ref=e2453]: 空室わずか
+                      - row:
+                        - cell
+            - table [ref=e2455]:
+              - rowgroup [ref=e2456]:
+                - row [ref=e2457]:
+                  - cell [ref=e2458]
+            - generic [ref=e2461]:
+              - generic [ref=e2462]:
+                - heading "この宿をみた人は他にこんな宿をみています" [level=3] [ref=e2463]
+                - paragraph [ref=e2464]: ※ご指定の検索条件に合致しない宿が表示される場合がございます。
+              - generic [ref=e2468]:
+                - link [ref=e2470] [cursor=pointer]:
+                  - /url: /yad335422/?screenId=UWW3101&roomCrack=200000&smlCd=140202&distCd=01&stayYear=2026&stayMonth=8&stayDay=5&stayCount=1&roomCount=1&adultNum=2&minPrice=0&maxPrice=999999
+                  - generic [ref=e2473]:
+                    - heading [level=4] [ref=e2474]: ハイアット リージェンシー 横浜
+                    - generic [ref=e2475]: "4.7"
+                    - paragraph [ref=e2478]:
+                      - generic [ref=e2479]: 1泊 大人2名 合計(税込)
+                      - text: 27,572円～ 1名 13,786円～
+                    - paragraph [ref=e2480]: 《電車》MM線 「日本大通り駅」徒歩3分 「元町中華街駅」徒歩5分 《船》シーバス「山下公園」のりば徒歩8分
+                - link [ref=e2482] [cursor=pointer]:
+                  - /url: /yad339603/?screenId=UWW3101&roomCrack=200000&smlCd=140202&distCd=01&stayYear=2026&stayMonth=8&stayDay=5&stayCount=1&roomCount=1&adultNum=2&minPrice=0&maxPrice=999999
+                  - generic [ref=e2485]:
+                    - heading [level=4] [ref=e2486]: ホテルプラム (HOTEL PLUMM) 横浜
+                    - generic [ref=e2487]: "4.5"
+                    - paragraph [ref=e2490]:
+                      - generic [ref=e2491]: 1泊 大人2名 合計(税込)
+                      - text: 15,000円～ 1名 7,500円～
+                    - paragraph [ref=e2492]: 【ＪＲ・私鉄／横浜駅】西口出口、【横浜市営地下鉄／横浜駅】９番出口より徒歩7分。
+                - link [ref=e2494] [cursor=pointer]:
+                  - /url: /yad339855/?screenId=UWW3101&roomCrack=200000&smlCd=140202&distCd=01&stayYear=2026&stayMonth=8&stayDay=5&stayCount=1&roomCount=1&adultNum=2&minPrice=0&maxPrice=999999
+                  - generic [ref=e2497]:
+                    - heading [level=4] [ref=e2498]: 横浜みなとみらい 万葉倶楽部
+                    - generic [ref=e2499]: "4.1"
+                    - paragraph [ref=e2502]:
+                      - generic [ref=e2503]: 1泊 大人2名 合計(税込)
+                      - text: 39,900円～ 1名 19,950円～
+                    - paragraph [ref=e2504]: みなとみらい線「みなとみらい駅」より徒歩5分、大観覧車の目の前。観光・ビジネスに抜群の立地！
+                - link [ref=e2506] [cursor=pointer]:
+                  - /url: /yad349068/?screenId=UWW3101&roomCrack=200000&smlCd=140202&distCd=01&stayYear=2026&stayMonth=8&stayDay=5&stayCount=1&roomCount=1&adultNum=2&minPrice=0&maxPrice=999999
+                  - generic [ref=e2509]:
+                    - heading [level=4] [ref=e2510]: ホテルセントラル横浜
+                    - generic [ref=e2511]: "-"
+                    - paragraph [ref=e2512]:
+                      - generic [ref=e2513]: 1泊 大人2名 合計(税込)
+                      - text: 21,824円～ 1名 10,912円～
+                    - paragraph [ref=e2514]: 関内駅徒歩7分・桜木町駅徒歩8分・日ノ出町駅徒歩6分
+                - link "スーパーホテル横浜・関内 4.5 1泊 大人2名 合計(税込) 14,820円～ 1名 7,410円～ ★地下鉄・関内駅/8分（1番出口★JR・関内駅/約8分（南口）★みなとみらい線・日本大通り駅/約5分（3番出口" [ref=e2516] [cursor=pointer]:
+                  - /url: /yad319565/?screenId=UWW3101&roomCrack=200000&smlCd=140202&distCd=01&stayYear=2026&stayMonth=8&stayDay=5&stayCount=1&roomCount=1&adultNum=2&minPrice=0&maxPrice=999999
+                  - generic [ref=e2519]:
+                    - heading "スーパーホテル横浜・関内" [level=4] [ref=e2520]
+                    - generic [ref=e2521]: "4.5"
+                    - paragraph [ref=e2524]:
+                      - generic [ref=e2525]: 1泊 大人2名 合計(税込)
+                      - text: 14,820円～
+                      - text: 1名 7,410円～
+                    - paragraph [ref=e2526]: ★地下鉄・関内駅/8分（1番出口★JR・関内駅/約8分（南口）★みなとみらい線・日本大通り駅/約5分（3番出口
+                - link "ローズホテル横浜 4.3 1泊 大人2名 合計(税込) 19,000円～ 1名 9,500円～ みなとみらい線 元町中華街駅2番出口徒歩約2分。JR石川町駅北口徒歩約10分。首都高速新山下ICより車で約5分" [ref=e2528] [cursor=pointer]:
+                  - /url: /yad326825/?screenId=UWW3101&roomCrack=200000&smlCd=140202&distCd=01&stayYear=2026&stayMonth=8&stayDay=5&stayCount=1&roomCount=1&adultNum=2&minPrice=0&maxPrice=999999
+                  - generic [ref=e2531]:
+                    - heading "ローズホテル横浜" [level=4] [ref=e2532]
+                    - generic [ref=e2533]: "4.3"
+                    - paragraph [ref=e2536]:
+                      - generic [ref=e2537]: 1泊 大人2名 合計(税込)
+                      - text: 19,000円～
+                      - text: 1名 9,500円～
+                    - paragraph [ref=e2538]: みなとみらい線 元町中華街駅2番出口徒歩約2分。JR石川町駅北口徒歩約10分。首都高速新山下ICより車で約5分
+                - link "ホテルリブマックス横浜関内駅前 3.8 1泊 大人2名 合計(税込) 19,634円～ 1名 9,817円～ 各線「関内」駅徒歩約3分・横浜市営地下鉄線「伊勢佐木長者町」駅3A出口 徒歩 約3分" [ref=e2540] [cursor=pointer]:
+                  - /url: /yad327353/?screenId=UWW3101&roomCrack=200000&smlCd=140202&distCd=01&stayYear=2026&stayMonth=8&stayDay=5&stayCount=1&roomCount=1&adultNum=2&minPrice=0&maxPrice=999999
+                  - generic [ref=e2543]:
+                    - heading "ホテルリブマックス横浜関内駅前" [level=4] [ref=e2544]
+                    - generic [ref=e2545]: "3.8"
+                    - paragraph [ref=e2548]:
+                      - generic [ref=e2549]: 1泊 大人2名 合計(税込)
+                      - text: 19,634円～
+                      - text: 1名 9,817円～
+                    - paragraph [ref=e2550]: 各線「関内」駅徒歩約3分・横浜市営地下鉄線「伊勢佐木長者町」駅3A出口 徒歩 約3分
+                - link "ハイアット リージェンシー 横浜 4.7 1泊 大人2名 合計(税込) 27,572円～ 1名 13,786円～ 《電車》MM線 「日本大通り駅」徒歩3分 「元町中華街駅」徒歩5分 《船》シーバス「山下公園」のりば徒歩8分" [ref=e2552] [cursor=pointer]:
+                  - /url: /yad335422/?screenId=UWW3101&roomCrack=200000&smlCd=140202&distCd=01&stayYear=2026&stayMonth=8&stayDay=5&stayCount=1&roomCount=1&adultNum=2&minPrice=0&maxPrice=999999
+                  - generic [ref=e2555]:
+                    - heading "ハイアット リージェンシー 横浜" [level=4] [ref=e2556]
+                    - generic [ref=e2557]: "4.7"
+                    - paragraph [ref=e2560]:
+                      - generic [ref=e2561]: 1泊 大人2名 合計(税込)
+                      - text: 27,572円～
+                      - text: 1名 13,786円～
+                    - paragraph [ref=e2562]: 《電車》MM線 「日本大通り駅」徒歩3分 「元町中華街駅」徒歩5分 《船》シーバス「山下公園」のりば徒歩8分
+                - link [ref=e2564] [cursor=pointer]:
+                  - /url: /yad339603/?screenId=UWW3101&roomCrack=200000&smlCd=140202&distCd=01&stayYear=2026&stayMonth=8&stayDay=5&stayCount=1&roomCount=1&adultNum=2&minPrice=0&maxPrice=999999
+                  - generic [ref=e2567]:
+                    - heading [level=4] [ref=e2568]: ホテルプラム (HOTEL PLUMM) 横浜
+                    - generic [ref=e2569]: "4.5"
+                    - paragraph [ref=e2572]:
+                      - generic [ref=e2573]: 1泊 大人2名 合計(税込)
+                      - text: 15,000円～ 1名 7,500円～
+                    - paragraph [ref=e2574]: 【ＪＲ・私鉄／横浜駅】西口出口、【横浜市営地下鉄／横浜駅】９番出口より徒歩7分。
+                - link [ref=e2576] [cursor=pointer]:
+                  - /url: /yad339855/?screenId=UWW3101&roomCrack=200000&smlCd=140202&distCd=01&stayYear=2026&stayMonth=8&stayDay=5&stayCount=1&roomCount=1&adultNum=2&minPrice=0&maxPrice=999999
+                  - generic [ref=e2579]:
+                    - heading [level=4] [ref=e2580]: 横浜みなとみらい 万葉倶楽部
+                    - generic [ref=e2581]: "4.1"
+                    - paragraph [ref=e2584]:
+                      - generic [ref=e2585]: 1泊 大人2名 合計(税込)
+                      - text: 39,900円～ 1名 19,950円～
+                    - paragraph [ref=e2586]: みなとみらい線「みなとみらい駅」より徒歩5分、大観覧車の目の前。観光・ビジネスに抜群の立地！
+                - link [ref=e2588] [cursor=pointer]:
+                  - /url: /yad349068/?screenId=UWW3101&roomCrack=200000&smlCd=140202&distCd=01&stayYear=2026&stayMonth=8&stayDay=5&stayCount=1&roomCount=1&adultNum=2&minPrice=0&maxPrice=999999
+                  - generic [ref=e2591]:
+                    - heading [level=4] [ref=e2592]: ホテルセントラル横浜
+                    - generic [ref=e2593]: "-"
+                    - paragraph [ref=e2594]:
+                      - generic [ref=e2595]: 1泊 大人2名 合計(税込)
+                      - text: 21,824円～ 1名 10,912円～
+                    - paragraph [ref=e2596]: 関内駅徒歩7分・桜木町駅徒歩8分・日ノ出町駅徒歩6分
+                - link [ref=e2598] [cursor=pointer]:
+                  - /url: /yad319565/?screenId=UWW3101&roomCrack=200000&smlCd=140202&distCd=01&stayYear=2026&stayMonth=8&stayDay=5&stayCount=1&roomCount=1&adultNum=2&minPrice=0&maxPrice=999999
+                  - generic [ref=e2601]:
+                    - heading [level=4] [ref=e2602]: スーパーホテル横浜・関内
+                    - generic [ref=e2603]: "4.5"
+                    - paragraph [ref=e2606]:
+                      - generic [ref=e2607]: 1泊 大人2名 合計(税込)
+                      - text: 14,820円～ 1名 7,410円～
+                    - paragraph [ref=e2608]: ★地下鉄・関内駅/8分（1番出口★JR・関内駅/約8分（南口）★みなとみらい線・日本大通り駅/約5分（3番出口
+                - link [ref=e2610] [cursor=pointer]:
+                  - /url: /yad326825/?screenId=UWW3101&roomCrack=200000&smlCd=140202&distCd=01&stayYear=2026&stayMonth=8&stayDay=5&stayCount=1&roomCount=1&adultNum=2&minPrice=0&maxPrice=999999
+                  - generic [ref=e2613]:
+                    - heading [level=4] [ref=e2614]: ローズホテル横浜
+                    - generic [ref=e2615]: "4.3"
+                    - paragraph [ref=e2618]:
+                      - generic [ref=e2619]: 1泊 大人2名 合計(税込)
+                      - text: 19,000円～ 1名 9,500円～
+                    - paragraph [ref=e2620]: みなとみらい線 元町中華街駅2番出口徒歩約2分。JR石川町駅北口徒歩約10分。首都高速新山下ICより車で約5分
+                - link [ref=e2622] [cursor=pointer]:
+                  - /url: /yad327353/?screenId=UWW3101&roomCrack=200000&smlCd=140202&distCd=01&stayYear=2026&stayMonth=8&stayDay=5&stayCount=1&roomCount=1&adultNum=2&minPrice=0&maxPrice=999999
+                  - generic [ref=e2625]:
+                    - heading [level=4] [ref=e2626]: ホテルリブマックス横浜関内駅前
+                    - generic [ref=e2627]: "3.8"
+                    - paragraph [ref=e2630]:
+                      - generic [ref=e2631]: 1泊 大人2名 合計(税込)
+                      - text: 19,634円～ 1名 9,817円～
+                    - paragraph [ref=e2632]: 各線「関内」駅徒歩約3分・横浜市営地下鉄線「伊勢佐木長者町」駅3A出口 徒歩 約3分
+                - link [ref=e2634] [cursor=pointer]:
+                  - /url: /yad335422/?screenId=UWW3101&roomCrack=200000&smlCd=140202&distCd=01&stayYear=2026&stayMonth=8&stayDay=5&stayCount=1&roomCount=1&adultNum=2&minPrice=0&maxPrice=999999
+                  - generic [ref=e2637]:
+                    - heading [level=4] [ref=e2638]: ハイアット リージェンシー 横浜
+                    - generic [ref=e2639]: "4.7"
+                    - paragraph [ref=e2642]:
+                      - generic [ref=e2643]: 1泊 大人2名 合計(税込)
+                      - text: 27,572円～ 1名 13,786円～
+                    - paragraph [ref=e2644]: 《電車》MM線 「日本大通り駅」徒歩3分 「元町中華街駅」徒歩5分 《船》シーバス「山下公園」のりば徒歩8分
+                - link [ref=e2646] [cursor=pointer]:
+                  - /url: /yad339603/?screenId=UWW3101&roomCrack=200000&smlCd=140202&distCd=01&stayYear=2026&stayMonth=8&stayDay=5&stayCount=1&roomCount=1&adultNum=2&minPrice=0&maxPrice=999999
+                  - generic [ref=e2649]:
+                    - heading [level=4] [ref=e2650]: ホテルプラム (HOTEL PLUMM) 横浜
+                    - generic [ref=e2651]: "4.5"
+                    - paragraph [ref=e2654]:
+                      - generic [ref=e2655]: 1泊 大人2名 合計(税込)
+                      - text: 15,000円～ 1名 7,500円～
+                    - paragraph [ref=e2656]: 【ＪＲ・私鉄／横浜駅】西口出口、【横浜市営地下鉄／横浜駅】９番出口より徒歩7分。
+                - link [ref=e2658] [cursor=pointer]:
+                  - /url: /yad339855/?screenId=UWW3101&roomCrack=200000&smlCd=140202&distCd=01&stayYear=2026&stayMonth=8&stayDay=5&stayCount=1&roomCount=1&adultNum=2&minPrice=0&maxPrice=999999
+                  - generic [ref=e2661]:
+                    - heading [level=4] [ref=e2662]: 横浜みなとみらい 万葉倶楽部
+                    - generic [ref=e2663]: "4.1"
+                    - paragraph [ref=e2666]:
+                      - generic [ref=e2667]: 1泊 大人2名 合計(税込)
+                      - text: 39,900円～ 1名 19,950円～
+                    - paragraph [ref=e2668]: みなとみらい線「みなとみらい駅」より徒歩5分、大観覧車の目の前。観光・ビジネスに抜群の立地！
+                - link [ref=e2670] [cursor=pointer]:
+                  - /url: /yad349068/?screenId=UWW3101&roomCrack=200000&smlCd=140202&distCd=01&stayYear=2026&stayMonth=8&stayDay=5&stayCount=1&roomCount=1&adultNum=2&minPrice=0&maxPrice=999999
+                  - generic [ref=e2673]:
+                    - heading [level=4] [ref=e2674]: ホテルセントラル横浜
+                    - generic [ref=e2675]: "-"
+                    - paragraph [ref=e2676]:
+                      - generic [ref=e2677]: 1泊 大人2名 合計(税込)
+                      - text: 21,824円～ 1名 10,912円～
+                    - paragraph [ref=e2678]: 関内駅徒歩7分・桜木町駅徒歩8分・日ノ出町駅徒歩6分
+            - generic [ref=e2681]:
+              - link "ページの先頭に戻る" [ref=e2683] [cursor=pointer]:
+                - /url: "#top"
+              - generic [ref=e2684]: "[ホテル]ＯＭＯ７横浜 ｂｙ 星野リゾート じゃらんnet"
+      - generic [ref=e2685]:
+        - generic [ref=e2686]:
+          - generic [ref=e2687]:
+            - img "注目" [ref=e2688]
+            - paragraph [ref=e2689]: 神奈川県の宿・ホテル[PR]
+          - generic [ref=e2690]:
+            - heading "旅館 松島(横浜)" [level=4] [ref=e2691]:
+              - link "旅館 松島" [ref=e2692] [cursor=pointer]:
+                - /url: https://www.jalan.net/uw/uwp0700/uww0701.do?detailURL=https%3A%2F%2Fwww.jalan.net%2Fuw%2Fuwp3000%2Fuww3001.do%3FyadNo%3D341919%26rootCd%3D63%26adFlg%3Dclick_UWW3101&pref=140000&l_area=140200&yado_no=341919&root_cd=63&from_id=UWW3101&pub_order=1
+              - text: (横浜)
+            - paragraph [ref=e2693]:
+              - link [ref=e2694] [cursor=pointer]:
+                - /url: https://www.jalan.net/uw/uwp0700/uww0701.do?detailURL=https%3A%2F%2Fwww.jalan.net%2Fuw%2Fuwp3000%2Fuww3001.do%3FyadNo%3D341919%26rootCd%3D63%26adFlg%3Dclick_UWW3101&pref=140000&l_area=140200&yado_no=341919&root_cd=63&from_id=UWW3101&pub_order=1
+            - paragraph [ref=e2695]: 【じゃらん限定ポイントアップ】お食事付きでゆったりプラン
+          - generic [ref=e2696]:
+            - heading "箱根温泉旅館 玉の湯(箱根)" [level=4] [ref=e2697]:
+              - link "箱根温泉旅館 玉の湯" [ref=e2698] [cursor=pointer]:
+                - /url: https://www.jalan.net/uw/uwp0700/uww0701.do?detailURL=https%3A%2F%2Fwww.jalan.net%2Fuw%2Fuwp3000%2Fuww3001.do%3FyadNo%3D312448%26rootCd%3D63%26adFlg%3Dclick_UWW3101&pref=140000&l_area=140200&yado_no=312448&root_cd=63&from_id=UWW3101&pub_order=2
+              - text: (箱根)
+            - paragraph [ref=e2699]:
+              - link [ref=e2700] [cursor=pointer]:
+                - /url: https://www.jalan.net/uw/uwp0700/uww0701.do?detailURL=https%3A%2F%2Fwww.jalan.net%2Fuw%2Fuwp3000%2Fuww3001.do%3FyadNo%3D312448%26rootCd%3D63%26adFlg%3Dclick_UWW3101&pref=140000&l_area=140200&yado_no=312448&root_cd=63&from_id=UWW3101&pub_order=2
+            - paragraph [ref=e2701]: ♪源泉かけ流しと地元食材を使った手作り料理で満腹に♪
+          - generic [ref=e2702]:
+            - heading "橋本パークホテル(相模原)" [level=4] [ref=e2703]:
+              - link "橋本パークホテル" [ref=e2704] [cursor=pointer]:
+                - /url: https://www.jalan.net/uw/uwp0700/uww0701.do?detailURL=https%3A%2F%2Fwww.jalan.net%2Fuw%2Fuwp3000%2Fuww3001.do%3FyadNo%3D310732%26rootCd%3D63%26adFlg%3Dclick_UWW3101&pref=140000&l_area=140200&yado_no=310732&root_cd=63&from_id=UWW3101&pub_order=3
+              - text: (相模原)
+            - paragraph [ref=e2705]:
+              - link [ref=e2706] [cursor=pointer]:
+                - /url: https://www.jalan.net/uw/uwp0700/uww0701.do?detailURL=https%3A%2F%2Fwww.jalan.net%2Fuw%2Fuwp3000%2Fuww3001.do%3FyadNo%3D310732%26rootCd%3D63%26adFlg%3Dclick_UWW3101&pref=140000&l_area=140200&yado_no=310732&root_cd=63&from_id=UWW3101&pub_order=3
+            - paragraph [ref=e2707]: 焼立てパンもある、朝の無料ドリンクバーが好評です。
+          - generic [ref=e2708]:
+            - heading "スカイハートホテル川崎(川崎)" [level=4] [ref=e2709]:
+              - link "スカイハートホテル川崎" [ref=e2710] [cursor=pointer]:
+                - /url: https://www.jalan.net/uw/uwp0700/uww0701.do?detailURL=https%3A%2F%2Fwww.jalan.net%2Fuw%2Fuwp3100%2Fuww3101.do%3FyadNo%3D346352%26rootCd%3D63%26adFlg%3Dclick_UWW3101&pref=140000&l_area=140200&yado_no=346352&root_cd=63&from_id=UWW3101&pub_order=4
+              - text: (川崎)
+            - paragraph [ref=e2711]:
+              - link [ref=e2712] [cursor=pointer]:
+                - /url: https://www.jalan.net/uw/uwp0700/uww0701.do?detailURL=https%3A%2F%2Fwww.jalan.net%2Fuw%2Fuwp3100%2Fuww3101.do%3FyadNo%3D346352%26rootCd%3D63%26adFlg%3Dclick_UWW3101&pref=140000&l_area=140200&yado_no=346352&root_cd=63&from_id=UWW3101&pub_order=4
+            - paragraph [ref=e2713]: 横浜駅より川崎駅までＪＲで１駅！
+          - generic [ref=e2714]:
+            - heading "横浜ベイホテル東急(横浜)" [level=4] [ref=e2715]:
+              - link "横浜ベイホテル東急" [ref=e2716] [cursor=pointer]:
+                - /url: https://www.jalan.net/uw/uwp0700/uww0701.do?detailURL=https%3A%2F%2Fwww.jalan.net%2Fuw%2Fuwp3000%2Fuww3001.do%3FyadNo%3D336041%26rootCd%3D63%26adFlg%3Dclick_UWW3101&pref=140000&l_area=140200&yado_no=336041&root_cd=63&from_id=UWW3101&pub_order=5&creative_id=00189804
+              - text: (横浜)
+            - paragraph [ref=e2717]: みなとみらいの中心♪横浜港を一望できるアーバンリゾート。
+          - generic [ref=e2718]:
+            - heading "横浜東急ＲＥＩホテル(横浜)" [level=4] [ref=e2719]:
+              - link "横浜東急ＲＥＩホテル" [ref=e2720] [cursor=pointer]:
+                - /url: https://www.jalan.net/uw/uwp0700/uww0701.do?detailURL=https%3A%2F%2Fwww.jalan.net%2Fuw%2Fuwp3000%2Fuww3001.do%3FyadNo%3D399663%26rootCd%3D63%26adFlg%3Dclick_UWW3101&pref=140000&l_area=140200&yado_no=399663&root_cd=63&from_id=UWW3101&pub_order=6&creative_id=00187155
+              - text: (横浜)
+            - paragraph [ref=e2721]: 月の引力のように人と人、様々なシーンを結びつけます
+          - generic [ref=e2722]: ※「注目の宿・ホテル」とは、ご覧になっている県の注目宿・ホテルをご紹介しております。
+          - img [ref=e2723]
+        - generic [ref=e2724]:
+          - generic [ref=e2725]:
+            - generic [ref=e2726]:
+              - paragraph [ref=e2727]: クリップリスト
+              - heading "クリップした宿" [level=2] [ref=e2728]:
+                - img "クリップした宿" [ref=e2729]
+              - paragraph [ref=e2730]:
+                - text: "0"
+                - img "軒" [ref=e2731]
+              - paragraph [ref=e2732]:
+                - link "クリップした宿とは？" [ref=e2733] [cursor=pointer]:
+                  - /url: javascript:void(0)
+            - heading "最近見た宿" [level=3] [ref=e2734]:
+              - img "最近見た宿" [ref=e2735]
+            - paragraph [ref=e2736]:
+              - text: "1"
+              - img "軒あります" [ref=e2737]
+            - list [ref=e2738]:
+              - listitem [ref=e2739]:
+                - link "ＯＭＯ７横浜 ｂｙ 星野リゾート" [ref=e2740] [cursor=pointer]:
+                  - /url: https://www.jalan.net/yad341758/?distCd=01&roomCount=1&stayMonth=08&roomCrack=200000&screenId=UWW3101&stayCount=1&adultNum=2&stayYear=2026&stayDay=05&yadNo=341758&jzoneFlg=1&ccnt=pc_recent_yado_jalanzone
+                  - img "ＯＭＯ７横浜 ｂｙ 星野リゾート" [ref=e2741]
+                - link "ＯＭＯ７横浜 ｂｙ 星野リゾート" [ref=e2742] [cursor=pointer]:
+                  - /url: https://www.jalan.net/yad341758/?distCd=01&roomCount=1&stayMonth=08&roomCrack=200000&screenId=UWW3101&stayCount=1&adultNum=2&stayYear=2026&stayDay=05&yadNo=341758&jzoneFlg=1&ccnt=pc_recent_yado_jalanzone
+            - paragraph [ref=e2743]:
+              - link "最近見た宿一覧" [ref=e2744] [cursor=pointer]:
+                - /url: javascript:toViewYad();
+          - generic [ref=e2745]:
+            - heading "周辺の宿をMAPで見る" [level=3] [ref=e2746]:
+              - img "周辺の宿をMAPで見る" [ref=e2747]
+            - link "この宿周辺のMAPを表示" [ref=e2748] [cursor=pointer]:
+              - /url: JavaScript:openMapYad('14');
+              - paragraph [ref=e2749]
+              - paragraph [ref=e2750]: この宿周辺のMAPを表示
+            - list [ref=e2751]:
+              - listitem [ref=e2752]:
+                - link "関内駅周辺の宿" [ref=e2753] [cursor=pointer]:
+                  - /url: JavaScript:openMapLandmark('010000000044346','01','14');
+              - listitem [ref=e2754]:
+                - link "桜木町駅周辺の宿" [ref=e2755] [cursor=pointer]:
+                  - /url: JavaScript:openMapLandmark('010000000044342','01','14');
+        - iframe [ref=e2757]:
+          - iframe [ref=f25e2]:
+            - link [ref=f26e2] [cursor=pointer]:
+              - /url: //s9.r-ad.ne.jp/r?__aga=320880764&__imp=7pwfRwVm_-zwKspgWEKWbyPYaq2gqWgoR-bTcLMSzsk.9tUMubkghaQ.Gtt_QljXNM6NB8sGYXrd1ieeUH96h-MKE9DTG0-kxBM&f=754
+              - img [ref=f26e3]
+    - generic [ref=e2760]:
+      - link "(C) Recruit Co., Ltd." [ref=e2761] [cursor=pointer]:
+        - /url: https://www.recruit.co.jp/
+        - img "(C) Recruit Co., Ltd." [ref=e2762]
+      - link "プライバシーポリシー" [ref=e2763] [cursor=pointer]:
+        - /url: https://cdn.p.recruit.co.jp/terms/cmn-t-1001/index.html
