@@ -7,7 +7,6 @@ Watchtowerや自動化監査の要約ログ。
 ## 2026-06-28
 
 - 確認: watchtower EXPECTED_JOBS と launchd loaded の差分0・台帳外WARN無し。kicho/freee-uncleared退役と同時に台帳整理済みで誤アラート常態化は解消
-- 運用メモ(P34): `~/.claude/scripts/listener-watchdog.log` は通知文の絵文字等で非ASCIIを含み、`file` がバイナリ判定する。**plain grep だと一致しても無言で何も出さず（exit=1扱い）障害追跡で見落とす**（実測: `grep -c 復旧` は0件・`grep -ac 復旧` は60件）。★このログを grep するときは必ず `grep -a`（テキスト扱い）を付けること。例: `grep -a "復旧" listener-watchdog.log`。※スクリプト側にgrep読み取り箇所は無く（watchdogは追記+tailローテ、watchtowerはmtime鮮度のみ）コード挙動は不変。listener-watchdog.sh 冒頭にも同メモを残済み
 
 ## 2026-06-27（夜・残整合の完了）
 
