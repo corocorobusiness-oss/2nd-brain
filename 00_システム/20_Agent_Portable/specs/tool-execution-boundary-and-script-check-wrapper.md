@@ -19,7 +19,7 @@
 
 独立レビュー3件の結論はほぼ一致。
 
-- もっとも濃い原因は、Claude Codeが本来構造化ツール呼び出しとして出すべきものを本文テキストとして漏らす境界事故。
+- もっとも濃い原因は、Claude Code / Channels の構造化ツール呼び出し境界が崩れ、本来ツール呼び出しとして処理されるべきものが本文テキストとして出た事故。
 - `--allowedTools` を増やしても、本文に出た `<invoke ...>` は実行されない。
 - Channels / Discord は受付・通知・軽い定型処理に寄せ、Bashを伴う重い作業はデスクトップClaude CodeかCodexへ渡す。
 - `agent-run` はAI本体を呼ぶ入口であり、ローカル検査ツールまで背負わせない。
@@ -59,6 +59,8 @@
 ```text
 ~/agent-adapters/bin/yt-script-scan
 ```
+
+この転送を作る場合は、`exec "$HOME/agent-skills/youtube-script-checker/bin/yt-script-scan" "$@"` だけの薄いshimにする。判定ロジック、辞書パス、出力整形は置かない。
 
 `agent-run` には載せない。`agent-run` は Claude / Codex などAI実行入口の差し替え点であり、`scan_v4.py` のようなローカル決定論ツールはスキル側のbinに置く。
 
@@ -108,6 +110,22 @@ yt-script-scan <台本.csv> [--json] [--debug]
 - CSV行数
 - 辞書ファイル検出状況
 
+### 終了コード契約
+
+`scan_v4.py` 本体は `verdict` をJSONで返すだけで、WARN / FAIL を非0終了にしない可能性がある。wrapperは次の終了コードで機械判定を固定する。
+
+| exit | 意味 | 扱い |
+|---:|---|---|
+| 0 | PASS | 出荷判定の第1段階OK |
+| 10 | WARN / yellowあり | 自動処理では成功扱いにしない。文脈確認または人間判断へ |
+| 20 | FAIL / redあり | 要修正。次工程へ進めない |
+| 30 | CSV不正 / 入力ファイルなし | 実行失敗。出荷判定しない |
+| 40 | data-dir不備 / 辞書0件疑い | 設定不備。偽PASS防止のため失敗 |
+| 50 | `scan_v4.py` 非0終了 / JSON parse失敗 | 実行失敗。stdout / stderr を確認 |
+| 60 | `<invoke` 等の実行タグ漏れ検知 | 未実行扱い。通常のshell/wrapper実行へ戻す |
+
+自動化ジョブは exit 0 以外を成功扱いしない。特に exit 10 は「壊れてはいないが人間確認が必要」という扱いで、次工程へ自動進行させない。
+
 ### エラー設計
 
 wrapperは、以下を短い診断に変換する。
@@ -145,14 +163,18 @@ wrapperは、以下を短い診断に変換する。
 最低限の検証:
 
 1. 既存PASS台本で `PASS red=0 yellow=0` が出る
-2. 🔴入りfixtureで `FAIL` とヒット要約が出る
-3. 存在しないCSV、空CSV、台詞列なしCSVで分かるエラーになる
-4. data-dirを壊したとき偽PASSにしない
-5. read-only環境でも `PYTHONDONTWRITEBYTECODE=1` 付きで落ちない
-6. `--json` が既存 `scan_v4.py` 互換を保つ
-7. 日本語・空白入りパスで `rg` 文脈確認が動く
-8. ネットワークなし、ファイル書き込みなしで完結する
-9. Channels / `claude -p` / デスクトップの3経路で `<invoke` が成功扱いにならない
+2. 既存PASS台本は exit 0
+3. yellowありfixtureは exit 10
+4. redありfixtureは exit 20
+5. 存在しないCSV、空CSV、台詞列なしCSVで分かるエラーになり exit 30
+6. data-dirを壊したとき偽PASSにせず exit 40
+7. `scan_v4.py` 非0終了やJSON parse失敗は exit 50
+8. `<invoke` 漏れ検知は exit 60
+9. read-only環境でも `PYTHONDONTWRITEBYTECODE=1` 付きで落ちない
+10. `--json` が既存 `scan_v4.py` 互換を保つ
+11. 日本語・空白入りパスで `rg` 文脈確認が動く
+12. ネットワークなし、ファイル書き込みなしで完結する
+13. Channels / `claude -p` / デスクトップの3経路で `<invoke` が成功扱いにならない
 
 ## 次にやる実装
 
