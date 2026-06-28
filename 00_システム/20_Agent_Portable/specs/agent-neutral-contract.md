@@ -63,7 +63,9 @@ Second Brainは、エージェントの作業場ではなく、事業OS。
 ~/agent-adapters   AI入口＋呼び出しラッパー bin/agent-run（vendor seam）
 ```
 
-別エージェント（Codex等）への乗り換えは「フォルダ名」ではなく **`~/agent-adapters/bin/agent-run` の1ファイル**で吸収する。新規の自動化スクリプトは `claude` 直叩きせず agent-run 経由にすること。
+別エージェント（Codex等）への乗り換えは「フォルダ名」ではなく **`~/agent-adapters/bin/agent-run` の1ファイル**で吸収する設計。新規の自動化スクリプトは `claude` 直叩きせず agent-run 経由にすること。
+
+> **現状（2026-06-28 実体追記）**: agent-run 経由はまだ一部のみ（`run_vault_snapshot.sh` / `run_thread_format_learning.sh` / `vault-snapshot.sh` の3本程度）で、`run_weekly_accounting.sh` など多数の launchd/cron スクリプトは `claude -p` を直叩きしている。さらに **agent-run の codex 分岐は未実装（`exit 64`）のため、Codex への切替は現時点では実行不可**。上記の「agent-run 経由にする」は目標規則であり、**新規スクリプトは agent-run 経由を必須、既存スクリプトは順次移行**という移行途上の状態。詳細は [[IMPLEMENTATION_STATUS]] 参照。
 
 ## Claude時代の資産の扱い
 

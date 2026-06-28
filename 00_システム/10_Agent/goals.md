@@ -1,11 +1,12 @@
 # 現在の優先目標
 
-最終更新: 2026-06-09
+最終更新: 2026-06-28
 
 ## 最優先（今週〜）
-- [ ] Google Drive上のSecond Brainを、Claude Code / Codex / Discord共通の事業OSとして整える
-- [ ] Discordで決まった重要ルール・判断・学びをSecond Brainへ集約する
-- [ ] YouTube制作フロー（ネタリサーチ → 実スレ確認 → 台本 → 投稿 → 学習）を安定運用する
+- [ ] 会計正本整理を完了する（freee正本 / 旧AI帳簿は参考凍結 / kicho記帳停止・監査専用化）
+- [ ] AI自動化ジョブを台帳で管理し、ゾンビ化を防ぐ（停止・退避はWatchtower期待リストと整合させる）
+- [ ] Second BrainをClaude Code / Codex共通の事業OSとして整える
+- [ ] YouTube制作フロー（ネタリサーチ → 台本 → 投稿 → 学習）を安定運用する
 
 ## 短期（今月〜来月）
 - [ ] Claude Code Channels中心の運用から、Claude Code / Codexを直接使う運用へ移行する

@@ -34,7 +34,17 @@
 - 生ログや秘密情報は保存しない
 - 作業成果物は正しい場所へ戻す
 
-## 会計正本整理の現在地（2026-06-27）
+## 会計正本整理（正本セクション・ここに集約）
+
+> この件の進捗・判断事項はすべてここが正本。要確認.md など他所には重複を残さない（→各所から本セクションを参照）。
+
+### 進捗サマリー（一目）
+
+- ✅ kicho記帳停止＋後始末（plist退避・Watchtower整合）= 完了
+- ✅ freee-uncleared-monitor の停止整合（bootout/disable/plist退避）= 完了
+- ⏳ 残る判断（任意・急ぎでない）: `freee-uncleared-monitor` を再開するか否か（詳細は末尾「残る判断事項」）
+
+### 現在地（2026-06-27）
 
 - 会計正本はfreee。証憑正本はDrive/証憑保管側
 - `freee_registered_txns.json` は金額正本ではなく、二重登録防止キー台帳
@@ -45,3 +55,8 @@
 - ✅2026-06-27夜（あおい/Claude Code環境）: `com.korokoro.kicho-weekly` のplistを `~/Library/LaunchAgents/` から `~/.claude/archived-launchagents/com.korokoro.kicho-weekly.plist.archived-20260627` へ退避（削除せず）。`watchtower_local.py` の `EXPECTED_JOBS` からも除外。編集前に `watchtower_local.py.bak-20260627-231245` をバックアップ
 - `freee-uncleared-monitor` は2026-06-27にbootout＋disable済み。✅同日夜にplistも `~/.claude/archived-launchagents/com.claude.freee-uncleared-monitor.plist.archived-20260627` へ退避。再開するならplist復帰＋`launchctl enable`＋Watchtower期待リスト追加＋monthly-accounting(10:30)との時刻ずらし(10:45等)/統合が必要（停止整合は完了済み・残るのは再開可否の判断のみ）
 - ✅2026-06-27夜（あおい）: Watchtower `EXPECTED_JOBS` 整合完了（計28本）。除外=`channel-lifecycle`(6/24退避済)/`kicho-weekly`、追加=`corpus-collect`/`thread-format-learning`/`demaecan-reminder`/`satellite-autocommit`。手動実行で会計関連の警告（kicho/channel-lifecycle/freee-uncleared/台帳外ジョブ）が全消え・追加4本は全[OK]を確認。独立エージェントでもクロスチェックPASS（実装者≠確認者）
+
+### 残る判断事項（任意・急ぎでない / 要確認.md から集約・2026-06-28）
+
+- ⏳ `freee-uncleared-monitor` を**再開するか否か**（停止整合は完了済み。再開する場合のみ: plist復帰＋`launchctl enable`＋Watchtower期待リスト追加＋monthly-accounting(10:30)との時刻ずらし(10:45等)/統合が必要）
+- 〔会計スコープ外・参考〕`~/.claude/redrive/queue/1520246027058282677.json` に 06-27 01:54 のDiscord依頼「タスク見せて」(#一般) が滞留。破棄するか今あらためて回答するかの判断を（会計案件ではないが要確認.md から退避時に同伴したため記録）

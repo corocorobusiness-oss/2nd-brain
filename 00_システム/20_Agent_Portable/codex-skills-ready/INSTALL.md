@@ -1,3 +1,5 @@
+> [!warning] 【陳腐化注記 2026-06-28】このミラーは古い。現行入口 neta-forge / script-third-party-review / youtube-history-visual-planner が欠落し、退役スキル(neta-research入口/thread-research-planner)を現役扱いしている。install_to_codex.sh の実行は現状非推奨。正本=~/agent-skills から再生成が必要。
+
 # Codex Skills Ready
 
 このフォルダは、Claude時代のスキルをCodex向けに移植した現役候補一式。
