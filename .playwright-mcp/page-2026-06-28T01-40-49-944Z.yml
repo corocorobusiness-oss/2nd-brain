@@ -1,0 +1,35 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e5]:
+        - link "メニュー" [ref=e6] [cursor=pointer]:
+          - /url: javascript:void(0);
+        - text: 
+      - generic [ref=e7]:
+        - heading [level=2] [ref=e8]
+        - heading "ご予約の確認" [level=1] [ref=e9]:
+          - img [ref=e10]
+          - text: ご予約の確認
+  - generic [ref=e15]:
+    - paragraph [ref=e16]:
+      - textbox "予約呼出し番号" [ref=e17]
+    - paragraph [ref=e18]:
+      - textbox "呼出しパスワード" [ref=e19]
+    - paragraph [ref=e20]:
+      - link "予約を呼び出す" [ref=e21] [cursor=pointer]:
+        - /url: javascript:void(0);
+    - paragraph [ref=e22]: ご予約確認メールに記載していた「予約呼出し番号」と「呼出しパスワード」が必要です。
+  - text:  
+  - generic: 
+  - generic:
+    - generic:
+      - link "":
+        - /url: javascript:void(0);
+        - generic: 
+      - generic:
+        - link "閉じる":
+          - /url: javascript:void(0);
+        - link "いいえ":
+          - /url: javascript:void(0);
+        - link "はい":
+          - /url: javascript:void(0);

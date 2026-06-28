@@ -1,0 +1,76 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e5]:
+        - link "メニュー" [ref=e6] [cursor=pointer]:
+          - /url: javascript:void(0);
+        - text: 
+      - generic [ref=e7]:
+        - heading "星野リゾートの宿泊予約" [level=2] [ref=e23]:
+          - img "星野リゾートの宿泊予約" [ref=e24]
+        - heading "ご予約の確認" [level=1] [ref=e9]:
+          - img [ref=e10]
+          - text: ご予約の確認
+  - generic [ref=e13]:
+    - generic [ref=e26]:
+      - heading "星野リゾートアカウントをお持ちの方" [level=4] [ref=e27]
+      - paragraph [ref=e28]:
+        - link "星野リゾートアカウントとは？" [ref=e29] [cursor=pointer]:
+          - /url: https://hoshinoresorts.com/ja/sp/faq/account/about/
+      - paragraph [ref=e30]:
+        - textbox "メールアドレス" [ref=e31]
+      - paragraph [ref=e32]:
+        - textbox "パスワード" [ref=e33]
+      - paragraph [ref=e34]:
+        - link "パスワードを忘れた方はこちら" [ref=e35] [cursor=pointer]:
+          - /url: /forget/#/JA
+      - paragraph [ref=e36]:
+        - link "ログイン" [ref=e37] [cursor=pointer]:
+          - /url: javascript:void(0);
+      - generic [ref=e38]:
+        - checkbox "ログインしたままにする" [ref=e39]
+        - text: ログインしたままにする
+      - paragraph [ref=e40]:
+        - link "アカウント登録" [ref=e41] [cursor=pointer]:
+          - /url: /register/#/JA
+    - generic [ref=e15]:
+      - heading "アカウントをお持ちでない方" [level=4] [ref=e42]
+      - paragraph [ref=e16]:
+        - textbox "予約呼出し番号" [ref=e17]
+      - paragraph [ref=e18]:
+        - textbox "呼出しパスワード" [ref=e19]
+      - paragraph [ref=e20]:
+        - link "予約を呼び出す" [ref=e21] [cursor=pointer]:
+          - /url: javascript:void(0);
+      - paragraph [ref=e22]: ご予約確認メールに記載していた「予約呼出し番号」と「呼出しパスワード」が必要です。
+    - generic [ref=e43]:
+      - heading "交通付きプラン、または公式サイト以外でご宿泊予約された方はこちら" [level=4] [ref=e44]
+      - paragraph [ref=e45]: オプション予約（レストラン、アクティビティ、スパ、マッサージ等）には、「予約呼出し番号（予約ID）」と「呼出しパスワード（照会パスワード）」の発行が必要です。
+      - paragraph [ref=e46]:
+        - link "発行手続きへ進む" [ref=e47] [cursor=pointer]:
+          - /url: /restaurant/reservations/#/JA/hotels/0000000319
+  - contentinfo [ref=e48]:
+    - generic [ref=e49]:
+      - list [ref=e51]:
+        - listitem [ref=e52]:
+          - link "プライバシーポリシー" [ref=e53] [cursor=pointer]:
+            - /url: https://hoshinoresorts.com/ja/sp/privacypolicy/
+          - text: "|"
+        - listitem [ref=e54]:
+          - link "ご利用規約" [ref=e55] [cursor=pointer]:
+            - /url: /ja/sp/termsofuse/
+      - paragraph
+  - text:  
+  - generic: 
+  - generic:
+    - generic:
+      - link "":
+        - /url: javascript:void(0);
+        - generic: 
+      - generic:
+        - link "閉じる":
+          - /url: javascript:void(0);
+        - link "いいえ":
+          - /url: javascript:void(0);
+        - link "はい":
+          - /url: javascript:void(0);

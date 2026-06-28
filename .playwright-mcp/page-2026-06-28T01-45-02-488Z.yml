@@ -1,0 +1,682 @@
+- generic [ref=e5]:
+  - generic:
+    - generic:
+      - button [ref=e7] [cursor=pointer]
+      - generic [ref=e11]: OMO7横浜 by 星野リゾート
+      - link "" [ref=e12] [cursor=pointer]:
+        - /url: /JA/hotels/0000000319/cart?checkIn=2026%2F08%2F05&stay=1&a=2&b=1&c=0&d=1
+        - generic [ref=e13]: 
+  - generic:
+    - button [ref=e15] [cursor=pointer]
+    - generic [ref=e18]:
+      - list [ref=e19]:
+        - listitem [ref=e20] [cursor=pointer]:
+          - generic [ref=e21]: Language
+          - generic [ref=e22]: 日本語
+          - generic [ref=e24]: 
+        - listitem:
+          - generic: 決済通貨
+        - listitem [ref=e25] [cursor=pointer]:
+          - generic [ref=e26]: 表示通貨
+          - generic [ref=e28]: 
+        - listitem [ref=e29] [cursor=pointer]:
+          - generic [ref=e30]: ログイン
+          - generic [ref=e32]: 
+        - link "予約確認 " [ref=e33] [cursor=pointer]:
+          - /url: /reservations/#/JA/hotels/0000000319
+          - generic [ref=e34]: 予約確認
+          - generic [ref=e36]: 
+      - generic [ref=e37]:
+        - link " OMO7横浜 by 星野リゾート" [ref=e39] [cursor=pointer]:
+          - /url: https://hoshinoresorts.com/ja/hotels/omo7yokohama
+          - generic [ref=e40]: 
+          - text: OMO7横浜 by 星野リゾート
+        - term [ref=e41]:
+          - paragraph [ref=e42]:
+            - generic: 
+            - text: 231-0017 神奈川県横浜市中区港町1丁目1番1
+        - term [ref=e43]:
+          - link " yokohama@omo-hotels.com" [ref=e44] [cursor=pointer]:
+            - /url: mailto:yokohama@omo-hotels.com
+            - generic: 
+            - text: yokohama@omo-hotels.com
+      - generic [ref=e45]:
+        - paragraph [ref=e46]: OMO予約センター
+        - link "050-3134-8095" [ref=e47] [cursor=pointer]:
+          - /url: tel:050-3134-8095
+        - paragraph [ref=e48]: (09:30~18:00)
+        - paragraph [ref=e49]: 海外からのお電話 +81-50-3134-8096 (10:00~18:00)
+        - paragraph [ref=e50]: ※電話予約は追加料金がかかります
+        - paragraph [ref=e51]:
+          - link "星野リゾート よくあるご質問" [ref=e52] [cursor=pointer]:
+            - /url: https://hoshinoresorts.com/ja/sp/faq/
+      - list [ref=e53]:
+        - listitem [ref=e54]:
+          - generic [ref=e55]: 
+          - link "宿泊ギフト券" [ref=e56] [cursor=pointer]:
+            - /url: https://hoshinoresorts.com/jp/gift/#/
+        - listitem [ref=e57]:
+          - generic [ref=e58]: 
+          - link "星野リゾート公式サイト" [ref=e59] [cursor=pointer]:
+            - /url: https://hoshinoresorts.com/jp/
+        - listitem [ref=e60]:
+          - generic [ref=e61]: 
+          - link "採用情報" [ref=e62] [cursor=pointer]:
+            - /url: https://hoshinoresorts.com/jp/recruit/
+        - listitem [ref=e63]:
+          - generic [ref=e64]: 
+          - link "投資をご検討中の皆さまへ" [ref=e65] [cursor=pointer]:
+            - /url: https://www.hoshinoresorts-reit.com
+        - listitem [ref=e66]:
+          - generic [ref=e67]: 
+          - link "プライバシーポリシー" [ref=e68] [cursor=pointer]:
+            - /url: https://hoshinoresorts.com/ja/sp/privacypolicy/
+        - listitem [ref=e69]:
+          - generic [ref=e70]: 
+          - link "ご利用規約" [ref=e71] [cursor=pointer]:
+            - /url: /ja/sp/termsofuse/
+        - listitem [ref=e72]:
+          - generic [ref=e73]: 
+          - link "宿泊約款" [ref=e74] [cursor=pointer]:
+            - /url: https://hoshinoresorts.com/ja/sp/accomodationcontract/
+        - listitem [ref=e75]:
+          - generic [ref=e76]: 
+          - link "特定商取引法に基づく表記" [ref=e77] [cursor=pointer]:
+            - /url: https://hoshinoresorts.com/ja/sp/sctl/
+  - generic [ref=e78]:
+    - generic [ref=e82]:
+      - link " BEST RATE GUARANTEED ご予約は当サイトが最もお得です。" [ref=e83] [cursor=pointer]:
+        - /url: https://hoshinoresorts.com/ja/sp/bestrateguaranteed/
+        - generic [ref=e84]: 
+        - generic [ref=e85]:
+          - generic [ref=e86]: BEST RATE GUARANTEED
+          - generic [ref=e87]: ご予約は当サイトが最もお得です。
+      - generic [ref=e89]:
+        - link " 格安航空券付きプラン " [ref=e91] [cursor=pointer]:
+          - /url: https://www.tour-list.com/TL?extHotelId=m690491947&dpPerson=2&cIn=2026%2F08%2F05&cOut=2026%2F08%2F06&depAirDate=2026%2F08%2F05&arrAirDate=2026%2F08%2F06&withchildflag=1&extLinkId=8
+          - generic [ref=e92]: 
+          - generic [ref=e93]: 格安航空券付きプラン
+          - generic [ref=e94]: 
+        - link " 新幹線付きプラン " [ref=e96] [cursor=pointer]:
+          - /url: https://rdp.tour-list.com/railway/search/?extlinkid=8&exthotelid=m690491947&adultcount=2&checkindate=2026%2F08%2F05&checkoutdate=2026%2F08%2F06&withchildflag=1&depdate=2026%2F08%2F05&rtndate=2026%2F08%2F06
+          - generic [ref=e97]: 
+          - generic [ref=e98]: 新幹線付きプラン
+          - generic [ref=e99]: 
+        - link " レンタカー付きプラン " [ref=e101] [cursor=pointer]:
+          - /url: https://rcdp.tour-list.com/rc/search/?extlinkid=8&exthotelid=m690491947&adultcount=2&checkindate=2026%2F08%2F05&checkoutdate=2026%2F08%2F06&withchildflag=1&carrentaldate=2026%2F08%2F05&carreturndate=2026%2F08%2F06
+          - generic [ref=e102]: 
+          - generic [ref=e103]: レンタカー付きプラン
+          - generic [ref=e104]: 
+    - generic [ref=e106]:
+      - generic [ref=e107]:
+        - generic [ref=e109]:
+          - button " おすすめ順" [ref=e110] [cursor=pointer]:
+            - generic [ref=e111]:
+              - generic [ref=e112]: 
+              - text: おすすめ順
+          - button "表示通貨 JPY" [ref=e113] [cursor=pointer]:
+            - generic [ref=e114]:
+              - generic [ref=e115]: 表示通貨
+              - generic [ref=e116]: JPY
+        - paragraph [ref=e118]:
+          - text: 検索結果
+          - strong [ref=e119]: "7"
+          - text: /7件
+        - generic [ref=e120]:
+          - generic [ref=e121]:
+            - generic [ref=e123]:
+              - generic [ref=e137]:
+                - button "Go to slide 1" [ref=e138] [cursor=pointer]
+                - button "Go to slide 2" [ref=e139] [cursor=pointer]
+                - button "Go to slide 3" [ref=e140] [cursor=pointer]
+                - button "Go to slide 4" [ref=e141] [cursor=pointer]
+                - button "Go to slide 5" [ref=e142] [cursor=pointer]
+              - button "Previous slide" [ref=e143] [cursor=pointer]:
+                - generic [ref=e144]: 
+              - button "Next slide" [ref=e145] [cursor=pointer]:
+                - generic [ref=e146]: 
+            - generic [ref=e147]:
+              - link "やぐらルーム" [ref=e149] [cursor=pointer]:
+                - /url: /JA/hotels/0000000319/rooms/0000000002?checkIn=2026%2F08%2F05&stay=1&a=2&b=1&c=0&d=1
+              - generic [ref=e150]:
+                - generic [ref=e151]:
+                  - generic [ref=e152]: 
+                  - generic [ref=e153]: 1〜3名
+                - generic [ref=e154]:
+                  - generic [ref=e155]: 
+                  - generic [ref=e156]: 24㎡〜25㎡
+                - generic [ref=e157]:
+                  - generic [ref=e158]: 
+                  - generic [ref=e159]: ツイン
+              - paragraph [ref=e160]: 旧横浜市庁舎のインテリアカラーから着想を得た「レガシーカラー」が基調のお部屋です。 広々としたソファのリビングスペースと十分な高さのダイニングを設け、快適なホテルステイが叶います。特徴的なやぐら寝台はベッドを清潔なまま保てるため、夜も心地よくお休みいただけます。
+              - generic [ref=e162] [cursor=pointer]:
+                - paragraph [ref=e163]: 部屋の仕様を見る
+                - generic [ref=e164]: 
+          - progressbar [ref=e166]:
+            - img [ref=e167]
+        - generic [ref=e169]:
+          - generic [ref=e170]:
+            - generic [ref=e172]:
+              - generic [ref=e186]:
+                - button "Go to slide 1" [ref=e187] [cursor=pointer]
+                - button "Go to slide 2" [ref=e188] [cursor=pointer]
+                - button "Go to slide 3" [ref=e189] [cursor=pointer]
+                - button "Go to slide 4" [ref=e190] [cursor=pointer]
+                - button "Go to slide 5" [ref=e191] [cursor=pointer]
+              - button "Previous slide" [ref=e192] [cursor=pointer]:
+                - generic [ref=e193]: 
+              - button "Next slide" [ref=e194] [cursor=pointer]:
+                - generic [ref=e195]: 
+            - generic [ref=e196]:
+              - link "かたりばルーム" [ref=e198] [cursor=pointer]:
+                - /url: /JA/hotels/0000000319/rooms/0000000003?checkIn=2026%2F08%2F05&stay=1&a=2&b=1&c=0&d=1
+              - generic [ref=e199]:
+                - generic [ref=e200]:
+                  - generic [ref=e201]: 
+                  - generic [ref=e202]: 1〜4名
+                - generic [ref=e203]:
+                  - generic [ref=e204]: 
+                  - generic [ref=e205]: 41㎡〜55㎡
+                - generic [ref=e206]:
+                  - generic [ref=e207]: 
+                  - generic [ref=e208]: ツイン
+              - paragraph [ref=e209]: ホテルゲストの居心地の良さを追求し、中央のおこもりスペースとゆったりと寛げるソファを備えた上質なお部屋です。 お二人で広々と贅沢に過ごすのはもちろん、グループでテーブルを囲み語らいながら楽しむのもおすすめです。
+              - generic [ref=e211] [cursor=pointer]:
+                - paragraph [ref=e212]: 部屋の仕様を見る
+                - generic [ref=e213]: 
+          - progressbar [ref=e215]:
+            - img [ref=e216]
+        - generic [ref=e218]:
+          - generic [ref=e219]:
+            - generic [ref=e221]:
+              - generic [ref=e235]:
+                - button "Go to slide 1" [ref=e236] [cursor=pointer]
+                - button "Go to slide 2" [ref=e237] [cursor=pointer]
+                - button "Go to slide 3" [ref=e238] [cursor=pointer]
+                - button "Go to slide 4" [ref=e239] [cursor=pointer]
+                - button "Go to slide 5" [ref=e240] [cursor=pointer]
+              - button "Previous slide" [ref=e241] [cursor=pointer]:
+                - generic [ref=e242]: 
+              - button "Next slide" [ref=e243] [cursor=pointer]:
+                - generic [ref=e244]: 
+            - generic [ref=e245]:
+              - link "やぐらスイート" [ref=e247] [cursor=pointer]:
+                - /url: /JA/hotels/0000000319/rooms/0000000004?checkIn=2026%2F08%2F05&stay=1&a=2&b=1&c=0&d=1
+              - generic [ref=e248]:
+                - generic [ref=e249]:
+                  - generic [ref=e250]: 
+                  - generic [ref=e251]: 1〜6名
+                - generic [ref=e252]:
+                  - generic [ref=e253]: 
+                  - generic [ref=e254]: 47㎡〜49㎡
+                - generic [ref=e255]:
+                  - generic [ref=e256]: 
+                  - generic [ref=e257]: フォース
+              - paragraph [ref=e258]: 十分な広さと高さがあるダイニングとソファスペースを備え、ファミリーやグループ利用におすすめのお部屋です。 建築家 村野藤吾氏のデザインへの姿勢を読み解き、手すりや天井など細部まできめ細やかなデザインを施しています。
+              - generic [ref=e260] [cursor=pointer]:
+                - paragraph [ref=e261]: 部屋の仕様を見る
+                - generic [ref=e262]: 
+          - progressbar [ref=e264]:
+            - img [ref=e265]
+        - generic [ref=e267]:
+          - generic [ref=e268]:
+            - generic [ref=e270]:
+              - generic [ref=e284]:
+                - button "Go to slide 1" [ref=e285] [cursor=pointer]
+                - button "Go to slide 2" [ref=e286] [cursor=pointer]
+                - button "Go to slide 3" [ref=e287] [cursor=pointer]
+                - button "Go to slide 4" [ref=e288] [cursor=pointer]
+                - button "Go to slide 5" [ref=e289] [cursor=pointer]
+              - button "Previous slide" [ref=e290] [cursor=pointer]:
+                - generic [ref=e291]: 
+              - button "Next slide" [ref=e292] [cursor=pointer]:
+                - generic [ref=e293]: 
+            - generic [ref=e294]:
+              - link "OMOハウス" [ref=e296] [cursor=pointer]:
+                - /url: /JA/hotels/0000000319/rooms/0000000005?checkIn=2026%2F08%2F05&stay=1&a=2&b=1&c=0&d=1
+              - generic [ref=e297]:
+                - generic [ref=e298]:
+                  - generic [ref=e299]: 
+                  - generic [ref=e300]: 1〜6名
+                - generic [ref=e301]:
+                  - generic [ref=e302]: 
+                  - generic [ref=e303]: 40㎡〜57㎡
+                - generic [ref=e304]:
+                  - generic [ref=e305]: 
+                  - generic [ref=e306]: フォース
+              - paragraph [ref=e307]: キッチンと洗濯機を備えたお部屋は、ファミリーやグループ、長期滞在にも快適です。 やぐら寝台に4台のベッドを設え、広々としたダイニングでは食事や団らんを心ゆくまでお楽しみいただけます。
+              - generic [ref=e309] [cursor=pointer]:
+                - paragraph [ref=e310]: 部屋の仕様を見る
+                - generic [ref=e311]: 
+          - progressbar [ref=e313]:
+            - img [ref=e314]
+        - generic [ref=e316]:
+          - generic [ref=e317]:
+            - generic [ref=e319]:
+              - generic [ref=e327]:
+                - button "Go to slide 1" [ref=e328] [cursor=pointer]
+                - button "Go to slide 2" [ref=e329] [cursor=pointer]
+              - button "Previous slide" [ref=e330] [cursor=pointer]:
+                - generic [ref=e331]: 
+              - button "Next slide" [ref=e332] [cursor=pointer]:
+                - generic [ref=e333]: 
+            - generic [ref=e334]:
+              - link "デラックスルーム（ユニバーサル仕様）" [ref=e336] [cursor=pointer]:
+                - /url: /JA/hotels/0000000319/rooms/0000000006?checkIn=2026%2F08%2F05&stay=1&a=2&b=1&c=0&d=1
+              - generic [ref=e337]:
+                - generic [ref=e338]:
+                  - generic [ref=e339]: 
+                  - generic [ref=e340]: 1〜3名
+                - generic [ref=e341]:
+                  - generic [ref=e342]: 
+                  - generic [ref=e343]: 47㎡
+                - generic [ref=e344]:
+                  - generic [ref=e345]: 
+                  - generic [ref=e346]: ツイン
+              - paragraph [ref=e347]: 車椅子をご利用の方にも安全・快適にお過ごしいただける機能的なお部屋です。 間取りを広くとったフローリング仕様のリビングスペースをご用意しています。
+              - generic [ref=e349] [cursor=pointer]:
+                - paragraph [ref=e350]: 部屋の仕様を見る
+                - generic [ref=e351]: 
+          - progressbar [ref=e353]:
+            - img [ref=e354]
+        - generic [ref=e356]:
+          - generic [ref=e357]:
+            - generic [ref=e359]:
+              - generic [ref=e373]:
+                - button "Go to slide 1" [ref=e374] [cursor=pointer]
+                - button "Go to slide 2" [ref=e375] [cursor=pointer]
+                - button "Go to slide 3" [ref=e376] [cursor=pointer]
+                - button "Go to slide 4" [ref=e377] [cursor=pointer]
+                - button "Go to slide 5" [ref=e378] [cursor=pointer]
+              - button "Previous slide" [ref=e379] [cursor=pointer]:
+                - generic [ref=e380]: 
+              - button "Next slide" [ref=e381] [cursor=pointer]:
+                - generic [ref=e382]: 
+            - generic [ref=e383]:
+              - link "ドッグフレンドリーデラックスルーム" [ref=e385] [cursor=pointer]:
+                - /url: /JA/hotels/0000000319/rooms/0000000008?checkIn=2026%2F08%2F05&stay=1&a=2&b=1&c=0&d=1
+              - generic [ref=e386]:
+                - generic [ref=e387]:
+                  - generic [ref=e388]: 
+                  - generic [ref=e389]: 1〜4名
+                - generic [ref=e390]:
+                  - generic [ref=e391]: 
+                  - generic [ref=e392]: 40㎡〜49㎡
+                - generic [ref=e393]:
+                  - generic [ref=e394]: 
+                  - generic [ref=e395]: ツイン
+              - paragraph [ref=e396]:
+                - text: 大型犬とも一緒にお泊りいただける広々としたお部屋です。 客室内に愛犬用の食器やトイレなどを取り揃えております。愛犬と一緒に快適なホテル滞在をお楽しみください。
+                - generic [ref=e397]:
+                  - text: ※ドッグフレンドリールームのご予約はWEB限定です。
+                  - generic [ref=e398]:
+                    - text: ※ご予約時には予め
+                    - link "愛犬ルーム利用規約（PDF）と注意事項" [ref=e400] [cursor=pointer]:
+                      - /url: https://www.hoshinoresorts.com/dogroomrules/
+                    - text: をご覧いただき、提出書類のご持参をお願い申し上げます。
+                    - generic [ref=e402]: ※狂犬病予防注射済証または注射済票、混合ワクチン予防接種証明書(もしくは抗体検査結果証明書)のコピーをお持ちいただけない場合、ご宿泊いただけません。
+                    - text: ＜OMOドッグガーデン＞3階愛犬専用フロア 屋外ドッグラン（5：30～22：00）リード不要・予約不要 屋内ドッグラウンジ（24時間）リード必要（ソファにリードを留めるフック有）・予約不要 飲食可能 ドッグフード温め用の電子レンジもご自由にお使いいただけます。 ◆注意事項◆ 愛犬のご宿泊料は、1泊1頭あたり5,093円(税込)を現地でご精算お願いします。 愛犬のご宿泊は、1室につき小～中型犬は2頭まで、大型犬は1頭までご利用いただけます。 館内をご移動の際はリードをご使用ください。 ※愛犬同伴不可エリア：OMOダイニング、ライブラリーラウンジ、会議室、ワークルーム ※2階OMOベーカリーでは愛犬専用スペースやテラスをご利用いただけます。お食事を3階OMOドッグガーデンの屋内ラウンジにお持ち込みいただくことも可能です。 ※愛犬のお食事はお客様ご自身でご用意ください。 ※愛犬がお部屋でお留守番する際は、常設ケージでのお留守番をお願いしております。
+              - generic [ref=e404] [cursor=pointer]:
+                - paragraph [ref=e405]: 部屋の仕様を見る
+                - generic [ref=e406]: 
+          - progressbar [ref=e408]:
+            - img [ref=e409]
+        - generic [ref=e411]:
+          - generic [ref=e412]:
+            - generic [ref=e414]:
+              - generic [ref=e428]:
+                - button "Go to slide 1" [ref=e429] [cursor=pointer]
+                - button "Go to slide 2" [ref=e430] [cursor=pointer]
+                - button "Go to slide 3" [ref=e431] [cursor=pointer]
+                - button "Go to slide 4" [ref=e432] [cursor=pointer]
+                - button "Go to slide 5" [ref=e433] [cursor=pointer]
+              - button "Previous slide" [ref=e434] [cursor=pointer]:
+                - generic [ref=e435]: 
+              - button "Next slide" [ref=e436] [cursor=pointer]:
+                - generic [ref=e437]: 
+            - generic [ref=e438]:
+              - link "ドッグフレンドリースイート" [ref=e440] [cursor=pointer]:
+                - /url: /JA/hotels/0000000319/rooms/0000000009?checkIn=2026%2F08%2F05&stay=1&a=2&b=1&c=0&d=1
+              - generic [ref=e441]:
+                - generic [ref=e442]:
+                  - generic [ref=e443]: 
+                  - generic [ref=e444]: 1〜6名
+                - generic [ref=e445]:
+                  - generic [ref=e446]: 
+                  - generic [ref=e447]: 73㎡
+                - generic [ref=e448]:
+                  - generic [ref=e449]: 
+                  - generic [ref=e450]: フォース
+              - paragraph [ref=e451]:
+                - text: 贅沢な空間が広がり、大型犬とも、ファミリーやグループ利用にもゆったりとお楽しみいただけるお部屋です。 客室内に愛犬用のトイレや食器などを取り揃えております。愛犬と一緒に快適なホテル滞在をお楽しみください。
+                - generic [ref=e452]:
+                  - text: ※ドッグフレンドリールームのご予約はWEB限定です。
+                  - generic [ref=e453]:
+                    - text: ※ご予約時には予め
+                    - link "愛犬ルーム利用規約（PDF）と注意事項" [ref=e455] [cursor=pointer]:
+                      - /url: https://www.hoshinoresorts.com/dogroomrules/
+                    - text: をご覧いただき、提出書類のご持参をお願い申し上げます。
+                    - generic [ref=e457]: ※狂犬病予防注射済証または注射済票、混合ワクチン予防接種証明書(もしくは抗体検査結果証明書)のコピーをお持ちいただけない場合、ご宿泊いただけません。
+                    - text: ＜OMOドッグガーデン＞3階愛犬専用フロア 屋外ドッグラン（5：30～22：00）リード不要・予約不要 屋内ドッグラウンジ（24時間）リード必要（ソファにリードを留めるフック有）・予約不要 飲食可能 ドッグフード温め用の電子レンジもご自由にお使いいただけます。 ◆注意事項◆ 愛犬のご宿泊料は、1泊1頭あたり5,093円(税込)を現地でご精算お願いします。 愛犬のご宿泊は、1室につき犬種問わず2頭までご利用いただけます。（大型犬も2頭まで可） 館内をご移動の際はリードをご使用ください。 ※愛犬同伴不可エリア：OMOダイニング、ライブラリーラウンジ、会議室、ワークルーム ※2階OMOベーカリーでは愛犬専用スペースやテラスをご利用いただけます。お食事を3階OMOドッグガーデンの屋内ラウンジにお持ち込みいただくことも可能です。 ※愛犬のお食事はお客様ご自身でご用意ください。 ※愛犬がお部屋でお留守番する際は、常設ケージでのお留守番をお願いしております。
+              - generic [ref=e459] [cursor=pointer]:
+                - paragraph [ref=e460]: 部屋の仕様を見る
+                - generic [ref=e461]: 
+          - progressbar [ref=e463]:
+            - img [ref=e464]
+      - generic [ref=e468]:
+        - generic [ref=e469]:
+          - generic [ref=e471]:
+            - generic [ref=e472]:
+              - paragraph [ref=e473]: 大人
+              - button "2" [ref=e475] [cursor=pointer]:
+                - generic: "2"
+            - generic [ref=e476]:
+              - paragraph [ref=e477]: 0-11歳
+              - button "1" [ref=e479] [cursor=pointer]:
+                - generic: "1"
+            - generic [ref=e480]:
+              - paragraph [ref=e481]: 添寝/0-6歳
+              - button "1" [ref=e483] [cursor=pointer]:
+                - generic: "1"
+          - generic [ref=e484]:
+            - generic [ref=e486] [cursor=pointer]:
+              - generic: 
+              - generic [ref=e487]: お子様の寝具と食事
+              - generic: 
+            - generic [ref=e489] [cursor=pointer]:
+              - generic: 
+              - generic [ref=e490]: 2部屋以上の予約について
+              - generic: 
+        - generic [ref=e491]:
+          - paragraph [ref=e492]: 2026/ 8/5(水) - 2026/ 8/6(木)
+          - separator [ref=e493]
+          - button "" [ref=e494] [cursor=pointer]:
+            - generic: 
+          - generic [ref=e495]:
+            - generic [ref=e496]: 2026年8月
+            - generic [ref=e497]:
+              - generic [ref=e498] [cursor=pointer]: 月
+              - generic [ref=e499] [cursor=pointer]: 火
+              - generic [ref=e500] [cursor=pointer]: 水
+              - generic [ref=e501] [cursor=pointer]: 木
+              - generic [ref=e502] [cursor=pointer]: 金
+              - generic [ref=e503] [cursor=pointer]: 土
+              - generic [ref=e504] [cursor=pointer]: 日
+              - generic [ref=e506] [cursor=pointer]:
+                - generic [ref=e507]: ●
+                - generic [ref=e508]: "1"
+                - generic [ref=e510]: 11,700円
+              - generic [ref=e512] [cursor=pointer]:
+                - generic [ref=e513]: ●
+                - generic [ref=e514]: "2"
+                - generic [ref=e516]: 10,300円
+              - generic [ref=e518] [cursor=pointer]:
+                - generic [ref=e519]: ●
+                - generic [ref=e520]: "3"
+                - generic [ref=e522]: 11,000円
+              - generic [ref=e524] [cursor=pointer]:
+                - generic [ref=e525]: ●
+                - generic [ref=e526]: "4"
+                - generic [ref=e528]: 10,300円
+              - generic [ref=e530] [cursor=pointer]:
+                - generic [ref=e531]: ●
+                - generic [ref=e532]: "5"
+                - generic [ref=e534]: 10,300円
+              - generic [ref=e536] [cursor=pointer]:
+                - generic [ref=e537]: ●
+                - generic [ref=e538]: "6"
+                - generic [ref=e540]: 10,300円
+              - generic [ref=e542] [cursor=pointer]:
+                - generic [ref=e543]: ●
+                - generic [ref=e544]: "7"
+                - generic [ref=e546]: 10,300円
+              - generic [ref=e548] [cursor=pointer]:
+                - generic [ref=e549]: ●
+                - generic [ref=e550]: "8"
+                - generic [ref=e552]: 14,300円
+              - generic [ref=e554] [cursor=pointer]:
+                - generic [ref=e555]: ●
+                - generic [ref=e556]: "9"
+                - generic [ref=e558]: 12,300円
+              - generic [ref=e560] [cursor=pointer]:
+                - generic [ref=e561]: ●
+                - generic [ref=e562]: "10"
+                - generic [ref=e564]: 11,000円
+              - generic [ref=e566] [cursor=pointer]:
+                - generic [ref=e567]: ●
+                - generic [ref=e568]: "11"
+                - generic [ref=e570]: 9,800円
+              - generic [ref=e572] [cursor=pointer]:
+                - generic [ref=e573]: ●
+                - generic [ref=e574]: "12"
+                - generic [ref=e576]: 9,800円
+              - generic [ref=e578] [cursor=pointer]:
+                - generic [ref=e579]: ●
+                - generic [ref=e580]: "13"
+                - generic [ref=e582]: 9,800円
+              - generic [ref=e584] [cursor=pointer]:
+                - generic [ref=e585]: ●
+                - generic [ref=e586]: "14"
+                - generic [ref=e588]: 9,800円
+              - generic [ref=e590] [cursor=pointer]:
+                - generic [ref=e591]: ●
+                - generic [ref=e592]: "15"
+                - generic [ref=e594]: 11,200円
+              - generic [ref=e596] [cursor=pointer]:
+                - generic [ref=e597]: ●
+                - generic [ref=e598]: "16"
+                - generic [ref=e600]: 9,800円
+              - generic [ref=e602] [cursor=pointer]:
+                - generic [ref=e603]: ●
+                - generic [ref=e604]: "17"
+                - generic [ref=e606]: 7,800円
+              - generic [ref=e608] [cursor=pointer]:
+                - generic [ref=e609]: ●
+                - generic [ref=e610]: "18"
+                - generic [ref=e612]: 7,800円
+              - generic [ref=e614] [cursor=pointer]:
+                - generic [ref=e615]: ●
+                - generic [ref=e616]: "19"
+                - generic [ref=e618]: 7,800円
+              - generic [ref=e620] [cursor=pointer]:
+                - generic [ref=e621]: ●
+                - generic [ref=e622]: "20"
+                - generic [ref=e624]: 7,800円
+              - generic [ref=e626] [cursor=pointer]:
+                - generic [ref=e627]: ●
+                - generic [ref=e628]: "21"
+                - generic [ref=e630]: 9,200円
+              - generic [ref=e632] [cursor=pointer]:
+                - generic [ref=e633]: ●
+                - generic [ref=e634]: "22"
+                - generic [ref=e636]: 11,800円
+              - generic [ref=e638] [cursor=pointer]:
+                - generic [ref=e639]: ●
+                - generic [ref=e640]: "23"
+                - generic [ref=e642]: 8,500円
+              - generic [ref=e644] [cursor=pointer]:
+                - generic [ref=e645]: ●
+                - generic [ref=e646]: "24"
+                - generic [ref=e648]: 9,200円
+              - generic [ref=e650] [cursor=pointer]:
+                - generic [ref=e651]: ●
+                - generic [ref=e652]: "25"
+                - generic [ref=e654]: 7,800円
+              - generic [ref=e656] [cursor=pointer]:
+                - generic [ref=e657]: ●
+                - generic [ref=e658]: "26"
+                - generic [ref=e660]: 7,800円
+              - generic [ref=e662] [cursor=pointer]:
+                - generic [ref=e663]: ●
+                - generic [ref=e664]: "27"
+                - generic [ref=e666]: 7,800円
+              - generic [ref=e668] [cursor=pointer]:
+                - generic [ref=e669]: ●
+                - generic [ref=e670]: "28"
+                - generic [ref=e672]: 9,200円
+              - generic [ref=e674] [cursor=pointer]:
+                - generic [ref=e675]: ●
+                - generic [ref=e676]: "29"
+                - generic [ref=e678]: 16,500円
+              - generic [ref=e680] [cursor=pointer]:
+                - generic [ref=e681]: ●
+                - generic [ref=e682]: "30"
+                - generic [ref=e684]: 8,500円
+              - generic [ref=e686] [cursor=pointer]:
+                - generic [ref=e687]: ●
+                - generic [ref=e688]: "31"
+                - generic [ref=e690]: 7,800円
+          - generic [ref=e691]:
+            - generic [ref=e692]: 2026年9月
+            - generic [ref=e693]:
+              - generic [ref=e694] [cursor=pointer]: 月
+              - generic [ref=e695] [cursor=pointer]: 火
+              - generic [ref=e696] [cursor=pointer]: 水
+              - generic [ref=e697] [cursor=pointer]: 木
+              - generic [ref=e698] [cursor=pointer]: 金
+              - generic [ref=e699] [cursor=pointer]: 土
+              - generic [ref=e700] [cursor=pointer]: 日
+              - generic [ref=e702] [cursor=pointer]:
+                - generic [ref=e703]: ●
+                - generic [ref=e704]: "1"
+                - generic [ref=e706]: 7,800円
+              - generic [ref=e708] [cursor=pointer]:
+                - generic [ref=e709]: ●
+                - generic [ref=e710]: "2"
+                - generic [ref=e712]: 7,800円
+              - generic [ref=e714] [cursor=pointer]:
+                - generic [ref=e715]: ●
+                - generic [ref=e716]: "3"
+                - generic [ref=e718]: 7,800円
+              - generic [ref=e720] [cursor=pointer]:
+                - generic [ref=e721]: ●
+                - generic [ref=e722]: "4"
+                - generic [ref=e724]: 9,200円
+              - generic [ref=e726] [cursor=pointer]:
+                - generic [ref=e727]: ×
+                - generic [ref=e728]: "5"
+              - generic [ref=e730] [cursor=pointer]:
+                - generic [ref=e731]: ●
+                - generic [ref=e732]: "6"
+                - generic [ref=e734]: 8,500円
+              - generic [ref=e736] [cursor=pointer]:
+                - generic [ref=e737]: ●
+                - generic [ref=e738]: "7"
+                - generic [ref=e740]: 7,800円
+              - generic [ref=e742] [cursor=pointer]:
+                - generic [ref=e743]: ●
+                - generic [ref=e744]: "8"
+                - generic [ref=e746]: 7,800円
+              - generic [ref=e748] [cursor=pointer]:
+                - generic [ref=e749]: ●
+                - generic [ref=e750]: "9"
+                - generic [ref=e752]: 7,800円
+              - generic [ref=e754] [cursor=pointer]:
+                - generic [ref=e755]: ●
+                - generic [ref=e756]: "10"
+                - generic [ref=e758]: 7,800円
+              - generic [ref=e760] [cursor=pointer]:
+                - generic [ref=e761]: ●
+                - generic [ref=e762]: "11"
+                - generic [ref=e764]: 9,200円
+              - generic [ref=e766] [cursor=pointer]:
+                - generic [ref=e767]: ●
+                - generic [ref=e768]: "12"
+                - generic [ref=e770]: 10,500円
+              - generic [ref=e772] [cursor=pointer]:
+                - generic [ref=e773]: ●
+                - generic [ref=e774]: "13"
+                - generic [ref=e776]: 8,500円
+              - generic [ref=e778] [cursor=pointer]:
+                - generic [ref=e779]: ●
+                - generic [ref=e780]: "14"
+                - generic [ref=e782]: 7,800円
+              - generic [ref=e784] [cursor=pointer]:
+                - generic [ref=e785]: ●
+                - generic [ref=e786]: "15"
+                - generic [ref=e788]: 7,800円
+              - generic [ref=e790] [cursor=pointer]:
+                - generic [ref=e791]: ●
+                - generic [ref=e792]: "16"
+                - generic [ref=e794]: 7,800円
+              - generic [ref=e796] [cursor=pointer]:
+                - generic [ref=e797]: ●
+                - generic [ref=e798]: "17"
+                - generic [ref=e800]: 7,800円
+              - generic [ref=e802] [cursor=pointer]:
+                - generic [ref=e803]: ●
+                - generic [ref=e804]: "18"
+                - generic [ref=e806]: 9,800円
+              - generic [ref=e808] [cursor=pointer]:
+                - generic [ref=e809]: ●
+                - generic [ref=e810]: "19"
+                - generic [ref=e812]: 17,800円
+              - generic [ref=e814] [cursor=pointer]:
+                - generic [ref=e815]: ●
+                - generic [ref=e816]: "20"
+                - generic [ref=e818]: 23,200円
+              - generic [ref=e820] [cursor=pointer]:
+                - generic [ref=e821]: ●
+                - generic [ref=e822]: "21"
+                - generic [ref=e824]: 17,200円
+              - generic [ref=e826] [cursor=pointer]:
+                - generic [ref=e827]: ●
+                - generic [ref=e828]: "22"
+                - generic [ref=e830]: 8,900円
+              - generic [ref=e832] [cursor=pointer]:
+                - generic [ref=e833]: ●
+                - generic [ref=e834]: "23"
+                - generic [ref=e836]: 7,800円
+              - generic [ref=e838] [cursor=pointer]:
+                - generic [ref=e839]: ●
+                - generic [ref=e840]: "24"
+                - generic [ref=e842]: 7,800円
+              - generic [ref=e844] [cursor=pointer]:
+                - generic [ref=e845]: ●
+                - generic [ref=e846]: "25"
+                - generic [ref=e848]: 9,200円
+              - generic [ref=e850] [cursor=pointer]:
+                - generic [ref=e851]: ●
+                - generic [ref=e852]: "26"
+                - generic [ref=e854]: 10,500円
+              - generic [ref=e856] [cursor=pointer]:
+                - generic [ref=e857]: ●
+                - generic [ref=e858]: "27"
+                - generic [ref=e860]: 8,500円
+              - generic [ref=e862] [cursor=pointer]:
+                - generic [ref=e863]: ●
+                - generic [ref=e864]: "28"
+                - generic [ref=e866]: 7,800円
+              - generic [ref=e868] [cursor=pointer]:
+                - generic [ref=e869]: ●
+                - generic [ref=e870]: "29"
+                - generic [ref=e872]: 7,800円
+              - generic [ref=e874] [cursor=pointer]:
+                - generic [ref=e875]: ●
+                - generic [ref=e876]: "30"
+                - generic [ref=e878]: 7,800円
+          - button "" [ref=e879] [cursor=pointer]:
+            - generic: 
+          - paragraph [ref=e880]: ※販売中の全プランにおける、大人1名の最低料金を表示しています。
+        - generic [ref=e881]:
+          - generic [ref=e882]:
+            - generic [ref=e883]: ●
+            - paragraph [ref=e884]: 空きあり
+          - generic [ref=e885]:
+            - generic [ref=e886]: ▲
+            - paragraph [ref=e887]: 残りわずか
+          - generic [ref=e888]:
+            - generic [ref=e889]: ×
+            - paragraph [ref=e890]: 満室
+          - generic [ref=e891]:
+            - generic [ref=e892]: ー
+            - paragraph [ref=e893]: 休館
+  - generic [ref=e894]:
+    - contentinfo [ref=e895]:
+      - paragraph [ref=e896]: OMO7横浜 by 星野リゾート
+      - paragraph [ref=e897]: 231-0017 神奈川県横浜市中区港町1丁目1番1
+    - link " 星野リゾート空室検索" [ref=e899] [cursor=pointer]:
+      - /url: /crosssearch/JA/
+      - generic [ref=e900]: 
+      - text: 星野リゾート空室検索
+    - generic [ref=e901]: © Hoshino Resorts Inc.

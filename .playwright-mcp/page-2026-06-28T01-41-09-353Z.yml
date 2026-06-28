@@ -1,0 +1,826 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e4]:
+    - generic [ref=e5]:
+      - term [ref=e8] [cursor=pointer]:
+        - generic [ref=e9]: 
+        - generic [ref=e10]: お知らせ
+        - generic [ref=e12]: 
+        - button "" [ref=e13]:
+          - generic [ref=e14]: 
+      - generic [ref=e15]:
+        - button [ref=e17] [cursor=pointer]
+        - button "" [ref=e21] [cursor=pointer]:
+          - generic [ref=e23]: 
+        - link "星野リゾート":
+          - /url: https://hoshinoresorts.com/jp/
+          - img "星野リゾート"
+        - link "OMO7横浜 by 星野リゾート" [ref=e25] [cursor=pointer]:
+          - /url: /ja/hotels/omo7yokohama/
+          - img "OMO7横浜 by 星野リゾート" [ref=e26]
+        - generic [ref=e27]:
+          - generic [ref=e28]:
+            - generic [ref=e29]: 1泊1名
+            - generic [ref=e30]: 10,000円〜
+            - generic [ref=e31]:
+              - text: 6回あと払いで
+              - generic [ref=e32]: 1,667円
+              - text: /月〜
+          - link "空室検索 当サイトが最もお得" [ref=e33] [cursor=pointer]:
+            - /url: /ja/hotels/omo7yokohama/roomsearch/
+            - generic [ref=e34]:
+              - generic [ref=e35]: 空室検索
+              - generic [ref=e36]: 当サイトが最もお得
+          - link " ＋航空券" [ref=e37] [cursor=pointer]:
+            - /url: https://s.tour-list.com/TL/?hc=HC69089604
+            - generic [ref=e38]:
+              - generic [ref=e40]: 
+              - generic [ref=e41]: ＋航空券
+    - generic [ref=e42]:
+      - main:
+        - generic [ref=e43]:
+          - generic [ref=e44]:
+            - button [ref=e45] [cursor=pointer]
+            - heading "OMO7横浜 空室検索" [level=1] [ref=e50]:
+              - generic [ref=e51]: OMO7横浜
+              - generic [ref=e52]: 空室検索
+          - generic [ref=e54]:
+            - generic [ref=e56]:
+              - link " 格安航空券付きプラン " [ref=e57] [cursor=pointer]:
+                - /url: https://s.tour-list.com/TL/?hc=HC69089604
+                - generic [ref=e58]: 
+                - generic [ref=e59]: 格安航空券付きプラン
+                - generic [ref=e60]: 
+              - link " 新幹線付きプラン " [ref=e61] [cursor=pointer]:
+                - /url: https://srdp.tour-list.com/railway/search/?hotelcode=HC69089604
+                - generic [ref=e62]: 
+                - generic [ref=e63]: 新幹線付きプラン
+                - generic [ref=e64]: 
+              - link " レンタカー付きプラン " [ref=e65] [cursor=pointer]:
+                - /url: https://srcdp.tour-list.com/rc/search/?hotelcode=HC69089604
+                - generic [ref=e66]: 
+                - generic [ref=e67]: レンタカー付きプラン
+                - generic [ref=e68]: 
+            - generic [ref=e69]:
+              - generic [ref=e70]:
+                - paragraph [ref=e71]: ご予約は当サイトが最もお得です
+                - generic [ref=e72]:
+                  - term [ref=e75] [cursor=pointer]:
+                    - generic [ref=e76]: 
+                    - generic [ref=e77]: お知らせ
+                    - generic [ref=e79]: 
+                  - link " 後払い、分割払いで予約できます " [ref=e82] [cursor=pointer]:
+                    - /url: /ja/sp/paidy/
+                    - generic [ref=e83]: 
+                    - generic [ref=e84]: 後払い、分割払いで予約できます
+                    - generic [ref=e86]: 
+                  - link " OMOポイントのご案内 " [ref=e89] [cursor=pointer]:
+                    - /url: https://hoshinoresorts.com/jp/sp/point/
+                    - generic [ref=e90]: 
+                    - generic [ref=e91]: OMOポイントのご案内
+                    - generic [ref=e93]: 
+              - generic [ref=e95]:
+                - generic [ref=e99]:
+                  - generic [ref=e100]:
+                    - text: 大人
+                    - button "2人 " [ref=e104] [cursor=pointer]:
+                      - generic [ref=e105]:
+                        - generic [ref=e107]: 2人
+                        - generic [ref=e108]: 
+                  - generic [ref=e109]:
+                    - text: 0-11歳
+                    - button "0人 " [ref=e113] [cursor=pointer]:
+                      - generic [ref=e114]:
+                        - generic [ref=e116]: 0人
+                        - generic [ref=e117]: 
+                  - generic [ref=e118]:
+                    - text: 添寝/0-6歳
+                    - button "0人 " [ref=e122] [cursor=pointer]:
+                      - generic [ref=e123]:
+                        - generic [ref=e125]: 0人
+                        - generic [ref=e126]: 
+                - button "1泊 (早期優待で500円引き) " [ref=e130] [cursor=pointer]:
+                  - generic [ref=e131]:
+                    - generic [ref=e134]: 1泊 (早期優待で500円引き)
+                    - generic [ref=e135]: 
+              - generic [ref=e137]:
+                - text: 
+                - generic [ref=e138]:
+                  - heading "2026年6月" [level=3] [ref=e141]
+                  - generic [ref=e143]:
+                    - generic [ref=e145]:
+                      - generic [ref=e146]: 月
+                      - generic [ref=e147]: 火
+                      - generic [ref=e148]: 水
+                      - generic [ref=e149]: 木
+                      - generic [ref=e150]: 金
+                      - generic [ref=e151]: 土
+                      - generic [ref=e152]: 日
+                    - generic [ref=e153]:
+                      - generic [ref=e154]:
+                        - generic [ref=e155]:
+                          - generic [ref=e156]:
+                            - link "1":
+                              - /url: javascript:void(0)
+                              - generic: "1"
+                          - generic [ref=e157]:
+                            - link "2":
+                              - /url: javascript:void(0)
+                              - generic: "2"
+                          - generic [ref=e158]:
+                            - link "3":
+                              - /url: javascript:void(0)
+                              - generic: "3"
+                          - generic [ref=e159]:
+                            - link "4":
+                              - /url: javascript:void(0)
+                              - generic: "4"
+                          - generic [ref=e160]:
+                            - link "5":
+                              - /url: javascript:void(0)
+                              - generic: "5"
+                          - generic [ref=e161]:
+                            - link "6":
+                              - /url: javascript:void(0)
+                              - generic: "6"
+                          - generic [ref=e162]:
+                            - link "7":
+                              - /url: javascript:void(0)
+                              - generic: "7"
+                        - generic [ref=e163]:
+                          - generic [ref=e164]:
+                            - link "8":
+                              - /url: javascript:void(0)
+                              - generic: "8"
+                          - generic [ref=e165]:
+                            - link "9":
+                              - /url: javascript:void(0)
+                              - generic: "9"
+                          - generic [ref=e166]:
+                            - link "10":
+                              - /url: javascript:void(0)
+                              - generic: "10"
+                          - generic [ref=e167]:
+                            - link "11":
+                              - /url: javascript:void(0)
+                              - generic: "11"
+                          - generic [ref=e168]:
+                            - link "12":
+                              - /url: javascript:void(0)
+                              - generic: "12"
+                          - generic [ref=e169]:
+                            - link "13":
+                              - /url: javascript:void(0)
+                              - generic: "13"
+                          - generic [ref=e170]:
+                            - link "14":
+                              - /url: javascript:void(0)
+                              - generic: "14"
+                        - generic [ref=e171]:
+                          - generic [ref=e172]:
+                            - link "15":
+                              - /url: javascript:void(0)
+                              - generic: "15"
+                          - generic [ref=e173]:
+                            - link "16":
+                              - /url: javascript:void(0)
+                              - generic: "16"
+                          - generic [ref=e174]:
+                            - link "17":
+                              - /url: javascript:void(0)
+                              - generic: "17"
+                          - generic [ref=e175]:
+                            - link "18":
+                              - /url: javascript:void(0)
+                              - generic: "18"
+                          - generic [ref=e176]:
+                            - link "19":
+                              - /url: javascript:void(0)
+                              - generic: "19"
+                          - generic [ref=e177]:
+                            - link "20":
+                              - /url: javascript:void(0)
+                              - generic: "20"
+                          - generic [ref=e178]:
+                            - link "21":
+                              - /url: javascript:void(0)
+                              - generic: "21"
+                        - generic [ref=e179]:
+                          - generic [ref=e180]:
+                            - link "22":
+                              - /url: javascript:void(0)
+                              - generic: "22"
+                          - generic [ref=e181]:
+                            - link "23":
+                              - /url: javascript:void(0)
+                              - generic: "23"
+                          - generic [ref=e182]:
+                            - link "24":
+                              - /url: javascript:void(0)
+                              - generic: "24"
+                          - generic [ref=e183]:
+                            - link "25":
+                              - /url: javascript:void(0)
+                              - generic: "25"
+                          - generic [ref=e184]:
+                            - link "26":
+                              - /url: javascript:void(0)
+                              - generic: "26"
+                          - generic [ref=e185]:
+                            - link "27":
+                              - /url: javascript:void(0)
+                              - generic: "27"
+                          - generic [ref=e186]:
+                            - link "28":
+                              - /url: javascript:void(0)
+                              - generic: "28"
+                        - generic [ref=e187]:
+                          - generic [ref=e188]:
+                            - link "29":
+                              - /url: javascript:void(0)
+                              - generic: "29"
+                          - generic [ref=e189]:
+                            - link "30":
+                              - /url: javascript:void(0)
+                              - generic: "30"
+                      - progressbar [ref=e195]:
+                        - img [ref=e196]
+                - generic [ref=e198]:
+                  - generic [ref=e199]:
+                    - heading "2026年7月" [level=3] [ref=e201]
+                    - button "" [ref=e203] [cursor=pointer]:
+                      - generic [ref=e204]: 
+                  - generic [ref=e205]:
+                    - generic [ref=e207]:
+                      - generic [ref=e208]: 月
+                      - generic [ref=e209]: 火
+                      - generic [ref=e210]: 水
+                      - generic [ref=e211]: 木
+                      - generic [ref=e212]: 金
+                      - generic [ref=e213]: 土
+                      - generic [ref=e214]: 日
+                    - generic [ref=e215]:
+                      - generic [ref=e216]:
+                        - generic [ref=e217]:
+                          - generic [ref=e220]:
+                            - link "1":
+                              - /url: javascript:void(0)
+                              - generic: "1"
+                          - generic [ref=e221]:
+                            - link "2":
+                              - /url: javascript:void(0)
+                              - generic: "2"
+                          - generic [ref=e222]:
+                            - link "3":
+                              - /url: javascript:void(0)
+                              - generic: "3"
+                          - generic [ref=e223]:
+                            - link "4":
+                              - /url: javascript:void(0)
+                              - generic: "4"
+                          - generic [ref=e224]:
+                            - link "5":
+                              - /url: javascript:void(0)
+                              - generic: "5"
+                        - generic [ref=e225]:
+                          - generic [ref=e226]:
+                            - link "6":
+                              - /url: javascript:void(0)
+                              - generic: "6"
+                          - generic [ref=e227]:
+                            - link "7":
+                              - /url: javascript:void(0)
+                              - generic: "7"
+                          - generic [ref=e228]:
+                            - link "8":
+                              - /url: javascript:void(0)
+                              - generic: "8"
+                          - generic [ref=e229]:
+                            - link "9":
+                              - /url: javascript:void(0)
+                              - generic: "9"
+                          - generic [ref=e230]:
+                            - link "10":
+                              - /url: javascript:void(0)
+                              - generic: "10"
+                          - generic [ref=e231]:
+                            - link "11":
+                              - /url: javascript:void(0)
+                              - generic: "11"
+                          - generic [ref=e232]:
+                            - link "12":
+                              - /url: javascript:void(0)
+                              - generic: "12"
+                        - generic [ref=e233]:
+                          - generic [ref=e234]:
+                            - link "13":
+                              - /url: javascript:void(0)
+                              - generic: "13"
+                          - generic [ref=e235]:
+                            - link "14":
+                              - /url: javascript:void(0)
+                              - generic: "14"
+                          - generic [ref=e236]:
+                            - link "15":
+                              - /url: javascript:void(0)
+                              - generic: "15"
+                          - generic [ref=e237]:
+                            - link "16":
+                              - /url: javascript:void(0)
+                              - generic: "16"
+                          - generic [ref=e238]:
+                            - link "17":
+                              - /url: javascript:void(0)
+                              - generic: "17"
+                          - generic [ref=e239]:
+                            - link "18":
+                              - /url: javascript:void(0)
+                              - generic: "18"
+                          - generic [ref=e240]:
+                            - link "19":
+                              - /url: javascript:void(0)
+                              - generic: "19"
+                        - generic [ref=e241]:
+                          - generic [ref=e242]:
+                            - link "20":
+                              - /url: javascript:void(0)
+                              - generic: "20"
+                          - generic [ref=e243]:
+                            - link "21":
+                              - /url: javascript:void(0)
+                              - generic: "21"
+                          - generic [ref=e244]:
+                            - link "22":
+                              - /url: javascript:void(0)
+                              - generic: "22"
+                          - generic [ref=e245]:
+                            - link "23":
+                              - /url: javascript:void(0)
+                              - generic: "23"
+                          - generic [ref=e246]:
+                            - link "24":
+                              - /url: javascript:void(0)
+                              - generic: "24"
+                          - generic [ref=e247]:
+                            - link "25":
+                              - /url: javascript:void(0)
+                              - generic: "25"
+                          - generic [ref=e248]:
+                            - link "26":
+                              - /url: javascript:void(0)
+                              - generic: "26"
+                        - generic [ref=e249]:
+                          - generic [ref=e250]:
+                            - link "27":
+                              - /url: javascript:void(0)
+                              - generic: "27"
+                          - generic [ref=e251]:
+                            - link "28":
+                              - /url: javascript:void(0)
+                              - generic: "28"
+                          - generic [ref=e252]:
+                            - link "29":
+                              - /url: javascript:void(0)
+                              - generic: "29"
+                          - generic [ref=e253]:
+                            - link "30":
+                              - /url: javascript:void(0)
+                              - generic: "30"
+                          - generic [ref=e254]:
+                            - link "31":
+                              - /url: javascript:void(0)
+                              - generic: "31"
+                      - progressbar [ref=e257]:
+                        - img [ref=e258]
+                - text: 
+              - generic [ref=e260]:
+                - paragraph [ref=e261]: 表示の料金は上記条件での 1泊1名初日 の最低宿泊料です
+                - generic [ref=e262]:
+                  - list [ref=e263]:
+                    - listitem [ref=e264]:
+                      - generic [ref=e266]: 空室
+                    - listitem [ref=e267]:
+                      - generic [ref=e270]:
+                        - generic [ref=e271]: 残り
+                        - generic [ref=e272]: わずか
+                    - listitem [ref=e273]:
+                      - generic [ref=e275]:
+                        - generic [ref=e276]: チェックイン
+                        - generic [ref=e277]: 不可
+                    - listitem [ref=e278]:
+                      - generic [ref=e280]: 休館
+                  - list [ref=e281]:
+                    - listitem [ref=e282]:
+                      - img "/common/payment-methods/eikyufumetsu-points.svg" [ref=e283]
+                    - listitem [ref=e284]:
+                      - img "/common/payment-methods/paidy.svg" [ref=e285]
+                    - listitem [ref=e286]:
+                      - img "/common/payment-methods/jcb.svg" [ref=e287]
+                    - listitem [ref=e288]:
+                      - img "/common/payment-methods/diners.svg" [ref=e289]
+                    - listitem [ref=e290]:
+                      - img "/common/payment-methods/american-express.png" [ref=e291]
+                    - listitem [ref=e292]:
+                      - img "/common/payment-methods/mastercard.svg" [ref=e293]
+                    - listitem [ref=e294]:
+                      - img "/common/payment-methods/visa.svg" [ref=e295]
+                    - listitem [ref=e296]:
+                      - img "/common/payment-methods/hoshino-resort-gift-card.svg" [ref=e297]
+          - generic [ref=e301]:
+            - button "予約へ進む 当サイトが最もお得" [disabled]:
+              - generic:
+                - generic: 予約へ進む
+                - generic: 当サイトが最もお得
+            - link " ＋航空券" [ref=e303] [cursor=pointer]:
+              - /url: https://s.tour-list.com/TL/?hc=HC69089604
+              - generic [ref=e304]:
+                - generic [ref=e306]: 
+                - generic [ref=e307]: ＋航空券
+      - complementary:         
+      - contentinfo [ref=e308]:
+        - generic [ref=e309]:
+          - generic [ref=e310]:
+            - heading "施設をみつける" [level=2] [ref=e311]
+            - generic [ref=e312]:
+              - heading "地域からみつける" [level=3] [ref=e313]
+              - generic [ref=e314]:
+                - link "北海道" [ref=e315] [cursor=pointer]:
+                  - /url: /ja/sp/regions/hokkaido/
+                - generic [ref=e316]: "|"
+              - generic [ref=e317]:
+                - link "東北" [ref=e318] [cursor=pointer]:
+                  - /url: /ja/sp/regions/tohoku/
+                - generic [ref=e319]: "|"
+              - generic [ref=e320]:
+                - link "北陸・甲信越" [ref=e321] [cursor=pointer]:
+                  - /url: /ja/sp/regions/hokuriku_koushinetsu/
+                - generic [ref=e322]: "|"
+              - generic [ref=e323]:
+                - link "関東" [ref=e324] [cursor=pointer]:
+                  - /url: /ja/sp/regions/kanto/
+                - generic [ref=e325]: "|"
+              - generic [ref=e326]:
+                - link "東海" [ref=e327] [cursor=pointer]:
+                  - /url: /ja/sp/regions/tokai/
+                - generic [ref=e328]: "|"
+              - generic [ref=e329]:
+                - link "近畿" [ref=e330] [cursor=pointer]:
+                  - /url: /ja/sp/regions/kinki/
+                - generic [ref=e331]: "|"
+              - generic [ref=e332]:
+                - link "中国・四国" [ref=e333] [cursor=pointer]:
+                  - /url: /ja/sp/regions/chugoku_shikoku/
+                - generic [ref=e334]: "|"
+              - generic [ref=e335]:
+                - link "九州" [ref=e336] [cursor=pointer]:
+                  - /url: /ja/sp/regions/kyushu/
+                - generic [ref=e337]: "|"
+              - generic [ref=e338]:
+                - link "沖縄" [ref=e339] [cursor=pointer]:
+                  - /url: /ja/sp/regions/okinawa/
+                - generic [ref=e340]: "|"
+              - link "海外" [ref=e342] [cursor=pointer]:
+                - /url: /ja/sp/regions/outsidejapan/
+            - heading "ブランドからみつける" [level=3] [ref=e343]
+            - generic [ref=e344]:
+              - generic [ref=e345]:
+                - generic [ref=e346]:
+                  - generic [ref=e347]:
+                    - generic [ref=e348]: 星のや
+                    - generic [ref=e349]: "|"
+                    - generic [ref=e350]: ラグジュアリー
+                  - generic [ref=e351]:
+                    - link "東京 東京 大手町" [ref=e352] [cursor=pointer]:
+                      - /url: /ja/hotels/hoshinoyatokyo/
+                      - paragraph [ref=e353]: 東京
+                      - paragraph [ref=e354]: 東京 大手町
+                    - link "富士 山梨 富士河口湖" [ref=e355] [cursor=pointer]:
+                      - /url: /ja/hotels/hoshinoyafuji/
+                      - paragraph [ref=e356]: 富士
+                      - paragraph [ref=e357]: 山梨 富士河口湖
+                    - link "軽井沢 長野 軽井沢" [ref=e358] [cursor=pointer]:
+                      - /url: /ja/hotels/hoshinoyakaruizawa/
+                      - paragraph [ref=e359]: 軽井沢
+                      - paragraph [ref=e360]: 長野 軽井沢
+                    - link "京都 京都 嵐山" [ref=e361] [cursor=pointer]:
+                      - /url: /ja/hotels/hoshinoyakyoto/
+                      - paragraph [ref=e362]: 京都
+                      - paragraph [ref=e363]: 京都 嵐山
+                    - link "奈良監獄 奈良 6月 開業" [ref=e364] [cursor=pointer]:
+                      - /url: /ja/hotels/hoshinoyanarakangoku/
+                      - paragraph [ref=e365]: 奈良監獄
+                      - paragraph [ref=e366]: 奈良
+                      - generic [ref=e367]: 6月 開業
+                    - link "沖縄 沖縄 読谷" [ref=e368] [cursor=pointer]:
+                      - /url: /ja/hotels/hoshinoyaokinawa/
+                      - paragraph [ref=e369]: 沖縄
+                      - paragraph [ref=e370]: 沖縄 読谷
+                    - link "竹富島 沖縄 竹富町" [ref=e371] [cursor=pointer]:
+                      - /url: /ja/hotels/hoshinoyataketomijima/
+                      - paragraph [ref=e372]: 竹富島
+                      - paragraph [ref=e373]: 沖縄 竹富町
+                    - link "グーグァン 台湾 台中" [ref=e374] [cursor=pointer]:
+                      - /url: /ja/hotels/hoshinoyaguguan/
+                      - paragraph [ref=e375]: グーグァン
+                      - paragraph [ref=e376]: 台湾 台中
+                    - button "全 9 施設 " [ref=e377] [cursor=pointer]:
+                      - generic [ref=e378]: 全 9 施設
+                      - generic [ref=e379]: 
+                    - link "星のやについて" [ref=e380] [cursor=pointer]:
+                      - /url: /ja/brands/hoshinoya/
+                      - generic [ref=e382]: 星のやについて
+                - text: 
+              - generic [ref=e383]:
+                - generic [ref=e384]:
+                  - generic [ref=e385]:
+                    - generic [ref=e386]: 界
+                    - generic [ref=e387]: "|"
+                    - generic [ref=e388]: 温泉旅館
+                  - generic [ref=e389]:
+                    - link "ポロト 北海道 白老温泉" [ref=e390] [cursor=pointer]:
+                      - /url: /ja/hotels/kaiporoto/
+                      - paragraph [ref=e391]: ポロト
+                      - paragraph [ref=e392]: 北海道 白老温泉
+                    - link "津軽 青森 大鰐温泉" [ref=e393] [cursor=pointer]:
+                      - /url: /ja/hotels/kaitsugaru/
+                      - paragraph [ref=e394]: 津軽
+                      - paragraph [ref=e395]: 青森 大鰐温泉
+                    - link "秋保 宮城 秋保温泉" [ref=e396] [cursor=pointer]:
+                      - /url: /ja/hotels/kaiakiu/
+                      - paragraph [ref=e397]: 秋保
+                      - paragraph [ref=e398]: 宮城 秋保温泉
+                    - link "蔵王 山形 蔵王温泉 10月 開業" [ref=e399] [cursor=pointer]:
+                      - /url: /ja/hotels/kaizao/
+                      - paragraph [ref=e400]: 蔵王
+                      - paragraph [ref=e401]: 山形 蔵王温泉
+                      - generic [ref=e402]: 10月 開業
+                    - link "鬼怒川 栃木 鬼怒川温泉" [ref=e403] [cursor=pointer]:
+                      - /url: /ja/hotels/kaikinugawa/
+                      - paragraph [ref=e404]: 鬼怒川
+                      - paragraph [ref=e405]: 栃木 鬼怒川温泉
+                    - link "草津 群馬 草津温泉 6月 開業" [ref=e406] [cursor=pointer]:
+                      - /url: /ja/hotels/kaikusatsu/
+                      - paragraph [ref=e407]: 草津
+                      - paragraph [ref=e408]: 群馬 草津温泉
+                      - generic [ref=e409]: 6月 開業
+                    - link "箱根 神奈川 箱根湯本温泉" [ref=e410] [cursor=pointer]:
+                      - /url: /ja/hotels/kaihakone/
+                      - paragraph [ref=e411]: 箱根
+                      - paragraph [ref=e412]: 神奈川 箱根湯本温泉
+                    - link "仙石原 神奈川 仙石原温泉" [ref=e413] [cursor=pointer]:
+                      - /url: /ja/hotels/kaisengokuhara/
+                      - paragraph [ref=e414]: 仙石原
+                      - paragraph [ref=e415]: 神奈川 仙石原温泉
+                    - button "全 24 施設 " [ref=e416] [cursor=pointer]:
+                      - generic [ref=e417]: 全 24 施設
+                      - generic [ref=e418]: 
+                    - link "-かい- について" [ref=e419] [cursor=pointer]:
+                      - /url: /ja/brands/kai/
+                      - generic [ref=e421]: "-かい- について"
+                - text: 
+              - generic [ref=e422]:
+                - generic [ref=e423]:
+                  - generic [ref=e424]:
+                    - generic [ref=e425]: リゾナーレ
+                    - generic [ref=e426]: "|"
+                    - generic [ref=e427]: リゾート
+                  - generic [ref=e428]:
+                    - link "トマム 北海道 勇払郡" [ref=e429] [cursor=pointer]:
+                      - /url: /ja/hotels/risonaretomamu/
+                      - paragraph [ref=e430]: トマム
+                      - paragraph [ref=e431]: 北海道 勇払郡
+                    - link "那須 栃木 那須" [ref=e432] [cursor=pointer]:
+                      - /url: /ja/hotels/risonarenasu/
+                      - paragraph [ref=e433]: 那須
+                      - paragraph [ref=e434]: 栃木 那須
+                    - link "八ヶ岳 山梨 北杜市" [ref=e435] [cursor=pointer]:
+                      - /url: /ja/hotels/risonareyatsugatake/
+                      - paragraph [ref=e436]: 八ヶ岳
+                      - paragraph [ref=e437]: 山梨 北杜市
+                    - link "熱海 静岡 熱海" [ref=e438] [cursor=pointer]:
+                      - /url: /ja/hotels/risonareatami/
+                      - paragraph [ref=e439]: 熱海
+                      - paragraph [ref=e440]: 静岡 熱海
+                    - link "大阪 大阪市" [ref=e441] [cursor=pointer]:
+                      - /url: /ja/hotels/risonareosaka/
+                      - paragraph [ref=e442]: 大阪
+                      - paragraph [ref=e443]: 大阪市
+                    - link "下関 山口 下関市" [ref=e444] [cursor=pointer]:
+                      - /url: /ja/hotels/risonareshimonoseki/
+                      - paragraph [ref=e445]: 下関
+                      - paragraph [ref=e446]: 山口 下関市
+                    - link "小浜島 沖縄 竹富町" [ref=e447] [cursor=pointer]:
+                      - /url: /ja/hotels/risonarekohamajima/
+                      - paragraph [ref=e448]: 小浜島
+                      - paragraph [ref=e449]: 沖縄 竹富町
+                    - link "グアム Tamuning, Guam" [ref=e450] [cursor=pointer]:
+                      - /url: /ja/hotels/risonareguam/
+                      - paragraph [ref=e451]: グアム
+                      - paragraph [ref=e452]: Tamuning, Guam
+                    - link "リゾナーレについて" [ref=e453] [cursor=pointer]:
+                      - /url: /ja/brands/risonare/
+                      - generic [ref=e455]: リゾナーレについて
+                - text: 
+              - generic [ref=e456]:
+                - generic [ref=e457]:
+                  - generic [ref=e458]:
+                    - generic [ref=e459]: OMO
+                    - generic [ref=e460]: "|"
+                    - generic [ref=e461]: シティ
+                  - generic [ref=e462]:
+                    - link "OMO7 旭川 北海道 旭川市" [ref=e463] [cursor=pointer]:
+                      - /url: /ja/hotels/omo7asahikawa/
+                      - paragraph [ref=e464]:
+                        - generic [ref=e465]: OMO7
+                        - text: 旭川
+                      - paragraph [ref=e466]: 北海道 旭川市
+                    - link "OMO5 小樽 北海道 小樽市" [ref=e467] [cursor=pointer]:
+                      - /url: /ja/hotels/omo5otaru/
+                      - paragraph [ref=e468]:
+                        - generic [ref=e469]: OMO5
+                        - text: 小樽
+                      - paragraph [ref=e470]: 北海道 小樽市
+                    - link "OMO5 函館 北海道 函館市" [ref=e471] [cursor=pointer]:
+                      - /url: /ja/hotels/omo5hakodate/
+                      - paragraph [ref=e472]:
+                        - generic [ref=e473]: OMO5
+                        - text: 函館
+                      - paragraph [ref=e474]: 北海道 函館市
+                    - link "OMO5 東京大塚 東京 豊島区" [ref=e475] [cursor=pointer]:
+                      - /url: /ja/hotels/omo5tokyootsuka/
+                      - paragraph [ref=e476]:
+                        - generic [ref=e477]: OMO5
+                        - text: 東京大塚
+                      - paragraph [ref=e478]: 東京 豊島区
+                    - link "OMO5 東京五反田 東京 品川" [ref=e479] [cursor=pointer]:
+                      - /url: /ja/hotels/omo5tokyogotanda/
+                      - paragraph [ref=e480]:
+                        - generic [ref=e481]: OMO5
+                        - text: 東京五反田
+                      - paragraph [ref=e482]: 東京 品川
+                    - link "OMO3 浅草 東京 台東区" [ref=e483] [cursor=pointer]:
+                      - /url: /ja/hotels/omo3asakusa/
+                      - paragraph [ref=e484]:
+                        - generic [ref=e485]: OMO3
+                        - text: 浅草
+                      - paragraph [ref=e486]: 東京 台東区
+                    - link "OMO3 東京赤坂 東京 港区" [ref=e487] [cursor=pointer]:
+                      - /url: /ja/hotels/omo3tokyoakasaka/
+                      - paragraph [ref=e488]:
+                        - generic [ref=e489]: OMO3
+                        - text: 東京赤坂
+                      - paragraph [ref=e490]: 東京 港区
+                    - link "OMO7 横浜 神奈川 横浜市" [ref=e491] [cursor=pointer]:
+                      - /url: /ja/hotels/omo7yokohama/
+                      - paragraph [ref=e492]:
+                        - generic [ref=e493]: OMO7
+                        - text: 横浜
+                      - paragraph [ref=e494]: 神奈川 横浜市
+                    - button "全 18 施設 " [ref=e495] [cursor=pointer]:
+                      - generic [ref=e496]: 全 18 施設
+                      - generic [ref=e497]: 
+                    - link "-おも- について" [ref=e498] [cursor=pointer]:
+                      - /url: /ja/brands/omo/
+                      - generic [ref=e500]: "-おも- について"
+                - text: 
+              - generic [ref=e501]:
+                - generic [ref=e502]:
+                  - generic [ref=e503]:
+                    - generic [ref=e504]: BEB
+                    - generic [ref=e505]: "|"
+                    - generic [ref=e506]: カジュアル
+                  - generic [ref=e507]:
+                    - link "BEB5 土浦 茨城 土浦" [ref=e508] [cursor=pointer]:
+                      - /url: /ja/hotels/beb5tsuchiura/
+                      - paragraph [ref=e509]:
+                        - generic [ref=e510]: BEB5
+                        - text: 土浦
+                      - paragraph [ref=e511]: 茨城 土浦
+                    - link "BEB5 軽井沢 長野 軽井沢" [ref=e512] [cursor=pointer]:
+                      - /url: /ja/hotels/beb5karuizawa/
+                      - paragraph [ref=e513]:
+                        - generic [ref=e514]: BEB5
+                        - text: 軽井沢
+                      - paragraph [ref=e515]: 長野 軽井沢
+                    - link "BEB5 門司港 門司港 7月 開業" [ref=e516] [cursor=pointer]:
+                      - /url: /ja/hotels/beb5mojiko/
+                      - paragraph [ref=e517]:
+                        - generic [ref=e518]: BEB5
+                        - text: 門司港
+                      - paragraph [ref=e519]: 門司港
+                      - generic [ref=e520]: 7月 開業
+                    - link "BEB5 沖縄瀬良垣 沖縄 恩納村" [ref=e521] [cursor=pointer]:
+                      - /url: /ja/hotels/beb5okinawaseragaki/
+                      - paragraph [ref=e522]:
+                        - generic [ref=e523]: BEB5
+                        - text: 沖縄瀬良垣
+                      - paragraph [ref=e524]: 沖縄 恩納村
+                    - link "-ベブ- について" [ref=e525] [cursor=pointer]:
+                      - /url: /ja/brands/beb/
+                      - generic [ref=e527]: "-ベブ- について"
+                - text: 
+              - generic [ref=e528]:
+                - generic [ref=e529]:
+                  - generic [ref=e530]:
+                    - generic [ref=e531]: LUCY
+                    - generic [ref=e532]: "|"
+                    - generic [ref=e533]: 山ホテル
+                  - generic [ref=e534]:
+                    - link "尾瀬鳩待 群馬 尾瀬" [ref=e535] [cursor=pointer]:
+                      - /url: /ja/hotels/lucyozehatomachi/
+                      - paragraph [ref=e536]: 尾瀬鳩待
+                      - paragraph [ref=e537]: 群馬 尾瀬
+                    - link "LUCY について" [ref=e538] [cursor=pointer]:
+                      - /url: /ja/brands/lucy/
+                      - generic [ref=e540]: LUCY について
+                - text: 
+              - generic [ref=e541]:
+                - generic [ref=e542]:
+                  - generic [ref=e544]: そのほかの個性的な宿泊施設
+                  - generic [ref=e545]:
+                    - link "トマム ザ・タワー 北海道 勇払郡" [ref=e546] [cursor=pointer]:
+                      - /url: /ja/hotels/tomamuthetower/
+                      - paragraph [ref=e547]: トマム ザ・タワー
+                      - paragraph [ref=e548]: 北海道 勇払郡
+                    - link "青森屋 青森 三沢" [ref=e549] [cursor=pointer]:
+                      - /url: /ja/hotels/aomoriya/
+                      - paragraph [ref=e550]: 青森屋
+                      - paragraph [ref=e551]: 青森 三沢
+                    - link "奥入瀬渓流ホテル 青森 十和田" [ref=e552] [cursor=pointer]:
+                      - /url: /ja/hotels/oirasekeiryu/
+                      - paragraph [ref=e553]: 奥入瀬渓流ホテル
+                      - paragraph [ref=e554]: 青森 十和田
+                    - link "磐梯山温泉ホテル 福島 耶麻郡" [ref=e555] [cursor=pointer]:
+                      - /url: /ja/hotels/bandai/
+                      - paragraph [ref=e556]: 磐梯山温泉ホテル
+                      - paragraph [ref=e557]: 福島 耶麻郡
+                    - link "1955 東京ベイ 千葉 浦安" [ref=e558] [cursor=pointer]:
+                      - /url: /ja/hotels/1955tokyobay/
+                      - paragraph [ref=e559]: 1955 東京ベイ
+                      - paragraph [ref=e560]: 千葉 浦安
+                    - link "ホテルブレストンコート 長野 軽井沢" [ref=e561] [cursor=pointer]:
+                      - /url: https://www.blestoncourt.com/
+                      - paragraph [ref=e562]: ホテルブレストンコート
+                      - paragraph [ref=e563]: 長野 軽井沢
+                    - link "西表島ホテル 沖縄 竹富町" [ref=e564] [cursor=pointer]:
+                      - /url: /ja/hotels/iriomote/
+                      - paragraph [ref=e565]: 西表島ホテル
+                      - paragraph [ref=e566]: 沖縄 竹富町
+                    - link "嘉助天台 中国 天台山" [ref=e567] [cursor=pointer]:
+                      - /url: https://www.kasuketiantai.com/#/ja/home
+                      - paragraph [ref=e568]: 嘉助天台
+                      - paragraph [ref=e569]: 中国 天台山
+                    - button "全 9 施設 " [ref=e570] [cursor=pointer]:
+                      - generic [ref=e571]: 全 9 施設
+                      - generic [ref=e572]: 
+                - text: 
+              - generic [ref=e573]:
+                - generic [ref=e574]:
+                  - generic [ref=e576]: 日帰り施設
+                  - generic [ref=e577]:
+                    - link "北海道 トマムエリア 北海道 勇払郡" [ref=e578] [cursor=pointer]:
+                      - /url: https://www.snowtomamu.jp/
+                      - paragraph [ref=e579]: 北海道 トマムエリア
+                      - paragraph [ref=e580]: 北海道 勇払郡
+                    - link "雲海テラス 北海道 トマム" [ref=e581] [cursor=pointer]:
+                      - /url: https://www.snowtomamu.jp/summer/unkai/
+                      - paragraph [ref=e582]: 雲海テラス
+                      - paragraph [ref=e583]: 北海道 トマム
+                    - link "トマムスキー場 北海道 勇払郡" [ref=e584] [cursor=pointer]:
+                      - /url: https://www.snowtomamu.jp/winter/ski/
+                      - paragraph [ref=e585]: トマムスキー場
+                      - paragraph [ref=e586]: 北海道 勇払郡
+                    - link "ネコマ マウンテン 福島 耶麻郡" [ref=e587] [cursor=pointer]:
+                      - /url: https://www.nekoma.co.jp/
+                      - paragraph [ref=e588]: ネコマ マウンテン
+                      - paragraph [ref=e589]: 福島 耶麻郡
+                    - link "Mt.T 群馬 みなかみ町" [ref=e590] [cursor=pointer]:
+                      - /url: https://tanigawadake-joch.com/mt-t/
+                      - paragraph [ref=e591]: Mt.T
+                      - paragraph [ref=e592]: 群馬 みなかみ町
+                    - link "谷川岳ヨッホ 群馬 みなかみ町" [ref=e593] [cursor=pointer]:
+                      - /url: https://tanigawadake-joch.com/
+                      - paragraph [ref=e594]: 谷川岳ヨッホ
+                      - paragraph [ref=e595]: 群馬 みなかみ町
+                    - link "軽井沢星野エリア 長野 軽井沢" [ref=e596] [cursor=pointer]:
+                      - /url: https://www.hoshino-area.jp/
+                      - paragraph [ref=e597]: 軽井沢星野エリア
+                      - paragraph [ref=e598]: 長野 軽井沢
+                    - link "ピッキオ 長野 軽井沢" [ref=e599] [cursor=pointer]:
+                      - /url: https://picchio.co.jp/
+                      - paragraph [ref=e600]: ピッキオ
+                      - paragraph [ref=e601]: 長野 軽井沢
+                    - button "全 11 施設 " [ref=e602] [cursor=pointer]:
+                      - generic [ref=e603]: 全 11 施設
+                      - generic [ref=e604]: 
+                - text: 
+          - link "星野リゾート空室検索" [ref=e606] [cursor=pointer]:
+            - /url: https://hoshinoresorts.com/crosssearch/JA
+            - generic [ref=e607]: 星野リゾート空室検索
+          - generic [ref=e608]:
+            - link "112年 星野リゾート" [ref=e610] [cursor=pointer]:
+              - /url: https://hoshinoresorts.com/jp/
+              - img "112年" [ref=e611]
+              - img "星野リゾート" [ref=e612]
+            - paragraph [ref=e613]: © Hoshino Resorts Inc. All Rights Reserved.
+  - generic:
+    - img

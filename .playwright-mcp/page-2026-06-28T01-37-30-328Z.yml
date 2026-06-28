@@ -1,0 +1,804 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e3]:
+    - link "毎月20日から！じゃらんのお得な10日間" [ref=e7] [cursor=pointer]:
+      - /url: /theme/otoku_10days/?ccnt=otoku10days_260620_02
+      - img "毎月20日から！じゃらんのお得な10日間" [ref=e8]
+    - generic [ref=e10]:
+      - paragraph [ref=e11]: 国内旅行・海外旅行や宿・ホテルの宿泊予約はじゃらんnet ～日本最大級の宿・ホテル予約サイト～
+      - list [ref=e12]:
+        - listitem [ref=e13]:
+          - link "サイトのご利用方法" [ref=e14] [cursor=pointer]:
+            - /url: /jalan/doc/howto/01goriyou.html
+        - listitem [ref=e15]:
+          - link "ヘルプ/問い合わせ" [ref=e16] [cursor=pointer]:
+            - /url: https://help.jalan.net/s/
+    - generic [ref=e18]:
+      - paragraph [ref=e19]:
+        - link "じゃらん PRODUCED BY RECRUIT" [ref=e20] [cursor=pointer]:
+          - /url: /
+          - img "じゃらん PRODUCED BY RECRUIT" [ref=e21]
+      - generic [ref=e22]:
+        - generic [ref=e23]:
+          - paragraph [ref=e24]: こんにちは♪ゲストさん
+          - list [ref=e25]:
+            - listitem [ref=e26]:
+              - link "ログイン" [ref=e27] [cursor=pointer]:
+                - /url: /ji/pc/jit6001LoginBack.do?TEMP1=lrgCdParam%2B140200%23distCd%2B01%23roomTypeCd%2B0597317%23stayMonth%2B08%23roomCrack%2B200000%23corpLogo%2B%23ikisakiHtml%2B%2Fikisaki%2Fmap%2Fkanagawa%2F%23secretPlanFlg%2B%23screenId%2BUWW3201%23smlCd%2B140202%23planCd%2B04176578%23kenCdParam%2B140000%23stayCount%2B1%23agtWebFlg%2B%23groupBookingFlg%2B%23dispScreenId%2BUWW3201%23yadoSEOName%2B%82%6E%82%6C%82%6E%82%56%89%A1%95%6C%81%40%82%82%82%99%81%40%90%AF%96%EC%83%8A%83%5D%81%5B%83%67%23roomCount%2B1%23smlCdParam%2B140202%23adultNum%2B2%23stayYear%2B2026%23styleguidePartialCssReadFlg%2B0%23yadNo%2B341758%23stayDay%2B05%23planListNumPlan%2B12_4_1%23crawlerFlgParam%2B%23lrgName%2B%89%A1%95%6C%23kenName%2B%90%5F%93%DE%90%EC%8C%A7%23yadName%2B%82%6E%82%6C%82%6E%82%56%89%A1%95%6C%81%40%82%82%82%99%81%40%90%AF%96%EC%83%8A%83%5D%81%5B%83%67%23smlName%2B%89%A1%95%6C%81%45%83%78%83%43%83%47%83%8A%83%41&TEMP4=LEVEL_K&TEMP5=https://www.jalan.net/uw/uwp3200/uww3201init.do
+            - listitem [ref=e28]:
+              - link "会員登録" [ref=e29] [cursor=pointer]:
+                - /url: /ji/pc/jit2001.do?FNC=JIPFN004
+          - link "ステージプログラム お得な特典をみる" [ref=e30] [cursor=pointer]:
+            - /url: /theme/jalan_stage_program/index.html?ccnt=global_navi
+            - paragraph [ref=e31]:
+              - img "ステージプログラム" [ref=e32]
+              - generic [ref=e33]: お得な特典をみる
+          - list [ref=e34]:
+            - listitem [ref=e35]:
+              - link "予約照会・変更・キャンセル" [ref=e36] [cursor=pointer]:
+                - /url: /jalan/doc/howto/03yoyaku.html
+            - listitem [ref=e37]:
+              - link "マイページ" [ref=e38] [cursor=pointer]:
+                - /url: /uw/uwp8000/uww8010.do
+        - navigation [ref=e41]:
+          - list [ref=e42]:
+            - listitem [ref=e43]:
+              - link "宿・ホテル" [ref=e44] [cursor=pointer]:
+                - /url: /?ccnt=global_navi
+            - listitem [ref=e45]:
+              - link "じゃらんパック （交通＋宿泊）" [ref=e46] [cursor=pointer]:
+                - /url: /dp/?ccnt=global_navi
+                - text: じゃらんパック
+                - text: （交通＋宿泊）
+            - listitem [ref=e47]:
+              - link "遊び・体験" [ref=e48] [cursor=pointer]:
+                - /url: /activity/?ccnt=global_navi
+            - listitem [ref=e49]:
+              - link "観光ガイド" [ref=e50] [cursor=pointer]:
+                - /url: /travel/?ccnt=global_navi
+            - listitem [ref=e51]:
+              - link "レンタカー" [ref=e52] [cursor=pointer]:
+                - /url: /rentacar/?vos=cpjalaprocap0170608001&ccnt=global_navi
+            - listitem [ref=e53]:
+              - link "航空券" [ref=e54] [cursor=pointer]:
+                - /url: /airticket/?ccnt=global_navi
+            - listitem [ref=e55]:
+              - link "ゴルフ" [ref=e56] [cursor=pointer]:
+                - /url: https://golf-jalan.net/?vos=cpjgfprocap0121113001
+            - listitem [ref=e57]:
+              - link "海外 航空券" [ref=e58] [cursor=pointer]:
+                - /url: /kaigai/air/?ccnt=global_navi
+                - text: 海外
+                - generic [ref=e59]: 航空券
+            - listitem [ref=e60]:
+              - link "海外 航空券+ホテル" [ref=e61] [cursor=pointer]:
+                - /url: /kaigai/air_hotel/?ccnt=global_navi
+                - text: 海外
+                - generic [ref=e62]: 航空券+ホテル
+    - generic [ref=e65]:
+      - paragraph [ref=e66]: 宿・ホテル
+      - list [ref=e67]:
+        - listitem [ref=e68]:
+          - link "出張ビジネス" [ref=e69] [cursor=pointer]:
+            - /url: /biz/?ccnt=global_navi
+        - listitem [ref=e70]:
+          - link "温泉・露天" [ref=e71] [cursor=pointer]:
+            - /url: /onsen/?ccnt=global_navi
+        - listitem [ref=e72]:
+          - link "高級宿" [ref=e73] [cursor=pointer]:
+            - /url: /highclass/?ccnt=global_navi
+        - listitem [ref=e74]:
+          - link "日帰り・デイユース" [ref=e75] [cursor=pointer]:
+            - /url: /dayuse/?ccnt=global_navi
+    - list [ref=e78]:
+      - listitem [ref=e79]:
+        - link "ポイントがたまる・つかえる dポイント Pontaポイント" [ref=e80] [cursor=pointer]:
+          - /url: https://point.recruit.co.jp/member/relExpCont?siteCd=JLN
+          - text: ポイントがたまる・つかえる
+          - img "dポイント" [ref=e81]
+          - img "Pontaポイント" [ref=e82]
+  - generic [ref=e83]:
+    - generic [ref=e86]:
+      - link "ホテル予約" [ref=e87] [cursor=pointer]:
+        - /url: //www.jalan.net/
+      - text: ">"
+      - link "神奈川県のホテル・宿泊" [ref=e88] [cursor=pointer]:
+        - /url: https://www.jalan.net/ikisaki/map/kanagawa/?screenId=UWW3201&stayYearBkup=2026&stayMonthBkup=08&stayDayBkup=05&stayCountBkup=1&roomCountBkup=1&adultNumBkup=2&roomCrack=200000&roomCrackBkup=200000&stayYear=2026&stayMonth=8&stayDay=5&stayCount=1&roomCount=1&adultNum=2
+      - text: ">"
+      - link "横浜のホテル・宿泊" [ref=e89] [cursor=pointer]:
+        - /url: https://www.jalan.net/140000/LRG_140200/?screenId=UWW3201&roomTypeCd=0597317&stayYearBkup=2026&stayMonthBkup=08&stayDayBkup=05&stayCountBkup=1&roomCountBkup=1&adultNumBkup=2&roomCrack=200000&roomCrackBkup=200000&stayYear=2026&stayMonth=8&stayDay=5&stayCount=1&roomCount=1&adultNum=2&distCd=01
+      - text: ">"
+      - link "横浜・ベイエリアのホテル・宿泊" [ref=e90] [cursor=pointer]:
+        - /url: https://www.jalan.net/140000/LRG_140200/SML_140202/?screenId=UWW3201&smlCd=140202&roomTypeCd=0597317&stayYearBkup=2026&stayMonthBkup=08&stayDayBkup=05&stayCountBkup=1&roomCountBkup=1&adultNumBkup=2&roomCrack=200000&roomCrackBkup=200000&stayYear=2026&stayMonth=8&stayDay=5&stayCount=1&roomCount=1&adultNum=2&distCd=01
+      - text: ">"
+      - link "ＯＭＯ７横浜 ｂｙ 星野リゾート" [ref=e91] [cursor=pointer]:
+        - /url: https://www.jalan.net/yad341758/?screenId=UWW3201&planCd=04176578&roomTypeCd=0597317&stayYearBkup=2026&stayMonthBkup=08&stayDayBkup=05&stayCountBkup=1&roomCountBkup=1&adultNumBkup=2&browserBack=1&roomCrack=200000&roomCrackBkup=200000&stayYear=2026&stayMonth=8&stayDay=5&stayCount=1&roomCount=1&adultNum=2
+      - text: ">"
+      - heading "ＯＭＯ７横浜 ｂｙ 星野リゾート プラン詳細" [level=1] [ref=e92]
+    - generic [ref=e93]:
+      - generic [ref=e95]:
+        - generic [ref=e97]:
+          - generic [ref=e98]:
+            - link "ＯＭＯ７横浜 ｂｙ 星野リゾート" [ref=e99] [cursor=pointer]:
+              - /url: javascript:staticChangeTab('1', 'form','', '', '', '', '','341758');
+            - generic [ref=e100]:
+              - paragraph [ref=e102]: JR根岸線「関内」駅徒歩1分、横浜市営地下鉄ブルーライン「関内」駅徒歩1分、
+              - list [ref=e103]:
+                - listitem [ref=e104]: ハイクラス
+                - listitem
+                - listitem
+              - paragraph
+          - list [ref=e106]:
+            - listitem [ref=e107]:
+              - generic [ref=e108] [cursor=pointer]: クリップする
+        - table [ref=e110]:
+          - rowgroup [ref=e111]:
+            - row "宿泊プラン" [ref=e112]:
+              - columnheader "宿泊プラン" [ref=e113]:
+                - heading "宿泊プラン" [level=1] [ref=e114]
+            - row "ＯＭＯ７横浜 ｂｙ 星野リゾートの基本情報｜ 料金・宿泊プラン一覧 | クチコミ | MAP" [ref=e115]:
+              - cell "ＯＭＯ７横浜 ｂｙ 星野リゾートの基本情報｜ 料金・宿泊プラン一覧 | クチコミ | MAP" [ref=e116]:
+                - link "ＯＭＯ７横浜 ｂｙ 星野リゾートの基本情報" [ref=e117] [cursor=pointer]:
+                  - /url: javascript:onClickBasicAccessBtn2()
+                - text: ｜
+                - link "料金・宿泊プラン一覧" [ref=e118] [cursor=pointer]:
+                  - /url: javascript:onClickChargeStayBtn()
+                - text: "|"
+                - link "クチコミ" [ref=e119] [cursor=pointer]:
+                  - /url: javascript:onKuchikomi();
+                - text: "|"
+                - link "MAP" [ref=e120] [cursor=pointer]:
+                  - /url: javascript:onMapAccess();
+        - generic [ref=e121]:
+          - generic [ref=e122]:
+            - paragraph [ref=e123]: おもたび。（朝食：OMOベーカリー セット付)
+            - list [ref=e124]:
+              - listitem [ref=e125]: ポイント2%
+              - listitem [ref=e126]: オンラインカード決済可
+          - generic [ref=e127]:
+            - generic [ref=e128]:
+              - img [ref=e130]
+              - generic [ref=e131]:
+                - img [ref=e133]
+                - img [ref=e135]
+                - img [ref=e137]
+                - img [ref=e139]
+                - img [ref=e141]
+                - img [ref=e143]
+              - link "プランの写真をみる" [ref=e145] [cursor=pointer]:
+                - /url: "#plan-DetailInfo-photoLink"
+            - generic [ref=e146]:
+              - generic [ref=e147]:
+                - paragraph [ref=e149]:
+                  - emphasis [ref=e150]: "2026"
+                  - text: 年
+                  - emphasis [ref=e151]: "8"
+                  - text: 月
+                  - emphasis [ref=e152]: "5"
+                  - text: 日（水）から
+                  - emphasis [ref=e153]: "1"
+                  - text: 泊
+                  - emphasis [ref=e154]: "1"
+                  - text: 部屋 大人
+                  - emphasis [ref=e155]: "2"
+                  - text: 名
+                - generic [ref=e156]:
+                  - generic [ref=e157]:
+                    - term [ref=e158]: 食事：
+                    - definition [ref=e159]:
+                      - list [ref=e160]:
+                        - listitem [ref=e161]: 朝のみ
+                  - generic [ref=e162]:
+                    - term [ref=e163]: 部屋：
+                    - definition [ref=e164]:
+                      - list [ref=e165]:
+                        - listitem [ref=e166]: ツイン
+                        - listitem [ref=e167]: 禁煙ルーム
+                - generic [ref=e168]:
+                  - generic [ref=e169]:
+                    - term [ref=e170]: チェックイン：
+                    - definition [ref=e171]: 15:00～24:00
+                  - generic [ref=e172]:
+                    - term [ref=e173]: チェックアウト：
+                    - definition [ref=e174]: ～11:00
+                - paragraph
+                - generic [ref=e175]:
+                  - text: キャンセル規定
+                  - generic [ref=e178] [cursor=pointer]:  
+              - generic [ref=e179]:
+                - generic [ref=e180]:
+                  - paragraph [ref=e181]:
+                    - text: クーポン利用で
+                    - generic [ref=e182]: 2,500円
+                    - text: お得
+                    - link "クーポンGET" [ref=e183] [cursor=pointer]:
+                      - /url: javascript:void(0)
+                  - paragraph [ref=e184]:
+                    - text: 宿泊料金
+                    - emphasis [ref=e185]: 46,600円
+                    - text: (税込・サービス料込)
+                  - paragraph [ref=e186]:
+                    - emphasis [ref=e187]: "932"
+                    - text: ポイントたまる
+                  - paragraph [ref=e188]:
+                    - emphasis [ref=e189]: 46,600
+                    - text: スコアたまる
+                - generic [ref=e192]:
+                  - paragraph [ref=e193]:
+                    - link "予約へ進む" [ref=e194] [cursor=pointer]:
+                      - /url: JavaScript:onLogin('2026', '08', '05', '46600','932','','46600', 'Up','0')
+                  - generic [ref=e195]:
+                    - paragraph [ref=e196]:
+                      - strong [ref=e197]: キャンセル料無料
+                    - paragraph [ref=e198]: （2026年7月14日まで）
+              - list [ref=e200]:
+                - listitem [ref=e201]:
+                  - text: 昨日この宿を
+                  - emphasis [ref=e203]: "64"
+                  - text: 名が予約しました
+                - listitem [ref=e204]:
+                  - emphasis [ref=e206]: "1"
+                  - text: 名がこのプランを探しています
+        - list [ref=e208]:
+          - listitem [ref=e209]:
+            - link "他の部屋をみる" [ref=e210] [cursor=pointer]:
+              - /url: "#jsi-otherPlanOrOtherAnchor--room"
+          - listitem [ref=e211]:
+            - link "他のプランをみる" [ref=e212] [cursor=pointer]:
+              - /url: "#jsi-otherPlanOrOtherAnchor--plan"
+        - generic [ref=e214]:
+          - generic [ref=e215]:
+            - heading "部屋タイプ" [level=2] [ref=e216]
+            - generic [ref=e217]:
+              - paragraph [ref=e218]:
+                - generic [ref=e219]: ツイン
+              - paragraph [ref=e220]: かたりばルーム
+            - list [ref=e221]:
+              - listitem [ref=e222]: 部屋でインターネットOK
+              - listitem [ref=e223]: 禁煙ルーム
+            - list [ref=e225]:
+              - button "Previous" [ref=e226] [cursor=pointer]
+              - generic [ref=e228]:
+                - listitem [ref=e229]:
+                  - paragraph [ref=e231]: トイレ
+                - listitem [ref=e232]:
+                  - paragraph [ref=e234]: 洗面台
+                - listitem [ref=e235]:
+                  - paragraph [ref=e237]: 滞在案内
+                - listitem [ref=e238]:
+                  - paragraph [ref=e240]: かたりばルーム：おこもりスペースとゆったり寛げるソファを備えた上質なお部屋。2名でもグループでも快適
+                - listitem [ref=e241]:
+                  - paragraph [ref=e243]: かたりばルーム
+                - listitem [ref=e244]:
+                  - paragraph [ref=e246]: かたりばルーム
+                - listitem [ref=e247]:
+                  - paragraph [ref=e249]: かたりばルーム
+                - listitem [ref=e250]:
+                  - paragraph [ref=e252]: かたりばルーム
+                - listitem [ref=e253]:
+                  - paragraph [ref=e255]: かたりばルーム
+                - listitem [ref=e256]:
+                  - paragraph [ref=e258]: かたりばルーム
+                - listitem [ref=e259]:
+                  - paragraph [ref=e261]: かたりばルーム
+                - listitem [ref=e262]:
+                  - paragraph [ref=e264]: トイレ
+                - listitem [ref=e265]:
+                  - paragraph [ref=e267]: 洗面台
+                - listitem [ref=e268]:
+                  - paragraph [ref=e270]: 滞在案内
+                - listitem [ref=e271]:
+                  - paragraph [ref=e273]: かたりばルーム：おこもりスペースとゆったり寛げるソファを備えた上質なお部屋。2名でもグループでも快適
+                - listitem [ref=e274]:
+                  - paragraph [ref=e276]: かたりばルーム
+                - listitem [ref=e277]:
+                  - paragraph [ref=e279]: かたりばルーム
+                - listitem [ref=e280]:
+                  - paragraph [ref=e282]: かたりばルーム
+                - listitem [ref=e283]:
+                  - paragraph [ref=e285]: かたりばルーム
+                - listitem [ref=e286]:
+                  - paragraph [ref=e288]: かたりばルーム
+                - listitem [ref=e289]:
+                  - paragraph [ref=e291]: かたりばルーム
+                - listitem [ref=e292]:
+                  - paragraph [ref=e294]: かたりばルーム
+                - listitem [ref=e295]:
+                  - paragraph [ref=e297]: トイレ
+                - listitem [ref=e298]:
+                  - paragraph [ref=e300]: 洗面台
+                - listitem [ref=e301]:
+                  - paragraph [ref=e303]: 滞在案内
+              - button "Next" [ref=e304] [cursor=pointer]
+            - paragraph [ref=e305]:
+              - text: ホテルゲストの居心地の良さを追求し、中央のおこもりスペースとゆったりと寛げるソファを備えた上質なお部屋です。
+              - text: お二人で広々と贅沢に過ごすのはもちろん、グループでテーブルを囲み語らいながら楽しむのもおすすめです。
+              - text: ＊3名～4名利用の際はソファベッドをご利用いただけます。
+              - text: 広さ：41-55m&#178;
+          - heading "プラン内容" [level=2] [ref=e306]
+          - list [ref=e308]:
+            - button "Previous" [ref=e309] [cursor=pointer]
+            - generic [ref=e311]:
+              - listitem [ref=e312]:
+                - paragraph [ref=e314]: HAMAKAZEテラス
+              - listitem [ref=e315]:
+                - paragraph [ref=e317]: 【気分上々、ハマナイト】屋上でジャズや様々な音楽を楽しみ、心地よいフェス気分を満喫できるイベント
+              - listitem [ref=e318]:
+                - paragraph [ref=e320]: ライブラリーラウンジ
+              - listitem [ref=e321]:
+                - paragraph [ref=e323]: 【朝食】10種類のパンから2種類選べるベーカリーセット
+              - listitem [ref=e324]:
+                - paragraph [ref=e326]: OMOベーカリー：焼きたてを味わえるオールデイスタイル。夜はパンをおつまみにお酒を合わせるパン飲みも。
+              - listitem [ref=e327]:
+                - paragraph [ref=e329]: 【朝食】OMOベーカリー
+              - listitem [ref=e330]:
+                - paragraph [ref=e332]: OMOベース：村野藤吾建築である旧横浜市庁舎を活かしたレガシーホテルを体感できます。
+              - listitem [ref=e333]:
+                - paragraph [ref=e335]: HAMAKAZEテラス
+              - listitem [ref=e336]:
+                - paragraph [ref=e338]: 【気分上々、ハマナイト】屋上でジャズや様々な音楽を楽しみ、心地よいフェス気分を満喫できるイベント
+              - listitem [ref=e339]:
+                - paragraph [ref=e341]: ライブラリーラウンジ
+              - listitem [ref=e342]:
+                - paragraph [ref=e344]: 【朝食】10種類のパンから2種類選べるベーカリーセット
+              - listitem [ref=e345]:
+                - paragraph [ref=e347]: OMOベーカリー：焼きたてを味わえるオールデイスタイル。夜はパンをおつまみにお酒を合わせるパン飲みも。
+              - listitem [ref=e348]:
+                - paragraph [ref=e350]: 【朝食】OMOベーカリー
+              - listitem [ref=e351]:
+                - paragraph [ref=e353]: OMOベース：村野藤吾建築である旧横浜市庁舎を活かしたレガシーホテルを体感できます。
+              - listitem [ref=e354]:
+                - paragraph [ref=e356]: HAMAKAZEテラス
+              - listitem [ref=e357]:
+                - paragraph [ref=e359]: 【気分上々、ハマナイト】屋上でジャズや様々な音楽を楽しみ、心地よいフェス気分を満喫できるイベント
+              - listitem [ref=e360]:
+                - paragraph [ref=e362]: ライブラリーラウンジ
+            - button "Next" [ref=e363] [cursor=pointer]
+          - paragraph [ref=e364]:
+            - text: OMOベーカリーでの朝食セット付きのプランです。
+            - text: ◆...プラン内容...◆
+            - text: 1泊朝食付き
+            - text: ・2階OMOベーカリー(7:00～9:30)にて全10種類のパンからお好きな2種類を選べるセットメニューをご用意。
+            - text: ・セット内容
+            - text: "-10種類から選べるパン２品"
+            - text: "-デリ２品"
+            - text: "-スープ"
+            - text: "-ドリンク"
+            - text: ◆…アクセス…◆
+            - text: JR「関内」駅南口より、徒歩1分
+            - text: 横浜市営地下鉄ブルーライン「関内」駅1番出口より、徒歩約1分
+            - text: 横浜高速鉄道みなとみらい線「日本大通り」駅より、徒歩7分
+            - text: ◆…Wi-Fi…◆
+            - text: 共用エリア（無料）
+            - text: ◆…館内のご案内…◆
+            - text: OMOベース（フロント、ラウンジ、ショップ、オールデイベーカリー「OMOベーカリー」、レストラン「OMOダイニング」、ライブラリー）、HAMAKAZEテラス（ルーフトップテラス）
+            - text: ◆…設備・アメニティ…◆
+            - text: ソファ、TV、加湿空気清浄機、パジャマ、冷蔵庫、電気ケトル、グラス、マグカップ、歯ブラシ、ヘアブラシ、ボディタオル、綿棒 、コットン、カミソリ、バスアメニティ、タオル、ドライヤー、ハンガー、金庫、緑茶
+            - text: ◆…こども添い寝…◆
+            - text: 6歳まで、1部屋あたりの定員と同数まで可。
+        - generic [ref=e365]:
+          - heading "料金" [level=2] [ref=e366]
+          - generic [ref=e371]:
+            - generic [ref=e372]:
+              - generic [ref=e373]: 宿泊日
+              - paragraph [ref=e374] [cursor=pointer]:
+                - generic [ref=e375]: "2026"
+              - generic [ref=e376]: 年
+              - paragraph [ref=e377] [cursor=pointer]:
+                - generic [ref=e378]: "8"
+              - generic [ref=e379]: 月
+              - paragraph [ref=e380] [cursor=pointer]:
+                - generic [ref=e381]: "5"
+              - generic [ref=e382]: 日
+            - paragraph [ref=e384]:
+              - combobox [ref=e386] [cursor=pointer]:
+                - option "1" [selected]
+                - option "2"
+                - option "3"
+                - option "4"
+                - option "5"
+                - option "6"
+                - option "7"
+                - option "8"
+                - option "9"
+              - generic [ref=e387]: 泊
+            - paragraph [ref=e389]:
+              - generic [ref=e390]: 部屋数・人数
+              - combobox [ref=e392] [cursor=pointer]:
+                - option "1" [selected]
+                - option "2"
+                - option "3"
+                - option "4"
+                - option "5"
+                - option "6"
+                - option "7"
+                - option "8"
+                - option "9"
+                - option "10"
+              - generic [ref=e393]: 部屋
+            - generic [ref=e394]:
+              - generic [ref=e395]: 大人
+              - paragraph [ref=e396]:
+                - combobox [ref=e398] [cursor=pointer]:
+                  - option "1"
+                  - option "2" [selected]
+                  - option "3"
+                  - option "4"
+                  - option "5"
+                  - option "6"
+                  - option "7"
+                  - option "8"
+                  - option "9～"
+                - generic [ref=e399]: 名
+              - generic [ref=e400]: 子供
+              - paragraph [ref=e401]:
+                - link "0名" [ref=e402] [cursor=pointer]:
+                  - /url: javascript:void(0);
+            - link "料金再表示" [ref=e404] [cursor=pointer]:
+              - /url: javaScript:onPricePage('')
+          - generic [ref=e405]:
+            - generic [ref=e407]: 2026年8月5日残室数： 10部屋以上
+            - list [ref=e410]:
+              - listitem [ref=e411]:
+                - link "他の日の残室・料金" [ref=e412] [cursor=pointer]:
+                  - /url: JavaScript:onNoDatePage('2026','08')
+              - listitem [ref=e413]:
+                - link "他の部屋" [ref=e414] [cursor=pointer]:
+                  - /url: "#jsi-otherPlanOrOtherAnchor--room"
+              - listitem [ref=e415]:
+                - link "他のプラン" [ref=e416] [cursor=pointer]:
+                  - /url: "#jsi-otherPlanOrOtherAnchor--plan"
+          - generic [ref=e417]:
+            - generic [ref=e418]:
+              - heading "支払料金" [level=3] [ref=e419]
+              - link " 料金について" [ref=e420] [cursor=pointer]:
+                - /url: javascript:void(0)
+                - generic [ref=e421]: 
+                - text: 料金について
+            - generic [ref=e422]:
+              - generic [ref=e423]:
+                - text: 宿泊料金 46,600円 (税込・サービス料込)
+                - paragraph [ref=e424]:
+                  - text: クーポン利用で
+                  - generic [ref=e425]: 2,500円
+                  - text: お得！
+                  - link "クーポンGET！" [ref=e426] [cursor=pointer]:
+                    - /url: javascript:void(0)
+              - generic [ref=e427]:
+                - link "予約へ進む" [ref=e428] [cursor=pointer]:
+                  - /url: JavaScript:onLogin('2026', '08', '05', '46600','932','','46600', 'Low','0')
+                  - generic [ref=e429]: 予約へ進む
+                - paragraph [ref=e431]:
+                  - strong [ref=e432]: キャンセル料無料（2026年7月14日まで）
+            - list [ref=e434]:
+              - listitem [ref=e435]:
+                - text: 昨日この宿を
+                - emphasis [ref=e437]: "64"
+                - text: 名が予約しました
+              - listitem [ref=e438]:
+                - emphasis [ref=e440]: "1"
+                - text: 名がこのプランを探しています
+            - generic [ref=e441]:
+              - paragraph [ref=e442]:
+                - emphasis [ref=e443]: "932"
+                - text: ポイントたまる
+              - paragraph [ref=e444]:
+                - emphasis [ref=e445]: 46,600
+                - text: スコアたまる
+            - heading "料金明細" [level=3] [ref=e448]
+            - table [ref=e449]:
+              - rowgroup [ref=e450]:
+                - row "1泊目 1部屋目 ： 23,300円 （大人） × 2名 小計 ： 46,600円" [ref=e451]:
+                  - rowheader "1泊目" [ref=e452]
+                  - cell "1部屋目 ： 23,300円 （大人） × 2名 小計 ： 46,600円" [ref=e453]:
+                    - paragraph [ref=e454]:
+                      - generic [ref=e455]: 1部屋目
+                      - generic [ref=e456]: ：
+                      - generic [ref=e457]: 23,300円
+                      - generic [ref=e458]: （大人）
+                      - generic [ref=e459]: × 2名
+                    - paragraph [ref=e460]:
+                      - generic [ref=e461]: 小計
+                      - generic [ref=e462]: ：
+                      - generic [ref=e463]: 46,600円
+            - heading "料金特記" [level=3] [ref=e464]
+            - paragraph [ref=e465]: なし
+            - generic [ref=e466]:
+              - heading "支払方法" [level=3] [ref=e467]
+              - link " オンラインカード決済とは" [ref=e468] [cursor=pointer]:
+                - /url: javascript:void(0)
+                - generic [ref=e469]: 
+                - text: オンラインカード決済とは
+            - paragraph [ref=e470]: 現地決済 / オンラインカード決済
+            - paragraph [ref=e471]: 予約受付は宿泊当日の23時45分まで
+          - generic [ref=e472]:
+            - generic [ref=e473]:
+              - generic [ref=e474]:
+                - heading "予約金" [level=3] [ref=e475]
+                - link " 予約金について" [ref=e476] [cursor=pointer]:
+                  - /url: javascript:void(0)
+                  - generic [ref=e477]: 
+                  - text: 予約金について
+              - table [ref=e478]:
+                - rowgroup [ref=e479]:
+                  - row "予約金 不要" [ref=e480]:
+                    - cell "予約金" [ref=e481]
+                    - cell "不要" [ref=e482]
+            - generic [ref=e483]:
+              - generic [ref=e484]:
+                - heading "キャンセル規定" [level=3] [ref=e485]
+                - link " キャンセルについて" [ref=e486] [cursor=pointer]:
+                  - /url: javascript:void(0)
+                  - generic [ref=e487]: 
+                  - text: キャンセルについて
+              - paragraph [ref=e488]: 一人当たりの料金（ルームチャージはルームあたり）
+              - table [ref=e489]:
+                - rowgroup [ref=e490]:
+                  - row "21日～4日前 宿泊料金の10%" [ref=e491]:
+                    - cell "21日～4日前" [ref=e492]
+                    - cell "宿泊料金の10%" [ref=e493]
+                  - row "3日～1日前 宿泊料金の100%" [ref=e494]:
+                    - cell "3日～1日前" [ref=e495]
+                    - cell "宿泊料金の100%" [ref=e496]
+                  - row "当日 宿泊料金の100%" [ref=e497]:
+                    - cell "当日" [ref=e498]
+                    - cell "宿泊料金の100%" [ref=e499]
+                  - row "無連絡キャンセル 宿泊料金の100%" [ref=e500]:
+                    - cell "無連絡キャンセル" [ref=e501]
+                    - cell "宿泊料金の100%" [ref=e502]
+              - paragraph
+        - paragraph [ref=e505]:
+          - link "ＯＭＯ７横浜 ｂｙ 星野リゾートの基本情報" [ref=e506] [cursor=pointer]:
+            - /url: javascript:onClickBasicAccessBtn2()
+        - generic [ref=e507]:
+          - generic [ref=e508]:
+            - generic [ref=e510]:
+              - paragraph [ref=e511]: 少しの料金アップで、さらに充実したプランに!
+              - paragraph
+              - table [ref=e513]:
+                - rowgroup [ref=e514]:
+                  - row "【朝食】10種類のパンから2種類選べるベーカリーセット ＋8,000円で今のプランでこんなお部屋に宿泊できます" [ref=e515]:
+                    - cell "【朝食】10種類のパンから2種類選べるベーカリーセット" [ref=e516]:
+                      - link "【朝食】10種類のパンから2種類選べるベーカリーセット" [ref=e517] [cursor=pointer]:
+                        - /url: javascript:onRecommendPlan('04176578', '0597319', 'D', '', '0');
+                        - img "【朝食】10種類のパンから2種類選べるベーカリーセット" [ref=e518]
+                    - cell "＋8,000円で今のプランでこんなお部屋に宿泊できます" [ref=e519]
+                  - row "おもたび。（朝食：OMOベーカリー セット付)" [ref=e520]:
+                    - cell "おもたび。（朝食：OMOベーカリー セット付)" [ref=e521]
+                  - row "やぐらスイート" [ref=e522]:
+                    - cell "やぐらスイート" [ref=e523]:
+                      - link "やぐらスイート" [ref=e524] [cursor=pointer]:
+                        - /url: javascript:onRecommendPlan('04176578', '0597319', 'D', '', '0');
+                  - row "食事： 朝のみ 部屋： 4ベッド" [ref=e525]:
+                    - cell "食事： 朝のみ 部屋： 4ベッド" [ref=e526]:
+                      - paragraph [ref=e527]:
+                        - generic [ref=e528]:
+                          - text: 食事：
+                          - generic [ref=e529]: 朝のみ
+                        - generic [ref=e530]:
+                          - text: 部屋：
+                          - generic [ref=e531]: 4ベッド
+                  - row "1泊 大人2名 合計(税込) 54,600円 1名 27,300円 このプランをみる" [ref=e532]:
+                    - cell "1泊 大人2名 合計(税込) 54,600円 1名 27,300円" [ref=e533]:
+                      - paragraph [ref=e534]:
+                        - text: 1泊 大人2名 合計(税込)
+                        - generic [ref=e535]: 54,600円
+                      - paragraph [ref=e536]: 1名 27,300円
+                    - cell "このプランをみる" [ref=e537]:
+                      - link "このプランをみる" [ref=e538] [cursor=pointer]:
+                        - /url: JavaScript:onRecommendPlan('04176578', '0597319', 'D' , '' , '0')
+              - table [ref=e540]:
+                - rowgroup [ref=e541]:
+                  - row "朝食ビュッフェ「Yokohama Morning Specialties」素材選びから調理・提供方法まで徹底的にこだわっています ＋1,850円で今のお部屋で他にこんなプランもございます" [ref=e542]:
+                    - cell "朝食ビュッフェ「Yokohama Morning Specialties」素材選びから調理・提供方法まで徹底的にこだわっています" [ref=e543]:
+                      - link "朝食ビュッフェ「Yokohama Morning Specialties」素材選びから調理・提供方法まで徹底的にこだわっています" [ref=e544] [cursor=pointer]:
+                        - /url: javascript:onRecommendPlan('04194780', '0597317', 'E', '', '0');
+                        - img "朝食ビュッフェ「Yokohama Morning Specialties」素材選びから調理・提供方法まで徹底的にこだわっています" [ref=e545]
+                    - cell "＋1,850円で今のお部屋で他にこんなプランもございます" [ref=e546]
+                  - row "【じゃらんのお得な10日間】おもたび。（朝食：OMOダイニング ビュッフェ付）" [ref=e547]:
+                    - cell "【じゃらんのお得な10日間】おもたび。（朝食：OMOダイニング ビュッフェ付）" [ref=e548]:
+                      - link "【じゃらんのお得な10日間】おもたび。（朝食：OMOダイニング ビュッフェ付）" [ref=e549] [cursor=pointer]:
+                        - /url: javascript:onRecommendPlan('04194780', '0597317', 'E', '', '0');
+                  - row "かたりばルーム" [ref=e550]:
+                    - cell "かたりばルーム" [ref=e551]
+                  - row "食事： 朝のみ 部屋： ツイン" [ref=e552]:
+                    - cell "食事： 朝のみ 部屋： ツイン" [ref=e553]:
+                      - paragraph [ref=e554]:
+                        - generic [ref=e555]:
+                          - text: 食事：
+                          - generic [ref=e556]: 朝のみ
+                        - generic [ref=e557]:
+                          - text: 部屋：
+                          - generic [ref=e558]: ツイン
+                  - row "1泊 大人2名 合計(税込) 48,450円 1名 24,225円 このプランをみる" [ref=e559]:
+                    - cell "1泊 大人2名 合計(税込) 48,450円 1名 24,225円" [ref=e560]:
+                      - paragraph [ref=e561]:
+                        - text: 1泊 大人2名 合計(税込)
+                        - generic [ref=e562]: 48,450円
+                      - paragraph [ref=e563]: 1名 24,225円
+                    - cell "このプランをみる" [ref=e564]:
+                      - link "このプランをみる" [ref=e565] [cursor=pointer]:
+                        - /url: JavaScript:onRecommendPlan('04194780', '0597317', 'E' , '' , '0')
+              - table [ref=e567]:
+                - rowgroup [ref=e568]:
+                  - row "HAMAKAZEテラス：浜風を感じるルーフトップテラスでは、横浜・関内の街を見渡し、のんびり寛げる特別な空間 ＋1,850円で他にこんなプランに宿泊できます" [ref=e569]:
+                    - cell "HAMAKAZEテラス：浜風を感じるルーフトップテラスでは、横浜・関内の街を見渡し、のんびり寛げる特別な空間" [ref=e570]:
+                      - link "HAMAKAZEテラス：浜風を感じるルーフトップテラスでは、横浜・関内の街を見渡し、のんびり寛げる特別な空間" [ref=e571] [cursor=pointer]:
+                        - /url: javascript:onRecommendPlan('04194779', '0597319', 'F', '', '0');
+                        - img "HAMAKAZEテラス：浜風を感じるルーフトップテラスでは、横浜・関内の街を見渡し、のんびり寛げる特別な空間" [ref=e572]
+                    - cell "＋1,850円で他にこんなプランに宿泊できます" [ref=e573]
+                  - row "【じゃらんのお得な10日間】おもたび。（食事なし）～JR関内駅 街ナカホテル～" [ref=e574]:
+                    - cell "【じゃらんのお得な10日間】おもたび。（食事なし）～JR関内駅 街ナカホテル～" [ref=e575]:
+                      - link "【じゃらんのお得な10日間】おもたび。（食事なし）～JR関内駅 街ナカホテル～" [ref=e576] [cursor=pointer]:
+                        - /url: javascript:onRecommendPlan('04194779', '0597319', 'F', '', '0');
+                  - row "やぐらスイート" [ref=e577]:
+                    - cell "やぐらスイート" [ref=e578]:
+                      - link "やぐらスイート" [ref=e579] [cursor=pointer]:
+                        - /url: javascript:onRecommendPlan('04194779', '0597319', 'F', '', '0');
+                  - row "食事： 食事なし 部屋： 4ベッド" [ref=e580]:
+                    - cell "食事： 食事なし 部屋： 4ベッド" [ref=e581]:
+                      - paragraph [ref=e582]:
+                        - generic [ref=e583]:
+                          - text: 食事：
+                          - generic [ref=e584]: 食事なし
+                        - generic [ref=e585]:
+                          - text: 部屋：
+                          - generic [ref=e586]: 4ベッド
+                  - row "1泊 大人2名 合計(税込) 48,450円 1名 24,225円 このプランをみる" [ref=e587]:
+                    - cell "1泊 大人2名 合計(税込) 48,450円 1名 24,225円" [ref=e588]:
+                      - paragraph [ref=e589]:
+                        - text: 1泊 大人2名 合計(税込)
+                        - generic [ref=e590]: 48,450円
+                      - paragraph [ref=e591]: 1名 24,225円
+                    - cell "このプランをみる" [ref=e592]:
+                      - link "このプランをみる" [ref=e593] [cursor=pointer]:
+                        - /url: JavaScript:onRecommendPlan('04194779', '0597319', 'F' , '' , '0')
+            - paragraph [ref=e594]: ※差額は合計金額(税込)で計算しています
+          - generic [ref=e595]:
+            - heading "同じプランの他の部屋タイプ" [level=2] [ref=e596]
+            - generic [ref=e597]:
+              - paragraph [ref=e598]: 現在のプラン
+              - generic [ref=e599]:
+                - img "【朝食】10種類のパンから2種類選べるベーカリーセット" [ref=e601]
+                - generic [ref=e602]:
+                  - generic [ref=e603]:
+                    - paragraph [ref=e604]: おもたび。（朝食：OMOベーカリー セット付)
+                    - paragraph [ref=e605]:
+                      - generic [ref=e606]: 朝のみ
+                  - table [ref=e607]:
+                    - rowgroup [ref=e608]:
+                      - row "部屋タイプ 大人1名(税込) 合計(税込) 1泊 大人2名" [ref=e609]:
+                        - columnheader "部屋タイプ" [ref=e610]
+                        - columnheader "大人1名(税込)" [ref=e611]
+                        - columnheader "合計(税込) 1泊 大人2名" [ref=e612]:
+                          - text: 合計(税込)
+                          - generic [ref=e613]: 1泊 大人2名
+                    - rowgroup [ref=e614]:
+                      - row "ダブルルーム ダブル 禁煙ルーム 15,300円 30,600円" [ref=e615]:
+                        - cell "ダブルルーム ダブル 禁煙ルーム" [ref=e616]:
+                          - paragraph [ref=e617]:
+                            - link "ダブルルーム" [ref=e618] [cursor=pointer]:
+                              - /url: JavaScript:onOhterPlan('04176578', '0597316', '')
+                          - list [ref=e619]:
+                            - listitem [ref=e620]: ダブル
+                            - listitem [ref=e621]: 禁煙ルーム
+                        - cell "15,300円" [ref=e622]
+                        - cell "30,600円" [ref=e623]
+                      - row "やぐらルーム ツイン 禁煙ルーム 16,300円 32,600円" [ref=e624]:
+                        - cell "やぐらルーム ツイン 禁煙ルーム" [ref=e625]:
+                          - paragraph [ref=e626]:
+                            - link "やぐらルーム" [ref=e627] [cursor=pointer]:
+                              - /url: JavaScript:onOhterPlan('04176578', '0597315', '')
+                          - list [ref=e628]:
+                            - listitem [ref=e629]: ツイン
+                            - listitem [ref=e630]: 禁煙ルーム
+                        - cell "16,300円" [ref=e631]
+                        - cell "32,600円" [ref=e632]
+                      - row "デラックスルーム（ユニバーサル仕様） ツイン 禁煙ルーム 21,300円 42,600円" [ref=e633]:
+                        - cell "デラックスルーム（ユニバーサル仕様） ツイン 禁煙ルーム" [ref=e634]:
+                          - paragraph [ref=e635]:
+                            - link "デラックスルーム（ユニバーサル仕様）" [ref=e636] [cursor=pointer]:
+                              - /url: JavaScript:onOhterPlan('04176578', '0597602', '')
+                          - list [ref=e637]:
+                            - listitem [ref=e638]: ツイン
+                            - listitem [ref=e639]: 禁煙ルーム
+                        - cell "21,300円" [ref=e640]
+                        - cell "42,600円" [ref=e641]
+          - generic [ref=e642]:
+            - heading "同じ部屋タイプの他のプラン" [level=2] [ref=e643]
+            - generic [ref=e644]:
+              - paragraph [ref=e645]:
+                - text: 現在の部屋タイプ
+                - generic [ref=e646]:
+                  - generic [ref=e647]: ツイン
+                  - generic [ref=e648]: 禁煙ルーム
+              - table [ref=e649]:
+                - rowgroup [ref=e650]:
+                  - row "宿泊プラン 大人1名(税込) 合計(税込) 1泊 大人2名" [ref=e651]:
+                    - columnheader "宿泊プラン" [ref=e652]
+                    - columnheader "大人1名(税込)" [ref=e653]
+                    - columnheader "合計(税込) 1泊 大人2名" [ref=e654]:
+                      - text: 合計(税込)
+                      - generic [ref=e655]: 1泊 大人2名
+                - rowgroup [ref=e656]:
+                  - row "【じゃらんのお得な10日間】おもたび。（食事なし）～JR関内駅 街ナカホテル～ 食事なし 20,425円 40,850円" [ref=e657]:
+                    - cell "【じゃらんのお得な10日間】おもたび。（食事なし）～JR関内駅 街ナカホテル～" [ref=e658]:
+                      - paragraph [ref=e659]:
+                        - link "【じゃらんのお得な10日間】おもたび。（食事なし）～JR関内駅 街ナカホテル～" [ref=e660] [cursor=pointer]:
+                          - /url: JavaScript:onOhterPlan('04194779', '0597317', '')
+                    - cell "食事なし" [ref=e661]:
+                      - generic [ref=e662]: 食事なし
+                    - cell "20,425円" [ref=e663]
+                    - cell "40,850円" [ref=e664]
+                  - row "【じゃらんのお得な10日間】おもたび。（朝食：OMOベーカリー セット付) 朝のみ 21,028円 42,056円" [ref=e665]:
+                    - cell "【じゃらんのお得な10日間】おもたび。（朝食：OMOベーカリー セット付)" [ref=e666]:
+                      - paragraph [ref=e667]:
+                        - link "【じゃらんのお得な10日間】おもたび。（朝食：OMOベーカリー セット付)" [ref=e668] [cursor=pointer]:
+                          - /url: JavaScript:onOhterPlan('04194781', '0597317', '')
+                    - cell "朝のみ" [ref=e669]:
+                      - generic [ref=e670]: 朝のみ
+                    - cell "21,028円" [ref=e671]
+                    - cell "42,056円" [ref=e672]
+                  - row "おもたび。（食事なし）～JR関内駅 街ナカホテル～ 食事なし 21,500円 43,000円" [ref=e673]:
+                    - cell "おもたび。（食事なし）～JR関内駅 街ナカホテル～" [ref=e674]:
+                      - paragraph [ref=e675]:
+                        - link "おもたび。（食事なし）～JR関内駅 街ナカホテル～" [ref=e676] [cursor=pointer]:
+                          - /url: JavaScript:onOhterPlan('04169212', '0597317', '')
+                    - cell "食事なし" [ref=e677]:
+                      - generic [ref=e678]: 食事なし
+                    - cell "21,500円" [ref=e679]
+                    - cell "43,000円" [ref=e680]
+                  - row "おもたび。（朝食：OMOダイニング ビュッフェ付) 朝のみ 25,500円 51,000円" [ref=e681]:
+                    - cell "おもたび。（朝食：OMOダイニング ビュッフェ付)" [ref=e682]:
+                      - paragraph [ref=e683]:
+                        - link "おもたび。（朝食：OMOダイニング ビュッフェ付)" [ref=e684] [cursor=pointer]:
+                          - /url: JavaScript:onOhterPlan('04176529', '0597317', '')
+                    - cell "朝のみ" [ref=e685]:
+                      - generic [ref=e686]: 朝のみ
+                    - cell "25,500円" [ref=e687]
+                    - cell "51,000円" [ref=e688]
+          - list [ref=e690]:
+            - listitem [ref=e691]:
+              - link "一覧ですべての宿泊プランをみる" [ref=e692] [cursor=pointer]:
+                - /url: "#nomove"
+        - generic [ref=e694]:
+          - link "ページの先頭に戻る" [ref=e696] [cursor=pointer]:
+            - /url: "#top"
+          - generic [ref=e697]: "[ホテル]ＯＭＯ７横浜 ｂｙ 星野リゾート じゃらんnet"
+      - generic [ref=e698]:
+        - generic [ref=e700]:
+          - generic [ref=e701]:
+            - paragraph [ref=e702]: クリップリスト
+            - heading "クリップした宿" [level=2] [ref=e703]:
+              - img "クリップした宿" [ref=e704]
+            - paragraph [ref=e705]:
+              - text: "0"
+              - img "軒" [ref=e706]
+            - paragraph [ref=e707]:
+              - link "クリップした宿とは？" [ref=e708] [cursor=pointer]:
+                - /url: javascript:void(0)
+          - heading "最近見た宿" [level=3] [ref=e709]:
+            - img "最近見た宿" [ref=e710]
+          - paragraph [ref=e711]:
+            - text: "1"
+            - img "軒あります" [ref=e712]
+          - list [ref=e713]:
+            - listitem [ref=e714]:
+              - link "ＯＭＯ７横浜 ｂｙ 星野リゾート" [ref=e715] [cursor=pointer]:
+                - /url: https://www.jalan.net/yad341758/?distCd=01&roomCount=1&stayMonth=08&roomCrack=200000&screenId=UWW3201&stayCount=1&adultNum=2&stayYear=2026&stayDay=05&yadNo=341758&jzoneFlg=1&ccnt=pc_recent_yado_jalanzone
+                - img "ＯＭＯ７横浜 ｂｙ 星野リゾート" [ref=e716]
+              - link "ＯＭＯ７横浜 ｂｙ 星野リゾート" [ref=e717] [cursor=pointer]:
+                - /url: https://www.jalan.net/yad341758/?distCd=01&roomCount=1&stayMonth=08&roomCrack=200000&screenId=UWW3201&stayCount=1&adultNum=2&stayYear=2026&stayDay=05&yadNo=341758&jzoneFlg=1&ccnt=pc_recent_yado_jalanzone
+          - paragraph [ref=e718]:
+            - link "最近見た宿一覧" [ref=e719] [cursor=pointer]:
+              - /url: javascript:toViewYad();
+        - iframe [ref=e721]:
+          - iframe [ref=f42e2]:
+            - link [ref=f43e2] [cursor=pointer]:
+              - /url: //s9.r-ad.ne.jp/r?__aga=342547237&__imp=Isjz6IOKZegG9St-EKXjZjbE0JkI8lijlPAl-E4O1UE.eHFw2xdfGJA.pf-FhjvYsRcyoOBtkEXjmSng8WIFSZUXky84pxt8DTw&f=754
+              - img [ref=f43e3]
+    - generic [ref=e724]:
+      - link "(C) Recruit Co., Ltd." [ref=e725] [cursor=pointer]:
+        - /url: https://www.recruit.co.jp/
+        - img "(C) Recruit Co., Ltd." [ref=e726]
+      - link "プライバシーポリシー" [ref=e727] [cursor=pointer]:
+        - /url: https://cdn.p.recruit.co.jp/terms/cmn-t-1001/index.html

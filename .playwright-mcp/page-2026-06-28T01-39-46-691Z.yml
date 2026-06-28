@@ -1,0 +1,893 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e4]:
+    - generic [ref=e5]:
+      - term [ref=e8] [cursor=pointer]:
+        - generic [ref=e9]: 
+        - generic [ref=e10]: お知らせ
+        - generic [ref=e12]: 
+        - button "" [ref=e13]:
+          - generic [ref=e14]: 
+      - generic [ref=e15]:
+        - button [ref=e17] [cursor=pointer]
+        - button "" [ref=e21] [cursor=pointer]:
+          - generic [ref=e23]: 
+        - link "星野リゾート" [ref=e24] [cursor=pointer]:
+          - /url: https://hoshinoresorts.com/jp/
+          - img "星野リゾート" [ref=e25]
+        - generic:
+          - generic:
+            - link "OMO7横浜 by 星野リゾート":
+              - /url: /ja/hotels/omo7yokohama/
+              - img "OMO7横浜 by 星野リゾート"
+        - generic [ref=e26]:
+          - generic [ref=e27]:
+            - generic [ref=e28]: 1泊1名
+            - generic [ref=e29]: 10,000円〜
+            - generic [ref=e30]:
+              - text: 6回あと払いで
+              - generic [ref=e31]: 1,667円
+              - text: /月〜
+          - link "空室検索 当サイトが最もお得" [ref=e32] [cursor=pointer]:
+            - /url: /ja/hotels/omo7yokohama/roomsearch/
+            - generic [ref=e33]:
+              - generic [ref=e34]: 空室検索
+              - generic [ref=e35]: 当サイトが最もお得
+          - link " ＋航空券" [ref=e36] [cursor=pointer]:
+            - /url: https://s.tour-list.com/TL/?hc=HC69089604
+            - generic [ref=e37]:
+              - generic [ref=e39]: 
+              - generic [ref=e40]: ＋航空券
+    - generic [ref=e41]:
+      - main [ref=e42]:
+        - generic [ref=e44]:
+          - generic [ref=e45]:
+            - heading "OMO7横浜 by 星野リゾート 2026年4月21日オープン" [level=1] [ref=e48]:
+              - img "OMO7横浜 by 星野リゾート" [ref=e49]
+              - generic [ref=e50]: 2026年4月21日オープン
+            - button " +155" [ref=e51] [cursor=pointer]:
+              - generic [ref=e52]:
+                - generic [ref=e53]: 
+                - generic [ref=e54]: "+155"
+          - generic [ref=e55]:
+            - generic [ref=e57]:
+              - generic [ref=e58]:
+                - generic [ref=e59]: 気分上々、
+                - generic [ref=e60]: ハマイズム
+              - paragraph [ref=e62]: 開放的な港町やクラシカルな街並み、異国情緒に満ちた横浜。文化と向き合い融合し、歴史と街を紡ぐ。それが横浜の本質、ハマイズムです。クラシックとモダンが融合したレガシーホテルで、浜風を感じるジャズセッションに身を委ねれば、まるでハマトラファッションを思わせるような、心まで華やぐひとときに浸れます。
+            - navigation [ref=e64]:
+              - list [ref=e65]:
+                - listitem [ref=e66]:
+                  - link "HOME" [ref=e67] [cursor=pointer]:
+                    - /url: /ja/hotels/omo7yokohama/
+                - listitem [ref=e68]:
+                  - link "過ごしかた" [ref=e69] [cursor=pointer]:
+                    - /url: /ja/hotels/omo7yokohama/todo/
+                - listitem [ref=e70]:
+                  - link "アクティビティ" [ref=e71] [cursor=pointer]:
+                    - /url: /ja/hotels/omo7yokohama/activities/
+                - listitem [ref=e72]:
+                  - link "食事" [ref=e73] [cursor=pointer]:
+                    - /url: /ja/hotels/omo7yokohama/dining/
+                - listitem [ref=e74]:
+                  - link "ゲストルーム" [ref=e75] [cursor=pointer]:
+                    - /url: /ja/hotels/omo7yokohama/#guestroom
+                - listitem [ref=e76]:
+                  - link "アクセス" [ref=e77] [cursor=pointer]:
+                    - /url: /ja/hotels/omo7yokohama/access/
+                - listitem [ref=e78]:
+                  - link "基本情報" [ref=e79] [cursor=pointer]:
+                    - /url: /ja/hotels/omo7yokohama/#ataglance
+            - generic [ref=e80]:
+              - generic [ref=e81]:
+                - heading "ここが OMOしろい！" [level=2] [ref=e82]:
+                  - generic [ref=e85]:
+                    - generic [ref=e86]: ここが
+                    - generic [ref=e87]: OMOしろい！
+                - generic [ref=e90]:
+                  - generic [ref=e91]:
+                    - generic [ref=e92]:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: 建築家 村野藤吾氏
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: OMOベース
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: ホテルロビー
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: 泰山タイルレリーフ
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: OMO7横浜 外観
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: ライブラリーラウンジ
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: OMOベース
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: OMOベーカリー
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: OMOベース
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: OMO7横浜 外観
+                    - generic [ref=e94]:
+                      - heading "1 3 唯一無二のレガシーホテル" [level=3] [ref=e95]:
+                        - generic [ref=e96]:
+                          - generic [ref=e97]: "1"
+                          - generic [ref=e99]: "3"
+                        - generic [ref=e100]: 唯一無二のレガシーホテル
+                      - generic [ref=e101]:
+                        - paragraph [ref=e104]: 名建築家「村野藤吾」氏が手掛けた、旧横浜市庁舎。市民に親しまれた意匠を再解釈して継承し、新たにホテルへと生まれかわります。多彩な色使いや優しく導かれるような曲線美。唯一無二の歴史的建造物で贅沢な滞在を。
+                        - link "レガシーホテルの詳細はこちら" [ref=e106] [cursor=pointer]:
+                          - /url: https://hoshinoresorts.com/ja/hotels/omo7yokohama/sp/legacy/
+                          - generic [ref=e107]: レガシーホテルの詳細はこちら
+                  - generic [ref=e108]:
+                    - generic [ref=e109]:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: BASEGATE横浜関内
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: THE LIVE
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: ワンダリア横浜
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: スタジアム横バル街
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: 有隣堂
+                    - generic [ref=e111]:
+                      - heading "2 3 BASEGATE横浜関内" [level=3] [ref=e112]:
+                        - generic [ref=e113]:
+                          - generic [ref=e114]: "2"
+                          - generic [ref=e116]: "3"
+                        - generic [ref=e117]: BASEGATE横浜関内
+                      - paragraph [ref=e121]: 関内駅前の大型複合施設。臨場感あふれるスポーツや音楽のライブビューイングや、食やアートが融合し新たな文化体験ができる書店、34店舗からなる国内最大級のバル等が集い、関内に新たな賑わいを生み出します。
+                  - generic [ref=e122]:
+                    - generic [ref=e123]:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: HAMAKAZEテラス
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: 「気分上々、ハマナイト」
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: 「気分上々、ハマナイト」
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: 生演奏イメージ
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: 生演奏イメージ
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: DJブース
+                    - generic [ref=e125]:
+                      - heading "3 3 ハマっ子気分で夜を遊ぶ" [level=3] [ref=e126]:
+                        - generic [ref=e127]:
+                          - generic [ref=e128]: "3"
+                          - generic [ref=e130]: "3"
+                        - generic [ref=e131]: ハマっ子気分で夜を遊ぶ
+                      - generic [ref=e132]:
+                        - paragraph [ref=e135]: 横浜に根付くジャズの演奏に酔いしれながら、ルーフトップテラスで過ごす格別な夜。横浜発祥のナポリタンをアレンジしたハンドフードや地ビールを片手に夜空を眺め、浜風とジャズのセッションで気分も上々。
+                        - link "ローカルリズムナイト「気分上々、ハマナイト」" [ref=e137] [cursor=pointer]:
+                          - /url: https://hoshinoresorts.com/ja/hotels/omo7yokohama/sp/localrhythmnight/
+                          - generic [ref=e138]: ローカルリズムナイト「気分上々、ハマナイト」
+              - generic [ref=e142]:
+                - link "ローカルリズムナイト 「気分上々、ハマナイト」" [ref=e143] [cursor=pointer]:
+                  - /url: https://hoshinoresorts.com/ja/hotels/omo7yokohama/sp/localrhythmnight/
+                  - generic [ref=e144]:
+                    - paragraph [ref=e145]: ローカルリズムナイト
+                    - paragraph [ref=e146]: 「気分上々、ハマナイト」
+                - link "レガシーホテル" [ref=e147] [cursor=pointer]:
+                  - /url: https://hoshinoresorts.com/ja/hotels/omo7yokohama/sp/legacy/
+                  - paragraph [ref=e149]: レガシーホテル
+                - link "食事" [ref=e150] [cursor=pointer]:
+                  - /url: /ja/hotels/omo7yokohama/dining/
+                  - generic [ref=e151]: 食事
+                - link "BASEGATE 横浜関内" [ref=e152] [cursor=pointer]:
+                  - /url: https://basegate-yokohama-kannai.com/
+                  - paragraph [ref=e154]:
+                    - text: BASEGATE
+                    - text: 横浜関内
+                - link "愛犬との ホテルステイ" [ref=e155] [cursor=pointer]:
+                  - /url: https://hoshinoresorts.com/ja/hotels/omo7yokohama/sp/dog-stay/
+                  - paragraph [ref=e157]:
+                    - text: 愛犬との
+                    - text: ホテルステイ
+              - generic [ref=e158]:
+                - heading "ゲストルーム" [level=2] [ref=e159]:
+                  - generic [ref=e161]: ゲストルーム
+                - generic [ref=e164]:
+                  - generic [ref=e165]:
+                    - generic [ref=e167]:
+                      - generic [ref=e168]:
+                        - img [ref=e170]
+                        - img [ref=e172]
+                        - img [ref=e175]
+                      - generic [ref=e177]:
+                        - button "Go to slide 1" [ref=e178] [cursor=pointer]
+                        - button "Go to slide 2" [ref=e179] [cursor=pointer]
+                        - button "Go to slide 3" [ref=e180] [cursor=pointer]
+                    - generic [ref=e182]:
+                      - heading "やぐらルーム" [level=3] [ref=e183]
+                      - list [ref=e184]:
+                        - listitem [ref=e185]:
+                          - generic [ref=e186]: 
+                          - generic [ref=e188]: 1〜3名
+                        - listitem [ref=e189]:
+                          - generic [ref=e190]: 
+                          - generic [ref=e192]: 24m²〜25m²
+                        - listitem [ref=e193]:
+                          - generic [ref=e194]: 
+                          - generic [ref=e196]: シングル
+                      - paragraph [ref=e199]: 旧横浜市庁舎のインテリアカラーから着想を得た「レガシーカラー」が基調のお部屋です。 広々としたソファのリビングスペースと十分な高さのダイニングを設け、快適なホテルステイが叶います。特徴的なやぐら寝台はベッドを清潔なまま保てるため、夜も心地よくお休みいただけます。
+                      - generic [ref=e201]:
+                        - button "詳細 " [ref=e202] [cursor=pointer]:
+                          - text: 詳細
+                          - generic [ref=e203]: 
+                        - text:      
+                  - generic [ref=e204]:
+                    - generic [ref=e206]:
+                      - generic [ref=e207]:
+                        - img [ref=e209]
+                        - img [ref=e211]
+                        - img [ref=e214]
+                        - img [ref=e217]
+                      - generic [ref=e219]:
+                        - button "Go to slide 1" [ref=e220] [cursor=pointer]
+                        - button "Go to slide 2" [ref=e221] [cursor=pointer]
+                        - button "Go to slide 3" [ref=e222] [cursor=pointer]
+                        - button "Go to slide 4" [ref=e223] [cursor=pointer]
+                    - generic [ref=e225]:
+                      - heading "かたりばルーム" [level=3] [ref=e226]
+                      - list [ref=e227]:
+                        - listitem [ref=e228]:
+                          - generic [ref=e229]: 
+                          - generic [ref=e231]: 1〜4名
+                        - listitem [ref=e232]:
+                          - generic [ref=e233]: 
+                          - generic [ref=e235]: 41m²〜55m²
+                      - paragraph [ref=e238]: ホテルゲストの居心地の良さを追求し、中央のおこもりスペースとゆったりと寛げるソファを備えた上質なお部屋です。 お二人で広々と贅沢に過ごすのはもちろん、グループでテーブルを囲み語らいながら楽しむのもおすすめです。
+                      - generic [ref=e240]:
+                        - button "詳細 " [ref=e241] [cursor=pointer]:
+                          - text: 詳細
+                          - generic [ref=e242]: 
+                        - text:      
+                  - link "一覧を見る" [ref=e244] [cursor=pointer]:
+                    - /url: https://hoshinoresorts.com/JA/hotels/0000000319/search?checkIn
+                    - generic [ref=e245]: 一覧を見る
+              - generic [ref=e246]:
+                - heading "周辺の見どころ" [level=2] [ref=e247]:
+                  - generic [ref=e249]: 周辺の見どころ
+                - generic [ref=e253]:
+                  - generic:
+                    - generic:
+                      - button "ご近所" [disabled]:
+                        - generic: ご近所
+                      - button "周辺" [ref=e262] [cursor=pointer]:
+                        - generic [ref=e263]: 周辺
+                    - generic [ref=e264]:
+                      - button "拡大する" [ref=e265] [cursor=pointer]
+                      - button "縮小する" [disabled]
+              - generic [ref=e266]:
+                - heading "フォトギャラリー" [level=2]:
+                  - generic:
+                    - generic: フォトギャラリー
+                - button " +155" [ref=e273] [cursor=pointer]:
+                  - generic [ref=e274]:
+                    - generic [ref=e275]: 
+                    - generic [ref=e276]: "+155"
+              - generic [ref=e277]:
+                - heading "アクセス" [level=2] [ref=e278]:
+                  - generic [ref=e280]: アクセス
+                - generic [ref=e283]:
+                  - iframe [ref=e286]
+                  - generic [ref=e287]:
+                    - paragraph [ref=e288]: OMO7横浜 by 星野リゾート
+                    - paragraph [ref=e289]:
+                      - link "231-0017 神奈川県横浜市中区港町1丁目1番地1" [ref=e290] [cursor=pointer]:
+                        - /url: https://maps.app.goo.gl/UQqW1Th4UL9vc74A6
+                    - paragraph [ref=e293]: JR「関内」駅南口より目の前
+                  - link "詳細" [ref=e295] [cursor=pointer]:
+                    - /url: /ja/hotels/omo7yokohama/access/
+                    - generic [ref=e296]: 詳細
+              - generic [ref=e297]:
+                - heading "基本情報" [level=2] [ref=e298]:
+                  - generic [ref=e300]: 基本情報
+                - generic [ref=e304]:
+                  - generic [ref=e305]:
+                    - generic [ref=e306]:
+                      - generic [ref=e308]: 
+                      - heading "総客室数" [level=3] [ref=e309]
+                    - generic [ref=e310]: 276室
+                  - generic [ref=e311]:
+                    - generic [ref=e312]:
+                      - generic [ref=e314]: 
+                      - heading "客室定員" [level=3] [ref=e315]
+                    - generic [ref=e316]: 1〜6名
+                  - generic [ref=e317]:
+                    - generic [ref=e318]:
+                      - generic [ref=e320]: 
+                      - heading "レストラン" [level=3] [ref=e321]
+                    - button "2詳細" [ref=e323] [cursor=pointer]:
+                      - generic [ref=e324]: 2詳細
+                  - generic [ref=e325]:
+                    - generic [ref=e326]:
+                      - generic [ref=e328]: 
+                      - heading "カフェ / ラウンジ" [level=3] [ref=e329]
+                    - button "2詳細" [ref=e331] [cursor=pointer]:
+                      - generic [ref=e332]: 2詳細
+                  - generic [ref=e333]:
+                    - generic [ref=e334]:
+                      - generic [ref=e336]: 
+                      - heading "会議室" [level=3] [ref=e337]
+                    - link "あり 有料" [ref=e339] [cursor=pointer]:
+                      - /url: https://hoshinoresorts.com/ja/hotels/omo7yokohama/sp/workroom/
+                      - generic [ref=e341]: あり
+                      - paragraph [ref=e344]: 有料
+                  - generic [ref=e345]:
+                    - generic [ref=e346]:
+                      - generic [ref=e348]: 
+                      - heading "チェックイン / アウト" [level=3] [ref=e349]
+                    - generic [ref=e350]: 3:00 PM / 11:00 AM
+                  - generic [ref=e351]:
+                    - generic [ref=e352]:
+                      - generic [ref=e354]: 
+                      - heading "Wi-Fi" [level=3] [ref=e355]
+                    - generic [ref=e356]: 全客室、共用エリア（無料）
+                  - generic [ref=e357]:
+                    - generic [ref=e358]:
+                      - generic [ref=e360]: 
+                      - heading "こども添い寝" [level=3] [ref=e361]
+                    - generic [ref=e362]: 6歳まで定員と同数まで可
+                  - generic [ref=e363]:
+                    - generic [ref=e364]:
+                      - generic [ref=e366]: 
+                      - heading "ペット受け入れ" [level=3] [ref=e367]
+                    - generic [ref=e369]:
+                      - generic [ref=e371]: 可
+                      - generic [ref=e373]:
+                        - paragraph [ref=e374]: ※ドッグフレンドリールーム限定
+                        - paragraph [ref=e375]: ・宿泊者のみ入館可
+                        - paragraph [ref=e376]: ・最大 大型犬2頭まで（お部屋タイプにより受け入れ可能な犬種や頭数が異なります）
+                        - paragraph [ref=e377]: ・ドッグラン、愛犬とのご宿泊専用フロアあり
+                        - paragraph [ref=e378]:
+                          - text: →
+                          - link "利用規約" [ref=e379] [cursor=pointer]:
+                            - /url: https://hoshinoresorts.com/ja/sp/petroompolicy/
+                  - generic [ref=e380]:
+                    - generic [ref=e381]:
+                      - generic [ref=e383]: 
+                      - heading "記念日・お祝い" [level=3] [ref=e384]
+                    - paragraph [ref=e388]:
+                      - link "花束・ケーキ（要予約・4日前10:00AMまで）" [ref=e389] [cursor=pointer]:
+                        - /url: https://hoshinoresorts.com/reservations/#/JA/hotels/0000000319
+                  - generic [ref=e390]:
+                    - generic [ref=e391]:
+                      - generic [ref=e393]: 
+                      - heading "送迎" [level=3] [ref=e394]
+                    - generic [ref=e397]: なし
+                  - generic [ref=e398]:
+                    - generic [ref=e399]:
+                      - generic [ref=e401]: 
+                      - heading "駐車場" [level=3] [ref=e402]
+                    - generic [ref=e405]:
+                      - paragraph [ref=e406]: BASEGATE横浜関内 敷地内駐車場（タワー棟1階）
+                      - paragraph [ref=e407]: ＊24時間2000円（7:30 AM～11:00 PM）
+                      - paragraph [ref=e408]: ＊宿泊者限定料金のため駐車券をフロントにご持参ください。
+                      - paragraph [ref=e409]: ＊営業時間外や満車の場合は敷地外駐車場を利用可能
+                      - paragraph [ref=e410]:
+                        - text: →
+                        - link "詳細" [ref=e411] [cursor=pointer]:
+                          - /url: https://hoshinoresorts.com/ja/hotels/omo7yokohama/access/
+                  - generic [ref=e412]:
+                    - generic [ref=e413]:
+                      - generic [ref=e415]: 
+                      - heading "EV充電" [level=3] [ref=e416]
+                    - generic [ref=e419]: なし
+                  - generic [ref=e420]:
+                    - generic [ref=e421]:
+                      - generic [ref=e423]: 
+                      - heading "事前払い" [level=3] [ref=e424]
+                    - generic [ref=e425]:
+                      - text: Visa、Mastercard、American Express、Diners Club、JCB、ペイディ、永久不滅ポイント、星野リゾート宿泊ギフト券
+                      - generic [ref=e426]:
+                        - generic [ref=e427]: 
+                        - link "分割、後払い（コンビニ/銀行）" [ref=e428] [cursor=pointer]:
+                          - /url: https://hoshinoresorts.com/ja/sp/paidy/
+                  - generic [ref=e429]:
+                    - generic [ref=e430]:
+                      - generic [ref=e432]: 
+                      - heading "現地払い" [level=3] [ref=e433]
+                    - generic [ref=e434]: 現金、クレジットカード、デビットカード
+                  - generic [ref=e435]:
+                    - generic [ref=e436]:
+                      - generic [ref=e438]: 
+                      - heading "ロッカー" [level=3] [ref=e439]
+                    - generic [ref=e442]:
+                      - paragraph [ref=e443]: あり（無料）
+                      - paragraph [ref=e444]: "*チェックイン前・チェックアウト後も利用可"
+                  - generic [ref=e445]:
+                    - generic [ref=e446]:
+                      - generic [ref=e448]: 
+                      - heading "ウォータサーバー" [level=3] [ref=e449]
+                    - paragraph [ref=e453]: あり
+                  - generic [ref=e454]:
+                    - generic [ref=e455]:
+                      - generic [ref=e457]: 
+                      - heading "主要施設" [level=3] [ref=e458]
+                    - list [ref=e460]:
+                      - listitem [ref=e461]:
+                        - generic [ref=e463]: レストラン
+                      - listitem [ref=e464]:
+                        - generic [ref=e466]: カフェ / ラウンジ
+                      - listitem [ref=e467]:
+                        - generic [ref=e469]: スパ / マッサージ
+                      - listitem [ref=e470]:
+                        - generic [ref=e472]: キッズルーム
+                      - listitem [ref=e473]:
+                        - generic [ref=e475]: プール
+                      - listitem [ref=e476]:
+                        - generic [ref=e478]: 温泉
+                      - listitem [ref=e479]:
+                        - generic [ref=e481]: 温浴施設
+                      - listitem [ref=e482]:
+                        - generic [ref=e484]: 会議室
+                  - generic [ref=e485]:
+                    - generic [ref=e486]:
+                      - generic [ref=e488]: 
+                      - heading "その他" [level=3] [ref=e489]
+                    - list [ref=e491]:
+                      - listitem [ref=e492]:
+                        - paragraph [ref=e494]: 全館禁煙（喫煙所あり）
+                      - listitem [ref=e495]:
+                        - paragraph [ref=e497]:
+                          - link "客室アメニティ・備品" [ref=e498] [cursor=pointer]:
+                            - /url: https://hoshinoresorts.com/ja/brands/omo/sp/amenities/
+      - complementary:         
+      - contentinfo [ref=e499]:
+        - generic [ref=e500]:
+          - generic [ref=e501]:
+            - heading "施設をみつける" [level=2] [ref=e502]
+            - generic [ref=e503]:
+              - heading "地域からみつける" [level=3] [ref=e504]
+              - generic [ref=e505]:
+                - link "北海道" [ref=e506] [cursor=pointer]:
+                  - /url: /ja/sp/regions/hokkaido/
+                - generic [ref=e507]: "|"
+              - generic [ref=e508]:
+                - link "東北" [ref=e509] [cursor=pointer]:
+                  - /url: /ja/sp/regions/tohoku/
+                - generic [ref=e510]: "|"
+              - generic [ref=e511]:
+                - link "北陸・甲信越" [ref=e512] [cursor=pointer]:
+                  - /url: /ja/sp/regions/hokuriku_koushinetsu/
+                - generic [ref=e513]: "|"
+              - generic [ref=e514]:
+                - link "関東" [ref=e515] [cursor=pointer]:
+                  - /url: /ja/sp/regions/kanto/
+                - generic [ref=e516]: "|"
+              - generic [ref=e517]:
+                - link "東海" [ref=e518] [cursor=pointer]:
+                  - /url: /ja/sp/regions/tokai/
+                - generic [ref=e519]: "|"
+              - generic [ref=e520]:
+                - link "近畿" [ref=e521] [cursor=pointer]:
+                  - /url: /ja/sp/regions/kinki/
+                - generic [ref=e522]: "|"
+              - generic [ref=e523]:
+                - link "中国・四国" [ref=e524] [cursor=pointer]:
+                  - /url: /ja/sp/regions/chugoku_shikoku/
+                - generic [ref=e525]: "|"
+              - generic [ref=e526]:
+                - link "九州" [ref=e527] [cursor=pointer]:
+                  - /url: /ja/sp/regions/kyushu/
+                - generic [ref=e528]: "|"
+              - generic [ref=e529]:
+                - link "沖縄" [ref=e530] [cursor=pointer]:
+                  - /url: /ja/sp/regions/okinawa/
+                - generic [ref=e531]: "|"
+              - link "海外" [ref=e533] [cursor=pointer]:
+                - /url: /ja/sp/regions/outsidejapan/
+            - heading "ブランドからみつける" [level=3] [ref=e534]
+            - generic [ref=e535]:
+              - generic [ref=e536]:
+                - generic [ref=e537]:
+                  - generic [ref=e538]:
+                    - generic [ref=e539]: 星のや
+                    - generic [ref=e540]: "|"
+                    - generic [ref=e541]: ラグジュアリー
+                  - generic [ref=e542]:
+                    - link "東京 東京 大手町" [ref=e543] [cursor=pointer]:
+                      - /url: /ja/hotels/hoshinoyatokyo/
+                      - paragraph [ref=e544]: 東京
+                      - paragraph [ref=e545]: 東京 大手町
+                    - link "富士 山梨 富士河口湖" [ref=e546] [cursor=pointer]:
+                      - /url: /ja/hotels/hoshinoyafuji/
+                      - paragraph [ref=e547]: 富士
+                      - paragraph [ref=e548]: 山梨 富士河口湖
+                    - link "軽井沢 長野 軽井沢" [ref=e549] [cursor=pointer]:
+                      - /url: /ja/hotels/hoshinoyakaruizawa/
+                      - paragraph [ref=e550]: 軽井沢
+                      - paragraph [ref=e551]: 長野 軽井沢
+                    - link "京都 京都 嵐山" [ref=e552] [cursor=pointer]:
+                      - /url: /ja/hotels/hoshinoyakyoto/
+                      - paragraph [ref=e553]: 京都
+                      - paragraph [ref=e554]: 京都 嵐山
+                    - link "奈良監獄 奈良 6月 開業" [ref=e555] [cursor=pointer]:
+                      - /url: /ja/hotels/hoshinoyanarakangoku/
+                      - paragraph [ref=e556]: 奈良監獄
+                      - paragraph [ref=e557]: 奈良
+                      - generic [ref=e558]: 6月 開業
+                    - link "沖縄 沖縄 読谷" [ref=e559] [cursor=pointer]:
+                      - /url: /ja/hotels/hoshinoyaokinawa/
+                      - paragraph [ref=e560]: 沖縄
+                      - paragraph [ref=e561]: 沖縄 読谷
+                    - link "竹富島 沖縄 竹富町" [ref=e562] [cursor=pointer]:
+                      - /url: /ja/hotels/hoshinoyataketomijima/
+                      - paragraph [ref=e563]: 竹富島
+                      - paragraph [ref=e564]: 沖縄 竹富町
+                    - link "グーグァン 台湾 台中" [ref=e565] [cursor=pointer]:
+                      - /url: /ja/hotels/hoshinoyaguguan/
+                      - paragraph [ref=e566]: グーグァン
+                      - paragraph [ref=e567]: 台湾 台中
+                    - button "全 9 施設 " [ref=e568] [cursor=pointer]:
+                      - generic [ref=e569]: 全 9 施設
+                      - generic [ref=e570]: 
+                    - link "星のやについて" [ref=e571] [cursor=pointer]:
+                      - /url: /ja/brands/hoshinoya/
+                      - generic [ref=e573]: 星のやについて
+                - text: 
+              - generic [ref=e574]:
+                - generic [ref=e575]:
+                  - generic [ref=e576]:
+                    - generic [ref=e577]: 界
+                    - generic [ref=e578]: "|"
+                    - generic [ref=e579]: 温泉旅館
+                  - generic [ref=e580]:
+                    - link "ポロト 北海道 白老温泉" [ref=e581] [cursor=pointer]:
+                      - /url: /ja/hotels/kaiporoto/
+                      - paragraph [ref=e582]: ポロト
+                      - paragraph [ref=e583]: 北海道 白老温泉
+                    - link "津軽 青森 大鰐温泉" [ref=e584] [cursor=pointer]:
+                      - /url: /ja/hotels/kaitsugaru/
+                      - paragraph [ref=e585]: 津軽
+                      - paragraph [ref=e586]: 青森 大鰐温泉
+                    - link "秋保 宮城 秋保温泉" [ref=e587] [cursor=pointer]:
+                      - /url: /ja/hotels/kaiakiu/
+                      - paragraph [ref=e588]: 秋保
+                      - paragraph [ref=e589]: 宮城 秋保温泉
+                    - link "蔵王 山形 蔵王温泉 10月 開業" [ref=e590] [cursor=pointer]:
+                      - /url: /ja/hotels/kaizao/
+                      - paragraph [ref=e591]: 蔵王
+                      - paragraph [ref=e592]: 山形 蔵王温泉
+                      - generic [ref=e593]: 10月 開業
+                    - link "鬼怒川 栃木 鬼怒川温泉" [ref=e594] [cursor=pointer]:
+                      - /url: /ja/hotels/kaikinugawa/
+                      - paragraph [ref=e595]: 鬼怒川
+                      - paragraph [ref=e596]: 栃木 鬼怒川温泉
+                    - link "草津 群馬 草津温泉 6月 開業" [ref=e597] [cursor=pointer]:
+                      - /url: /ja/hotels/kaikusatsu/
+                      - paragraph [ref=e598]: 草津
+                      - paragraph [ref=e599]: 群馬 草津温泉
+                      - generic [ref=e600]: 6月 開業
+                    - link "箱根 神奈川 箱根湯本温泉" [ref=e601] [cursor=pointer]:
+                      - /url: /ja/hotels/kaihakone/
+                      - paragraph [ref=e602]: 箱根
+                      - paragraph [ref=e603]: 神奈川 箱根湯本温泉
+                    - link "仙石原 神奈川 仙石原温泉" [ref=e604] [cursor=pointer]:
+                      - /url: /ja/hotels/kaisengokuhara/
+                      - paragraph [ref=e605]: 仙石原
+                      - paragraph [ref=e606]: 神奈川 仙石原温泉
+                    - button "全 24 施設 " [ref=e607] [cursor=pointer]:
+                      - generic [ref=e608]: 全 24 施設
+                      - generic [ref=e609]: 
+                    - link "-かい- について" [ref=e610] [cursor=pointer]:
+                      - /url: /ja/brands/kai/
+                      - generic [ref=e612]: "-かい- について"
+                - text: 
+              - generic [ref=e613]:
+                - generic [ref=e614]:
+                  - generic [ref=e615]:
+                    - generic [ref=e616]: リゾナーレ
+                    - generic [ref=e617]: "|"
+                    - generic [ref=e618]: リゾート
+                  - generic [ref=e619]:
+                    - link "トマム 北海道 勇払郡" [ref=e620] [cursor=pointer]:
+                      - /url: /ja/hotels/risonaretomamu/
+                      - paragraph [ref=e621]: トマム
+                      - paragraph [ref=e622]: 北海道 勇払郡
+                    - link "那須 栃木 那須" [ref=e623] [cursor=pointer]:
+                      - /url: /ja/hotels/risonarenasu/
+                      - paragraph [ref=e624]: 那須
+                      - paragraph [ref=e625]: 栃木 那須
+                    - link "八ヶ岳 山梨 北杜市" [ref=e626] [cursor=pointer]:
+                      - /url: /ja/hotels/risonareyatsugatake/
+                      - paragraph [ref=e627]: 八ヶ岳
+                      - paragraph [ref=e628]: 山梨 北杜市
+                    - link "熱海 静岡 熱海" [ref=e629] [cursor=pointer]:
+                      - /url: /ja/hotels/risonareatami/
+                      - paragraph [ref=e630]: 熱海
+                      - paragraph [ref=e631]: 静岡 熱海
+                    - link "大阪 大阪市" [ref=e632] [cursor=pointer]:
+                      - /url: /ja/hotels/risonareosaka/
+                      - paragraph [ref=e633]: 大阪
+                      - paragraph [ref=e634]: 大阪市
+                    - link "下関 山口 下関市" [ref=e635] [cursor=pointer]:
+                      - /url: /ja/hotels/risonareshimonoseki/
+                      - paragraph [ref=e636]: 下関
+                      - paragraph [ref=e637]: 山口 下関市
+                    - link "小浜島 沖縄 竹富町" [ref=e638] [cursor=pointer]:
+                      - /url: /ja/hotels/risonarekohamajima/
+                      - paragraph [ref=e639]: 小浜島
+                      - paragraph [ref=e640]: 沖縄 竹富町
+                    - link "グアム Tamuning, Guam" [ref=e641] [cursor=pointer]:
+                      - /url: /ja/hotels/risonareguam/
+                      - paragraph [ref=e642]: グアム
+                      - paragraph [ref=e643]: Tamuning, Guam
+                    - link "リゾナーレについて" [ref=e644] [cursor=pointer]:
+                      - /url: /ja/brands/risonare/
+                      - generic [ref=e646]: リゾナーレについて
+                - text: 
+              - generic [ref=e647]:
+                - generic [ref=e648]:
+                  - generic [ref=e649]:
+                    - generic [ref=e650]: OMO
+                    - generic [ref=e651]: "|"
+                    - generic [ref=e652]: シティ
+                  - generic [ref=e653]:
+                    - link "OMO7 旭川 北海道 旭川市" [ref=e654] [cursor=pointer]:
+                      - /url: /ja/hotels/omo7asahikawa/
+                      - paragraph [ref=e655]:
+                        - generic [ref=e656]: OMO7
+                        - text: 旭川
+                      - paragraph [ref=e657]: 北海道 旭川市
+                    - link "OMO5 小樽 北海道 小樽市" [ref=e658] [cursor=pointer]:
+                      - /url: /ja/hotels/omo5otaru/
+                      - paragraph [ref=e659]:
+                        - generic [ref=e660]: OMO5
+                        - text: 小樽
+                      - paragraph [ref=e661]: 北海道 小樽市
+                    - link "OMO5 函館 北海道 函館市" [ref=e662] [cursor=pointer]:
+                      - /url: /ja/hotels/omo5hakodate/
+                      - paragraph [ref=e663]:
+                        - generic [ref=e664]: OMO5
+                        - text: 函館
+                      - paragraph [ref=e665]: 北海道 函館市
+                    - link "OMO5 東京大塚 東京 豊島区" [ref=e666] [cursor=pointer]:
+                      - /url: /ja/hotels/omo5tokyootsuka/
+                      - paragraph [ref=e667]:
+                        - generic [ref=e668]: OMO5
+                        - text: 東京大塚
+                      - paragraph [ref=e669]: 東京 豊島区
+                    - link "OMO5 東京五反田 東京 品川" [ref=e670] [cursor=pointer]:
+                      - /url: /ja/hotels/omo5tokyogotanda/
+                      - paragraph [ref=e671]:
+                        - generic [ref=e672]: OMO5
+                        - text: 東京五反田
+                      - paragraph [ref=e673]: 東京 品川
+                    - link "OMO3 浅草 東京 台東区" [ref=e674] [cursor=pointer]:
+                      - /url: /ja/hotels/omo3asakusa/
+                      - paragraph [ref=e675]:
+                        - generic [ref=e676]: OMO3
+                        - text: 浅草
+                      - paragraph [ref=e677]: 東京 台東区
+                    - link "OMO3 東京赤坂 東京 港区" [ref=e678] [cursor=pointer]:
+                      - /url: /ja/hotels/omo3tokyoakasaka/
+                      - paragraph [ref=e679]:
+                        - generic [ref=e680]: OMO3
+                        - text: 東京赤坂
+                      - paragraph [ref=e681]: 東京 港区
+                    - link "OMO7 横浜 神奈川 横浜市" [ref=e682] [cursor=pointer]:
+                      - /url: /ja/hotels/omo7yokohama/
+                      - paragraph [ref=e683]:
+                        - generic [ref=e684]: OMO7
+                        - text: 横浜
+                      - paragraph [ref=e685]: 神奈川 横浜市
+                    - button "全 18 施設 " [ref=e686] [cursor=pointer]:
+                      - generic [ref=e687]: 全 18 施設
+                      - generic [ref=e688]: 
+                    - link "-おも- について" [ref=e689] [cursor=pointer]:
+                      - /url: /ja/brands/omo/
+                      - generic [ref=e691]: "-おも- について"
+                - text: 
+              - generic [ref=e692]:
+                - generic [ref=e693]:
+                  - generic [ref=e694]:
+                    - generic [ref=e695]: BEB
+                    - generic [ref=e696]: "|"
+                    - generic [ref=e697]: カジュアル
+                  - generic [ref=e698]:
+                    - link "BEB5 土浦 茨城 土浦" [ref=e699] [cursor=pointer]:
+                      - /url: /ja/hotels/beb5tsuchiura/
+                      - paragraph [ref=e700]:
+                        - generic [ref=e701]: BEB5
+                        - text: 土浦
+                      - paragraph [ref=e702]: 茨城 土浦
+                    - link "BEB5 軽井沢 長野 軽井沢" [ref=e703] [cursor=pointer]:
+                      - /url: /ja/hotels/beb5karuizawa/
+                      - paragraph [ref=e704]:
+                        - generic [ref=e705]: BEB5
+                        - text: 軽井沢
+                      - paragraph [ref=e706]: 長野 軽井沢
+                    - link "BEB5 門司港 門司港 7月 開業" [ref=e707] [cursor=pointer]:
+                      - /url: /ja/hotels/beb5mojiko/
+                      - paragraph [ref=e708]:
+                        - generic [ref=e709]: BEB5
+                        - text: 門司港
+                      - paragraph [ref=e710]: 門司港
+                      - generic [ref=e711]: 7月 開業
+                    - link "BEB5 沖縄瀬良垣 沖縄 恩納村" [ref=e712] [cursor=pointer]:
+                      - /url: /ja/hotels/beb5okinawaseragaki/
+                      - paragraph [ref=e713]:
+                        - generic [ref=e714]: BEB5
+                        - text: 沖縄瀬良垣
+                      - paragraph [ref=e715]: 沖縄 恩納村
+                    - link "-ベブ- について" [ref=e716] [cursor=pointer]:
+                      - /url: /ja/brands/beb/
+                      - generic [ref=e718]: "-ベブ- について"
+                - text: 
+              - generic [ref=e719]:
+                - generic [ref=e720]:
+                  - generic [ref=e721]:
+                    - generic [ref=e722]: LUCY
+                    - generic [ref=e723]: "|"
+                    - generic [ref=e724]: 山ホテル
+                  - generic [ref=e725]:
+                    - link "尾瀬鳩待 群馬 尾瀬" [ref=e726] [cursor=pointer]:
+                      - /url: /ja/hotels/lucyozehatomachi/
+                      - paragraph [ref=e727]: 尾瀬鳩待
+                      - paragraph [ref=e728]: 群馬 尾瀬
+                    - link "LUCY について" [ref=e729] [cursor=pointer]:
+                      - /url: /ja/brands/lucy/
+                      - generic [ref=e731]: LUCY について
+                - text: 
+              - generic [ref=e732]:
+                - generic [ref=e733]:
+                  - generic [ref=e735]: そのほかの個性的な宿泊施設
+                  - generic [ref=e736]:
+                    - link "トマム ザ・タワー 北海道 勇払郡" [ref=e737] [cursor=pointer]:
+                      - /url: /ja/hotels/tomamuthetower/
+                      - paragraph [ref=e738]: トマム ザ・タワー
+                      - paragraph [ref=e739]: 北海道 勇払郡
+                    - link "青森屋 青森 三沢" [ref=e740] [cursor=pointer]:
+                      - /url: /ja/hotels/aomoriya/
+                      - paragraph [ref=e741]: 青森屋
+                      - paragraph [ref=e742]: 青森 三沢
+                    - link "奥入瀬渓流ホテル 青森 十和田" [ref=e743] [cursor=pointer]:
+                      - /url: /ja/hotels/oirasekeiryu/
+                      - paragraph [ref=e744]: 奥入瀬渓流ホテル
+                      - paragraph [ref=e745]: 青森 十和田
+                    - link "磐梯山温泉ホテル 福島 耶麻郡" [ref=e746] [cursor=pointer]:
+                      - /url: /ja/hotels/bandai/
+                      - paragraph [ref=e747]: 磐梯山温泉ホテル
+                      - paragraph [ref=e748]: 福島 耶麻郡
+                    - link "1955 東京ベイ 千葉 浦安" [ref=e749] [cursor=pointer]:
+                      - /url: /ja/hotels/1955tokyobay/
+                      - paragraph [ref=e750]: 1955 東京ベイ
+                      - paragraph [ref=e751]: 千葉 浦安
+                    - link "ホテルブレストンコート 長野 軽井沢" [ref=e752] [cursor=pointer]:
+                      - /url: https://www.blestoncourt.com/
+                      - paragraph [ref=e753]: ホテルブレストンコート
+                      - paragraph [ref=e754]: 長野 軽井沢
+                    - link "西表島ホテル 沖縄 竹富町" [ref=e755] [cursor=pointer]:
+                      - /url: /ja/hotels/iriomote/
+                      - paragraph [ref=e756]: 西表島ホテル
+                      - paragraph [ref=e757]: 沖縄 竹富町
+                    - link "嘉助天台 中国 天台山" [ref=e758] [cursor=pointer]:
+                      - /url: https://www.kasuketiantai.com/#/ja/home
+                      - paragraph [ref=e759]: 嘉助天台
+                      - paragraph [ref=e760]: 中国 天台山
+                    - button "全 9 施設 " [ref=e761] [cursor=pointer]:
+                      - generic [ref=e762]: 全 9 施設
+                      - generic [ref=e763]: 
+                - text: 
+              - generic [ref=e764]:
+                - generic [ref=e765]:
+                  - generic [ref=e767]: 日帰り施設
+                  - generic [ref=e768]:
+                    - link "北海道 トマムエリア 北海道 勇払郡" [ref=e769] [cursor=pointer]:
+                      - /url: https://www.snowtomamu.jp/
+                      - paragraph [ref=e770]: 北海道 トマムエリア
+                      - paragraph [ref=e771]: 北海道 勇払郡
+                    - link "雲海テラス 北海道 トマム" [ref=e772] [cursor=pointer]:
+                      - /url: https://www.snowtomamu.jp/summer/unkai/
+                      - paragraph [ref=e773]: 雲海テラス
+                      - paragraph [ref=e774]: 北海道 トマム
+                    - link "トマムスキー場 北海道 勇払郡" [ref=e775] [cursor=pointer]:
+                      - /url: https://www.snowtomamu.jp/winter/ski/
+                      - paragraph [ref=e776]: トマムスキー場
+                      - paragraph [ref=e777]: 北海道 勇払郡
+                    - link "ネコマ マウンテン 福島 耶麻郡" [ref=e778] [cursor=pointer]:
+                      - /url: https://www.nekoma.co.jp/
+                      - paragraph [ref=e779]: ネコマ マウンテン
+                      - paragraph [ref=e780]: 福島 耶麻郡
+                    - link "Mt.T 群馬 みなかみ町" [ref=e781] [cursor=pointer]:
+                      - /url: https://tanigawadake-joch.com/mt-t/
+                      - paragraph [ref=e782]: Mt.T
+                      - paragraph [ref=e783]: 群馬 みなかみ町
+                    - link "谷川岳ヨッホ 群馬 みなかみ町" [ref=e784] [cursor=pointer]:
+                      - /url: https://tanigawadake-joch.com/
+                      - paragraph [ref=e785]: 谷川岳ヨッホ
+                      - paragraph [ref=e786]: 群馬 みなかみ町
+                    - link "軽井沢星野エリア 長野 軽井沢" [ref=e787] [cursor=pointer]:
+                      - /url: https://www.hoshino-area.jp/
+                      - paragraph [ref=e788]: 軽井沢星野エリア
+                      - paragraph [ref=e789]: 長野 軽井沢
+                    - link "ピッキオ 長野 軽井沢" [ref=e790] [cursor=pointer]:
+                      - /url: https://picchio.co.jp/
+                      - paragraph [ref=e791]: ピッキオ
+                      - paragraph [ref=e792]: 長野 軽井沢
+                    - button "全 11 施設 " [ref=e793] [cursor=pointer]:
+                      - generic [ref=e794]: 全 11 施設
+                      - generic [ref=e795]: 
+                - text: 
+          - link "星野リゾート空室検索" [ref=e797] [cursor=pointer]:
+            - /url: https://hoshinoresorts.com/crosssearch/JA
+            - generic [ref=e798]: 星野リゾート空室検索
+          - generic [ref=e799]:
+            - link "112年 星野リゾート" [ref=e801] [cursor=pointer]:
+              - /url: https://hoshinoresorts.com/jp/
+              - img "112年" [ref=e802]
+              - img "星野リゾート" [ref=e803]
+            - paragraph [ref=e804]: © Hoshino Resorts Inc. All Rights Reserved.
+  - generic:
+    - img
+  - generic:
+    - application "ChatPlus":
+      - generic:  
