@@ -1,0 +1,581 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - link "初めて利用キャンペーンでポイントGET！" [ref=e4] [cursor=pointer]:
+      - /url: https://travel.rakuten.co.jp/camp/service_debut/?l-id=header_pc_service_debut
+      - img "初めて利用キャンペーンでポイントGET！" [ref=e5]
+    - generic [ref=e6]:
+      - navigation [ref=e8]:
+        - list [ref=e9]:
+          - listitem [ref=e10]:
+            - link "ヘルプ" [ref=e11] [cursor=pointer]:
+              - /url: https://travel.faq.rakuten.net/?l-id=trv_header_trvlink_faq
+          - listitem [ref=e12]:
+            - link "ご利用ガイド" [ref=e13] [cursor=pointer]:
+              - /url: https://travel.rakuten.co.jp/howto/?l-id=trv_header_trvlink_howto
+          - listitem [ref=e14]:
+            - link "サイトマップ" [ref=e15] [cursor=pointer]:
+              - /url: https://travel.rakuten.co.jp/sitemap/?l-id=trv_header_trvlink_sitemap
+          - listitem [ref=e16]:
+            - generic [ref=e17]:
+              - img "Language" [ref=e18]
+              - generic [ref=e19]: Language
+              - img "arrow" [ref=e20]
+        - list [ref=e21]:
+          - listitem [ref=e22]:
+            - link "楽天市場" [ref=e23] [cursor=pointer]:
+              - /url: https://www.rakuten.co.jp/?scid=wi_trv_header_grplink_ichba
+          - listitem [ref=e24]:
+            - generic [ref=e25]:
+              - generic [ref=e26]: 楽天グループ
+              - img "arrow" [ref=e27]
+      - generic [ref=e28]:
+        - link "楽天トラベル" [ref=e30]:
+          - /url: https://travel.rakuten.co.jp/?l-id=trv_header_logo
+          - img "楽天トラベル" [ref=e31]
+        - generic [ref=e32]:
+          - list [ref=e34]:
+            - listitem [ref=e35]:
+              - link "お気に入り お気に入り" [ref=e36] [cursor=pointer]:
+                - /url: https://favoritelist.travel.rakuten.co.jp/hotel/domestic?l-id=trv_header_func_favorite
+                - img "お気に入り" [ref=e37]
+                - generic [ref=e38]: お気に入り
+            - listitem [ref=e39]:
+              - link "予約確認 予約確認" [ref=e40] [cursor=pointer]:
+                - /url: https://auth.travel.rakuten.co.jp/fwd/memberDispatcher/staticPageLogin?service_id=t01&return_url=cgi-bin/rakuten_id_reference&_guestLoginServiceKey=guestReservation&f_next_url=https://mypage.travel.rakuten.co.jp/?l-id=trv_header_func_mypage
+                - img "予約確認" [ref=e41]
+                - generic [ref=e42]: 予約確認
+            - listitem [ref=e43]:
+              - link "ログイン ログイン" [ref=e44] [cursor=pointer]:
+                - /url: https://auth.travel.rakuten.co.jp/fwd/memberDispatcher/staticPageLogin?__event=ID01_001_001&service_id=t01&return_url=cgi-bin/rakuten_id_reference&f_next_url=https://travel.rakuten.co.jp/group/OMO.html?l-id=login_header
+                - img "ログイン" [ref=e45]
+                - generic [ref=e46]: ログイン
+            - listitem [ref=e47]:
+              - generic [ref=e48] [cursor=pointer]:
+                - img "メニュー" [ref=e49]
+                - generic [ref=e50]: メニュー
+          - link "楽天トラベル サービス初めて利用キャンペーン" [ref=e52]:
+            - /url: https://travel.rakuten.co.jp/camp/service_debut/?l-id=header_square_service_debut
+            - img "楽天トラベル サービス初めて利用キャンペーン" [ref=e53]
+      - generic [ref=e54]:
+        - generic [ref=e57]:
+          - generic [ref=e58]: ようこそ！
+          - generic [ref=e59]:
+            - link "ログイン" [ref=e60] [cursor=pointer]:
+              - /url: https://auth.travel.rakuten.co.jp/fwd/memberDispatcher/staticPageLogin?__event=ID01_001_001&service_id=t01&return_url=cgi-bin/rakuten_id_reference&f_next_url=https://travel.rakuten.co.jp/group/OMO.html?l-id=login_header
+            - generic [ref=e61]: でレベルや特典を確認できます
+        - link "レベル ?" [ref=e64] [cursor=pointer]:
+          - /url: https://auth.travel.rakuten.co.jp/fwd/memberDispatcher/staticPageLogin?__event=ID01_001_001&service_id=t01&return_url=cgi-bin/rakuten_id_reference&f_next_url=https://travel.rakuten.co.jp/group/OMO.html
+          - img [ref=e65]
+          - generic [ref=e67]:
+            - generic [ref=e68]: レベル
+            - generic [ref=e69]: "?"
+          - img [ref=e72]
+        - link "国内宿泊が ポイント ? %" [ref=e76] [cursor=pointer]:
+          - /url: https://auth.travel.rakuten.co.jp/fwd/memberDispatcher/staticPageLogin?__event=ID01_001_001&service_id=t01&return_url=cgi-bin/rakuten_id_reference&f_next_url=https://travel.rakuten.co.jp/group/OMO.html
+          - generic [ref=e77]:
+            - generic [ref=e78]: 国内宿泊が
+            - generic [ref=e79]: ポイント
+            - strong [ref=e80]: "? %"
+          - img [ref=e83]
+        - generic [ref=e87] [cursor=pointer]:
+          - generic [ref=e89]: 特別オファー
+          - img [ref=e93]
+      - navigation [ref=e96]:
+        - list [ref=e97]:
+          - link "国内宿泊" [ref=e98] [cursor=pointer]:
+            - /url: https://travel.rakuten.co.jp/?l-id=trv_header_service_dh
+            - listitem [ref=e99]: 国内宿泊
+          - link "交通＋宿 arrow" [ref=e100] [cursor=pointer]:
+            - /url: https://travel.rakuten.co.jp/package/?l-id=trv_header_service_dp
+            - listitem [ref=e101]:
+              - generic [ref=e102]: 交通＋宿
+              - img "arrow" [ref=e103]
+          - link "レンタカー" [ref=e104] [cursor=pointer]:
+            - /url: https://travel.rakuten.co.jp/cars/?l-id=trv_header_service_car
+            - listitem [ref=e105]:
+              - generic [ref=e106]: レンタカー
+              - img [ref=e107]
+          - link "高速バス・ツアー" [ref=e108] [cursor=pointer]:
+            - /url: https://travel.rakuten.co.jp/bus/?l-id=trv_header_service_bus
+            - listitem [ref=e109]: 高速バス・ツアー
+          - link "海外旅行" [ref=e110] [cursor=pointer]:
+            - /url: https://travel.rakuten.co.jp/kaigai/?l-id=trv_header_service_kaigai
+            - listitem [ref=e111]: 海外旅行
+          - link "遊び・体験" [ref=e112] [cursor=pointer]:
+            - /url: https://experiences.travel.rakuten.co.jp/?scid=wi_trv_header_service_experiences
+            - listitem [ref=e113]: 遊び・体験
+          - link "キャンプ場" [ref=e114] [cursor=pointer]:
+            - /url: https://camp.travel.rakuten.co.jp/?scid=wi_trv_header_service_camp
+            - listitem [ref=e115]: キャンプ場
+          - link "割引クーポン" [ref=e116] [cursor=pointer]:
+            - /url: https://travel.rakuten.co.jp/coupon/?l-id=trv_header_service_coupon
+            - listitem [ref=e117]: 割引クーポン
+          - link "ふるさと納税" [ref=e118] [cursor=pointer]:
+            - /url: https://travel.rakuten.co.jp/special/furusato/?l-id=trv_header_service_furusato
+            - listitem [ref=e119]: ふるさと納税
+          - link "旅行ガイド" [ref=e120] [cursor=pointer]:
+            - /url: https://travel.rakuten.co.jp/mytrip/?l-id=trv_header_service_mytrip
+            - listitem [ref=e121]: 旅行ガイド
+          - listitem [ref=e123]:
+            - generic [ref=e124]: その他
+            - img "arrow" [ref=e125]
+  - generic [ref=e126]:
+    - paragraph [ref=e127]:
+      - link "楽天トラベルトップ" [ref=e128] [cursor=pointer]:
+        - /url: //travel.rakuten.co.jp/
+      - text: ">"
+      - link "ホテルチェーントップ" [ref=e129] [cursor=pointer]:
+        - /url: //travel.rakuten.co.jp/group/
+      - text: ">"
+      - link "ホテルチェーン一覧" [ref=e130] [cursor=pointer]:
+        - /url: //travel.rakuten.co.jp/group/list.html
+      - text: "> OMO by 星野リゾート"
+    - generic [ref=e131]: OMO by 星野リゾート
+  - generic [ref=e133]:
+    - generic [ref=e134]:
+      - list [ref=e136]:
+        - listitem [ref=e137]:
+          - radio "宿泊" [checked] [ref=e138]
+          - text: 宿泊
+        - listitem [ref=e139]:
+          - radio "日帰り・デイユース" [ref=e140]
+          - text: 日帰り・デイユース
+      - generic [ref=e141]:
+        - generic [ref=e142]:
+          - option "選択してください" [selected]
+          - option "北海道"
+          - option "東京都"
+          - option "神奈川県"
+          - option "石川県"
+          - option "京都府"
+          - option "大阪府"
+          - option "高知県"
+          - option "熊本県"
+          - option "沖縄県"
+          - option "選択してください" [selected]
+          - option "全域" [selected]
+          - generic [ref=e144]:
+            - generic [ref=e146]: 日付指定なし
+            - textbox "チェックイン" [ref=e147]
+            - generic:
+              - generic:
+                - main:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: 2026年 06月
+                      - generic:
+                        - generic "日曜日": 日
+                        - generic "月曜日": 月
+                        - generic "火曜日": 火
+                        - generic "水曜日": 水
+                        - generic "木曜日": 木
+                        - generic "金曜日": 金
+                        - generic "土曜日": 土
+                      - generic:
+                        - generic: "1"
+                        - generic: "2"
+                        - generic: "3"
+                        - generic: "4"
+                        - generic: "5"
+                        - generic: "6"
+                        - generic: "7"
+                        - generic: "8"
+                        - generic: "9"
+                        - generic: "10"
+                        - generic: "11"
+                        - generic: "12"
+                        - generic: "13"
+                        - generic: "14"
+                        - generic: "15"
+                        - generic: "16"
+                        - generic: "17"
+                        - generic: "18"
+                        - generic: "19"
+                        - generic: "20"
+                        - generic: "21"
+                        - generic: "22"
+                        - generic: "23"
+                        - generic: "24"
+                        - generic: "25"
+                        - generic: "26"
+                        - generic: "27"
+                        - generic: "28"
+                        - generic: "29"
+                        - generic: "30"
+                    - generic:
+                      - generic:
+                        - generic: 2026年 07月
+                        - button:
+                          - img
+                      - generic:
+                        - generic "日曜日": 日
+                        - generic "月曜日": 月
+                        - generic "火曜日": 火
+                        - generic "水曜日": 水
+                        - generic "木曜日": 木
+                        - generic "金曜日": 金
+                        - generic "土曜日": 土
+                      - generic:
+                        - generic: "1"
+                        - generic: "2"
+                        - generic: "3"
+                        - generic: "4"
+                        - generic: "5"
+                        - generic: "6"
+                        - generic: "7"
+                        - generic: "8"
+                        - generic: "9"
+                        - generic: "10"
+                        - generic: "11"
+                        - generic: "12"
+                        - generic: "13"
+                        - generic: "14"
+                        - generic: "15"
+                        - generic: "16"
+                        - generic: "17"
+                        - generic: "18"
+                        - generic: "19"
+                        - generic: "20"
+                        - generic: "21"
+                        - generic: "22"
+                        - generic: "23"
+                        - generic: "24"
+                        - generic: "25"
+                        - generic: "26"
+                        - generic: "27"
+                        - generic: "28"
+                        - generic: "29"
+                        - generic: "30"
+                        - generic: "31"
+                  - generic: 日付を指定しない
+            - textbox "チェックアウト" [ref=e148]
+          - generic [ref=e567]:
+            - generic [ref=e568]: 宿泊地
+            - generic [ref=e569]: 指定なし
+          - generic [ref=e150]:
+            - generic:
+              - generic:
+                - generic: 1部屋
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: 大人 1人
+                      - generic: 子供 0人
+          - generic:
+            - generic:
+              - generic: 合計料金 ※1部屋/1泊あたりの税込金額
+              - generic:
+                - combobox [disabled]:
+                  - option "下限なし" [selected]
+                  - option "1,000円"
+                  - option "2,000円"
+                  - option "3,000円"
+                  - option "4,000円"
+                  - option "5,000円"
+                  - option "6,000円"
+                  - option "7,000円"
+                  - option "8,000円"
+                  - option "9,000円"
+                  - option "10,000円"
+                  - option "12,000円"
+                  - option "14,000円"
+                  - option "16,000円"
+                  - option "18,000円"
+                  - option "20,000円"
+                  - option "30,000円"
+                  - option "40,000円"
+                  - option "50,000円"
+                  - option "100,000円"
+                  - option "150,000円"
+                  - option "200,000円"
+                - generic: 〜
+                - combobox [disabled]:
+                  - option "1,000円"
+                  - option "2,000円"
+                  - option "3,000円"
+                  - option "4,000円"
+                  - option "5,000円"
+                  - option "6,000円"
+                  - option "7,000円"
+                  - option "8,000円"
+                  - option "9,000円"
+                  - option "10,000円"
+                  - option "12,000円"
+                  - option "14,000円"
+                  - option "16,000円"
+                  - option "18,000円"
+                  - option "20,000円"
+                  - option "30,000円"
+                  - option "40,000円"
+                  - option "50,000円"
+                  - option "100,000円"
+                  - option "150,000円"
+                  - option "200,000円"
+                  - option "上限なし" [selected]
+          - paragraph [ref=e151]:
+            - button "検索" [ref=e152]
+        - text: 部屋 人人
+      - generic [ref=e153]:
+        - checkbox "「OMO by 星野リゾート」から探す" [checked] [ref=e154]
+        - generic [ref=e155]: 「OMO by 星野リゾート」から探す
+    - generic [ref=e156]:
+      - generic [ref=e159]: 絞り込み
+      - combobox [ref=e163] [cursor=pointer]:
+        - option "おすすめ順" [selected]
+        - option "料金の安い順"
+        - option "料金の高い順"
+        - option "評価が高い順"
+  - generic [ref=e167]:
+    - generic [ref=e172]:
+      - list:
+        - listitem [ref=e173]:
+          - generic [ref=e174]: 施設ごとに表示
+        - listitem [ref=e175]:
+          - link "地図上に表示" [ref=e176] [cursor=pointer]:
+            - /url: //search.travel.rakuten.co.jp/ds/undated/search?f_dai=japan&f_sort=hotel&f_page=1&f_hyoji=30&f_image=1&f_tab=map&f_latitude=0.0&f_longitude=0.0&f_point_min=0&f_gcode=OMO
+      - paragraph
+      - paragraph
+      - paragraph
+    - generic [ref=e177]:
+      - generic [ref=e178]:
+        - generic [ref=e179]: ０件中
+        - generic [ref=e180]: ０件表示
+      - link "bp-info ボーナスプログラムとは" [ref=e183] [cursor=pointer]:
+        - /url: https://travel.rakuten.co.jp/special/membership/bonus/?l-id=hotellist_travelbonus
+        - img "bp-info" [ref=e184]
+        - text: ボーナスプログラムとは
+    - paragraph [ref=e186]:
+      - text: 誠に申し訳ございませんが、この検索条件に該当する空室が見つかりませんでした。
+      - text: 条件を変えて再検索してください。
+  - generic [ref=e188]:
+    - list [ref=e189]:
+      - listitem [ref=e190]:
+        - link "会社情報／標識等" [ref=e191] [cursor=pointer]:
+          - /url: https://travel.rakuten.co.jp/corporate/
+      - listitem [ref=e192]:
+        - link "個人情報保護方針" [ref=e193] [cursor=pointer]:
+          - /url: https://privacy.rakuten.co.jp/
+      - listitem [ref=e194]:
+        - link "社会的責任[CSR]" [ref=e195] [cursor=pointer]:
+          - /url: https://corp.rakuten.co.jp/csr/
+      - listitem [ref=e196]:
+        - link "採用情報" [ref=e197] [cursor=pointer]:
+          - /url: https://travel.rakuten.co.jp/recruit/
+      - listitem [ref=e198]:
+        - link "規約集" [ref=e199] [cursor=pointer]:
+          - /url: https://travel.rakuten.co.jp/info/
+      - listitem [ref=e200]:
+        - link "資料請求" [ref=e201] [cursor=pointer]:
+          - /url: https://travel.rakuten.co.jp/info/hotel_msg.html
+    - paragraph [ref=e202]: © Rakuten Group, Inc.
+  - generic [ref=e203]:
+    - generic [ref=e206]:
+      - generic [ref=e208]:
+        - generic [ref=e209]:
+          - generic [ref=e210]:
+            - generic [ref=e211]: ようこそ
+            - generic [ref=e212]: ログインしてもっとおトクに！
+          - link "ログイン" [ref=e213] [cursor=pointer]:
+            - /url: https://auth.travel.rakuten.co.jp/fwd/memberDispatcher/staticPageLogin?__event=ID01_001_001&service_id=t01&return_url=cgi-bin/rakuten_id_reference&f_next_url=https://travel.rakuten.co.jp/group/OMO.html?l-id=login_submenu
+        - link "会員登録はこちらから" [ref=e214] [cursor=pointer]:
+          - /url: https://travel.rakuten.co.jp/kaiin.html?l-id=trv_header_menu_kaiin
+          - generic [ref=e215]: 会員登録はこちらから
+          - img [ref=e218]
+      - generic [ref=e221]:
+        - generic [ref=e223]: 会員メニュー
+        - link "予約の確認・変更" [ref=e226] [cursor=pointer]:
+          - /url: https://auth.travel.rakuten.co.jp/fwd/memberDispatcher/staticPageLogin?service_id=t01&return_url=cgi-bin/rakuten_id_reference&_guestLoginServiceKey=guestReservation&f_next_url=https://mypage.travel.rakuten.co.jp/?l-id=mypage_submenu
+          - generic [ref=e227]:
+            - generic [ref=e228]:
+              - img [ref=e229]
+              - generic [ref=e230]: 予約の確認・変更
+            - img [ref=e233]
+        - link "お気に入り" [ref=e238] [cursor=pointer]:
+          - /url: https://favoritelist.travel.rakuten.co.jp/hotel/domestic?l-id=trv_header_menu_favorite
+          - generic [ref=e239]:
+            - generic [ref=e240]:
+              - img [ref=e241]
+              - generic [ref=e242]: お気に入り
+            - img [ref=e245]
+        - link "閲覧履歴" [ref=e250] [cursor=pointer]:
+          - /url: https://travel.rakuten.co.jp/share/themes/compare/compare.html?l-id=trv_header_menu_history
+          - generic [ref=e251]:
+            - generic [ref=e252]:
+              - img [ref=e253]
+              - generic [ref=e254]: 閲覧履歴
+            - img [ref=e257]
+        - link "my クーポン" [ref=e262] [cursor=pointer]:
+          - /url: https://coupon.rakuten.co.jp/myCoupon?service=travel&?scid=wi_trv_header_menu_mycoupon
+          - generic [ref=e263]:
+            - generic [ref=e264]:
+              - img [ref=e265]
+              - generic [ref=e266]: my クーポン
+            - img [ref=e269]
+        - generic [ref=e275] [cursor=pointer]:
+          - generic [ref=e276]:
+            - img [ref=e277]
+            - generic [ref=e278]: クチコミ 【NEW!】
+          - img [ref=e282]
+        - generic [ref=e288] [cursor=pointer]:
+          - generic [ref=e289]:
+            - img [ref=e290]
+            - generic [ref=e291]: ヘルプ / お問い合わせ
+          - img [ref=e295]
+      - generic [ref=e298]:
+        - generic [ref=e300]: 開催中のイベント
+        - link "5と0のつく日は最大20％OFF" [ref=e303] [cursor=pointer]:
+          - /url: https://travel.rakuten.co.jp/camp/50luxday/?l-id=trv_header_menu_50
+          - generic [ref=e304]:
+            - generic [ref=e305]:
+              - img [ref=e306]
+              - generic [ref=e307]: 5と0のつく日は最大20％OFF
+            - img [ref=e310]
+        - link "ふるさと納税" [ref=e315] [cursor=pointer]:
+          - /url: https://travel.rakuten.co.jp/special/furusato/?l-id=trv_header_menu_furusato
+          - generic [ref=e316]:
+            - generic [ref=e317]:
+              - img [ref=e318]
+              - generic [ref=e319]: ふるさと納税
+            - img [ref=e322]
+        - link "クーポン祭" [ref=e327] [cursor=pointer]:
+          - /url: https://travel.rakuten.co.jp/coupon/special/matsuri/?l-id=trv_header_menu_matsuri
+          - generic [ref=e328]:
+            - generic [ref=e329]:
+              - img [ref=e330]
+              - generic [ref=e331]: クーポン祭
+            - img [ref=e334]
+        - link "初めて利用キャンペーン" [ref=e339] [cursor=pointer]:
+          - /url: https://travel.rakuten.co.jp/camp/service_debut/?l-id=trv_header_menu_debut
+          - generic [ref=e340]:
+            - generic [ref=e341]:
+              - img [ref=e342]
+              - generic [ref=e343]: 初めて利用キャンペーン
+            - img [ref=e346]
+        - link "楽天スーパーDEAL" [ref=e351] [cursor=pointer]:
+          - /url: https://travel.rakuten.co.jp/superdeal/?l-id=trv_header_menu_deal
+          - generic [ref=e352]:
+            - generic [ref=e353]:
+              - img [ref=e354]
+              - generic [ref=e355]: 楽天スーパーDEAL
+            - img [ref=e358]
+        - link "特集・キャンペーン一覧" [ref=e363] [cursor=pointer]:
+          - /url: https://travel.rakuten.co.jp/leisure/?l-id=trv_header_service_list
+          - generic [ref=e364]:
+            - generic [ref=e365]:
+              - img [ref=e366]
+              - generic [ref=e367]: 特集・キャンペーン一覧
+            - img [ref=e370]
+      - generic [ref=e373]:
+        - generic [ref=e375]: 楽天トラベルのサービス
+        - link "国内宿泊" [ref=e378] [cursor=pointer]:
+          - /url: https://travel.rakuten.co.jp/?l-id=trv_header_menu_dh
+          - generic [ref=e379]:
+            - generic [ref=e380]:
+              - img [ref=e381]
+              - generic [ref=e382]: 国内宿泊
+            - img [ref=e385]
+        - link "交通＋宿" [ref=e390] [cursor=pointer]:
+          - /url: https://travel.rakuten.co.jp/package/?l-id=trv_header_menu_dp
+          - generic [ref=e391]:
+            - generic [ref=e392]:
+              - img [ref=e393]
+              - generic [ref=e394]: 交通＋宿
+            - img [ref=e398]
+        - link "レンタカー" [ref=e403] [cursor=pointer]:
+          - /url: https://travel.rakuten.co.jp/cars/?l-id=trv_header_menu_car
+          - generic [ref=e404]:
+            - generic [ref=e405]:
+              - img [ref=e406]
+              - generic [ref=e407]: レンタカー
+            - img [ref=e411]
+        - link "高速バス・ツアー" [ref=e416] [cursor=pointer]:
+          - /url: https://travel.rakuten.co.jp/bus/?l-id=trv_header_menu_bus
+          - generic [ref=e417]:
+            - generic [ref=e418]:
+              - img [ref=e419]
+              - generic [ref=e420]: 高速バス・ツアー
+            - img [ref=e423]
+        - link "海外旅行" [ref=e428] [cursor=pointer]:
+          - /url: https://travel.rakuten.co.jp/kaigai/?l-id=trv_header_menu_kaigai
+          - generic [ref=e429]:
+            - generic [ref=e430]:
+              - img [ref=e431]
+              - generic [ref=e432]: 海外旅行
+            - img [ref=e435]
+        - link "遊び・体験" [ref=e440] [cursor=pointer]:
+          - /url: https://experiences.travel.rakuten.co.jp/?scid=wi_trv_header_menu_experiences
+          - generic [ref=e441]:
+            - generic [ref=e442]:
+              - img [ref=e443]
+              - generic [ref=e444]: 遊び・体験
+            - img [ref=e447]
+        - link "キャンプ場" [ref=e452] [cursor=pointer]:
+          - /url: https://camp.travel.rakuten.co.jp/?scid=wi_trv_header_menu_camp
+          - generic [ref=e453]:
+            - generic [ref=e454]:
+              - img [ref=e455]
+              - generic [ref=e456]: キャンプ場
+            - img [ref=e459]
+        - link "割引クーポン" [ref=e464] [cursor=pointer]:
+          - /url: https://travel.rakuten.co.jp/coupon/?l-id=trv_header_menu_coupon
+          - generic [ref=e465]:
+            - generic [ref=e466]:
+              - img [ref=e467]
+              - generic [ref=e468]: 割引クーポン
+            - img [ref=e471]
+        - link "ふるさと納税" [ref=e476] [cursor=pointer]:
+          - /url: https://travel.rakuten.co.jp/special/furusato/?l-id=trv_header_menu_furusato
+          - generic [ref=e477]:
+            - generic [ref=e478]:
+              - img [ref=e479]
+              - generic [ref=e480]: ふるさと納税
+            - img [ref=e483]
+        - link "旅行ガイド" [ref=e488] [cursor=pointer]:
+          - /url: https://travel.rakuten.co.jp/mytrip/?l-id=trv_header_menu_mytrip
+          - generic [ref=e489]:
+            - generic [ref=e490]:
+              - img [ref=e491]
+              - generic [ref=e492]: 旅行ガイド
+            - img [ref=e495]
+      - generic [ref=e498]:
+        - generic [ref=e500]: 設定
+        - link "会員情報・変更" [ref=e503] [cursor=pointer]:
+          - /url: https://img.travel.rakuten.co.jp/image/tr/hs/pctop/tVrLh/
+          - generic [ref=e504]:
+            - generic [ref=e505]:
+              - img [ref=e506]
+              - generic [ref=e507]: 会員情報・変更
+            - img [ref=e510]
+        - link "メルマガ申し込み・変更" [ref=e515] [cursor=pointer]:
+          - /url: https://travel.rakuten.co.jp/mail/news/?l-id=trv_header_menu_mail
+          - generic [ref=e516]:
+            - generic [ref=e517]:
+              - img [ref=e518]
+              - generic [ref=e519]: メルマガ申し込み・変更
+            - img [ref=e522]
+      - generic [ref=e525]:
+        - generic [ref=e527]: その他
+        - link "楽天トラベルアプリ" [ref=e530] [cursor=pointer]:
+          - /url: https://travel.rakuten.co.jp/service/smartphone/?l-id=trv_header_menu_app
+          - generic [ref=e531]:
+            - generic [ref=e532]:
+              - img [ref=e533]
+              - generic [ref=e534]: 楽天トラベルアプリ
+            - img [ref=e537]
+        - link "楽天トラベルラッキーくじ" [ref=e542] [cursor=pointer]:
+          - /url: https://kuji.rakuten.co.jp/1243541a35?scid=wi_trv_header_menu_kuji
+          - generic [ref=e543]:
+            - generic [ref=e544]:
+              - img [ref=e545]
+              - generic [ref=e546]: 楽天トラベルラッキーくじ
+            - img [ref=e549]
+        - link "改善の取り組み" [ref=e554] [cursor=pointer]:
+          - /url: https://travel.rakuten.co.jp/special/customer/voice/?l-id=trv_header_menu_voice
+          - generic [ref=e555]:
+            - generic [ref=e556]:
+              - img [ref=e557]
+              - generic [ref=e558]: 改善の取り組み
+            - img [ref=e561]
+    - img [ref=e565] [cursor=pointer]

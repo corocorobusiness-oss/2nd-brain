@@ -1,0 +1,2950 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - link "初めて利用キャンペーンでポイントGET！" [ref=e4] [cursor=pointer]:
+      - /url: https://travel.rakuten.co.jp/camp/service_debut/?l-id=header_pc_service_debut
+      - img "初めて利用キャンペーンでポイントGET！" [ref=e5]
+    - generic [ref=e6]:
+      - navigation [ref=e8]:
+        - list [ref=e9]:
+          - listitem [ref=e10]:
+            - link "ヘルプ" [ref=e11] [cursor=pointer]:
+              - /url: https://travel.faq.rakuten.net/?l-id=trv_header_trvlink_faq
+          - listitem [ref=e12]:
+            - link "ご利用ガイド" [ref=e13] [cursor=pointer]:
+              - /url: https://travel.rakuten.co.jp/howto/?l-id=trv_header_trvlink_howto
+          - listitem [ref=e14]:
+            - link "サイトマップ" [ref=e15] [cursor=pointer]:
+              - /url: https://travel.rakuten.co.jp/sitemap/?l-id=trv_header_trvlink_sitemap
+          - listitem [ref=e16]:
+            - generic [ref=e17]:
+              - img "Language" [ref=e18]
+              - generic [ref=e19]: Language
+              - img "arrow" [ref=e20]
+        - list [ref=e21]:
+          - listitem [ref=e22]:
+            - link "楽天市場" [ref=e23] [cursor=pointer]:
+              - /url: https://www.rakuten.co.jp/?scid=wi_trv_header_grplink_ichba
+          - listitem [ref=e24]:
+            - generic [ref=e25]:
+              - generic [ref=e26]: 楽天グループ
+              - img "arrow" [ref=e27]
+      - generic [ref=e28]:
+        - link "楽天トラベル" [ref=e30]:
+          - /url: https://travel.rakuten.co.jp/?l-id=trv_header_logo
+          - img "楽天トラベル" [ref=e31]
+        - generic [ref=e32]:
+          - list [ref=e34]:
+            - listitem [ref=e35]:
+              - link "お気に入り お気に入り" [ref=e36] [cursor=pointer]:
+                - /url: https://favoritelist.travel.rakuten.co.jp/hotel/domestic?l-id=trv_header_func_favorite
+                - img "お気に入り" [ref=e37]
+                - generic [ref=e38]: お気に入り
+            - listitem [ref=e39]:
+              - link "予約確認 予約確認" [ref=e40] [cursor=pointer]:
+                - /url: https://auth.travel.rakuten.co.jp/fwd/memberDispatcher/staticPageLogin?service_id=t01&return_url=cgi-bin/rakuten_id_reference&_guestLoginServiceKey=guestReservation&f_next_url=https://mypage.travel.rakuten.co.jp/?l-id=trv_header_func_mypage
+                - img "予約確認" [ref=e41]
+                - generic [ref=e42]: 予約確認
+            - listitem [ref=e43]:
+              - link "ログイン ログイン" [ref=e44] [cursor=pointer]:
+                - /url: https://auth.travel.rakuten.co.jp/fwd/memberDispatcher/staticPageLogin?__event=ID01_001_001&service_id=t01&return_url=cgi-bin/rakuten_id_reference&f_next_url=https://search.travel.rakuten.co.jp/ds/yado/kanagawa/yokohama-high?l-id=login_header
+                - img "ログイン" [ref=e45]
+                - generic [ref=e46]: ログイン
+            - listitem [ref=e47]:
+              - generic [ref=e48] [cursor=pointer]:
+                - img "メニュー" [ref=e49]
+                - generic [ref=e50]: メニュー
+          - link "楽天トラベル サービス初めて利用キャンペーン" [ref=e52]:
+            - /url: https://travel.rakuten.co.jp/camp/service_debut/?l-id=header_square_service_debut
+            - img "楽天トラベル サービス初めて利用キャンペーン" [ref=e53]
+      - generic [ref=e54]:
+        - generic [ref=e57]:
+          - generic [ref=e58]: ようこそ！
+          - generic [ref=e59]:
+            - link "ログイン" [ref=e60] [cursor=pointer]:
+              - /url: https://auth.travel.rakuten.co.jp/fwd/memberDispatcher/staticPageLogin?__event=ID01_001_001&service_id=t01&return_url=cgi-bin/rakuten_id_reference&f_next_url=https://search.travel.rakuten.co.jp/ds/yado/kanagawa/yokohama-high?l-id=login_header
+            - generic [ref=e61]: でレベルや特典を確認できます
+        - link "レベル ?" [ref=e64] [cursor=pointer]:
+          - /url: https://auth.travel.rakuten.co.jp/fwd/memberDispatcher/staticPageLogin?__event=ID01_001_001&service_id=t01&return_url=cgi-bin/rakuten_id_reference&f_next_url=https://search.travel.rakuten.co.jp/ds/yado/kanagawa/yokohama-high
+          - img [ref=e65]
+          - generic [ref=e67]:
+            - generic [ref=e68]: レベル
+            - generic [ref=e69]: "?"
+          - img [ref=e72]
+        - link "国内宿泊が ポイント ? %" [ref=e76] [cursor=pointer]:
+          - /url: https://auth.travel.rakuten.co.jp/fwd/memberDispatcher/staticPageLogin?__event=ID01_001_001&service_id=t01&return_url=cgi-bin/rakuten_id_reference&f_next_url=https://search.travel.rakuten.co.jp/ds/yado/kanagawa/yokohama-high
+          - generic [ref=e77]:
+            - generic [ref=e78]: 国内宿泊が
+            - generic [ref=e79]: ポイント
+            - strong [ref=e80]: "? %"
+          - img [ref=e83]
+        - generic [ref=e87] [cursor=pointer]:
+          - generic [ref=e89]: 特別オファー
+          - img [ref=e92]
+      - navigation [ref=e95]:
+        - list [ref=e96]:
+          - link "国内宿泊" [ref=e97] [cursor=pointer]:
+            - /url: https://travel.rakuten.co.jp/?l-id=trv_header_service_dh
+            - listitem [ref=e98]: 国内宿泊
+          - link "交通＋宿 arrow" [ref=e99] [cursor=pointer]:
+            - /url: https://travel.rakuten.co.jp/package/?l-id=trv_header_service_dp
+            - listitem [ref=e100]:
+              - generic [ref=e101]: 交通＋宿
+              - img "arrow" [ref=e102]
+          - link "レンタカー" [ref=e103] [cursor=pointer]:
+            - /url: https://travel.rakuten.co.jp/cars/?l-id=trv_header_service_car
+            - listitem [ref=e104]:
+              - generic [ref=e105]: レンタカー
+              - img [ref=e106]
+          - link "高速バス・ツアー" [ref=e107] [cursor=pointer]:
+            - /url: https://travel.rakuten.co.jp/bus/?l-id=trv_header_service_bus
+            - listitem [ref=e108]: 高速バス・ツアー
+          - link "海外旅行" [ref=e109] [cursor=pointer]:
+            - /url: https://travel.rakuten.co.jp/kaigai/?l-id=trv_header_service_kaigai
+            - listitem [ref=e110]: 海外旅行
+          - link "遊び・体験" [ref=e111] [cursor=pointer]:
+            - /url: https://experiences.travel.rakuten.co.jp/?scid=wi_trv_header_service_experiences
+            - listitem [ref=e112]: 遊び・体験
+          - link "キャンプ場" [ref=e113] [cursor=pointer]:
+            - /url: https://camp.travel.rakuten.co.jp/?scid=wi_trv_header_service_camp
+            - listitem [ref=e114]: キャンプ場
+          - link "割引クーポン" [ref=e115] [cursor=pointer]:
+            - /url: https://travel.rakuten.co.jp/coupon/?l-id=trv_header_service_coupon
+            - listitem [ref=e116]: 割引クーポン
+          - link "ふるさと納税" [ref=e117] [cursor=pointer]:
+            - /url: https://travel.rakuten.co.jp/special/furusato/?l-id=trv_header_service_furusato
+            - listitem [ref=e118]: ふるさと納税
+          - link "旅行ガイド" [ref=e119] [cursor=pointer]:
+            - /url: https://travel.rakuten.co.jp/mytrip/?l-id=trv_header_service_mytrip
+            - listitem [ref=e120]: 旅行ガイド
+          - listitem [ref=e122]:
+            - generic [ref=e123]: その他
+            - img "arrow" [ref=e124]
+  - generic [ref=e125]:
+    - paragraph [ref=e126]:
+      - link "楽天トラベルトップ" [ref=e127] [cursor=pointer]:
+        - /url: //travel.rakuten.co.jp/
+      - text: ">"
+      - link "全国" [ref=e129] [cursor=pointer]:
+        - /url: //travel.rakuten.co.jp/yado/japan.html
+      - text: ">"
+      - link "神奈川県" [ref=e131] [cursor=pointer]:
+        - /url: //travel.rakuten.co.jp/yado/kanagawa/map.html
+      - text: "> 横浜"
+    - generic [ref=e132]: 横浜 ホテル・旅館
+  - generic [ref=e134]:
+    - generic [ref=e135]:
+      - list [ref=e137]:
+        - listitem [ref=e138]:
+          - radio "宿泊" [checked] [ref=e139]
+          - text: 宿泊
+        - listitem [ref=e140]:
+          - radio "日帰り・デイユース" [ref=e141]
+          - text: 日帰り・デイユース
+      - generic [ref=e142]:
+        - generic [ref=e143]:
+          - option "北海道"
+          - option "青森県"
+          - option "岩手県"
+          - option "宮城県"
+          - option "秋田県"
+          - option "山形県"
+          - option "福島県"
+          - option "茨城県"
+          - option "栃木県"
+          - option "群馬県"
+          - option "埼玉県"
+          - option "千葉県"
+          - option "東京都"
+          - option "神奈川県" [selected]
+          - option "新潟県"
+          - option "山梨県"
+          - option "長野県"
+          - option "富山県"
+          - option "石川県"
+          - option "福井県"
+          - option "岐阜県"
+          - option "静岡県"
+          - option "愛知県"
+          - option "三重県"
+          - option "滋賀県"
+          - option "京都府"
+          - option "大阪府"
+          - option "兵庫県"
+          - option "奈良県"
+          - option "和歌山県"
+          - option "鳥取県"
+          - option "島根県"
+          - option "岡山県"
+          - option "広島県"
+          - option "山口県"
+          - option "徳島県"
+          - option "香川県"
+          - option "愛媛県"
+          - option "高知県"
+          - option "福岡県"
+          - option "佐賀県"
+          - option "長崎県"
+          - option "熊本県"
+          - option "大分県"
+          - option "宮崎県"
+          - option "鹿児島県"
+          - option "沖縄県"
+          - option "選択してください"
+          - option "横浜" [selected]
+          - option "川崎"
+          - option "箱根"
+          - option "小田原"
+          - option "湯河原・真鶴"
+          - option "相模湖・丹沢"
+          - option "大和・相模原・町田西部"
+          - option "厚木・海老名・伊勢原"
+          - option "湘南・鎌倉・江ノ島・藤沢・平塚"
+          - option "横須賀・三浦"
+          - option "全域" [selected]
+          - option "新横浜"
+          - option "鶴見"
+          - option "みなとみらい"
+          - option "横浜中心部"
+          - option "戸塚"
+          - option "金沢八景"
+          - generic [ref=e145]:
+            - generic [ref=e147]: 日付指定なし
+            - textbox "チェックイン" [ref=e148]
+            - generic:
+              - generic:
+                - main:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic: 2026年 06月
+                      - generic:
+                        - generic "日曜日": 日
+                        - generic "月曜日": 月
+                        - generic "火曜日": 火
+                        - generic "水曜日": 水
+                        - generic "木曜日": 木
+                        - generic "金曜日": 金
+                        - generic "土曜日": 土
+                      - generic:
+                        - generic: "1"
+                        - generic: "2"
+                        - generic: "3"
+                        - generic: "4"
+                        - generic: "5"
+                        - generic: "6"
+                        - generic: "7"
+                        - generic: "8"
+                        - generic: "9"
+                        - generic: "10"
+                        - generic: "11"
+                        - generic: "12"
+                        - generic: "13"
+                        - generic: "14"
+                        - generic: "15"
+                        - generic: "16"
+                        - generic: "17"
+                        - generic: "18"
+                        - generic: "19"
+                        - generic: "20"
+                        - generic: "21"
+                        - generic: "22"
+                        - generic: "23"
+                        - generic: "24"
+                        - generic: "25"
+                        - generic: "26"
+                        - generic: "27"
+                        - generic: "28"
+                        - generic: "29"
+                        - generic: "30"
+                    - generic:
+                      - generic:
+                        - generic: 2026年 07月
+                        - button:
+                          - img
+                      - generic:
+                        - generic "日曜日": 日
+                        - generic "月曜日": 月
+                        - generic "火曜日": 火
+                        - generic "水曜日": 水
+                        - generic "木曜日": 木
+                        - generic "金曜日": 金
+                        - generic "土曜日": 土
+                      - generic:
+                        - generic: "1"
+                        - generic: "2"
+                        - generic: "3"
+                        - generic: "4"
+                        - generic: "5"
+                        - generic: "6"
+                        - generic: "7"
+                        - generic: "8"
+                        - generic: "9"
+                        - generic: "10"
+                        - generic: "11"
+                        - generic: "12"
+                        - generic: "13"
+                        - generic: "14"
+                        - generic: "15"
+                        - generic: "16"
+                        - generic: "17"
+                        - generic: "18"
+                        - generic: "19"
+                        - generic: "20"
+                        - generic: "21"
+                        - generic: "22"
+                        - generic: "23"
+                        - generic: "24"
+                        - generic: "25"
+                        - generic: "26"
+                        - generic: "27"
+                        - generic: "28"
+                        - generic: "29"
+                        - generic: "30"
+                        - generic: "31"
+                  - generic: 日付を指定しない
+            - textbox "チェックアウト" [ref=e149]
+          - generic [ref=e151]:
+            - generic [ref=e152]: 宿泊地
+            - generic [ref=e153]: 横浜
+          - generic [ref=e154]:
+            - generic:
+              - generic:
+                - generic: 1部屋
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: 大人 1人
+                      - generic: 子供 0人
+          - generic:
+            - generic:
+              - generic: 合計料金 ※1部屋/1泊あたりの税込金額
+              - generic:
+                - combobox [disabled]:
+                  - option "下限なし" [selected]
+                  - option "1,000円"
+                  - option "2,000円"
+                  - option "3,000円"
+                  - option "4,000円"
+                  - option "5,000円"
+                  - option "6,000円"
+                  - option "7,000円"
+                  - option "8,000円"
+                  - option "9,000円"
+                  - option "10,000円"
+                  - option "12,000円"
+                  - option "14,000円"
+                  - option "16,000円"
+                  - option "18,000円"
+                  - option "20,000円"
+                  - option "30,000円"
+                  - option "40,000円"
+                  - option "50,000円"
+                  - option "100,000円"
+                  - option "150,000円"
+                  - option "200,000円"
+                - generic: 〜
+                - combobox [disabled]:
+                  - option "1,000円"
+                  - option "2,000円"
+                  - option "3,000円"
+                  - option "4,000円"
+                  - option "5,000円"
+                  - option "6,000円"
+                  - option "7,000円"
+                  - option "8,000円"
+                  - option "9,000円"
+                  - option "10,000円"
+                  - option "12,000円"
+                  - option "14,000円"
+                  - option "16,000円"
+                  - option "18,000円"
+                  - option "20,000円"
+                  - option "30,000円"
+                  - option "40,000円"
+                  - option "50,000円"
+                  - option "100,000円"
+                  - option "150,000円"
+                  - option "200,000円"
+                  - option "上限なし" [selected]
+          - paragraph [ref=e155]:
+            - button "検索" [ref=e156]
+        - text: 部屋 人人
+      - list [ref=e158]:
+        - listitem [ref=e159]: パッケージで検索
+        - listitem [ref=e160]:
+          - link "ANA 航空券+宿泊" [ref=e161] [cursor=pointer]:
+            - /url: https://travel.rakuten.co.jp/package/ana/?l-id=List-Hotel-link-ANA
+            - img "ANA" [ref=e162]
+            - text: 航空券+宿泊
+        - listitem [ref=e163]:
+          - link "JAL 航空券+宿泊" [ref=e164] [cursor=pointer]:
+            - /url: https://travel.rakuten.co.jp/package/jal/?l-id=List-Hotel-link-JAL
+            - img "JAL" [ref=e165]
+            - text: 航空券+宿泊
+        - listitem [ref=e166]:
+          - link "JR 新幹線・特急+宿泊" [ref=e167] [cursor=pointer]:
+            - /url: https://travel.rakuten.co.jp/package/jr/?l-id=List-Hotel-link-JR
+            - img "JR" [ref=e168]
+            - text: 新幹線・特急+宿泊
+    - generic [ref=e169]:
+      - generic [ref=e172]: 絞り込み
+      - combobox [ref=e176] [cursor=pointer]:
+        - option "おすすめ順"
+        - option "料金の安い順"
+        - option "料金の高い順" [selected]
+        - option "評価が高い順"
+  - generic [ref=e180]:
+    - generic [ref=e185]:
+      - list:
+        - listitem [ref=e186]:
+          - generic [ref=e187]: 施設ごとに表示
+        - listitem [ref=e188]:
+          - link "地図上に表示" [ref=e189] [cursor=pointer]:
+            - /url: //search.travel.rakuten.co.jp/ds/undated/search?f_dai=japan&f_chu=kanagawa&f_shou=yokohama&f_sort=hotel_kin_high&f_page=1&f_hyoji=30&f_image=1&f_tab=map&f_latitude=0.0&f_longitude=0.0&f_point_min=0
+      - paragraph
+      - paragraph
+      - paragraph
+    - img [ref=e192] [cursor=pointer]
+    - generic [ref=e193]:
+      - generic [ref=e194]:
+        - generic [ref=e195]: 190件中
+        - generic [ref=e196]: 1～30 件表示
+      - link "bp-info ボーナスプログラムとは" [ref=e199] [cursor=pointer]:
+        - /url: https://travel.rakuten.co.jp/special/membership/bonus/?l-id=hotellist_travelbonus
+        - img "bp-info" [ref=e200]
+        - text: ボーナスプログラムとは
+    - list [ref=e201]:
+      - listitem [ref=e202]:
+        - generic [ref=e205]:
+          - term [ref=e206]:
+            - generic [ref=e210]:
+              - generic [ref=e211]:
+                - generic [ref=e212]:
+                  - link:
+                    - /url: javascript:void(0)
+                - link "Play video" [ref=e214] [cursor=pointer]:
+                  - /url: javascript:void(0)
+                  - button "Play video" [ref=e219]
+                - generic [ref=e220]:
+                  - link:
+                    - /url: javascript:void(0)
+                - generic [ref=e221]:
+                  - link:
+                    - /url: javascript:void(0)
+                - generic [ref=e222]:
+                  - link:
+                    - /url: javascript:void(0)
+                - generic [ref=e223]:
+                  - link:
+                    - /url: javascript:void(0)
+                - generic [ref=e224]:
+                  - link:
+                    - /url: javascript:void(0)
+                - generic [ref=e225]:
+                  - link:
+                    - /url: javascript:void(0)
+                - generic [ref=e226]:
+                  - link:
+                    - /url: javascript:void(0)
+                - generic [ref=e227]:
+                  - link:
+                    - /url: javascript:void(0)
+                - generic [ref=e228]:
+                  - link:
+                    - /url: javascript:void(0)
+                - generic [ref=e229]:
+                  - link:
+                    - /url: javascript:void(0)
+                - generic [ref=e230]:
+                  - link:
+                    - /url: javascript:void(0)
+                - generic [ref=e231]:
+                  - link:
+                    - /url: javascript:void(0)
+                - generic [ref=e232]:
+                  - link:
+                    - /url: javascript:void(0)
+                - generic [ref=e233]:
+                  - link:
+                    - /url: javascript:void(0)
+                - generic [ref=e234]:
+                  - link:
+                    - /url: javascript:void(0)
+                - link "Play video" [ref=e236] [cursor=pointer]:
+                  - /url: javascript:void(0)
+                  - button "Play video" [ref=e241]
+              - button "Next slide" [ref=e242] [cursor=pointer]:
+                - img [ref=e243]
+              - button "Previous slide" [ref=e244] [cursor=pointer]:
+                - img [ref=e245]
+              - generic [ref=e246]:
+                - generic [ref=e247]: "1"
+                - text: /
+                - generic [ref=e248]: "16"
+          - definition [ref=e250]:
+            - generic [ref=e252]:
+              - img "bp-info" [ref=e254]
+              - heading "ＴＲＡＮ．ＳＣＥＮＤＥＲ ＨＯＴＥＬ Ｙｏｋｏｈａｍａ（２０２５年１１月１４日ＯＰＥＮ）" [level=2] [ref=e255]:
+                - link "ＴＲＡＮ．ＳＣＥＮＤＥＲ ＨＯＴＥＬ Ｙｏｋｏｈａｍａ（２０２５年１１月１４日ＯＰＥＮ）" [ref=e256] [cursor=pointer]:
+                  - /url: https://travel.rakuten.co.jp/HOTEL/197381/197381.html
+            - paragraph [ref=e257]:
+              - link "4.44（48件）" [ref=e258] [cursor=pointer]:
+                - /url: https://travel.rakuten.co.jp/HOTEL/197381/review.html?l-id=hotelList_ad_L000003664_1_197381
+                - generic [ref=e260]:
+                  - strong [ref=e261]: "4.44"
+                  - text: （48件）
+            - paragraph [ref=e262]: 【クーポン配布中】2025年11月14日オープン！ 中華街ならではのこだわり朝食と個室サウナの特別な体験をお届けします。
+            - paragraph [ref=e263]:
+              - generic [ref=e264]: アクセス ：みなとみらい線「元町・中華街駅」2番出口より徒歩3分
+              - generic "ＴＲＡＮ．ＳＣＥＮＤＥＲ ＨＯＴＥＬ Ｙｏｋｏｈａｍａ（２０２５年１１月１４日ＯＰＥＮ）" [ref=e265] [cursor=pointer]:
+                - generic [ref=e266]: 地図から探す
+            - generic [ref=e267]:
+              - generic [ref=e268]:
+                - generic [ref=e269]:
+                  - generic [ref=e270]:
+                    - text: 最安値
+                    - strong [ref=e271]: 3,573
+                    - text: 円〜
+                  - generic [ref=e272]: 消費税込3,930円〜
+                - link "宿泊プラン一覧を見る" [ref=e274] [cursor=pointer]:
+                  - /url: //hotel.travel.rakuten.co.jp/hotelinfo/plan/197381?f_teikei=&l-id=hotelList_ad_L000003664_1_197381
+              - generic [ref=e275]:
+                - link "航空券付きプラン" [ref=e277] [cursor=pointer]:
+                  - /url: javascript:void(0)
+                - link "JR新幹線+特急券付きプラン" [ref=e280] [cursor=pointer]:
+                  - /url: https://travel.rakuten.co.jp/package/jr/hotel_info_plan/197381?checkInDate=2026-06-30&checkOutDate=2026-07-01&adults=2&noOfUnits=1&childElementary=0&infantBedMeal=0&infantNone=0&departureDate=2026-06-30&returnDate=2026-07-01
+      - listitem [ref=e281]:
+        - generic [ref=e284]:
+          - term [ref=e285]:
+            - generic [ref=e290]:
+              - generic [ref=e291]:
+                - link "横浜の海に包まれる、まるで船旅のような特等席。Pier8ならではのウォーターフロントを堪能する特別な日にぴったりな客室タイプです。":
+                  - /url: javascript:void(0)
+                  - img "横浜の海に包まれる、まるで船旅のような特等席。Pier8ならではのウォーターフロントを堪能する特別な日にぴったりな客室タイプです。" [ref=e292] [cursor=pointer]
+              - generic [ref=e293]:
+                - link "ハンマーヘッドシャークの上層階に位置する、みなとみらいのウォーターフロント眺望が自慢のホテル。":
+                  - /url: javascript:void(0)
+                  - img "ハンマーヘッドシャークの上層階に位置する、みなとみらいのウォーターフロント眺望が自慢のホテル。" [ref=e294] [cursor=pointer]
+              - generic [ref=e295]:
+                - link "みなとみらいのウォーターフロントを堪能するテラス。行き交う船やベイブリッジが目の前に広がる開放的な屋上空間。ゆっくりと本を読んだりスケッチしたり、大人時間をお楽しみください。":
+                  - /url: javascript:void(0)
+                  - img "みなとみらいのウォーターフロントを堪能するテラス。行き交う船やベイブリッジが目の前に広がる開放的な屋上空間。ゆっくりと本を読んだりスケッチしたり、大人時間をお楽しみください。" [ref=e296] [cursor=pointer]
+              - generic [ref=e297]:
+                - link "クラブインターコンチネンタルでは、お客様一人ひとりに合せたきめ細やかなサービスと優雅な空間で、充実したくつろぎのひとときをお約束いたします。専用キッチンでご用意するご朝食、アフタヌーンティー、イブニングカクテルをお楽しみいただけるほか、ライブラリーやミーティングスペースを備えます。":
+                  - /url: javascript:void(0)
+                  - img "クラブインターコンチネンタルでは、お客様一人ひとりに合せたきめ細やかなサービスと優雅な空間で、充実したくつろぎのひとときをお約束いたします。専用キッチンでご用意するご朝食、アフタヌーンティー、イブニングカクテルをお楽しみいただけるほか、ライブラリーやミーティングスペースを備えます。" [ref=e298] [cursor=pointer]
+              - generic [ref=e299]:
+                - link "おひとり様でも2名様でもおくつろぎいただけるカウチから、グループで利用できるソファ席。横浜港を一望するカウンターなどお好きなスタイルでご利用ください。":
+                  - /url: javascript:void(0)
+                  - img "おひとり様でも2名様でもおくつろぎいただけるカウチから、グループで利用できるソファ席。横浜港を一望するカウンターなどお好きなスタイルでご利用ください。" [ref=e300] [cursor=pointer]
+              - generic [ref=e301]:
+                - link "夜のテラスの醍醐味は、目の前に広がる圧倒的な夜景。みなとみらいの煌びやかな光が海面に反射し、星空と溶け合う景色はまるで美しき宇宙のよう。心地よい海風とともに、贅沢な夜のクルーズ気分をご堪能ください。":
+                  - /url: javascript:void(0)
+                  - img "夜のテラスの醍醐味は、目の前に広がる圧倒的な夜景。みなとみらいの煌びやかな光が海面に反射し、星空と溶け合う景色はまるで美しき宇宙のよう。心地よい海風とともに、贅沢な夜のクルーズ気分をご堪能ください。" [ref=e302] [cursor=pointer]
+              - generic [ref=e303]:
+                - link "横浜独自に進化した西洋料理を、地産地消にこだわり、神奈川県産の食材を活かした料理を、コースやアラカルトでご提供いたします。旅の寛ぎを感じる店内、みなとみらいの街並みや海の景色を楽しめるテラス席のほか、バータイムにはジャズの生演奏を BGM に豊富な種類のワインやカクテルをお楽しみいただけます。":
+                  - /url: javascript:void(0)
+                  - img "横浜独自に進化した西洋料理を、地産地消にこだわり、神奈川県産の食材を活かした料理を、コースやアラカルトでご提供いたします。旅の寛ぎを感じる店内、みなとみらいの街並みや海の景色を楽しめるテラス席のほか、バータイムにはジャズの生演奏を BGM に豊富な種類のワインやカクテルをお楽しみいただけます。" [ref=e304] [cursor=pointer]
+              - generic [ref=e305]:
+                - link "Larboardには、ウォーターフロントを堪能するテラス席もございます。テラス席はドックフレンドリーのため、愛犬との散歩のついでにもお気軽にお立ち寄り気ださい。":
+                  - /url: javascript:void(0)
+                  - img "Larboardには、ウォーターフロントを堪能するテラス席もございます。テラス席はドックフレンドリーのため、愛犬との散歩のついでにもお気軽にお立ち寄り気ださい。" [ref=e306] [cursor=pointer]
+              - generic [ref=e307]:
+                - link "西洋を取り込み独自に発展させた横浜に着想を得て創作する料理は、季節毎に新しいメニューでお迎えいたします。":
+                  - /url: javascript:void(0)
+                  - img "西洋を取り込み独自に発展させた横浜に着想を得て創作する料理は、季節毎に新しいメニューでお迎えいたします。" [ref=e308] [cursor=pointer]
+              - generic [ref=e309]:
+                - link "和洋揃うハーフブッフェスタイルにて、メインディッシュは卵料理や魚、肉料理など4種のメニューからお好みの一皿をお選びいただき、作り立てをテーブルへサーブいたします。":
+                  - /url: javascript:void(0)
+                  - img "和洋揃うハーフブッフェスタイルにて、メインディッシュは卵料理や魚、肉料理など4種のメニューからお好みの一皿をお選びいただき、作り立てをテーブルへサーブいたします。" [ref=e310] [cursor=pointer]
+              - generic [ref=e311]:
+                - link "みなとみらいにある隠れ家鮨。瑞々しい中庭の奥に静かに佇む、カウンター席のみの特別な空間です。凛とした静寂の中、選び抜かれた極上のネタと職人の美技が織りなす、贅沢な食体験をお届けします。":
+                  - /url: javascript:void(0)
+                  - img "みなとみらいにある隠れ家鮨。瑞々しい中庭の奥に静かに佇む、カウンター席のみの特別な空間です。凛とした静寂の中、選び抜かれた極上のネタと職人の美技が織りなす、贅沢な食体験をお届けします。" [ref=e312] [cursor=pointer]
+              - generic [ref=e313]:
+                - link "ディナーは、旬の素材に江戸前の技を施したコース仕立て。お造りや握りは、その日一番の旬を職人が厳選。酒蒸しや焼き物といった温かなひと皿からデザートまで、季節の移ろいとともに静かに流れる美食時間をお過ごしください。":
+                  - /url: javascript:void(0)
+                  - img "ディナーは、旬の素材に江戸前の技を施したコース仕立て。お造りや握りは、その日一番の旬を職人が厳選。酒蒸しや焼き物といった温かなひと皿からデザートまで、季節の移ろいとともに静かに流れる美食時間をお過ごしください。" [ref=e314] [cursor=pointer]
+              - generic [ref=e315]:
+                - link "海の上にいることを忘れさせる清閑な中庭に、美しい日本の島々を表現しました。楚々と咲く早々や香り立つ植物、風に揺れる葉音など、里から山へとつながる四季折々の自然風景をご覧いただけます。":
+                  - /url: javascript:void(0)
+                  - img "海の上にいることを忘れさせる清閑な中庭に、美しい日本の島々を表現しました。楚々と咲く早々や香り立つ植物、風に揺れる葉音など、里から山へとつながる四季折々の自然風景をご覧いただけます。" [ref=e316] [cursor=pointer]
+              - generic [ref=e317]:
+                - link "島々の庭～四季～に向かって全面に窓を配したスペース。季節ごとの自然を感じていただきながら、連日での会合や、ご家族での小宴など滞在しながら多目的にご利用いただけます。":
+                  - /url: javascript:void(0)
+                  - img "島々の庭～四季～に向かって全面に窓を配したスペース。季節ごとの自然を感じていただきながら、連日での会合や、ご家族での小宴など滞在しながら多目的にご利用いただけます。" [ref=e318] [cursor=pointer]
+              - generic [ref=e319]:
+                - link "自然光を取り込む大きな窓のあるジムは、宿泊者専用で 24 時間ご利用いただけます。トレーニングマシンとストレッチスペースがございます。":
+                  - /url: javascript:void(0)
+                  - img "自然光を取り込む大きな窓のあるジムは、宿泊者専用で 24 時間ご利用いただけます。トレーニングマシンとストレッチスペースがございます。" [ref=e320] [cursor=pointer]
+              - generic [ref=e321]:
+                - link:
+                  - /url: javascript:void(0)
+          - definition [ref=e323]:
+            - generic [ref=e325]:
+              - img "bp-info" [ref=e327]
+              - heading "インターコンチネンタル横浜Ｐｉｅｒ ８ ｂｙ ＩＨＧ" [level=2] [ref=e328]:
+                - link "インターコンチネンタル横浜Ｐｉｅｒ ８ ｂｙ ＩＨＧ" [ref=e329] [cursor=pointer]:
+                  - /url: https://travel.rakuten.co.jp/HOTEL/177505/177505.html
+            - paragraph [ref=e330]:
+              - link "4.68（262件）" [ref=e331] [cursor=pointer]:
+                - /url: https://travel.rakuten.co.jp/HOTEL/177505/review.html?l-id=hotelList_ad_L000003664_2_177505
+                - generic [ref=e333]:
+                  - strong [ref=e334]: "4.68"
+                  - text: （262件）
+            - generic [ref=e335]:
+              - paragraph [ref=e336]
+              - img [ref=e339]
+              - paragraph [ref=e340]:
+                - generic [ref=e341]: IHG One Rewards会員限定優待あり
+            - paragraph [ref=e342]: 品格と遊び心が心地よく共存する、新しいラグジュアリーと出会う旅へ
+            - paragraph [ref=e343]:
+              - generic [ref=e344]: アクセス ：横浜高速鉄道みなとみらい線「馬車道」駅４番出口より徒歩約１０分／「みなとみらい」駅より徒歩約１２分
+              - generic "インターコンチネンタル横浜Ｐｉｅｒ ８ ｂｙ ＩＨＧ" [ref=e345] [cursor=pointer]:
+                - generic [ref=e346]: 地図から探す
+            - generic [ref=e349]: 駐車場
+            - generic [ref=e350]:
+              - generic [ref=e351]:
+                - generic [ref=e352]:
+                  - generic [ref=e353]:
+                    - text: 最安値
+                    - strong [ref=e354]: 14,387
+                    - text: 円〜
+                  - generic [ref=e355]: 消費税込15,825円〜
+                - link "宿泊プラン一覧を見る" [ref=e357] [cursor=pointer]:
+                  - /url: //hotel.travel.rakuten.co.jp/hotelinfo/plan/177505?f_teikei=&l-id=hotelList_ad_L000003664_2_177505
+              - generic [ref=e358]:
+                - link "航空券付きプラン" [ref=e360] [cursor=pointer]:
+                  - /url: javascript:void(0)
+                - link "JR新幹線+特急券付きプラン" [ref=e363] [cursor=pointer]:
+                  - /url: https://travel.rakuten.co.jp/package/jr/hotel_info_plan/177505?checkInDate=2026-06-30&checkOutDate=2026-07-01&adults=2&noOfUnits=1&childElementary=0&infantBedMeal=0&infantNone=0&departureDate=2026-06-30&returnDate=2026-07-01
+      - listitem [ref=e364]:
+        - generic [ref=e367]:
+          - term [ref=e368]:
+            - generic [ref=e373]:
+              - generic [ref=e374]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e375]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e376]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e377]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e378]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e379]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e380]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e381]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e382]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e383]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e384]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e385]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e386]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e387]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e388]:
+                - link:
+                  - /url: javascript:void(0)
+          - definition [ref=e389]:
+            - heading "ＹｏｋｏｈａｍａＳｔａｙＰｒｅｍｉｅｒ" [level=2] [ref=e392]:
+              - link "ＹｏｋｏｈａｍａＳｔａｙＰｒｅｍｉｅｒ" [ref=e393] [cursor=pointer]:
+                - /url: https://travel.rakuten.co.jp/HOTEL/192710/192710.html
+            - paragraph [ref=e394]:
+              - link "5.00（4件）" [ref=e395] [cursor=pointer]:
+                - /url: https://travel.rakuten.co.jp/HOTEL/192710/review.html?l-id=hotelList_3_192710
+                - generic [ref=e397]:
+                  - strong [ref=e398]: "5.00"
+                  - text: （4件）
+            - img [ref=e401]
+            - paragraph [ref=e402]: 横浜の中心部にある大人数宿泊可能なお部屋です。 元町・中華街駅から歩いて３分の好立地！
+            - paragraph [ref=e403]:
+              - generic [ref=e404]: アクセス ：元町・中華街駅より徒歩約３分
+              - generic "ＹｏｋｏｈａｍａＳｔａｙＰｒｅｍｉｅｒ" [ref=e405] [cursor=pointer]:
+                - generic [ref=e406]: 地図から探す
+            - generic [ref=e408]:
+              - generic [ref=e409]:
+                - generic [ref=e410]:
+                  - text: 最安値
+                  - strong [ref=e411]: 61,819
+                  - text: 円〜
+                - generic [ref=e412]: 消費税込68,000円〜
+              - link "宿泊プラン一覧を見る" [ref=e414] [cursor=pointer]:
+                - /url: //hotel.travel.rakuten.co.jp/hotelinfo/plan/192710?f_teikei=&l-id=hotelList_3_192710
+      - listitem [ref=e416]:
+        - generic [ref=e419]:
+          - term [ref=e420]:
+            - generic [ref=e425]:
+              - generic [ref=e426]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e427]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e428]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e429]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e430]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e431]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e432]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e433]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e434]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e435]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e436]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e437]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e438]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e439]:
+                - link:
+                  - /url: javascript:void(0)
+          - definition [ref=e440]:
+            - heading "ウェスティンホテル横浜" [level=2] [ref=e443]:
+              - link "ウェスティンホテル横浜" [ref=e444] [cursor=pointer]:
+                - /url: https://travel.rakuten.co.jp/HOTEL/183942/183942.html
+            - paragraph [ref=e445]:
+              - link "4.61（131件）" [ref=e446] [cursor=pointer]:
+                - /url: https://travel.rakuten.co.jp/HOTEL/183942/review.html?l-id=hotelList_4_183942
+                - generic [ref=e448]:
+                  - strong [ref=e449]: "4.61"
+                  - text: （131件）
+            - generic [ref=e450]:
+              - paragraph [ref=e451]
+              - paragraph [ref=e453]:
+                - generic [ref=e454]: サステナブルトラベル
+              - img [ref=e456]
+              - paragraph [ref=e457]:
+                - generic [ref=e458]: Marriott Bonvoy会員限定優待あり
+            - paragraph [ref=e459]: ヘブンリーベッドを備えた42平米以上の客室、スパや屋内プールで至福のステイを
+            - paragraph [ref=e460]:
+              - generic [ref=e461]: アクセス ：みなとみらい線「みなとみらい駅」から徒歩6分
+              - generic "ウェスティンホテル横浜" [ref=e462] [cursor=pointer]:
+                - generic [ref=e463]: 地図から探す
+            - generic [ref=e466]: 駐車場
+            - generic [ref=e467]:
+              - generic [ref=e468]:
+                - generic [ref=e469]:
+                  - generic [ref=e470]:
+                    - text: 最安値
+                    - strong [ref=e471]: 16,368
+                    - text: 円〜
+                  - generic [ref=e472]: 消費税込18,004円〜
+                - link "宿泊プラン一覧を見る" [ref=e474] [cursor=pointer]:
+                  - /url: //hotel.travel.rakuten.co.jp/hotelinfo/plan/183942?f_teikei=&l-id=hotelList_4_183942
+              - generic [ref=e475]:
+                - link "航空券付きプラン" [ref=e477] [cursor=pointer]:
+                  - /url: javascript:void(0)
+                - link "JR新幹線+特急券付きプラン" [ref=e480] [cursor=pointer]:
+                  - /url: https://travel.rakuten.co.jp/package/jr/hotel_info_plan/183942?checkInDate=2026-06-30&checkOutDate=2026-07-01&adults=2&noOfUnits=1&childElementary=0&infantBedMeal=0&infantNone=0&departureDate=2026-06-30&returnDate=2026-07-01
+      - listitem [ref=e481]:
+        - generic [ref=e484]:
+          - term [ref=e485]:
+            - generic [ref=e490]:
+              - generic [ref=e491]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e492]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e493]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e494]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e495]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e496]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e497]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e498]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e499]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e500]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e501]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e502]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e503]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e504]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e505]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e506]:
+                - link:
+                  - /url: javascript:void(0)
+          - definition [ref=e507]:
+            - generic [ref=e509]:
+              - img "bp-info" [ref=e511]
+              - heading "ザ・カハラ・ホテル＆リゾート 横浜" [level=2] [ref=e512]:
+                - link "ザ・カハラ・ホテル＆リゾート 横浜" [ref=e513] [cursor=pointer]:
+                  - /url: https://travel.rakuten.co.jp/HOTEL/187395/187395.html
+            - paragraph [ref=e514]:
+              - link "4.71（348件）" [ref=e515] [cursor=pointer]:
+                - /url: https://travel.rakuten.co.jp/HOTEL/187395/review.html?l-id=hotelList_5_187395
+                - generic [ref=e517]:
+                  - strong [ref=e518]: "4.71"
+                  - text: （348件）
+            - generic [ref=e519]:
+              - paragraph [ref=e520]
+              - img [ref=e523]
+            - paragraph [ref=e524]: 2024 客室満足度「全国トップ」獲得！ハワイ・ホノルルの名門「カハラ」の名前を冠する世界で2番目のホテル
+            - paragraph [ref=e525]:
+              - generic [ref=e526]: アクセス ：みなとみらい線 新高島駅、みなとみらい駅より徒歩約8分
+              - generic "ザ・カハラ・ホテル＆リゾート 横浜" [ref=e527] [cursor=pointer]:
+                - generic [ref=e528]: 地図から探す
+            - generic [ref=e531]: 駐車場
+            - generic [ref=e532]:
+              - generic [ref=e533]:
+                - generic [ref=e534]:
+                  - generic [ref=e535]:
+                    - text: 最安値
+                    - strong [ref=e536]: 15,640
+                    - text: 円〜
+                  - generic [ref=e537]: 消費税込17,204円〜
+                - link "宿泊プラン一覧を見る" [ref=e539] [cursor=pointer]:
+                  - /url: //hotel.travel.rakuten.co.jp/hotelinfo/plan/187395?f_teikei=&l-id=hotelList_5_187395
+              - generic [ref=e540]:
+                - link "日帰り・デイユース" [ref=e542] [cursor=pointer]:
+                  - /url: //hotel.travel.rakuten.co.jp/hotelinfo/dayuse/187395?f_teikei=&l-id=hotelList_5_187395
+                - link "航空券付きプラン" [ref=e545] [cursor=pointer]:
+                  - /url: javascript:void(0)
+                - link "JR新幹線+特急券付きプラン" [ref=e548] [cursor=pointer]:
+                  - /url: https://travel.rakuten.co.jp/package/jr/hotel_info_plan/187395?checkInDate=2026-06-30&checkOutDate=2026-07-01&adults=2&noOfUnits=1&childElementary=0&infantBedMeal=0&infantNone=0&departureDate=2026-06-30&returnDate=2026-07-01
+      - listitem [ref=e549]:
+        - generic [ref=e552]:
+          - term [ref=e553]:
+            - generic [ref=e558]:
+              - generic [ref=e559]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e560]:
+                - link "シェラトンクラブフロア ジュニアスイート 高層階より横浜の夜景をお楽しみください":
+                  - /url: javascript:void(0)
+                  - generic:
+                    - img "シェラトンクラブフロア ジュニアスイート 高層階より横浜の夜景をお楽しみください"
+              - generic [ref=e561]:
+                - link "こちらのお部屋をご希望の場合は、ラグジュアリーフロア・デラックスツインをご予約の上、備考欄にて「プレミアムタイプ希望」とご記入ください。※室数に限りがあるためご希望に添えない場合もございます":
+                  - /url: javascript:void(0)
+                  - generic:
+                    - img "こちらのお部屋をご希望の場合は、ラグジュアリーフロア・デラックスツインをご予約の上、備考欄にて「プレミアムタイプ希望」とご記入ください。※室数に限りがあるためご希望に添えない場合もございます"
+              - generic [ref=e562]:
+                - link "ワンランク上のホテルライフをかなえる広々とした心地よい空間。コーナーに位置し、2面の窓からダイナミックな眺望をお楽しみください":
+                  - /url: javascript:void(0)
+                  - generic:
+                    - img "ワンランク上のホテルライフをかなえる広々とした心地よい空間。コーナーに位置し、2面の窓からダイナミックな眺望をお楽しみください"
+              - generic [ref=e563]:
+                - link "ニレの木材が持つやさしい雰囲気と緑多い横浜をイメージさせるグリーンをアクセントカラーに活かした安らぎのツインベッドルーム":
+                  - /url: javascript:void(0)
+                  - generic:
+                    - img "ニレの木材が持つやさしい雰囲気と緑多い横浜をイメージさせるグリーンをアクセントカラーに活かした安らぎのツインベッドルーム"
+              - generic [ref=e564]:
+                - link "シェラトンクラブラウンジ（26階）ご滞在中お客様をサポートする専属のスタッフがお迎えいたします":
+                  - /url: javascript:void(0)
+                  - generic:
+                    - img "シェラトンクラブラウンジ（26階）ご滞在中お客様をサポートする専属のスタッフがお迎えいたします"
+              - generic [ref=e565]:
+                - link "シェラトンクラブラウンジでは、17時から季節にあわせたオードブルやアルコールドリンク類もご用意いたします。":
+                  - /url: javascript:void(0)
+                  - generic:
+                    - img "シェラトンクラブラウンジでは、17時から季節にあわせたオードブルやアルコールドリンク類もご用意いたします。"
+              - generic [ref=e566]:
+                - link "シェラトンクラブラウンジでは、17時から季節にあわせたオードブルやアルコールドリンク類もご用意いたしております":
+                  - /url: javascript:void(0)
+                  - generic:
+                    - img "シェラトンクラブラウンジでは、17時から季節にあわせたオードブルやアルコールドリンク類もご用意いたしております"
+              - generic [ref=e567]:
+                - link "横浜の海と風を感じる、新しいオアシス。ネイビーブルーを基調としたゆったりとくつろげる空間です":
+                  - /url: javascript:void(0)
+                  - generic:
+                    - img "横浜の海と風を感じる、新しいオアシス。ネイビーブルーを基調としたゆったりとくつろげる空間です"
+              - generic [ref=e568]:
+                - link "オールデイダイニング「コンパス」ご朝食":
+                  - /url: javascript:void(0)
+                  - generic:
+                    - img "オールデイダイニング「コンパス」ご朝食"
+              - generic [ref=e569]:
+                - link "「ストロベリーショートケーキ」や「苺のマカロン」などをお楽しみいただけるアフターヌーンティーセット。お飲物はコーヒー、または190年以上の歴史を持つドイツの老舗紅茶メーカー「ロンネフェルト」合計23種よりお選びいただけます。":
+                  - /url: javascript:void(0)
+                  - generic:
+                    - img "「ストロベリーショートケーキ」や「苺のマカロン」などをお楽しみいただけるアフターヌーンティーセット。お飲物はコーヒー、または190年以上の歴史を持つドイツの老舗紅茶メーカー「ロンネフェルト」合計23種よりお選びいただけます。"
+              - generic [ref=e570]:
+                - link "新年の幕開けと共に、食の宝庫と異名を持つ北海道より産地直送で届くシェフ厳選の豪華食材を惜しげもなく使用した絶品グルメが贅沢に楽しめるコンパス人気の「冬の北海道フェア」":
+                  - /url: javascript:void(0)
+                  - generic:
+                    - img "新年の幕開けと共に、食の宝庫と異名を持つ北海道より産地直送で届くシェフ厳選の豪華食材を惜しげもなく使用した絶品グルメが贅沢に楽しめるコンパス人気の「冬の北海道フェア」"
+              - generic [ref=e571]:
+                - link "スカイラウンジ「ベイビュー」では、ノンアルコールで見た目も楽しいホテルオリジナルのモクテルをご提供。ハイティーをセットにした「夜お茶」もお愉しみいただけます。":
+                  - /url: javascript:void(0)
+                  - generic:
+                    - img "スカイラウンジ「ベイビュー」では、ノンアルコールで見た目も楽しいホテルオリジナルのモクテルをご提供。ハイティーをセットにした「夜お茶」もお愉しみいただけます。"
+              - generic [ref=e572]:
+                - link "2019年7月改装したロビーは、グローバルホテルならではの開放的でリラックスできる新たな空間と、ホテルをご利用されるお客様の心にいつでも\"帰ってきたい\"と思わせる印象を残します。":
+                  - /url: javascript:void(0)
+                  - generic:
+                    - img "2019年7月改装したロビーは、グローバルホテルならではの開放的でリラックスできる新たな空間と、ホテルをご利用されるお客様の心にいつでも\"帰ってきたい\"と思わせる印象を残します。"
+          - definition [ref=e573]:
+            - heading "横浜ベイシェラトンホテル＆タワーズ" [level=2] [ref=e576]:
+              - link "横浜ベイシェラトンホテル＆タワーズ" [ref=e577] [cursor=pointer]:
+                - /url: https://travel.rakuten.co.jp/HOTEL/1598/1598.html
+            - paragraph [ref=e578]:
+              - link "4.55（2172件）" [ref=e579] [cursor=pointer]:
+                - /url: https://travel.rakuten.co.jp/HOTEL/1598/review.html?l-id=hotelList_6_1598
+                - generic [ref=e581]:
+                  - strong [ref=e582]: "4.55"
+                  - text: （2172件）
+            - generic [ref=e583]:
+              - paragraph [ref=e584]
+              - paragraph [ref=e586]:
+                - generic [ref=e587]: サステナブルトラベル
+              - img [ref=e589]
+              - paragraph [ref=e590]:
+                - generic [ref=e591]: Marriott Bonvoy会員限定優待あり
+            - paragraph [ref=e592]: お子様12歳まで添い寝無料。横浜駅地下直結でアクセス抜群！観光・コンサート・ビジネスにおすすめ／マリオットグループ
+            - paragraph [ref=e593]:
+              - generic [ref=e594]: アクセス ：JR・私鉄 横浜駅徒歩1分(直結)。新横浜駅から地下鉄11分、品川駅からＪＲ20分。羽田空港よりリムジンYCAT迄30分
+              - generic "横浜ベイシェラトンホテル＆タワーズ" [ref=e595] [cursor=pointer]:
+                - generic [ref=e596]: 地図から探す
+            - generic [ref=e599]: 駐車場
+            - generic [ref=e600]:
+              - generic [ref=e601]:
+                - generic [ref=e602]:
+                  - generic [ref=e603]:
+                    - text: 最安値
+                    - strong [ref=e604]: 15,468
+                    - text: 円〜
+                  - generic [ref=e605]: 消費税込17,014円〜
+                - link "宿泊プラン一覧を見る" [ref=e607] [cursor=pointer]:
+                  - /url: //hotel.travel.rakuten.co.jp/hotelinfo/plan/1598?f_teikei=&l-id=hotelList_6_1598
+              - generic [ref=e608]:
+                - link "航空券付きプラン" [ref=e610] [cursor=pointer]:
+                  - /url: javascript:void(0)
+                - link "JR新幹線+特急券付きプラン" [ref=e613] [cursor=pointer]:
+                  - /url: https://travel.rakuten.co.jp/package/jr/hotel_info_plan/1598?checkInDate=2026-06-30&checkOutDate=2026-07-01&adults=2&noOfUnits=1&childElementary=0&infantBedMeal=0&infantNone=0&departureDate=2026-06-30&returnDate=2026-07-01
+      - listitem [ref=e614]:
+        - generic [ref=e617]:
+          - term [ref=e618]:
+            - generic [ref=e623]:
+              - generic [ref=e624]:
+                - link "横浜の海に包まれる、まるで船旅のような特等席。Pier8ならではのウォーターフロントを堪能する特別な日にぴったりな客室タイプです。":
+                  - /url: javascript:void(0)
+                  - img "横浜の海に包まれる、まるで船旅のような特等席。Pier8ならではのウォーターフロントを堪能する特別な日にぴったりな客室タイプです。" [ref=e625] [cursor=pointer]
+              - generic [ref=e626]:
+                - link "ハンマーヘッドシャークの上層階に位置する、みなとみらいのウォーターフロント眺望が自慢のホテル。":
+                  - /url: javascript:void(0)
+                  - img "ハンマーヘッドシャークの上層階に位置する、みなとみらいのウォーターフロント眺望が自慢のホテル。" [ref=e627] [cursor=pointer]
+              - generic [ref=e628]:
+                - link "みなとみらいのウォーターフロントを堪能するテラス。行き交う船やベイブリッジが目の前に広がる開放的な屋上空間。ゆっくりと本を読んだりスケッチしたり、大人時間をお楽しみください。":
+                  - /url: javascript:void(0)
+                  - img "みなとみらいのウォーターフロントを堪能するテラス。行き交う船やベイブリッジが目の前に広がる開放的な屋上空間。ゆっくりと本を読んだりスケッチしたり、大人時間をお楽しみください。" [ref=e629] [cursor=pointer]
+              - generic [ref=e630]:
+                - link "クラブインターコンチネンタルでは、お客様一人ひとりに合せたきめ細やかなサービスと優雅な空間で、充実したくつろぎのひとときをお約束いたします。専用キッチンでご用意するご朝食、アフタヌーンティー、イブニングカクテルをお楽しみいただけるほか、ライブラリーやミーティングスペースを備えます。":
+                  - /url: javascript:void(0)
+                  - img "クラブインターコンチネンタルでは、お客様一人ひとりに合せたきめ細やかなサービスと優雅な空間で、充実したくつろぎのひとときをお約束いたします。専用キッチンでご用意するご朝食、アフタヌーンティー、イブニングカクテルをお楽しみいただけるほか、ライブラリーやミーティングスペースを備えます。" [ref=e631] [cursor=pointer]
+              - generic [ref=e632]:
+                - link "おひとり様でも2名様でもおくつろぎいただけるカウチから、グループで利用できるソファ席。横浜港を一望するカウンターなどお好きなスタイルでご利用ください。":
+                  - /url: javascript:void(0)
+                  - img "おひとり様でも2名様でもおくつろぎいただけるカウチから、グループで利用できるソファ席。横浜港を一望するカウンターなどお好きなスタイルでご利用ください。" [ref=e633] [cursor=pointer]
+              - generic [ref=e634]:
+                - link "夜のテラスの醍醐味は、目の前に広がる圧倒的な夜景。みなとみらいの煌びやかな光が海面に反射し、星空と溶け合う景色はまるで美しき宇宙のよう。心地よい海風とともに、贅沢な夜のクルーズ気分をご堪能ください。":
+                  - /url: javascript:void(0)
+                  - img "夜のテラスの醍醐味は、目の前に広がる圧倒的な夜景。みなとみらいの煌びやかな光が海面に反射し、星空と溶け合う景色はまるで美しき宇宙のよう。心地よい海風とともに、贅沢な夜のクルーズ気分をご堪能ください。" [ref=e635] [cursor=pointer]
+              - generic [ref=e636]:
+                - link "横浜独自に進化した西洋料理を、地産地消にこだわり、神奈川県産の食材を活かした料理を、コースやアラカルトでご提供いたします。旅の寛ぎを感じる店内、みなとみらいの街並みや海の景色を楽しめるテラス席のほか、バータイムにはジャズの生演奏を BGM に豊富な種類のワインやカクテルをお楽しみいただけます。":
+                  - /url: javascript:void(0)
+                  - img "横浜独自に進化した西洋料理を、地産地消にこだわり、神奈川県産の食材を活かした料理を、コースやアラカルトでご提供いたします。旅の寛ぎを感じる店内、みなとみらいの街並みや海の景色を楽しめるテラス席のほか、バータイムにはジャズの生演奏を BGM に豊富な種類のワインやカクテルをお楽しみいただけます。" [ref=e637] [cursor=pointer]
+              - generic [ref=e638]:
+                - link "Larboardには、ウォーターフロントを堪能するテラス席もございます。テラス席はドックフレンドリーのため、愛犬との散歩のついでにもお気軽にお立ち寄り気ださい。":
+                  - /url: javascript:void(0)
+                  - img "Larboardには、ウォーターフロントを堪能するテラス席もございます。テラス席はドックフレンドリーのため、愛犬との散歩のついでにもお気軽にお立ち寄り気ださい。" [ref=e639] [cursor=pointer]
+              - generic [ref=e640]:
+                - link "西洋を取り込み独自に発展させた横浜に着想を得て創作する料理は、季節毎に新しいメニューでお迎えいたします。":
+                  - /url: javascript:void(0)
+                  - img "西洋を取り込み独自に発展させた横浜に着想を得て創作する料理は、季節毎に新しいメニューでお迎えいたします。" [ref=e641] [cursor=pointer]
+              - generic [ref=e642]:
+                - link "和洋揃うハーフブッフェスタイルにて、メインディッシュは卵料理や魚、肉料理など4種のメニューからお好みの一皿をお選びいただき、作り立てをテーブルへサーブいたします。":
+                  - /url: javascript:void(0)
+                  - img "和洋揃うハーフブッフェスタイルにて、メインディッシュは卵料理や魚、肉料理など4種のメニューからお好みの一皿をお選びいただき、作り立てをテーブルへサーブいたします。" [ref=e643] [cursor=pointer]
+              - generic [ref=e644]:
+                - link "みなとみらいにある隠れ家鮨。瑞々しい中庭の奥に静かに佇む、カウンター席のみの特別な空間です。凛とした静寂の中、選び抜かれた極上のネタと職人の美技が織りなす、贅沢な食体験をお届けします。":
+                  - /url: javascript:void(0)
+                  - img "みなとみらいにある隠れ家鮨。瑞々しい中庭の奥に静かに佇む、カウンター席のみの特別な空間です。凛とした静寂の中、選び抜かれた極上のネタと職人の美技が織りなす、贅沢な食体験をお届けします。" [ref=e645] [cursor=pointer]
+              - generic [ref=e646]:
+                - link "ディナーは、旬の素材に江戸前の技を施したコース仕立て。お造りや握りは、その日一番の旬を職人が厳選。酒蒸しや焼き物といった温かなひと皿からデザートまで、季節の移ろいとともに静かに流れる美食時間をお過ごしください。":
+                  - /url: javascript:void(0)
+                  - img "ディナーは、旬の素材に江戸前の技を施したコース仕立て。お造りや握りは、その日一番の旬を職人が厳選。酒蒸しや焼き物といった温かなひと皿からデザートまで、季節の移ろいとともに静かに流れる美食時間をお過ごしください。" [ref=e647] [cursor=pointer]
+              - generic [ref=e648]:
+                - link "海の上にいることを忘れさせる清閑な中庭に、美しい日本の島々を表現しました。楚々と咲く早々や香り立つ植物、風に揺れる葉音など、里から山へとつながる四季折々の自然風景をご覧いただけます。":
+                  - /url: javascript:void(0)
+                  - img "海の上にいることを忘れさせる清閑な中庭に、美しい日本の島々を表現しました。楚々と咲く早々や香り立つ植物、風に揺れる葉音など、里から山へとつながる四季折々の自然風景をご覧いただけます。" [ref=e649] [cursor=pointer]
+              - generic [ref=e650]:
+                - link "島々の庭～四季～に向かって全面に窓を配したスペース。季節ごとの自然を感じていただきながら、連日での会合や、ご家族での小宴など滞在しながら多目的にご利用いただけます。":
+                  - /url: javascript:void(0)
+                  - img "島々の庭～四季～に向かって全面に窓を配したスペース。季節ごとの自然を感じていただきながら、連日での会合や、ご家族での小宴など滞在しながら多目的にご利用いただけます。" [ref=e651] [cursor=pointer]
+              - generic [ref=e652]:
+                - link "自然光を取り込む大きな窓のあるジムは、宿泊者専用で 24 時間ご利用いただけます。トレーニングマシンとストレッチスペースがございます。":
+                  - /url: javascript:void(0)
+                  - img "自然光を取り込む大きな窓のあるジムは、宿泊者専用で 24 時間ご利用いただけます。トレーニングマシンとストレッチスペースがございます。" [ref=e653] [cursor=pointer]
+              - generic [ref=e654]:
+                - link:
+                  - /url: javascript:void(0)
+          - definition [ref=e655]:
+            - generic [ref=e657]:
+              - img "bp-info" [ref=e659]
+              - heading "インターコンチネンタル横浜Ｐｉｅｒ ８ ｂｙ ＩＨＧ" [level=2] [ref=e660]:
+                - link "インターコンチネンタル横浜Ｐｉｅｒ ８ ｂｙ ＩＨＧ" [ref=e661] [cursor=pointer]:
+                  - /url: https://travel.rakuten.co.jp/HOTEL/177505/177505.html
+            - paragraph [ref=e662]:
+              - link "4.68（262件）" [ref=e663] [cursor=pointer]:
+                - /url: https://travel.rakuten.co.jp/HOTEL/177505/review.html?l-id=hotelList_7_177505
+                - generic [ref=e665]:
+                  - strong [ref=e666]: "4.68"
+                  - text: （262件）
+            - generic [ref=e667]:
+              - paragraph [ref=e668]
+              - img [ref=e671]
+              - paragraph [ref=e672]:
+                - generic [ref=e673]: IHG One Rewards会員限定優待あり
+            - paragraph [ref=e674]: 品格と遊び心が心地よく共存する、新しいラグジュアリーと出会う旅へ
+            - paragraph [ref=e675]:
+              - generic [ref=e676]: アクセス ：横浜高速鉄道みなとみらい線「馬車道」駅４番出口より徒歩約１０分／「みなとみらい」駅より徒歩約１２分
+              - generic "インターコンチネンタル横浜Ｐｉｅｒ ８ ｂｙ ＩＨＧ" [ref=e677] [cursor=pointer]:
+                - generic [ref=e678]: 地図から探す
+            - generic [ref=e681]: 駐車場
+            - generic [ref=e682]:
+              - generic [ref=e683]:
+                - generic [ref=e684]:
+                  - generic [ref=e685]:
+                    - text: 最安値
+                    - strong [ref=e686]: 14,387
+                    - text: 円〜
+                  - generic [ref=e687]: 消費税込15,825円〜
+                - link "宿泊プラン一覧を見る" [ref=e689] [cursor=pointer]:
+                  - /url: //hotel.travel.rakuten.co.jp/hotelinfo/plan/177505?f_teikei=&l-id=hotelList_7_177505
+              - generic [ref=e690]:
+                - link "航空券付きプラン" [ref=e692] [cursor=pointer]:
+                  - /url: javascript:void(0)
+                - link "JR新幹線+特急券付きプラン" [ref=e695] [cursor=pointer]:
+                  - /url: https://travel.rakuten.co.jp/package/jr/hotel_info_plan/177505?checkInDate=2026-06-30&checkOutDate=2026-07-01&adults=2&noOfUnits=1&childElementary=0&infantBedMeal=0&infantNone=0&departureDate=2026-06-30&returnDate=2026-07-01
+      - listitem [ref=e696]:
+        - generic [ref=e699]:
+          - term [ref=e700]:
+            - generic [ref=e705]:
+              - generic [ref=e706]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e707]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e708]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e709]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e710]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e711]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e712]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e713]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e714]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e715]:
+                - link:
+                  - /url: javascript:void(0)
+          - definition [ref=e716]:
+            - heading "ホテルバリバリ伊勢佐木" [level=2] [ref=e719]:
+              - link "ホテルバリバリ伊勢佐木" [ref=e720] [cursor=pointer]:
+                - /url: https://travel.rakuten.co.jp/HOTEL/184859/184859.html
+            - paragraph [ref=e721]:
+              - link "3.86（11件）" [ref=e722] [cursor=pointer]:
+                - /url: https://travel.rakuten.co.jp/HOTEL/184859/review.html?l-id=hotelList_8_184859
+                - generic [ref=e724]:
+                  - strong [ref=e725]: "3.86"
+                  - text: （11件）
+            - img [ref=e728]
+            - paragraph [ref=e729]: 都会から即、リゾートへ。 気軽で安い都市型リゾートホテルシリーズ『ホテルバリバリ』。
+            - paragraph [ref=e730]:
+              - generic [ref=e731]: アクセス ：伊勢佐木長者町駅から徒歩約6分、JR関内駅から徒歩約11分
+              - generic "ホテルバリバリ伊勢佐木" [ref=e732] [cursor=pointer]:
+                - generic [ref=e733]: 地図から探す
+            - generic [ref=e735]:
+              - generic [ref=e736]:
+                - generic [ref=e737]:
+                  - text: 最安値
+                  - strong [ref=e738]: 14,000
+                  - text: 円〜
+                - generic [ref=e739]: 消費税込15,400円〜
+              - link "宿泊プラン一覧を見る" [ref=e741] [cursor=pointer]:
+                - /url: //hotel.travel.rakuten.co.jp/hotelinfo/plan/184859?f_teikei=&l-id=hotelList_8_184859
+      - listitem [ref=e743]:
+        - generic [ref=e746]:
+          - term [ref=e747]:
+            - generic [ref=e752]:
+              - generic [ref=e753]:
+                - link "横浜・八景島シーパラダイスのオフィシャルホテルです。":
+                  - /url: javascript:void(0)
+                  - generic:
+                    - img "横浜・八景島シーパラダイスのオフィシャルホテルです。"
+              - generic [ref=e754]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e755]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e756]:
+                - link "横浜・八景島シーパラダイスの施設側に面した一部のお部屋のテラスからは、シーパラダイス内の風景やふれあいラグーンの動物たちの様子もご覧いただけます。":
+                  - /url: javascript:void(0)
+                  - generic:
+                    - img "横浜・八景島シーパラダイスの施設側に面した一部のお部屋のテラスからは、シーパラダイス内の風景やふれあいラグーンの動物たちの様子もご覧いただけます。"
+              - generic [ref=e757]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e758]:
+                - link "ロビーからふれあいラグーンの生きものに会えることも！":
+                  - /url: javascript:void(0)
+                  - generic:
+                    - img "ロビーからふれあいラグーンの生きものに会えることも！"
+              - generic [ref=e759]:
+                - link "LABO5『大海原に生きる群れと輝きの魚たち』":
+                  - /url: javascript:void(0)
+                  - generic:
+                    - img "LABO5『大海原に生きる群れと輝きの魚たち』"
+              - generic [ref=e760]:
+                - link "海の動物たちのショー":
+                  - /url: javascript:void(0)
+                  - generic:
+                    - img "海の動物たちのショー"
+              - generic [ref=e761]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e762]:
+                - link "釣った魚をフライやグリルにしてお召上がりいただけます。":
+                  - /url: javascript:void(0)
+                  - generic:
+                    - img "釣った魚をフライやグリルにしてお召上がりいただけます。"
+              - generic [ref=e763]:
+                - link "Merengue（メレンゲ）":
+                  - /url: javascript:void(0)
+                  - generic:
+                    - img "Merengue（メレンゲ）"
+              - generic [ref=e764]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e765]:
+                - link "海側を眺めながらご利用いただけるカウンター席もご用意":
+                  - /url: javascript:void(0)
+                  - generic:
+                    - img "海側を眺めながらご利用いただけるカウンター席もご用意"
+              - generic [ref=e766]:
+                - link "スリル満点！大人気の海上走行コースター！":
+                  - /url: javascript:void(0)
+                  - generic:
+                    - img "スリル満点！大人気の海上走行コースター！"
+          - definition [ref=e767]:
+            - heading "ホテル シーパラダイス イン" [level=2] [ref=e770]:
+              - link "ホテル シーパラダイス イン" [ref=e771] [cursor=pointer]:
+                - /url: https://travel.rakuten.co.jp/HOTEL/166964/166964.html
+            - paragraph [ref=e772]:
+              - link "4.33（179件）" [ref=e773] [cursor=pointer]:
+                - /url: https://travel.rakuten.co.jp/HOTEL/166964/review.html?l-id=hotelList_9_166964
+                - generic [ref=e775]:
+                  - strong [ref=e776]: "4.33"
+                  - text: （179件）
+            - img [ref=e779]
+            - paragraph [ref=e780]: 横浜・八景島シーパラダイス内にあるオフィシャルホテルです。シーパラをお時間気にせずお楽しみいただけます！
+            - paragraph [ref=e781]:
+              - generic [ref=e782]: アクセス ：横浜シーサイドライン／八景島駅より徒歩15分
+              - generic "ホテル シーパラダイス イン" [ref=e783] [cursor=pointer]:
+                - generic [ref=e784]: 地図から探す
+            - generic [ref=e787]: 駐車場
+            - generic [ref=e788]:
+              - generic [ref=e789]:
+                - generic [ref=e790]:
+                  - generic [ref=e791]:
+                    - text: 最安値
+                    - strong [ref=e792]: 13,238
+                    - text: 円〜
+                  - generic [ref=e793]: 消費税込14,561円〜
+                - link "宿泊プラン一覧を見る" [ref=e795] [cursor=pointer]:
+                  - /url: //hotel.travel.rakuten.co.jp/hotelinfo/plan/166964?f_teikei=&l-id=hotelList_9_166964
+              - link "航空券付きプラン" [ref=e798] [cursor=pointer]:
+                - /url: javascript:void(0)
+      - listitem [ref=e799]:
+        - generic [ref=e802]:
+          - term [ref=e803]:
+            - generic [ref=e808]:
+              - generic [ref=e809]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e810]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e811]:
+                - link "曜日限定で生演奏も行っております。":
+                  - /url: javascript:void(0)
+                  - generic:
+                    - img "曜日限定で生演奏も行っております。"
+              - generic [ref=e812]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e813]:
+                - link "ベッドサイズ ：幅200㎝×1台":
+                  - /url: javascript:void(0)
+                  - generic:
+                    - img "ベッドサイズ ：幅200㎝×1台"
+              - generic [ref=e814]:
+                - link "ベッドサイズ ：幅120㎝×2台":
+                  - /url: javascript:void(0)
+                  - generic:
+                    - img "ベッドサイズ ：幅120㎝×2台"
+              - generic [ref=e815]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e816]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e817]:
+                - link "【Harbor kitchen】朝食":
+                  - /url: javascript:void(0)
+                  - generic:
+                    - img "【Harbor kitchen】朝食"
+              - generic [ref=e818]:
+                - link "Harbor Kitchen":
+                  - /url: javascript:void(0)
+                  - generic:
+                    - img "Harbor Kitchen"
+              - generic [ref=e819]:
+                - link "画像はイメージです。メニュー内容は変更になる場合がございます。":
+                  - /url: javascript:void(0)
+                  - generic:
+                    - img "画像はイメージです。メニュー内容は変更になる場合がございます。"
+              - generic [ref=e820]:
+                - link "【Harbor Kitchen】朝食ブッフェ / 画像はイメージです。メニュー内容は変更になる場合がございます。":
+                  - /url: javascript:void(0)
+                  - generic:
+                    - img "【Harbor Kitchen】朝食ブッフェ / 画像はイメージです。メニュー内容は変更になる場合がございます。"
+              - generic [ref=e821]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e822]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e823]:
+                - link:
+                  - /url: javascript:void(0)
+          - definition [ref=e824]:
+            - heading "ハイアットリージェンシー横浜" [level=2] [ref=e827]:
+              - link "ハイアットリージェンシー横浜" [ref=e828] [cursor=pointer]:
+                - /url: https://travel.rakuten.co.jp/HOTEL/178689/178689.html
+            - paragraph [ref=e829]:
+              - link "4.57（1102件）" [ref=e830] [cursor=pointer]:
+                - /url: https://travel.rakuten.co.jp/HOTEL/178689/review.html?l-id=hotelList_10_178689
+                - generic [ref=e832]:
+                  - strong [ref=e833]: "4.57"
+                  - text: （1102件）
+            - generic [ref=e834]:
+              - paragraph [ref=e835]
+              - paragraph [ref=e837]:
+                - generic [ref=e838]: サステナブルトラベル
+              - img [ref=e840]
+            - paragraph [ref=e841]: 《2020年開業》歴史情緒漂う日本大通りエリアに立地◆朝食ビュッフェ高評価◎山下公園、横浜中華街まで徒歩すぐ
+            - paragraph [ref=e842]:
+              - generic [ref=e843]: アクセス ：みなとみらい線「日本大通り駅」から徒歩約3分/「元町・中華街駅」より徒歩約5分 ・JR「関内駅」から徒歩約10分
+              - generic "ハイアットリージェンシー横浜" [ref=e844] [cursor=pointer]:
+                - generic [ref=e845]: 地図から探す
+            - generic [ref=e848]: 駐車場
+            - generic [ref=e849]:
+              - generic [ref=e850]:
+                - generic [ref=e851]:
+                  - generic [ref=e852]:
+                    - text: 最安値
+                    - strong [ref=e853]: 10,791
+                    - text: 円〜
+                  - generic [ref=e854]: 消費税込11,870円〜
+                - link "宿泊プラン一覧を見る" [ref=e856] [cursor=pointer]:
+                  - /url: //hotel.travel.rakuten.co.jp/hotelinfo/plan/178689?f_teikei=&l-id=hotelList_10_178689
+              - generic [ref=e857]:
+                - link "航空券付きプラン" [ref=e859] [cursor=pointer]:
+                  - /url: javascript:void(0)
+                - link "JR新幹線+特急券付きプラン" [ref=e862] [cursor=pointer]:
+                  - /url: https://travel.rakuten.co.jp/package/jr/hotel_info_plan/178689?checkInDate=2026-06-30&checkOutDate=2026-07-01&adults=2&noOfUnits=1&childElementary=0&infantBedMeal=0&infantNone=0&departureDate=2026-06-30&returnDate=2026-07-01
+      - listitem [ref=e863]:
+        - generic [ref=e866]:
+          - term [ref=e867]:
+            - generic [ref=e872]:
+              - generic [ref=e873]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e874]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e875]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e876]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e877]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e878]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e879]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e880]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e881]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e882]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e883]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e884]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e885]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e886]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e887]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e888]:
+                - link:
+                  - /url: javascript:void(0)
+          - definition [ref=e889]:
+            - heading "Ｓｅｒｖｉｃｅ Ａｐａｒｔｍｅｎｔ １７０ｍ２ Ｃｅｎｔｅｒ Ｙｏｋｏｈａｍａ／民泊" [level=2] [ref=e892]:
+              - link "Ｓｅｒｖｉｃｅ Ａｐａｒｔｍｅｎｔ １７０ｍ２ Ｃｅｎｔｅｒ Ｙｏｋｏｈａｍａ／民泊" [ref=e893] [cursor=pointer]:
+                - /url: https://travel.rakuten.co.jp/HOTEL/168948/168948.html
+            - paragraph [ref=e894]
+            - img [ref=e897]
+            - paragraph [ref=e898]: ☆１７０㎡ ５部屋 横浜中心地 ３駅近く サービスアパートメント☆【民泊】
+            - paragraph [ref=e899]:
+              - generic [ref=e900]: アクセス ：阪東橋駅から徒歩で約３分
+              - generic "Ｓｅｒｖｉｃｅ Ａｐａｒｔｍｅｎｔ １７０ｍ２ Ｃｅｎｔｅｒ Ｙｏｋｏｈａｍａ／民泊" [ref=e901] [cursor=pointer]:
+                - generic [ref=e902]: 地図から探す
+            - generic [ref=e904]:
+              - generic [ref=e905]:
+                - generic [ref=e906]:
+                  - text: 最安値
+                  - strong [ref=e907]: 10,124
+                  - text: 円〜
+                - generic [ref=e908]: 消費税込11,136円〜
+              - link "宿泊プラン一覧を見る" [ref=e910] [cursor=pointer]:
+                - /url: //hotel.travel.rakuten.co.jp/hotelinfo/plan/168948?f_teikei=&l-id=hotelList_11_168948
+      - listitem [ref=e912]:
+        - generic [ref=e915]:
+          - term [ref=e916]:
+            - generic [ref=e921]:
+              - generic [ref=e922]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e923]:
+                - link "タンクローリーではるばる運ばれてきた名湯で、旅や日常の疲れを存分に癒してください。":
+                  - /url: javascript:void(0)
+                  - generic:
+                    - img "タンクローリーではるばる運ばれてきた名湯で、旅や日常の疲れを存分に癒してください。"
+              - generic [ref=e924]:
+                - link "パシフィコ横浜国際会議場は徒歩2分。橋を渡ってすぐです！ ●横浜コスモワールドまで…徒歩0分 ●カップヌードルミュージアムまで…徒歩0分 ●横浜赤レンガ倉庫まで…徒歩5分 ●横浜ランドマークタワーまで…徒歩8分 ●山下公園まで…タクシーで8分 ●横浜中華街まで…タクシーで10分 ●横浜スタジアムまで…タクシーで10分":
+                  - /url: javascript:void(0)
+                  - generic:
+                    - img "パシフィコ横浜国際会議場は徒歩2分。橋を渡ってすぐです！ ●横浜コスモワールドまで…徒歩0分 ●カップヌードルミュージアムまで…徒歩0分 ●横浜赤レンガ倉庫まで…徒歩5分 ●横浜ランドマークタワーまで…徒歩8分 ●山下公園まで…タクシーで8分 ●横浜中華街まで…タクシーで10分 ●横浜スタジアムまで…タクシーで10分"
+              - generic [ref=e925]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e926]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e927]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e928]:
+                - link "女性露天風呂（夕景）":
+                  - /url: javascript:void(0)
+                  - generic:
+                    - img "女性露天風呂（夕景）"
+              - generic [ref=e929]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e930]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e931]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e932]:
+                - link "タンクローリーではるばる運ばれてきた名湯で、旅や日常の疲れを存分に癒してください。":
+                  - /url: javascript:void(0)
+                  - generic:
+                    - img "タンクローリーではるばる運ばれてきた名湯で、旅や日常の疲れを存分に癒してください。"
+              - generic [ref=e933]:
+                - link "タンクローリーではるばる運ばれてきた名湯で、旅や日常の疲れを存分に癒してください。":
+                  - /url: javascript:void(0)
+                  - generic:
+                    - img "タンクローリーではるばる運ばれてきた名湯で、旅や日常の疲れを存分に癒してください。"
+              - generic [ref=e934]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e935]:
+                - link "外観":
+                  - /url: javascript:void(0)
+                  - generic:
+                    - img "外観"
+              - generic [ref=e936]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e937]:
+                - link "パシフィコ横浜国際会議場は徒歩2分。橋を渡ってすぐです！ ●横浜コスモワールドまで…徒歩0分 ●カップヌードルミュージアムまで…徒歩0分 ●横浜赤レンガ倉庫まで…徒歩5分 ●横浜ランドマークタワーまで…徒歩8分 ●山下公園まで…タクシーで8分 ●横浜中華街まで…タクシーで10分 ●横浜スタジアムまで…タクシーで10分":
+                  - /url: javascript:void(0)
+                  - generic:
+                    - img "パシフィコ横浜国際会議場は徒歩2分。橋を渡ってすぐです！ ●横浜コスモワールドまで…徒歩0分 ●カップヌードルミュージアムまで…徒歩0分 ●横浜赤レンガ倉庫まで…徒歩5分 ●横浜ランドマークタワーまで…徒歩8分 ●山下公園まで…タクシーで8分 ●横浜中華街まで…タクシーで10分 ●横浜スタジアムまで…タクシーで10分"
+          - definition [ref=e938]:
+            - generic [ref=e940]:
+              - img "bp-info" [ref=e942]
+              - heading "横浜みなとみらい 万葉倶楽部" [level=2] [ref=e943]:
+                - link "横浜みなとみらい 万葉倶楽部" [ref=e944] [cursor=pointer]:
+                  - /url: https://travel.rakuten.co.jp/HOTEL/50200/50200.html
+            - paragraph [ref=e945]:
+              - link "4.24（940件）" [ref=e946] [cursor=pointer]:
+                - /url: https://travel.rakuten.co.jp/HOTEL/50200/review.html?l-id=hotelList_12_50200
+                - generic [ref=e948]:
+                  - strong [ref=e949]: "4.24"
+                  - text: （940件）
+            - generic [ref=e950]:
+              - paragraph [ref=e951]:
+                - generic [ref=e952]: 温泉宿
+              - img [ref=e954]
+            - paragraph [ref=e955]: 横浜みなとみらいの真ん中で、熱海・湯河原の上質な温泉とここだけの景色。非日常な至福の和の空間をご堪能下さい。
+            - paragraph [ref=e956]:
+              - generic [ref=e957]: アクセス ：みなとみらい線 みなとみらい駅より徒歩５分／ＪＲ・横浜市営地下鉄 桜木町駅より徒歩１５分
+              - generic "横浜みなとみらい 万葉倶楽部" [ref=e958] [cursor=pointer]:
+                - generic [ref=e959]: 地図から探す
+            - generic [ref=e961]:
+              - generic [ref=e962]: 露天風呂
+              - generic [ref=e963]: 大浴場
+              - generic [ref=e964]: 貸切風呂
+              - generic [ref=e965]: 駐車場
+              - generic [ref=e966]: 送迎サービス
+            - generic [ref=e967]:
+              - generic [ref=e968]:
+                - generic [ref=e969]:
+                  - generic [ref=e970]:
+                    - text: 最安値
+                    - strong [ref=e971]: 10,028
+                    - text: 円〜
+                  - generic [ref=e972]: 消費税込11,030円〜
+                - link "宿泊プラン一覧を見る" [ref=e974] [cursor=pointer]:
+                  - /url: //hotel.travel.rakuten.co.jp/hotelinfo/plan/50200?f_teikei=&l-id=hotelList_12_50200
+              - generic [ref=e975]:
+                - link "航空券付きプラン" [ref=e977] [cursor=pointer]:
+                  - /url: javascript:void(0)
+                - link "JR新幹線+特急券付きプラン" [ref=e980] [cursor=pointer]:
+                  - /url: https://travel.rakuten.co.jp/package/jr/hotel_info_plan/50200?checkInDate=2026-06-30&checkOutDate=2026-07-01&adults=2&noOfUnits=1&childElementary=0&infantBedMeal=0&infantNone=0&departureDate=2026-06-30&returnDate=2026-07-01
+      - listitem [ref=e981]:
+        - generic [ref=e984]:
+          - term [ref=e985]:
+            - generic [ref=e990]:
+              - generic [ref=e991]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e992]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e993]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e994]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e995]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e996]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e997]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e998]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e999]:
+                - link:
+                  - /url: javascript:void(0)
+          - definition [ref=e1000]:
+            - generic [ref=e1002]:
+              - img "bp-info" [ref=e1004]
+              - heading "ホテルニューグランド" [level=2] [ref=e1005]:
+                - link "ホテルニューグランド" [ref=e1006] [cursor=pointer]:
+                  - /url: https://travel.rakuten.co.jp/HOTEL/2013/2013.html
+            - paragraph [ref=e1007]:
+              - link "4.67（3661件）" [ref=e1008] [cursor=pointer]:
+                - /url: https://travel.rakuten.co.jp/HOTEL/2013/review.html?l-id=hotelList_13_2013
+                - generic [ref=e1010]:
+                  - strong [ref=e1011]: "4.67"
+                  - text: （3661件）
+            - generic [ref=e1012]:
+              - paragraph [ref=e1013]
+              - img [ref=e1016]
+            - paragraph [ref=e1017]: 横浜スタンダードをいまに伝える、欧州の香りと趣。開港当時の横浜の面影を残すクラシックホテル。
+            - paragraph [ref=e1018]:
+              - generic [ref=e1019]: アクセス ：みなとみらい線元町・中華街駅1番出口より徒歩1分
+              - generic "ホテルニューグランド" [ref=e1020] [cursor=pointer]:
+                - generic [ref=e1021]: 地図から探す
+            - generic [ref=e1024]: 駐車場
+            - generic [ref=e1025]:
+              - generic [ref=e1026]:
+                - generic [ref=e1027]:
+                  - generic [ref=e1028]:
+                    - text: 最安値
+                    - strong [ref=e1029]: 9,910
+                    - text: 円〜
+                  - generic [ref=e1030]: 消費税込10,900円〜
+                - link "宿泊プラン一覧を見る" [ref=e1032] [cursor=pointer]:
+                  - /url: //hotel.travel.rakuten.co.jp/hotelinfo/plan/2013?f_teikei=&l-id=hotelList_13_2013
+              - generic [ref=e1033]:
+                - link "航空券付きプラン" [ref=e1035] [cursor=pointer]:
+                  - /url: javascript:void(0)
+                - link "JR新幹線+特急券付きプラン" [ref=e1038] [cursor=pointer]:
+                  - /url: https://travel.rakuten.co.jp/package/jr/hotel_info_plan/2013?checkInDate=2026-06-30&checkOutDate=2026-07-01&adults=2&noOfUnits=1&childElementary=0&infantBedMeal=0&infantNone=0&departureDate=2026-06-30&returnDate=2026-07-01
+      - listitem [ref=e1039]:
+        - generic [ref=e1042]:
+          - term [ref=e1043]:
+            - generic [ref=e1048]:
+              - generic [ref=e1049]:
+                - link "よこはまコスモワールドは、ホテルの目前にあるアミューズメント施設で、高さ112.5メートル、最大480人収容可能な世界最大級の観覧車「コスモクロック21」を備えています。ワンダーアミューズゾーン、ブラーノストリートゾーン、キッズカーニバルゾーンの3つのゾーンで構成されており、ジェットコースター、メリーゴーランド、お化け屋敷など、さまざまなアトラクションがあります。夜は、巨大な観覧車を囲む公園内で、カラフルでまばゆいばかりのイルミネーションを楽しむことができます。":
+                  - /url: javascript:void(0)
+                  - generic:
+                    - img "よこはまコスモワールドは、ホテルの目前にあるアミューズメント施設で、高さ112.5メートル、最大480人収容可能な世界最大級の観覧車「コスモクロック21」を備えています。ワンダーアミューズゾーン、ブラーノストリートゾーン、キッズカーニバルゾーンの3つのゾーンで構成されており、ジェットコースター、メリーゴーランド、お化け屋敷など、さまざまなアトラクションがあります。夜は、巨大な観覧車を囲む公園内で、カラフルでまばゆいばかりのイルミネーションを楽しむことができます。"
+              - generic [ref=e1050]:
+                - link "シティビュー側の客室からは、コスモワールドや赤レンガ倉庫、山下公園までみなとみらい21地区を一望いただけます。":
+                  - /url: javascript:void(0)
+                  - generic:
+                    - img "シティビュー側の客室からは、コスモワールドや赤レンガ倉庫、山下公園までみなとみらい21地区を一望いただけます。"
+              - generic [ref=e1051]:
+                - link "ハーバービュー側の客室からは横浜の名所「横浜ベイブリッジ」を目の前に、横浜港を一望いただけます。翌朝には海から朝日が昇る様子を間近にご覧いただけるのも、海にいちばん近い当ホテルならではの魅力です。":
+                  - /url: javascript:void(0)
+                  - generic:
+                    - img "ハーバービュー側の客室からは横浜の名所「横浜ベイブリッジ」を目の前に、横浜港を一望いただけます。翌朝には海から朝日が昇る様子を間近にご覧いただけるのも、海にいちばん近い当ホテルならではの魅力です。"
+              - generic [ref=e1052]:
+                - link "より上質な寛ぎをご提供する、特別な客室です。日本有数の美しさを誇る景色をご堪能いただける、眺めの良い部屋としても人気です。専用のレセプションとラウンジにはクラブ専任スタッフがおり、快適なご滞在をサポートいたします。":
+                  - /url: javascript:void(0)
+                  - generic:
+                    - img "より上質な寛ぎをご提供する、特別な客室です。日本有数の美しさを誇る景色をご堪能いただける、眺めの良い部屋としても人気です。専用のレセプションとラウンジにはクラブ専任スタッフがおり、快適なご滞在をサポートいたします。"
+              - generic [ref=e1053]:
+                - link "ホテル最先端部に位置するラグジュアリーなスイートルーム。船が行き交う海の景色と、観覧車など市街地のイルミネーション、両方ご覧いただける特等席です。海に面したバスルームからも横浜港を一望でき、バスタブに浸かればまるで海に浮遊するような体験をしていただけます。":
+                  - /url: javascript:void(0)
+                  - generic:
+                    - img "ホテル最先端部に位置するラグジュアリーなスイートルーム。船が行き交う海の景色と、観覧車など市街地のイルミネーション、両方ご覧いただける特等席です。海に面したバスルームからも横浜港を一望でき、バスタブに浸かればまるで海に浮遊するような体験をしていただけます。"
+              - generic [ref=e1054]:
+                - link "豪華客船での優雅な船旅を彷彿とさせるラグジュアリーな空間。":
+                  - /url: javascript:void(0)
+                  - generic:
+                    - img "豪華客船での優雅な船旅を彷彿とさせるラグジュアリーな空間。"
+              - generic [ref=e1055]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1056]:
+                - link "季節のアフタヌーンティーセットをご用意しております（12:00～）":
+                  - /url: javascript:void(0)
+                  - generic:
+                    - img "季節のアフタヌーンティーセットをご用意しております（12:00～）"
+              - generic [ref=e1057]:
+                - link "みなとみらいの海を一望でき、オープンキッチンを備えた店内は、活気あふれる開放的な雰囲気。インターコンチネンタルホテルならではの世界のグルメを、五感を通してお愉しみいただけます。":
+                  - /url: javascript:void(0)
+                  - generic:
+                    - img "みなとみらいの海を一望でき、オープンキッチンを備えた店内は、活気あふれる開放的な雰囲気。インターコンチネンタルホテルならではの世界のグルメを、五感を通してお愉しみいただけます。"
+              - generic [ref=e1058]:
+                - link "創業190余年の伝統を誇る老舗「なだ万」。季節感溢れる日本料理や寿司・鉄板ステーキをご賞味いただけます。":
+                  - /url: javascript:void(0)
+                  - generic:
+                    - img "創業190余年の伝統を誇る老舗「なだ万」。季節感溢れる日本料理や寿司・鉄板ステーキをご賞味いただけます。"
+              - generic [ref=e1059]:
+                - link "セラピストによるコンサルテーションに基づき、オリジナルプログラムを構成。自然の恵みをいかした、オーガニックエッセンシャルオイルやバスソルト、アルゴ（海藻）テラピー、クレイ（海泥）テラピー、ハーブドリンクなどを、その日の体調に合わせてご提案していきます。心とカラダを解放させながら、本来の健やかな美しさを目指していきます。":
+                  - /url: javascript:void(0)
+                  - generic:
+                    - img "セラピストによるコンサルテーションに基づき、オリジナルプログラムを構成。自然の恵みをいかした、オーガニックエッセンシャルオイルやバスソルト、アルゴ（海藻）テラピー、クレイ（海泥）テラピー、ハーブドリンクなどを、その日の体調に合わせてご提案していきます。心とカラダを解放させながら、本来の健やかな美しさを目指していきます。"
+              - generic [ref=e1060]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1061]:
+                - link "国際都市、横浜に1991年に誕生して以来、海に浮かぶ白いヨットの帆をイメージした外観は、みなとみらいのシンボルとして愛されています。記念日などにおすすめのスイートルーム、解放感でゆとりあるスーペリアルーム、専用のレセプションとラウンジをご用意しているクラブ インターコンチネンタル ルームなど、全594室をご用意しております。青い海に包まれる洗練された空間で、旅装を解いて寛ぎのひとときをお楽しみください。":
+                  - /url: javascript:void(0)
+                  - generic:
+                    - img "国際都市、横浜に1991年に誕生して以来、海に浮かぶ白いヨットの帆をイメージした外観は、みなとみらいのシンボルとして愛されています。記念日などにおすすめのスイートルーム、解放感でゆとりあるスーペリアルーム、専用のレセプションとラウンジをご用意しているクラブ インターコンチネンタル ルームなど、全594室をご用意しております。青い海に包まれる洗練された空間で、旅装を解いて寛ぎのひとときをお楽しみください。"
+          - definition [ref=e1062]:
+            - heading "ヨコハマ グランド インターコンチネンタル ホテル ｂｙ ＩＨＧ" [level=2] [ref=e1065]:
+              - link "ヨコハマ グランド インターコンチネンタル ホテル ｂｙ ＩＨＧ" [ref=e1066] [cursor=pointer]:
+                - /url: https://travel.rakuten.co.jp/HOTEL/5731/5731.html
+            - paragraph [ref=e1067]:
+              - link "4.43（9335件）" [ref=e1068] [cursor=pointer]:
+                - /url: https://travel.rakuten.co.jp/HOTEL/5731/review.html?l-id=hotelList_14_5731
+                - generic [ref=e1070]:
+                  - strong [ref=e1071]: "4.43"
+                  - text: （9335件）
+            - generic [ref=e1072]:
+              - paragraph [ref=e1073]
+              - img [ref=e1076]
+              - paragraph [ref=e1077]:
+                - generic [ref=e1078]: IHG One Rewards会員限定優待あり
+            - paragraph [ref=e1079]: みなとみらい駅から徒歩約5分。風をはらんだヨットの帆の形が特徴のインターナショナルブランドホテル。
+            - paragraph [ref=e1080]:
+              - generic [ref=e1081]: アクセス ：みなとみらい駅から徒歩約5分、桜木町駅から徒歩約10分。みなとみらいのシンボルホテル♪
+              - generic "ヨコハマ グランド インターコンチネンタル ホテル ｂｙ ＩＨＧ" [ref=e1082] [cursor=pointer]:
+                - generic [ref=e1083]: 地図から探す
+            - generic [ref=e1086]: 駐車場
+            - generic [ref=e1087]:
+              - generic [ref=e1088]:
+                - generic [ref=e1089]:
+                  - generic [ref=e1090]:
+                    - text: 最安値
+                    - strong [ref=e1091]: 9,591
+                    - text: 円〜
+                  - generic [ref=e1092]: 消費税込10,550円〜
+                - link "宿泊プラン一覧を見る" [ref=e1094] [cursor=pointer]:
+                  - /url: //hotel.travel.rakuten.co.jp/hotelinfo/plan/5731?f_teikei=&l-id=hotelList_14_5731
+              - generic [ref=e1095]:
+                - link "航空券付きプラン" [ref=e1097] [cursor=pointer]:
+                  - /url: javascript:void(0)
+                - link "JR新幹線+特急券付きプラン" [ref=e1100] [cursor=pointer]:
+                  - /url: https://travel.rakuten.co.jp/package/jr/hotel_info_plan/5731?checkInDate=2026-06-30&checkOutDate=2026-07-01&adults=2&noOfUnits=1&childElementary=0&infantBedMeal=0&infantNone=0&departureDate=2026-06-30&returnDate=2026-07-01
+      - listitem [ref=e1101]:
+        - generic [ref=e1104]:
+          - term [ref=e1105]:
+            - generic [ref=e1110]:
+              - generic [ref=e1111]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1112]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1113]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1114]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1115]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1116]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1117]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1118]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1119]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1120]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1121]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1122]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1123]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1124]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1125]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1126]:
+                - link:
+                  - /url: javascript:void(0)
+          - definition [ref=e1127]:
+            - heading "坂道テラス Ｈｉｌｌ Ｔｅｒｒａｃｅ／民泊" [level=2] [ref=e1130]:
+              - link "坂道テラス Ｈｉｌｌ Ｔｅｒｒａｃｅ／民泊" [ref=e1131] [cursor=pointer]:
+                - /url: https://travel.rakuten.co.jp/HOTEL/200145/200145.html
+            - paragraph [ref=e1132]
+            - paragraph [ref=e1133]: 横浜の絶景隠れ家戸建 / 広々6LDK / 140平米
+            - paragraph [ref=e1134]:
+              - generic [ref=e1135]: アクセス ：伊勢佐木長者町駅から徒歩で4分
+              - generic "坂道テラス Ｈｉｌｌ Ｔｅｒｒａｃｅ／民泊" [ref=e1136] [cursor=pointer]:
+                - generic [ref=e1137]: 地図から探す
+            - generic [ref=e1139]:
+              - generic [ref=e1140]:
+                - generic [ref=e1141]:
+                  - text: 最安値
+                  - strong [ref=e1142]: 9,491
+                  - text: 円〜
+                - generic [ref=e1143]: 消費税込10,440円〜
+              - link "宿泊プラン一覧を見る" [ref=e1145] [cursor=pointer]:
+                - /url: //hotel.travel.rakuten.co.jp/hotelinfo/plan/200145?f_teikei=&l-id=hotelList_15_200145
+      - listitem [ref=e1147]:
+        - generic [ref=e1150]:
+          - term [ref=e1151]:
+            - generic [ref=e1156]:
+              - generic [ref=e1157]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1158]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1159]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1160]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1161]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1162]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1163]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1164]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1165]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1166]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1167]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1168]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1169]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1170]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1171]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1172]:
+                - link:
+                  - /url: javascript:void(0)
+          - definition [ref=e1173]:
+            - heading "キーサイド桜木町４０１／民泊" [level=2] [ref=e1176]:
+              - link "キーサイド桜木町４０１／民泊" [ref=e1177] [cursor=pointer]:
+                - /url: https://travel.rakuten.co.jp/HOTEL/190749/190749.html
+            - paragraph [ref=e1178]
+            - paragraph [ref=e1179]
+            - paragraph [ref=e1180]:
+              - generic [ref=e1181]: アクセス ：桜木町駅から徒歩で約２分
+              - generic "キーサイド桜木町４０１／民泊" [ref=e1182] [cursor=pointer]:
+                - generic [ref=e1183]: 地図から探す
+            - generic [ref=e1185]:
+              - generic [ref=e1186]:
+                - generic [ref=e1187]:
+                  - text: 最安値
+                  - strong [ref=e1188]: 9,386
+                  - text: 円〜
+                - generic [ref=e1189]: 消費税込10,324円〜
+              - link "宿泊プラン一覧を見る" [ref=e1191] [cursor=pointer]:
+                - /url: //hotel.travel.rakuten.co.jp/hotelinfo/plan/190749?f_teikei=&l-id=hotelList_16_190749
+      - listitem [ref=e1193]:
+        - generic [ref=e1196]:
+          - term [ref=e1197]:
+            - generic [ref=e1202]:
+              - generic [ref=e1203]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1204]:
+                - link "ベッドで寛ぎながら非日常的な景色をご堪能いただけます。":
+                  - /url: javascript:void(0)
+                  - generic:
+                    - img "ベッドで寛ぎながら非日常的な景色をご堪能いただけます。"
+              - generic [ref=e1205]:
+                - link "ベッドで寛ぎながら非日常的な景色をご堪能いただけます。（ベッドサイズ:幅182㎝×長さ209㎝）":
+                  - /url: javascript:void(0)
+                  - generic:
+                    - img "ベッドで寛ぎながら非日常的な景色をご堪能いただけます。（ベッドサイズ:幅182㎝×長さ209㎝）"
+              - generic [ref=e1206]:
+                - link "広めのベッドとデスクを備えた開放感あふれる空間。":
+                  - /url: javascript:void(0)
+                  - generic:
+                    - img "広めのベッドとデスクを備えた開放感あふれる空間。"
+              - generic [ref=e1207]:
+                - link "広めのベッドとデスクを備えた開放感あふれる空間。":
+                  - /url: javascript:void(0)
+                  - generic:
+                    - img "広めのベッドとデスクを備えた開放感あふれる空間。"
+              - generic [ref=e1208]:
+                - link "ダークブラウンの色調で落ち着きを演出。":
+                  - /url: javascript:void(0)
+                  - generic:
+                    - img "ダークブラウンの色調で落ち着きを演出。"
+              - generic [ref=e1209]:
+                - link "利便性を高めたデスクを設置。ビジネス利用にもおすすめ。":
+                  - /url: javascript:void(0)
+                  - generic:
+                    - img "利便性を高めたデスクを設置。ビジネス利用にもおすすめ。"
+              - generic [ref=e1210]:
+                - link "「味・香り・音」を楽しむ、ライブキッチンが充実したレストラン。":
+                  - /url: javascript:void(0)
+                  - img "「味・香り・音」を楽しむ、ライブキッチンが充実したレストラン。" [ref=e1211] [cursor=pointer]
+              - generic [ref=e1212]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1213]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1214]:
+                - link "ホテル最上階42階、 地上約150mの眺望とともにご堪能ください。":
+                  - /url: javascript:void(0)
+                  - generic:
+                    - img "ホテル最上階42階、 地上約150mの眺望とともにご堪能ください。"
+              - generic [ref=e1215]:
+                - link "職人の技を間近で感じる寿司カウンターでお召しあがりいただけるメニューのご案内です":
+                  - /url: javascript:void(0)
+                  - generic:
+                    - img "職人の技を間近で感じる寿司カウンターでお召しあがりいただけるメニューのご案内です"
+              - generic [ref=e1216]:
+                - link "見た目も鮮やかなコース料理とソムリエが選ぶワインのマリアージュをお楽しみいただけます。":
+                  - /url: javascript:void(0)
+                  - generic:
+                    - img "見た目も鮮やかなコース料理とソムリエが選ぶワインのマリアージュをお楽しみいただけます。"
+              - generic [ref=e1217]:
+                - link "横浜の景色をご覧いただきながら、テーブル席でのお料理をお楽しみください。":
+                  - /url: javascript:void(0)
+                  - generic:
+                    - img "横浜の景色をご覧いただきながら、テーブル席でのお料理をお楽しみください。"
+              - generic [ref=e1218]:
+                - link "窓一面に広がる眺望とともに、シェフが目の前で仕上げるお料理をお楽しみください。":
+                  - /url: javascript:void(0)
+                  - generic:
+                    - img "窓一面に広がる眺望とともに、シェフが目の前で仕上げるお料理をお楽しみください。"
+              - generic [ref=e1219]:
+                - link "窓一面に広がる眺望とともに、シェフが目の前で仕上げるお料理をお楽しみください。":
+                  - /url: javascript:void(0)
+                  - generic:
+                    - img "窓一面に広がる眺望とともに、シェフが目の前で仕上げるお料理をお楽しみください。"
+          - definition [ref=e1220]:
+            - heading "新横浜プリンスホテル" [level=2] [ref=e1223]:
+              - link "新横浜プリンスホテル" [ref=e1224] [cursor=pointer]:
+                - /url: https://travel.rakuten.co.jp/HOTEL/19191/19191.html
+            - paragraph [ref=e1225]:
+              - link "4.14（11596件）" [ref=e1226] [cursor=pointer]:
+                - /url: https://travel.rakuten.co.jp/HOTEL/19191/review.html?l-id=hotelList_17_19191
+                - generic [ref=e1228]:
+                  - strong [ref=e1229]: "4.14"
+                  - text: （11596件）
+            - generic [ref=e1230]:
+              - paragraph [ref=e1231]
+              - img [ref=e1234]
+            - paragraph [ref=e1235]: 【横浜アリーナ徒歩圏内】超高層階からのパノラマ絶景で非日常体験を。富士山や横浜の夜景を客室やレストランから一望できます。
+            - paragraph [ref=e1236]:
+              - generic [ref=e1237]: アクセス ：【新横浜駅より徒歩2分】東海道新幹線、JR線、横浜市営地下鉄線、相鉄・東急新横浜線の利用に便利／羽田空港から直行バス運行
+              - generic "新横浜プリンスホテル" [ref=e1238] [cursor=pointer]:
+                - generic [ref=e1239]: 地図から探す
+            - generic [ref=e1242]: 駐車場
+            - generic [ref=e1243]:
+              - generic [ref=e1244]:
+                - generic [ref=e1245]:
+                  - generic [ref=e1246]:
+                    - text: 最安値
+                    - strong [ref=e1247]: 9,258
+                    - text: 円〜
+                  - generic [ref=e1248]: 消費税込10,183円〜
+                - link "宿泊プラン一覧を見る" [ref=e1250] [cursor=pointer]:
+                  - /url: //hotel.travel.rakuten.co.jp/hotelinfo/plan/19191?f_teikei=&l-id=hotelList_17_19191
+              - generic [ref=e1251]:
+                - link "航空券付きプラン" [ref=e1253] [cursor=pointer]:
+                  - /url: javascript:void(0)
+                - link "JR新幹線+特急券付きプラン" [ref=e1256] [cursor=pointer]:
+                  - /url: https://travel.rakuten.co.jp/package/jr/hotel_info_plan/19191?checkInDate=2026-06-30&checkOutDate=2026-07-01&adults=2&noOfUnits=1&childElementary=0&infantBedMeal=0&infantNone=0&departureDate=2026-06-30&returnDate=2026-07-01
+      - listitem [ref=e1257]:
+        - generic [ref=e1260]:
+          - term [ref=e1261]:
+            - generic [ref=e1266]:
+              - generic [ref=e1267]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1268]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1269]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1270]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1271]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1272]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1273]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1274]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1275]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1276]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1277]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1278]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1279]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1280]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1281]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1282]:
+                - link:
+                  - /url: javascript:void(0)
+          - definition [ref=e1283]:
+            - heading "Ｒ－ｈｏｕｓｅ ２ｎｄ／民泊" [level=2] [ref=e1286]:
+              - link "Ｒ－ｈｏｕｓｅ ２ｎｄ／民泊" [ref=e1287] [cursor=pointer]:
+                - /url: https://travel.rakuten.co.jp/HOTEL/186431/186431.html
+            - paragraph [ref=e1288]
+            - img [ref=e1291]
+            - paragraph [ref=e1292]: ご覧いただきありがとうございます。【民泊】
+            - paragraph [ref=e1293]:
+              - generic [ref=e1294]: アクセス ：仲木戸駅から徒歩で約４分
+              - generic "Ｒ－ｈｏｕｓｅ ２ｎｄ／民泊" [ref=e1295] [cursor=pointer]:
+                - generic [ref=e1296]: 地図から探す
+            - generic [ref=e1298]:
+              - generic [ref=e1299]:
+                - generic [ref=e1300]:
+                  - text: 最安値
+                  - strong [ref=e1301]: 9,096
+                  - text: 円〜
+                - generic [ref=e1302]: 消費税込10,005円〜
+              - link "宿泊プラン一覧を見る" [ref=e1304] [cursor=pointer]:
+                - /url: //hotel.travel.rakuten.co.jp/hotelinfo/plan/186431?f_teikei=&l-id=hotelList_18_186431
+      - listitem [ref=e1306]:
+        - generic [ref=e1309]:
+          - term [ref=e1310]:
+            - generic [ref=e1315]:
+              - generic [ref=e1316]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1317]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1318]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1319]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1320]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1321]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1322]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1323]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1324]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1325]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1326]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1327]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1328]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1329]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1330]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1331]:
+                - link:
+                  - /url: javascript:void(0)
+          - definition [ref=e1332]:
+            - heading "Ｈｏｔｅｌ ＺＡＬＡ" [level=2] [ref=e1335]:
+              - link "Ｈｏｔｅｌ ＺＡＬＡ" [ref=e1336] [cursor=pointer]:
+                - /url: https://travel.rakuten.co.jp/HOTEL/187259/187259.html
+            - paragraph [ref=e1337]:
+              - link "4.14（100件）" [ref=e1338] [cursor=pointer]:
+                - /url: https://travel.rakuten.co.jp/HOTEL/187259/review.html?l-id=hotelList_19_187259
+                - generic [ref=e1340]:
+                  - strong [ref=e1341]: "4.14"
+                  - text: （100件）
+            - img [ref=e1344]
+            - paragraph [ref=e1345]: コンセプト重視のアミューズメントホテル 。
+            - paragraph [ref=e1346]:
+              - generic [ref=e1347]: アクセス ：新横浜駅から徒歩約10分
+              - generic "Ｈｏｔｅｌ ＺＡＬＡ" [ref=e1348] [cursor=pointer]:
+                - generic [ref=e1349]: 地図から探す
+            - generic [ref=e1352]: 駐車場
+            - generic [ref=e1354]:
+              - generic [ref=e1355]:
+                - generic [ref=e1356]:
+                  - text: 最安値
+                  - strong [ref=e1357]: 9,091
+                  - text: 円〜
+                - generic [ref=e1358]: 消費税込10,000円〜
+              - link "宿泊プラン一覧を見る" [ref=e1360] [cursor=pointer]:
+                - /url: //hotel.travel.rakuten.co.jp/hotelinfo/plan/187259?f_teikei=&l-id=hotelList_19_187259
+      - listitem [ref=e1362]:
+        - generic [ref=e1365]:
+          - term [ref=e1366]:
+            - generic [ref=e1371]:
+              - generic [ref=e1372]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1373]:
+                - link "ロビー":
+                  - /url: javascript:void(0)
+                  - generic:
+                    - img "ロビー"
+              - generic [ref=e1374]:
+                - link "アトリウム":
+                  - /url: javascript:void(0)
+                  - generic:
+                    - img "アトリウム"
+              - generic [ref=e1375]:
+                - link "朝食レストラン（ロイヤルホスト）":
+                  - /url: javascript:void(0)
+                  - generic:
+                    - img "朝食レストラン（ロイヤルホスト）"
+              - generic [ref=e1376]:
+                - link "アソシアラウンジ②":
+                  - /url: javascript:void(0)
+                  - generic:
+                    - img "アソシアラウンジ②"
+              - generic [ref=e1377]:
+                - link "フィットネスルーム":
+                  - /url: javascript:void(0)
+                  - generic:
+                    - img "フィットネスルーム"
+              - generic [ref=e1378]:
+                - link:
+                  - /url: javascript:void(0)
+          - definition [ref=e1379]:
+            - heading "ホテルアソシア新横浜" [level=2] [ref=e1382]:
+              - link "ホテルアソシア新横浜" [ref=e1383] [cursor=pointer]:
+                - /url: https://travel.rakuten.co.jp/HOTEL/69355/69355.html
+            - paragraph [ref=e1384]:
+              - link "4.64（1727件）" [ref=e1385] [cursor=pointer]:
+                - /url: https://travel.rakuten.co.jp/HOTEL/69355/review.html?l-id=hotelList_20_69355
+                - generic [ref=e1387]:
+                  - strong [ref=e1388]: "4.64"
+                  - text: （1727件）
+            - generic [ref=e1389]:
+              - paragraph [ref=e1390]
+              - img [ref=e1393]
+            - paragraph [ref=e1394]: 新横浜駅直上！横浜アリーナ、日産スタジアム徒歩圏内。Kアリーナへも便利！渋谷まで乗り換えなしで約30分！
+            - paragraph [ref=e1395]:
+              - generic [ref=e1396]: アクセス ：東海道新幹線・ＪＲ横浜線・横浜市営地下鉄 新横浜駅直上 羽田空港からは直行リムジンバス運行
+              - generic "ホテルアソシア新横浜" [ref=e1397] [cursor=pointer]:
+                - generic [ref=e1398]: 地図から探す
+            - generic [ref=e1399]:
+              - generic [ref=e1400]:
+                - generic [ref=e1401]:
+                  - generic [ref=e1402]:
+                    - text: 最安値
+                    - strong [ref=e1403]: 8,928
+                    - text: 円〜
+                  - generic [ref=e1404]: 消費税込9,820円〜
+                - link "宿泊プラン一覧を見る" [ref=e1406] [cursor=pointer]:
+                  - /url: //hotel.travel.rakuten.co.jp/hotelinfo/plan/69355?f_teikei=&l-id=hotelList_20_69355
+              - generic [ref=e1407]:
+                - link "航空券付きプラン" [ref=e1409] [cursor=pointer]:
+                  - /url: javascript:void(0)
+                - link "JR新幹線+特急券付きプラン" [ref=e1412] [cursor=pointer]:
+                  - /url: https://travel.rakuten.co.jp/package/jr/hotel_info_plan/69355?checkInDate=2026-06-30&checkOutDate=2026-07-01&adults=2&noOfUnits=1&childElementary=0&infantBedMeal=0&infantNone=0&departureDate=2026-06-30&returnDate=2026-07-01
+      - listitem [ref=e1413]:
+        - generic [ref=e1416]:
+          - term [ref=e1417]:
+            - generic [ref=e1422]:
+              - generic [ref=e1423]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1424]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1425]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1426]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1427]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1428]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1429]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1430]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1431]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1432]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1433]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1434]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1435]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1436]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1437]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1438]:
+                - link:
+                  - /url: javascript:void(0)
+          - definition [ref=e1439]:
+            - heading "キーサイド桜木町２０１／民泊" [level=2] [ref=e1442]:
+              - link "キーサイド桜木町２０１／民泊" [ref=e1443] [cursor=pointer]:
+                - /url: https://travel.rakuten.co.jp/HOTEL/190751/190751.html
+            - paragraph [ref=e1444]
+            - paragraph [ref=e1445]
+            - paragraph [ref=e1446]:
+              - generic [ref=e1447]: アクセス ：桜木町駅から徒歩で約２分
+              - generic "キーサイド桜木町２０１／民泊" [ref=e1448] [cursor=pointer]:
+                - generic [ref=e1449]: 地図から探す
+            - generic [ref=e1451]:
+              - generic [ref=e1452]:
+                - generic [ref=e1453]:
+                  - text: 最安値
+                  - strong [ref=e1454]: 8,700
+                  - text: 円〜
+                - generic [ref=e1455]: 消費税込9,570円〜
+              - link "宿泊プラン一覧を見る" [ref=e1457] [cursor=pointer]:
+                - /url: //hotel.travel.rakuten.co.jp/hotelinfo/plan/190751?f_teikei=&l-id=hotelList_21_190751
+      - listitem [ref=e1459]:
+        - generic [ref=e1462]:
+          - term [ref=e1463]:
+            - generic [ref=e1468]:
+              - generic [ref=e1469]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1470]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1471]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1472]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1473]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1474]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1475]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1476]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1477]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1478]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1479]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1480]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1481]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1482]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1483]:
+                - link:
+                  - /url: javascript:void(0)
+              - generic [ref=e1484]:
+                - link:
+                  - /url: javascript:void(0)
+          - definition [ref=e1485]:
+            - heading "キーサイド桜木町３０１／民泊" [level=2] [ref=e1488]:
+              - link "キーサイド桜木町３０１／民泊" [ref=e1489] [cursor=pointer]:
+                - /url: https://travel.rakuten.co.jp/HOTEL/194438/194438.html
+            - paragraph [ref=e1490]
+            - paragraph [ref=e1491]
+            - paragraph [ref=e1492]:
+              - generic [ref=e1493]: アクセス ：桜木町駅から徒歩で約３分
+              - generic "キーサイド桜木町３０１／民泊" [ref=e1494] [cursor=pointer]:
+                - generic [ref=e1495]: 地図から探す
+            - generic [ref=e1497]:
+              - generic [ref=e1498]:
+                - generic [ref=e1499]:
+                  - text: 最安値
+                  - strong [ref=e1500]: 8,700
+                  - text: 円〜
+                - generic [ref=e1501]: 消費税込9,570円〜
+              - link "宿泊プラン一覧を見る" [ref=e1503] [cursor=pointer]:
+                - /url: //hotel.travel.rakuten.co.jp/hotelinfo/plan/194438?f_teikei=&l-id=hotelList_22_194438
+      - listitem [ref=e1505]:
+        - generic [ref=e1508]:
+          - term [ref=e1509]
+          - definition [ref=e1511]:
+            - generic [ref=e1513]:
+              - img "bp-info" [ref=e1515]
+              - heading "相鉄ホテルズ ザ・スプラジール 横浜" [level=2] [ref=e1516]:
+                - link "相鉄ホテルズ ザ・スプラジール 横浜" [ref=e1517] [cursor=pointer]:
+                  - /url: https://travel.rakuten.co.jp/HOTEL/189109/189109.html
+            - paragraph [ref=e1518]:
+              - link "4.57（173件）" [ref=e1519] [cursor=pointer]:
+                - /url: https://travel.rakuten.co.jp/HOTEL/189109/review.html?l-id=hotelList_23_189109
+                - generic [ref=e1521]:
+                  - strong [ref=e1522]: "4.57"
+                  - text: （173件）
+            - img [ref=e1525]
+            - paragraph [ref=e1526]: 宿泊に喜びを。短期滞在から長期滞在までお客様の目的に合わせて、快適な環境とサービスを提供いたします。
+            - paragraph [ref=e1527]:
+              - generic [ref=e1528]: アクセス ：ＪＲ横浜駅、京急横浜駅 北改札「きた西口」より徒歩３分、東急東横線 みなとみらい線 横浜駅正面改札より徒歩５分
+              - generic "相鉄ホテルズ ザ・スプラジール 横浜" [ref=e1529] [cursor=pointer]:
+                - generic [ref=e1530]: 地図から探す
+            - generic [ref=e1531]:
+              - generic [ref=e1532]:
+                - generic [ref=e1533]:
+                  - generic [ref=e1534]:
+                    - text: 最安値
+                    - strong [ref=e1535]: 8,400
+                    - text: 円〜
+                  - generic [ref=e1536]: 消費税込9,240円〜
+                - link "宿泊プラン一覧を見る" [ref=e1538] [cursor=pointer]:
+                  - /url: //hotel.travel.rakuten.co.jp/hotelinfo/plan/189109?f_teikei=&l-id=hotelList_23_189109
+              - generic [ref=e1539]:
+                - link "日帰り・デイユース" [ref=e1541] [cursor=pointer]:
+                  - /url: //hotel.travel.rakuten.co.jp/hotelinfo/dayuse/189109?f_teikei=&l-id=hotelList_23_189109
+                - link "航空券付きプラン" [ref=e1544] [cursor=pointer]:
+                  - /url: javascript:void(0)
+                - link "JR新幹線+特急券付きプラン" [ref=e1547] [cursor=pointer]:
+                  - /url: https://travel.rakuten.co.jp/package/jr/hotel_info_plan/189109?checkInDate=2026-06-30&checkOutDate=2026-07-01&adults=2&noOfUnits=1&childElementary=0&infantBedMeal=0&infantNone=0&departureDate=2026-06-30&returnDate=2026-07-01
+      - listitem [ref=e1548]:
+        - generic [ref=e1551]:
+          - term [ref=e1552]
+          - definition [ref=e1554]:
+            - generic [ref=e1556]:
+              - img "bp-info" [ref=e1558]
+              - heading "ザ・ゲートホテル横浜 ｂｙ ＨＵＬＩＣ" [level=2] [ref=e1559]:
+                - link "ザ・ゲートホテル横浜 ｂｙ ＨＵＬＩＣ" [ref=e1560] [cursor=pointer]:
+                  - /url: https://travel.rakuten.co.jp/HOTEL/192809/192809.html
+            - paragraph [ref=e1561]:
+              - link "4.71（270件）" [ref=e1562] [cursor=pointer]:
+                - /url: https://travel.rakuten.co.jp/HOTEL/192809/review.html?l-id=hotelList_24_192809
+                - generic [ref=e1564]:
+                  - strong [ref=e1565]: "4.71"
+                  - text: （270件）
+            - paragraph [ref=e1567]
+            - paragraph [ref=e1569]: 2025年2月開業、横浜中心の「風薫るホテル」。五感で楽しむ歴史と現代の融合空間。
+            - paragraph [ref=e1570]:
+              - generic [ref=e1571]: アクセス ：みなとみらい線 元町・中華街駅（4番出口）より徒歩約4分
+              - generic "ザ・ゲートホテル横浜 ｂｙ ＨＵＬＩＣ" [ref=e1572] [cursor=pointer]:
+                - generic [ref=e1573]: 地図から探す
+            - generic [ref=e1574]:
+              - generic [ref=e1575]:
+                - generic [ref=e1576]:
+                  - generic [ref=e1577]:
+                    - text: 最安値
+                    - strong [ref=e1578]: 7,920
+                    - text: 円〜
+                  - generic [ref=e1579]: 消費税込8,712円〜
+                - link "宿泊プラン一覧を見る" [ref=e1581] [cursor=pointer]:
+                  - /url: //hotel.travel.rakuten.co.jp/hotelinfo/plan/192809?f_teikei=&l-id=hotelList_24_192809
+              - generic [ref=e1582]:
+                - link "航空券付きプラン" [ref=e1584] [cursor=pointer]:
+                  - /url: javascript:void(0)
+                - link "JR新幹線+特急券付きプラン" [ref=e1587] [cursor=pointer]:
+                  - /url: https://travel.rakuten.co.jp/package/jr/hotel_info_plan/192809?checkInDate=2026-06-30&checkOutDate=2026-07-01&adults=2&noOfUnits=1&childElementary=0&infantBedMeal=0&infantNone=0&departureDate=2026-06-30&returnDate=2026-07-01
+      - listitem [ref=e1588]:
+        - generic [ref=e1591]:
+          - term [ref=e1592]
+          - definition [ref=e1594]:
+            - heading "横濱本館・石川町 ＾" [level=2] [ref=e1597]:
+              - link "横濱本館・石川町 ＾" [ref=e1598] [cursor=pointer]:
+                - /url: https://travel.rakuten.co.jp/HOTEL/175890/175890.html
+            - paragraph [ref=e1599]:
+              - link "--（2件）" [ref=e1600] [cursor=pointer]:
+                - /url: https://travel.rakuten.co.jp/HOTEL/175890/review.html?l-id=hotelList_25_175890
+                - generic [ref=e1602]: "--（2件）"
+            - img [ref=e1605]
+            - paragraph [ref=e1606]: 【宿家横濱・本館】は、駅近の便利な立地（最寄り駅・石川町駅まで徒歩１分！
+            - paragraph [ref=e1607]:
+              - generic [ref=e1608]: アクセス ：石川町駅から徒歩で約１分
+              - generic "横濱本館・石川町 ＾" [ref=e1609] [cursor=pointer]:
+                - generic [ref=e1610]: 地図から探す
+            - generic [ref=e1612]:
+              - generic [ref=e1613]:
+                - generic [ref=e1614]:
+                  - text: 最安値
+                  - strong [ref=e1615]: 7,910
+                  - text: 円〜
+                - generic [ref=e1616]: 消費税込8,700円〜
+              - link "宿泊プラン一覧を見る" [ref=e1618] [cursor=pointer]:
+                - /url: //hotel.travel.rakuten.co.jp/hotelinfo/plan/175890?f_teikei=&l-id=hotelList_25_175890
+      - listitem [ref=e1620]:
+        - generic [ref=e1623]:
+          - term [ref=e1624]
+          - definition [ref=e1626]:
+            - generic [ref=e1628]:
+              - img "bp-info" [ref=e1630]
+              - heading "横浜ベイホテル東急" [level=2] [ref=e1631]:
+                - link "横浜ベイホテル東急" [ref=e1632] [cursor=pointer]:
+                  - /url: https://travel.rakuten.co.jp/HOTEL/2003/2003.html
+            - paragraph [ref=e1633]:
+              - link "4.66（10491件）" [ref=e1634] [cursor=pointer]:
+                - /url: https://travel.rakuten.co.jp/HOTEL/2003/review.html?l-id=hotelList_26_2003
+                - generic [ref=e1636]:
+                  - strong [ref=e1637]: "4.66"
+                  - text: （10491件）
+            - generic [ref=e1638]:
+              - paragraph [ref=e1639]
+              - img [ref=e1642]
+            - paragraph [ref=e1643]: 【みなとみらい駅直結】横浜・みなとみらいの中心♪横浜港を一望できるアーバンリゾート。
+            - paragraph [ref=e1644]:
+              - generic [ref=e1645]: アクセス ：みなとみらい線みなとみらい駅徒歩約１分／ＪＲ・市営地下鉄線桜木町駅徒歩１０分
+              - generic "横浜ベイホテル東急" [ref=e1646] [cursor=pointer]:
+                - generic [ref=e1647]: 地図から探す
+            - generic [ref=e1650]: 駐車場
+            - generic [ref=e1651]:
+              - generic [ref=e1652]:
+                - generic [ref=e1653]:
+                  - generic [ref=e1654]:
+                    - text: 最安値
+                    - strong [ref=e1655]: 7,866
+                    - text: 円〜
+                  - generic [ref=e1656]: 消費税込8,652円〜
+                - link "宿泊プラン一覧を見る" [ref=e1658] [cursor=pointer]:
+                  - /url: //hotel.travel.rakuten.co.jp/hotelinfo/plan/2003?f_teikei=&l-id=hotelList_26_2003
+              - generic [ref=e1659]:
+                - link "航空券付きプラン" [ref=e1661] [cursor=pointer]:
+                  - /url: javascript:void(0)
+                - link "JR新幹線+特急券付きプラン" [ref=e1664] [cursor=pointer]:
+                  - /url: https://travel.rakuten.co.jp/package/jr/hotel_info_plan/2003?checkInDate=2026-06-30&checkOutDate=2026-07-01&adults=2&noOfUnits=1&childElementary=0&infantBedMeal=0&infantNone=0&departureDate=2026-06-30&returnDate=2026-07-01
+      - listitem [ref=e1665]:
+        - generic [ref=e1668]:
+          - term [ref=e1669]
+          - definition [ref=e1671]:
+            - heading "ヒルトン横浜" [level=2] [ref=e1674]:
+              - link "ヒルトン横浜" [ref=e1675] [cursor=pointer]:
+                - /url: https://travel.rakuten.co.jp/HOTEL/187474/187474.html
+            - paragraph [ref=e1676]:
+              - link "4.61（392件）" [ref=e1677] [cursor=pointer]:
+                - /url: https://travel.rakuten.co.jp/HOTEL/187474/review.html?l-id=hotelList_27_187474
+                - generic [ref=e1679]:
+                  - strong [ref=e1680]: "4.61"
+                  - text: （392件）
+            - generic [ref=e1681]:
+              - paragraph [ref=e1682]
+              - img [ref=e1685]
+            - paragraph [ref=e1686]: 【2023年9月開業】横浜駅東口から徒歩圏内＆Kアリーナ横浜隣接！全室31平米以上・150種類以上の朝食もクチコミ高評価
+            - paragraph [ref=e1687]:
+              - generic [ref=e1688]: アクセス ：新高島駅 4番出口から徒歩約5分、横浜駅 東口より徒歩約11分。羽田空港からは車で約23分。
+              - generic "ヒルトン横浜" [ref=e1689] [cursor=pointer]:
+                - generic [ref=e1690]: 地図から探す
+            - generic [ref=e1693]: 駐車場
+            - generic [ref=e1694]:
+              - generic [ref=e1695]:
+                - generic [ref=e1696]:
+                  - generic [ref=e1697]:
+                    - text: 最安値
+                    - strong [ref=e1698]: 7,705
+                    - text: 円〜
+                  - generic [ref=e1699]: 消費税込8,475円〜
+                - link "宿泊プラン一覧を見る" [ref=e1701] [cursor=pointer]:
+                  - /url: //hotel.travel.rakuten.co.jp/hotelinfo/plan/187474?f_teikei=&l-id=hotelList_27_187474
+              - generic [ref=e1702]:
+                - link "航空券付きプラン" [ref=e1704] [cursor=pointer]:
+                  - /url: javascript:void(0)
+                - link "JR新幹線+特急券付きプラン" [ref=e1707] [cursor=pointer]:
+                  - /url: https://travel.rakuten.co.jp/package/jr/hotel_info_plan/187474?checkInDate=2026-06-30&checkOutDate=2026-07-01&adults=2&noOfUnits=1&childElementary=0&infantBedMeal=0&infantNone=0&departureDate=2026-06-30&returnDate=2026-07-01
+      - listitem [ref=e1708]:
+        - generic [ref=e1711]:
+          - term [ref=e1712]
+          - definition [ref=e1714]:
+            - heading "ＳＡＭＵＲＡＩ ＨＯＵＳＥ ＹＯＫＯＨＡＭＡ／民泊" [level=2] [ref=e1717]:
+              - link "ＳＡＭＵＲＡＩ ＨＯＵＳＥ ＹＯＫＯＨＡＭＡ／民泊" [ref=e1718] [cursor=pointer]:
+                - /url: https://travel.rakuten.co.jp/HOTEL/185645/185645.html
+            - paragraph [ref=e1719]
+            - img [ref=e1722]
+            - paragraph [ref=e1723]: ようこそ、サムライハウス横浜へ【民泊】
+            - paragraph [ref=e1724]:
+              - generic [ref=e1725]: アクセス ：石川町駅から徒歩で約４分
+              - generic "ＳＡＭＵＲＡＩ ＨＯＵＳＥ ＹＯＫＯＨＡＭＡ／民泊" [ref=e1726] [cursor=pointer]:
+                - generic [ref=e1727]: 地図から探す
+            - generic [ref=e1730]: 駐車場
+            - generic [ref=e1732]:
+              - generic [ref=e1733]:
+                - generic [ref=e1734]:
+                  - text: 最安値
+                  - strong [ref=e1735]: 7,657
+                  - text: 円〜
+                - generic [ref=e1736]: 消費税込8,422円〜
+              - link "宿泊プラン一覧を見る" [ref=e1738] [cursor=pointer]:
+                - /url: //hotel.travel.rakuten.co.jp/hotelinfo/plan/185645?f_teikei=&l-id=hotelList_28_185645
+      - listitem [ref=e1740]:
+        - generic [ref=e1743]:
+          - term [ref=e1744]
+          - definition [ref=e1746]:
+            - heading "横浜ウィークリー大通り公園" [level=2] [ref=e1749]:
+              - link "横浜ウィークリー大通り公園" [ref=e1750] [cursor=pointer]:
+                - /url: https://travel.rakuten.co.jp/HOTEL/191610/191610.html
+            - paragraph [ref=e1751]
+            - paragraph [ref=e1752]: 【全室禁煙】チェックインは伊勢佐木モール沿いの横浜ウィークリー本館事務所でＰＭ７時半迄。身分証提示要。キャンセル返金不可
+            - paragraph [ref=e1753]:
+              - generic [ref=e1754]: アクセス ：横浜市営地下鉄ブルーライン 阪東橋駅 より地上出て 徒歩約１分
+              - generic "横浜ウィークリー大通り公園" [ref=e1755] [cursor=pointer]:
+                - generic [ref=e1756]: 地図から探す
+            - generic [ref=e1759]: 駐車場
+            - generic [ref=e1761]:
+              - generic [ref=e1762]:
+                - generic [ref=e1763]:
+                  - text: 最安値
+                  - strong [ref=e1764]: 7,400
+                  - text: 円〜
+                - generic [ref=e1765]: 消費税込8,140円〜
+              - link "宿泊プラン一覧を見る" [ref=e1767] [cursor=pointer]:
+                - /url: //hotel.travel.rakuten.co.jp/hotelinfo/plan/191610?f_teikei=&l-id=hotelList_29_191610
+      - listitem [ref=e1769]:
+        - generic [ref=e1772]:
+          - term [ref=e1773]
+          - definition [ref=e1775]:
+            - heading "青葉台フォーラム" [level=2] [ref=e1778]:
+              - link "青葉台フォーラム" [ref=e1779] [cursor=pointer]:
+                - /url: https://travel.rakuten.co.jp/HOTEL/7995/7995.html
+            - paragraph [ref=e1780]:
+              - link "4.19（565件）" [ref=e1781] [cursor=pointer]:
+                - /url: https://travel.rakuten.co.jp/HOTEL/7995/review.html?l-id=hotelList_30_7995
+                - generic [ref=e1783]:
+                  - strong [ref=e1784]: "4.19"
+                  - text: （565件）
+            - img [ref=e1787]
+            - paragraph [ref=e1788]: 渋谷、横浜方面へのアクセスも抜群。コンビニも至近距離。「やすらぎ」と「くつろぎ」大切にしたホテルです。
+            - paragraph [ref=e1789]:
+              - generic [ref=e1790]: アクセス ：東急田園都市線「青葉台駅」下車、徒歩約２分
+              - generic "青葉台フォーラム" [ref=e1791] [cursor=pointer]:
+                - generic [ref=e1792]: 地図から探す
+            - generic [ref=e1795]: 駐車場
+            - generic [ref=e1796]:
+              - generic [ref=e1797]:
+                - generic [ref=e1798]:
+                  - generic [ref=e1799]:
+                    - text: 最安値
+                    - strong [ref=e1800]: 7,091
+                    - text: 円〜
+                  - generic [ref=e1801]: 消費税込7,800円〜
+                - link "宿泊プラン一覧を見る" [ref=e1803] [cursor=pointer]:
+                  - /url: //hotel.travel.rakuten.co.jp/hotelinfo/plan/7995?f_teikei=&l-id=hotelList_30_7995
+              - link "航空券付きプラン" [ref=e1806] [cursor=pointer]:
+                - /url: javascript:void(0)
+      - listitem [ref=e1807]:
+        - generic [ref=e1810]:
+          - term [ref=e1811]
+          - definition [ref=e1813]:
+            - generic [ref=e1815]:
+              - img "bp-info" [ref=e1817]
+              - heading "三井ガーデンホテル横浜みなとみらいプレミア" [level=2] [ref=e1818]:
+                - link "三井ガーデンホテル横浜みなとみらいプレミア" [ref=e1819] [cursor=pointer]:
+                  - /url: https://travel.rakuten.co.jp/HOTEL/184792/184792.html
+            - paragraph [ref=e1820]:
+              - link "4.67（656件）" [ref=e1821] [cursor=pointer]:
+                - /url: https://travel.rakuten.co.jp/HOTEL/184792/review.html?l-id=hotelList_31_184792
+                - generic [ref=e1823]:
+                  - strong [ref=e1824]: "4.67"
+                  - text: （656件）
+            - generic [ref=e1825]:
+              - paragraph [ref=e1826]
+              - img [ref=e1829]
+            - paragraph [ref=e1830]: スカイプール、バーカウンターなどの複数施設を揃え、ここにしかない上質な時間をお届けします。ぴあアリーナMMまで徒歩1分
+            - paragraph [ref=e1831]:
+              - generic [ref=e1832]: アクセス ：みなとみらい線「みなとみらい」駅 5番出口より徒歩約5分、JR根岸線「桜木町」駅より徒歩約10分
+              - generic "三井ガーデンホテル横浜みなとみらいプレミア" [ref=e1833] [cursor=pointer]:
+                - generic [ref=e1834]: 地図から探す
+            - generic [ref=e1837]: 駐車場
+            - generic [ref=e1838]:
+              - generic [ref=e1839]:
+                - generic [ref=e1840]:
+                  - generic [ref=e1841]:
+                    - text: 最安値
+                    - strong [ref=e1842]: 7,059
+                    - text: 円〜
+                  - generic [ref=e1843]: 消費税込7,764円〜
+                - link "宿泊プラン一覧を見る" [ref=e1845] [cursor=pointer]:
+                  - /url: //hotel.travel.rakuten.co.jp/hotelinfo/plan/184792?f_teikei=&l-id=hotelList_31_184792
+              - generic [ref=e1846]:
+                - link "航空券付きプラン" [ref=e1848] [cursor=pointer]:
+                  - /url: javascript:void(0)
+                - link "JR新幹線+特急券付きプラン" [ref=e1851] [cursor=pointer]:
+                  - /url: https://travel.rakuten.co.jp/package/jr/hotel_info_plan/184792?checkInDate=2026-06-30&checkOutDate=2026-07-01&adults=2&noOfUnits=1&childElementary=0&infantBedMeal=0&infantNone=0&departureDate=2026-06-30&returnDate=2026-07-01
+      - listitem [ref=e1852]:
+        - generic [ref=e1855]:
+          - term [ref=e1856]
+          - definition [ref=e1858]:
+            - heading "京急ＥＸホテルみなとみらい横浜（横浜シンフォステージ内）" [level=2] [ref=e1861]:
+              - link "京急ＥＸホテルみなとみらい横浜（横浜シンフォステージ内）" [ref=e1862] [cursor=pointer]:
+                - /url: https://travel.rakuten.co.jp/HOTEL/189139/189139.html
+            - paragraph [ref=e1863]:
+              - link "4.59（1129件）" [ref=e1864] [cursor=pointer]:
+                - /url: https://travel.rakuten.co.jp/HOTEL/189139/review.html?l-id=hotelList_32_189139
+                - generic [ref=e1866]:
+                  - strong [ref=e1867]: "4.59"
+                  - text: （1129件）
+            - img [ref=e1870]
+            - paragraph [ref=e1871]: 【2024年6月24日開業】地上130mの“空に浮かぶ寛ぎの空間”。優雅なホテルステイをお楽しみください。
+            - paragraph [ref=e1872]:
+              - generic [ref=e1873]: アクセス ：①みなとみらい線 新高島駅 4番出口 徒歩1分 シンフォステージウエストタワー2階入口 ②各線横浜駅 徒歩8分
+              - generic "京急ＥＸホテルみなとみらい横浜（横浜シンフォステージ内）" [ref=e1874] [cursor=pointer]:
+                - generic [ref=e1875]: 地図から探す
+            - generic [ref=e1878]: 大浴場
+            - generic [ref=e1879]:
+              - generic [ref=e1880]:
+                - generic [ref=e1881]:
+                  - generic [ref=e1882]:
+                    - text: 最安値
+                    - strong [ref=e1883]: 7,046
+                    - text: 円〜
+                  - generic [ref=e1884]: 消費税込7,750円〜
+                - link "宿泊プラン一覧を見る" [ref=e1886] [cursor=pointer]:
+                  - /url: //hotel.travel.rakuten.co.jp/hotelinfo/plan/189139?f_teikei=&l-id=hotelList_32_189139
+              - generic [ref=e1887]:
+                - link "航空券付きプラン" [ref=e1889] [cursor=pointer]:
+                  - /url: javascript:void(0)
+                - link "JR新幹線+特急券付きプラン" [ref=e1892] [cursor=pointer]:
+                  - /url: https://travel.rakuten.co.jp/package/jr/hotel_info_plan/189139?checkInDate=2026-06-30&checkOutDate=2026-07-01&adults=2&noOfUnits=1&childElementary=0&infantBedMeal=0&infantNone=0&departureDate=2026-06-30&returnDate=2026-07-01
+    - generic [ref=e1893]:
+      - generic [ref=e1894]:
+        - generic [ref=e1895]:
+          - generic:
+            - img
+        - generic [ref=e1896]:
+          - generic [ref=e1897]:
+            - generic: "1"
+          - link "2" [ref=e1899] [cursor=pointer]:
+            - /url: https://search.travel.rakuten.co.jp/ds/yado/kanagawa/yokohama-high-p2
+          - link "3" [ref=e1901] [cursor=pointer]:
+            - /url: https://search.travel.rakuten.co.jp/ds/yado/kanagawa/yokohama-high-p3
+          - img [ref=e1903]
+          - link "7" [ref=e1906] [cursor=pointer]:
+            - /url: https://search.travel.rakuten.co.jp/ds/yado/kanagawa/yokohama-high-p7
+        - link [ref=e1908] [cursor=pointer]:
+          - /url: https://search.travel.rakuten.co.jp/ds/yado/kanagawa/yokohama-high-p2
+          - img [ref=e1909]
+      - generic [ref=e1911]:
+        - generic [ref=e1912]: 190件中
+        - text: 1～30 件表示
+  - generic [ref=e1915]:
+    - generic [ref=e1916]:
+      - heading "トラベルガイド記事" [level=2] [ref=e1917]
+      - paragraph [ref=e1918]: 旅に行きたくなる旅行記事をお届け
+    - generic [ref=e1919]:
+      - generic [ref=e1921]:
+        - link "鎌倉のあじさい名所～2026年おすすめスポット16選～" [ref=e1922] [cursor=pointer]:
+          - /url: https://travel.rakuten.co.jp/mytrip/amazing/ajisai-kamakura?l-id=Guide_HotelList_local_1
+          - paragraph [ref=e1926]: 鎌倉のあじさい名所～2026年おすすめスポット16選～
+        - link "【横浜】話題の没入型体験施設「ワンダリア横浜」！親子で楽しむ探索ガイド" [ref=e1927] [cursor=pointer]:
+          - /url: https://travel.rakuten.co.jp/mytrip/howto/wonderia-yokohama-guide?l-id=Guide_HotelList_local_2
+          - paragraph [ref=e1931]: 【横浜】話題の没入型体験施設「ワンダリア横浜」！親子で楽しむ探索ガイド
+        - link "芦ノ湖の“お茶クルーズ”から最新スポットまで。進化する箱根を巡るおすすめモデルコース" [ref=e1932] [cursor=pointer]:
+          - /url: https://travel.rakuten.co.jp/mytrip/howto/hakone-latest-guide?l-id=Guide_HotelList_local_3
+          - paragraph [ref=e1936]: 芦ノ湖の“お茶クルーズ”から最新スポットまで。進化する箱根を巡るおすすめモデルコース
+        - link "インクルーシブ旅が好きなあなたに！京急「みさきまぐろきっぷ」で楽しむ湘南の休日" [ref=e1937] [cursor=pointer]:
+          - /url: https://travel.rakuten.co.jp/mytrip/howto/misakimaguro-ticket-guide?l-id=Guide_HotelList_local_4
+          - paragraph [ref=e1941]: インクルーシブ旅が好きなあなたに！京急「みさきまぐろきっぷ」で楽しむ湘南の休日
+        - link "バラ園・ローズガーデン20選！東京・関東の名所をご紹介" [ref=e1942] [cursor=pointer]:
+          - /url: https://travel.rakuten.co.jp/mytrip/amazing/rose-kanto?l-id=Guide_HotelList_local_5
+          - paragraph [ref=e1946]: バラ園・ローズガーデン20選！東京・関東の名所をご紹介
+        - link "【2026年最新】横浜観光おすすめ41選！デートや遊び、穴場スポットも" [ref=e1947] [cursor=pointer]:
+          - /url: https://travel.rakuten.co.jp/mytrip/ranking/spot-yokohama?l-id=Guide_HotelList_local_6
+          - paragraph [ref=e1951]: 【2026年最新】横浜観光おすすめ41選！デートや遊び、穴場スポットも
+        - link "【2026年】関東 初日の出スポット16選！" [ref=e1952] [cursor=pointer]:
+          - /url: https://travel.rakuten.co.jp/mytrip/trend/newyear-sunrise-kanto?l-id=Guide_HotelList_local_7
+          - paragraph [ref=e1956]: 【2026年】関東 初日の出スポット16選！
+        - link "横須賀おすすめ観光スポット～現地スタッフ厳選 BEST20～" [ref=e1957] [cursor=pointer]:
+          - /url: https://travel.rakuten.co.jp/mytrip/ranking/spot-yokosuka?l-id=Guide_HotelList_local_8
+          - paragraph [ref=e1961]: 横須賀おすすめ観光スポット～現地スタッフ厳選 BEST20～
+        - link "箱根観光おすすめ30選！箱根湯本、芦ノ湖…エリア別にご紹介" [ref=e1962] [cursor=pointer]:
+          - /url: https://travel.rakuten.co.jp/mytrip/ranking/spot-hakone?l-id=Guide_HotelList_local_9
+          - paragraph [ref=e1966]: 箱根観光おすすめ30選！箱根湯本、芦ノ湖…エリア別にご紹介
+        - link "【2025年最新】関東の紅葉名所28選！2025年見頃やライトアップ情報も" [ref=e1967] [cursor=pointer]:
+          - /url: https://travel.rakuten.co.jp/mytrip/trend/kouyou-kanto?l-id=Guide_HotelList_local_10
+          - paragraph [ref=e1971]: 【2025年最新】関東の紅葉名所28選！2025年見頃やライトアップ情報も
+      - button [ref=e1972] [cursor=pointer]
+  - generic [ref=e1974]:
+    - term [ref=e1975]: 周辺エリアのホテル・旅館
+    - definition [ref=e1976]:
+      - list [ref=e1977]:
+        - link "神奈川県 ホテル・旅館" [ref=e1979] [cursor=pointer]:
+          - /url: https://travel.rakuten.co.jp/yado/kanagawa/
+        - listitem [ref=e1980]:
+          - link "横浜 ホテル・旅館" [ref=e1981] [cursor=pointer]:
+            - /url: https://travel.rakuten.co.jp/yado/kanagawa/yokohama.html
+        - listitem [ref=e1982]:
+          - link "川崎 ホテル・旅館" [ref=e1983] [cursor=pointer]:
+            - /url: https://travel.rakuten.co.jp/yado/kanagawa/kawasaki.html
+        - listitem [ref=e1984]:
+          - link "箱根 ホテル・旅館" [ref=e1985] [cursor=pointer]:
+            - /url: https://travel.rakuten.co.jp/yado/kanagawa/hakone.html
+        - listitem [ref=e1986]:
+          - link "小田原 ホテル・旅館" [ref=e1987] [cursor=pointer]:
+            - /url: https://travel.rakuten.co.jp/yado/kanagawa/odawara.html
+        - listitem [ref=e1988]:
+          - link "湯河原・真鶴 ホテル・旅館" [ref=e1989] [cursor=pointer]:
+            - /url: https://travel.rakuten.co.jp/yado/kanagawa/yugawara.html
+        - listitem [ref=e1990]:
+          - link "相模湖・丹沢 ホテル・旅館" [ref=e1991] [cursor=pointer]:
+            - /url: https://travel.rakuten.co.jp/yado/kanagawa/sagamiko.html
+        - listitem [ref=e1992]:
+          - link "大和・相模原・町田西部 ホテル・旅館" [ref=e1993] [cursor=pointer]:
+            - /url: https://travel.rakuten.co.jp/yado/kanagawa/sagamihara.html
+        - listitem [ref=e1994]:
+          - link "厚木・海老名・伊勢原 ホテル・旅館" [ref=e1995] [cursor=pointer]:
+            - /url: https://travel.rakuten.co.jp/yado/kanagawa/ebina.html
+        - listitem [ref=e1996]:
+          - link "湘南・鎌倉・江ノ島・藤沢・平塚 ホテル・旅館" [ref=e1997] [cursor=pointer]:
+            - /url: https://travel.rakuten.co.jp/yado/kanagawa/shonan.html
+        - listitem [ref=e1998]:
+          - link "横須賀・三浦 ホテル・旅館" [ref=e1999] [cursor=pointer]:
+            - /url: https://travel.rakuten.co.jp/yado/kanagawa/miura.html
+      - generic [ref=e2001] [cursor=pointer]: もっと細かい地域から探す
+  - generic [ref=e2002]:
+    - list [ref=e2003]:
+      - listitem [ref=e2004]:
+        - link "会社情報／標識等" [ref=e2005] [cursor=pointer]:
+          - /url: https://travel.rakuten.co.jp/corporate/
+      - listitem [ref=e2006]:
+        - link "個人情報保護方針" [ref=e2007] [cursor=pointer]:
+          - /url: https://privacy.rakuten.co.jp/
+      - listitem [ref=e2008]:
+        - link "社会的責任[CSR]" [ref=e2009] [cursor=pointer]:
+          - /url: https://corp.rakuten.co.jp/csr/
+      - listitem [ref=e2010]:
+        - link "採用情報" [ref=e2011] [cursor=pointer]:
+          - /url: https://travel.rakuten.co.jp/recruit/
+      - listitem [ref=e2012]:
+        - link "規約集" [ref=e2013] [cursor=pointer]:
+          - /url: https://travel.rakuten.co.jp/info/
+      - listitem [ref=e2014]:
+        - link "資料請求" [ref=e2015] [cursor=pointer]:
+          - /url: https://travel.rakuten.co.jp/info/hotel_msg.html
+    - paragraph [ref=e2016]: © Rakuten Group, Inc.
+  - generic [ref=e2017]:
+    - generic [ref=e2020]:
+      - generic [ref=e2022]:
+        - generic [ref=e2023]:
+          - generic [ref=e2024]:
+            - generic [ref=e2025]: ようこそ
+            - generic [ref=e2026]: ログインしてもっとおトクに！
+          - link "ログイン" [ref=e2027] [cursor=pointer]:
+            - /url: https://auth.travel.rakuten.co.jp/fwd/memberDispatcher/staticPageLogin?__event=ID01_001_001&service_id=t01&return_url=cgi-bin/rakuten_id_reference&f_next_url=https://search.travel.rakuten.co.jp/ds/yado/kanagawa/yokohama-high?l-id=login_submenu
+        - link "会員登録はこちらから" [ref=e2028] [cursor=pointer]:
+          - /url: https://travel.rakuten.co.jp/kaiin.html?l-id=trv_header_menu_kaiin
+          - generic [ref=e2029]: 会員登録はこちらから
+          - img [ref=e2032]
+      - generic [ref=e2035]:
+        - generic [ref=e2037]: 会員メニュー
+        - link "予約の確認・変更" [ref=e2040] [cursor=pointer]:
+          - /url: https://auth.travel.rakuten.co.jp/fwd/memberDispatcher/staticPageLogin?service_id=t01&return_url=cgi-bin/rakuten_id_reference&_guestLoginServiceKey=guestReservation&f_next_url=https://mypage.travel.rakuten.co.jp/?l-id=mypage_submenu
+          - generic [ref=e2041]:
+            - generic [ref=e2042]:
+              - img [ref=e2043]
+              - generic [ref=e2044]: 予約の確認・変更
+            - img [ref=e2047]
+        - link "お気に入り" [ref=e2052] [cursor=pointer]:
+          - /url: https://favoritelist.travel.rakuten.co.jp/hotel/domestic?l-id=trv_header_menu_favorite
+          - generic [ref=e2053]:
+            - generic [ref=e2054]:
+              - img [ref=e2055]
+              - generic [ref=e2056]: お気に入り
+            - img [ref=e2059]
+        - link "閲覧履歴" [ref=e2064] [cursor=pointer]:
+          - /url: https://travel.rakuten.co.jp/share/themes/compare/compare.html?l-id=trv_header_menu_history
+          - generic [ref=e2065]:
+            - generic [ref=e2066]:
+              - img [ref=e2067]
+              - generic [ref=e2068]: 閲覧履歴
+            - img [ref=e2071]
+        - link "my クーポン" [ref=e2076] [cursor=pointer]:
+          - /url: https://coupon.rakuten.co.jp/myCoupon?service=travel&?scid=wi_trv_header_menu_mycoupon
+          - generic [ref=e2077]:
+            - generic [ref=e2078]:
+              - img [ref=e2079]
+              - generic [ref=e2080]: my クーポン
+            - img [ref=e2083]
+        - generic [ref=e2089] [cursor=pointer]:
+          - generic [ref=e2090]:
+            - img [ref=e2091]
+            - generic [ref=e2092]: クチコミ 【NEW!】
+          - img [ref=e2096]
+        - generic [ref=e2102] [cursor=pointer]:
+          - generic [ref=e2103]:
+            - img [ref=e2104]
+            - generic [ref=e2105]: ヘルプ / お問い合わせ
+          - img [ref=e2109]
+      - generic [ref=e2112]:
+        - generic [ref=e2114]: 開催中のイベント
+        - link "5と0のつく日は最大20％OFF" [ref=e2117] [cursor=pointer]:
+          - /url: https://travel.rakuten.co.jp/camp/50luxday/?l-id=trv_header_menu_50
+          - generic [ref=e2118]:
+            - generic [ref=e2119]:
+              - img [ref=e2120]
+              - generic [ref=e2121]: 5と0のつく日は最大20％OFF
+            - img [ref=e2124]
+        - link "ふるさと納税" [ref=e2129] [cursor=pointer]:
+          - /url: https://travel.rakuten.co.jp/special/furusato/?l-id=trv_header_menu_furusato
+          - generic [ref=e2130]:
+            - generic [ref=e2131]:
+              - img [ref=e2132]
+              - generic [ref=e2133]: ふるさと納税
+            - img [ref=e2136]
+        - link "クーポン祭" [ref=e2141] [cursor=pointer]:
+          - /url: https://travel.rakuten.co.jp/coupon/special/matsuri/?l-id=trv_header_menu_matsuri
+          - generic [ref=e2142]:
+            - generic [ref=e2143]:
+              - img [ref=e2144]
+              - generic [ref=e2145]: クーポン祭
+            - img [ref=e2148]
+        - link "初めて利用キャンペーン" [ref=e2153] [cursor=pointer]:
+          - /url: https://travel.rakuten.co.jp/camp/service_debut/?l-id=trv_header_menu_debut
+          - generic [ref=e2154]:
+            - generic [ref=e2155]:
+              - img [ref=e2156]
+              - generic [ref=e2157]: 初めて利用キャンペーン
+            - img [ref=e2160]
+        - link "楽天スーパーDEAL" [ref=e2165] [cursor=pointer]:
+          - /url: https://travel.rakuten.co.jp/superdeal/?l-id=trv_header_menu_deal
+          - generic [ref=e2166]:
+            - generic [ref=e2167]:
+              - img [ref=e2168]
+              - generic [ref=e2169]: 楽天スーパーDEAL
+            - img [ref=e2172]
+        - link "特集・キャンペーン一覧" [ref=e2177] [cursor=pointer]:
+          - /url: https://travel.rakuten.co.jp/leisure/?l-id=trv_header_service_list
+          - generic [ref=e2178]:
+            - generic [ref=e2179]:
+              - img [ref=e2180]
+              - generic [ref=e2181]: 特集・キャンペーン一覧
+            - img [ref=e2184]
+      - generic [ref=e2187]:
+        - generic [ref=e2189]: 楽天トラベルのサービス
+        - link "国内宿泊" [ref=e2192] [cursor=pointer]:
+          - /url: https://travel.rakuten.co.jp/?l-id=trv_header_menu_dh
+          - generic [ref=e2193]:
+            - generic [ref=e2194]:
+              - img [ref=e2195]
+              - generic [ref=e2196]: 国内宿泊
+            - img [ref=e2199]
+        - link "交通＋宿" [ref=e2204] [cursor=pointer]:
+          - /url: https://travel.rakuten.co.jp/package/?l-id=trv_header_menu_dp
+          - generic [ref=e2205]:
+            - generic [ref=e2206]:
+              - img [ref=e2207]
+              - generic [ref=e2208]: 交通＋宿
+            - img [ref=e2212]
+        - link "レンタカー" [ref=e2217] [cursor=pointer]:
+          - /url: https://travel.rakuten.co.jp/cars/?l-id=trv_header_menu_car
+          - generic [ref=e2218]:
+            - generic [ref=e2219]:
+              - img [ref=e2220]
+              - generic [ref=e2221]: レンタカー
+            - img [ref=e2225]
+        - link "高速バス・ツアー" [ref=e2230] [cursor=pointer]:
+          - /url: https://travel.rakuten.co.jp/bus/?l-id=trv_header_menu_bus
+          - generic [ref=e2231]:
+            - generic [ref=e2232]:
+              - img [ref=e2233]
+              - generic [ref=e2234]: 高速バス・ツアー
+            - img [ref=e2237]
+        - link "海外旅行" [ref=e2242] [cursor=pointer]:
+          - /url: https://travel.rakuten.co.jp/kaigai/?l-id=trv_header_menu_kaigai
+          - generic [ref=e2243]:
+            - generic [ref=e2244]:
+              - img [ref=e2245]
+              - generic [ref=e2246]: 海外旅行
+            - img [ref=e2249]
+        - link "遊び・体験" [ref=e2254] [cursor=pointer]:
+          - /url: https://experiences.travel.rakuten.co.jp/?scid=wi_trv_header_menu_experiences
+          - generic [ref=e2255]:
+            - generic [ref=e2256]:
+              - img [ref=e2257]
+              - generic [ref=e2258]: 遊び・体験
+            - img [ref=e2261]
+        - link "キャンプ場" [ref=e2266] [cursor=pointer]:
+          - /url: https://camp.travel.rakuten.co.jp/?scid=wi_trv_header_menu_camp
+          - generic [ref=e2267]:
+            - generic [ref=e2268]:
+              - img [ref=e2269]
+              - generic [ref=e2270]: キャンプ場
+            - img [ref=e2273]
+        - link "割引クーポン" [ref=e2278] [cursor=pointer]:
+          - /url: https://travel.rakuten.co.jp/coupon/?l-id=trv_header_menu_coupon
+          - generic [ref=e2279]:
+            - generic [ref=e2280]:
+              - img [ref=e2281]
+              - generic [ref=e2282]: 割引クーポン
+            - img [ref=e2285]
+        - link "ふるさと納税" [ref=e2290] [cursor=pointer]:
+          - /url: https://travel.rakuten.co.jp/special/furusato/?l-id=trv_header_menu_furusato
+          - generic [ref=e2291]:
+            - generic [ref=e2292]:
+              - img [ref=e2293]
+              - generic [ref=e2294]: ふるさと納税
+            - img [ref=e2297]
+        - link "旅行ガイド" [ref=e2302] [cursor=pointer]:
+          - /url: https://travel.rakuten.co.jp/mytrip/?l-id=trv_header_menu_mytrip
+          - generic [ref=e2303]:
+            - generic [ref=e2304]:
+              - img [ref=e2305]
+              - generic [ref=e2306]: 旅行ガイド
+            - img [ref=e2309]
+      - generic [ref=e2312]:
+        - generic [ref=e2314]: 設定
+        - link "会員情報・変更" [ref=e2317] [cursor=pointer]:
+          - /url: https://img.travel.rakuten.co.jp/image/tr/hs/pctop/tVrLh/
+          - generic [ref=e2318]:
+            - generic [ref=e2319]:
+              - img [ref=e2320]
+              - generic [ref=e2321]: 会員情報・変更
+            - img [ref=e2324]
+        - link "メルマガ申し込み・変更" [ref=e2329] [cursor=pointer]:
+          - /url: https://travel.rakuten.co.jp/mail/news/?l-id=trv_header_menu_mail
+          - generic [ref=e2330]:
+            - generic [ref=e2331]:
+              - img [ref=e2332]
+              - generic [ref=e2333]: メルマガ申し込み・変更
+            - img [ref=e2336]
+      - generic [ref=e2339]:
+        - generic [ref=e2341]: その他
+        - link "楽天トラベルアプリ" [ref=e2344] [cursor=pointer]:
+          - /url: https://travel.rakuten.co.jp/service/smartphone/?l-id=trv_header_menu_app
+          - generic [ref=e2345]:
+            - generic [ref=e2346]:
+              - img [ref=e2347]
+              - generic [ref=e2348]: 楽天トラベルアプリ
+            - img [ref=e2351]
+        - link "楽天トラベルラッキーくじ" [ref=e2356] [cursor=pointer]:
+          - /url: https://kuji.rakuten.co.jp/1243541a35?scid=wi_trv_header_menu_kuji
+          - generic [ref=e2357]:
+            - generic [ref=e2358]:
+              - img [ref=e2359]
+              - generic [ref=e2360]: 楽天トラベルラッキーくじ
+            - img [ref=e2363]
+        - link "改善の取り組み" [ref=e2368] [cursor=pointer]:
+          - /url: https://travel.rakuten.co.jp/special/customer/voice/?l-id=trv_header_menu_voice
+          - generic [ref=e2369]:
+            - generic [ref=e2370]:
+              - img [ref=e2371]
+              - generic [ref=e2372]: 改善の取り組み
+            - img [ref=e2375]
+    - img [ref=e2379] [cursor=pointer]
