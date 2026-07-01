@@ -100,3 +100,34 @@ LaunchAgentsとして存在する自動化29件を確認した。現時点では
 これは `thread-format-learning` の候補選定が間違いというより、**Codex Desktop内からさらにCodex CLIを起動する入れ子sandbox問題**の可能性が高い。launchdや通常Terminalから直接 `agent-run` を起動した場合とは条件が違う。
 
 次に進むなら、いきなりlaunchdへ入れない。通常Terminalまたはlaunchd相当の外側環境で、書き込み・Discord投稿なしのdry-run専用入口を作ってから確認する。
+
+## Step7メモ: dry-run入口の追加
+
+2026-07-01に、`thread-format-learning` を本番切替せず検証するためのdry-run入口を追加した。
+
+追加・変更:
+
+- `/Users/kojinn/.claude/scripts/run_thread_format_learning_codex_dryrun.sh`
+  - Codexで `thread-format-learning.md` を実行する検証専用入口
+  - ウォッチリスト更新なし
+  - Discord投稿なし
+  - 永続ログ追記なし
+  - `WATCHLIST_UPDATE` / `DISCORD_PROPOSAL` の構造だけ検証
+- `/Users/kojinn/agent-adapters/bin/agent-run`
+  - Codex分岐で `AGENT_RUN_CODEX_ADD_DIRS` / `--add-dir` をサポート
+  - Codex成功時は起動ログを混ぜず、最後の回答だけを標準出力へ返す
+
+確認済み:
+
+- `bash -n /Users/kojinn/agent-adapters/bin/agent-run`
+- `bash -n /Users/kojinn/.claude/scripts/run_thread_format_learning_codex_dryrun.sh`
+- `AGENT_VENDOR=codex /Users/kojinn/agent-adapters/bin/agent-run -p 'Reply exactly: CLEAN_OK'` が `CLEAN_OK` のみ返す
+- `AGENT_VENDOR=codex AGENT_RUN_CODEX_ADD_DIRS=/Users/kojinn/Projects/youtube /Users/kojinn/agent-adapters/bin/agent-run -p 'Reply exactly: ADD_DIR_OK'` が `ADD_DIR_OK` のみ返す
+
+未実施:
+
+- `run_thread_format_learning_codex_dryrun.sh` の本番相当dry-run実行
+
+理由:
+
+Codex Desktop内から内側Codex CLIを起動すると入れ子sandbox問題が出るため、この検証は通常Terminalまたはlaunchd相当の外側環境で行う。
