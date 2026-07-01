@@ -470,7 +470,7 @@ PASS:
 - 通常Terminalまたはlaunchd相当の外側環境で、wrapper経由の `SCRIPT_LEARNING_AGENT_VENDOR=codex /Users/kojinn/.claude/scripts/run_script_learning.sh` がexit 0になる証拠は未取得
 - このCodexサンドボックス内では、wrapper経由実行は内側Codexの状態DB初期化で失敗する既知制約がある
 - 本番化、Codexデフォルト化、Discord本番投稿、ルールブック自動更新、launchd切替の人間承認は未取得
-- 1周期shadow運用は未実施
+- 1周期shadow判定は未完了（Step8で台帳化済み、2026-08-02判定予定）
 
 次の必須ゲート:
 
@@ -645,4 +645,46 @@ Step7判定:
 完成判定更新:
 - `script-learning` の「手動Codex dry-run入口追加」は完成
 - ただし、Codexデフォルト化、launchd env var追加、Discord本番投稿、ルールブック自動更新、Claude本番経路の停止・削除は未実施
-- 上記の本番化工程へ進むには、別途人間承認と1周期shadow運用が必要
+- 上記の本番化工程へ進むには、別途人間承認と1周期shadow判定が必要
+
+## Step8: 1周期shadow運用の台帳化
+
+実施日: 2026-07-02
+
+目的:
+- すぐ本番切替せず、月次1サイクル分だけ既定Claude実行とCodex dry-runを比較できる状態にする
+- shadow開始を `並走台帳` と `期日タスク` に残し、判定日をwatchtower督促対象にする
+
+案件分類:
+- **危険**
+- 理由: 月次自動化ジョブ、Discord投稿、ルールブック更新、Codex/Claude実行経路に関係するため
+
+今回やったこと:
+- `01_プロジェクト/AI自動化/並走台帳.md` に `script-learning` の進行中shadow行を追加
+- `06_エージェント運用/00_司令塔/期日タスク.md` に 2026-08-02 のshadow判定タスクを追加
+- `01_プロジェクト/AI自動化/導入済み.md` と `NOW.md` に、1周期shadow中であることを追記
+- 本作業ログに、通常Terminal gate PASS後の次工程としてshadow台帳化したことを記録
+
+判定日:
+- 2026-08-02
+
+判定で見るもの:
+- 2026-08-01 11:00の既定Claude月次実行結果
+- 通常Terminalで実行する `SCRIPT_LEARNING_AGENT_VENDOR=codex /Users/kojinn/.claude/scripts/run_script_learning.sh` のdry-run結果
+- ルールブック更新案、Discord投稿案、exit code、mtime/hash不変、安全ゲート結果
+
+今回やっていないこと:
+- launchdの既定vendor切替
+- Discord本番投稿
+- ルールブック自動更新
+- Claude本番経路の停止・削除
+- Codexデフォルト化
+
+次に進む条件:
+- 2026-08-02の判定で、1サイクル分の比較結果がPASS
+- 未説明WARN、未確認REQ、外部投稿、永続書込、secret scan失敗がない
+- 本番切替対象の差分と戻し方を提示し、祐馬さんが明示承認する
+
+Step8判定:
+- **1周期shadow運用の準備: 完了**
+- **本番化: 未実施**
