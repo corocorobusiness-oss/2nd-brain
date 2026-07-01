@@ -9,6 +9,7 @@ import sys
 import tempfile
 import unittest
 import importlib.util
+import hashlib
 from pathlib import Path
 
 
@@ -59,6 +60,12 @@ class MaskSlursV2Test(unittest.TestCase):
         self.assertEqual(old.returncode, 0, old.stderr)
         self.assertEqual(new.returncode, 0, new.stderr)
         self.assertEqual(new.stdout, old.stdout)
+
+    def test_current_entrypoint_matches_v2_after_replacement(self) -> None:
+        current_hash = hashlib.sha256(CURRENT_SCRIPT.read_bytes()).hexdigest()
+        v2_hash = hashlib.sha256(V2_SCRIPT.read_bytes()).hexdigest()
+
+        self.assertEqual(current_hash, v2_hash)
 
     def test_output_file_is_written_without_stdout(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:

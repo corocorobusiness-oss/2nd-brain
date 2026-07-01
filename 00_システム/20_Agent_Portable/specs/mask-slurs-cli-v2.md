@@ -3,10 +3,10 @@
 作成日: 2026-07-01
 分類: 通常
 型: オンデマンドCLI
-状態: v2検証候補 / 現行未差し替え
+状態: 完成 / 現行差し替え済み
 
 ## Goal固定
-現行 `mask_slurs.py` を消さず、同じ `qa_check.py` の `SLUR_RE` を単一ソースとして使う、より安全な `mask_slurs_v2.py` を横に作る。
+旧版を `mask_slurs_v1_legacy.py` として残したうえで、現行入口 `mask_slurs.py` を同等以上の安全性を持つv2実装へ差し替える。
 
 ## 本体
 `00_システム/20_Agent_Portable/codex-skills-ready/creative-thread-gen/mask_slurs_v2.py`
@@ -14,7 +14,8 @@
 現行入口:
 `00_システム/20_Agent_Portable/codex-skills-ready/creative-thread-gen/mask_slurs.py`
 
-現時点では、現行入口は未差し替え。
+現行入口 `mask_slurs.py` は、このv2実装と同一内容。
+旧版は `mask_slurs_v1_legacy.py` に保存。
 
 ## テスト
 `00_システム/20_Agent_Portable/codex-skills-ready/creative-thread-gen/test_mask_slurs_v2.py`
@@ -50,7 +51,8 @@ python3 00_システム/20_Agent_Portable/codex-skills-ready/creative-thread-gen
 - 認証情報なし
 - 常駐化なし
 - launchd登録なし
-- 現行 `mask_slurs.py` は削除しない
+- 旧版を `mask_slurs_v1_legacy.py` として残す
+- 現行入口 `mask_slurs.py` はv2実装へ差し替え済み
 - 判定パターンは `qa_check.py` の `SLUR_RE` を使い、二重管理しない
 - 出力ファイルは一時ファイル経由で保存し、途中失敗時に壊れにくくする
 - 既存出力ファイルの権限は維持する
@@ -64,6 +66,7 @@ python3 00_システム/20_Agent_Portable/codex-skills-ready/creative-thread-gen
 - `qa_check.py` の `SLUR_RE` を単一ソースにする方針を維持する
 - import API `mask(text) -> (masked_text, count)` を維持する
 - 基本ケースでは旧版と標準出力が一致する
+- 現行入口 `mask_slurs.py` と `mask_slurs_v2.py` の内容一致を確認する
 - `--dry-run`、`--replacement`、失敗時のfail-closeをv2で追加する
 
 ## 検証済み
@@ -83,22 +86,23 @@ python3 00_システム/20_Agent_Portable/codex-skills-ready/creative-thread-gen
 - `qa_check.py` 欠落は終了コード2で止まる
 - 直接実行で `--help` が表示できる
 - import API `mask(text)` が旧版と同じ形式で使える
+- 現行入口 `mask_slurs.py` と `mask_slurs_v2.py` のSHA256が一致する
 
-## 差し替え条件
-現行入口を差し替える場合は、次を満たしてから行う。
+## 差し替え結果
+現行入口の差し替えでは、次を満たした。
 
-- 現行 `mask_slurs.py` を `mask_slurs_v1_legacy.py` として保存する
-- テストの旧版比較先が `mask_slurs_v1_legacy.py` を見る状態になっていることを確認する
-- `mask_slurs.py` と `mask_slurs_v2.py` の内容一致を確認する
-- v2テストを再実行する
-- 実行権限を確認する
-- `/tmp` のコピーで旧版と新版の出力差分を確認する
-- `creative-thread-gen/SKILL.md` の呼び出し説明を必要に応じて更新する
-- 差し替え後の戻し方を記録する
+- 現行 `mask_slurs.py` を `mask_slurs_v1_legacy.py` として保存した
+- テストの旧版比較先が `mask_slurs_v1_legacy.py` を見る状態になっていることを確認した
+- `mask_slurs.py` と `mask_slurs_v2.py` の内容一致を確認した
+- v2テストを再実行した
+- 実行権限を確認した
+- `/tmp` のコピーで旧版と新版の出力差分を確認した
+- `creative-thread-gen/SKILL.md` の呼び出し説明は `mask_slurs.py` のままで成立するため変更不要とした
+- 差し替え後の戻し方を記録した
 
 ## 止め方
 オンデマンドCLIなので、呼ばなければ動かない。
-現行未差し替えのため、通常運用はまだ `mask_slurs.py` を使う。
+現行CLIを旧版へ戻す場合は、`mask_slurs_v1_legacy.py` の内容を `mask_slurs.py` に戻し、同じテストを再実行する。
 
 ## 保守
 保守担当/確認者: あおい（AI運用）
