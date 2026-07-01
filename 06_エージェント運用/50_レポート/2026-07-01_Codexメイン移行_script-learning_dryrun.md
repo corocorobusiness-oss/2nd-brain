@@ -665,6 +665,29 @@ Step7判定:
 - `01_プロジェクト/AI自動化/導入済み.md` と `NOW.md` に、1周期shadow中であることを追記
 - 本作業ログに、通常Terminal gate PASS後の次工程としてshadow台帳化したことを記録
 
+## Step9: shadow判定手順書の作成
+
+実施日: 2026-07-02
+
+作成:
+- `00_システム/20_Agent_Portable/specs/script-learning-codex-shadow-judgement.md`
+
+目的:
+- 2026-08-02の判定日に、実行コマンド、収集証拠、Go/No-Go条件、更新先を迷わないよう固定する
+
+主な内容:
+- 2026-08-01 11:00の既定Claude実行結果の確認項目
+- 通常TerminalのCodex dry-run / terminal gate実行コマンド
+- 本番不変確認
+- 比較表
+- Go条件 / No-Go条件
+- 判定後に更新する場所
+- 判定メモ雛形
+
+判定:
+- **shadow判定手順: 完了**
+- **本番化: 未実施**
+
 判定日:
 - 2026-08-02
 

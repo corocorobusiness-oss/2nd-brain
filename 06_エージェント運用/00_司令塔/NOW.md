@@ -9,6 +9,7 @@
 - Obsidian / Second Brainが正本
 - `agent-run` と既存自動化ジョブは段階移行中。Codex切替完了とは扱わない
 - Codexメイン・ベンダー非依存化の移行設計: `00_システム/20_Agent_Portable/specs/codex-main-vendor-neutral-migration.md`
+- Codexカスタムスキルは `/Users/kojinn/.codex/skills/<skill> -> /Users/kojinn/agent-skills/<skill>` のsymlink運用へ移行済み（21件verify PASS、`.system` はCodex内蔵として保持）
 - `script-learning` は手動Codex dry-run入口と通常Terminal wrapper gateがPASS。2026-08-02判定予定で1周期shadow中。launchd既定、Discord本番投稿、ルールブック自動更新は未変更
 - 重要な決定、ルール、学びは最後にSecond Brainへ戻す
 

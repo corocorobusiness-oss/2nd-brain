@@ -1,7 +1,7 @@
 # Codex skills use agent-skills as source of truth
 
 Date: 2026-07-02
-Status: ready_for_human_approved_apply
+Status: applied
 
 ## Goal
 
@@ -113,3 +113,23 @@ SUMMARY total=21 failures=20
 ```
 
 This is expected because 20 Codex custom skills are still copied directories.
+
+Human-approved apply:
+
+```text
+BACKUP_DIR=/Users/kojinn/.codex/skills/.backup-agent-skills-symlink/20260702-061233
+DONE action=link mode=apply
+SUMMARY total=21 failures=0
+```
+
+Post-apply verification from Codex session:
+
+```text
+SUMMARY total=21 failures=0
+```
+
+Backup contains 20 copied skill directories:
+
+```text
+/Users/kojinn/.codex/skills/.backup-agent-skills-symlink/20260702-061233
+```
