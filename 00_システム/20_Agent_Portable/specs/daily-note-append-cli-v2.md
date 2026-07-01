@@ -3,7 +3,7 @@
 作成日: 2026-07-01
 分類: 重要
 型: オンデマンドCLI
-状態: 検証済み / 現行置換前
+状態: 完成 / 現行置換前
 
 ## Goal固定
 既存の `daily_note_append.py` を消さずに、同等以上の安全性を持つ `daily_note_append_v2.py` を横に作り、`/tmp` 検証だけで完成候補にする。
@@ -18,6 +18,12 @@
 
 ```bash
 python3 00_システム/20_Agent_Portable/scripts/daily_note_append_v2.py "メモ本文"
+```
+
+直接実行:
+
+```bash
+00_システム/20_Agent_Portable/scripts/daily_note_append_v2.py "メモ本文"
 ```
 
 dry-run:
@@ -51,10 +57,13 @@ python3 00_システム/20_Agent_Portable/scripts/daily_note_append_v2.py --date
 - デフォルトで重複追記をno-opにする
 - `--dry-run` は書き込まない
 - 本番日誌への検証書き込みはしない
+- `--date` は `YYYY-MM-DD` のゼロ埋め形式だけ許可する
 
 ## 旧版との互換方針
 - 基本CLIオプションは旧版と揃える
 - 新規作成、現行見出し、旧見出し、重複no-op、複数行、一部重複、見出しなし、`--create-section`、空文字エラーを維持する
+- 見出し境界の判定は旧版と同じく、行頭が `#` の行だけを次見出しとして扱う
+- 直接実行できるように実行権限を旧版と同等にする
 - 置き換える場合は、別途人間確認後に `daily_note_append.py` への統合または呼び出し側変更を行う
 
 ## 検証済み
@@ -68,7 +77,13 @@ python3 00_システム/20_Agent_Portable/scripts/daily_note_append_v2.py --date
 - 見出しなしはデフォルトで停止
 - `--create-section` で現行見出しを作成
 - `--dry-run` は新規ファイルを作らない
+- 既存日誌への `--dry-run` も書き込まない
 - 空文字は終了コード2
+- 非ゼロ埋め日付は終了コード2
+- テンプレート欠落時は終了コード2で止まり、新規日誌を作らない
+- `--allow-duplicate` で既存弾も追記できる
+- インデントされた `#` 行を見出し扱いせず、旧版と出力一致
+- 直接実行で `--help` が表示できる
 - 基本ケースで旧版と出力一致
 - 本番日誌コピーを使った影環境比較で旧版と出力一致
 - 影環境比較後も本番日誌のSHA256不変

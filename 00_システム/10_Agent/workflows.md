@@ -1,6 +1,6 @@
 # AIエージェント ワークフロー
 
-最終更新: 2026-06-27（会計正本整理: freee正本 / kicho記帳停止済み）
+最終更新: 2026-07-01（Codexメイン移行フェーズ1: Claude Codeは補助・退避先）
 
 ## 共通コンテキスト起動フロー
 1. `10_Agent` の persona / rules / workflows / goals / learning-log を読む
@@ -15,12 +15,13 @@
    - Roblox事業
 5. 作業後、重要な新ルールや学びがあればSecond Brainへの反映を提案する
 
-## Claude Code x Codex x Obsidian 運用
-- **Claude Codeがメイン司令塔**。祐馬さんとの会話、方針決定、台本、構成、深い思考を担当する
-- **Codexは実行補助**。ファイル編集、Obsidian整理、AI帳簿、自動化、検証、YMM4辞書、台本チェックを担当する
+## Codex x Claude Code x Obsidian 運用
+- **Codexを日常のメイン入口へ移行中（フェーズ1）**。祐馬さんとの会話、方針整理、ファイル編集、Obsidian整理、検証、台本チェック、自動化設計をまずCodexで受ける
+- **Claude Codeは補助・退避先**。Codexで権限や接続が足りない作業、既存Claude前提の自動化、長文の壁打ち、緊急退避が必要な時に使う
 - **Obsidianが正本**。決定事項、ルール、目標、手順、学びはSecond Brainへ戻す
 - **`06_エージェント運用` が管制塔**。現在地、Inbox、実行キュー、確認待ち、ヘルスチェック、判断ログを管理する
 - **Claude Code Channels / Discordは受付・通知・過去ログ参照用**。正本にはしない
+- **`agent-run` と既存のlaunchd/cron自動化は段階移行中**。Codex切替完了とは扱わず、既存ジョブの停止・置換・自動実行ONは人間確認を挟む
 - 詳細は `00_システム/20_Agent_Portable/specs/claude-code-codex-obsidian-operation.md`
 
 ## 24時間AIエージェント運用

@@ -40,21 +40,26 @@
 | 要件ID | 要件 | 証拠 | 状態 |
 |---|---|---|---|
 | REQ-001 | 旧版を消さずv2を横に作る | `daily_note_append.py` は残し、`daily_note_append_v2.py` を追加 | PASS |
-| REQ-002 | 新規日誌をテンプレートから作成する | unittest 7件PASS内で確認 | PASS |
-| REQ-003 | 現行見出しと旧見出しへ追記できる | unittest 7件PASS内で確認 | PASS |
-| REQ-004 | 重複追記をno-opにする | unittest 7件PASS内で確認 | PASS |
-| REQ-005 | 見出しなしはデフォルトで止まる | unittest 7件PASS内で確認 | PASS |
-| REQ-006 | `--create-section` 付きなら見出しを作る | unittest 7件PASS内で確認 | PASS |
+| REQ-002 | 新規日誌をテンプレートから作成する | unittest 13件PASS内で確認 | PASS |
+| REQ-003 | 現行見出しと旧見出しへ追記できる | unittest 13件PASS内で確認 | PASS |
+| REQ-004 | 重複追記をno-opにする | unittest 13件PASS内で確認 | PASS |
+| REQ-005 | 見出しなしはデフォルトで止まる | unittest 13件PASS内で確認 | PASS |
+| REQ-006 | `--create-section` 付きなら見出しを作る | unittest 13件PASS内で確認 | PASS |
 | REQ-007 | dry-runは書き込まない | unittest、かつ本番日誌dry-run前後SHA256一致 | PASS |
-| REQ-008 | 空文字は止まる | unittest 7件PASS内で確認 | PASS |
+| REQ-008 | 空文字は止まる | unittest 13件PASS内で確認 | PASS |
 | REQ-009 | 基本ケースで旧版と出力一致 | unittestのv1/v2 parityテストPASS | PASS |
 | REQ-010 | 本番日誌コピーで旧版と出力一致し、本番実体を変えない | `/tmp` 影環境でv1/v2出力SHA256一致、本番日誌SHA256不変 | PASS |
+| REQ-011 | 非ゼロ埋め日付を拒否する | `2026-7-1` は終了コード2、ファイル未作成 | PASS |
+| REQ-012 | インデントされた `#` 行を旧版と同じ扱いにする | v1/v2 parityテストPASS | PASS |
+| REQ-013 | 直接実行できる | `daily_note_append_v2.py --help` 終了コード0 | PASS |
+| REQ-014 | テンプレート欠落時は新規日誌を作らない | unittest 13件PASS内で確認 | PASS |
+| REQ-015 | `--allow-duplicate` の挙動を確認する | unittest 13件PASS内で確認 | PASS |
 
 ## 実行証拠
 
 ```text
 python3 -m unittest "00_システム/20_Agent_Portable/scripts/test_daily_note_append_v2.py"
-結果: Ran 7 tests ... OK
+結果: Ran 13 tests ... OK
 ```
 
 ```text
@@ -96,10 +101,58 @@ v1_v2_output_equal: true
 本番日誌SHA256: 不変
 ```
 
+WARN対応後の追加確認:
+
+```text
+python3 -m unittest "00_システム/20_Agent_Portable/scripts/test_daily_note_append_v2.py"
+結果: Ran 13 tests ... OK
+
+影環境比較:
+入力: shadow compare memo after warn fix
+v1_returncode: 0
+v2_returncode: 0
+v1/v2 output sha256:
+91762fd20c95ef27aea5f180c1868a87719cc67c37bcb94891d7881db12d606f
+v1_v2_output_equal: true
+本番日誌SHA256: 063157a1652ddaabb05a02d3a4dbc6bee2784cf723bab1129ef80ec1bd945d3a
+
+非ゼロ埋め日付:
+入力日付: 2026-7-1
+invalid_date_exit: 2
+file_absent_check_exit: 0
+
+直接実行:
+daily_note_append_v2.py --help
+direct_help_exit: 0
+```
+
+独立レビューWARNへの対応:
+
+```text
+WARN: 非ゼロ埋め日付が通る
+対応: ^\d{4}-\d{2}-\d{2}$ で事前チェックし、2026-7-1 を終了コード2にした
+
+WARN: v2に実行権限がない
+対応: chmod +x し、直接実行 --help のテストを追加
+
+WARN: インデントされた # 行を見出し扱いする仕様退行
+対応: 見出し境界を旧版と同じ line.startswith("#") に戻し、v1/v2 parityテストを追加
+
+不足テスト:
+既存日誌dry-run、非ゼロ埋め日付、インデント#行、直接実行、テンプレート欠落、--allow-duplicate を追加
+```
+
+## 独立レビュー結果
+- 1回目レビュー: WARN
+- WARN対応: 完了
+- 再レビュー: PASS
+- 重大指摘: 0
+- 完成判定: 完成可
+
 ## 既知のWARN / 未解決
-- 独立レビュー用サブエージェントは利用上限で未完了。
-- そのため、現時点では `完成候補 / 要確認` とし、現行CLIは置換しない。
-- 置換する場合は、このレビューで重大指摘0を確認してから行う。
+- v2自体は完成可。
+- 現行CLIは未置換。
+- 置換する場合は別作業として人間確認後に行い、置換後に同じ13件テストと本番日誌コピー比較を再実行する。
 
 ## レビュー担当への依頼
 上記ファイルと証拠をもとに、次を返す。

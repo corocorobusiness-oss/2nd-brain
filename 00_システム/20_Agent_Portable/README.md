@@ -1,8 +1,8 @@
 # Agent Portable Pack
 
-最終更新: 2026-06-11
+最終更新: 2026-07-01
 
-このフォルダは、Claude Codeをメイン司令塔、Codexを実行補助、Obsidianを正本として運用するための共通移行パック。
+このフォルダは、Codexを日常のメイン入口へ移行し、Claude Codeを補助・退避先、Obsidianを正本として運用するための共通移行パック。
 
 想定する利用先:
 - Codex
@@ -20,12 +20,14 @@ Second Brainを唯一の共通記憶にする。
 現在の主運用:
 
 ```text
-Claude Code = メイン司令塔
-Codex = 実行補助
+Codex = 日常のメイン入口（移行フェーズ1）
+Claude Code = 補助・退避先
 Obsidian = 正本・共通記憶
 06_エージェント運用 = AI管制塔
 Claude Code Channels = 受付・通知・軽い指示
 ```
+
+`agent-run` と既存のlaunchd/cron自動化は段階移行中。Codex切替完了とは扱わず、既存ジョブの停止・置換・自動実行ONは人間確認を挟む。
 
 ## 入れたもの
 

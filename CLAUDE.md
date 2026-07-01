@@ -23,7 +23,7 @@
 - `00_システム/10_Agent/goals.md` — 今の優先目標
 - `00_システム/10_Agent/learning-log.md` — 過去の学び
 - `00_システム/20_Agent_Portable/specs/agent-neutral-contract.md` — Codex / Claude / OpenHands / Hermes / Gemini Spark など共通の運用契約
-- `00_システム/20_Agent_Portable/specs/claude-code-codex-obsidian-operation.md` — Claude Codeメイン / Codex実行補助 / Obsidian正本の運用ルール
+- `00_システム/20_Agent_Portable/specs/claude-code-codex-obsidian-operation.md` — Codexメイン移行フェーズ1 / Claude Code補助・退避先 / Obsidian正本の運用ルール
 - `00_システム/20_Agent_Portable/specs/mac-mini-migration-checklist.md` — Mac mini移行・再現チェックリスト
 - `06_エージェント運用/00_司令塔/NOW.md` — 24時間AIエージェント運用の現在地・最優先
 
@@ -33,7 +33,7 @@
 - `.claude` / `.codex` などのエージェント固有キャッシュを丸ごと同期しない
 - スキル、設計書、再現手順だけを `00_システム/20_Agent_Portable/` に保存する
 - 認証情報、トークン、Cookie、セッション履歴、ログ、キャッシュはSecond Brainに保存しない
-- 今後の本線は **Claude Codeメイン / Codex実行補助 / Obsidian正本**
+- 今後の本線は **Codexメイン移行フェーズ1 / Claude Code補助・退避先 / Obsidian正本**。ただし `agent-run` と既存自動化ジョブは段階移行中で、Codex切替完了とは扱わない
 - Claude Code Channels / Discord連携は、スマホ受付・通知・過去ログ参照用。正本にはしない
 
 ## 環境トポロジ（2026-06-23 4分離）

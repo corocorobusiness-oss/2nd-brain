@@ -61,3 +61,6 @@ AIエージェントが会話を通じて学んだこと。次回以降に活か
 
 ## 2026-06-29
 - （Codex/複数エージェントレビュー）Claude Code / Channelsで `<invoke name="Bash">` 等が本文に漏れる現象は、権限不足ではなく「ツール実行境界」の事故として扱う。実ツール結果・終了コード・差分・API応答などの証拠がないものは未実行。共通契約へ追記し、台本チェックは `~/agent-skills/youtube-script-checker/bin/yt-script-scan` の薄いwrapper設計へ寄せる方針にした。
+
+## 2026-07-01
+- （Codex）`/ai-development-flow` に沿って Codexメイン移行フェーズ1を開始。正本ドキュメント上の本線を「Codexメイン移行フェーズ1 / Claude Code補助・退避先 / Obsidian正本」へ更新。ただし `agent-run` と既存launchd/cron自動化は段階移行中で、Codex切替完了とは扱わない。

@@ -1,13 +1,13 @@
 # Active Context: 池田祐馬の現在地 (2026)
 
-最終更新: 2026-06-27
+最終更新: 2026-07-01
 
 ---
 
 ## 1. Current Focus (今、何に集中しているか)
 *   **Main Goal**: 一人社長 + AIエージェント部隊で、YouTube・フードデリバリー・AI自動化・Roblox事業を回す体制を作る。
 *   **Monthly Theme**: ローカル正本のSecond Brainを、どのAIエージェントからも共通で使える事業OSにする。
-*   **Now**: **本線はClaude Codeメイン / Codex実行補助 / Obsidian正本**。Second Brain正本はMac miniローカルの `/Users/kojinn/2nd-Brain-master`、`~/2nd-Brain` はsymlink、Google Drive側は15分毎の閲覧用ミラー。AI自動化ジョブは `01_プロジェクト/AI自動化/導入済み.md` とWatchtowerで管理する。
+*   **Now**: **Codexメイン移行フェーズ1 / Claude Code補助・退避先 / Obsidian正本**。Second Brain正本はMac miniローカルの `/Users/kojinn/2nd-Brain-master`、`~/2nd-Brain` はsymlink、Google Drive側は15分毎の閲覧用ミラー。AI自動化ジョブは `01_プロジェクト/AI自動化/導入済み.md` とWatchtowerで管理する。`agent-run` と既存自動化ジョブは段階移行中で、Codex切替完了とは扱わない。
 *   **Accounting Now**: 会計正本はfreee。証憑正本はDrive/証憑保管側。旧AI帳簿CSV・収支管理は参考・凍結・非申告用。現行kichoは旧CSV等を書き換えるため記帳係から外し、後継は読み取り専用監査レポートとして作る方針。
 *   **Current Struggle**: 複数エージェントの並行編集による上書き事故防止（→ rules.mdの並行編集ルール遵守）。
 

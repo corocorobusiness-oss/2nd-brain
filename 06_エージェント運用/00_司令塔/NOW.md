@@ -1,12 +1,13 @@
 # NOW
 
-最終更新: 2026-06-27
+最終更新: 2026-07-01
 
 ## 今の運用方針
 
-- Claude Codeがメイン司令塔
-- Codexは実行補助
+- Codexを日常のメイン入口へ移行中（フェーズ1）
+- Claude Codeは補助・退避先
 - Obsidian / Second Brainが正本
+- `agent-run` と既存自動化ジョブは段階移行中。Codex切替完了とは扱わない
 - 重要な決定、ルール、学びは最後にSecond Brainへ戻す
 
 ## 今の最優先
