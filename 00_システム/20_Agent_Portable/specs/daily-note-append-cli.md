@@ -10,6 +10,9 @@
 ## 本体
 `00_システム/20_Agent_Portable/scripts/daily_note_append.py`
 
+2026-07-01にv2実装へ差し替え済み。
+旧版は `00_システム/20_Agent_Portable/scripts/daily_note_append_v1_legacy.py` に保存。
+
 ## 使い方
 
 ```bash
@@ -45,6 +48,7 @@ python3 00_システム/20_Agent_Portable/scripts/daily_note_append.py --date 20
 - デフォルトで重複追記をno-opにする
 - `--dry-run` で書き込み前に差分確認できる
 - 本番日誌への検証書き込みはしない
+- `--date` は `YYYY-MM-DD` のゼロ埋め形式だけ許可する
 
 ## 止め方
 オンデマンドCLIなので、呼ばなければ動かない。
@@ -64,9 +68,14 @@ python3 00_システム/20_Agent_Portable/scripts/daily_note_append.py --date 20
 - 空文字エラー
 - `--create-section`
 - 本番日誌へのdry-run
+- 既存日誌へのdry-run非書き込み
+- テンプレート欠落時のfail-close
+- `--allow-duplicate`
+- 旧版互換の追記位置
+- 直接実行
 
 ## 保守
 保守担当/確認者: あおい（AI運用）
 次回点検日: 2026-08-01
 
-見出し名やデイリーノートテンプレートが変わったら、このCLIの `DEFAULT_HEADINGS` とテストを更新する。
+見出し名やデイリーノートテンプレートが変わったら、このCLIの `TARGET_HEADINGS` とテストを更新する。

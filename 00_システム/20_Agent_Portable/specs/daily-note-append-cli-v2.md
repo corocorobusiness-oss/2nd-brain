@@ -3,13 +3,16 @@
 作成日: 2026-07-01
 分類: 重要
 型: オンデマンドCLI
-状態: 完成 / 現行置換前
+状態: 完成 / 現行差し替え済み
 
 ## Goal固定
-既存の `daily_note_append.py` を消さずに、同等以上の安全性を持つ `daily_note_append_v2.py` を横に作り、`/tmp` 検証だけで完成候補にする。
+旧版を `daily_note_append_v1_legacy.py` として残したうえで、現行入口 `daily_note_append.py` を同等以上の安全性を持つv2実装へ差し替える。
 
 ## 本体
 `00_システム/20_Agent_Portable/scripts/daily_note_append_v2.py`
+
+現行入口 `00_システム/20_Agent_Portable/scripts/daily_note_append.py` は、このv2実装と同一内容。
+旧版は `00_システム/20_Agent_Portable/scripts/daily_note_append_v1_legacy.py` に保存。
 
 ## テスト
 `00_システム/20_Agent_Portable/scripts/test_daily_note_append_v2.py`
@@ -52,8 +55,8 @@ python3 00_システム/20_Agent_Portable/scripts/daily_note_append_v2.py --date
 - 認証情報なし
 - 常駐化なし
 - launchd登録なし
-- 既存CLIを削除しない
-- 現行置換はしない
+- 旧版を `daily_note_append_v1_legacy.py` として残す
+- 現行入口 `daily_note_append.py` はv2実装へ差し替え済み
 - デフォルトで重複追記をno-opにする
 - `--dry-run` は書き込まない
 - 本番日誌への検証書き込みはしない
@@ -64,7 +67,7 @@ python3 00_システム/20_Agent_Portable/scripts/daily_note_append_v2.py --date
 - 新規作成、現行見出し、旧見出し、重複no-op、複数行、一部重複、見出しなし、`--create-section`、空文字エラーを維持する
 - 見出し境界の判定は旧版と同じく、行頭が `#` の行だけを次見出しとして扱う
 - 直接実行できるように実行権限を旧版と同等にする
-- 置き換える場合は、別途人間確認後に `daily_note_append.py` への統合または呼び出し側変更を行う
+- 置換後も `daily_note_append.py` と `daily_note_append_v2.py` の内容一致を確認する
 
 ## 検証済み
 - 新規日誌をテンプレートから作成
@@ -90,7 +93,7 @@ python3 00_システム/20_Agent_Portable/scripts/daily_note_append_v2.py --date
 
 ## 止め方
 オンデマンドCLIなので、呼ばなければ動かない。
-現行CLIは `daily_note_append.py` のままなので、v2を使わなければ既存運用に影響しない。
+現行CLIを旧版へ戻す場合は、`daily_note_append_v1_legacy.py` の内容を `daily_note_append.py` に戻し、同じテストを再実行する。
 
 ## 保守
 保守担当/確認者: あおい（AI運用）

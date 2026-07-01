@@ -44,7 +44,7 @@ related: [AI_AGENT_STRUCTURE_AND_BACKUP, CLAUDE_CODE_INSTRUCTIONS]
 ## ⛔ 既知の制約・残存リスク
 
 - **週次スナップショットのClaude依存** — Drive を `claude -p` 経由で読む（macOSのTCC制約）。Claudeが落ちているとDrive層（経費精算・売上証憑）のバックアップが止まる。→ Codex非依存化で解消（判断待ち）
-- **agent-run が未配線（建前と実体の乖離・2026-06-28 明記）** — 継ぎ目（`~/agent-adapters/bin/agent-run`）は存在するが、**agent-run 経由は一部のみ**（`run_vault_snapshot.sh` / `run_thread_format_learning.sh` / `vault-snapshot.sh` の3本程度）で、`run_weekly_accounting.sh` `run_monthly_accounting.sh` `run_daily_dashboard.sh` `run_knowledge_gardener.sh` `listener-watchdog.sh` など多数（約15〜44本）の launchd/cron スクリプトは `claude -p` を直叩きしている。さらに **agent-run の codex 分岐は未実装（`exit 64`）のため、Codex 切替は現時点では実行不可**。方針: **新規スクリプトは agent-run 経由を必須、既存は順次移行**。money系の置換後は確認ゲート（実装者≠確認者）を維持すること
+- **agent-run はCodex最小配線済みだが既存自動化は未移行（2026-07-01 明記）** — 継ぎ目（`~/agent-adapters/bin/agent-run`）は存在し、`AGENT_VENDOR=codex agent-run -p "..."` は `codex exec` を呼べる。ただし **agent-run 経由は一部のみ**（`run_vault_snapshot.sh` / `run_thread_format_learning.sh` / `vault-snapshot.sh` の3本程度）で、`run_weekly_accounting.sh` `run_monthly_accounting.sh` `run_daily_dashboard.sh` `run_knowledge_gardener.sh` `listener-watchdog.sh` など多数（約15〜44本）の launchd/cron スクリプトは `claude -p` を直叩きしている。さらに `--permission-mode` / `--allowedTools` などClaude専用フラグはCodex分岐でfail-closeするため、既存自動化の一括切替はまだ不可。方針: **新規スクリプトは agent-run 経由を必須、既存は順次移行**。money系の置換後は確認ゲート（実装者≠確認者）を維持すること
 - **動画メディアがSSD単独** — 物理故障で完成動画＋編集プロジェクトを失うリスク（判断待ち）
 - **.gsheet/.gdoc がGoogleアカウント単独依存** — 凍結・誤削除に弱い（判断待ち）
 - **⚠️ YMM4プロジェクトが掃除対象フォルダを参照** — `.ymmp` が素材を絶対パスで参照し、一部が `~/.codex/generated_images` `~/Downloads`（＝「掃除していいキャッシュ」と分類した場所）を指す。実例 `平将門の祟り.ymmp` は66素材中5個が該当。**`.codex`/`Downloads` を掃除すると再編集時に映像が壊れる**ため、掃除前チェックが必須（[[CLAUDE_CODE_INSTRUCTIONS]] の「掃除の鉄則」）

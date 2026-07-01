@@ -12,7 +12,8 @@ from pathlib import Path
 
 
 SCRIPT_DIR = Path(__file__).resolve().parent
-V1_SCRIPT = SCRIPT_DIR / "daily_note_append.py"
+CURRENT_SCRIPT = SCRIPT_DIR / "daily_note_append.py"
+LEGACY_SCRIPT = SCRIPT_DIR / "daily_note_append_v1_legacy.py"
 V2_SCRIPT = SCRIPT_DIR / "daily_note_append_v2.py"
 TEMPLATE_TEXT = """# {{date}}
 
@@ -143,33 +144,45 @@ class DailyNoteAppendV2Test(unittest.TestCase):
         content = self.note(root, "2026-07-12").read_text(encoding="utf-8")
         self.assertEqual(content.count("- dup"), 2)
 
-    def test_basic_output_matches_v1(self) -> None:
-        root_v1 = self.make_root()
+    def test_basic_output_matches_legacy_v1(self) -> None:
+        root_legacy = self.make_root()
         root_v2 = self.make_root()
-        v1 = self.run_cli(root_v1, "--date", "2026-07-10", "--text", "same\nmemo", script=V1_SCRIPT)
+        legacy = self.run_cli(root_legacy, "--date", "2026-07-10", "--text", "same\nmemo", script=LEGACY_SCRIPT)
         v2 = self.run_cli(root_v2, "--date", "2026-07-10", "--text", "same\nmemo", script=V2_SCRIPT)
-        self.assertEqual(v1.returncode, 0, v1.stderr)
+        self.assertEqual(legacy.returncode, 0, legacy.stderr)
         self.assertEqual(v2.returncode, 0, v2.stderr)
         self.assertEqual(
-            self.note(root_v1, "2026-07-10").read_text(encoding="utf-8"),
+            self.note(root_legacy, "2026-07-10").read_text(encoding="utf-8"),
             self.note(root_v2, "2026-07-10").read_text(encoding="utf-8"),
         )
 
-    def test_indented_hash_line_matches_v1_boundary_behavior(self) -> None:
-        root_v1 = self.make_root()
+    def test_current_entrypoint_matches_v2(self) -> None:
+        root_current = self.make_root()
+        root_v2 = self.make_root()
+        current = self.run_cli(root_current, "--date", "2026-07-14", "--text", "current\nentry", script=CURRENT_SCRIPT)
+        v2 = self.run_cli(root_v2, "--date", "2026-07-14", "--text", "current\nentry", script=V2_SCRIPT)
+        self.assertEqual(current.returncode, 0, current.stderr)
+        self.assertEqual(v2.returncode, 0, v2.stderr)
+        self.assertEqual(
+            self.note(root_current, "2026-07-14").read_text(encoding="utf-8"),
+            self.note(root_v2, "2026-07-14").read_text(encoding="utf-8"),
+        )
+
+    def test_indented_hash_line_matches_legacy_v1_boundary_behavior(self) -> None:
+        root_legacy = self.make_root()
         root_v2 = self.make_root()
         content = "# 2026-07-13\n\n## 💡 メモ / アイデア\n- old\n    # not a heading\ncode\n\n## Next\nbody\n"
-        for root in (root_v1, root_v2):
+        for root in (root_legacy, root_v2):
             note = self.note(root, "2026-07-13")
             note.parent.mkdir(parents=True)
             note.write_text(content, encoding="utf-8")
 
-        v1 = self.run_cli(root_v1, "--date", "2026-07-13", "new", script=V1_SCRIPT)
+        legacy = self.run_cli(root_legacy, "--date", "2026-07-13", "new", script=LEGACY_SCRIPT)
         v2 = self.run_cli(root_v2, "--date", "2026-07-13", "new", script=V2_SCRIPT)
-        self.assertEqual(v1.returncode, 0, v1.stderr)
+        self.assertEqual(legacy.returncode, 0, legacy.stderr)
         self.assertEqual(v2.returncode, 0, v2.stderr)
         self.assertEqual(
-            self.note(root_v1, "2026-07-13").read_text(encoding="utf-8"),
+            self.note(root_legacy, "2026-07-13").read_text(encoding="utf-8"),
             self.note(root_v2, "2026-07-13").read_text(encoding="utf-8"),
         )
 
