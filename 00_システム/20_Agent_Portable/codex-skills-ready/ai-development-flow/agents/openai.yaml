@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI Development Flow"
+  short_description: "Risk-based AI development flow"
+  default_prompt: "Use $ai-development-flow to plan and build this system with risk classification, a fixed goal, bounded repair loops, evidence, review, and completion gates."
