@@ -604,3 +604,45 @@ Computer Use is not allowed to use the app 'com.apple.Terminal' for safety reaso
 - Discord本番投稿
 - ルールブック自動更新
 - Claude本番経路の停止・削除
+
+## Step7: 通常Terminal wrapper gate PASS
+
+実施日: 2026-07-02
+
+実行環境:
+- Mac通常Terminal
+- ユーザー実行
+- Codexサンドボックス外
+
+実行コマンド:
+
+```bash
+/Users/kojinn/2nd-Brain-master/00_システム/20_Agent_Portable/scripts/verify_script_learning_codex_terminal.sh
+```
+
+結果: exit 0
+
+確認できたこと:
+- `run_script_learning.sh` の `SCRIPT_LEARNING_AGENT_VENDOR=codex` 分岐に到達
+- `run_script_learning_codex_dryrun.sh` へ到達
+- `VALIDATION: OK summary secret scan clean`
+- `VALIDATION: OK sandbox locked read-only`
+- `VALIDATION: OK add_dirs empty`
+- `VALIDATION: OK RULEBOOK_PATCH chars=456`
+- `VALIDATION: OK DISCORD_PROPOSAL chars=220 not posted`
+- `VALIDATION: OK rulebook unchanged`
+- `VALIDATION: OK rulebook hash unchanged`
+- `VALIDATION: OK legacy log unchanged`
+- `VALIDATION: OK legacy log hash unchanged`
+- terminal gate側でもrulebook / legacy log のmtimeとhash不変を確認
+- 最終行: `PASS script-learning wrapper Codex dry-run gate`
+
+Step7判定:
+- **手動Codex dry-run入口: PASS**
+- **通常Terminal wrapper gate: PASS**
+- **本番化: 未実施**
+
+完成判定更新:
+- `script-learning` の「手動Codex dry-run入口追加」は完成
+- ただし、Codexデフォルト化、launchd env var追加、Discord本番投稿、ルールブック自動更新、Claude本番経路の停止・削除は未実施
+- 上記の本番化工程へ進むには、別途人間承認と1周期shadow運用が必要
