@@ -1,0 +1,218 @@
+{
+ "trial_bs": {
+  "company_id": 12511831,
+  "start_date": "2026-01-01",
+  "end_date": "2026-07-01",
+  "created_at": "2026-07-01T10:30:02+09:00",
+  "balances": [
+   {
+    "account_item_id": 1024989518,
+    "account_item_name": "GMOあおぞらネット（API）",
+    "account_category_name": "現金・預金",
+    "hierarchy_level": 3,
+    "opening_balance": 10385,
+    "debit_amount": 1157688,
+    "credit_amount": 1076762,
+    "closing_balance": 91311,
+    "composition_ratio": 4.53
+   },
+   {
+    "account_item_id": 1024926802,
+    "account_item_name": "短期貸付金",
+    "account_category_name": "他流動資産",
+    "hierarchy_level": 3,
+    "opening_balance": 0,
+    "debit_amount": 556400,
+    "credit_amount": 0,
+    "closing_balance": 556400,
+    "composition_ratio": 27.58
+   },
+   {
+    "account_category_name": "流動資産",
+    "total_line": true,
+    "hierarchy_level": 2,
+    "parent_account_category_name": "資産",
+    "opening_balance": 10385,
+    "debit_amount": 1714088,
+    "credit_amount": 1076762,
+    "closing_balance": 647711,
+    "composition_ratio": 32.11
+   },
+   {
+    "account_item_id": 1024926814,
+    "account_item_name": "車両運搬具",
+    "account_category_name": "有形固定資産",
+    "hierarchy_level": 4,
+    "opening_balance": 1032986,
+    "debit_amount": 0,
+    "credit_amount": 0,
+    "closing_balance": 1032986,
+    "composition_ratio": 51.21
+   },
+   {
+    "account_category_name": "有形固定資産",
+    "total_line": true,
+    "hierarchy_level": 3,
+    "parent_account_category_name": "固定資産",
+    "opening_balance": 1032986,
+    "debit_amount": 0,
+    "credit_amount": 0,
+    "closing_balance": 1032986,
+    "composition_ratio": 51.21
+   },
+   {
+    "account_category_name": "固定資産",
+    "total_line": true,
+    "hierarchy_level": 2,
+    "parent_account_category_name": "資産",
+    "opening_balance": 1032986,
+    "debit_amount": 0,
+    "credit_amount": 0,
+    "closing_balance": 1032986,
+    "composition_ratio": 51.21
+   },
+   {
+    "account_item_id": 1024926833,
+    "account_item_name": "事業主貸",
+    "account_category_name": "事業主貸",
+    "hierarchy_level": 3,
+    "opening_balance": 0,
+    "debit_amount": 336370,
+    "credit_amount": 0,
+    "closing_balance": 336370,
+    "composition_ratio": 16.68
+   },
+   {
+    "account_category_name": "事業主貸",
+    "total_line": true,
+    "hierarchy_level": 2,
+    "parent_account_category_name": "資産",
+    "opening_balance": 0,
+    "debit_amount": 336370,
+    "credit_amount": 0,
+    "closing_balance": 336370,
+    "composition_ratio": 16.68
+   },
+   {
+    "account_category_name": "資産",
+    "total_line": true,
+    "hierarchy_level": 1,
+    "opening_balance": 1043371,
+    "debit_amount": 2050458,
+    "credit_amount": 1076762,
+    "closing_balance": 2017067,
+    "composition_ratio": 100.0
+   },
+   {
+    "account_item_id": 1024926841,
+    "account_item_name": "未払金",
+    "account_category_name": "他流動負債",
+    "hierarchy_level": 3,
+    "opening_balance": 0,
+    "debit_amount": 6000,
+    "credit_amount": 6000,
+    "closing_balance": 0,
+    "composition_ratio": 0.0
+   },
+   {
+    "account_category_name": "流動負債",
+    "total_line": true,
+    "hierarchy_level": 2,
+    "parent_account_category_name": "負債",
+    "opening_balance": 0,
+    "debit_amount": 6000,
+    "credit_amount": 6000,
+    "closing_balance": 0,
+    "composition_ratio": 0.0
+   },
+   {
+    "account_item_id": 1024926854,
+    "account_item_name": "事業主借",
+    "account_category_name": "事業主借",
+    "hierarchy_level": 3,
+    "opening_balance": 0,
+    "debit_amount": 0,
+    "credit_amount": 44000,
+    "closing_balance": 44000,
+    "composition_ratio": 2.18
+   },
+   {
+    "account_item_id": 1024926855,
+    "account_item_name": "受取利息",
+    "account_category_name": "事業主借",
+    "hierarchy_level": 3,
+    "opening_balance": 0,
+    "debit_amount": 0,
+    "credit_amount": 34,
+    "closing_balance": 34,
+    "composition_ratio": 0.0
+   },
+   {
+    "account_category_name": "事業主借",
+    "total_line": true,
+    "hierarchy_level": 2,
+    "parent_account_category_name": "負債",
+    "opening_balance": 0,
+    "debit_amount": 0,
+    "credit_amount": 44034,
+    "closing_balance": 44034,
+    "composition_ratio": 2.18
+   },
+   {
+    "account_category_name": "負債",
+    "total_line": true,
+    "hierarchy_level": 1,
+    "opening_balance": 0,
+    "debit_amount": 6000,
+    "credit_amount": 50034,
+    "closing_balance": 44034,
+    "composition_ratio": 2.18
+   },
+   {
+    "account_category_name": "差引損益計算(不動産)",
+    "total_line": true,
+    "hierarchy_level": 2,
+    "parent_account_category_name": "資本",
+    "opening_balance": 0,
+    "debit_amount": 0,
+    "credit_amount": 0,
+    "closing_balance": 0,
+    "composition_ratio": 0
+   },
+   {
+    "account_category_name": "差引損益計算",
+    "total_line": true,
+    "hierarchy_level": 2,
+    "parent_account_category_name": "資本",
+    "opening_balance": 0,
+    "debit_amount": 192992,
+    "credit_amount": 1122654,
+    "closing_balance": 929662,
+    "composition_ratio": 46.09
+   },
+   {
+    "account_item_id": 1024926857,
+    "account_item_name": "元入金",
+    "account_category_name": "元入金",
+    "hierarchy_level": 2,
+    "opening_balance": 1043371,
+    "debit_amount": 0,
+    "credit_amount": 0,
+    "closing_balance": 1043371,
+    "composition_ratio": 51.73
+   },
+   {
+    "account_category_name": "資本",
+    "total_line": true,
+    "hierarchy_level": 1,
+    "opening_balance": 1043371,
+    "debit_amount": 192992,
+    "credit_amount": 1122654,
+    "closing_balance": 1973033,
+    "composition_ratio": 97.82
+   }
+  ]
+ },
+ "up_to_date": true,
+ "up_to_date_reasons": []
+}
