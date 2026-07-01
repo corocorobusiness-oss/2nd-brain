@@ -8,14 +8,17 @@ SCRIPT_DIR="/Users/kojinn/.claude/scripts"
 PROMPT_FILE="$SCRIPT_DIR/script_learning.md"
 AGENT_RUN="/Users/kojinn/agent-adapters/bin/agent-run"
 WORKDIR="${SCRIPT_LEARNING_CODEX_WORKDIR:-/Users/kojinn/2nd-Brain-master}"
-ADD_DIRS="${SCRIPT_LEARNING_CODEX_ADD_DIRS:-/Users/kojinn/2nd-Brain:/Users/kojinn/Projects/youtube:/Users/kojinn/.claude/skills/neta-research/data}"
+ADD_DIRS="${SCRIPT_LEARNING_CODEX_ADD_DIRS:-}"
 SANDBOX="${SCRIPT_LEARNING_CODEX_SANDBOX:-read-only}"
 RULEBOOK="/Users/kojinn/2nd-Brain/03_知識ベース/YouTube・コンテンツ制作/台本執筆ルール.md"
+RETENTION_JSON="/Users/kojinn/.claude/skills/neta-research/data/retention_analysis.json"
+PRODUCTION_LOG_DIR="/Users/kojinn/Projects/youtube/制作ログ"
 LEGACY_LOG="$SCRIPT_DIR/script_learning.log"
 RAW="$(/usr/bin/mktemp)"
+SUMMARY="$(/usr/bin/mktemp)"
 
 cleanup() {
-  /bin/rm -f "$RAW"
+  /bin/rm -f "$RAW" "$SUMMARY"
 }
 trap cleanup EXIT
 
@@ -41,37 +44,140 @@ fi
 BEFORE_RULEBOOK_MTIME="$(mtime_or_zero "$RULEBOOK")"
 BEFORE_LOG_MTIME="$(mtime_or_zero "$LEGACY_LOG")"
 
-DRY_PROMPT="$(/bin/cat "$PROMPT_FILE")
+/usr/bin/python3 - "$RETENTION_JSON" "$PRODUCTION_LOG_DIR" "$RULEBOOK" "$SUMMARY" <<'PYEOF'
+import json
+import os
+import statistics
+import sys
+from collections import Counter, defaultdict
 
-## Codex dry-run override
+retention_path, log_dir, rulebook_path, summary_path = sys.argv[1:5]
 
-This is a migration dry-run for script-learning. Keep the learning task intent, but follow these hard constraints:
+def pct(value):
+    return f"{value * 100:.1f}%"
 
-- Do not write, edit, delete, move, or create any file.
-- Do not post to Discord or call any notification tool.
-- Do not use network access.
+lines = []
+lines.append("# Pre-collected script-learning dry-run evidence")
+lines.append("")
+
+try:
+    with open(retention_path, encoding="utf-8") as f:
+        rows = json.load(f)
+except Exception as exc:
+    rows = []
+    lines.append(f"retention_json_error: {type(exc).__name__}: {exc}")
+
+if rows:
+    by_month = defaultdict(list)
+    for row in rows:
+        month = str(row.get("published", ""))[:7] or "unknown"
+        by_month[month].append(row)
+    months = sorted(m for m in by_month if m != "unknown")
+    lines.append(f"retention_file: {retention_path}")
+    lines.append(f"retention_items: {len(rows)}")
+    lines.append(f"months: {', '.join(months[-4:])}")
+    for month in months[-3:]:
+        group = by_month[month]
+        lines.append(
+            f"month {month}: n={len(group)}, "
+            f"intro={pct(statistics.mean(r.get('intro_hold', 0) for r in group))}, "
+            f"q1={pct(statistics.mean(r.get('q1', 0) for r in group))}, "
+            f"q2={pct(statistics.mean(r.get('q2', 0) for r in group))}, "
+            f"q3={pct(statistics.mean(r.get('q3', 0) for r in group))}, "
+            f"q4={pct(statistics.mean(r.get('q4', 0) for r in group))}"
+        )
+    latest_month = months[-1] if months else None
+    previous_month = months[-2] if len(months) > 1 else None
+    if latest_month and previous_month:
+        latest_q4 = statistics.mean(r.get("q4", 0) for r in by_month[latest_month])
+        previous_q4 = statistics.mean(r.get("q4", 0) for r in by_month[previous_month])
+        lines.append(f"latest_vs_previous_q4: {latest_month} {pct(latest_q4)} vs {previous_month} {pct(previous_q4)} diff={(latest_q4 - previous_q4) * 100:+.1f}pt")
+
+    drop_counter = Counter()
+    for row in rows:
+        for drop in row.get("worst_drops", [])[:3]:
+            drop_counter[int(drop.get("at_percent", -1))] += 1
+    if drop_counter:
+        lines.append("frequent_drop_points: " + ", ".join(f"{point}% x{count}" for point, count in drop_counter.most_common(6)))
+
+    best = max(rows, key=lambda r: (r.get("q4", 0), r.get("q3", 0)))
+    worst = min(rows, key=lambda r: (r.get("q4", 0), r.get("q3", 0)))
+    lines.append(f"best_q4: {best.get('published')} q4={pct(best.get('q4', 0))} title={best.get('title', '')[:80]}")
+    lines.append(f"worst_q4: {worst.get('published')} q4={pct(worst.get('q4', 0))} title={worst.get('title', '')[:80]}")
+
+lines.append("")
+lines.append("# Production log signals")
+if os.path.isdir(log_dir):
+    log_files = sorted(
+        os.path.join(log_dir, name)
+        for name in os.listdir(log_dir)
+        if name.endswith(".md")
+    )
+    lines.append(f"production_log_dir: {log_dir}")
+    lines.append(f"production_log_files: {len(log_files)}")
+    keywords = ("修正指示", "次回どうするか", "ファクト", "裏取り", "解説者", "スレタイ", "WebSearch", "形式", "フォーマット", "タイトル")
+    for path in log_files[:8]:
+        lines.append(f"file: {os.path.basename(path)}")
+        try:
+            with open(path, encoding="utf-8", errors="replace") as f:
+                selected = [line.strip() for line in f if any(k in line for k in keywords)]
+        except Exception as exc:
+            selected = [f"read_error: {type(exc).__name__}: {exc}"]
+        for line in selected[:18]:
+            if line:
+                lines.append(f"- {line[:220]}")
+else:
+    lines.append(f"production_log_dir_missing: {log_dir}")
+
+lines.append("")
+lines.append("# Current rulebook excerpt")
+try:
+    with open(rulebook_path, encoding="utf-8", errors="replace") as f:
+        rule_lines = f.readlines()
+    lines.append(f"rulebook: {rulebook_path}")
+    for line in rule_lines:
+        stripped = line.strip()
+        if stripped.startswith("### R") or stripped.startswith("- **") or stripped.startswith("- 2026-"):
+            lines.append(stripped[:240])
+except Exception as exc:
+    lines.append(f"rulebook_error: {type(exc).__name__}: {exc}")
+
+with open(summary_path, "w", encoding="utf-8") as f:
+    f.write("\n".join(lines).strip() + "\n")
+PYEOF
+
+DRY_PROMPT="You are reviewing a monthly YouTube script-learning job in dry-run mode.
+
+Hard constraints:
+- Do not call tools.
+- Do not read files.
+- Do not browse.
 - Do not run shell commands.
-- Read local files only.
-- Do not execute analyze_retention.py. Instead, read the existing JSON at /Users/kojinn/.claude/skills/neta-research/data/retention_analysis.json.
-- Read /Users/kojinn/Projects/youtube/制作ログ/ if available.
-- Read the existing rulebook at /Users/kojinn/2nd-Brain/03_知識ベース/YouTube・コンテンツ制作/台本執筆ルール.md.
-- Output proposed changes only. The wrapper will not apply them.
+- Do not write, edit, delete, move, or create any file.
+- Do not post to Discord.
+- Use only the pre-collected evidence below.
+- Output only the required marker blocks plus one short summary.
+
+Task:
+Based on the pre-collected evidence, propose what the monthly script-learning job would change in the rulebook, without applying it.
 
 Required output format:
 
 <<<RULEBOOK_PATCH
-Proposed rulebook changes or 'NO_CHANGE'. Include concise reasons and source files consulted.
+Proposed rulebook changes or NO_CHANGE. Keep this under 1200 Japanese characters. Mention evidence names briefly.
 RULEBOOK_PATCH>>>
 
 <<<DISCORD_PROPOSAL
-Message that would have been posted to #レポート, or 'NO_POST'.
+Message that would have been posted to #レポート, or NO_POST. Keep this under 700 Japanese characters.
 DISCORD_PROPOSAL>>>
 
-End with one short dry-run summary paragraph.
+Short dry-run summary:
+
+$(/bin/cat "$SUMMARY")
 "
 
 echo "[dry-run] script-learning via Codex"
-echo "[dry-run] no file writes, no Discord posting, no shell commands by inner Codex"
+echo "[dry-run] no file writes, no Discord posting, no tool calls by inner Codex"
 echo "[dry-run] workdir: $WORKDIR"
 echo "[dry-run] add_dirs: $ADD_DIRS"
 echo "[dry-run] sandbox: $SANDBOX"
