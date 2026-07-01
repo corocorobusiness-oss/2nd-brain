@@ -261,3 +261,33 @@ Codexの出力要旨:
 判断:
 
 本番切替前ゲートは通過。次は launchd ではなく、本番wrapperに `THREAD_FORMAT_AGENT_VENDOR` のような明示的な切替変数を入れ、デフォルトはClaude維持のまま、手動実行だけCodexへ切り替えられる形にする。
+
+## Step12メモ: 本番wrapperへCodex任意切替を追加
+
+2026-07-01に `/Users/kojinn/.claude/scripts/run_thread_format_learning.sh` を更新した。
+
+変更内容:
+
+- `THREAD_FORMAT_AGENT_VENDOR` を追加
+  - 未指定時: `claude`
+  - `codex` 指定時: `agent-run` のCodex分岐を使用
+- Codex用に以下の任意設定を追加
+  - `THREAD_FORMAT_CODEX_SANDBOX`（既定: `read-only`）
+  - `THREAD_FORMAT_CODEX_WORKDIR`（既定: `/Users/kojinn/Projects/youtube`）
+  - `THREAD_FORMAT_CODEX_ADD_DIRS`（既定: `/Users/kojinn/2nd-Brain-master:/Users/kojinn/2nd-Brain`）
+- Claude実行時は従来通り `--permission-mode auto --allowedTools Read,Grep,Glob` を渡す
+- Codex実行時はClaude専用フラグを渡さない
+
+確認済み:
+
+- `bash -n /Users/kojinn/.claude/scripts/run_thread_format_learning.sh`
+- `bash -n /Users/kojinn/agent-adapters/bin/agent-run`
+- `com.claude.thread-format-learning.plist` に `THREAD_FORMAT_AGENT_VENDOR` の指定なし
+
+判断:
+
+launchd定期実行は未変更のため、現時点では従来通りClaude実行。Codexは手動で `THREAD_FORMAT_AGENT_VENDOR=codex` を付けた時だけ使える。
+
+注意:
+
+本番wrapperはdry-runではない。`THREAD_FORMAT_AGENT_VENDOR=codex /Users/kojinn/.claude/scripts/run_thread_format_learning.sh` を実行すると、ウォッチリスト更新やDiscord投稿まで進む可能性がある。実行前に人間承認を必須とする。
