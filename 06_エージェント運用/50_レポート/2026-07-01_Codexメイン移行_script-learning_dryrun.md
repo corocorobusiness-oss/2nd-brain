@@ -145,7 +145,7 @@ PASS。launchd未変更、本番ジョブ未変更、mtime検証あり。dry-run
 
 ### 3. セキュリティ
 
-PASS。Discord投稿なし、外部送信なし、秘密情報保存なし。証拠は要約のみ。
+PASS WITH CORRECTION。Discord投稿なし、永続書込なし、秘密情報保存なし。Codexへ事前要約を渡すため、「外部送信なし」ではなく「Discord投稿なし・永続書込なし」として扱う。
 
 ### 4. QA
 
@@ -330,3 +330,164 @@ PASS条件:
 - 最後に `PASS script-learning wrapper Codex dry-run gate`
 
 このPASSが出るまでは、Codexデフォルト化、Discord本番投稿、ルールブック自動更新、launchd切替へ進まない。
+
+## Step5: 5視点の独立レビューと安全ゲート強化
+
+実施日: 2026-07-02
+
+目的:
+- Step4までの状態がAI開発フロー上の完成扱いにできるか確認する
+- 本番化前に潰せるWARNを実装へ反映する
+
+レビュー結果:
+
+| 視点 | 判定 | 主な指摘 |
+|---|---|---|
+| SRE/運用 | WARN | 手動dry-run入口は維持可。ただし通常Terminalのwrapper経由PASSが未取得のため本番化No-Go |
+| セキュリティ | WARN | 「外部送信なし」は不正確。Codexへ要約を渡すため、Discord投稿なし・永続書込なしとして扱うべき |
+| QA/証拠 | WARN | 非本番範囲の証拠は揃っているが、Terminal gate未通過のため運用入口としては未完成 |
+| プロダクト運用 | WARN | 小ステップとして価値あり。作りすぎではないが、除染チェックとTerminal gateが必要 |
+| 完成判定 | WARN / 要確認 | 危険案件なので、通常Terminal gate PASSと人間承認ログなしに完成扱い不可 |
+
+反映した追加ゲート:
+- inner CodexのworkdirをVaultではなく、空の一時git repoに変更
+- `SCRIPT_LEARNING_CODEX_WORKDIR` override禁止
+- `SCRIPT_LEARNING_CODEX_ADD_DIRS` 非空なら停止
+- sandboxは `read-only` 以外なら停止
+- Codexへ渡す事前要約にsecret scanを追加
+- rulebook / legacy log の確認をmtimeだけでなくSHA-256 hashでも確認
+- 本番wrapper側で、未承認の `SCRIPT_LEARNING_CODEX_DRYRUN` overrideをexit 64で停止
+- Codex dry-run経路では、Claude本番用prompt読込失敗によるDiscord通知を通らないよう分岐を前倒し
+- Terminal gate helperも、環境変数overrideを明示的に消し、secret scan / read-only / add_dirs空 / hash不変を確認対象に追加
+
+反映したファイル:
+- `00_システム/20_Agent_Portable/scripts/run_script_learning_codex_dryrun.sh`
+- `/Users/kojinn/.claude/scripts/run_script_learning_codex_dryrun.sh`
+- `00_システム/20_Agent_Portable/scripts/run_script_learning.sh`
+- `/Users/kojinn/.claude/scripts/run_script_learning.sh`
+- `00_システム/20_Agent_Portable/scripts/verify_script_learning_codex_terminal.sh`
+- `01_プロジェクト/AI自動化/導入済み.md`
+- `00_システム/20_Agent_Portable/specs/codex-main-vendor-neutral-migration.md`
+
+追加確認:
+
+```bash
+bash -n 00_システム/20_Agent_Portable/scripts/run_script_learning.sh
+bash -n 00_システム/20_Agent_Portable/scripts/run_script_learning_codex_dryrun.sh
+bash -n 00_システム/20_Agent_Portable/scripts/verify_script_learning_codex_terminal.sh
+git diff --check
+```
+
+結果: すべて exit 0
+
+```bash
+install -m 755 /Users/kojinn/2nd-Brain-master/00_システム/20_Agent_Portable/scripts/run_script_learning.sh /Users/kojinn/.claude/scripts/run_script_learning.sh
+install -m 755 /Users/kojinn/2nd-Brain-master/00_システム/20_Agent_Portable/scripts/run_script_learning_codex_dryrun.sh /Users/kojinn/.claude/scripts/run_script_learning_codex_dryrun.sh
+```
+
+結果: どちらも exit 0
+
+```bash
+cmp -s 00_システム/20_Agent_Portable/scripts/run_script_learning.sh /Users/kojinn/.claude/scripts/run_script_learning.sh
+cmp -s 00_システム/20_Agent_Portable/scripts/run_script_learning_codex_dryrun.sh /Users/kojinn/.claude/scripts/run_script_learning_codex_dryrun.sh
+```
+
+結果: どちらも exit 0
+
+fail-close確認:
+
+```bash
+SCRIPT_LEARNING_AGENT_VENDOR=codex SCRIPT_LEARNING_CODEX_DRYRUN=/usr/bin/true /Users/kojinn/.claude/scripts/run_script_learning.sh
+```
+
+結果: exit 64
+
+```text
+SCRIPT_LEARNING_CODEX_DRYRUN override が未承認のためCodex dry-runを中止
+```
+
+```bash
+SCRIPT_LEARNING_CODEX_ADD_DIRS=/tmp /Users/kojinn/.claude/scripts/run_script_learning_codex_dryrun.sh
+```
+
+結果: exit 1
+
+```text
+[dry-run] VALIDATION: FAIL SCRIPT_LEARNING_CODEX_ADD_DIRS must be empty
+```
+
+安全ゲート強化後のdry-run:
+
+```bash
+/Users/kojinn/.claude/scripts/run_script_learning_codex_dryrun.sh
+```
+
+結果: exit 0
+
+確認できたこと:
+- `VALIDATION: OK summary secret scan clean`
+- `VALIDATION: OK sandbox locked read-only`
+- `VALIDATION: OK add_dirs empty`
+- inner Codex workdirは `/private/tmp/script-learning-codex-workdir.*` の空git repo
+- `VALIDATION: OK RULEBOOK_PATCH chars=501`
+- `VALIDATION: OK DISCORD_PROPOSAL chars=229 not posted`
+- `VALIDATION: OK rulebook unchanged`
+- `VALIDATION: OK rulebook hash unchanged`
+- `VALIDATION: OK legacy log unchanged`
+- `VALIDATION: OK legacy log hash unchanged`
+
+## 完成判定
+
+実施日: 2026-07-02
+
+案件分類: **危険**
+
+理由:
+- launchd月次ジョブに関係する
+- Discord通知経路に関係する
+- 台本執筆ルールという制作フロー正本に関係する
+- 既存Claude本番wrapperを変更している
+
+Goal:
+- `script-learning` を本番切替せず、Codexで安全にdry-runできる入口を作り、Discord投稿・永続書込なしを証拠で確認する
+
+現在の判定:
+- **要確認 / 本番化は未完成**
+
+PASS:
+- Codex dry-run入口は存在する
+- 本番wrapperは既定Claudeのまま
+- `SCRIPT_LEARNING_AGENT_VENDOR=codex` の時だけ手動dry-runへ分岐する
+- 未承認overrideはfail-closeする
+- dry-runはread-only固定、追加dir禁止、secret scan、mtime/hash不変確認を行う
+- dry-run直実行はexit 0
+- rulebook、legacy logは不変
+- Discord本番投稿はしていない
+- launchd plistは変更していない
+- 台帳と移行設計には「本番切替未実施」と記録済み
+
+未完了 / WARN:
+- 通常Terminalまたはlaunchd相当の外側環境で、wrapper経由の `SCRIPT_LEARNING_AGENT_VENDOR=codex /Users/kojinn/.claude/scripts/run_script_learning.sh` がexit 0になる証拠は未取得
+- このCodexサンドボックス内では、wrapper経由実行は内側Codexの状態DB初期化で失敗する既知制約がある
+- 本番化、Codexデフォルト化、Discord本番投稿、ルールブック自動更新、launchd切替の人間承認は未取得
+- 1周期shadow運用は未実施
+
+次の必須ゲート:
+
+```bash
+/Users/kojinn/2nd-Brain-master/00_システム/20_Agent_Portable/scripts/verify_script_learning_codex_terminal.sh
+```
+
+通常Terminalでこのコマンドが `PASS script-learning wrapper Codex dry-run gate` を出すこと。
+
+このPASSが出るまでは、次へ進まない:
+- Codexデフォルト化
+- launchd env var追加
+- Discord本番投稿
+- ルールブック自動更新
+- Claude本番経路の停止・削除
+
+最終判断:
+- **手動Codex dry-run入口としては完成候補**
+- **運用入口 / 本番切替としては未完成**
+- AI開発フロー上の完成判定は **要確認**

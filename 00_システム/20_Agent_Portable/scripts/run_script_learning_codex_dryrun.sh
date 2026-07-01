@@ -7,8 +7,8 @@ export PATH="/Users/kojinn/.bun/bin:$(/bin/ls -d /Users/kojinn/.nvm/versions/nod
 SCRIPT_DIR="/Users/kojinn/.claude/scripts"
 PROMPT_FILE="$SCRIPT_DIR/script_learning.md"
 AGENT_RUN="/Users/kojinn/agent-adapters/bin/agent-run"
-WORKDIR="${SCRIPT_LEARNING_CODEX_WORKDIR:-/Users/kojinn/2nd-Brain-master}"
-ADD_DIRS="${SCRIPT_LEARNING_CODEX_ADD_DIRS:-}"
+WORKDIR="$(/usr/bin/mktemp -d /private/tmp/script-learning-codex-workdir.XXXXXX)"
+ADD_DIRS=""
 SANDBOX="${SCRIPT_LEARNING_CODEX_SANDBOX:-read-only}"
 RULEBOOK="/Users/kojinn/2nd-Brain/03_知識ベース/YouTube・コンテンツ制作/台本執筆ルール.md"
 RETENTION_JSON="/Users/kojinn/.claude/skills/neta-research/data/retention_analysis.json"
@@ -19,12 +19,32 @@ SUMMARY="$(/usr/bin/mktemp)"
 
 cleanup() {
   /bin/rm -f "$RAW" "$SUMMARY"
+  /bin/rm -rf "$WORKDIR"
 }
 trap cleanup EXIT
 
 mtime_or_zero() {
   [ -e "$1" ] && /usr/bin/stat -f %m "$1" 2>/dev/null || echo 0
 }
+
+hash_or_zero() {
+  [ -e "$1" ] && /usr/bin/shasum -a 256 "$1" 2>/dev/null | /usr/bin/awk '{print $1}' || echo 0
+}
+
+if [ "${SCRIPT_LEARNING_CODEX_WORKDIR:-}" != "" ]; then
+  echo "[dry-run] VALIDATION: FAIL SCRIPT_LEARNING_CODEX_WORKDIR override is not allowed" >&2
+  exit 1
+fi
+
+if [ "${SCRIPT_LEARNING_CODEX_ADD_DIRS:-}" != "" ]; then
+  echo "[dry-run] VALIDATION: FAIL SCRIPT_LEARNING_CODEX_ADD_DIRS must be empty" >&2
+  exit 1
+fi
+
+if [ "$SANDBOX" != "read-only" ]; then
+  echo "[dry-run] VALIDATION: FAIL SCRIPT_LEARNING_CODEX_SANDBOX must be read-only" >&2
+  exit 1
+fi
 
 if [ ! -x "$AGENT_RUN" ]; then
   echo "[dry-run] agent-run is not executable: $AGENT_RUN" >&2
@@ -41,8 +61,15 @@ if [ ! -d "$WORKDIR" ]; then
   exit 1
 fi
 
+if ! /usr/bin/git -C "$WORKDIR" init -q; then
+  echo "[dry-run] VALIDATION: FAIL could not initialize empty trusted workdir" >&2
+  exit 1
+fi
+
 BEFORE_RULEBOOK_MTIME="$(mtime_or_zero "$RULEBOOK")"
 BEFORE_LOG_MTIME="$(mtime_or_zero "$LEGACY_LOG")"
+BEFORE_RULEBOOK_HASH="$(hash_or_zero "$RULEBOOK")"
+BEFORE_LOG_HASH="$(hash_or_zero "$LEGACY_LOG")"
 
 /usr/bin/python3 - "$RETENTION_JSON" "$PRODUCTION_LOG_DIR" "$RULEBOOK" "$SUMMARY" <<'PYEOF'
 import json
@@ -146,6 +173,37 @@ with open(summary_path, "w", encoding="utf-8") as f:
     f.write("\n".join(lines).strip() + "\n")
 PYEOF
 
+/usr/bin/python3 - "$SUMMARY" <<'PYEOF'
+import io
+import re
+import sys
+
+summary_path = sys.argv[1]
+text = io.open(summary_path, encoding="utf-8", errors="replace").read()
+
+patterns = [
+    ("authorization_header", r"(?i)\bAuthorization\s*:"),
+    ("bearer_token", r"(?i)\bBearer\s+[A-Za-z0-9._~+/\-]+=*"),
+    ("cookie_header", r"(?i)\b(Set-)?Cookie\s*:"),
+    ("api_key_label", r"(?i)\b(api[_-]?key|client[_-]?secret|access[_-]?token|refresh[_-]?token|discord[_-]?token)\b\s*[:=]"),
+    ("webhook_url", r"https://(?:canary\.|ptb\.)?discord(?:app)?\.com/api/webhooks/[A-Za-z0-9_./-]+"),
+    ("openai_key", r"\bsk-[A-Za-z0-9_-]{20,}\b"),
+    ("google_api_key", r"\bAIza[0-9A-Za-z_-]{30,}\b"),
+    ("japanese_secret_word", r"(トークン|シークレット|秘密鍵|認証情報)"),
+]
+
+hits = [name for name, pattern in patterns if re.search(pattern, text)]
+if hits:
+    print("[dry-run] VALIDATION: FAIL summary secret scan hit categories=" + ",".join(hits))
+    sys.exit(2)
+
+print("[dry-run] VALIDATION: OK summary secret scan clean")
+PYEOF
+SECRET_SCAN_RC=$?
+if [ "$SECRET_SCAN_RC" != "0" ]; then
+  exit "$SECRET_SCAN_RC"
+fi
+
 DRY_PROMPT="You are reviewing a monthly YouTube script-learning job in dry-run mode.
 
 Hard constraints:
@@ -177,10 +235,13 @@ $(/bin/cat "$SUMMARY")
 "
 
 echo "[dry-run] script-learning via Codex"
-echo "[dry-run] no file writes, no Discord posting, no tool calls by inner Codex"
+echo "[dry-run] no persistent writes, no Discord posting, no tool calls by inner Codex"
+echo "[dry-run] sends pre-collected sanitized summary to Codex"
 echo "[dry-run] workdir: $WORKDIR"
 echo "[dry-run] add_dirs: $ADD_DIRS"
 echo "[dry-run] sandbox: $SANDBOX"
+echo "[dry-run] VALIDATION: OK sandbox locked read-only"
+echo "[dry-run] VALIDATION: OK add_dirs empty"
 echo
 
 AGENT_VENDOR=codex \
@@ -250,19 +311,29 @@ VALIDATION_RC=$?
 
 AFTER_RULEBOOK_MTIME="$(mtime_or_zero "$RULEBOOK")"
 AFTER_LOG_MTIME="$(mtime_or_zero "$LEGACY_LOG")"
+AFTER_RULEBOOK_HASH="$(hash_or_zero "$RULEBOOK")"
+AFTER_LOG_HASH="$(hash_or_zero "$LEGACY_LOG")"
 
 if [ "$AFTER_RULEBOOK_MTIME" != "$BEFORE_RULEBOOK_MTIME" ]; then
   echo "[dry-run] VALIDATION: FAIL rulebook mtime changed ($BEFORE_RULEBOOK_MTIME -> $AFTER_RULEBOOK_MTIME)"
   VALIDATION_RC=2
+elif [ "$AFTER_RULEBOOK_HASH" != "$BEFORE_RULEBOOK_HASH" ]; then
+  echo "[dry-run] VALIDATION: FAIL rulebook hash changed"
+  VALIDATION_RC=2
 else
   echo "[dry-run] VALIDATION: OK rulebook unchanged"
+  echo "[dry-run] VALIDATION: OK rulebook hash unchanged"
 fi
 
 if [ "$AFTER_LOG_MTIME" != "$BEFORE_LOG_MTIME" ]; then
   echo "[dry-run] VALIDATION: FAIL legacy log mtime changed ($BEFORE_LOG_MTIME -> $AFTER_LOG_MTIME)"
   VALIDATION_RC=2
+elif [ "$AFTER_LOG_HASH" != "$BEFORE_LOG_HASH" ]; then
+  echo "[dry-run] VALIDATION: FAIL legacy log hash changed"
+  VALIDATION_RC=2
 else
   echo "[dry-run] VALIDATION: OK legacy log unchanged"
+  echo "[dry-run] VALIDATION: OK legacy log hash unchanged"
 fi
 
 exit "$VALIDATION_RC"

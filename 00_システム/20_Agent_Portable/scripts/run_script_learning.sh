@@ -22,7 +22,8 @@ NOTIFY="$SCRIPT_DIR/discord_notify.sh"
 PROMPT_FILE="$SCRIPT_DIR/script_learning.md"
 LOG_FILE="$SCRIPT_DIR/script_learning.log"
 AGENT_VENDOR_NAME="${SCRIPT_LEARNING_AGENT_VENDOR:-claude}"
-CODEX_DRYRUN="${SCRIPT_LEARNING_CODEX_DRYRUN:-$SCRIPT_DIR/run_script_learning_codex_dryrun.sh}"
+DEFAULT_CODEX_DRYRUN="$SCRIPT_DIR/run_script_learning_codex_dryrun.sh"
+CODEX_DRYRUN="$DEFAULT_CODEX_DRYRUN"
 # 成果物＝台本執筆ルールブック。これが更新されれば「学習が効いた」とみなす。
 RULEBOOK="/Users/kojinn/2nd-Brain/03_知識ベース/YouTube・コンテンツ制作/台本執筆ルール.md"
 LABEL="script-learning"
@@ -36,21 +37,17 @@ notify() {
   fi
 }
 
-# --- 前提チェック（導線が壊れていたら即・自己申告） ---
-if [ ! -r "$PROMPT_FILE" ]; then
-  notify "🕳️ [${LABEL}] プロンプト($PROMPT_FILE)が読めず学習ジョブを開始できなかった（自己申告）。"
-  exit 1
-fi
-PROMPT="$(cat "$PROMPT_FILE")"
-if [ -z "$(printf '%s' "$PROMPT" | tr -d '[:space:]')" ]; then
-  notify "🕳️ [${LABEL}] プロンプト本文が空だった（$PROMPT_FILE）。学習ジョブ中止（自己申告）。"
-  exit 1
-fi
-
 case "$AGENT_VENDOR_NAME" in
   claude)
     ;;
   codex)
+    if [ "${SCRIPT_LEARNING_CODEX_DRYRUN:-}" != "" ]; then
+      if [ "${SCRIPT_LEARNING_ALLOW_CODEX_DRYRUN_OVERRIDE:-}" != "1" ]; then
+        notify "🕳️ [${LABEL}] SCRIPT_LEARNING_CODEX_DRYRUN override が未承認のためCodex dry-runを中止（自己申告）。"
+        exit 64
+      fi
+      CODEX_DRYRUN="$SCRIPT_LEARNING_CODEX_DRYRUN"
+    fi
     if [ ! -x "$CODEX_DRYRUN" ]; then
       notify "🕳️ [${LABEL}] SCRIPT_LEARNING_AGENT_VENDOR=codex だが dry-run入口($CODEX_DRYRUN)が無い/実行不可。Codex実行を中止（自己申告）。"
       exit 1
@@ -63,6 +60,17 @@ case "$AGENT_VENDOR_NAME" in
     exit 64
     ;;
 esac
+
+# --- Claude本番経路の前提チェック（Codex dry-run経路では使わない） ---
+if [ ! -r "$PROMPT_FILE" ]; then
+  notify "🕳️ [${LABEL}] プロンプト($PROMPT_FILE)が読めず学習ジョブを開始できなかった（自己申告）。"
+  exit 1
+fi
+PROMPT="$(cat "$PROMPT_FILE")"
+if [ -z "$(printf '%s' "$PROMPT" | tr -d '[:space:]')" ]; then
+  notify "🕳️ [${LABEL}] プロンプト本文が空だった（$PROMPT_FILE）。学習ジョブ中止（自己申告）。"
+  exit 1
+fi
 
 if [ ! -x "$RUNNER" ]; then
   notify "🕳️ [${LABEL}] claude_run.sh が無い/実行不可。学習ジョブ中止（自己申告）。"
