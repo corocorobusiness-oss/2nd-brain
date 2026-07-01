@@ -16,6 +16,7 @@ JST = timezone(timedelta(hours=9))
 MODERN_MEMO_HEADING = "## 💡 メモ / アイデア"
 LEGACY_MEMO_HEADING = "### 💡 思いつきメモ / Inbox"
 TARGET_HEADINGS = (MODERN_MEMO_HEADING, LEGACY_MEMO_HEADING)
+DATE_PATTERN = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 
 
 class UserError(Exception):
@@ -78,6 +79,8 @@ def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
 
 
 def checked_date(value: str) -> str:
+    if not DATE_PATTERN.match(value):
+        raise UserError(f"--date must be YYYY-MM-DD: {value}")
     try:
         datetime.strptime(value, "%Y-%m-%d")
     except ValueError as exc:
@@ -133,7 +136,7 @@ def find_target_heading(lines: list[str]) -> tuple[int | None, str | None]:
 
 def next_heading_index(lines: list[str], heading_index: int) -> int:
     for index in range(heading_index + 1, len(lines)):
-        if lines[index].lstrip().startswith("#"):
+        if lines[index].startswith("#"):
             return index
     return len(lines)
 
