@@ -166,3 +166,63 @@ wrapper検証:
 - `WATCHLIST_UPDATE` が正常に出る
 - wrapper検証が `VALIDATION: OK WATCHLIST_UPDATE` になる
 - Discord提案が出てもdry-runでは投稿されないことを再確認する
+
+## Step9メモ: Codex Desktop内での検証用dry-run成功
+
+2026-07-01に、Codex Desktop内の入れ子sandbox問題を切り分けるため、検証限定で `THREAD_FORMAT_CODEX_SANDBOX=danger-full-access` を指定してdry-runを再実行した。
+
+前提:
+
+- 本番設定ではない
+- launchdは未変更
+- 本番スクリプト `run_thread_format_learning.sh` は未変更
+- dry-run wrapperによりウォッチリスト更新・Discord投稿・永続ログ追記は停止
+
+結果:
+
+- exit code: `0`
+- `WATCHLIST_UPDATE`: 出力あり
+- `DISCORD_PROPOSAL`: 出力あり
+- wrapper検証:
+  - `VALIDATION: OK WATCHLIST_UPDATE lines=3`
+  - `VALIDATION: OK DISCORD_PROPOSAL chars=410 not posted`
+
+Codexの出力要旨:
+
+- コーパス `.md` 37本を確認
+- 昇格候補1件
+- 監視中3件
+- dry-runなのでDiscord投稿はなし
+
+非更新確認:
+
+- `/Users/kojinn/Projects/youtube/スレコーパス/_学習ウォッチリスト.md` の更新日時は `2026-06-24 14:16:27` のまま
+- `/Users/kojinn/.claude/scripts/thread_format_learning.log` の更新日時は `2026-06-28 22:00:05` のまま
+- 監視中リストも既存2件のまま
+
+判断:
+
+Codexは `thread-format-learning` の構造化出力を作れる。dry-run wrapperの安全ガードも有効。
+
+ただし、`danger-full-access` はCodex Desktop内の入れ子sandbox回避の検証用であり、本番移行の根拠にはしない。次の本番移行前ゲートは、通常Terminalまたはlaunchd相当の外側環境で `read-only` sandboxのまま同じdry-runが成功すること。
+
+## Step10メモ: 外側Terminal実行の権限状態
+
+Codex Desktop外の通常Terminal相当で `read-only` dry-runを実行しようとしたが、この環境からは実施できなかった。
+
+試したこと:
+
+- `osascript` でTerminalにdry-runコマンドを渡す
+  - 結果: Codex側のサンドボックス方針で拒否
+- Computer UseでTerminalアプリを操作する
+  - 結果: Terminalアプリ操作は安全上許可されていない
+
+判断:
+
+このCodexセッション内でできる検証はここまで。次の本番移行前ゲートは、祐馬さん側の通常Terminal、または別の高権限ローカル実行環境で以下を実行し、`read-only` のまま `VALIDATION: OK WATCHLIST_UPDATE` が出ること。
+
+```bash
+THREAD_FORMAT_CODEX_SANDBOX=read-only /Users/kojinn/.claude/scripts/run_thread_format_learning_codex_dryrun.sh
+```
+
+このゲートが通るまでは、launchdや本番 `run_thread_format_learning.sh` はCodexへ切り替えない。
