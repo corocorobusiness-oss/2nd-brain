@@ -126,8 +126,43 @@ LaunchAgentsとして存在する自動化29件を確認した。現時点では
 
 未実施:
 
-- `run_thread_format_learning_codex_dryrun.sh` の本番相当dry-run実行
+- ~~`run_thread_format_learning_codex_dryrun.sh` の本番相当dry-run実行~~ → 実施済み。結果は下記。
 
 理由:
 
 Codex Desktop内から内側Codex CLIを起動すると入れ子sandbox問題が出るため、この検証は通常Terminalまたはlaunchd相当の外側環境で行う。
+
+## Step8メモ: dry-run実行結果
+
+2026-07-01に `run_thread_format_learning_codex_dryrun.sh` を実行した。
+
+結果:
+
+- exit code: `2`
+- ウォッチリスト更新: なし
+- Discord投稿: なし
+- 永続ログ追記: なし
+- `WATCHLIST_UPDATE`: 出力なし
+- `DISCORD_PROPOSAL`: 出力なし
+
+Codexの出力要旨:
+
+- 必須Readができなかったためfail-close
+- 正本・ウォッチリスト・コーパスを検証できていない状態でマーカーを出すと危険なので停止
+- ローカル読取の実行環境で `sandbox-exec: sandbox_apply: Operation not permitted`
+
+wrapper検証:
+
+- `WATCHLIST_UPDATE` が無いため `VALIDATION: FAIL WATCHLIST_UPDATE block missing`
+- `DISCORD_PROPOSAL` が無いため `VALIDATION: OK DISCORD_PROPOSAL absent, no post would be made`
+
+判断:
+
+これは本番移行NG。だが、失敗時に誤った監視リスト更新やDiscord投稿をしなかったため、dry-run入口の安全ガードは有効。
+
+次に進む条件:
+
+- Codexが必須ファイルを読める外側環境で再dry-runする
+- `WATCHLIST_UPDATE` が正常に出る
+- wrapper検証が `VALIDATION: OK WATCHLIST_UPDATE` になる
+- Discord提案が出てもdry-runでは投稿されないことを再確認する

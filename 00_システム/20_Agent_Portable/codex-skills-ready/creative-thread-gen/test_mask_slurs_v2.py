@@ -182,6 +182,7 @@ class MaskSlursV2Test(unittest.TestCase):
         self.assertIsNotNone(spec)
         self.assertIsNotNone(spec.loader)
         module = importlib.util.module_from_spec(spec)
+        sys.modules[spec.name] = module
         spec.loader.exec_module(module)
 
         masked, count = module.mask(f"{TERM_A}\n{EXCLUDED}\n")
