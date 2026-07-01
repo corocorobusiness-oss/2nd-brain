@@ -114,8 +114,11 @@ def append_bullets(
     section_lines = [normalize_line(line) for line in lines[heading_index + 1 : end_index]]
     existing = set(section_lines)
 
-    if check_duplicates and bullets and all(bullet in existing for bullet in bullets):
-        return content if content.endswith(("\n", "\r\n")) else content + newline, heading or DEFAULT_HEADINGS[0], True
+    if check_duplicates:
+        missing_bullets = [bullet for bullet in bullets if bullet not in existing]
+        if not missing_bullets:
+            return content if content.endswith(("\n", "\r\n")) else content + newline, heading or DEFAULT_HEADINGS[0], True
+        bullets = missing_bullets
 
     empty_bullet_re = re.compile(r"^\s*-\s*$")
     for index in range(heading_index + 1, end_index):
