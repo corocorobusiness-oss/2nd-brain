@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import subprocess
+import shutil
 import sys
 import tempfile
 import unittest
@@ -23,6 +24,7 @@ TEMPLATE_TEXT = """# {{date}}
 class DailyNoteAppendV2Test(unittest.TestCase):
     def make_root(self) -> Path:
         root = Path(tempfile.mkdtemp(prefix="daily-note-v2-"))
+        self.addCleanup(shutil.rmtree, root, ignore_errors=True)
         template = root / "00_システム" / "Templates" / "Daily_Note_Template.md"
         template.parent.mkdir(parents=True)
         template.write_text(TEMPLATE_TEXT, encoding="utf-8")
