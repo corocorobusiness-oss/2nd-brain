@@ -8,6 +8,7 @@
 - Claude Codeは補助・退避先
 - Obsidian / Second Brainが正本
 - `agent-run` と既存自動化ジョブは段階移行中。Codex切替完了とは扱わない
+- Codexメイン・ベンダー非依存化の移行設計: `00_システム/20_Agent_Portable/specs/codex-main-vendor-neutral-migration.md`
 - 重要な決定、ルール、学びは最後にSecond Brainへ戻す
 
 ## 今の最優先

@@ -43,7 +43,7 @@ AIエージェントが会話を通じて学んだこと。次回以降に活か
 - 月初リフレッシュルール制定（カレンダー確定→ボード一括入力＋先月分は前月カレンダー「最終実績」へ転記＋当月ネタチャンネル一括作成）
 - **ネタチャンネル内の指示はそのネタが対象**（#0610-千利休で「台本」→龍馬で進めてストップされた反省。chat_idを必ずチャンネル構成と照合）
 - Discordモデル切り替え自動化を廃止→ターミナル`/model`手動運用に変更（ユーザー判断）
-- Codex: Claude Code x Codex x Obsidian運用を「Claude Codeメイン / Codex実行補助 / Obsidian正本」に更新。共通仕様 `00_システム/20_Agent_Portable/specs/claude-code-codex-obsidian-operation.md` を追加し、AGENTS.md / CLAUDE.md / workflows.md / Agent Portable READMEへ反映。
+- Codex: 当時の記録として、Claude Code x Codex x Obsidian運用を「Claude Codeメイン / Codex実行補助 / Obsidian正本」に更新。2026-07-01に現在方針は「Codexメイン移行フェーズ1 / Claude Code補助・退避先 / Obsidian正本」へ更新済み。共通仕様 `00_システム/20_Agent_Portable/specs/claude-code-codex-obsidian-operation.md` を追加し、AGENTS.md / CLAUDE.md / workflows.md / Agent Portable READMEへ反映。
 - Codex: 24時間AIエージェント運用の管制塔として `06_エージェント運用/` を新設。起動時は `06_エージェント運用/00_司令塔/NOW.md` を確認し、未処理・確認待ち・実行キュー・ヘルスチェック・判断ログをここで管理する方針に更新。
 
 ## 2026-06-27
