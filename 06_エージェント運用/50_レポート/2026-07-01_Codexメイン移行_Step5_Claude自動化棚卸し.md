@@ -226,3 +226,38 @@ THREAD_FORMAT_CODEX_SANDBOX=read-only /Users/kojinn/.claude/scripts/run_thread_f
 ```
 
 このゲートが通るまでは、launchdや本番 `run_thread_format_learning.sh` はCodexへ切り替えない。
+
+## Step11メモ: 外側相当 read-only dry-run 成功
+
+2026-07-01に、通常権限相当で `read-only` dry-runを実行した。
+
+実行コマンド:
+
+```bash
+THREAD_FORMAT_CODEX_SANDBOX=read-only /Users/kojinn/.claude/scripts/run_thread_format_learning_codex_dryrun.sh
+```
+
+結果:
+
+- exit code: `0`
+- `WATCHLIST_UPDATE`: 出力あり
+- `DISCORD_PROPOSAL`: 出力あり
+- wrapper検証:
+  - `VALIDATION: OK WATCHLIST_UPDATE lines=3`
+  - `VALIDATION: OK DISCORD_PROPOSAL chars=409 not posted`
+
+Codexの出力要旨:
+
+- 正本・ウォッチリスト・スレコーパス配下の `.md` 37件を確認
+- 昇格候補1件
+- 監視中3件
+
+非更新確認:
+
+- `/Users/kojinn/Projects/youtube/スレコーパス/_学習ウォッチリスト.md` の更新日時は `2026-06-24 14:16:27` のまま
+- `/Users/kojinn/.claude/scripts/thread_format_learning.log` の更新日時は `2026-06-28 22:00:05` のまま
+- 実ウォッチリストは既存2件のまま
+
+判断:
+
+本番切替前ゲートは通過。次は launchd ではなく、本番wrapperに `THREAD_FORMAT_AGENT_VENDOR` のような明示的な切替変数を入れ、デフォルトはClaude維持のまま、手動実行だけCodexへ切り替えられる形にする。

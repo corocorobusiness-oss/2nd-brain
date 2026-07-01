@@ -87,6 +87,7 @@ python3 00_システム/20_Agent_Portable/codex-skills-ready/creative-thread-gen
 - 直接実行で `--help` が表示できる
 - import API `mask(text)` が旧版と同じ形式で使える
 - 現行入口 `mask_slurs.py` と `mask_slurs_v2.py` のSHA256が一致する
+- `/tmp` 影環境比較で、旧版・現行入口・v2の出力SHA256が一致する
 
 ## 差し替え結果
 現行入口の差し替えでは、次を満たした。
