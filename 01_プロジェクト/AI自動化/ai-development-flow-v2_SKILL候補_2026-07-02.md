@@ -5,7 +5,7 @@
 ```markdown
 ---
 name: ai-development-flow
-description: Use when the user asks Codex to build, design, automate, or improve a mechanism, service, workflow, tool, script, or AI-agent system, especially when they say "仕組みを作る", "開発して", "自動化して", "スキル化して", "ちゃんと設計して", or want development to proceed from planning through implementation, verification, maintenance, and completion judgment. When explicitly asked to turn a conversation into a development request, first create a plan-only brief, then route it through the user's Obsidian source-of-truth AI development flow with risk classification, evidence gates, independent review, and human approval for dangerous operations.
+description: Use when the user explicitly asks Codex to turn a conversation into a development brief, says "これ開発依頼にして", "この話を開発テンプレに落として", or "ai-development-flowに回して", or asks to run a defined mechanism, service, workflow, tool, script, skill, or AI-agent project through the user's AI development flow. Ambiguous automation requests such as "自動化したい", "仕組み化したい", or "automate this" remain consultation / automation-architect routing unless the user explicitly asks for a development brief or implementation flow. The first brief is plan-only and never permits implementation or dangerous operations.
 ---
 
 # AI Development Flow
@@ -22,7 +22,9 @@ Read these files before planning non-trivial work:
 2. `/Users/kojinn/2nd-Brain-master/01_プロジェクト/AI自動化/AI開発フロー_標準テンプレ.md`
 3. `/Users/kojinn/2nd-Brain-master/01_プロジェクト/AI自動化/AIエージェント編成ルール_天才会議_2026-07-01.md`
 
-If any file is missing or appears stale, say so and continue with the available files.
+The Phase -1 intake source of truth is section `2.1 AI開発依頼ヒアリング補助MVP` in file 1.
+
+If any file is missing or appears stale, say so. Continue only for consultation or plan-only intake; do not implement, reflect source-of-truth changes, or perform dangerous operations until the source files are available and current.
 
 ## Phase -1: Plan-Only Intake
 
@@ -33,13 +35,14 @@ Immediate triggers:
 - 「この話を開発テンプレに落として」
 - 「ai-development-flowに回して」
 
-Ambiguous automation wording such as 「自動化したい」 or 「仕組み化したい」 should first be treated as an `automation-architect` style consultation. Ask once whether to keep consulting or turn it into a development brief for `ai-development-flow`.
+Ambiguous automation wording such as 「自動化したい」 or 「仕組み化したい」 should first stay on the `automation-architect` consultation route. Ask once whether to keep consulting or turn it into a development brief for `ai-development-flow`.
 
 The intake brief must:
 - compress the conversation into a brief
 - ask only decision-critical questions
 - keep unknowns as `未確認`
 - split unknowns into `ブロッカー / 後で確認 / 対象外`
+- preserve field evidence states: `ユーザー確認済み / AI要約・最終確認待ち / 未確認 / 対象外`
 - surface dangerous trigger candidates
 - end with `handoff_mode: plan_only（設計まで。実装・書き込みなし）`
 
@@ -51,11 +54,11 @@ After the user approves the brief, respond:
 受け取った承認: 依頼文承認のみ
 今回承認された実装開始: なし
 今回承認された危険操作: なし
-危険トリガー候補: あり/なし
+危険トリガー候補: あり（具体名）/ なし / 未確認
 次に出すもの: 案件分類、Goal、設計、実装計画
 ```
 
-Then run only classification, Goal fixing, design, and implementation planning. Stop before implementation unless a separate implementation-start approval is given.
+Then run only classification, Goal fixing, design, and implementation planning. If `handoff_mode: plan_only` is present, do not implement even when the work looks light and safe. Stop before implementation unless a separate implementation-start approval is given.
 
 ## Operating Rules
 
@@ -87,7 +90,7 @@ Valid implementation-start approval should identify:
 触ってはいけない場所:
 検証方法:
 戻し方:
-危険操作は含まない: YES/NO
+危険操作は含まない: YESのみ有効（NOの場合、危険操作は別途「危険操作承認」が必要）
 ```
 
 `OK`, `いいよ`, or `承認` alone never counts as dangerous-operation approval.
@@ -107,6 +110,8 @@ Valid dangerous-operation approval must identify:
 二重実行防止:
 ```
 
+If any required item is missing, the dangerous-operation approval is invalid.
+
 If the approval text is ambiguous, treat it as the least-powerful approval that fits the immediate prompt.
 
 ## Required First Output
@@ -122,7 +127,7 @@ Before implementation, produce:
 7. Implementation plan.
 8. Verification evidence to collect.
 
-If the work is clearly light and safe, keep this short and proceed.
+If the work is clearly light and safe, keep this short and proceed. This does not apply to `handoff_mode: plan_only`; plan-only always stops before implementation.
 
 ## Step Execution Policy
 

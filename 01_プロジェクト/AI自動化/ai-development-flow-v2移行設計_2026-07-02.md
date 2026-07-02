@@ -67,6 +67,9 @@ V2候補文面:
 - `01_プロジェクト/AI自動化/ai-development-flow-v2_SKILL候補_2026-07-02.md`
 - `01_プロジェクト/AI自動化/ai-development-flow-v2_openai.yaml候補_2026-07-02.md`
 
+V2候補レビュー:
+- `01_プロジェクト/AI自動化/ai-development-flow-v2候補レビュー_結果_2026-07-02.md`
+
 主なP1:
 - `handoff_mode: plan_only` 承認後に、AI自己判断で実装へ進む余地がある
 - 危険操作承認として有効な文面が未固定
@@ -77,6 +80,8 @@ V2候補文面:
 - 運用記録の更新ルールがステータス別に分かれていない
 - ヒアリング補助ルールの正本が分散している
 - 発動トリガーが広すぎる
+- 危険操作承認フォーマットが正本と候補でズレている
+- `handoff_mode: plan_only` でも軽い案件なら実装してよいように読める
 
 ## 移行ステータス
 
@@ -124,6 +129,13 @@ V2移行では、「作った」「差し替えた」「試用中」「正式採
 - 原則はVault内の候補文面ファイル、または `/tmp/ai-development-flow-v2-candidate-YYYYMMDD-HHMMSS/`
 - `/Users/kojinn/agent-skills/ai-development-flow/` 配下には、未採用の `SKILL.md` 候補を置かない
 - `legacy/` 配下にも、runtimeが誤探索しそうな未採用 `SKILL.md` を置かない
+
+候補本文の扱い:
+- 候補Markdown内の ` ```markdown ` / ` ```yaml ` フェンス内だけを候補本文とする
+- フェンス行、説明文、レビュー記録は反映対象に含めない
+- 反映前に候補本文を一時ファイルへ抽出し、候補本文hashを記録する
+- 反映後に現行 `SKILL.md` / `agents/openai.yaml` のhashと候補本文hashを比較する
+- hashが一致しない場合は `V2反映済み` に進めない
 
 この時点では `ai-development-flow` はまだV1稼働中。
 
@@ -245,7 +257,7 @@ Phase -1の正本は `AI開発依頼テンプレ_完全版.md` の `## 2.1 AI開
 - 「この話を開発テンプレに落として」
 - 「ai-development-flowに回して」
 
-確認してから発動する例:
+相談導線に残し、希望があればブリーフ化する例:
 - 「仕組み化したい」
 - 「自動化したい」
 - 「これ作れない？」
@@ -351,15 +363,18 @@ V2では承認を3つに分ける。
 
 ```text
 危険操作承認:
+承認者:
+承認日時:
 対象操作:
 対象ファイル/対象サービス:
 差分:
 影響範囲:
 戻し方:
 実行タイミング:
+二重実行防止:
 ```
 
-上記が欠ける場合は、最小権限に倒して「依頼文承認以下」として扱う。
+上記が1つでも欠ける場合は、最小権限に倒して「依頼文承認以下」として扱う。
 
 ## 旧版退避設計
 
@@ -477,7 +492,7 @@ Vault側には、`codex-skills-ready` へのライブ同期ではなく、hash/m
 例:
 
 ```text
-Use $ai-development-flow to turn vague system-building requests into a plan-only development brief when needed, then run risk classification, goal fixing, bounded repair loops, evidence gates, review, and completion checks.
+Use $ai-development-flow to turn explicit requests for a development brief into a plan-only brief, then run risk classification, fixed goal, bounded repair loops, evidence gates, independent review, and completion checks. Ambiguous automation requests remain consultation unless the user explicitly asks for a development brief or implementation flow. Plan-only approval never permits implementation, production writes, external sending, deletion, automation enablement, or dangerous operations.
 ```
 
 ## 検証設計
