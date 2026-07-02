@@ -1,0 +1,17 @@
+{
+  "months": {
+    "2026-06": {
+      "status": "WARN",
+      "last_run_at": "2026-07-02T17:40:07.469088+09:00",
+      "report": "/Users/kojinn/2nd-Brain-master/02_経営/帳簿/レポート/月次経理独立再検証_2026-06.md",
+      "freee_export": "/Users/kojinn/2nd-Brain-master/02_経営/帳簿/freee_export/2026-07-01",
+      "finding_counts": {
+        "OK": 6,
+        "WARN": 3,
+        "FAIL": 0
+      }
+    }
+  },
+  "last_month": "2026-06",
+  "last_status": "WARN"
+}

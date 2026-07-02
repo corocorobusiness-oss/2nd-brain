@@ -1,7 +1,7 @@
 #!/bin/bash
 # ============================================================
 # vault-snapshot.sh のlaunchd用ラッパー（毎週日曜 4:30）
-#   launchd直のbashはGoogle Driveを読めない（TCC）ので、
+#   launchd直のbashはGoogle Driveの証憑フォルダを読めない（TCC）場合があるので、
 #   まず直接実行を試し、ダメなら agent-run 経由のClaude（Full Disk Access持ち）で実行。
 # ============================================================
 export HOME="/Users/kojinn"
@@ -16,7 +16,9 @@ AGENT_RUN="$HOME/agent-adapters/bin/agent-run"
 echo "$(date): start" >> "$LOG"
 
 # 1) 直接（TCCが許す環境ならこれで済む）
-if ls "$HOME/Library/CloudStorage/GoogleDrive-corocoro.business@gmail.com/マイドライブ/2nd-Brain" >/dev/null 2>&1; then
+if [ -s "$HOME/2nd-Brain-master/CLAUDE.md" ] \
+  && ls "$HOME/Library/CloudStorage/GoogleDrive-corocoro.business@gmail.com/マイドライブ/経費精算" >/dev/null 2>&1 \
+  && ls "$HOME/Library/CloudStorage/GoogleDrive-corocoro.business@gmail.com/マイドライブ/売上証憑" >/dev/null 2>&1; then
   bash "$SCRIPT" direct >> "$LOG" 2>&1
   exit $?
 fi

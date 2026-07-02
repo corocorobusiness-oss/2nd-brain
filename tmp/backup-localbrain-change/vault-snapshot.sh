@@ -1,9 +1,8 @@
 #!/bin/bash
 # ============================================================
 # Vault＋経費レシートのローカルスナップショット（Google喪失対策）
-#   2nd-Brain と 経費精算（電子帳簿保存法の証憑正本）はGoogleアカウントの
-#   中にしかない＝アカウント凍結・乗っ取りで全滅するsystemicリスクがある。
-#   このスクリプトはその2つを ~/claude-backups/ にtarで写し取る。
+#   2nd-BrainはMacローカル正本、経費精算/売上証憑はGoogle Drive正本として
+#   ~/claude-backups/ にtarで写し取る。
 #   秘密情報は含まないが事業データなので chmod 600。
 #
 #   重要な制約（ツバキ検証 2026-06-12）:
@@ -29,6 +28,9 @@ TMP_OUT="$OUT.part"
 NOTIFY="$HOME/.claude/scripts/discord_notify.sh"
 STATE="$HOME/.claude/scripts/vault-snapshot-state.json"
 DRIVE_ROOT="$HOME/Library/CloudStorage/GoogleDrive-corocoro.business@gmail.com/マイドライブ"
+VAULT_SRC="$HOME/2nd-Brain-master"
+VAULT_PARENT="${VAULT_SRC%/*}"
+VAULT_BASENAME="${VAULT_SRC##*/}"
 # 復元演習（柱③）用 manifest: 全ファイルのsha256をtar内に焼き込む。
 # 月次のrestore-drill.shが/tmp展開してこれと照合し「中身の正しさ」を検査する。
 MANIFEST_DIR="$BACKUP_DIR/.manifest"
@@ -57,8 +59,16 @@ trap 'alarm "ジョブが予期せず異常終了（行 $LINENO）"' ERR
 mkdir -p "$BACKUP_DIR" "$ARCHIVE_DIR"
 
 # --- 読めるか先に確認（TCCブロックならここで即わかる）---
-if ! ls "$DRIVE_ROOT/2nd-Brain" >/dev/null 2>&1; then
-  alarm "Driveが読めない（TCC）。agent-run経由で再実行が必要"
+if [ ! -s "$VAULT_SRC/CLAUDE.md" ]; then
+  alarm "ローカル2nd-Brain正本が読めない: $VAULT_SRC"
+  exit 1
+fi
+if ! ls "$DRIVE_ROOT/経費精算" >/dev/null 2>&1; then
+  alarm "Driveの経費精算が読めない（TCC）。agent-run経由で再実行が必要"
+  exit 1
+fi
+if ! ls "$DRIVE_ROOT/売上証憑" >/dev/null 2>&1; then
+  alarm "Driveの売上証憑が読めない（TCC）。agent-run経由で再実行が必要"
   exit 1
 fi
 
@@ -69,25 +79,28 @@ PREV="$(ls -1t "$BACKUP_DIR"/vault-snapshot-*.tar.gz 2>/dev/null | grep -v "$STA
 #   FileProviderに実体化させる。同じ読みでsha256を計算しmanifestに焼く（柱③の照合台帳）。
 #   読めた件数=n / 読めなかった件数=fail。failは「バックアップから漏れる」ので警告。
 mkdir -p "$MANIFEST_DIR"
-MATERIALIZED=$(python3 - "$DRIVE_ROOT" "$MANIFEST" "$DRIVE_ROOT/2nd-Brain" "$DRIVE_ROOT/経費精算" "$DRIVE_ROOT/売上証憑" <<'PY'
+MATERIALIZED=$(python3 - "$MANIFEST" "$VAULT_SRC" "2nd-Brain" "$DRIVE_ROOT/経費精算" "経費精算" "$DRIVE_ROOT/売上証憑" "売上証憑" <<'PY'
 import os, sys, ctypes, hashlib
 # datalessファイルはそのまま読むとEDEADLKになる環境があるため、
 # 実体化ポリシーを明示ON（IOPOL_TYPE_VFS_MATERIALIZE_DATALESS_FILES=3, PROCESS=0, ON=2）
 ctypes.CDLL("/usr/lib/libSystem.dylib").setiopolicy_np(3, 0, 2)
-base, manifest_path = sys.argv[1], sys.argv[2]
+manifest_path = sys.argv[1]
+pairs = list(zip(sys.argv[2::2], sys.argv[3::2]))
 n = fail = 0
 with open(manifest_path, "w", encoding="utf-8") as mf:
-    for top in sys.argv[3:]:
+    for top, archive_prefix in pairs:
         for root, dirs, fs in os.walk(top):
             dirs[:] = [d for d in dirs if d != ".git"]
             for f in fs:
+                if f == ".git":
+                    continue
                 p = os.path.join(root, f)
                 try:
                     h = hashlib.sha256()
                     with open(p, "rb") as fh:
                         for chunk in iter(lambda: fh.read(1 << 20), b""):
                             h.update(chunk)
-                    rel = os.path.relpath(p, base)
+                    rel = os.path.join(archive_prefix, os.path.relpath(p, top)).replace(os.sep, "/")
                     # shasum -c はパスに改行があると壊れる。該当ファイルはmanifestから外す（存在チェックは鍵リストが受ける）
                     if "\n" in rel:
                         continue
@@ -116,8 +129,11 @@ fi
 # --- tar作成（manifestもtar内に焼き込む）---
 tar -czf "$TMP_OUT" \
   --exclude='.git' \
+  -s ",^${VAULT_BASENAME}$,2nd-Brain," \
+  -s ",^${VAULT_BASENAME}/,2nd-Brain/," \
+  -C "$VAULT_PARENT" \
+  "$VAULT_BASENAME" \
   -C "$DRIVE_ROOT" \
-  "2nd-Brain" \
   "経費精算" \
   "売上証憑" \
   -C "$MANIFEST_DIR" \

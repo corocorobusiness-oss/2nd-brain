@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>com.claude.monthly-accounting-recheck</string>
+
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/zsh</string>
+    <string>/Users/kojinn/2nd-Brain-master/02_経営/帳簿/scripts/run_monthly_accounting_recheck.sh</string>
+  </array>
+
+  <key>StartCalendarInterval</key>
+  <array>
+    <dict>
+      <key>Day</key>
+      <integer>1</integer>
+      <key>Hour</key>
+      <integer>11</integer>
+      <key>Minute</key>
+      <integer>5</integer>
+    </dict>
+    <dict>
+      <key>Day</key>
+      <integer>2</integer>
+      <key>Hour</key>
+      <integer>11</integer>
+      <key>Minute</key>
+      <integer>5</integer>
+    </dict>
+    <dict>
+      <key>Day</key>
+      <integer>3</integer>
+      <key>Hour</key>
+      <integer>11</integer>
+      <key>Minute</key>
+      <integer>5</integer>
+    </dict>
+    <dict>
+      <key>Day</key>
+      <integer>4</integer>
+      <key>Hour</key>
+      <integer>11</integer>
+      <key>Minute</key>
+      <integer>5</integer>
+    </dict>
+    <dict>
+      <key>Day</key>
+      <integer>5</integer>
+      <key>Hour</key>
+      <integer>11</integer>
+      <key>Minute</key>
+      <integer>5</integer>
+    </dict>
+  </array>
+
+  <key>StandardOutPath</key>
+  <string>/Users/kojinn/.claude/scripts/monthly_accounting_recheck.log</string>
+
+  <key>StandardErrorPath</key>
+  <string>/Users/kojinn/.claude/scripts/monthly_accounting_recheck-error.log</string>
+
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>PATH</key>
+    <string>/usr/local/bin:/usr/bin:/bin</string>
+  </dict>
+</dict>
+</plist>

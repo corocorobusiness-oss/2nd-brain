@@ -53,6 +53,7 @@
 ### 週次・月次
 - freee会計データへ書き込める自動化は原則 `weekly_accounting` の1系統だけ
 - 月次は `monthly_accounting` と `freee_export/` スナップショットでfreee正本を点検する
+- `scripts/monthly_accounting_recheck.py` は月次経理の独立再検証（READのみ）。月初1〜5日11:05に `com.claude.monthly-accounting-recheck` が起動し、日誌・freee_export・出前館PDF証憑を突合して `レポート/月次経理独立再検証_YYYY-MM.md` と `06_エージェント運用/30_ヘルスチェック/monthly_accounting_recheck_state.json` に記録する。launchdはGoogle Drive配下を直接読めないTCC制約があるため、直接実行で確認済みの証憑ファイル名/金額だけをVault内cacheに残して誤FAILを避ける
 - 経理系ジョブは二重計上防止のため、Watchtowerの自己修復対象に入れない
 
 ### kichoの扱い
