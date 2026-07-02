@@ -25,6 +25,7 @@ KEEP=4   # 週次なので約1ヶ月分
 STAMP="$(date '+%Y-%m-%d')"
 OUT="$BACKUP_DIR/vault-snapshot-$STAMP.tar.gz"
 TMP_OUT="$OUT.part"
+BUILD_TMP=""
 NOTIFY="$HOME/.claude/scripts/discord_notify.sh"
 STATE="$HOME/.claude/scripts/vault-snapshot-state.json"
 DRIVE_ROOT="$HOME/Library/CloudStorage/GoogleDrive-corocoro.business@gmail.com/マイドライブ"
@@ -50,6 +51,7 @@ alarm() {
 }
 quarantine_and_die() {
   mkdir -p "$QUARANTINE"
+  [ -n "${BUILD_TMP:-}" ] && rm -rf "$BUILD_TMP"
   [ -f "$TMP_OUT" ] && mv "$TMP_OUT" "$QUARANTINE/$(basename "$OUT").$(date +%H%M%S).bad"
   alarm "$1 → 新スナップショットを隔離。前回良品は無傷。"
   exit 1
@@ -74,60 +76,62 @@ fi
 
 PREV="$(ls -1t "$BACKUP_DIR"/vault-snapshot-*.tar.gz 2>/dev/null | grep -v "$STAMP" | head -1 || true)"
 
-# --- 事前実体化＋manifest生成: 全ファイルを読みながらsha256を記録 ---
+# --- 事前実体化: 全ファイルを先に読み、Driveのdatalessファイルを実体化 ---
 #   bsdtarはdatalessファイルでEDEADLK死するため、先に全ファイルをreadして
-#   FileProviderに実体化させる。同じ読みでsha256を計算しmanifestに焼く（柱③の照合台帳）。
+#   FileProviderに実体化させる。checksum manifestはtarへ実際に入った中身から後段で生成する。
 #   読めた件数=n / 読めなかった件数=fail。failは「バックアップから漏れる」ので警告。
 mkdir -p "$MANIFEST_DIR"
-MATERIALIZED=$(python3 - "$MANIFEST" "$VAULT_SRC" "2nd-Brain" "$DRIVE_ROOT/経費精算" "経費精算" "$DRIVE_ROOT/売上証憑" "売上証憑" <<'PY'
-import os, sys, ctypes, hashlib
+MATERIALIZED=$(python3 - "$VAULT_SRC" "$DRIVE_ROOT/経費精算" "$DRIVE_ROOT/売上証憑" <<'PY'
+import os, sys, ctypes
 # datalessファイルはそのまま読むとEDEADLKになる環境があるため、
 # 実体化ポリシーを明示ON（IOPOL_TYPE_VFS_MATERIALIZE_DATALESS_FILES=3, PROCESS=0, ON=2）
 ctypes.CDLL("/usr/lib/libSystem.dylib").setiopolicy_np(3, 0, 2)
-manifest_path = sys.argv[1]
-pairs = list(zip(sys.argv[2::2], sys.argv[3::2]))
 n = fail = 0
-with open(manifest_path, "w", encoding="utf-8") as mf:
-    for top, archive_prefix in pairs:
-        for root, dirs, fs in os.walk(top):
-            dirs[:] = [d for d in dirs if d != ".git"]
-            for f in fs:
-                if f == ".git":
-                    continue
-                p = os.path.join(root, f)
-                try:
-                    h = hashlib.sha256()
-                    with open(p, "rb") as fh:
-                        for chunk in iter(lambda: fh.read(1 << 20), b""):
-                            h.update(chunk)
-                    rel = os.path.join(archive_prefix, os.path.relpath(p, top)).replace(os.sep, "/")
-                    # shasum -c はパスに改行があると壊れる。該当ファイルはmanifestから外す（存在チェックは鍵リストが受ける）
-                    if "\n" in rel:
-                        continue
-                    mf.write(f"{h.hexdigest()}  {rel}\n")
-                    n += 1
-                except OSError:
-                    fail += 1
+for top in sys.argv[1:]:
+    for root, dirs, fs in os.walk(top):
+        dirs[:] = [d for d in dirs if d != ".git"]
+        for f in fs:
+            if f == ".git":
+                continue
+            p = os.path.join(root, f)
+            try:
+                with open(p, "rb") as fh:
+                    for _ in iter(lambda: fh.read(1 << 20), b""):
+                        pass
+                n += 1
+            except OSError:
+                fail += 1
 print(f"{n} {fail}")
 PY
 )
 MAT_OK="${MATERIALIZED% *}"; MAT_FAIL="${MATERIALIZED#* }"
-[ "$MAT_OK" != "0" ] && echo "🔏 manifest: ${MAT_OK}件をsha256記録（柱③復元演習の照合台帳）"
-[ "$MAT_FAIL" != "0" ] && alarm "読めずmanifestに載らなかったファイルが${MAT_FAIL}件ある（読めない＝バックアップから漏れる）"
-[ -s "$MANIFEST" ] || quarantine_and_die "manifest生成に失敗（空）"
+[ "$MAT_OK" != "0" ] && echo "📥 materialize: ${MAT_OK}件を読み取り（Drive実体化チェック）"
+[ "$MAT_FAIL" != "0" ] && alarm "読めず事前実体化できなかったファイルが${MAT_FAIL}件ある（読めない＝バックアップから漏れる）"
 
 # --- 会計の生命線（freee台帳）を同梱の準備: 存在すれば tar 引数に追記する ---
 #   tar は -C で基点を切り替えながら追加できる。台帳が無い時は黙って同梱しない
 #   （月次claude-backupにも入る二重経路なので、ここはあくまで頻度を上げる週次の上乗せ）。
 LEDGER_ARGS=()
+LEDGER_INCLUDED="no"
 if [ -f "$FREEE_LEDGER" ]; then
   LEDGER_ARGS=( -C "$FREEE_LEDGER_DIR" "$FREEE_LEDGER_NAME" )
+  LEDGER_INCLUDED="yes"
 else
   log_ledger_missing="yes"
 fi
 
-# --- tar作成（manifestもtar内に焼き込む）---
-tar -czf "$TMP_OUT" \
+# --- tar作成 ---
+#   1) payload tarを作る
+#   2) payload tarを一時展開する
+#   3) 展開された「実際にtarへ入った中身」からmanifestを生成する
+#   4) manifest込みで最終tarを作る
+# これにより、実行時刻だけが変わるstateファイルがmanifest作成後に更新されても照合が壊れない。
+BUILD_TMP="$(mktemp -d)"
+PAYLOAD_TAR="$BUILD_TMP/payload.tar.gz"
+SNAPSHOT_ROOT="$BUILD_TMP/root"
+mkdir -p "$SNAPSHOT_ROOT"
+
+tar -czf "$PAYLOAD_TAR" \
   --exclude='.git' \
   -s ",^${VAULT_BASENAME}$,2nd-Brain," \
   -s ",^${VAULT_BASENAME}/,2nd-Brain/," \
@@ -136,14 +140,52 @@ tar -czf "$TMP_OUT" \
   -C "$DRIVE_ROOT" \
   "経費精算" \
   "売上証憑" \
-  -C "$MANIFEST_DIR" \
-  "$MANIFEST_NAME" \
   ${LEDGER_ARGS[@]+"${LEDGER_ARGS[@]}"} || quarantine_and_die "tar作成失敗（exit $?）"
+
+tar -xzf "$PAYLOAD_TAR" -C "$SNAPSHOT_ROOT" || quarantine_and_die "manifest生成用のpayload展開に失敗"
+
+MANIFEST_COUNT=$(python3 - "$SNAPSHOT_ROOT" "$MANIFEST" <<'PY'
+import os, sys, hashlib
+root, manifest_path = sys.argv[1], sys.argv[2]
+n = 0
+with open(manifest_path, "w", encoding="utf-8") as mf:
+    for cur, dirs, fs in os.walk(root):
+        dirs[:] = [d for d in dirs if d != ".git"]
+        for f in fs:
+            if f in {".git", "_BACKUP_MANIFEST.sha256"}:
+                continue
+            p = os.path.join(cur, f)
+            try:
+                h = hashlib.sha256()
+                with open(p, "rb") as fh:
+                    for chunk in iter(lambda: fh.read(1 << 20), b""):
+                        h.update(chunk)
+                rel = os.path.relpath(p, root).replace(os.sep, "/")
+                # shasum -c はパスに改行があると壊れる。該当ファイルはmanifestから外す（存在チェックは鍵リストが受ける）
+                if "\n" in rel:
+                    continue
+                mf.write(f"{h.hexdigest()}  {rel}\n")
+                n += 1
+            except OSError:
+                pass
+print(n)
+PY
+)
+[ "$MANIFEST_COUNT" != "0" ] && echo "🔏 manifest: ${MANIFEST_COUNT}件をtar展開物からsha256記録（柱③復元演習の照合台帳）"
+[ -s "$MANIFEST" ] || quarantine_and_die "manifest生成に失敗（空）"
+
+FINAL_ENTRIES=( "2nd-Brain" "経費精算" "売上証憑" )
+[ "$LEDGER_INCLUDED" = "yes" ] && FINAL_ENTRIES+=( "$FREEE_LEDGER_NAME" )
+tar -czf "$TMP_OUT" \
+  -C "$SNAPSHOT_ROOT" \
+  "${FINAL_ENTRIES[@]}" \
+  -C "$MANIFEST_DIR" \
+  "$MANIFEST_NAME" || quarantine_and_die "manifest込みtar作成失敗（exit $?）"
 chmod 600 "$TMP_OUT"
 # manifestがtarに確実に入ったか（入ってないと復元演習が照合できない）
 tar -tzf "$TMP_OUT" | grep -qx "$MANIFEST_NAME" || quarantine_and_die "manifestがtarに焼かれていない"
 # 会計の生命線がtarに確実に入ったか（存在するのに入っていなければ隔離して大声で気づく）
-if [ -f "$FREEE_LEDGER" ]; then
+if [ "$LEDGER_INCLUDED" = "yes" ]; then
   tar -tzf "$TMP_OUT" | grep -qx "$FREEE_LEDGER_NAME" || quarantine_and_die "freee台帳（$FREEE_LEDGER_NAME）がtarに焼かれていない"
 fi
 
@@ -161,6 +203,8 @@ RESTORE_TMP="$(mktemp -d)"
 tar -xzf "$TMP_OUT" -C "$RESTORE_TMP" "2nd-Brain/CLAUDE.md" 2>/dev/null
 [ -s "$RESTORE_TMP/2nd-Brain/CLAUDE.md" ] || { rm -rf "$RESTORE_TMP"; quarantine_and_die "テスト復旧: 2nd-Brain/CLAUDE.md が読めない"; }
 rm -rf "$RESTORE_TMP"
+rm -rf "$BUILD_TMP"
+BUILD_TMP=""
 
 # --- 残存プレースホルダの数（tar後もdatalessなら同期不調のサイン）---
 DATALESS=$(python3 - "$DRIVE_ROOT/経費精算" <<'PY'
