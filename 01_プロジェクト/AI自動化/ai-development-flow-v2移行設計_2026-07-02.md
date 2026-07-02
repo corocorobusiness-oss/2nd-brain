@@ -806,7 +806,9 @@ V2反映:
 - V2候補レビューは実施済み。最終再レビューでP0なし/P1なし
 - legacy退避先ディレクトリは作成済み: `/Users/kojinn/agent-skills/ai-development-flow/legacy/v1_legacy_20260702-110614/`
 - `/Users/kojinn/agent-skills` への書き込み権限確認済み
-- V1退避hashは機械確認PASS。人間の `V1退避hash PASS` 確認待ち
+- V1退避hashは機械確認PASS。人間の `V1退避hash PASS` 確認済み
+- V2反映済み。候補本文hashと現行hashの一致PASS
+- V2反映記録: `01_プロジェクト/AI自動化/ai-development-flow-v2-reflect_20260702-112042.md`
 - dry-run 5ケースのうち、現時点では2ケースが未実施
 - OK文脈テストは未実施
 - リリース事故テストは未実施
@@ -815,13 +817,13 @@ V2反映:
 ## 現時点の判定
 
 P1修正反映後の判定:
-`V2設計P1修正済み / Phase A再レビューPASS / V2候補採用可 / V1退避済み`
+`V2設計P1修正済み / Phase A再レビューPASS / V2候補採用可 / V1退避済み / V2反映済み`
 
-V2反映・試用開始・正式採用はまだ不可。
+V2試用開始・正式採用はまだ不可。
 
-次は人間が `V1退避hash PASS` を確認する。これを確認するまで、V2反映ゲートへ進まない。
+次は runtime / dry-run gate を実施する。これを通すまで、V2試用開始へ進まない。
 
 現時点のステータス:
-`V1稼働中 / V2候補採用可 / V1退避済み / V1退避hash PASS確認待ち`
+`V2反映済み / runtime・dry-run gate待ち / V2正式採用前`
 
 まだ `V2正式採用・移行完了` ではない。

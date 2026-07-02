@@ -84,10 +84,18 @@ SYMLINK_OK
 
 ## 運用正本hash
 
+以下はV1退避実行時点のhash。
+
 ```text
 243830e9f2c719ba8f4e2570f9507b49a19efef085ba56ba850d4c853bb48bc3  01_プロジェクト/AI自動化/AI開発依頼テンプレ_完全版.md
 9189e83676f61b3b693ee7ed027aae32ed8b2bbc213ae650f093341aa77259c1  01_プロジェクト/AI自動化/AI開発フロー_標準テンプレ.md
 3710259f36470522769a13c01d9b46ad6f9fda001fe435a902540002ca2776c9  01_プロジェクト/AI自動化/ai-development-flow-v2移行設計_2026-07-02.md
+```
+
+退避後、移行設計に現在地を追記した後のhash:
+
+```text
+edcd3e844a7d40c6d34a64b7956a083fd877c7749ef55ba41f54622c89ecb78c  01_プロジェクト/AI自動化/ai-development-flow-v2移行設計_2026-07-02.md
 ```
 
 ## 現時点
