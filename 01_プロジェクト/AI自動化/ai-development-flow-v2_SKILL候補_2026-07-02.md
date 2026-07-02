@@ -2,7 +2,7 @@
 
 > 候補ファイル。現行 `/Users/kojinn/agent-skills/ai-development-flow/SKILL.md` にはまだ反映しない。
 
-```markdown
+````markdown
 ---
 name: ai-development-flow
 description: Use when the user explicitly asks Codex to turn a conversation into a development brief, says "これ開発依頼にして", "この話を開発テンプレに落として", or "ai-development-flowに回して", or asks to run a defined mechanism, service, workflow, tool, script, skill, or AI-agent project through the user's AI development flow. Ambiguous automation requests such as "自動化したい", "仕組み化したい", or "automate this" remain consultation / automation-architect routing unless the user explicitly asks for a development brief or implementation flow. The first brief is plan-only and never permits implementation or dangerous operations.
@@ -181,4 +181,4 @@ When this skill is used as the first real case for the new AI development flow, 
 - improvements for the template or skill
 
 Store durable process changes in the Obsidian source files, not only in this skill.
-```
+````
