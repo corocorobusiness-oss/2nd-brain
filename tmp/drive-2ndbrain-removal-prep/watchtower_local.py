@@ -62,8 +62,7 @@ EXPECTED_JOBS = {
     "com.claude.discord-monitor": "あおい常駐リスナー",
     "com.claude.listener-watchdog": "リスナー死活監視(5分毎)",
     "com.claude.weekly-accounting": "週次経理(月9:05)",
-    "com.claude.monthly-accounting": "月次経理(1日10:00)",
-    "com.claude.monthly-accounting-recheck": "月次経理の独立再検証(1〜5日11:05・READのみ)",
+    "com.korokoro.monthly-accounting-recheck": "月次経理の独立再検証(1〜5日11:05・READのみ/非LLM)",
     "com.claude.uber-earnings": "Uber売上(夜)",
     "com.claude.daily-knowledge-extract": "日誌→ナレッジ",
     "com.claude.knowledge-gardener": "Vault整理(週次)",
@@ -87,7 +86,6 @@ EXPECTED_JOBS = {
     "com.claude.weekly-stocktake": "週次棚卸し質問(日曜20:00・📥から5件をやる/いつか/捨てるで聞く)",
     "com.claude.vault-autocommit": "Vault正本の10分毎git commit(06-13ローカル正本化)",
     "com.claude.satellite-autocommit": "skills/adapters/youtube の10分毎git commit",
-    "com.claude.vault-mirror": "Vault正本→Drive片方向ミラー(15分毎)",
     "com.claude.youtube-drafts-ssd-mirror": "創作スレ下書き→SSD常駐ミラー(30秒監視/削除なし)",
     "com.claude.freee-uncleared-monitor": "freee消込待ち明細モニター(1日10:45・READのみ/督促通知)",
 }
@@ -113,7 +111,6 @@ LOG_FRESHNESS = {
     SCRIPTS / "monthly-backup-state.json": 35,      # 月次（1日4:00）
     SCRIPTS / "restore-drill-state.json": 35,       # 月次（2日4:30）柱③復元演習
     SCRIPTS / "ssd-backup-state.json": 9,           # SSDマウント時＋各バックアップ末尾（週1は動くはず）
-    SCRIPTS / "vault-mirror-state.txt": 1,          # 15分毎（1日古い=ミラー死亡。vault-snapshotはミラーを撮るので特に重要）
     SCRIPTS / "youtube-drafts-ssd-mirror.log": 1,   # 常駐30秒監視。1日古い=下書きSSD追従が止まっている兆候
     Path("/Users/kojinn/.claude/skills/neta-forge/data/slate_state.json"): 35,  # 月次（25日リマインド→人が起動）半手動ネタ草案。35日無更新=その月の草案が出てない
     SCRIPTS / "corpus_collect.log": 9,              # 週次（スレコーパス収集）。7日周期＋2日猶予=9日無更新で警告

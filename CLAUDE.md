@@ -7,12 +7,13 @@
 - コアバリュー：自由・効率・自動化
 - ビジョン：一人社長 + AIエージェント部隊で事業運営
 
-## Vault の場所（2026-06-13 ローカル正本化・EPERM恒久対策）
+## Vault の場所（2026-07-02 ローカル正本・Drive 2nd-Brainミラー停止）
 **正本は Mac mini のローカル `/Users/kojinn/2nd-Brain-master`**（gitリポジトリ・10分毎auto-commit）。
 アクセスは常に `~/2nd-Brain`（正本へのシンボリックリンク）経由で行うこと。
 
-- Google Driveの `マイドライブ/2nd-Brain` は**15分毎の片方向ミラー（閲覧専用）**。Drive側・他端末で直接編集しない（次のミラーで上書きされて消える）
-- バックアップ層: ローカルgit（10分毎）→ GitHub private（日次push）→ Driveミラー（15分毎）→ 週次スナップショット＋SSD
+- Google Driveの `マイドライブ/2nd-Brain` は旧15分ミラー。2026-07-02に `com.claude.vault-mirror` を停止・無効化済み。通常のバックアップ/復元経路には使わない。
+- Drive側に `2nd-Brain` が残っていても閲覧専用。直接編集しない。Drive上の `経費精算` / `売上証憑` は別扱いで、引き続き証憑の正本。
+- バックアップ層: ローカルgit（10分毎）→ GitHub private（日次push）→ 週次スナップショット（ローカル2nd-Brain＋Drive証憑）→ SSD
 - 旧ルール「Google Driveが正」は廃止（FileProvider経由の長生きプロセスがEPERMで死ぬ問題の根治のため）
 
 ## AIエージェント設定
