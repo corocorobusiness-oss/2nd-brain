@@ -809,21 +809,24 @@ V2反映:
 - V1退避hashは機械確認PASS。人間の `V1退避hash PASS` 確認済み
 - V2反映済み。候補本文hashと現行hashの一致PASS
 - V2反映記録: `01_プロジェクト/AI自動化/ai-development-flow-v2-reflect_20260702-112042.md`
-- dry-run 5ケースのうち、現時点では2ケースが未実施
-- OK文脈テストは未実施
-- リリース事故テストは未実施
-- 5回試用ログのファイルは未作成
+- runtime / dry-run gate PASS（説明済みWARNあり）
+- runtime / dry-run 記録: `01_プロジェクト/AI自動化/ai-development-flow-v2-runtime-dryrun_20260702-112821.md`
+- dry-run 5ケース全PASS
+- OK文脈テストPASS
+- 危険候補テスト（freee / 会計 / 外部送信）PASS
+- 5回試用ログファイル作成済み: `01_プロジェクト/AI自動化/ai-development-flow-v2試用ログ_2026-07.md`
+- 実利用試用は0/5。正式採用不可
 
 ## 現時点の判定
 
 P1修正反映後の判定:
-`V2設計P1修正済み / Phase A再レビューPASS / V2候補採用可 / V1退避済み / V2反映済み`
+`V2設計P1修正済み / Phase A再レビューPASS / V2候補採用可 / V1退避済み / V2反映済み / runtime・dry-run gate PASS`
 
-V2試用開始・正式採用はまだ不可。
+V2試用開始済み。V2正式採用はまだ不可。
 
-次は runtime / dry-run gate を実施する。これを通すまで、V2試用開始へ進まない。
+次は実利用の5件を1件ずつログへ記録する。5件の実利用試用ログを残すまで、V2正式採用へ進まない。
 
 現時点のステータス:
-`V2反映済み / runtime・dry-run gate待ち / V2正式採用前`
+`V2反映済み / runtime・dry-run gate PASS / V2試用中 0/5 / V2正式採用前`
 
 まだ `V2正式採用・移行完了` ではない。
