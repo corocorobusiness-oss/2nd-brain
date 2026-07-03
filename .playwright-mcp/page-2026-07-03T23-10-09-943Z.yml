@@ -1,0 +1,524 @@
+- generic [active] [ref=e1]:
+  - list [ref=e3]:
+    - listitem [ref=e4]: Topeconheroes
+    - listitem [ref=e5]:
+      - link "シルエット素材" [ref=e6] [cursor=pointer]:
+        - /url: https://kage-design.com
+    - listitem [ref=e7]:
+      - link "飾り枠" [ref=e8] [cursor=pointer]:
+        - /url: https://frames-design.com
+    - listitem [ref=e9]:
+      - link "人ピクトグラム素材" [ref=e10] [cursor=pointer]:
+        - /url: http://pictogram2.com
+    - listitem [ref=e11]:
+      - link "フキダシ素材" [ref=e12] [cursor=pointer]:
+        - /url: http://fukidesign.com
+    - listitem [ref=e13]:
+      - link "矢印" [ref=e14] [cursor=pointer]:
+        - /url: http://yajidesign.com
+    - listitem [ref=e15]:
+      - link "花・植物イラスト" [ref=e16] [cursor=pointer]:
+        - /url: http://flode-design.com
+    - listitem [ref=e17]:
+      - link "ネットショップ素材" [ref=e18] [cursor=pointer]:
+        - /url: http://design-ec.com
+    - listitem [ref=e19]:
+      - link "ループ・BGM素材" [ref=e20] [cursor=pointer]:
+        - /url: http://dust-sounds.com
+    - listitem [ref=e21]:
+      - link "飾り線素材" [ref=e22] [cursor=pointer]:
+        - /url: http://free-line-design.com
+    - listitem [ref=e23]:
+      - link "フラットアイコン" [ref=e24] [cursor=pointer]:
+        - /url: http://flat-icon-design.com
+    - listitem [ref=e25]:
+      - link "クリスマスetc" [ref=e26] [cursor=pointer]:
+        - /url: http://event-pre.com
+    - listitem [ref=e27]:
+      - link "パターン背景" [ref=e28] [cursor=pointer]:
+        - /url: http://bg-patterns.com
+    - listitem [ref=e29]:
+      - link "アイコン" [ref=e30] [cursor=pointer]:
+        - /url: http://icooon-mono.com
+    - listitem [ref=e31]:
+      - link "街イラスト" [ref=e32] [cursor=pointer]:
+        - /url: http://town-illust.com
+    - listitem [ref=e33]:
+      - link "リボン素材" [ref=e34] [cursor=pointer]:
+        - /url: http://ribbon-freaks.com
+    - listitem [ref=e35]:
+      - link "鳥獣戯画" [ref=e36] [cursor=pointer]:
+        - /url: http://chojugiga.com
+    - listitem [ref=e37]:
+      - link "レース" [ref=e38] [cursor=pointer]:
+        - /url: http://da-lace.com
+    - listitem [ref=e39]:
+      - link "マンガ文字" [ref=e40] [cursor=pointer]:
+        - /url: http://dddfont.com
+    - listitem [ref=e41]:
+      - link "筆文字" [ref=e42] [cursor=pointer]:
+        - /url: https://calligra.design/
+    - listitem [ref=e43]:
+      - link "スタンプ" [ref=e44] [cursor=pointer]:
+        - /url: https://stampo.fun/
+    - listitem [ref=e45]:
+      - link "galley" [ref=e46] [cursor=pointer]:
+        - /url: https://homejaws.com/
+    - listitem [ref=e47]:
+      - link "集中線" [ref=e48] [cursor=pointer]:
+        - /url: https://mangasozai.com/
+    - listitem [ref=e49]:
+      - link "時短素材" [ref=e50] [cursor=pointer]:
+        - /url: https://jitanda.com/
+    - listitem [ref=e51]:
+      - link "顔アイコン" [ref=e52] [cursor=pointer]:
+        - /url: https://icon-z.com
+    - listitem [ref=e53]:
+      - link "twitter" [ref=e54] [cursor=pointer]:
+        - /url: http://twitter.com/topeconheroes
+  - generic [ref=e55]:
+    - banner [ref=e56]:
+      - generic [ref=e57]:
+        - heading "時短だ" [level=1] [ref=e58]:
+          - link "時短だ" [ref=e59] [cursor=pointer]:
+            - /url: https://jitanda.com
+            - img "時短だ" [ref=e60]
+        - generic [ref=e61]:
+          - search:
+            - textbox "search" [ref=e62]
+            - button "Submit" [ref=e63]
+        - list [ref=e64]:
+          - listitem [ref=e65]:
+            - link "時短だ(ジタンダ)とは？" [ref=e66] [cursor=pointer]:
+              - /url: https://jitanda.com/whats
+          - listitem [ref=e67]:
+            - link "素材の使い方" [ref=e68] [cursor=pointer]:
+              - /url: https://jitanda.com/howtouse
+          - listitem [ref=e69]:
+            - link "ライセンス" [ref=e70] [cursor=pointer]:
+              - /url: https://jitanda.com/terms
+          - listitem [ref=e71]:
+            - link "LINKS" [ref=e72] [cursor=pointer]:
+              - /url: https://jitanda.com/links
+        - list [ref=e73]:
+          - listitem [ref=e74]:
+            - link "人物素材" [ref=e75] [cursor=pointer]:
+              - /url: https://jitanda.com/?category_name=human
+          - listitem [ref=e76]:
+            - link "ビジネスイラスト" [ref=e77] [cursor=pointer]:
+              - /url: https://jitanda.com/?category_name=business
+          - listitem [ref=e78]:
+            - link "金融系素材" [ref=e79] [cursor=pointer]:
+              - /url: https://jitanda.com/?category_name=finance
+          - listitem [ref=e80]:
+            - link "IT" [ref=e81] [cursor=pointer]:
+              - /url: https://jitanda.com/?category_name=it
+          - listitem [ref=e82]:
+            - link "医療系イラスト" [ref=e83] [cursor=pointer]:
+              - /url: https://jitanda.com/?category_name=medical
+          - listitem [ref=e84]:
+            - link "教育" [ref=e85] [cursor=pointer]:
+              - /url: https://jitanda.com/?category_name=education
+          - listitem [ref=e86]:
+            - link "動物イラスト" [ref=e87] [cursor=pointer]:
+              - /url: https://jitanda.com/?category_name=animal
+          - listitem [ref=e88]:
+            - link "背景" [ref=e89] [cursor=pointer]:
+              - /url: https://jitanda.com/?category_name=background
+          - listitem [ref=e90]:
+            - link "建物" [ref=e91] [cursor=pointer]:
+              - /url: https://jitanda.com/?category_name=building
+          - listitem [ref=e92]:
+            - link "アワード" [ref=e93] [cursor=pointer]:
+              - /url: https://jitanda.com/?category_name=award
+          - listitem [ref=e94]:
+            - link "タイトル枠" [ref=e95] [cursor=pointer]:
+              - /url: https://jitanda.com/?category_name=title
+          - listitem [ref=e96]:
+            - link "スポーツ" [ref=e97] [cursor=pointer]:
+              - /url: https://jitanda.com/?category_name=sports
+          - listitem [ref=e98]:
+            - link "地図" [ref=e99] [cursor=pointer]:
+              - /url: https://jitanda.com/?category_name=map
+          - listitem [ref=e100]:
+            - link "イベント" [ref=e101] [cursor=pointer]:
+              - /url: https://jitanda.com/?category_name=event
+          - listitem [ref=e102]:
+            - link "アイコン" [ref=e103] [cursor=pointer]:
+              - /url: https://jitanda.com/?category_name=icon
+          - listitem [ref=e104]:
+            - link "ベクター" [ref=e105] [cursor=pointer]:
+              - /url: https://jitanda.com/?category_name=vector
+          - listitem [ref=e106]:
+            - link "ビットマップ" [ref=e107] [cursor=pointer]:
+              - /url: https://jitanda.com/?category_name=bitmap
+          - listitem [ref=e108]:
+            - link "フラット" [ref=e109] [cursor=pointer]:
+              - /url: https://jitanda.com/?category_name=flat
+          - listitem [ref=e110]:
+            - link "その他" [ref=e111] [cursor=pointer]:
+              - /url: https://jitanda.com/?category_name=other
+    - generic [ref=e112]:
+      - complementary [ref=e113]
+      - generic [ref=e114]:
+        - link "left" [ref=e115] [cursor=pointer]:
+          - /url: ""
+        - link "right" [ref=e116] [cursor=pointer]:
+          - /url: ""
+        - img [ref=e119]
+        - generic [ref=e171]:
+          - heading "豊臣秀吉" [level=1] [ref=e172]
+          - list [ref=e174]:
+            - listitem [ref=e175]:
+              - link "ベクター" [ref=e176] [cursor=pointer]:
+                - /url: https://jitanda.com/category/vector/
+            - listitem [ref=e177]:
+              - link "人物" [ref=e178] [cursor=pointer]:
+                - /url: https://jitanda.com/category/human/
+          - generic [ref=e180]:
+            - heading "サイズの編集" [level=3] [ref=e181]
+            - paragraph [ref=e182]:
+              - text: "横:"
+              - spinbutton [ref=e183]: "512"
+              - text: "px, 縦:"
+              - spinbutton [ref=e184]: "0"
+              - text: px
+          - generic [ref=e187]:
+            - heading "この画像をダウンロード" [level=3] [ref=e188]
+            - list [ref=e189]:
+              - listitem [ref=e190] [cursor=pointer]:
+                - link "JPG" [ref=e191]:
+                  - /url: "#"
+              - listitem [ref=e192] [cursor=pointer]:
+                - link "PNG" [ref=e193]:
+                  - /url: "#"
+              - listitem [ref=e194] [cursor=pointer]:
+                - link "SVG" [ref=e195]:
+                  - /url: "#"
+              - listitem [ref=e196] [cursor=pointer]:
+                - link "Ai" [ref=e197]:
+                  - /url: "#"
+            - paragraph [ref=e198]: ※IE、EDGEではJPG,PNGのカラー変更はできません。chormeやFirefoxをお使いください
+            - generic:
+              - link:
+                - /url: ""
+          - generic [ref=e199]:
+            - heading "色のカスタマイズ" [level=3] [ref=e200]
+            - list [ref=e201]:
+              - listitem [ref=e202]:
+                - textbox [ref=e203]: FFE4E2
+                - generic [ref=e204]:
+                  - generic [ref=e205] [cursor=pointer]: eye
+                  - generic [ref=e206] [cursor=pointer]: rnd
+                  - generic [ref=e207] [cursor=pointer]: lock
+                  - generic [ref=e208] [cursor=pointer]: reset
+              - listitem [ref=e209]:
+                - textbox [ref=e210]: "232256"
+                - generic [ref=e211]:
+                  - generic [ref=e212] [cursor=pointer]: eye
+                  - generic [ref=e213] [cursor=pointer]: rnd
+                  - generic [ref=e214] [cursor=pointer]: lock
+                  - generic [ref=e215] [cursor=pointer]: reset
+              - listitem [ref=e216]:
+                - textbox [ref=e217]: BDC7D6
+                - generic [ref=e218]:
+                  - generic [ref=e219] [cursor=pointer]: eye
+                  - generic [ref=e220] [cursor=pointer]: rnd
+                  - generic [ref=e221] [cursor=pointer]: lock
+                  - generic [ref=e222] [cursor=pointer]: reset
+              - listitem [ref=e223]:
+                - textbox [ref=e224]: FFFFFF
+                - generic [ref=e225]:
+                  - generic [ref=e226] [cursor=pointer]: eye
+                  - generic [ref=e227] [cursor=pointer]: rnd
+                  - generic [ref=e228] [cursor=pointer]: lock
+                  - generic [ref=e229] [cursor=pointer]: reset
+              - listitem [ref=e230]:
+                - textbox [ref=e231]: 5E7AA5
+                - generic [ref=e232]:
+                  - generic [ref=e233] [cursor=pointer]: eye
+                  - generic [ref=e234] [cursor=pointer]: rnd
+                  - generic [ref=e235] [cursor=pointer]: lock
+                  - generic [ref=e236] [cursor=pointer]: reset
+          - generic [ref=e237]:
+            - button "ランダムで配色" [ref=e238]
+            - generic [ref=e239]: ※ロックした色以外をランダムで配色します。
+          - heading "プリセットカラーで配色してみる" [level=3] [ref=e240]
+          - list [ref=e241]:
+            - listitem [ref=e242] [cursor=pointer]:
+              - generic [ref=e243]: "94159"
+              - generic [ref=e244]: 8da6a1
+              - generic [ref=e245]: f2d2b6
+              - generic [ref=e246]: f2b591
+              - generic [ref=e247]: f28972
+            - listitem [ref=e248] [cursor=pointer]:
+              - generic [ref=e249]: "194159"
+              - generic [ref=e250]: 8da6a1
+              - generic [ref=e251]: f2d2b6
+              - generic [ref=e252]: f2b591
+              - generic [ref=e253]: f28972
+            - listitem [ref=e254] [cursor=pointer]:
+              - generic [ref=e255]: f2cdc4
+              - generic [ref=e256]: f2baac
+              - generic [ref=e257]: f2edac
+              - generic [ref=e258]: acf2db
+              - generic [ref=e259]: c9b8f2
+            - listitem [ref=e260] [cursor=pointer]:
+              - generic [ref=e261]: "334752"
+              - generic [ref=e262]: 46b29d
+              - generic [ref=e263]: f0ca4d
+              - generic [ref=e264]: e37332
+              - generic [ref=e265]: de4f3c
+            - listitem [ref=e266] [cursor=pointer]:
+              - generic [ref=e267]: f26b83
+              - generic [ref=e268]: "121440"
+              - generic [ref=e269]: "184059"
+              - generic [ref=e270]: f2dac4
+              - generic [ref=e271]: f28888
+            - listitem [ref=e272] [cursor=pointer]:
+              - generic [ref=e273]: c7ee95
+              - generic [ref=e274]: a3d798
+              - generic [ref=e275]: 70c08d
+              - generic [ref=e276]: 36857b
+              - generic [ref=e277]: "054863"
+            - listitem [ref=e278] [cursor=pointer]:
+              - generic [ref=e279]: 79ccc7
+              - generic [ref=e280]: 999fd1
+              - generic [ref=e281]: ff8c6f
+              - generic [ref=e282]: ffd186
+              - generic [ref=e283]: 8fc2af
+            - listitem [ref=e284] [cursor=pointer]:
+              - generic [ref=e285]: f2798f
+              - generic [ref=e286]: bf738f
+              - generic [ref=e287]: 496d8c
+              - generic [ref=e288]: a3d9c9
+              - generic [ref=e289]: f2a999
+            - listitem [ref=e290] [cursor=pointer]:
+              - generic [ref=e291]: "164659"
+              - generic [ref=e292]: 3e8c84
+              - generic [ref=e293]: 44a69c
+              - generic [ref=e294]: add9d1
+              - generic [ref=e295]: 84bfb4
+            - listitem [ref=e296] [cursor=pointer]:
+              - generic [ref=e297]: 0096d2
+              - generic [ref=e298]: 4c2882
+              - generic [ref=e299]: 00ecb7
+              - generic [ref=e300]: e72199
+              - generic [ref=e301]: 8769d6
+            - listitem [ref=e302] [cursor=pointer]:
+              - generic [ref=e303]: ff896a
+              - generic [ref=e304]: f5d1c3
+              - generic [ref=e305]: f7f3f0
+              - generic [ref=e306]: b3d9e3
+              - generic [ref=e307]: 5b7594
+            - listitem [ref=e308] [cursor=pointer]:
+              - generic [ref=e309]: 03a6a6
+              - generic [ref=e310]: 04bfad
+              - generic [ref=e311]: f2de77
+              - generic [ref=e312]: f2784b
+              - generic [ref=e313]: d93d1a
+            - listitem [ref=e314] [cursor=pointer]:
+              - generic [ref=e315]: "082040"
+              - generic [ref=e316]: 30698c
+              - generic [ref=e317]: 468ba6
+              - generic [ref=e318]: 8fcbd9
+              - generic [ref=e319]: dceef2
+            - listitem [ref=e320] [cursor=pointer]:
+              - generic [ref=e321]: "728099"
+              - generic [ref=e322]: c8c69a
+              - generic [ref=e323]: f2f1f0
+              - generic [ref=e324]: f2c7ae
+              - generic [ref=e325]: bf928e
+            - listitem [ref=e326] [cursor=pointer]:
+              - generic [ref=e327]: d93b48
+              - generic [ref=e328]: 104d73
+              - generic [ref=e329]: 32838c
+              - generic [ref=e330]: f0f2df
+              - generic [ref=e331]: d95f43
+            - listitem [ref=e332] [cursor=pointer]:
+              - generic [ref=e333]: a9d9be
+              - generic [ref=e334]: "366072"
+              - generic [ref=e335]: cd9b33
+              - generic [ref=e336]: ffc845
+              - generic [ref=e337]: ff6162
+            - listitem [ref=e338] [cursor=pointer]:
+              - generic [ref=e339]: ffa445
+              - generic [ref=e340]: "133149"
+              - generic [ref=e341]: e8e1d7
+              - generic [ref=e342]: 22a49c
+              - generic [ref=e343]: c4226d
+            - listitem [ref=e344] [cursor=pointer]:
+              - generic [ref=e345]: ffffff
+              - generic [ref=e346]: "000000"
+              - generic [ref=e347]: ff2c35
+              - generic [ref=e348]: "919392"
+              - generic [ref=e349]: d6d6d6
+            - listitem [ref=e350] [cursor=pointer]:
+              - generic [ref=e351]: f2506e
+              - generic [ref=e352]: bf36a8
+              - generic [ref=e353]: 9534bf
+              - generic [ref=e354]: f2b950
+              - generic [ref=e355]: f27244
+            - listitem [ref=e356] [cursor=pointer]:
+              - generic [ref=e357]: ff1472
+              - generic [ref=e358]: 6d14ff
+              - generic [ref=e359]: 3f98e0
+              - generic [ref=e360]: 39f798
+              - generic [ref=e361]: "000000"
+            - listitem [ref=e362] [cursor=pointer]:
+              - generic [ref=e363]: "113e59"
+              - generic [ref=e364]: 062f40
+              - generic [ref=e365]: 59544f
+              - generic [ref=e366]: 8c847d
+              - generic [ref=e367]: bfb3a8
+            - listitem [ref=e368] [cursor=pointer]:
+              - generic [ref=e369]: 4c3f59
+              - generic [ref=e370]: f2e2c4
+              - generic [ref=e371]: f2955e
+              - generic [ref=e372]: f26849
+              - generic [ref=e373]: bf5349
+            - listitem [ref=e374] [cursor=pointer]:
+              - generic [ref=e375]: "223240"
+              - generic [ref=e376]: f28705
+              - generic [ref=e377]: 8c3503
+              - generic [ref=e378]: "591902"
+              - generic [ref=e379]: 53616f
+            - listitem [ref=e380] [cursor=pointer]:
+              - generic [ref=e381]: bf495e
+              - generic [ref=e382]: 191c26
+              - generic [ref=e383]: 04adbf
+              - generic [ref=e384]: f29b30
+              - generic [ref=e385]: f25d27
+            - listitem [ref=e386] [cursor=pointer]:
+              - generic [ref=e387]: f9efde
+              - generic [ref=e388]: dbcfc3
+              - generic [ref=e389]: f2e8e3
+              - generic [ref=e390]: f9dfde
+              - generic [ref=e391]: f9dfde
+          - generic [ref=e392]:
+            - heading "テキストの追加・編集" [level=3] [ref=e393]
+            - list [ref=e394]:
+              - listitem [ref=e395]:
+                - textbox "ここにテキストを入れてください" [ref=e396]
+          - generic [ref=e397]:
+            - generic [ref=e398]:
+              - heading "バリエーション" [level=3] [ref=e399]
+              - list [ref=e400]:
+                - listitem [ref=e401]
+                - listitem [ref=e402]
+                - listitem [ref=e403]
+                - listitem [ref=e404]
+                - listitem [ref=e405]
+                - listitem [ref=e406]
+                - listitem [ref=e407]
+                - listitem [ref=e408]
+                - listitem [ref=e409]
+                - listitem [ref=e410]
+                - listitem [ref=e411]
+                - listitem [ref=e412]
+                - listitem [ref=e413]
+                - listitem [ref=e414]
+                - listitem [ref=e415]
+                - listitem [ref=e416]
+                - listitem [ref=e417]
+                - listitem [ref=e418]
+                - listitem [ref=e419]
+                - listitem [ref=e420]
+            - paragraph [ref=e421]:
+              - text: 天下を統一した豊臣秀吉のイラスト素材です。豊臣秀吉は織田信長の武将として頭角を現し、本能寺の変で信長が倒れた後、明智光秀を討った。北条家を滅ぼしたり他の有力大名を臣従させて天下を統一した。低い身分から天下人までなった立身出世の代名詞的存在。
+              - link "歴史" [ref=e422] [cursor=pointer]:
+                - generic [ref=e423]:
+                  - img [ref=e425]
+                  - text: 歴史
+            - generic:
+              - link:
+                - /url: "#"
+              - link:
+                - /url: "#"
+              - link:
+                - /url: "#"
+            - complementary
+            - generic [ref=e428]:
+              - heading "素材のタグ一覧" [level=3] [ref=e429]
+              - link "icon-z人物" [ref=e430] [cursor=pointer]:
+                - /url: https://jitanda.com/tag/icon-z%e4%ba%ba%e7%89%a9/
+              - link "Toyotomi Hideyoshi" [ref=e431] [cursor=pointer]:
+                - /url: https://jitanda.com/tag/toyotomi-hideyoshi/
+              - link "とよとみひでよし" [ref=e432] [cursor=pointer]:
+                - /url: https://jitanda.com/tag/%e3%81%a8%e3%82%88%e3%81%a8%e3%81%bf%e3%81%b2%e3%81%a7%e3%82%88%e3%81%97/
+              - link "はしばひでよし" [ref=e433] [cursor=pointer]:
+                - /url: https://jitanda.com/tag/%e3%81%af%e3%81%97%e3%81%b0%e3%81%b2%e3%81%a7%e3%82%88%e3%81%97/
+              - link "天下人" [ref=e434] [cursor=pointer]:
+                - /url: https://jitanda.com/tag/%e5%a4%a9%e4%b8%8b%e4%ba%ba/
+              - link "天下統一" [ref=e435] [cursor=pointer]:
+                - /url: https://jitanda.com/tag/%e5%a4%a9%e4%b8%8b%e7%b5%b1%e4%b8%80/
+              - link "太閤秀吉" [ref=e436] [cursor=pointer]:
+                - /url: https://jitanda.com/tag/%e5%a4%aa%e9%96%a4%e7%a7%80%e5%90%89/
+              - link "戦国時代" [ref=e437] [cursor=pointer]:
+                - /url: https://jitanda.com/tag/%e6%88%a6%e5%9b%bd%e6%99%82%e4%bb%a3/
+              - link "戦国武将" [ref=e438] [cursor=pointer]:
+                - /url: https://jitanda.com/tag/%e6%88%a6%e5%9b%bd%e6%ad%a6%e5%b0%86/
+              - link "朝鮮出兵" [ref=e439] [cursor=pointer]:
+                - /url: https://jitanda.com/tag/%e6%9c%9d%e9%ae%ae%e5%87%ba%e5%85%b5/
+              - link "木下藤吉郎" [ref=e440] [cursor=pointer]:
+                - /url: https://jitanda.com/tag/%e6%9c%a8%e4%b8%8b%e8%97%a4%e5%90%89%e9%83%8e/
+              - link "羽柴秀吉" [ref=e441] [cursor=pointer]:
+                - /url: https://jitanda.com/tag/%e7%be%bd%e6%9f%b4%e7%a7%80%e5%90%89/
+              - link "豊臣秀吉" [ref=e442] [cursor=pointer]:
+                - /url: https://jitanda.com/tag/%e8%b1%8a%e8%87%a3%e7%a7%80%e5%90%89/
+              - link "関白" [ref=e443] [cursor=pointer]:
+                - /url: https://jitanda.com/tag/%e9%96%a2%e7%99%bd/
+    - list [ref=e445]:
+      - listitem [ref=e446]:
+        - link "スタンプ素材" [ref=e447] [cursor=pointer]:
+          - /url: https://stampo.fun
+          - img "スタンプ素材" [ref=e448]
+      - listitem [ref=e449]:
+        - insertion [ref=e450]:
+          - generic [ref=e453]:
+            - heading "この記事に関連するおすすめのトピックです" [level=2] [ref=e455]: 詳細を見る
+            - link "東アジア系コミュニティ" [ref=e456] [cursor=pointer]:
+              - generic "東アジア系コミュニティ" [ref=e457]
+              - img [ref=e459]
+            - link "王室" [ref=e461] [cursor=pointer]:
+              - generic "王室" [ref=e462]
+              - img [ref=e464]
+            - link "辞書、百科事典" [ref=e466] [cursor=pointer]:
+              - generic "辞書、百科事典" [ref=e467]
+              - img [ref=e469]
+      - listitem [ref=e471]:
+        - link "ピクトグラム素材" [ref=e472] [cursor=pointer]:
+          - /url: http://pictogram2.com
+          - img "ピクトグラム素材" [ref=e473]
+      - listitem [ref=e474]:
+        - link "ハロウィン、クリスマスイラスト" [ref=e475] [cursor=pointer]:
+          - /url: http://event-pre.com/
+          - img "ハロウィン、クリスマスイラスト" [ref=e476]
+    - link "ページトップ" [ref=e478] [cursor=pointer]:
+      - /url: ""
+      - generic [ref=e479]: ページトップ
+    - contentinfo [ref=e480]:
+      - generic [ref=e481]:
+        - list [ref=e482]:
+          - listitem [ref=e483]:
+            - link "ジタンダとは？" [ref=e484] [cursor=pointer]:
+              - /url: https://jitanda.com/whats
+          - listitem [ref=e485]:
+            - link "素材の使い方" [ref=e486] [cursor=pointer]:
+              - /url: https://jitanda.com/howtouse
+          - listitem [ref=e487]:
+            - link "ライセンス" [ref=e488] [cursor=pointer]:
+              - /url: https://jitanda.com/terms
+          - listitem [ref=e489]:
+            - link "素材リンク" [ref=e490] [cursor=pointer]:
+              - /url: https://jitanda.com/links
+        - generic [ref=e491]:
+          - paragraph [ref=e492]:
+            - link "イラスト時短だ" [ref=e493] [cursor=pointer]:
+              - /url: /
+              - img "イラスト時短だ" [ref=e494]
+          - paragraph [ref=e495]:
+            - link "TOPECONHEROES" [ref=e496] [cursor=pointer]:
+              - /url: https://twitter.com/topeconheroes
+              - img "TOPECONHEROES" [ref=e497]
+        - generic [ref=e498]: ©TopeconHeroes all right reserved.
