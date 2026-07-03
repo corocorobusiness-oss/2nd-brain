@@ -65,3 +65,4 @@ AIエージェントが会話を通じて学んだこと。次回以降に活か
 ## 2026-07-01
 - （Codex）`/ai-development-flow` に沿って Codexメイン移行フェーズ1を開始。正本ドキュメント上の本線を「Codexメイン移行フェーズ1 / Claude Code補助・退避先 / Obsidian正本」へ更新。ただし `agent-run` と既存launchd/cron自動化は段階移行中で、Codex切替完了とは扱わない。
 - （Codex）`agent-run` の Codex 分岐を最小配線。`AGENT_VENDOR=codex agent-run -p "..."` は `codex exec` で動作確認済み。Claude専用フラグ（`--permission-mode` / `--allowedTools` 等）はfail-closeするため、既存自動化の一括切替はまだ不可。
+- 2026-07-03 Codex: rules.md基本方針へ『Fable司令塔・Codex実行』型の参照1行を追記（採用GOによる・詳細はfable-command-codex-execution.md）

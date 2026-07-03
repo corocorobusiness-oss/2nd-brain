@@ -12,6 +12,7 @@
 - Codexカスタムスキルは `/Users/kojinn/.codex/skills/<skill> -> /Users/kojinn/agent-skills/<skill>` のsymlink運用へ移行済み（21件verify PASS、`.system` はCodex内蔵として保持）
 - `script-learning` は手動Codex dry-run入口と通常Terminal wrapper gateがPASS。2026-08-02判定予定で1周期shadow中。launchd既定、Discord本番投稿、ルールブック自動更新は未変更
 - 重要な決定、ルール、学びは最後にSecond Brainへ戻す
+- 再構築案件は「Fable司令塔・Codex実行」型で進める（`00_システム/20_Agent_Portable/specs/fable-command-codex-execution.md`・2026-07-03採用）
 
 ## 今の最優先
 
