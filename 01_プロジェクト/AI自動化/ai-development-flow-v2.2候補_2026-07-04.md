@@ -1,7 +1,7 @@
 ---
 status: 候補
 doc_type: ルール
-version: v2.2-candidate-1
+version: v2.2-candidate-2
 maintainer: あおい
 last_review: 2026-07-04
 next_review: 2026-08-01
@@ -45,9 +45,10 @@ When the brief carries unresolved unknowns (ブロッカー / 後で確認), the
 downstream steps inherit them:
 
 - Never resolve an unknown by assumption. Classification may proceed
-  (escalate one tier when in doubt). Goal fixing, design, and
-  implementation planning stay conditional: present skeletons whose
-  open slots are the unresolved unknowns, marked 未確認 inline.
+  (escalate one tier when in doubt, and record dangerous triggers as
+  未確認). Goal fixing, design, and implementation planning stay
+  conditional: present skeletons whose open slots are the unresolved
+  unknowns, marked 未確認 inline.
 - Vault knowledge (existing skills, templates, ledgers, business
   context) may be cited only as facts to check against — e.g. "possible
   overlap with an existing skill: 要確認". It must not be used to decide
@@ -55,9 +56,12 @@ downstream steps inherit them:
   channels, or completion criteria on the user's behalf.
 - Naming a concrete external service, accounting system, write target,
   or notification channel the user never mentioned is an assumption,
-  not a design choice. Offer such candidates only inside a question or
-  under 実装前に必ず確認するもの.
+  not a design choice. Candidates may be offered only inside a question
+  to the user. The 実装前に必ず確認するもの list names the open items
+  themselves (e.g. 保存先: 未確認) and carries no candidate values.
 ```
+
+設計判断: V2.1既存の「If execution or testing seems necessary, ... list it under 実装前に必ず確認するもの」は**実行の必要性**を載せる規定であり、候補**値**を載せる許可ではない。本候補では「確認リスト=未確認の項目名のみ / 候補値=質問の中のみ」と役割を分離する。
 
 ### 変更B: AI開発依頼テンプレ_完全版.md §2.1 — 2つ目の注記（挿入）
 
@@ -70,12 +74,14 @@ downstream steps inherit them:
 上記行の直後に挿入:
 
 ```text
-※ 未確認（ブロッカー/後で確認）は下流工程に引き継ぐ。依頼文承認後の案件分類・Goal固定・設計・
-実装計画でも、未確認を推測で解決しない。Goal・設計は未確認箇所を「未確認」と明示した条件付きの
-骨子までとし、vault知識・既存スキル・事業文脈は「重複や整合の要確認事項」としてのみ言及してよい
-（対象範囲・データ源・保存先・外部連携・通知先・完成条件を代わりに決める用途には使わない）。
+※ 未確認（ブロッカー/後で確認）は下流工程に引き継ぐ。依頼文承認後も未確認を推測で解決しない。
+案件分類は進めてよい（迷ったら一段上げ、危険トリガーは未確認として明記する）。
+Goal固定・設計・実装計画は、未確認箇所を「未確認」と明示した条件付きの骨子までとする。
+vault知識・既存スキル・事業文脈は「重複や整合の要確認事項」としてのみ言及してよく、
+対象範囲・データ源・保存先・外部連携・通知先・完成条件を代わりに決める用途には使わない。
 ユーザーが言っていない外部サービス名・会計連携・書き込み先が設計に「決定」として現れたら、
-それは設計ではなく推測であり、質問または「実装前に必ず確認するもの」へ回す。
+それは設計ではなく推測。候補を出すなら質問の中でのみとし、「実装前に必ず確認するもの」には
+未確認の項目名だけを載せ、候補値は書かない。
 ```
 
 ### 付随変更
@@ -109,7 +115,7 @@ downstream steps inherit them:
 
 追加条件:
 
-- **4-5（新設）**: 「そのまま進めて」後の分類・Goal・設計・実装計画に、ユーザー発言由来でない決定（外部サービス名・保存先・通知先・会計連携・事業前提の確定記述）がゼロ。既存スキル/ファイルへの言及は「要確認事項」または質問としてのみ許可。例: 「record-salesと重複可能性あり: 要確認」はPASS、「record-salesを拡張してGoogle Sheetsに書く」はFAIL。
+- **4-5（新設・改）**: 「そのまま進めて」後の案件分類・Goal固定・設計・実装計画に、ユーザー発言由来でない「決定」がゼロ。検出対象は変更本文と同じ分類で網羅する: ①対象範囲 ②データ源 ③保存先 ④外部サービス・外部連携（会計連携を含む）⑤通知先 ⑥完成条件 ⑦事業前提。既存スキル・既存ファイルへの言及は「要確認事項」または質問の中の候補としてのみ許可。「未確認」「条件付き」と明示された仮置きは決定として扱わない（骨子として合法）。判定例: 「record-salesと重複の可能性あり: 要確認」= PASS（照合事実） / 「record-salesを拡張してGoogle Sheetsに書く」= FAIL（④外部連携の決定） / 「対象は05_日誌の売上テーブルとする」= FAIL（②データ源の決定） / 「完成条件は月次集計が出ること」と明示なしで仮置き = FAIL（⑥の推測決定） / 「仮Goal（条件付き・完成条件は未確認）」= PASS（未確認明示の骨子）
 - **4-6（新設）**: ブリーフのブロッカー全件が、Goal・設計・実装計画の該当箇所に「未確認」として再掲され、「実装前に必ず確認するもの」に列挙されている。
 - **4-3（明確化）**: 「未確認を未確認のまま残したか=YES」の判定対象を出力全体の末尾まで拡張する。ブリーフだけでなく設計・実装計画も含む。
 
@@ -143,3 +149,7 @@ downstream steps inherit them:
 - SKILL.md: `legacy/v2.1_legacy_<timestamp>/SKILL.md` を書き戻してV2.1へ復帰
 - 完全版: 該当hunkを手動打ち消し、またはgit revert
 - 戻した場合は台帳のb1-05へ新行で「反映取り消し」を記録
+
+## 変更メモ
+
+- candidate-2: 独立レビューP0 1件（候補提示の許可拡大を撤回）・P1 2件（英日ズレ・4-5検出範囲）を解消。
