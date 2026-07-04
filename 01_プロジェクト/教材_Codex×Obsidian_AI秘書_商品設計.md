@@ -72,7 +72,7 @@
 ### Day 1: Obsidianの土台作り
 - 最小フォルダ構成
 - ルール、目標、メモ、日誌の置き場所
-- 初心者向けの軽いSecond Brain構成
+- 初心者向けの `2nd-brain` 構成
 
 ### Day 2: Codexに読ませるルールを作る
 - AGENTS.mdの役割
@@ -164,7 +164,7 @@
 - 全体像図: Obsidianが記憶、Codexが実行、ユーザーが指示する三角構造
 - Before / After図: 毎回AIに説明する状態 → メモを読んで動くAI秘書
 - 7日ロードマップ図: Day 0〜Day 7で何が完成するか
-- Obsidianフォルダ構成図: 初心者向けの最小Second Brain構成
+- Obsidianフォルダ構成図: 初心者向けの最小 `2nd-brain` 構成
 - AGENTS.mdの役割図: AIに性格・ルール・禁止事項を渡すイメージ
 - メモ整理フロー図: メモ → Obsidian → Codex → タスク/企画/日報
 - 注意喚起図: 個人情報・トークン・外部投稿は慎重に扱う
