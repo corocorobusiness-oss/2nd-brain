@@ -87,7 +87,9 @@ AIに毎回ゼロから説明する状態を抜け出すことです。
 ### 事前準備: ObsidianとCodexを用意する
 
 - Obsidianのインストールと `2nd-brain` Vaultの作成
+- Obsidianの基本操作（フォルダとノートの作り方）
 - Codexデスクトップアプリの入れ方とサインイン
+- Codexアプリの基本操作と、最初にやっておく基本設定
 - Codexで `2nd-brain` を開いて、接続を確認する手順
 
 ObsidianもCodexも触ったことがない人でも、ここから始められます。
