@@ -98,7 +98,7 @@ ChatGPTやCodexを使っているのに、
 
 ### Day 3: 自分用コンテキストを作る
 
-- persona.md
+- profile.md
 - rules.md
 - goals.md
 - workflows.md
@@ -134,7 +134,7 @@ ChatGPTやCodexを使っているのに、
 
 - AGENTS.mdテンプレ
 - Obsidian最小フォルダ構成テンプレ
-- persona / rules / goals / workflows テンプレ
+- profile / rules / goals / workflows テンプレ
 - デイリーノートテンプレ
 - Codexに投げるプロンプト集
 - AIに任せていいこと・まだ任せないことチェックリスト
@@ -205,7 +205,7 @@ ChatGPTやCodexを使っているのに、
 - Day 1以降の具体手順
 - Obsidianフォルダ構成
 - AGENTS.mdの作り方
-- persona / rules / goals / workflows の作り方
+- profile / rules / goals / workflows の作り方
 - デイリーノート運用
 - メモ整理プロンプト
 - タスク整理プロンプト
@@ -253,9 +253,13 @@ ChatGPTやCodexを使っているのに、
 - 文字は少なめ
 - 実画面スクショと混ぜて使う
 
-## 次に作るもの
+## 販売前に作るもの
 
-- Day 0本文
-- Day 1本文
+- 本文全体の通し編集
 - AGENTS.md配布テンプレ
-- 無料公開部分と有料部分の境界
+- profile / rules / goals / workflows 配布テンプレ
+- デイリーノートテンプレ
+- プロンプト集
+- 画像・図解の挿入
+- 証拠素材スクショ
+- X / noteで出す無料発信10本
