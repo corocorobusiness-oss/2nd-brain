@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <rect width="1600" height="900" fill="#f8fafc"/>
+  <text x="800" y="80" font-family="Hiragino Sans, Yu Gothic, sans-serif" font-size="54" font-weight="700" text-anchor="middle" fill="#111827">最小の 2nd-brain フォルダ構成</text>
+  <rect x="390" y="140" width="820" height="640" rx="30" fill="#ffffff" stroke="#d7dee8" stroke-width="4"/>
+  <text x="470" y="220" font-family="Menlo, Consolas, monospace" font-size="36" font-weight="700" fill="#0f766e">2nd-brain/</text>
+  <g font-family="Menlo, Consolas, monospace" font-size="30" fill="#334155">
+    <text x="510" y="285">├── AGENTS.md</text>
+    <text x="510" y="345">├── 00_system/</text>
+    <text x="570" y="395">│   ├── profile.md</text>
+    <text x="570" y="445">│   ├── goals.md</text>
+    <text x="570" y="495">│   ├── rules.md</text>
+    <text x="570" y="545">│   └── workflows.md</text>
+    <text x="510" y="605">├── 01_projects/</text>
+    <text x="510" y="655">├── 02_daily/</text>
+    <text x="510" y="705">├── 03_memos/</text>
+    <text x="510" y="755">├── 04_outputs/</text>
+  </g>
+  <rect x="1020" y="260" width="300" height="80" rx="18" fill="#ecfeff" stroke="#67e8f9" stroke-width="3"/>
+  <text x="1170" y="312" font-family="Hiragino Sans, Yu Gothic, sans-serif" font-size="26" font-weight="700" text-anchor="middle" fill="#0f766e">AIの入口</text>
+  <rect x="1020" y="380" width="300" height="105" rx="18" fill="#f0fdf4" stroke="#86efac" stroke-width="3"/>
+  <text x="1170" y="425" font-family="Hiragino Sans, Yu Gothic, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#15803d">自分の文脈</text>
+  <text x="1170" y="460" font-family="Hiragino Sans, Yu Gothic, sans-serif" font-size="22" text-anchor="middle" fill="#15803d">目標・ルール・手順</text>
+  <rect x="1020" y="610" width="300" height="105" rx="18" fill="#eff6ff" stroke="#93c5fd" stroke-width="3"/>
+  <text x="1170" y="655" font-family="Hiragino Sans, Yu Gothic, sans-serif" font-size="25" font-weight="700" text-anchor="middle" fill="#1d4ed8">日々の素材</text>
+  <text x="1170" y="690" font-family="Hiragino Sans, Yu Gothic, sans-serif" font-size="22" text-anchor="middle" fill="#1d4ed8">メモ・日誌・成果物</text>
+</svg>

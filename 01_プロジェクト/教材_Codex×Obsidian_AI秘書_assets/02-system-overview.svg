@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <rect width="1600" height="900" fill="#f8fafc"/>
+  <text x="800" y="80" font-family="Hiragino Sans, Yu Gothic, sans-serif" font-size="54" font-weight="700" text-anchor="middle" fill="#111827">Codex × Obsidian × ユーザーの全体像</text>
+  <circle cx="800" cy="430" r="145" fill="#ffffff" stroke="#14b8a6" stroke-width="8"/>
+  <text x="800" y="410" font-family="Hiragino Sans, Yu Gothic, sans-serif" font-size="44" font-weight="700" text-anchor="middle" fill="#0f766e">2nd-brain</text>
+  <text x="800" y="465" font-family="Hiragino Sans, Yu Gothic, sans-serif" font-size="30" text-anchor="middle" fill="#475569">Obsidianに置く</text>
+  <text x="800" y="510" font-family="Hiragino Sans, Yu Gothic, sans-serif" font-size="30" text-anchor="middle" fill="#475569">自分の記憶</text>
+  <rect x="120" y="330" width="340" height="210" rx="26" fill="#ffffff" stroke="#cbd5e1" stroke-width="4"/>
+  <text x="290" y="405" font-family="Hiragino Sans, Yu Gothic, sans-serif" font-size="44" font-weight="700" text-anchor="middle" fill="#1e293b">ユーザー</text>
+  <text x="290" y="465" font-family="Hiragino Sans, Yu Gothic, sans-serif" font-size="28" text-anchor="middle" fill="#64748b">指示する</text>
+  <text x="290" y="510" font-family="Hiragino Sans, Yu Gothic, sans-serif" font-size="28" text-anchor="middle" fill="#64748b">確認する</text>
+  <rect x="1140" y="330" width="340" height="210" rx="26" fill="#ffffff" stroke="#93c5fd" stroke-width="4"/>
+  <text x="1310" y="405" font-family="Hiragino Sans, Yu Gothic, sans-serif" font-size="44" font-weight="700" text-anchor="middle" fill="#1d4ed8">Codex</text>
+  <text x="1310" y="465" font-family="Hiragino Sans, Yu Gothic, sans-serif" font-size="28" text-anchor="middle" fill="#64748b">読む</text>
+  <text x="1310" y="510" font-family="Hiragino Sans, Yu Gothic, sans-serif" font-size="28" text-anchor="middle" fill="#64748b">整理する</text>
+  <path d="M470 420h170" stroke="#334155" stroke-width="7" stroke-linecap="round"/>
+  <path d="M630 390l45 30-45 30z" fill="#334155"/>
+  <text x="555" y="380" font-family="Hiragino Sans, Yu Gothic, sans-serif" font-size="25" text-anchor="middle" fill="#334155">メモを置く</text>
+  <path d="M955 420h170" stroke="#2563eb" stroke-width="7" stroke-linecap="round"/>
+  <path d="M1115 390l45 30-45 30z" fill="#2563eb"/>
+  <text x="1040" y="380" font-family="Hiragino Sans, Yu Gothic, sans-serif" font-size="25" text-anchor="middle" fill="#2563eb">文脈を読む</text>
+  <path d="M1265 555c-120 140-780 140-930 0" fill="none" stroke="#14b8a6" stroke-width="7" stroke-linecap="round"/>
+  <path d="M350 582l-48-10 25-43z" fill="#14b8a6"/>
+  <text x="800" y="700" font-family="Hiragino Sans, Yu Gothic, sans-serif" font-size="31" font-weight="700" text-anchor="middle" fill="#0f766e">AIの提案を見て、自分が最終判断する</text>
+</svg>

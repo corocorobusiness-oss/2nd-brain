@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <rect width="1600" height="900" fill="#f8fafc"/>
+  <text x="800" y="80" font-family="Hiragino Sans, Yu Gothic, sans-serif" font-size="54" font-weight="700" text-anchor="middle" fill="#111827">7日で作る 自分専用AI秘書ロードマップ</text>
+  <line x1="180" y1="450" x2="1420" y2="450" stroke="#cbd5e1" stroke-width="10" stroke-linecap="round"/>
+  <g font-family="Hiragino Sans, Yu Gothic, sans-serif">
+    <circle cx="220" cy="450" r="54" fill="#ffffff" stroke="#14b8a6" stroke-width="6"/>
+    <text x="220" y="462" font-size="30" font-weight="700" text-anchor="middle" fill="#0f766e">0</text>
+    <text x="220" y="560" font-size="25" font-weight="700" text-anchor="middle" fill="#1e293b">全体像</text>
+    <text x="220" y="600" font-size="21" text-anchor="middle" fill="#64748b">なぜ必要か</text>
+    <circle cx="390" cy="450" r="54" fill="#ffffff" stroke="#14b8a6" stroke-width="6"/>
+    <text x="390" y="462" font-size="30" font-weight="700" text-anchor="middle" fill="#0f766e">1</text>
+    <text x="390" y="330" font-size="25" font-weight="700" text-anchor="middle" fill="#1e293b">土台</text>
+    <text x="390" y="370" font-size="21" text-anchor="middle" fill="#64748b">2nd-brain</text>
+    <circle cx="560" cy="450" r="54" fill="#ffffff" stroke="#14b8a6" stroke-width="6"/>
+    <text x="560" y="462" font-size="30" font-weight="700" text-anchor="middle" fill="#0f766e">2</text>
+    <text x="560" y="560" font-size="25" font-weight="700" text-anchor="middle" fill="#1e293b">AGENTS</text>
+    <text x="560" y="600" font-size="21" text-anchor="middle" fill="#64748b">働き方</text>
+    <circle cx="730" cy="450" r="54" fill="#ffffff" stroke="#14b8a6" stroke-width="6"/>
+    <text x="730" y="462" font-size="30" font-weight="700" text-anchor="middle" fill="#0f766e">3</text>
+    <text x="730" y="330" font-size="25" font-weight="700" text-anchor="middle" fill="#1e293b">文脈</text>
+    <text x="730" y="370" font-size="21" text-anchor="middle" fill="#64748b">4ファイル</text>
+    <circle cx="900" cy="450" r="54" fill="#ffffff" stroke="#14b8a6" stroke-width="6"/>
+    <text x="900" y="462" font-size="30" font-weight="700" text-anchor="middle" fill="#0f766e">4</text>
+    <text x="900" y="560" font-size="25" font-weight="700" text-anchor="middle" fill="#1e293b">メモ整理</text>
+    <text x="900" y="600" font-size="21" text-anchor="middle" fill="#64748b">日誌</text>
+    <circle cx="1070" cy="450" r="54" fill="#ffffff" stroke="#14b8a6" stroke-width="6"/>
+    <text x="1070" y="462" font-size="30" font-weight="700" text-anchor="middle" fill="#0f766e">5</text>
+    <text x="1070" y="330" font-size="25" font-weight="700" text-anchor="middle" fill="#1e293b">タスク</text>
+    <text x="1070" y="370" font-size="21" text-anchor="middle" fill="#64748b">目標管理</text>
+    <circle cx="1240" cy="450" r="54" fill="#ffffff" stroke="#14b8a6" stroke-width="6"/>
+    <text x="1240" y="462" font-size="30" font-weight="700" text-anchor="middle" fill="#0f766e">6</text>
+    <text x="1240" y="560" font-size="25" font-weight="700" text-anchor="middle" fill="#1e293b">企画出し</text>
+    <text x="1240" y="600" font-size="21" text-anchor="middle" fill="#64748b">発信準備</text>
+    <circle cx="1410" cy="450" r="54" fill="#ffffff" stroke="#14b8a6" stroke-width="6"/>
+    <text x="1410" y="462" font-size="30" font-weight="700" text-anchor="middle" fill="#0f766e">7</text>
+    <text x="1410" y="330" font-size="25" font-weight="700" text-anchor="middle" fill="#1e293b">安全運用</text>
+    <text x="1410" y="370" font-size="21" text-anchor="middle" fill="#64748b">続ける</text>
+  </g>
+</svg>

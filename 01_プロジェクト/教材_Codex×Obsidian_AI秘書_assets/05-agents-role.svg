@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <rect width="1600" height="900" fill="#f8fafc"/>
+  <text x="800" y="80" font-family="Hiragino Sans, Yu Gothic, sans-serif" font-size="54" font-weight="700" text-anchor="middle" fill="#111827">AGENTS.md はAI秘書への最初の指示書</text>
+  <rect x="150" y="250" width="370" height="330" rx="28" fill="#ffffff" stroke="#cbd5e1" stroke-width="4"/>
+  <text x="335" y="330" font-family="Hiragino Sans, Yu Gothic, sans-serif" font-size="40" font-weight="700" text-anchor="middle" fill="#1e293b">ユーザー</text>
+  <text x="335" y="395" font-family="Hiragino Sans, Yu Gothic, sans-serif" font-size="27" text-anchor="middle" fill="#64748b">何をしてほしいか</text>
+  <text x="335" y="440" font-family="Hiragino Sans, Yu Gothic, sans-serif" font-size="27" text-anchor="middle" fill="#64748b">何をしないでほしいか</text>
+  <rect x="615" y="180" width="370" height="470" rx="28" fill="#ffffff" stroke="#14b8a6" stroke-width="5"/>
+  <text x="800" y="255" font-family="Menlo, Consolas, monospace" font-size="40" font-weight="700" text-anchor="middle" fill="#0f766e">AGENTS.md</text>
+  <text x="800" y="335" font-family="Hiragino Sans, Yu Gothic, sans-serif" font-size="28" text-anchor="middle" fill="#334155">役割</text>
+  <text x="800" y="390" font-family="Hiragino Sans, Yu Gothic, sans-serif" font-size="28" text-anchor="middle" fill="#334155">読むファイル</text>
+  <text x="800" y="445" font-family="Hiragino Sans, Yu Gothic, sans-serif" font-size="28" text-anchor="middle" fill="#334155">やってほしいこと</text>
+  <text x="800" y="500" font-family="Hiragino Sans, Yu Gothic, sans-serif" font-size="28" text-anchor="middle" fill="#334155">勝手にしないこと</text>
+  <text x="800" y="555" font-family="Hiragino Sans, Yu Gothic, sans-serif" font-size="28" text-anchor="middle" fill="#334155">返答ルール</text>
+  <rect x="1080" y="250" width="370" height="330" rx="28" fill="#ffffff" stroke="#93c5fd" stroke-width="4"/>
+  <text x="1265" y="330" font-family="Hiragino Sans, Yu Gothic, sans-serif" font-size="40" font-weight="700" text-anchor="middle" fill="#1d4ed8">Codex</text>
+  <text x="1265" y="395" font-family="Hiragino Sans, Yu Gothic, sans-serif" font-size="27" text-anchor="middle" fill="#64748b">指示書を読んで</text>
+  <text x="1265" y="440" font-family="Hiragino Sans, Yu Gothic, sans-serif" font-size="27" text-anchor="middle" fill="#64748b">AI秘書として動く</text>
+  <path d="M530 415h70" stroke="#334155" stroke-width="7" stroke-linecap="round"/>
+  <path d="M590 386l45 29-45 29z" fill="#334155"/>
+  <path d="M995 415h70" stroke="#2563eb" stroke-width="7" stroke-linecap="round"/>
+  <path d="M1055 386l45 29-45 29z" fill="#2563eb"/>
+</svg>

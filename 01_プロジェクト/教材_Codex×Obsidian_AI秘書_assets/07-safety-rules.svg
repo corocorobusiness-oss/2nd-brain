@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <rect width="1600" height="900" fill="#f8fafc"/>
+  <text x="800" y="80" font-family="Hiragino Sans, Yu Gothic, sans-serif" font-size="54" font-weight="700" text-anchor="middle" fill="#111827">AI秘書に任せる範囲を3つに分ける</text>
+  <g font-family="Hiragino Sans, Yu Gothic, sans-serif">
+    <rect x="105" y="190" width="420" height="540" rx="30" fill="#ffffff" stroke="#14b8a6" stroke-width="5"/>
+    <text x="315" y="270" font-size="40" font-weight="700" text-anchor="middle" fill="#0f766e">任せていい</text>
+    <text x="315" y="350" font-size="29" text-anchor="middle" fill="#334155">整理</text>
+    <text x="315" y="405" font-size="29" text-anchor="middle" fill="#334155">要約</text>
+    <text x="315" y="460" font-size="29" text-anchor="middle" fill="#334155">分類</text>
+    <text x="315" y="515" font-size="29" text-anchor="middle" fill="#334155">下書き</text>
+    <text x="315" y="570" font-size="29" text-anchor="middle" fill="#334155">候補出し</text>
+    <rect x="590" y="190" width="420" height="540" rx="30" fill="#ffffff" stroke="#f59e0b" stroke-width="5"/>
+    <text x="800" y="270" font-size="40" font-weight="700" text-anchor="middle" fill="#b45309">確認して進める</text>
+    <text x="800" y="350" font-size="29" text-anchor="middle" fill="#334155">既存ファイル編集</text>
+    <text x="800" y="405" font-size="29" text-anchor="middle" fill="#334155">方針変更</text>
+    <text x="800" y="460" font-size="29" text-anchor="middle" fill="#334155">公開前の文章</text>
+    <text x="800" y="515" font-size="29" text-anchor="middle" fill="#334155">重要な判断</text>
+    <text x="800" y="570" font-size="29" text-anchor="middle" fill="#334155">複数ファイル整理</text>
+    <rect x="1075" y="190" width="420" height="540" rx="30" fill="#ffffff" stroke="#ef4444" stroke-width="5"/>
+    <text x="1285" y="270" font-size="40" font-weight="700" text-anchor="middle" fill="#dc2626">任せない</text>
+    <text x="1285" y="350" font-size="29" text-anchor="middle" fill="#334155">削除</text>
+    <text x="1285" y="405" font-size="29" text-anchor="middle" fill="#334155">外部投稿</text>
+    <text x="1285" y="460" font-size="29" text-anchor="middle" fill="#334155">課金・購入</text>
+    <text x="1285" y="515" font-size="29" text-anchor="middle" fill="#334155">秘密情報</text>
+    <text x="1285" y="570" font-size="29" text-anchor="middle" fill="#334155">最終判断</text>
+  </g>
+  <text x="800" y="805" font-family="Hiragino Sans, Yu Gothic, sans-serif" font-size="34" font-weight="700" text-anchor="middle" fill="#334155">最初は「確認して進める」を多めにする</text>
+</svg>
