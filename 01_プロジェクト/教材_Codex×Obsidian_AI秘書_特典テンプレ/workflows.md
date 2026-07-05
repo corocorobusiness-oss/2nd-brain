@@ -1,5 +1,7 @@
 # Workflows
 
+> 置き場所: `2nd-brain/00_system/workflows.md`。コピーしたら、この行は消してOKです。
+
 ## メモ整理
 
 目的:
