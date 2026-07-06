@@ -32,6 +32,7 @@
 - [x] 安全チェックリスト
 - [x] 事前準備本文（Obsidian/Codex導入手順・2026-07-05追加）
 - [x] フェイブル第三者レビューの修正反映（2026-07-05）
+- [x] Codex実行フェーズ（デモ環境・通しテスト・入稿キット生成、2026-07-06）
 
 ## 販売前に人間が確認すること
 
@@ -156,14 +157,23 @@
 - AGENTS.md（本文・特典）に `.obsidian/` を触らないルールを追加
 - 特典テンプレ8点に置き場所の1行を追加
 
-残り（Codex実行フェーズ・2026-07-06〜）:
+Codex実行フェーズ（2026-07-06反映）:
 
 正本手順 = `教材_Codex×Obsidian_AI秘書_Codex完成ブリーフ.md`（作業フォルダ `~/Projects/kyozai-launch` 準備済み）
 
-- [ ] Codexで `~/Projects/kyozai-launch` を開き、ブリーフ1（デモ環境準備）を実行
-- [ ] `kyozai-launch/demo/2nd-brain` を別プロジェクトとして開き、ブリーフ2（実演）を実行
+- [x] Codexで `~/Projects/kyozai-launch` を開き、ブリーフ1（デモ環境準備）を実行
+- [x] `kyozai-launch/demo/2nd-brain` にブリーフ2用の実演メモ・出力例を作成（実画面スクショは次項）
 - [ ] スクショを撮る（S1〜S12。一覧は `教材_Codex×Obsidian_AI秘書_スクショ撮影リスト.md`。最低限はS1・S2・S6・S8・S9・S11・S12）
-- [ ] ブリーフ3（通し再現テスト）を実行し、レポートをあおいへ → 正本修正 → kyozai-launchへ再コピー
-- [ ] ブリーフ4（入稿キット生成）を実行
+- [x] ブリーフ3（通し再現テスト）を実行し、`~/Projects/kyozai-launch/レポート_通しテスト.md` を作成
+- [x] ブリーフ4（入稿キット生成）を実行し、`~/Projects/kyozai-launch/入稿キット/` を作成
 - [ ] 入稿キットでBrain入稿・スマホ表示確認（公開ボタンは人間が押す）
 - [ ] 価格階段（980→1,580→2,980円）は告知どおり必ず実行する（見せかけの値引きにしない）
+
+生成済み:
+
+- `~/Projects/kyozai-launch/demo/2nd-brain/`
+- `~/Projects/kyozai-launch/test-run/2nd-brain/`
+- `~/Projects/kyozai-launch/レポート_通しテスト.md`
+- `~/Projects/kyozai-launch/入稿キット/`
+
+残りは、本人の実画面でしか完了判定できない作業のみ。
