@@ -1,0 +1,20 @@
+# high_risk_terms.tsv — 台本に出たら候補必須の高リスク語
+# カラム: surface / level / reading_hint / note
+#   level=must   … 台本に出て dic 未登録なら FAIL（読みが安定しているのに漏れやすい語）
+#   level=review … 台本に出て dic 未登録なら WARN（文脈で読みが割れる・要目視の語）
+# ※ known_readings.tsv 掲載語は自動的に must 扱いになるため、ここへの重複記載は不要。
+# 単漢字・自然物・生活語彙（カテゴリG）— 家康回の漏れ実績から
+湿地	review	しっち
+港	review	みなと
+沼	review	ぬま
+柵	review	さく	しがらみ読みの可能性あり
+櫓	review	やぐら	ろ（船の櫓）と割れる
+陣	review	じん
+鐘	review	かね	しょう と割れる（早鐘・晩鐘など）
+渡し	review	わたし
+船着場	review	ふなつきば
+埋め立て	review	うめたて
+葭	review	よし	葦の異体字
+# 史料・出版まわりの文脈キュー（周辺に書名・著者名が出やすい）
+刊行	review	かんこう	周辺の書名・出版社名を必ず候補化
+出典	review	しゅってん	周辺の史料名を必ず候補化
