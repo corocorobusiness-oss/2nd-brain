@@ -1,0 +1,129 @@
+{
+  "at": "2026-07-08T20:19:53.761Z",
+  "url": "https://brain-market.com/a/b1UzM1UjMgoTZsNWa0JXY/edit",
+  "hasEyecatch": true,
+  "foundBodyCount": 18,
+  "missingBody": [],
+  "imageCount": 19,
+  "docImageCount": 18,
+  "eyecatch": "https://image.brain-market.com/store/908eb125a92bf1d0908054d43b22ef07.png",
+  "bodyUrls": [
+    "https://image.brain-market.com/store/061639b25af72c661e77b5994c171fa9.png",
+    "https://image.brain-market.com/store/f179d4c6afbf14b3ed6e8407c524e471.png",
+    "https://image.brain-market.com/store/a7a61b582cdd483f6813125630479f3a.png",
+    "https://image.brain-market.com/store/489f7f9390023575e7865ac9c97e4f38.png",
+    "https://image.brain-market.com/store/8fdfcdd79142bebfb97d1fc8d40059e2.png",
+    "https://image.brain-market.com/store/41fb5f47b80dad98aaa44113ddfd6a30.png",
+    "https://image.brain-market.com/store/eda599176a4cf2503fb7eb0368489a66.png",
+    "https://image.brain-market.com/store/85a60f7f10449c4702471cd4e0ea5439.png",
+    "https://image.brain-market.com/store/8afede66cd93979c38caf800cb6cfbfd.png",
+    "https://image.brain-market.com/store/80f7095678d2d3eb9962aa6c689e6c21.png",
+    "https://image.brain-market.com/store/feca586838f3784f7ae44e70855f9cf8.png",
+    "https://image.brain-market.com/store/fae71accfbd01a10ae198ba4e3aeac61.png",
+    "https://image.brain-market.com/store/0b227b462b38d890924924e6258f2b7c.png",
+    "https://image.brain-market.com/store/0dd086894593a17f7a12dc5ad9d3b90c.png",
+    "https://image.brain-market.com/store/5090133edccbf4f945e5a4f2307b8dc3.png",
+    "https://image.brain-market.com/store/d2e763664d591ed5c450b397ec5b8c6e.png",
+    "https://image.brain-market.com/store/427ac743f127eef08383e4d6092807e9.png",
+    "https://image.brain-market.com/store/6d96256c6e9959428bfbf642d6fc7e31.png"
+  ],
+  "firstImages": [
+    {
+      "i": 0,
+      "src": "https://image.brain-market.com/store/908eb125a92bf1d0908054d43b22ef07.png",
+      "alt": "",
+      "w": 1280,
+      "h": 670,
+      "inEditor": false
+    },
+    {
+      "i": 1,
+      "src": "https://image.brain-market.com/store/061639b25af72c661e77b5994c171fa9.png",
+      "alt": "01-before-after.png",
+      "w": 1280,
+      "h": 720,
+      "inEditor": true
+    },
+    {
+      "i": 2,
+      "src": "",
+      "alt": "",
+      "w": 0,
+      "h": 0,
+      "inEditor": true
+    },
+    {
+      "i": 3,
+      "src": "https://image.brain-market.com/store/f179d4c6afbf14b3ed6e8407c524e471.png",
+      "alt": "02-system-overview.png",
+      "w": 0,
+      "h": 0,
+      "inEditor": true
+    },
+    {
+      "i": 4,
+      "src": "",
+      "alt": "",
+      "w": 0,
+      "h": 0,
+      "inEditor": true
+    },
+    {
+      "i": 5,
+      "src": "https://image.brain-market.com/store/a7a61b582cdd483f6813125630479f3a.png",
+      "alt": "03-roadmap.png",
+      "w": 0,
+      "h": 0,
+      "inEditor": true
+    },
+    {
+      "i": 6,
+      "src": "",
+      "alt": "",
+      "w": 0,
+      "h": 0,
+      "inEditor": true
+    },
+    {
+      "i": 7,
+      "src": "https://image.brain-market.com/store/489f7f9390023575e7865ac9c97e4f38.png",
+      "alt": "04-folder-structure.png",
+      "w": 0,
+      "h": 0,
+      "inEditor": true
+    },
+    {
+      "i": 8,
+      "src": "",
+      "alt": "",
+      "w": 0,
+      "h": 0,
+      "inEditor": true
+    },
+    {
+      "i": 9,
+      "src": "https://image.brain-market.com/store/8fdfcdd79142bebfb97d1fc8d40059e2.png",
+      "alt": "05-agents-role.png",
+      "w": 0,
+      "h": 0,
+      "inEditor": true
+    },
+    {
+      "i": 10,
+      "src": "",
+      "alt": "",
+      "w": 0,
+      "h": 0,
+      "inEditor": true
+    },
+    {
+      "i": 11,
+      "src": "https://image.brain-market.com/store/41fb5f47b80dad98aaa44113ddfd6a30.png",
+      "alt": "06-memo-flow.png",
+      "w": 0,
+      "h": 0,
+      "inEditor": true
+    }
+  ],
+  "shotPath": "/Users/kojinn/2nd-Brain-master/04_アウトプット/Brain教材/AI秘書_完成画像_統一デザイン/brain_edit_reload_safe_after_20260709.png"
+}

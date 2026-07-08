@@ -1,0 +1,36 @@
+{
+  "at": "2026-07-08T20:27:29.134Z",
+  "oldMain": "https://image.brain-market.com/store/908eb125a92bf1d0908054d43b22ef07.png",
+  "newMain": "https://image.brain-market.com/store/307a454441d63300fb164de5bb435e42.png",
+  "applied": true,
+  "state": {
+    "main": {
+      "i": 0,
+      "src": "https://image.brain-market.com/store/307a454441d63300fb164de5bb435e42.png",
+      "alt": "",
+      "w": 1280,
+      "h": 670,
+      "inEditor": false
+    },
+    "imageCount": 19,
+    "text": "一時保存\n\nプレビュー\n\n販売設定に進む\n\n目次\n1.事前準備: ObsidianとCodexを用意する\n2.Day 0: なぜAIに毎回説明し直すのか\n3.Day 1: Obsidianの土台を作る\n4.Day 2: AGENTS.mdでAI秘書の働き方を決める\n5.Day 3: 自分の文脈を4つのファイルに分ける\n6.Day 4: デイリーノートとメモ整理をAI秘書に任せる\n7.Day 5: タスクと目標をAI秘書に追わせる\n8.Day 6: メモと目標から企画を作る\n9.Day 7: AI秘書を安全に使い続ける運用ルール\n10.特典テンプレートまとめ\n\nメモが資産になる！ObsidianをAIの記憶にして、Codexにメモ・タスク・企画を任せる完全ロードマップ\n\n毎回AIに同じ説明をしていませんか？\n\nChatGPTやCodexを使っているのに、毎回こんな説明から始めていませんか？\n\n自分は何をしている人なのか\n\n今どんな目標があるのか\n\nこのメモは何の話なのか\n\nどんなルールで作業してほしいのか\n\nどこまでAIに任せていいのか\n\nAIは便利です。\n\nでも、毎回前提を説明している"
+  },
+  "events": [
+    {
+      "url": "https://api.brain-market.com/v2/articles/b1UzM1UjMgoTZsNWa0JXY/eyecatch",
+      "status": 200,
+      "type": "Fetch"
+    },
+    {
+      "url": "https://api.brain-market.com/v2/articles/b1UzM1UjMgoTZsNWa0JXY/eyecatch",
+      "status": 200,
+      "type": "Fetch"
+    },
+    {
+      "url": "https://image.brain-market.com/store/307a454441d63300fb164de5bb435e42.png",
+      "status": 200,
+      "type": "Image"
+    }
+  ],
+  "localFile": "/Users/kojinn/2nd-Brain-master/04_アウトプット/Brain教材/AI秘書_完成画像_統一デザイン/00-eyecatch-thumbnail-style.png"
+}

@@ -1,0 +1,19 @@
+{
+  "at": "2026-07-08T20:28:33.902Z",
+  "expected": "https://image.brain-market.com/store/307a454441d63300fb164de5bb435e42.png",
+  "ok": true,
+  "state": {
+    "url": "https://brain-market.com/a/b1UzM1UjMgoTZsNWa0JXY/edit",
+    "main": {
+      "i": 0,
+      "src": "https://image.brain-market.com/store/307a454441d63300fb164de5bb435e42.png",
+      "alt": "",
+      "w": 1280,
+      "h": 670,
+      "inEditor": false
+    },
+    "docImageCount": 18,
+    "totalImageCount": 19
+  },
+  "shotPath": "/Users/kojinn/2nd-Brain-master/04_アウトプット/Brain教材/AI秘書_完成画像_統一デザイン/brain_thumbnail_style_reload_verify_20260709.png"
+}
