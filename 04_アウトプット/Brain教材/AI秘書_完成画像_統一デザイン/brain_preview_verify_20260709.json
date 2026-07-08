@@ -1,0 +1,43 @@
+{
+  "at": "2026-07-08T20:01:31.580Z",
+  "previewUrl": "https://brain-market.com/a/b1UzM1UjMgoTZsNWa0JXY/preview?type=publish",
+  "state": {
+    "url": "https://brain-market.com/a/b1UzM1UjMgoTZsNWa0JXY/sales_setting?prePage=preview",
+    "title": "Brain | 紹介機能付きコンテンツ販売プラットフォーム ブレイン",
+    "imageCount": 1,
+    "firstImages": [
+      {
+        "i": 0,
+        "src": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAZCAYAAAArK+5dAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFYSURBVHgB7VT/dcIgED76OoCdoHEDu0EyQesEjROUTGCdwHQCs0HTCYoT1A2aEdwgfqdgUEEM+qffe/fuB3AfHAdEd1wLKeUnZOSIj3gstF54kiaW+y+EkG3b/hwsFOIVsRLm0MTKsmyCBEj+DfVGcVAgyezAo2MSJ/+C1Nr/PfINUsgUkh35FCJgrLATxQZOVHFy4xsgzurZmpe4EvkI9kCCiSeuoFRguZdggR0t6AbwEVSQJfVDCnm/lGCJElTUA/pOLiYwixKoOWQCwnVRFB/o/QHsmTU2g7/y5Xig80hp17bbl4zkOXVvJLHHogh0mYamFaFfSPe9jj2FShk6wcnz51K5bB9Cd5BDcbtmvGP4f7DX/B3oD5D9Mfw6igDgy+PFjfa5dc2uWSs9J+4EujvGli8tu6HuH/IieAfXwnUCPvocNZ5SPwyoK+VZAm7FnOJQ0x19sQGMFYbc9U4ndQAAAABJRU5ErkJggg==",
+        "alt": "",
+        "w": 24,
+        "h": 25,
+        "visible": true,
+        "top": 1241
+      }
+    ]
+  },
+  "hasEyecatch": false,
+  "foundBodyCount": 0,
+  "missingBody": [
+    "https://image.brain-market.com/store/4c960d796350dd4819c6e6bfa00ce954.png",
+    "https://image.brain-market.com/store/45c72e86ccf3804d7f3d86db9bf1a370.png",
+    "https://image.brain-market.com/store/171b4e5528743f6c8975cc6c41a9eaa7.png",
+    "https://image.brain-market.com/store/7f01beca6b63e337b2765d9e2fcbbb98.png",
+    "https://image.brain-market.com/store/384eda4316f035e6f795832f217a7fa0.png",
+    "https://image.brain-market.com/store/32434a5aef7028c72d1ac7ffea62fe77.png",
+    "https://image.brain-market.com/store/5cdd966f6b15d83d8bf796c715b4d40b.png",
+    "https://image.brain-market.com/store/068c0e902f74e0b55b248f1631587f94.png",
+    "https://image.brain-market.com/store/5fa60418d347747a830fdf2324fefbc5.png",
+    "https://image.brain-market.com/store/e0b28c8f69fc6b088f151099acaed5d1.png",
+    "https://image.brain-market.com/store/3ef6450f4dede590e1457e40bd944491.png",
+    "https://image.brain-market.com/store/f1ae5ad4f9de546b96e50ee1ffdaa476.png",
+    "https://image.brain-market.com/store/de4ed68f96e64cfe292bbc939804b769.png",
+    "https://image.brain-market.com/store/7d01814d876cd8e4bfc89f7fdba4fdf5.png",
+    "https://image.brain-market.com/store/713f1fe53f065c240bbc0a8516407cc2.png",
+    "https://image.brain-market.com/store/84e37a39644f6373dfa585d218fecaad.png",
+    "https://image.brain-market.com/store/96115eec2df5b5273bc54f4127685a2f.png",
+    "https://image.brain-market.com/store/cf373025892e4495e1e6d2db8cd867c1.png"
+  ],
+  "shotPath": "/Users/kojinn/2nd-Brain-master/04_アウトプット/Brain教材/AI秘書_完成画像_統一デザイン/brain_preview_after_replace_20260709.png"
+}
