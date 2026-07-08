@@ -1,0 +1,643 @@
+{
+  "at": "2026-07-08T19:58:37.357Z",
+  "editUrl": "https://brain-market.com/a/b1UzM1UjMgoTZsNWa0JXY/edit",
+  "uploaded": {
+    "01-before-after.png": "https://image.brain-market.com/store/4c960d796350dd4819c6e6bfa00ce954.png",
+    "02-system-overview.png": "https://image.brain-market.com/store/45c72e86ccf3804d7f3d86db9bf1a370.png",
+    "03-roadmap.png": "https://image.brain-market.com/store/171b4e5528743f6c8975cc6c41a9eaa7.png",
+    "04-folder-structure.png": "https://image.brain-market.com/store/7f01beca6b63e337b2765d9e2fcbbb98.png",
+    "05-agents-role.png": "https://image.brain-market.com/store/384eda4316f035e6f795832f217a7fa0.png",
+    "06-memo-flow.png": "https://image.brain-market.com/store/32434a5aef7028c72d1ac7ffea62fe77.png",
+    "07-safety-rules.png": "https://image.brain-market.com/store/5cdd966f6b15d83d8bf796c715b4d40b.png",
+    "09-bonus-bundle.png": "https://image.brain-market.com/store/068c0e902f74e0b55b248f1631587f94.png",
+    "08-price-deadline.png": "https://image.brain-market.com/store/5fa60418d347747a830fdf2324fefbc5.png",
+    "11-day0-overview.png": "https://image.brain-market.com/store/e0b28c8f69fc6b088f151099acaed5d1.png",
+    "12-day1-folder-setup.png": "https://image.brain-market.com/store/3ef6450f4dede590e1457e40bd944491.png",
+    "10-folder-roles.png": "https://image.brain-market.com/store/f1ae5ad4f9de546b96e50ee1ffdaa476.png",
+    "13-day2-agents-rule.png": "https://image.brain-market.com/store/de4ed68f96e64cfe292bbc939804b769.png",
+    "14-day3-context-files.png": "https://image.brain-market.com/store/7d01814d876cd8e4bfc89f7fdba4fdf5.png",
+    "15-day4-memo-organize.png": "https://image.brain-market.com/store/713f1fe53f065c240bbc0a8516407cc2.png",
+    "16-day5-task-goals.png": "https://image.brain-market.com/store/84e37a39644f6373dfa585d218fecaad.png",
+    "17-day6-idea-content.png": "https://image.brain-market.com/store/96115eec2df5b5273bc54f4127685a2f.png",
+    "18-day7-safe-operation.png": "https://image.brain-market.com/store/cf373025892e4495e1e6d2db8cd867c1.png"
+  },
+  "before": [
+    {
+      "pos": 402,
+      "alt": "01-before-after.png",
+      "src": "https://image.brain-market.com/store/98f46e18893805821acb4f6488526ad2.png"
+    },
+    {
+      "pos": 1077,
+      "alt": "02-system-overview.png",
+      "src": "https://image.brain-market.com/store/48b03e39fcc4e97a5180bb0f27d7d703.png"
+    },
+    {
+      "pos": 1364,
+      "alt": "03-roadmap.png",
+      "src": "https://image.brain-market.com/store/8936db3e7f396365f59bd48ecab43b0c.png"
+    },
+    {
+      "pos": 1847,
+      "alt": "04-folder-structure.png",
+      "src": "https://image.brain-market.com/store/a4b5e2e1b671c6d803d8daf2226fad60.png"
+    },
+    {
+      "pos": 1983,
+      "alt": "05-agents-role.png",
+      "src": "https://image.brain-market.com/store/421d1f2fed4b4ebc221923b14e225ef7.png"
+    },
+    {
+      "pos": 2383,
+      "alt": "06-memo-flow.png",
+      "src": "https://image.brain-market.com/store/8777a128927ee9018f00f4d035b26c1f.png"
+    },
+    {
+      "pos": 2522,
+      "alt": "07-safety-rules.png",
+      "src": "https://image.brain-market.com/store/2c3938f4da6f3ed5542860250c85b35f.png"
+    },
+    {
+      "pos": 2561,
+      "alt": "09-bonus-bundle.png",
+      "src": "https://image.brain-market.com/store/8e44bcc16e588f25bc78f2924682bda4.png"
+    },
+    {
+      "pos": 3723,
+      "alt": "08-price-deadline.png",
+      "src": "https://image.brain-market.com/store/c7ee452a0bfba5101036d87a66bc30a5.png"
+    },
+    {
+      "pos": 7534,
+      "alt": "11-day0-overview.png",
+      "src": "https://image.brain-market.com/store/cb002f7449e61013736268dab0109001.png"
+    },
+    {
+      "pos": 12097,
+      "alt": "12-day1-folder-setup.png",
+      "src": "https://image.brain-market.com/store/6aa7c11bf2fa197fd8b0ef7898270e2d.png"
+    },
+    {
+      "pos": 13178,
+      "alt": "10-folder-roles.png",
+      "src": "https://image.brain-market.com/store/8b9ee63930153933191527688418636b.png"
+    },
+    {
+      "pos": 16695,
+      "alt": "13-day2-agents-rule.png",
+      "src": "https://image.brain-market.com/store/be7594c8cd41b480937052ccacb19d54.png"
+    },
+    {
+      "pos": 21378,
+      "alt": "14-day3-context-files.png",
+      "src": "https://image.brain-market.com/store/4c1d2957f8f26a52c581cae0665ceae4.png"
+    },
+    {
+      "pos": 25687,
+      "alt": "15-day4-memo-organize.png",
+      "src": "https://image.brain-market.com/store/bab22148588f576bf205c9763ed4d936.png"
+    },
+    {
+      "pos": 29518,
+      "alt": "16-day5-task-goals.png",
+      "src": "https://image.brain-market.com/store/0309c6b5e9d9c5338140d4366ee55c29.png"
+    },
+    {
+      "pos": 32943,
+      "alt": "17-day6-idea-content.png",
+      "src": "https://image.brain-market.com/store/40d7af44072bfcae178139a1a8aff629.png"
+    },
+    {
+      "pos": 37335,
+      "alt": "18-day7-safe-operation.png",
+      "src": "https://image.brain-market.com/store/155089d42b6bbcf26d7af4730f6cd59e.png"
+    }
+  ],
+  "afterImages": [
+    {
+      "pos": 402,
+      "alt": "01-before-after.png",
+      "src": "https://image.brain-market.com/store/4c960d796350dd4819c6e6bfa00ce954.png"
+    },
+    {
+      "pos": 1077,
+      "alt": "02-system-overview.png",
+      "src": "https://image.brain-market.com/store/45c72e86ccf3804d7f3d86db9bf1a370.png"
+    },
+    {
+      "pos": 1364,
+      "alt": "03-roadmap.png",
+      "src": "https://image.brain-market.com/store/171b4e5528743f6c8975cc6c41a9eaa7.png"
+    },
+    {
+      "pos": 1847,
+      "alt": "04-folder-structure.png",
+      "src": "https://image.brain-market.com/store/7f01beca6b63e337b2765d9e2fcbbb98.png"
+    },
+    {
+      "pos": 1983,
+      "alt": "05-agents-role.png",
+      "src": "https://image.brain-market.com/store/384eda4316f035e6f795832f217a7fa0.png"
+    },
+    {
+      "pos": 2383,
+      "alt": "06-memo-flow.png",
+      "src": "https://image.brain-market.com/store/32434a5aef7028c72d1ac7ffea62fe77.png"
+    },
+    {
+      "pos": 2522,
+      "alt": "07-safety-rules.png",
+      "src": "https://image.brain-market.com/store/5cdd966f6b15d83d8bf796c715b4d40b.png"
+    },
+    {
+      "pos": 2561,
+      "alt": "09-bonus-bundle.png",
+      "src": "https://image.brain-market.com/store/068c0e902f74e0b55b248f1631587f94.png"
+    },
+    {
+      "pos": 3723,
+      "alt": "08-price-deadline.png",
+      "src": "https://image.brain-market.com/store/5fa60418d347747a830fdf2324fefbc5.png"
+    },
+    {
+      "pos": 7534,
+      "alt": "11-day0-overview.png",
+      "src": "https://image.brain-market.com/store/e0b28c8f69fc6b088f151099acaed5d1.png"
+    },
+    {
+      "pos": 12097,
+      "alt": "12-day1-folder-setup.png",
+      "src": "https://image.brain-market.com/store/3ef6450f4dede590e1457e40bd944491.png"
+    },
+    {
+      "pos": 13178,
+      "alt": "10-folder-roles.png",
+      "src": "https://image.brain-market.com/store/f1ae5ad4f9de546b96e50ee1ffdaa476.png"
+    },
+    {
+      "pos": 16695,
+      "alt": "13-day2-agents-rule.png",
+      "src": "https://image.brain-market.com/store/de4ed68f96e64cfe292bbc939804b769.png"
+    },
+    {
+      "pos": 21378,
+      "alt": "14-day3-context-files.png",
+      "src": "https://image.brain-market.com/store/7d01814d876cd8e4bfc89f7fdba4fdf5.png"
+    },
+    {
+      "pos": 25687,
+      "alt": "15-day4-memo-organize.png",
+      "src": "https://image.brain-market.com/store/713f1fe53f065c240bbc0a8516407cc2.png"
+    },
+    {
+      "pos": 29518,
+      "alt": "16-day5-task-goals.png",
+      "src": "https://image.brain-market.com/store/84e37a39644f6373dfa585d218fecaad.png"
+    },
+    {
+      "pos": 32943,
+      "alt": "17-day6-idea-content.png",
+      "src": "https://image.brain-market.com/store/96115eec2df5b5273bc54f4127685a2f.png"
+    },
+    {
+      "pos": 37335,
+      "alt": "18-day7-safe-operation.png",
+      "src": "https://image.brain-market.com/store/cf373025892e4495e1e6d2db8cd867c1.png"
+    }
+  ],
+  "oldRemaining": [],
+  "networkEvents": [
+    {
+      "method": "Network.responseReceived",
+      "url": "blob:https://brain-market.com/88365783-79e5-4849-8d5d-32bbba57e5f6",
+      "status": 200,
+      "type": "Image"
+    },
+    {
+      "method": "Network.responseReceived",
+      "url": "https://api.brain-market.com/v2/items",
+      "status": 200,
+      "type": "Fetch"
+    },
+    {
+      "method": "Network.responseReceived",
+      "url": "https://image.brain-market.com/store/4c960d796350dd4819c6e6bfa00ce954.png",
+      "status": 200,
+      "type": "Image"
+    },
+    {
+      "method": "Network.responseReceived",
+      "url": "blob:https://brain-market.com/168cf48c-2fb4-482f-8dc3-e50b361ff300",
+      "status": 200,
+      "type": "Image"
+    },
+    {
+      "method": "Network.responseReceived",
+      "url": "https://api.brain-market.com/v2/items",
+      "status": 200,
+      "type": "Fetch"
+    },
+    {
+      "method": "Network.responseReceived",
+      "url": "https://image.brain-market.com/store/45c72e86ccf3804d7f3d86db9bf1a370.png",
+      "status": 200,
+      "type": "Image"
+    },
+    {
+      "method": "Network.responseReceived",
+      "url": "blob:https://brain-market.com/2dfde5e2-16d1-478e-9f95-61cedce5d679",
+      "status": 200,
+      "type": "Image"
+    },
+    {
+      "method": "Network.responseReceived",
+      "url": "https://api.brain-market.com/v2/items",
+      "status": 200,
+      "type": "Fetch"
+    },
+    {
+      "method": "Network.responseReceived",
+      "url": "https://image.brain-market.com/store/171b4e5528743f6c8975cc6c41a9eaa7.png",
+      "status": 200,
+      "type": "Image"
+    },
+    {
+      "method": "Network.responseReceived",
+      "url": "blob:https://brain-market.com/020352e1-f258-480d-ba9d-35a2f1fbb47b",
+      "status": 200,
+      "type": "Image"
+    },
+    {
+      "method": "Network.responseReceived",
+      "url": "https://api.brain-market.com/v2/items",
+      "status": 200,
+      "type": "Fetch"
+    },
+    {
+      "method": "Network.responseReceived",
+      "url": "https://image.brain-market.com/store/7f01beca6b63e337b2765d9e2fcbbb98.png",
+      "status": 200,
+      "type": "Image"
+    },
+    {
+      "method": "Network.responseReceived",
+      "url": "blob:https://brain-market.com/78399f50-685d-488a-a32a-9c5fbfa44145",
+      "status": 200,
+      "type": "Image"
+    },
+    {
+      "method": "Network.responseReceived",
+      "url": "https://api.brain-market.com/v2/items",
+      "status": 200,
+      "type": "Fetch"
+    },
+    {
+      "method": "Network.responseReceived",
+      "url": "https://image.brain-market.com/store/384eda4316f035e6f795832f217a7fa0.png",
+      "status": 200,
+      "type": "Image"
+    },
+    {
+      "method": "Network.responseReceived",
+      "url": "blob:https://brain-market.com/702dd3f1-e1fb-4975-922d-66f1871f6769",
+      "status": 200,
+      "type": "Image"
+    },
+    {
+      "method": "Network.responseReceived",
+      "url": "https://api.brain-market.com/v2/items",
+      "status": 200,
+      "type": "Fetch"
+    },
+    {
+      "method": "Network.responseReceived",
+      "url": "https://image.brain-market.com/store/32434a5aef7028c72d1ac7ffea62fe77.png",
+      "status": 200,
+      "type": "Image"
+    },
+    {
+      "method": "Network.responseReceived",
+      "url": "blob:https://brain-market.com/3ecf0287-febd-47a4-92fd-468ff1880ee1",
+      "status": 200,
+      "type": "Image"
+    },
+    {
+      "method": "Network.responseReceived",
+      "url": "https://api.brain-market.com/v2/items",
+      "status": 200,
+      "type": "Fetch"
+    },
+    {
+      "method": "Network.responseReceived",
+      "url": "https://image.brain-market.com/store/5cdd966f6b15d83d8bf796c715b4d40b.png",
+      "status": 200,
+      "type": "Image"
+    },
+    {
+      "method": "Network.responseReceived",
+      "url": "blob:https://brain-market.com/67048818-213e-4865-9bfa-8645d02fa14d",
+      "status": 200,
+      "type": "Image"
+    },
+    {
+      "method": "Network.responseReceived",
+      "url": "https://api.brain-market.com/v2/items",
+      "status": 200,
+      "type": "Fetch"
+    },
+    {
+      "method": "Network.responseReceived",
+      "url": "https://image.brain-market.com/store/068c0e902f74e0b55b248f1631587f94.png",
+      "status": 200,
+      "type": "Image"
+    },
+    {
+      "method": "Network.responseReceived",
+      "url": "blob:https://brain-market.com/a3ff5749-43fd-4a3e-afc9-28c489caeaf4",
+      "status": 200,
+      "type": "Image"
+    },
+    {
+      "method": "Network.responseReceived",
+      "url": "https://api.brain-market.com/v2/items",
+      "status": 200,
+      "type": "Fetch"
+    },
+    {
+      "method": "Network.responseReceived",
+      "url": "https://image.brain-market.com/store/5fa60418d347747a830fdf2324fefbc5.png",
+      "status": 200,
+      "type": "Image"
+    },
+    {
+      "method": "Network.responseReceived",
+      "url": "blob:https://brain-market.com/9f0a42a2-c9b2-4dea-9cff-81d332899e3d",
+      "status": 200,
+      "type": "Image"
+    },
+    {
+      "method": "Network.responseReceived",
+      "url": "https://api.brain-market.com/v2/items",
+      "status": 200,
+      "type": "Fetch"
+    },
+    {
+      "method": "Network.responseReceived",
+      "url": "https://image.brain-market.com/store/e0b28c8f69fc6b088f151099acaed5d1.png",
+      "status": 200,
+      "type": "Image"
+    },
+    {
+      "method": "Network.responseReceived",
+      "url": "blob:https://brain-market.com/4d81d1b8-3196-4947-ba58-d638ae2dbc10",
+      "status": 200,
+      "type": "Image"
+    },
+    {
+      "method": "Network.responseReceived",
+      "url": "https://api.brain-market.com/v2/items",
+      "status": 200,
+      "type": "Fetch"
+    },
+    {
+      "method": "Network.responseReceived",
+      "url": "https://image.brain-market.com/store/3ef6450f4dede590e1457e40bd944491.png",
+      "status": 200,
+      "type": "Image"
+    },
+    {
+      "method": "Network.responseReceived",
+      "url": "blob:https://brain-market.com/811eaf89-a03f-4738-adcd-d3fc9c715bca",
+      "status": 200,
+      "type": "Image"
+    },
+    {
+      "method": "Network.responseReceived",
+      "url": "https://api.brain-market.com/v2/items",
+      "status": 200,
+      "type": "Fetch"
+    },
+    {
+      "method": "Network.responseReceived",
+      "url": "https://image.brain-market.com/store/f1ae5ad4f9de546b96e50ee1ffdaa476.png",
+      "status": 200,
+      "type": "Image"
+    },
+    {
+      "method": "Network.responseReceived",
+      "url": "blob:https://brain-market.com/e983ce22-0d73-44cd-a91b-05a85617dbb8",
+      "status": 200,
+      "type": "Image"
+    },
+    {
+      "method": "Network.responseReceived",
+      "url": "https://api.brain-market.com/v2/items",
+      "status": 200,
+      "type": "Fetch"
+    },
+    {
+      "method": "Network.responseReceived",
+      "url": "https://image.brain-market.com/store/de4ed68f96e64cfe292bbc939804b769.png",
+      "status": 200,
+      "type": "Image"
+    },
+    {
+      "method": "Network.responseReceived",
+      "url": "blob:https://brain-market.com/a54dfed7-196b-47d9-9c48-9163ac103a24",
+      "status": 200,
+      "type": "Image"
+    },
+    {
+      "method": "Network.responseReceived",
+      "url": "https://api.brain-market.com/v2/items",
+      "status": 200,
+      "type": "Fetch"
+    },
+    {
+      "method": "Network.responseReceived",
+      "url": "https://image.brain-market.com/store/7d01814d876cd8e4bfc89f7fdba4fdf5.png",
+      "status": 200,
+      "type": "Image"
+    },
+    {
+      "method": "Network.responseReceived",
+      "url": "blob:https://brain-market.com/03161167-4371-40fd-9f1e-ee59b30fc814",
+      "status": 200,
+      "type": "Image"
+    },
+    {
+      "method": "Network.responseReceived",
+      "url": "https://api.brain-market.com/v2/items",
+      "status": 200,
+      "type": "Fetch"
+    },
+    {
+      "method": "Network.responseReceived",
+      "url": "https://image.brain-market.com/store/713f1fe53f065c240bbc0a8516407cc2.png",
+      "status": 200,
+      "type": "Image"
+    },
+    {
+      "method": "Network.responseReceived",
+      "url": "blob:https://brain-market.com/a327cb46-3821-45be-95a8-2aae857cb38e",
+      "status": 200,
+      "type": "Image"
+    },
+    {
+      "method": "Network.responseReceived",
+      "url": "https://api.brain-market.com/v2/items",
+      "status": 200,
+      "type": "Fetch"
+    },
+    {
+      "method": "Network.responseReceived",
+      "url": "https://image.brain-market.com/store/84e37a39644f6373dfa585d218fecaad.png",
+      "status": 200,
+      "type": "Image"
+    },
+    {
+      "method": "Network.responseReceived",
+      "url": "blob:https://brain-market.com/5bed3e63-bba7-425b-8b97-287ed242f76c",
+      "status": 200,
+      "type": "Image"
+    },
+    {
+      "method": "Network.responseReceived",
+      "url": "https://api.brain-market.com/v2/items",
+      "status": 200,
+      "type": "Fetch"
+    },
+    {
+      "method": "Network.responseReceived",
+      "url": "https://image.brain-market.com/store/96115eec2df5b5273bc54f4127685a2f.png",
+      "status": 200,
+      "type": "Image"
+    },
+    {
+      "method": "Network.responseReceived",
+      "url": "blob:https://brain-market.com/a3d19137-55fc-4f94-a8eb-de58f469f858",
+      "status": 200,
+      "type": "Image"
+    },
+    {
+      "method": "Network.responseReceived",
+      "url": "https://api.brain-market.com/v2/items",
+      "status": 200,
+      "type": "Fetch"
+    },
+    {
+      "method": "Network.responseReceived",
+      "url": "https://image.brain-market.com/store/cf373025892e4495e1e6d2db8cd867c1.png",
+      "status": 200,
+      "type": "Image"
+    },
+    {
+      "method": "Network.responseReceived",
+      "url": "https://image.brain-market.com/store/4c960d796350dd4819c6e6bfa00ce954.png",
+      "status": 200,
+      "type": "Image"
+    },
+    {
+      "method": "Network.responseReceived",
+      "url": "https://image.brain-market.com/store/f1ae5ad4f9de546b96e50ee1ffdaa476.png",
+      "status": 200,
+      "type": "Image"
+    },
+    {
+      "method": "Network.responseReceived",
+      "url": "https://image.brain-market.com/store/384eda4316f035e6f795832f217a7fa0.png",
+      "status": 200,
+      "type": "Image"
+    },
+    {
+      "method": "Network.responseReceived",
+      "url": "https://image.brain-market.com/store/32434a5aef7028c72d1ac7ffea62fe77.png",
+      "status": 200,
+      "type": "Image"
+    },
+    {
+      "method": "Network.responseReceived",
+      "url": "https://image.brain-market.com/store/171b4e5528743f6c8975cc6c41a9eaa7.png",
+      "status": 200,
+      "type": "Image"
+    },
+    {
+      "method": "Network.responseReceived",
+      "url": "https://image.brain-market.com/store/7d01814d876cd8e4bfc89f7fdba4fdf5.png",
+      "status": 200,
+      "type": "Image"
+    },
+    {
+      "method": "Network.responseReceived",
+      "url": "https://image.brain-market.com/store/7f01beca6b63e337b2765d9e2fcbbb98.png",
+      "status": 200,
+      "type": "Image"
+    },
+    {
+      "method": "Network.responseReceived",
+      "url": "https://image.brain-market.com/store/5fa60418d347747a830fdf2324fefbc5.png",
+      "status": 200,
+      "type": "Image"
+    },
+    {
+      "method": "Network.responseReceived",
+      "url": "https://image.brain-market.com/store/068c0e902f74e0b55b248f1631587f94.png",
+      "status": 200,
+      "type": "Image"
+    },
+    {
+      "method": "Network.responseReceived",
+      "url": "https://image.brain-market.com/store/45c72e86ccf3804d7f3d86db9bf1a370.png",
+      "status": 200,
+      "type": "Image"
+    },
+    {
+      "method": "Network.responseReceived",
+      "url": "https://image.brain-market.com/store/5cdd966f6b15d83d8bf796c715b4d40b.png",
+      "status": 200,
+      "type": "Image"
+    },
+    {
+      "method": "Network.responseReceived",
+      "url": "https://image.brain-market.com/store/e0b28c8f69fc6b088f151099acaed5d1.png",
+      "status": 200,
+      "type": "Image"
+    },
+    {
+      "method": "Network.responseReceived",
+      "url": "https://image.brain-market.com/store/3ef6450f4dede590e1457e40bd944491.png",
+      "status": 200,
+      "type": "Image"
+    },
+    {
+      "method": "Network.responseReceived",
+      "url": "https://image.brain-market.com/store/84e37a39644f6373dfa585d218fecaad.png",
+      "status": 200,
+      "type": "Image"
+    },
+    {
+      "method": "Network.responseReceived",
+      "url": "https://image.brain-market.com/store/de4ed68f96e64cfe292bbc939804b769.png",
+      "status": 200,
+      "type": "Image"
+    },
+    {
+      "method": "Network.responseReceived",
+      "url": "https://image.brain-market.com/store/713f1fe53f065c240bbc0a8516407cc2.png",
+      "status": 200,
+      "type": "Image"
+    },
+    {
+      "method": "Network.responseReceived",
+      "url": "https://api.brain-market.com/v2/articles/b1UzM1UjMgoTZsNWa0JXY/draft",
+      "status": 200,
+      "type": "Fetch"
+    },
+    {
+      "method": "Network.responseReceived",
+      "url": "https://api.brain-market.com/v2/articles/b1UzM1UjMgoTZsNWa0JXY/draft",
+      "status": 200,
+      "type": "Fetch"
+    }
+  ]
+}
