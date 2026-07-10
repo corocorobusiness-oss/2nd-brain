@@ -1,0 +1,143 @@
+BUYMA オンラインVIP仕入れ完全解説マニュアル
+はじめに
+早速ですがBUYMAでリサーチをしていると
+「このショッパーなんでこんな安く出品できてるの？」
+と疑問に思ったことがあると思います。
+そのライバルの戦略の1つがオンラインVIP仕入れです。
+上位ショッパーや資金力のある人だけができる戦略ではなく、誰でも正しい方法を理解すれば初心者からでもできるのがこのオンラインVIP仕入れです。
+BUYMA初心者でもすぐに実践できる、
+オンラインVIP仕入れの方法と具体的なステップをご紹介したいと思います。
+オンラインVIP仕入れとは
+海外のセレクトショップに交渉をして特別な「割引クーポンコード」を発行してもらうことで、通常価格よりも安く購入できる仕組みのことです。
+多くの場合、自分専用の「割引クーポンコード」を発行してもらい決済ページで
+「割引クーポンコード」を入力すると割引を受けられるようになります。
+通常価格より10〜30%OFFで仕入れるというもので、免税を適用するともっと安く仕入れることもできます。
+ショップへの交渉方法
+①交渉するショップをリストアップする
+管理表https://docs.google.com/spreadsheets/d/11hXXzQdgVBlybhXB7raG_wmwc7153sedPtk_cng0CEQ/edit?usp=sharing
+このままでは使用できないので開いていただいて「ファイル」→「コピーを作成」してからご使用ください。
+交渉文を送る前に事前準備としてショップをリストアップします。
+交渉管理表にショップ名とURLをリストアップしてまとめて交渉することをおすすめします。
+交渉する際は交渉日を入力しておくと良いです。
+最初は交渉が通らなかったけど、1ヶ月後、2ヶ月後に交渉したらVIPもらえる場合もありますし、1度仕入れしてから再度交渉するとこの人は買ってくれる人だという信頼につながりVIPがもらえる場合があります。
+ショップ検索でオススメのサイトはこちらです。
+shoppingmap.it
+https://www.shoppingmap.it/
+Farfetchパートナーズ
+https://www.farfetch.com/jp/boutiques-all.aspx
+海外通販WALKER
+https://www.kaigai-tsuhan.com/
+②交渉文を送る
+リストアップできたら交渉していきます。
+今回はセレクトショップFRMODAを例に挙げてみます。
+サイトの下の方に「Contact」を見ると連絡先が載っていることが多いです。
+※サイトによって記載は様々ですが大体下の方にContact UsやCustomer Service、About usに連絡先が載っています。
+ショップによってはメールアドレスが載っておらず、「お問い合わせフォーム」のみの場合もありますのでその時は「お問い合わせフォーム」から連絡しましょう。
+名前、メールアドレス、メッセージの部分に交渉文を入力して送信するだけです。
+交渉の返信が来たら管理表の交渉結果、クーポンコード、割引率、備考欄の記入をしましょう。
+VIP交渉で「割引クーポンコード」をもらいやすくするコツ
+・購入した後で交渉するもしくは商品を購入する時に交渉する
+あなたなら一度も購入したことがない人より、1度でも購入したことがある人ではどちらに「割引クーポンコード」をあげたいですか？
+もちろん後者の1度でも購入したことある人です。
+受注が入ったタイミングで、仕入れ先に交渉してみると良いです。
+・時差を意識する
+人気の店舗だと日中は返信してくれない場合があります。
+オープンしたばかりの時間帯などに交渉してみるのも良いです。
+・電話で交渉する
+直接ショップへSkypeを使って電話交渉してみるのも1つの方法です。
+英語ができる方はご自身でできるかと思いますが、できない方はクラウドワークスやランサーズなどで英語担当を採用すると良いです。
+報酬体系は
+「1件電話でいくら」＋「コミッション」
+VIP交渉が取れたら、コミッションとして＋200円などの報酬を支払う。
+英語担当はVIP交渉以外でも直営店直送仕入れの交渉でも必要ですし、在庫を世界中から探す場合なども非常に助かりますので1人採用しても良いと思います。
+・InstagramのDMでの交渉
+ショップ公式のInstagramをやっていることが多いので直接ショップのInstagramにDMを送って交渉をしてもVIPがとれる場合もあります。
+その時のInstagramのアカウントのブランディングなどは大切です。
+例えばフォロワー0人で投稿もされてなく何をしている人かもわからないような外国人アカウントからいきなり交渉文が届いたらどうしますか？
+ほとんどの場合無視すると思います。
+ご自身のアカウントでも良いですが、架空で日本で俳優をやってるなどInstagramのアカウントが名刺変わりになるのでアカウントのブランディングによって、返信がくる確率やVIPがとれる確率も変わってきます。
+割引クーポンコードをもらった後に割引率を上げる方法
+割引クーポンコードの割引率はショップによって違います。
+ショップでの購入履歴がない場合は最初は10％からの場合が多いです。
+しかし、定期的に仕入れをしていくと今度はショップの方から「あなた沢山買ってくれるから20%でいいよ」と割引率をあげてくれることもあります。
+最初の購入実績のない交渉で、高割引は狙わずとりえず割引クーポンコードをもらい、良い仕入れ先は商品を仕入れて購入実績と信頼をあげて高割引を狙っていきましょう。
+交渉文テンプレート文章
+ビジネスとしての交渉文テンプレート
+【英文】
+Dear customer support,
+Hello. My name is （名前）, and I’m working as a buyer in Japan.
+I apologize for this sudden email.
+I personally adore your store and I’m always fascinated by your great selection of products.
+I’m writing you this email because I was wondering if I could get any VIP coupon from your store.
+If I could, I could spend approximately 10,000 to 20,000 USD a month or more depending on the discount rate.
+Thank you once again and hope you have a great day,
+（名前）
+【日本語訳】
+親愛なるカスタマーサポート
+こんにちは。日本でバイヤーとして活動している（名前）と申します。
+突然のご連絡失礼いたします。
+個人的にあなたのお店が大好きで、選び抜かれた商品ラインナップにいつも魅了されています。
+今回、VIPクーポンについてご連絡させていただきました。
+今後、月に10,000ドルから20,000ドルほど仕入れる予定ですので、
+VIPクーポンを発行していただけないでしょうか。
+割引率によっては上記の金額よりもたくさん購入することも可能です。
+よろしくお願いいたします。いい1日をお過ごしください。
+（名前）
+ビジネスとしての交渉文テンプレート（商品を購入したことがある場合）
+【英文】
+Dear customer support,
+Hello.
+My name is （名前）.
+I recently bought （購入した商品の商品名）at your online store and I was very much pleased by your quick and kind support.
+I have an online shop in Japan and I need to purchase products regularly (I’m mainly selling VALENTINO, GUCCI, and CELINEmostly).
+URL(BUYMAアカウントのURL)
+If you are okay, will you please offer me any VIP coupon so that I can buy more from your store regularly?
+I apologize for this sudden message, but I hope to hear from you.
+Thank you and have a nice day,
+（名前）
+【日本語訳】
+親愛なるカスタマーサポート
+ご担当者様こんにちは。（名前）と申します。
+先日、（購入した商品の商品名）を購入したのですが、お店の対応がとても良くて感激しました。
+私は日本でオンラインショップを運営しており、商品を定期的に仕入れる必要があります
+（取り扱っているブランドは主に〇〇です）
+URL(BUYMAアカウントのURL)
+もし可能であれば、VIPクーポンを発行してもらえないでしょうか？
+発行していただけたらあなたのショップから定期的に商品を購入できるようになります。
+突然のご連絡で失礼いたしました。
+お返事お待ちしております。
+（名前）
+お客さんとしての交渉文テンプレート
+【英文】
+Dear customer support,
+Hello I’m （名前）.
+Your shop has a good selection.
+Is there a discount exclusively for VIP members at your shop?
+Your shop has many items that are not in Japan, so I want to buy a lot from your shop.
+I love ◯◯ and △△.（ブランド名）
+I plan to make more orders over time and purchase from your shop on a monthly, continuous basis.
+Many thanks.
+(名前)
+【日本語訳】
+親愛なるカスタマーサポート、
+こんにちは、（名前）です。
+あなたのお店には良い選択があります。
+お店のVIP会員限定の割引はありますか？
+あなたのお店には日本以外の商品がたくさんあるので、たくさん買いたいです。
+◯◯と△△が大好きです。（ブランド名）
+今後も注文を増やし、毎月継続的にショップから購入する予定です。
+どうもありがとう。
+（名前）
+の部分は変更して使います。
+※あくまでも参考テンプレートなのでご自身で作り直してお使いください。
+最後に
+今回のコンテンツが参考になりましたら幸いです。
+それでは最後までお読み頂きありがとうございました。
+今後もBUYMAに関してのコンテンツを作成していきますのでよろしくお願い致します。
+
+--- LINKS ---
+https://docs.google.com/spreadsheets/d/11hXXzQdgVBlybhXB7raG_wmwc7153sedPtk_cng0CEQ/edit?usp=sharing	https://docs.google.com/spreadsheets/d/11hXXzQdgVBlybhXB7raG_wmwc7153sedPtk_cng0CEQ/edit?usp=sharing
+https://www.shoppingmap.it/	https://www.shoppingmap.it/
+https://www.farfetch.com/jp/boutiques-all.aspx	https://www.farfetch.com/jp/boutiques-all.aspx
+https://www.kaigai-tsuhan.com/	https://www.kaigai-tsuhan.com/
+FRMODA	https://www.frmoda.com/en/#
