@@ -1,5 +1,7 @@
 # Day 3: 自分の文脈を4つのファイルに分ける
 
+![Day 3 自分の文脈を入れる](../04_画像/chapter_illustrations_title_20260709/day3-title-logo-fixed-v3.png)
+
 作成日: 2026-07-04
 参照: [[教材_Codex×Obsidian_AI秘書_商品設計]] / [[教材_Codex×Obsidian_AI秘書_Day2本文ドラフト]]
 
@@ -49,6 +51,8 @@ AIに自分のことを理解してもらうには、いろいろな情報が必
 | `workflows.md` | よくやる作業の手順 |
 
 この4つは、AI秘書に渡す自己紹介セットです。
+
+![自分の文脈を4つのファイルに分ける](../04_画像/body_visuals_trial_20260710/04-context-files-title.png)
 
 ## profile.md: 自分が何者かを書く
 

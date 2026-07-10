@@ -1,5 +1,7 @@
 # Day 1: Obsidianの土台を作る
 
+![Day 1 Obsidianの土台を作る](../04_画像/chapter_illustrations_title_20260709/day1-title-logo-fixed-v3.png)
+
 作成日: 2026-07-04
 参照: [[教材_Codex×Obsidian_AI秘書_商品設計]] / [[教材_Codex×Obsidian_AI秘書_Day0本文ドラフト]]
 
@@ -60,6 +62,8 @@ Vaultは「AI秘書の作業部屋」だと思ってください。
 日本語名でも使えますが、AIツールやPC環境によっては、パスの扱いで少し面倒になることがあります。
 
 そのため、教材内では半角英数字の `2nd-brain` で統一します。
+
+![2nd-brainを作る](../04_画像/body_visuals_trial_20260710/02-vault-setup-title.png)
 
 ## 最小フォルダ構成
 
@@ -259,7 +263,7 @@ AIに守ってほしいルールを書くファイルです。
 
 - Codex × Obsidian教材の表紙画像を作りたい
 - 初心者向けにBefore/After図を入れたい
-- 価格は完成版ローンチで980円から
+- 価格はリリース記念価格1,580円にする
 ```
 
 ## 01_projectsに進行中のものを置く
@@ -326,6 +330,8 @@ AIにファイル操作を頼む時も、
 
 と指示すると安全です。
 
+![削除せず90_archiveへ移動する](../04_画像/body_visuals_trial_20260710/13-archive-flow-title.png)
+
 ## 今日作る完成形
 
 Day 1が終わると、あなたのVaultはこうなります。
@@ -346,6 +352,8 @@ Day 1が終わると、あなたのVaultはこうなります。
 ```
 
 これで、AI秘書の作業部屋ができました。
+
+![完成した2nd-brain](../04_画像/body_visuals_trial_20260710/01-completed-second-brain-title.png)
 
 まだ中身は少なくて大丈夫です。
 

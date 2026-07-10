@@ -1,5 +1,7 @@
 # Day 7: AI秘書を安全に使い続ける運用ルール
 
+![Day 7 安全に使い続ける](../04_画像/chapter_illustrations_title_20260709/day7-title-logo-fixed-v3.png)
+
 作成日: 2026-07-05
 参照: [[教材_Codex×Obsidian_AI秘書_商品設計]] / [[教材_Codex×Obsidian_AI秘書_Day6本文ドラフト]]
 
@@ -64,6 +66,8 @@ AI秘書に任せる作業は、次の3つに分けます。
 特に初心者のうちは、「確認してから進めること」を多めにしておくのがおすすめです。
 
 慣れてきたら、少しずつ任せる範囲を広げれば大丈夫です。
+
+![AI秘書に任せる範囲を3つに分ける](../04_画像/body_visuals_trial_20260710/12-safety-rules-title.png)
 
 ## 任せていいこと
 
@@ -201,6 +205,8 @@ Codexに整理を頼むときも、こう伝えます。
 ```
 
 最初は「消さない」が正解です。
+
+![削除せず90_archiveへ移動する](../04_画像/body_visuals_trial_20260710/13-archive-flow-title.png)
 
 ## 外部投稿は最後に自分で確認する
 

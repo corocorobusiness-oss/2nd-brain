@@ -1,5 +1,7 @@
 # Day 6: メモと目標から企画を作る
 
+![Day 6 企画を作る](../04_画像/chapter_illustrations_title_20260709/day6-title-logo-fixed-v3.png)
+
 作成日: 2026-07-04
 参照: [[教材_Codex×Obsidian_AI秘書_商品設計]] / [[教材_Codex×Obsidian_AI秘書_Day5本文ドラフト]]
 
@@ -37,6 +39,8 @@ Day 6では、そのメモと目標を使って「発信や商品につながる
 こういうものは、全部企画の素材になります。
 
 `2nd-brain` にメモを残しておくと、Codexにその素材を読ませて企画化できます。
+
+![1つのメモから企画を作る](../04_画像/body_visuals_trial_20260710/07-content-branching-title.png)
 
 ## 企画出しで読むファイル
 
@@ -158,7 +162,7 @@ Before:
 - 2nd-brainをAIの記憶にする
 - AGENTS.mdは働き方マニュアル
 - 初心者には図解が必要
-- 980円から販売したい
+- リリース記念価格1,580円で販売したい
 ```
 
 After:
