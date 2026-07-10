@@ -320,7 +320,7 @@ YouTubeなら、視聴者がクリックしたくなる切り口にします。
 5. サムネイルの文字案
 ```
 
-## workflows.mdに追記する
+## `workflows.md`に追記する
 
 Day 6の手順も、`workflows.md` に追記します。
 

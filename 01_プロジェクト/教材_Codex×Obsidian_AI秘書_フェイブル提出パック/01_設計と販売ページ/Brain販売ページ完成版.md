@@ -112,9 +112,9 @@ Day 0で全体像をつかみ、その後Day 1〜7を1日ずつ進めます。Da
 
 ### Day 2: Codexに読ませるルールを作る
 
-- AGENTS.mdの役割
+- `AGENTS.md`の役割
 - AIの役割、権限、禁止事項
-- 最初のAGENTS.mdテンプレ
+- 最初の`AGENTS.md`テンプレ
 - AIに勝手にやらせないための書き方
 
 ![AGENTS.mdでAI秘書の働き方を決める](../04_画像/05-agents-role.png)
@@ -173,11 +173,11 @@ Day 0で全体像をつかみ、その後Day 1〜7を1日ずつ進めます。Da
 
 ![そのまま使える8大テンプレート特典](../04_画像/sales_visuals_20260710/14-bonus-pack-title.png)
 
-- AGENTS.mdテンプレ
-- profile.mdテンプレ
-- goals.mdテンプレ
-- rules.mdテンプレ
-- workflows.mdテンプレ
+- `AGENTS.md`テンプレ
+- `profile.md`テンプレ
+- `goals.md`テンプレ
+- `rules.md`テンプレ
+- `workflows.md`テンプレ
 - デイリーノートテンプレ
 - Codexに投げるプロンプト集
 - AIに任せていいこと・任せないことチェックリスト

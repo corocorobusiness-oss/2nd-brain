@@ -223,7 +223,7 @@ Day 4で使う基本プロンプトはこれです。
 
 慣れてきたら、`00_system/workflows.md` にも追加しておきましょう。
 
-## workflows.mdに追記する
+## `workflows.md`に追記する
 
 Day 3で作った `workflows.md` に、メモ整理の手順を追記します。
 
