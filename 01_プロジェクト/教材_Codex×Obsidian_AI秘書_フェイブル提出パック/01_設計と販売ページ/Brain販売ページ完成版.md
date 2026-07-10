@@ -61,7 +61,7 @@ AIは便利です。
 具体的には、以下を作ります。
 
 - `2nd-brain` というObsidian Vault
-- Codexに最初に読ませる `AGENTS.md`
+- Codexへの基本指示を書く `AGENTS.md`
 - 自分の基本情報を書く `profile.md`
 - 今の目標を書く `goals.md`
 - AIに守ってほしいことを書く `rules.md`
