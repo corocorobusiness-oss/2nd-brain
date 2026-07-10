@@ -3,7 +3,7 @@
 ![Day 0 毎回説明し直す理由](../04_画像/chapter_illustrations_title_20260709/day0-title-logo-fixed-v3.png)
 
 作成日: 2026-07-04
-参照: [[教材_Codex×Obsidian_AI秘書_商品設計]] / [[教材_Codex×Obsidian_AI秘書_Brain販売ページ下書き]]
+参照: [商品設計](../01_設計と販売ページ/商品設計.md) / [Brain販売ページ完成版](../01_設計と販売ページ/Brain販売ページ完成版.md)
 
 ## 今日のゴール
 
