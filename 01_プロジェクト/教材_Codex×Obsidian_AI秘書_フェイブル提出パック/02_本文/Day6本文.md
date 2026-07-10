@@ -3,7 +3,6 @@
 ![Day 6 企画を作る](../04_画像/chapter_illustrations_title_20260709/day6-title-logo-fixed-v3.png)
 
 作成日: 2026-07-04
-参照: [商品設計](../01_設計と販売ページ/商品設計.md) / [Day5本文](Day5本文.md)
 
 ## 今日のゴール
 
