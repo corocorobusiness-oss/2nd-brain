@@ -1,0 +1,60 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+workdir="$PWD"
+prompt=""
+sandbox="read-only"
+while [ "$#" -gt 0 ]; do
+  case "$1" in
+    -C|--cd)
+      workdir="$2"
+      shift 2
+      ;;
+    -p|--prompt)
+      prompt="$2"
+      shift 2
+      ;;
+    -s|--sandbox)
+      sandbox="$2"
+      shift 2
+      ;;
+    *)
+      echo "agent-run-codex-isolated: unsupported argument $1" >&2
+      exit 64
+      ;;
+  esac
+done
+
+if [ -z "$prompt" ]; then
+  echo "agent-run-codex-isolated: prompt is required" >&2
+  exit 64
+fi
+
+codex_bin="/Applications/ChatGPT.app/Contents/Resources/codex"
+out="$(mktemp)"
+diag="$(mktemp)"
+cleanup() {
+  rm -f "$out" "$diag"
+}
+trap cleanup EXIT
+
+set +e
+"$codex_bin" exec --ephemeral --skip-git-repo-check --sandbox "$sandbox" \
+  -C "$workdir" --color never -o "$out" "$prompt" >"$diag" 2>&1 </dev/null
+rc=$?
+set -e
+
+if [ "$rc" -eq 0 ]; then
+  if [ -s "$out" ]; then
+    /bin/cat "$out"
+  else
+    /bin/cat "$diag"
+  fi
+  exit 0
+fi
+
+/bin/cat "$diag" >&2
+if [ -s "$out" ]; then
+  /bin/cat "$out"
+fi
+exit "$rc"
