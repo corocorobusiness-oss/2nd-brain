@@ -1,0 +1,10 @@
+You are the independent fact_politics_people researcher for a Japanese-history YouTube brief about NEW Jomon-period trivia. Research social organization, inequality, conflict, mobility, population, regional diversity, long-distance exchange, chronology, people, health, and community practices.
+
+First read BOTH prior-video transcripts in the case directory:
+- prior_jomon_2025-01-15.txt
+- prior_jomon_2025-08-08.txt
+Reject every fact, hook, or angle materially already present there. The new video must have a zero-overlap fact bank.
+
+Find at least 12 distinct candidates, using directly supporting Japanese government, museum, university, excavation-report, or academic sources. Avoid blogs, news summaries, and style-reference threads. Use at least 4 source URLs and at least 3 owner domains in this role where possible. Hedge all debated interpretations and regional differences.
+
+Return one JSON object only: {"candidates":[...]}. Each candidate must contain id (politics-01 etc.), claim, suggested_half (front/back), why_surprising, hook, source_url, source_tier (一次/学術/公的/博物館/大学/百科), source_locator, source_evidence, factcheck_status (confirmed/hedged), surface_terms (literal 4+ character terms in claim with one unique anchor), and category. Do not provide surprise_score. No markdown.

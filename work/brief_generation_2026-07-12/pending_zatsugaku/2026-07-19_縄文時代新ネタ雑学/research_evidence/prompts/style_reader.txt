@@ -1,0 +1,15 @@
+You are the independent style_reader. Read the FULL text of every reference thread below, from first post through the last available post. These are style/rhythm references only, never fact sources.
+
+URLs:
+1. https://nanjhistory.2chblog.jp/archives/21548628.html
+2. https://nanjhistory.2chblog.jp/archives/22772580.html
+3. https://inutomo11.com/archives/30710785.html
+
+Observe how a factual drop triggers disbelief, jokes, short replies, source demands, corrections, topic drift, and return to the main subject. Flag hateful or policy-risk language as style that must NOT be copied.
+
+Return one JSON object only with:
+- reviewed_reference_urls: the exact 3 URLs, all included
+- references: array of {url,title,reviewed_full_text:true,style_notes:[at least 5 concrete Japanese notes]}
+- global_style_rules: at least 8 concise Japanese rules for natural 2ch rhythm
+- prohibited_copy_patterns: at least 5 unsafe or artificial patterns to avoid
+No markdown.

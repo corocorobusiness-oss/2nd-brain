@@ -1,0 +1,476 @@
+{
+  "save_dir": "Projects/youtube/創作スレ下書き/2026-07-18_高杉晋作/",
+  "status": "ready_for_pipeline",
+  "block_reasons": [],
+  "theme_subject": "高杉晋作",
+  "era": "幕末",
+  "working_title": "【2ch歴史】高杉晋作、約80人の挙兵から長州藩の流れを変えた件www 2ちゃんねるの歴史オタクたちの見解がおもしろい【ゆっくり解説】",
+  "title_candidates": [
+    {
+      "title": "【2ch歴史】高杉晋作、約80人の挙兵から長州藩の流れを変えた件www 2ちゃんねるの歴史オタクたちの見解がおもしろい【ゆっくり解説】",
+      "pattern": "人物・意外な真実",
+      "predicted_views": 16734,
+      "over_10k_prob": 0.545,
+      "rank": "A"
+    },
+    {
+      "title": "【2ch歴史】高杉晋作、わずか80人ほどで長州藩の流れを変えた件www 2ちゃんねるの歴史オタクたちの見解がおもしろい【ゆっくり解説】",
+      "pattern": "人物・誇張抑制",
+      "predicted_views": 16734,
+      "over_10k_prob": 0.545,
+      "rank": "A"
+    },
+    {
+      "title": "【2ch歴史】功山寺挙兵、80人ほどで始めたの無謀すぎる件www 2ちゃんねるの歴史オタクたちの見解がおもしろい【ゆっくり解説】",
+      "pattern": "事件フック",
+      "predicted_views": 6257,
+      "over_10k_prob": 0.316,
+      "rank": "B"
+    },
+    {
+      "title": "【2ch歴史】高杉晋作、わずかな仲間で長州藩を倒幕へ動かした件www 2ちゃんねるの歴史オタクたちの見解がおもしろい【ゆっくり解説】",
+      "pattern": "人物再評価",
+      "predicted_views": 16734,
+      "over_10k_prob": 0.545,
+      "rank": "A"
+    }
+  ],
+  "split": {
+    "pattern_id": "①",
+    "pattern_name": "人物深掘り型",
+    "front": {
+      "role": "タイトルネタ",
+      "theme": "功山寺で約80人から始めた無謀な挙兵と、会所襲撃までの切迫感。",
+      "hook_type": "少数決起・意外な真実",
+      "fact_ids": [
+        "c01",
+        "c04",
+        "c11",
+        "s03"
+      ],
+      "rationale": "人数は約と留保しつつ、行動の異常な速さを入口にする。"
+    },
+    "back": {
+      "role": "本筋",
+      "theme": "上海視察、奇兵隊、四国艦隊講和、諸隊の合流、大田・絵堂、第二次長州征討へつながる長州藩内の流れ。",
+      "fact_ids": [
+        "c02",
+        "c03",
+        "c05",
+        "c06",
+        "c09",
+        "c10",
+        "s04"
+      ],
+      "rationale": "一人の英雄譚ではなく、諸隊と正義派の運動へ広げる。"
+    },
+    "thread_core_question": {
+      "front": "高杉晋作はなぜ約80人で藩政府へ反旗を翻せたのか？",
+      "back": "その小さな決起はなぜ長州藩全体の流れを変えるまで拡大したのか？"
+    },
+    "transition_B": "ここまでは約80人で始まった功山寺挙兵を見てきたが、『少人数の決起だけで藩全体が動くわけないだろ』という疑問も出てきた。では諸隊や正義派はどう続いたのか。引き続き議論を見ていこう。",
+    "gap_rationale": "少人数の一点突破から、諸隊・政治・戦争を含む集団運動へ広げる。"
+  },
+  "scoring": {
+    "predicted_views": 16734,
+    "over_10k_prob": 0.545,
+    "rank": "A",
+    "breakdown": {
+      "engine": "predict_score.py",
+      "raw": "[A] pred= 16,734  p10k=54.5%  幕末      /if系              【2ch歴史】高杉晋作、約80人の挙兵から長州藩の流れを変えた件www 2ちゃんねるの歴史オタクたちの見解がおもしろい【ゆっくり解説】\n       → 幕末×if系=20,992 / pat:www/草系/〜件/〜件www=9,071"
+    },
+    "boost": [],
+    "model_version": "median-2026-06-23",
+    "recent_hit_rate": 0.673,
+    "confidence": "mid"
+  },
+  "facts": {
+    "confirmed": [
+      {
+        "id": "c01",
+        "claim": "高杉晋作は天保10年8月20日(1839年9月27日)、長門国萩城下に長州藩士・高杉小忠太の長男として生まれた幕末の志士。",
+        "source_url": "https://ja.wikipedia.org/wiki/%E9%AB%98%E6%9D%89%E6%99%8B%E4%BD%9C",
+        "source_tier": "百科(Wikipedia)",
+        "half": "both",
+        "year": 1839
+      },
+      {
+        "id": "c02",
+        "claim": "高杉晋作は安政4年(1857年)頃、吉田松陰の松下村塾に入門し、久坂玄瑞らとともに学んだ。久坂玄瑞と並んで松下村塾の双璧と称された。",
+        "source_url": "https://yamaguchi-tourism.jp/feature/shinsaku",
+        "source_tier": "観光公式/百科",
+        "half": "後半",
+        "year": 1857
+      },
+      {
+        "id": "c03",
+        "claim": "文久3年(1863年)6月、高杉晋作は下関(馬関)の防衛を目的に、武士以外でも志があれば入隊できる奇兵隊を結成し、初代総督となった。",
+        "source_url": "https://ja.wikipedia.org/wiki/%E5%A5%87%E5%85%B5%E9%9A%8A",
+        "source_tier": "百科(Wikipedia)",
+        "half": "後半",
+        "year": 1863
+      },
+      {
+        "id": "c04",
+        "claim": "元治元年(1864年)12月15日、高杉晋作は長府の功山寺で挙兵し(功山寺挙兵)、保守的な俗論派が握る藩政に反旗を翻した。",
+        "source_url": "https://ja.wikipedia.org/wiki/%E5%8A%9F%E5%B1%B1%E5%AF%BA%E6%8C%99%E5%85%B5",
+        "source_tier": "百科(Wikipedia)",
+        "half": "前半",
+        "year": 1864
+      },
+      {
+        "id": "c05",
+        "claim": "功山寺挙兵に続く慶応元年(1865年)正月の大田・絵堂の戦いで諸隊が俗論派に勝利し、長州藩の藩論は正義派(倒幕)に統一された。",
+        "source_url": "https://ja.wikipedia.org/wiki/%E5%8A%9F%E5%B1%B1%E5%AF%BA%E6%8C%99%E5%85%B5",
+        "source_tier": "百科(Wikipedia)",
+        "half": "後半",
+        "year": 1865
+      },
+      {
+        "id": "c06",
+        "claim": "慶応2年(1866年)の第二次長州征討(四境戦争)で、高杉晋作は海軍を指揮し、蒸気軍艦・丙寅丸に乗って大島口・小倉口の戦いで幕府軍を相手に戦った。",
+        "source_url": "https://ja.wikipedia.org/wiki/%E9%95%B7%E5%B7%9E%E5%BE%81%E8%A8%8E",
+        "source_tier": "百科(Wikipedia)",
+        "half": "後半",
+        "year": 1866
+      },
+      {
+        "id": "c09",
+        "claim": "文久2年(1862年)、高杉晋作は藩命で幕府使節随行員として上海へ渡航し、欧米の植民地化が進む清国の実情や太平天国の乱を見聞した。",
+        "source_url": "https://ja.wikipedia.org/wiki/%E9%AB%98%E6%9D%89%E6%99%8B%E4%BD%9C",
+        "source_tier": "百科(Wikipedia)",
+        "half": "後半",
+        "year": 1862
+      },
+      {
+        "id": "c10",
+        "claim": "高杉晋作は元治元年(1864年)の四国艦隊下関砲撃事件後、長州藩の代表として米英仏蘭4国との講和談判にあたり、賠償金の責任を幕府に転嫁する論で交渉した。",
+        "source_url": "https://shimonoseki.travel/shimonosekistory/takasugi/",
+        "source_tier": "観光公式/百科",
+        "half": "後半",
+        "year": 1864
+      },
+      {
+        "id": "c11",
+        "claim": "元治元年12月、高杉晋作は力士隊や遊撃隊など約80人を率いて功山寺で挙兵したと山口県公式観光資料は紹介している。",
+        "source_url": "https://yamaguchi-tourism.jp/feature/shinsaku",
+        "source_tier": "公的",
+        "year": 1864,
+        "half": "前半"
+      }
+    ],
+    "shosetsu": [
+      {
+        "id": "s03",
+        "claim": "功山寺挙兵で高杉晋作が率いたのはわずか80人ほどの寡兵だったとされる。",
+        "hedge_phrase": "〜と伝わる / わずか〜だったと言われる",
+        "usable_in": "前半",
+        "variants": [
+          "力士隊・遊撃隊を中心に約80人だったとする説",
+          "人数には諸説があり、当初はさらに少数だったとする伝も"
+        ]
+      },
+      {
+        "id": "s04",
+        "claim": "第二次長州征討での高杉晋作の海軍指揮や奇襲の戦果は、後年に英雄譚として誇張された部分があるとも指摘される。",
+        "hedge_phrase": "〜とも評される / 武勇伝として語り継がれている",
+        "usable_in": "後半",
+        "variants": [
+          "丙寅丸での奇襲が戦局を一変させたとする武勇伝",
+          "誇張・脚色を含むとする批判的な見方"
+        ]
+      }
+    ],
+    "avoid_assertions": [
+      "功山寺挙兵の人数を80人と確定せず『約80人』『80人ほど』とする",
+      "高杉晋作一人で長州藩を倒幕へ導いたと断定せず、諸隊・正義派全体の動きを示す",
+      "第二次長州征討の戦果を英雄譚どおりに誇張しない",
+      "死因や辞世を見せ場にしない"
+    ],
+    "hard_dates": [
+      {
+        "event": "高杉晋作 誕生(天保10年)",
+        "year": 1839
+      },
+      {
+        "event": "松下村塾に入門(安政4年頃)",
+        "year": 1857
+      },
+      {
+        "event": "藩命で上海へ渡航(文久2年)",
+        "year": 1862
+      },
+      {
+        "event": "奇兵隊を結成・初代総督(文久3年6月)",
+        "year": 1863
+      },
+      {
+        "event": "四国艦隊下関砲撃事件・講和談判／功山寺挙兵(元治元年12月15日)",
+        "year": 1864
+      },
+      {
+        "event": "大田・絵堂の戦いで藩論を倒幕に統一(慶応元年)",
+        "year": 1865
+      },
+      {
+        "event": "第二次長州征討で海軍指揮(慶応2年)",
+        "year": 1866
+      },
+      {
+        "event": "肺結核により死去(慶応3年4月14日／享年27)",
+        "year": 1867
+      }
+    ]
+  },
+  "gen_directives": {
+    "target_chars_per_thread": "2500-3000",
+    "shaku_blueprint": {
+      "long": {
+        "n": 10,
+        "chars": "88+"
+      },
+      "mid": {
+        "n": 8,
+        "chars": "50-87"
+      },
+      "short": {
+        "chars": "0-49"
+      },
+      "recommended_long": {
+        "chars": "120-150"
+      }
+    },
+    "tone": "無謀な決起から集団運動へ",
+    "must_surface_terms": [
+      "高杉晋作",
+      "功山寺挙兵",
+      "俗論派",
+      "正義派",
+      "大田・絵堂の戦い",
+      "奇兵隊",
+      "諸隊",
+      "長州藩"
+    ],
+    "buntai_doc_path": "03_知識ベース/YouTube・コンテンツ制作/2chスレ文体パターン.md",
+    "gloss_handling": "gloss_targets語はスレ内で断片・疑問・一点うんちくに留め、定義→背景→帰結まで説明し切らない",
+    "thread_terminal_cap": {
+      "window": 8,
+      "max_long_88": 0,
+      "allowed": [
+        "具体物",
+        "茶々",
+        "疑問",
+        "未解決感",
+        "次の問い"
+      ],
+      "forbidden": [
+        "総括",
+        "教訓",
+        "余韻回収",
+        "評価保留",
+        "closing claim再説明"
+      ]
+    }
+  },
+  "gloss": {
+    "gloss_targets": [
+      {
+        "term": "高杉晋作",
+        "reading": "たかすぎしんさく",
+        "era_check": "幕末",
+        "suggested_insert_after_cluster": "高杉晋作が初めて議論の焦点になるクラスタ直後",
+        "background_facts": [
+          {
+            "fact_id": "c01",
+            "c2_type": "②背景構造",
+            "intended_use": "高杉晋作の本筋外の制度・史料背景を短く補足する"
+          }
+        ],
+        "core_new_claim": "高杉晋作は本筋の結論とは分け、制度・史料上の位置づけを確認する必要がある。",
+        "demand_type": "hybrid",
+        "core_answer_risk": "medium",
+        "explainable_layer": "人物背景",
+        "thread_may_say": [
+          "高杉晋作の名前や一点だけの事実",
+          "高杉晋作への疑問や茶々"
+        ],
+        "thread_should_not_say": [
+          "高杉晋作の制度・出典・帰結を一レスで説明し切る"
+        ]
+      },
+      {
+        "term": "功山寺挙兵",
+        "reading": "こうざんじきょへい",
+        "era_check": "幕末",
+        "suggested_insert_after_cluster": "功山寺挙兵が初めて議論の焦点になるクラスタ直後",
+        "background_facts": [
+          {
+            "fact_id": "c04",
+            "c2_type": "④出典史料",
+            "intended_use": "功山寺挙兵の本筋外の制度・史料背景を短く補足する"
+          }
+        ],
+        "core_new_claim": "功山寺挙兵は本筋の結論とは分け、制度・史料上の位置づけを確認する必要がある。",
+        "demand_type": "hybrid",
+        "core_answer_risk": "medium",
+        "explainable_layer": "事件背景",
+        "thread_may_say": [
+          "功山寺挙兵の名前や一点だけの事実",
+          "功山寺挙兵への疑問や茶々"
+        ],
+        "thread_should_not_say": [
+          "功山寺挙兵の制度・出典・帰結を一レスで説明し切る"
+        ]
+      },
+      {
+        "term": "俗論派",
+        "reading": "ぞくろんは",
+        "era_check": "幕末",
+        "suggested_insert_after_cluster": "俗論派が初めて議論の焦点になるクラスタ直後",
+        "background_facts": [
+          {
+            "fact_id": "c11",
+            "c2_type": "②背景構造",
+            "intended_use": "俗論派の本筋外の制度・史料背景を短く補足する"
+          }
+        ],
+        "core_new_claim": "俗論派は本筋の結論とは分け、制度・史料上の位置づけを確認する必要がある。",
+        "demand_type": "meta_background",
+        "core_answer_risk": "low",
+        "explainable_layer": "藩内政治",
+        "thread_may_say": [
+          "俗論派の名前や一点だけの事実",
+          "俗論派への疑問や茶々"
+        ],
+        "thread_should_not_say": [
+          "俗論派の制度・出典・帰結を一レスで説明し切る"
+        ]
+      },
+      {
+        "term": "正義派",
+        "reading": "せいぎは",
+        "era_check": "幕末",
+        "suggested_insert_after_cluster": "正義派が初めて議論の焦点になるクラスタ直後",
+        "background_facts": [
+          {
+            "fact_id": "c11",
+            "c2_type": "④出典史料",
+            "intended_use": "正義派の本筋外の制度・史料背景を短く補足する"
+          }
+        ],
+        "core_new_claim": "正義派は本筋の結論とは分け、制度・史料上の位置づけを確認する必要がある。",
+        "demand_type": "meta_background",
+        "core_answer_risk": "low",
+        "explainable_layer": "藩内政治",
+        "thread_may_say": [
+          "正義派の名前や一点だけの事実",
+          "正義派への疑問や茶々"
+        ],
+        "thread_should_not_say": [
+          "正義派の制度・出典・帰結を一レスで説明し切る"
+        ]
+      },
+      {
+        "term": "大田・絵堂の戦い",
+        "reading": "おおだ・えどうのたたかい",
+        "era_check": "幕末",
+        "suggested_insert_after_cluster": "大田・絵堂の戦いが初めて議論の焦点になるクラスタ直後",
+        "background_facts": [
+          {
+            "fact_id": "c05",
+            "c2_type": "②背景構造",
+            "intended_use": "大田・絵堂の戦いの本筋外の制度・史料背景を短く補足する"
+          }
+        ],
+        "core_new_claim": "大田・絵堂の戦いは本筋の結論とは分け、制度・史料上の位置づけを確認する必要がある。",
+        "demand_type": "meta_background",
+        "core_answer_risk": "low",
+        "explainable_layer": "戦局背景",
+        "thread_may_say": [
+          "大田・絵堂の戦いの名前や一点だけの事実",
+          "大田・絵堂の戦いへの疑問や茶々"
+        ],
+        "thread_should_not_say": [
+          "大田・絵堂の戦いの制度・出典・帰結を一レスで説明し切る"
+        ]
+      },
+      {
+        "term": "奇兵隊",
+        "reading": "きへいたい",
+        "era_check": "幕末",
+        "suggested_insert_after_cluster": "奇兵隊が初めて議論の焦点になるクラスタ直後",
+        "background_facts": [
+          {
+            "fact_id": "c03",
+            "c2_type": "④出典史料",
+            "intended_use": "奇兵隊の本筋外の制度・史料背景を短く補足する"
+          }
+        ],
+        "core_new_claim": "奇兵隊は本筋の結論とは分け、制度・史料上の位置づけを確認する必要がある。",
+        "demand_type": "meta_background",
+        "core_answer_risk": "low",
+        "explainable_layer": "軍事制度",
+        "thread_may_say": [
+          "奇兵隊の名前や一点だけの事実",
+          "奇兵隊への疑問や茶々"
+        ],
+        "thread_should_not_say": [
+          "奇兵隊の制度・出典・帰結を一レスで説明し切る"
+        ]
+      },
+      {
+        "term": "諸隊",
+        "reading": "しょたい",
+        "era_check": "幕末",
+        "suggested_insert_after_cluster": "諸隊が初めて議論の焦点になるクラスタ直後",
+        "background_facts": [
+          {
+            "fact_id": "c05",
+            "c2_type": "②背景構造",
+            "intended_use": "諸隊の本筋外の制度・史料背景を短く補足する"
+          }
+        ],
+        "core_new_claim": "諸隊は本筋の結論とは分け、制度・史料上の位置づけを確認する必要がある。",
+        "demand_type": "meta_background",
+        "core_answer_risk": "low",
+        "explainable_layer": "軍事制度",
+        "thread_may_say": [
+          "諸隊の名前や一点だけの事実",
+          "諸隊への疑問や茶々"
+        ],
+        "thread_should_not_say": [
+          "諸隊の制度・出典・帰結を一レスで説明し切る"
+        ]
+      },
+      {
+        "term": "長州藩",
+        "reading": "ちょうしゅうはん",
+        "era_check": "幕末",
+        "suggested_insert_after_cluster": "長州藩が初めて議論の焦点になるクラスタ直後",
+        "background_facts": [
+          {
+            "fact_id": "c06",
+            "c2_type": "④出典史料",
+            "intended_use": "長州藩の本筋外の制度・史料背景を短く補足する"
+          }
+        ],
+        "core_new_claim": "長州藩は本筋の結論とは分け、制度・史料上の位置づけを確認する必要がある。",
+        "demand_type": "meta_background",
+        "core_answer_risk": "low",
+        "explainable_layer": "藩政背景",
+        "thread_may_say": [
+          "長州藩の名前や一点だけの事実",
+          "長州藩への疑問や茶々"
+        ],
+        "thread_should_not_say": [
+          "長州藩の制度・出典・帰結を一レスで説明し切る"
+        ]
+      }
+    ],
+    "narr_budget_pct": 25
+  },
+  "context": {
+    "taiga_linked": false,
+    "recent_overlap_urls": []
+  }
+}

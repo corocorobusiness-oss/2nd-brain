@@ -1,0 +1,386 @@
+{
+  "save_dir": "Projects/youtube/創作スレ下書き/2026-07-31_清須会議/",
+  "status": "ready_for_pipeline",
+  "block_reasons": [],
+  "theme_subject": "清須会議―三法師の後見体制と秀吉対勝家通説",
+  "era": "戦国",
+  "working_title": "【2ch歴史】清須会議、秀吉vs勝家の後継者バトルではなかった件www 2ちゃんねるの歴史オタクたちの見解がおもしろい【ゆっくり解説】",
+  "title_candidates": [
+    {
+      "title": "【2ch歴史】清須会議、秀吉vs勝家の後継者バトルではなかった件www 2ちゃんねるの歴史オタクたちの見解がおもしろい【ゆっくり解説】",
+      "pattern": "前提反転",
+      "predicted_views": 16457,
+      "over_10k_prob": 0.604,
+      "rank": "A"
+    },
+    {
+      "title": "【2ch歴史】清須会議「秀吉が三法師を抱いて勝家を黙らせた」←後世の創作だった説www 2ちゃんねるの歴史オタクたちの見解がおもしろい【ゆっくり解説】",
+      "pattern": "通説反転",
+      "predicted_views": 15200,
+      "over_10k_prob": 0.579,
+      "rank": "A"
+    },
+    {
+      "title": "【2ch歴史】信長の後継者を決めた清須会議、実は議題が違った件www 2ちゃんねるの歴史オタクたちの見解がおもしろい【ゆっくり解説】",
+      "pattern": "前提を疑う",
+      "predicted_views": 10099,
+      "over_10k_prob": 0.424,
+      "rank": "B"
+    },
+    {
+      "title": "【2ch歴史】秀吉、清須会議で柴田勝家を出し抜いて天下取りを始めた件www 2ちゃんねるの歴史オタクたちの見解がおもしろい【ゆっくり解説】",
+      "pattern": "会議・対立",
+      "predicted_views": 16457,
+      "over_10k_prob": 0.617,
+      "rank": "A"
+    }
+  ],
+  "split": {
+    "pattern_id": "③",
+    "pattern_name": "前提を疑う型",
+    "front": {
+      "role": "タイトルネタ",
+      "theme": "山崎勝利後の秀吉が清須で主導権を広げ、後の天下取りの起点となった流れ。",
+      "hook_type": "会議・権力逆転",
+      "fact_ids": [
+        "c01",
+        "c02",
+        "c03",
+        "c11",
+        "s01"
+      ],
+      "rationale": "大河の回名と一致させつつ、有名な秀吉対勝家の構図を入口にする。"
+    },
+    "back": {
+      "role": "本筋",
+      "theme": "同日文書の4宿老連署、三法師の御名代問題、遺領配分を追い、秀吉の一方的勝利という通説を問い直す。",
+      "fact_ids": [
+        "c04",
+        "c05",
+        "c06",
+        "c07",
+        "c08",
+        "c09",
+        "c10",
+        "s01",
+        "s02"
+      ],
+      "rationale": "映画的な一騎打ちから集団統治と後見問題へ反転する。"
+    },
+    "thread_core_question": {
+      "front": "6月27日の清須会議で実際に決められたことは何か？",
+      "back": "秀吉が三法師を抱いて勝家を屈服させたという有名場面はどこまで史実なのか？"
+    },
+    "transition_B": "ここまでは秀吉対勝家という有名な清須会議像を見てきたが、『同日付の文書には勝家を含む4人の署名がある。勝家は本当にその場で完全敗北したのか？』という疑問も出てきた。引き続き議論を見ていこう。",
+    "gap_rationale": "秀吉の一発逆転物語から、4宿老連署と御名代問題の史料検証へ移る。"
+  },
+  "scoring": {
+    "predicted_views": 16457,
+    "over_10k_prob": 0.604,
+    "rank": "A",
+    "breakdown": {
+      "engine": "predict_score.py",
+      "raw": "[A] pred= 16,457  p10k=60.4%  戦国      /if系+比較           【2ch歴史】清須会議、秀吉vs勝家の後継者バトルではなかった件www 2ちゃんねるの歴史オタクたちの見解がおもしろい【ゆっくり解説】\n       → 戦国×if系=5,613 / pat:www/草系/〜件/〜件www=9,071 / subj:豊臣秀吉/柴田勝家=16,304 / 大河連動×1.6"
+    },
+    "boost": [
+      "taiga"
+    ],
+    "model_version": "median-2026-06-23",
+    "recent_hit_rate": 0.673,
+    "confidence": "mid"
+  },
+  "facts": {
+    "confirmed": [
+      {
+        "id": "c01",
+        "claim": "本能寺の変は6月2日、山崎の戦いは6月13日、清須での談合は6月27日で、山崎から14日後だった。",
+        "source_url": "https://bunkyo.repo.nii.ac.jp/record/2002562/files/BKK0004700.pdf",
+        "source_tier": "学術",
+        "year": 1582,
+        "half": "前半"
+      },
+      {
+        "id": "c02",
+        "claim": "清須で談合した中心人物は羽柴秀吉・丹羽長秀・池田恒興・柴田勝家の4人だった。",
+        "source_url": "https://bunkyo.repo.nii.ac.jp/record/2002562/files/BKK0004700.pdf",
+        "source_tier": "学術",
+        "year": 1582,
+        "half": "前半"
+      },
+      {
+        "id": "c03",
+        "claim": "近年の研究は、談合の直接の課題を織田家家督を継ぐ三法師の後見・御名代を定めることと整理している。",
+        "source_url": "https://ndlsearch.ndl.go.jp/books/R000000004-I034617220",
+        "source_tier": "学術",
+        "year": 1582,
+        "half": "前半"
+      },
+      {
+        "id": "c04",
+        "claim": "秀吉書状では三法師が会議で突然候補になったのではなく、信忠の遺児として家督に立てる前提で記される。",
+        "source_url": "https://bunkyo.repo.nii.ac.jp/record/2002562/files/BKK0004700.pdf",
+        "source_tier": "学術",
+        "year": 1582,
+        "half": "後半"
+      },
+      {
+        "id": "c05",
+        "claim": "問題になっていたのは、信雄と信孝のどちらが三法師の御名代になるかだった。",
+        "source_url": "https://bunkyo.repo.nii.ac.jp/record/2002562/files/BKK0004700.pdf",
+        "source_tier": "学術",
+        "year": 1582,
+        "half": "後半"
+      },
+      {
+        "id": "c06",
+        "claim": "談合後に単独の御名代は確定せず、三法師はいったん信孝に預けられて清須から岐阜へ移されたと秀吉書状にある。",
+        "source_url": "https://bunkyo.repo.nii.ac.jp/record/2002562/files/BKK0004700.pdf",
+        "source_tier": "学術",
+        "year": 1582,
+        "half": "後半"
+      },
+      {
+        "id": "c07",
+        "claim": "6月27日付の蒲生氏郷宛安堵状などには4人が連署し、4宿老による談合を裏づける。",
+        "source_url": "https://bunkyo.repo.nii.ac.jp/record/2002562/files/BKK0004700.pdf",
+        "source_tier": "学術",
+        "year": 1582,
+        "half": "後半"
+      },
+      {
+        "id": "c08",
+        "claim": "遺領配分では秀吉旧領の長浜が柴田勝家側へ渡され、会議時点で秀吉だけが一方的に総取りしたわけではない。",
+        "source_url": "https://crd.ndl.go.jp/reference/entry/index.php?id=1000250921&page=ref_view",
+        "source_tier": "公的",
+        "year": 1582,
+        "half": "後半"
+      },
+      {
+        "id": "c09",
+        "claim": "会議後、織田信雄が清須城主となって城を改修した。",
+        "source_url": "https://www.city.kiyosu.aichi.jp/shisetsu_annai/kanko_shisetsu_sonota/kiyosujo.html",
+        "source_tier": "公的",
+        "year": 1582,
+        "half": "後半"
+      },
+      {
+        "id": "c10",
+        "claim": "秀吉と勝家の軍事的決着は翌1583年の賤ヶ岳合戦まで持ち越された。",
+        "source_url": "https://history-museum.city.fukui.lg.jp/tenji/tenran/katsuie.html",
+        "source_tier": "博物館",
+        "year": 1583,
+        "half": "後半"
+      },
+      {
+        "id": "c11",
+        "claim": "清須市は歴史的な城と会議を清須と表記しており、今回の動画では大河の回名に合わせて清須会議と統一する。",
+        "source_url": "https://www.city.kiyosu.aichi.jp/shisetsu_annai/kanko_shisetsu_sonota/kiyosujo.html",
+        "source_tier": "公的",
+        "year": 1582,
+        "half": "前半"
+      }
+    ],
+    "shosetsu": [
+      {
+        "id": "s01",
+        "claim": "勝家が信孝、秀吉が三法師を推し、秀吉が三法師を抱いて一同を平伏させたという劇的な通説がある。",
+        "variants": [
+          "後世の軍記・絵画由来",
+          "会議の象徴的物語"
+        ],
+        "hedge_phrase": "有名な通説として扱い、確定史実にはしない",
+        "usable_in": "both"
+      },
+      {
+        "id": "s02",
+        "claim": "清須会議を天下取りの開始点と呼ぶのは、後世から結果を見た評価である。",
+        "variants": [
+          "政治的起点",
+          "会議で天下は未確定"
+        ],
+        "hedge_phrase": "後世から見た起点という意味に限定する",
+        "usable_in": "後半"
+      }
+    ],
+    "avoid_assertions": [
+      "清須会議だけで秀吉が天下を取ったとしない",
+      "勝家が会議で完全に権力を失ったとしない",
+      "秀吉が三法師を突然後継候補として発案したとしない",
+      "三法師を抱いて一同を平伏させた逸話を確定史実にしない",
+      "出席者が不確かな人物を断定しない",
+      "勝家・お市・信孝・三法師の末路を先取りしない",
+      "清洲会議と清須会議を説明なく混在させない"
+    ],
+    "hard_dates": [
+      {
+        "event": "本能寺の変",
+        "year": 1582
+      },
+      {
+        "event": "山崎の戦い",
+        "year": 1582
+      },
+      {
+        "event": "清須での談合",
+        "year": 1582
+      },
+      {
+        "event": "賤ヶ岳合戦",
+        "year": 1583
+      }
+    ]
+  },
+  "gen_directives": {
+    "target_chars_per_thread": "2500-3000",
+    "shaku_blueprint": {
+      "long": {
+        "n": 10,
+        "chars": "88+"
+      },
+      "mid": {
+        "n": 8,
+        "chars": "50-87"
+      },
+      "short": {
+        "chars": "0-49"
+      },
+      "recommended_long": {
+        "chars": "120-150"
+      }
+    },
+    "tone": "通説の権力劇から文書検証へ",
+    "must_surface_terms": [
+      "清須会議",
+      "三法師",
+      "柴田勝家",
+      "丹羽長秀"
+    ],
+    "buntai_doc_path": "03_知識ベース/YouTube・コンテンツ制作/2chスレ文体パターン.md",
+    "gloss_handling": "gloss_targets語はスレ内で断片・疑問・一点うんちくに留め、定義→背景→帰結まで説明し切らない",
+    "thread_terminal_cap": {
+      "window": 8,
+      "max_long_88": 0,
+      "allowed": [
+        "具体物",
+        "茶々",
+        "疑問",
+        "未解決感",
+        "次の問い"
+      ],
+      "forbidden": [
+        "総括",
+        "教訓",
+        "余韻回収",
+        "評価保留",
+        "closing claim再説明"
+      ]
+    }
+  },
+  "gloss": {
+    "gloss_targets": [
+      {
+        "term": "清須会議",
+        "reading": "きよすかいぎ",
+        "era_check": "戦国",
+        "suggested_insert_after_cluster": "清須会議が初めて議論の焦点になるクラスタ直後",
+        "background_facts": [
+          {
+            "fact_id": "c01",
+            "c2_type": "②背景構造",
+            "intended_use": "清須会議の本筋外の制度・史料背景を短く補足する"
+          }
+        ],
+        "core_new_claim": "清須会議は本筋の結論とは分け、制度・史料上の位置づけを確認する必要がある。",
+        "demand_type": "hybrid",
+        "core_answer_risk": "medium",
+        "explainable_layer": "会議の史料",
+        "thread_may_say": [
+          "清須会議の名前や一点だけの事実",
+          "清須会議への疑問や茶々"
+        ],
+        "thread_should_not_say": [
+          "清須会議の制度・出典・帰結を一レスで説明し切る"
+        ]
+      },
+      {
+        "term": "三法師",
+        "reading": "さんぼうし",
+        "era_check": "戦国",
+        "suggested_insert_after_cluster": "三法師が初めて議論の焦点になるクラスタ直後",
+        "background_facts": [
+          {
+            "fact_id": "c02",
+            "c2_type": "④出典史料",
+            "intended_use": "三法師の本筋外の制度・史料背景を短く補足する"
+          }
+        ],
+        "core_new_claim": "三法師は本筋の結論とは分け、制度・史料上の位置づけを確認する必要がある。",
+        "demand_type": "hybrid",
+        "core_answer_risk": "medium",
+        "explainable_layer": "後継関係",
+        "thread_may_say": [
+          "三法師の名前や一点だけの事実",
+          "三法師への疑問や茶々"
+        ],
+        "thread_should_not_say": [
+          "三法師の制度・出典・帰結を一レスで説明し切る"
+        ]
+      },
+      {
+        "term": "柴田勝家",
+        "reading": "しばたかついえ",
+        "era_check": "戦国",
+        "suggested_insert_after_cluster": "柴田勝家が初めて議論の焦点になるクラスタ直後",
+        "background_facts": [
+          {
+            "fact_id": "c03",
+            "c2_type": "②背景構造",
+            "intended_use": "柴田勝家の本筋外の制度・史料背景を短く補足する"
+          }
+        ],
+        "core_new_claim": "柴田勝家は本筋の結論とは分け、制度・史料上の位置づけを確認する必要がある。",
+        "demand_type": "meta_background",
+        "core_answer_risk": "low",
+        "explainable_layer": "宿老関係",
+        "thread_may_say": [
+          "柴田勝家の名前や一点だけの事実",
+          "柴田勝家への疑問や茶々"
+        ],
+        "thread_should_not_say": [
+          "柴田勝家の制度・出典・帰結を一レスで説明し切る"
+        ]
+      },
+      {
+        "term": "丹羽長秀",
+        "reading": "にわながひで",
+        "era_check": "戦国",
+        "suggested_insert_after_cluster": "丹羽長秀が初めて議論の焦点になるクラスタ直後",
+        "background_facts": [
+          {
+            "fact_id": "c04",
+            "c2_type": "④出典史料",
+            "intended_use": "丹羽長秀の本筋外の制度・史料背景を短く補足する"
+          }
+        ],
+        "core_new_claim": "丹羽長秀は本筋の結論とは分け、制度・史料上の位置づけを確認する必要がある。",
+        "demand_type": "meta_background",
+        "core_answer_risk": "low",
+        "explainable_layer": "連署体制",
+        "thread_may_say": [
+          "丹羽長秀の名前や一点だけの事実",
+          "丹羽長秀への疑問や茶々"
+        ],
+        "thread_should_not_say": [
+          "丹羽長秀の制度・出典・帰結を一レスで説明し切る"
+        ]
+      }
+    ],
+    "narr_budget_pct": 25
+  },
+  "context": {
+    "taiga_linked": true,
+    "recent_overlap_urls": [
+      "/Users/kojinn/Projects/youtube/創作スレ下書き/2026-07-11_清洲会議/brief.json"
+    ]
+  }
+}

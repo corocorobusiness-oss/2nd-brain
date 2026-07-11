@@ -1,0 +1,510 @@
+{
+  "save_dir": "Projects/youtube/創作スレ下書き/2026-07-26_西郷隆盛/",
+  "status": "ready_for_pipeline",
+  "block_reasons": [],
+  "theme_subject": "西郷隆盛",
+  "era": "幕末",
+  "working_title": "【2ch歴史】西郷隆盛、維新の功労者から賊軍になった理由www 2ちゃんねるの歴史オタクたちの見解がおもしろい【ゆっくり解説】",
+  "title_candidates": [
+    {
+      "title": "【2ch歴史】西郷隆盛、維新の功労者から賊軍になった理由www 2ちゃんねるの歴史オタクたちの見解がおもしろい【ゆっくり解説】",
+      "pattern": "なぜ・理由",
+      "predicted_views": 15499,
+      "over_10k_prob": 0.518,
+      "rank": "A"
+    },
+    {
+      "title": "【2ch歴史】明治政府の功労者・西郷隆盛、なぜ賊軍になったのかwww 2ちゃんねるの歴史オタクたちの見解がおもしろい【ゆっくり解説】",
+      "pattern": "なぜ・理由",
+      "predicted_views": 15499,
+      "over_10k_prob": 0.518,
+      "rank": "A"
+    },
+    {
+      "title": "【2ch歴史】維新三傑・西郷隆盛がわずか10年後に賊軍になった理由www 2ちゃんねるの歴史オタクたちの見解がおもしろい【ゆっくり解説】",
+      "pattern": "時間ギャップ",
+      "predicted_views": 15499,
+      "over_10k_prob": 0.518,
+      "rank": "A"
+    },
+    {
+      "title": "【2ch歴史】西郷隆盛はなぜ自分が作った明治政府と戦うことになったのかwww 2ちゃんねるの歴史オタクたちの見解がおもしろい【ゆっくり解説】",
+      "pattern": "なぜ・理由",
+      "predicted_views": 15499,
+      "over_10k_prob": 0.501,
+      "rank": "A"
+    }
+  ],
+  "split": {
+    "pattern_id": "②",
+    "pattern_name": "逆視点型",
+    "front": {
+      "role": "タイトルネタ",
+      "theme": "島津斉彬による登用、王政復古、戊辰戦争、江戸無血開城、維新三傑という功労者の側。",
+      "hook_type": "英雄からの反転",
+      "fact_ids": [
+        "c01",
+        "c02",
+        "c03",
+        "c04",
+        "c11"
+      ],
+      "rationale": "明治政府を作った側だった事実を明確にする。"
+    },
+    "back": {
+      "role": "本筋",
+      "theme": "明治六年政変、下野、私学校、火薬庫襲撃、西南戦争、官位剥奪と後の大赦まで、功労者が賊軍とされた因果を追う。",
+      "fact_ids": [
+        "c05",
+        "c06",
+        "c07",
+        "c08",
+        "c13",
+        "c14",
+        "s01",
+        "s06"
+      ],
+      "rationale": "最期のドラマではなく、政治対立と集団の暴発、後世の名誉回復までを本筋にする。"
+    },
+    "thread_core_question": {
+      "front": "西郷隆盛は明治維新でどんな役割を担ったのか？",
+      "back": "その功労者がなぜ新政府と戦い、賊軍と位置づけられたのか？"
+    },
+    "transition_B": "ここまでは維新の功労者としての西郷を見てきたが、『その本人がなぜわずか十年ほどで新政府と戦う側になったのか？』という疑問も出てきた。政変から私学校、西南戦争までを見ていこう。",
+    "gap_rationale": "国家を作った側から、その国家に反する側へ置かれた政治過程へ反転する。"
+  },
+  "scoring": {
+    "predicted_views": 15499,
+    "over_10k_prob": 0.518,
+    "rank": "A",
+    "breakdown": {
+      "engine": "predict_score.py",
+      "raw": "[A] pred= 15,499  p10k=51.8%  幕末      /if系              【2ch歴史】西郷隆盛、維新の功労者から賊軍になった理由www 2ちゃんねるの歴史オタクたちの見解がおもしろい【ゆっくり解説】\n       → 幕末×if系=20,992 / pat:www/草系=5,613"
+    },
+    "boost": [],
+    "model_version": "median-2026-06-23",
+    "recent_hit_rate": 0.673,
+    "confidence": "mid"
+  },
+  "facts": {
+    "confirmed": [
+      {
+        "id": "c01",
+        "claim": "西郷隆盛は文政10年12月7日（西暦換算1828年1月23日）、薩摩藩鹿児島城下の下級藩士の家に生まれた。幼名は小吉、通称は吉之助。",
+        "source_url": "https://ja.wikipedia.org/wiki/%E8%A5%BF%E9%83%B7%E9%9A%86%E7%9B%9B",
+        "source_tier": "百科(Wikipedia)",
+        "half": "前半",
+        "year": 1828
+      },
+      {
+        "id": "c02",
+        "claim": "西郷は薩摩藩主・島津斉彬に見出されて側近として登用され、開明的な斉彬から強い影響を受けた。1858年（安政5年）の斉彬急死後、安政の大獄の最中に僧・月照とともに錦江湾へ入水し、西郷だけが生き残った。",
+        "source_url": "https://ja.wikipedia.org/wiki/%E8%A5%BF%E9%83%B7%E9%9A%86%E7%9B%9B",
+        "source_tier": "百科(Wikipedia)",
+        "half": "前半",
+        "year": 1858
+      },
+      {
+        "id": "c03",
+        "claim": "西郷は大久保利通・岩倉具視らと結び、1867年（慶応3年）の王政復古を実現。翌1868年（慶応4年）正月の鳥羽・伏見の戦いに始まる戊辰戦争で新政府軍を主導した。",
+        "source_url": "https://www.kagoshima-yokanavi.jp/article/meijiishin",
+        "source_tier": "解説記事(観光自治体)",
+        "half": "前半",
+        "year": 1868
+      },
+      {
+        "id": "c04",
+        "claim": "1868年（慶応4年）3月、江戸総攻撃を前に西郷隆盛は幕臣・勝海舟と会談し、江戸城の無条件明け渡しを条件に総攻撃を中止した。これが江戸無血開城である。",
+        "source_url": "https://www.kagoshima-yokanavi.jp/article/meijiishin",
+        "source_tier": "解説記事(観光自治体)",
+        "half": "前半",
+        "year": 1868
+      },
+      {
+        "id": "c05",
+        "claim": "1873年（明治6年）10月、征韓論（自ら朝鮮へ使節として赴く西郷の主張）をめぐり、欧米視察から帰国した大久保利通・岩倉具視らが内政優先を唱えて決定を覆した。この明治六年政変で西郷は参議を辞して下野し、鹿児島へ帰った。",
+        "source_url": "https://ja.wikipedia.org/wiki/%E6%98%8E%E6%B2%BB%E5%85%AD%E5%B9%B4%E6%94%BF%E5%A4%89",
+        "source_tier": "百科(Wikipedia)",
+        "half": "後半",
+        "year": 1873
+      },
+      {
+        "id": "c06",
+        "claim": "下野後の1874年（明治7年）、西郷は鹿児島に私学校を設立した。不平士族の暴発を抑える目的だったが、私学校党が県政を牛耳り、後に西南戦争の温床となった。",
+        "source_url": "https://ja.wikipedia.org/wiki/%E7%A7%81%E5%AD%A6%E6%A0%A1",
+        "source_tier": "百科(Wikipedia)",
+        "half": "後半",
+        "year": 1874
+      },
+      {
+        "id": "c07",
+        "claim": "1877年（明治10年）1月29日、私学校の生徒が政府の弾薬庫を襲撃したことが直接の引き金となり、2月に西郷隆盛を盟主とする士族反乱・西南戦争が勃発した。明治初期の士族反乱で最大規模、かつ日本最後の内戦である。",
+        "source_url": "https://ja.wikipedia.org/wiki/%E8%A5%BF%E5%8D%97%E6%88%A6%E4%BA%89",
+        "source_tier": "百科(Wikipedia)",
+        "half": "後半",
+        "year": 1877
+      },
+      {
+        "id": "c08",
+        "claim": "1877年（明治10年）9月24日の城山総攻撃で、足（股）と腹部に銃弾を受けた西郷隆盛は『晋どん、もうここらでよか』と言い、別府晋介の介錯によって最期を遂げた。享年51。これが城山の戦い＝西南戦争の終結である。",
+        "source_url": "https://ja.wikipedia.org/wiki/%E5%9F%8E%E5%B1%B1%E3%81%AE%E6%88%A6%E3%81%84",
+        "source_tier": "百科(Wikipedia)",
+        "half": "後半",
+        "year": 1877
+      },
+      {
+        "id": "c11",
+        "claim": "西郷隆盛は大久保利通・木戸孝允とともに『維新の三傑』の一人に数えられ、明治維新の最大の功労者の一人とされる。",
+        "source_url": "https://jbpress.ismedia.jp/articles/-/92836",
+        "source_tier": "解説記事(報道)",
+        "half": "前半",
+        "year": 1868
+      },
+      {
+        "id": "c13",
+        "claim": "西南戦争は1877年2月に始まり、私学校生徒による火薬庫襲撃が直接の引き金の一つとなった。",
+        "source_url": "https://www.pref.kagoshima.jp/ab23/pr/gaiyou/rekishi/bakumatu/seinan.html",
+        "source_tier": "公的",
+        "year": 1877,
+        "half": "後半"
+      },
+      {
+        "id": "c14",
+        "claim": "西郷隆盛は死後の1889年に大赦を受け、正三位を追贈された。",
+        "source_url": "https://kokkai.ndl.go.jp/simple/detail?minId=107204889X03219740521&spkNum=41",
+        "source_tier": "一次",
+        "year": 1889,
+        "half": "後半"
+      }
+    ],
+    "shosetsu": [
+      {
+        "id": "s01",
+        "claim": "西郷の征韓論は、武力で朝鮮を征服する主張ではなく、自ら使節として朝鮮に赴き話し合いで国交を開こうとするものだった（西郷=穏健派説）。",
+        "hedge_phrase": "〜という見方が有力だけど / 〜とされる",
+        "usable_in": "後半",
+        "variants": [
+          "西郷は即時出兵に反対し、自分が全権使節として朝鮮へ赴き道理で説得しようとしたとする説",
+          "使節として殺されれば開戦の口実になる＝結局は征韓に繋がるとみる説",
+          "西郷は死に場所を探していたとする見方"
+        ]
+      },
+      {
+        "id": "s06",
+        "claim": "西郷は自ら反乱を望んだのではなく、暴発した私学校の不平士族に担がれる形で挙兵したとされる。",
+        "hedge_phrase": "〜とする見方が多い / 〜とも言われる",
+        "usable_in": "後半",
+        "variants": [
+          "西郷は当初挙兵に消極的で、生徒の暴走を抑えきれず盟主に担がれたとする説",
+          "政府の挑発（密偵派遣・弾薬移送）が士族を暴発させたとする見方",
+          "西郷自身の真意は史料上はっきりしないとする留保"
+        ]
+      }
+    ],
+    "avoid_assertions": [
+      "西郷の征韓論を『武力で朝鮮に攻め込む主張だった』と断定すること（自ら使節として赴く穏健策とする説が有力で、解釈が分かれるため留保する）",
+      "西郷が自ら望んで反乱を起こした『首謀者』だと断定すること（不平士族に担がれた説が有力で、真意は史料上確定していない）",
+      "『晋どん、もうここらでよか』を一字一句正確な最期の言葉として断定すること（記録により異同があるため『〜と伝わる』とする）",
+      "西郷星・生存説などの流言を史実として断定すること（『流言』『俗説』『言い伝え』と明示する）",
+      "上野の銅像が西郷本人の正確な姿だと断定すること（確かな写真が無く弟・従弟の顔を参考にしたとされる）",
+      "享年を満年齢で断定すること（享年51は数え年。満では49歳のため、数え年であることに留意して『享年51』と表す）",
+      "西郷が自ら西南戦争を始めたと断定しない",
+      "賊軍を道徳的な悪人評価として扱わない",
+      "明治政府に殺されたという単純図式にしない",
+      "死傷場面をタイトルや見せ場にしない"
+    ],
+    "hard_dates": [
+      {
+        "event": "西郷隆盛 誕生（文政10年12月7日＝西暦1828年1月23日）",
+        "year": 1828
+      },
+      {
+        "event": "島津斉彬急死・月照と錦江湾に入水（西郷のみ生還）",
+        "year": 1858
+      },
+      {
+        "event": "戊辰戦争勃発（鳥羽・伏見の戦い）",
+        "year": 1868
+      },
+      {
+        "event": "江戸無血開城（勝海舟との会談）",
+        "year": 1868
+      },
+      {
+        "event": "明治六年政変・征韓論で下野",
+        "year": 1873
+      },
+      {
+        "event": "鹿児島に私学校を設立",
+        "year": 1874
+      },
+      {
+        "event": "西南戦争 勃発（1月29日 弾薬庫襲撃が引き金）",
+        "year": 1877
+      },
+      {
+        "event": "城山の戦い・西郷自刃（9月24日／享年51）",
+        "year": 1877
+      },
+      {
+        "event": "大久保利通 暗殺（紀尾井坂の変）",
+        "year": 1878
+      },
+      {
+        "event": "上野公園に西郷隆盛像 除幕",
+        "year": 1898
+      }
+    ]
+  },
+  "gen_directives": {
+    "target_chars_per_thread": "2500-3000",
+    "shaku_blueprint": {
+      "long": {
+        "n": 10,
+        "chars": "88+"
+      },
+      "mid": {
+        "n": 8,
+        "chars": "50-87"
+      },
+      "short": {
+        "chars": "0-49"
+      },
+      "recommended_long": {
+        "chars": "120-150"
+      }
+    },
+    "tone": "英雄像から政治的因果へ",
+    "must_surface_terms": [
+      "西郷隆盛",
+      "明治六年政変",
+      "征韓論",
+      "私学校",
+      "西南戦争",
+      "官位褫奪",
+      "大赦",
+      "正三位"
+    ],
+    "buntai_doc_path": "03_知識ベース/YouTube・コンテンツ制作/2chスレ文体パターン.md",
+    "gloss_handling": "gloss_targets語はスレ内で断片・疑問・一点うんちくに留め、定義→背景→帰結まで説明し切らない",
+    "thread_terminal_cap": {
+      "window": 8,
+      "max_long_88": 0,
+      "allowed": [
+        "具体物",
+        "茶々",
+        "疑問",
+        "未解決感",
+        "次の問い"
+      ],
+      "forbidden": [
+        "総括",
+        "教訓",
+        "余韻回収",
+        "評価保留",
+        "closing claim再説明"
+      ]
+    }
+  },
+  "gloss": {
+    "gloss_targets": [
+      {
+        "term": "西郷隆盛",
+        "reading": "さいごうたかもり",
+        "era_check": "幕末",
+        "suggested_insert_after_cluster": "西郷隆盛が初めて議論の焦点になるクラスタ直後",
+        "background_facts": [
+          {
+            "fact_id": "c01",
+            "c2_type": "②背景構造",
+            "intended_use": "西郷隆盛の本筋外の制度・史料背景を短く補足する"
+          }
+        ],
+        "core_new_claim": "西郷隆盛は本筋の結論とは分け、制度・史料上の位置づけを確認する必要がある。",
+        "demand_type": "hybrid",
+        "core_answer_risk": "medium",
+        "explainable_layer": "人物背景",
+        "thread_may_say": [
+          "西郷隆盛の名前や一点だけの事実",
+          "西郷隆盛への疑問や茶々"
+        ],
+        "thread_should_not_say": [
+          "西郷隆盛の制度・出典・帰結を一レスで説明し切る"
+        ]
+      },
+      {
+        "term": "明治六年政変",
+        "reading": "めいじろくねんせいへん",
+        "era_check": "幕末",
+        "suggested_insert_after_cluster": "明治六年政変が初めて議論の焦点になるクラスタ直後",
+        "background_facts": [
+          {
+            "fact_id": "c05",
+            "c2_type": "④出典史料",
+            "intended_use": "明治六年政変の本筋外の制度・史料背景を短く補足する"
+          }
+        ],
+        "core_new_claim": "明治六年政変は本筋の結論とは分け、制度・史料上の位置づけを確認する必要がある。",
+        "demand_type": "hybrid",
+        "core_answer_risk": "medium",
+        "explainable_layer": "政治対立",
+        "thread_may_say": [
+          "明治六年政変の名前や一点だけの事実",
+          "明治六年政変への疑問や茶々"
+        ],
+        "thread_should_not_say": [
+          "明治六年政変の制度・出典・帰結を一レスで説明し切る"
+        ]
+      },
+      {
+        "term": "征韓論",
+        "reading": "せいかんろん",
+        "era_check": "幕末",
+        "suggested_insert_after_cluster": "征韓論が初めて議論の焦点になるクラスタ直後",
+        "background_facts": [
+          {
+            "fact_id": "c05",
+            "c2_type": "②背景構造",
+            "intended_use": "征韓論の本筋外の制度・史料背景を短く補足する"
+          }
+        ],
+        "core_new_claim": "征韓論は本筋の結論とは分け、制度・史料上の位置づけを確認する必要がある。",
+        "demand_type": "meta_background",
+        "core_answer_risk": "low",
+        "explainable_layer": "諸説整理",
+        "thread_may_say": [
+          "征韓論の名前や一点だけの事実",
+          "征韓論への疑問や茶々"
+        ],
+        "thread_should_not_say": [
+          "征韓論の制度・出典・帰結を一レスで説明し切る"
+        ]
+      },
+      {
+        "term": "私学校",
+        "reading": "しがっこう",
+        "era_check": "幕末",
+        "suggested_insert_after_cluster": "私学校が初めて議論の焦点になるクラスタ直後",
+        "background_facts": [
+          {
+            "fact_id": "c06",
+            "c2_type": "④出典史料",
+            "intended_use": "私学校の本筋外の制度・史料背景を短く補足する"
+          }
+        ],
+        "core_new_claim": "私学校は本筋の結論とは分け、制度・史料上の位置づけを確認する必要がある。",
+        "demand_type": "meta_background",
+        "core_answer_risk": "low",
+        "explainable_layer": "組織背景",
+        "thread_may_say": [
+          "私学校の名前や一点だけの事実",
+          "私学校への疑問や茶々"
+        ],
+        "thread_should_not_say": [
+          "私学校の制度・出典・帰結を一レスで説明し切る"
+        ]
+      },
+      {
+        "term": "西南戦争",
+        "reading": "せいなんせんそう",
+        "era_check": "幕末",
+        "suggested_insert_after_cluster": "西南戦争が初めて議論の焦点になるクラスタ直後",
+        "background_facts": [
+          {
+            "fact_id": "c13",
+            "c2_type": "②背景構造",
+            "intended_use": "西南戦争の本筋外の制度・史料背景を短く補足する"
+          }
+        ],
+        "core_new_claim": "西南戦争は本筋の結論とは分け、制度・史料上の位置づけを確認する必要がある。",
+        "demand_type": "meta_background",
+        "core_answer_risk": "low",
+        "explainable_layer": "戦争背景",
+        "thread_may_say": [
+          "西南戦争の名前や一点だけの事実",
+          "西南戦争への疑問や茶々"
+        ],
+        "thread_should_not_say": [
+          "西南戦争の制度・出典・帰結を一レスで説明し切る"
+        ]
+      },
+      {
+        "term": "官位褫奪",
+        "reading": "かんいちだつ",
+        "era_check": "幕末",
+        "suggested_insert_after_cluster": "官位褫奪が初めて議論の焦点になるクラスタ直後",
+        "background_facts": [
+          {
+            "fact_id": "c08",
+            "c2_type": "④出典史料",
+            "intended_use": "官位褫奪の本筋外の制度・史料背景を短く補足する"
+          }
+        ],
+        "core_new_claim": "官位褫奪は本筋の結論とは分け、制度・史料上の位置づけを確認する必要がある。",
+        "demand_type": "meta_background",
+        "core_answer_risk": "low",
+        "explainable_layer": "法制度",
+        "thread_may_say": [
+          "官位褫奪の名前や一点だけの事実",
+          "官位褫奪への疑問や茶々"
+        ],
+        "thread_should_not_say": [
+          "官位褫奪の制度・出典・帰結を一レスで説明し切る"
+        ]
+      },
+      {
+        "term": "大赦",
+        "reading": "たいしゃ",
+        "era_check": "幕末",
+        "suggested_insert_after_cluster": "大赦が初めて議論の焦点になるクラスタ直後",
+        "background_facts": [
+          {
+            "fact_id": "c14",
+            "c2_type": "②背景構造",
+            "intended_use": "大赦の本筋外の制度・史料背景を短く補足する"
+          }
+        ],
+        "core_new_claim": "大赦は本筋の結論とは分け、制度・史料上の位置づけを確認する必要がある。",
+        "demand_type": "meta_background",
+        "core_answer_risk": "low",
+        "explainable_layer": "後世評価",
+        "thread_may_say": [
+          "大赦の名前や一点だけの事実",
+          "大赦への疑問や茶々"
+        ],
+        "thread_should_not_say": [
+          "大赦の制度・出典・帰結を一レスで説明し切る"
+        ]
+      },
+      {
+        "term": "正三位",
+        "reading": "しょうさんみ",
+        "era_check": "幕末",
+        "suggested_insert_after_cluster": "正三位が初めて議論の焦点になるクラスタ直後",
+        "background_facts": [
+          {
+            "fact_id": "c14",
+            "c2_type": "④出典史料",
+            "intended_use": "正三位の本筋外の制度・史料背景を短く補足する"
+          }
+        ],
+        "core_new_claim": "正三位は本筋の結論とは分け、制度・史料上の位置づけを確認する必要がある。",
+        "demand_type": "meta_background",
+        "core_answer_risk": "low",
+        "explainable_layer": "位階制度",
+        "thread_may_say": [
+          "正三位の名前や一点だけの事実",
+          "正三位への疑問や茶々"
+        ],
+        "thread_should_not_say": [
+          "正三位の制度・出典・帰結を一レスで説明し切る"
+        ]
+      }
+    ],
+    "narr_budget_pct": 25
+  },
+  "context": {
+    "taiga_linked": false,
+    "recent_overlap_urls": []
+  }
+}

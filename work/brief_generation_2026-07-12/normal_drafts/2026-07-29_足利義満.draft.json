@@ -1,0 +1,585 @@
+{
+  "save_dir": "Projects/youtube/創作スレ下書き/2026-07-29_足利義満/",
+  "status": "ready_for_pipeline",
+  "block_reasons": [],
+  "theme_subject": "足利義満",
+  "era": "室町",
+  "working_title": "【2ch歴史】足利義満って結局何をした人なん？調べたら天皇以上の権力を目指した説まであった件www 2ちゃんねるの歴史オタクたちの見解がおもしろい【ゆっくり解説】",
+  "title_candidates": [
+    {
+      "title": "【2ch歴史】足利義満って結局何をした人なん？調べたら天皇以上の権力を目指した説まであった件www 2ちゃんねるの歴史オタクたちの見解がおもしろい【ゆっくり解説】",
+      "pattern": "何をした人・前提疑問",
+      "predicted_views": 7577,
+      "over_10k_prob": 0.344,
+      "rank": "B"
+    },
+    {
+      "title": "【2ch歴史】足利義満って何をした人？調べたら室町幕府を最盛期にした将軍だった件www 2ちゃんねるの歴史オタクたちの見解がおもしろい【ゆっくり解説】",
+      "pattern": "人物再評価",
+      "predicted_views": 7534,
+      "over_10k_prob": 0.38,
+      "rank": "B"
+    },
+    {
+      "title": "【2ch歴史】足利義満、金閣だけじゃなく南北朝まで終わらせてた件www 2ちゃんねるの歴史オタクたちの見解がおもしろい【ゆっくり解説】",
+      "pattern": "実績フック",
+      "predicted_views": 7534,
+      "over_10k_prob": 0.38,
+      "rank": "B"
+    },
+    {
+      "title": "【2ch歴史】足利義満、本当に天皇以上の権力を目指したのか問題www 2ちゃんねるの歴史オタクたちの見解がおもしろい【ゆっくり解説】",
+      "pattern": "前提を疑う",
+      "predicted_views": 6260,
+      "over_10k_prob": 0.32,
+      "rank": "B"
+    }
+  ],
+  "split": {
+    "pattern_id": "③",
+    "pattern_name": "前提を疑う型",
+    "front": {
+      "role": "タイトルネタ",
+      "theme": "南北朝合一、有力守護の抑制、日明貿易、北山文化、太政大臣という確定した実績から『結局何をした人か』を整理する。",
+      "hook_type": "何をした人・実績再評価",
+      "fact_ids": [
+        "c01",
+        "c02",
+        "c03",
+        "c04",
+        "c05",
+        "c06",
+        "c07",
+        "c08",
+        "c11",
+        "c12"
+      ],
+      "rationale": "まず確定実績で人物像を立て、金閣だけの人から幕府最盛期の統治者へ再評価する。"
+    },
+    "back": {
+      "role": "本筋",
+      "theme": "義満の権威上昇から後世に皇位簒奪説が出た根拠を検証し、直接史料の不足と近年の否定的研究を整理する。",
+      "fact_ids": [
+        "c01",
+        "c03",
+        "c05",
+        "c06",
+        "c08",
+        "c11",
+        "s01",
+        "s02",
+        "s04"
+      ],
+      "rationale": "タイトルの強い説を確定史実にせず、出典と近年研究で前提を問い直す。"
+    },
+    "thread_core_question": {
+      "front": "足利義満は金閣以外に何を成し遂げた将軍なのか？",
+      "back": "天皇以上の権力を目指したという説は何を根拠にし、どこまで確かか？"
+    },
+    "transition_B": "ここまでは義満の確定した実績を見てきたが、『これほど公武の頂点に立ったから皇位簒奪説まで出たのか？その計画は本当に史料で確認できるのか？』という疑問も出てきた。引き続き議論を見ていこう。",
+    "gap_rationale": "確定実績の人物紹介から、強いが未確定の簒奪説を史料検証する後半へ移る。"
+  },
+  "scoring": {
+    "predicted_views": 7577,
+    "over_10k_prob": 0.344,
+    "rank": "B",
+    "breakdown": {
+      "engine": "predict_score.py",
+      "raw": "[B] pred=  7,577  p10k=34.4%  室町      /if系+人物           【2ch歴史】足利義満って結局何をした人なん？調べたら天皇以上の権力を目指した説まであった件www 2ちゃんねるの歴史オタクたちの見解がおもしろい【ゆっくり解説】\n       → cat:if系/人物=5,711 / pat:www/草系/〜件/〜件www=9,071"
+    },
+    "boost": [],
+    "model_version": "median-2026-06-23",
+    "recent_hit_rate": 0.673,
+    "confidence": "mid"
+  },
+  "facts": {
+    "confirmed": [
+      {
+        "id": "c01",
+        "claim": "足利義満は延文3年(1358年)に2代将軍・足利義詮の子として生まれ、応安元年(1368年)に11歳で家督を継ぎ、室町幕府3代将軍となった平安末以来の武家の棟梁。応永15年(1408年)に死去、享年51。",
+        "source_url": "https://ja.wikipedia.org/wiki/%E8%B6%B3%E5%88%A9%E7%BE%A9%E6%BA%80",
+        "source_tier": "百科(Wikipedia)",
+        "half": "both",
+        "year": 1358
+      },
+      {
+        "id": "c02",
+        "claim": "義満は明徳2年(1391年)の明徳の乱で、全国66か国のうち11か国を領し『六分の一殿(六分一殿)』と呼ばれた大守護・山名氏清を討伐し、有力守護大名の勢力を削いだ。",
+        "source_url": "https://www.touken-world.jp/tips/57707/",
+        "source_tier": "歴史事典/百科",
+        "half": "後半",
+        "year": 1391
+      },
+      {
+        "id": "c03",
+        "claim": "義満は明徳3年(元中9年・1392年)、南朝の後亀山天皇が北朝の後小松天皇に三種の神器を渡して譲位する形(明徳の和約)で南北朝合一を実現し、約60年続いた朝廷の分裂を終わらせた。",
+        "source_url": "https://www.try-it.jp/chapters-2904/lessons-2912/",
+        "source_tier": "解説/百科(複数照合)",
+        "half": "後半",
+        "year": 1392
+      },
+      {
+        "id": "c04",
+        "claim": "義満は応永6年(1399年)の応永の乱で、明や朝鮮との貿易で富を蓄え台頭した大守護・大内義弘を討伐し、幕府の権力をさらに固めた。",
+        "source_url": "https://ja.wikipedia.org/wiki/%E8%B6%B3%E5%88%A9%E7%BE%A9%E6%BA%80",
+        "source_tier": "百科(Wikipedia)",
+        "half": "後半",
+        "year": 1399
+      },
+      {
+        "id": "c05",
+        "claim": "義満は永徳3年(1383年)に准三后(准三宮)の宣下を受け、応永元年(1394年)には武家として平清盛以来およそ230年ぶりに太政大臣に就任した(間もなく辞任)。武家の身でありながら公家社会の頂点に立った。",
+        "source_url": "https://ja.wikipedia.org/wiki/%E8%B6%B3%E5%88%A9%E7%BE%A9%E6%BA%80",
+        "source_tier": "百科(Wikipedia)",
+        "half": "前半",
+        "year": 1394
+      },
+      {
+        "id": "c06",
+        "claim": "義満は応永8年(1401年)に明へ国書を送って通交を求め、明から『日本国王』に封じられた。応永11年(1404年)、永楽帝との間で勘合(勘合符)を用いる勘合貿易(日明貿易)が始まり、義満は『日本国王臣源』と称して明に朝貢する形をとった。",
+        "source_url": "https://ja.wikipedia.org/wiki/%E6%97%A5%E6%98%8E%E8%B2%BF%E6%98%93",
+        "source_tier": "百科(Wikipedia)",
+        "half": "前半",
+        "year": 1404
+      },
+      {
+        "id": "c07",
+        "claim": "義満は応永4年(1397年)、西園寺家から譲り受けた北山の地に北山殿(北山第)を造営し、その中心に舎利殿である金閣を建てた。これを中心とする時代の文化は北山文化と呼ばれる。",
+        "source_url": "https://ja.wikipedia.org/wiki/%E9%B9%BF%E8%8B%91%E5%AF%BA",
+        "source_tier": "百科(Wikipedia)",
+        "half": "前半",
+        "year": 1397
+      },
+      {
+        "id": "c08",
+        "claim": "応永15年(1408年)3月、後小松天皇が義満の北山殿に行幸した。同年4月25日、義満は4男・足利義嗣を、親王に準じる形式で宮中において元服させた。",
+        "source_url": "https://ja.wikipedia.org/wiki/%E8%B6%B3%E5%88%A9%E7%BE%A9%E6%BA%80",
+        "source_tier": "百科(Wikipedia)",
+        "half": "前半",
+        "year": 1408
+      },
+      {
+        "id": "c11",
+        "claim": "義満は応永元年(1394年)、将軍職をわずか9歳の嫡子・足利義持に譲った。だが実権は手放さず、出家後も北山殿から公武両権を握り続け、室町幕府の最盛期を現出させた。",
+        "source_url": "https://blog.kojodan.jp/entry/2021/05/15/152310",
+        "source_tier": "解説記事(複数照合)",
+        "half": "後半",
+        "year": 1394
+      },
+      {
+        "id": "c12",
+        "claim": "義満の遺言により、応永27年(1420年)に北山第は禅寺とされ、義満の法号『鹿苑院殿』にちなみ鹿苑寺(金閣寺)と名付けられた。臨済宗相国寺派の寺院である。",
+        "source_url": "https://www.shokoku-ji.jp/kinkakuji/about/",
+        "source_tier": "寺院公式",
+        "half": "後半",
+        "year": 1420
+      }
+    ],
+    "shosetsu": [
+      {
+        "id": "s01",
+        "claim": "義満は4男・義嗣を皇位に就け、自らは治天の君(上皇)として皇室を支配下に置く、いわゆる王権簒奪(皇位簒奪)を計画していた。",
+        "hedge_phrase": "〜という説が唱えられた / 〜とする見方がある(今谷明らの王権簒奪計画説)",
+        "usable_in": "前半",
+        "variants": [
+          "義満が皇位そのものを我が物にしようとしたとする説",
+          "義満自身ではなく愛息・義嗣を天皇に据え、自分は上皇として君臨しようとしたとする説(義嗣の親王準拠の元服・後小松天皇の北山殿行幸・正室日野康子を後小松の准母とした事実を状況証拠とする)",
+          "簒奪までは意図せず、公武に君臨する超越的な権力(公武統一王権)を確立しようとしただけとする説"
+        ]
+      },
+      {
+        "id": "s02",
+        "claim": "義満の皇位簒奪計画は実在したとは言えず、現在の研究ではむしろ否定的に見られている。",
+        "hedge_phrase": "〜というのが近年の有力な見方 / 史料に計画を裏づける確証はない",
+        "usable_in": "後半",
+        "variants": [
+          "簒奪を裏づける同時代史料がなく、後世の状況証拠の連結に過ぎないとする批判",
+          "義満の一連の行動は権威の最大化であって皇位の簒奪ではないとする再評価",
+          "王権簒奪計画説は学界で支持を失いつつあり、現在は少数説とする整理"
+        ]
+      },
+      {
+        "id": "s04",
+        "claim": "義満は明から『日本国王』に封じられたことで、国内では天皇を超える存在になろうとしていた。",
+        "hedge_phrase": "〜と解釈されることがある / そう読む向きもある",
+        "usable_in": "前半",
+        "variants": [
+          "日本国王号は対外的な交易上の便宜的称号にすぎないとする見方",
+          "国内における天皇超越の布石と解釈する見方",
+          "朝貢形式への屈服として後世(義持以降)に批判された経緯"
+        ]
+      },
+      {
+        "id": "s05",
+        "claim": "南北朝合一は、合一後は皇位を両統が交互に継ぐ(両統迭立)という約束のもとで成された。",
+        "hedge_phrase": "〜という条件だったと伝わる / 約束されたとされるが守られなかった",
+        "usable_in": "後半",
+        "variants": [
+          "後亀山天皇の譲位に際し両統迭立が約されたとする理解",
+          "結局この約束は守られず南朝系は皇位から排除されたとする後日談"
+        ]
+      }
+    ],
+    "avoid_assertions": [
+      "義満が皇位簒奪(王権簒奪)を実際に計画していたと断定すること(近年はむしろ否定的で、史料に確証がないため『説がある』『疑惑がある』と留保する)",
+      "義満が暗殺された、あるいは世阿弥が殺したと断定すること(史料上は病死が主で、暗殺・毒殺は俗説と明示する)",
+      "『日本国王』号をもって義満が天皇を超える地位に就いたと断定すること(対外称号であり国内の地位の解釈は分かれる)",
+      "義満が天皇位そのものを我が身に求めたと断定すること(計画があったとする説でも対象は義満本人ではなく義嗣とするのが主)",
+      "南北朝合一後に両統迭立の約束が守られたと断定すること(実際には守られなかった)",
+      "金閣(北山殿)を義満が『寺として』建てたと断定すること(義満存命中は山荘・北山殿であり、鹿苑寺となったのは死後の遺言による)",
+      "『天皇以上の権力を目指した』は必ず説・疑惑として扱う",
+      "陰謀や不審死をクリック要素として足さない"
+    ],
+    "hard_dates": [
+      {
+        "event": "足利義満 誕生",
+        "year": 1358
+      },
+      {
+        "event": "家督を継ぎ室町幕府3代将軍に(11歳)",
+        "year": 1368
+      },
+      {
+        "event": "准三后(准三宮)の宣下",
+        "year": 1383
+      },
+      {
+        "event": "明徳の乱・山名氏清を討伐",
+        "year": 1391
+      },
+      {
+        "event": "南北朝合一(明徳の和約)",
+        "year": 1392
+      },
+      {
+        "event": "将軍職を義持に譲り、太政大臣に就任",
+        "year": 1394
+      },
+      {
+        "event": "北山殿造営・金閣を建立",
+        "year": 1397
+      },
+      {
+        "event": "応永の乱・大内義弘を討伐",
+        "year": 1399
+      },
+      {
+        "event": "明から『日本国王』に封じられる",
+        "year": 1401
+      },
+      {
+        "event": "勘合貿易(日明貿易)開始",
+        "year": 1404
+      },
+      {
+        "event": "後小松天皇の北山殿行幸／義嗣を親王準拠で元服／義満死去(享年51)",
+        "year": 1408
+      },
+      {
+        "event": "北山第を禅寺とし鹿苑寺(金閣寺)と命名",
+        "year": 1420
+      }
+    ]
+  },
+  "gen_directives": {
+    "target_chars_per_thread": "2500-3000",
+    "shaku_blueprint": {
+      "long": {
+        "n": 10,
+        "chars": "88+"
+      },
+      "mid": {
+        "n": 8,
+        "chars": "50-87"
+      },
+      "short": {
+        "chars": "0-49"
+      },
+      "recommended_long": {
+        "chars": "120-150"
+      }
+    },
+    "tone": "実績の光から説の検証へ",
+    "must_surface_terms": [
+      "足利義満",
+      "南北朝合一",
+      "明徳の乱",
+      "応永の乱",
+      "太政大臣",
+      "日本国王",
+      "勘合貿易",
+      "北山殿",
+      "義嗣",
+      "皇位簒奪説"
+    ],
+    "buntai_doc_path": "03_知識ベース/YouTube・コンテンツ制作/2chスレ文体パターン.md",
+    "gloss_handling": "gloss_targets語はスレ内で断片・疑問・一点うんちくに留め、定義→背景→帰結まで説明し切らない",
+    "thread_terminal_cap": {
+      "window": 8,
+      "max_long_88": 0,
+      "allowed": [
+        "具体物",
+        "茶々",
+        "疑問",
+        "未解決感",
+        "次の問い"
+      ],
+      "forbidden": [
+        "総括",
+        "教訓",
+        "余韻回収",
+        "評価保留",
+        "closing claim再説明"
+      ]
+    }
+  },
+  "gloss": {
+    "gloss_targets": [
+      {
+        "term": "足利義満",
+        "reading": "あしかがよしみつ",
+        "era_check": "室町",
+        "suggested_insert_after_cluster": "足利義満が初めて議論の焦点になるクラスタ直後",
+        "background_facts": [
+          {
+            "fact_id": "c01",
+            "c2_type": "②背景構造",
+            "intended_use": "足利義満の本筋外の制度・史料背景を短く補足する"
+          }
+        ],
+        "core_new_claim": "足利義満は本筋の結論とは分け、制度・史料上の位置づけを確認する必要がある。",
+        "demand_type": "hybrid",
+        "core_answer_risk": "medium",
+        "explainable_layer": "人物背景",
+        "thread_may_say": [
+          "足利義満の名前や一点だけの事実",
+          "足利義満への疑問や茶々"
+        ],
+        "thread_should_not_say": [
+          "足利義満の制度・出典・帰結を一レスで説明し切る"
+        ]
+      },
+      {
+        "term": "南北朝合一",
+        "reading": "なんぼくちょうごういつ",
+        "era_check": "室町",
+        "suggested_insert_after_cluster": "南北朝合一が初めて議論の焦点になるクラスタ直後",
+        "background_facts": [
+          {
+            "fact_id": "c03",
+            "c2_type": "④出典史料",
+            "intended_use": "南北朝合一の本筋外の制度・史料背景を短く補足する"
+          }
+        ],
+        "core_new_claim": "南北朝合一は本筋の結論とは分け、制度・史料上の位置づけを確認する必要がある。",
+        "demand_type": "hybrid",
+        "core_answer_risk": "medium",
+        "explainable_layer": "政治制度",
+        "thread_may_say": [
+          "南北朝合一の名前や一点だけの事実",
+          "南北朝合一への疑問や茶々"
+        ],
+        "thread_should_not_say": [
+          "南北朝合一の制度・出典・帰結を一レスで説明し切る"
+        ]
+      },
+      {
+        "term": "明徳の乱",
+        "reading": "めいとくのらん",
+        "era_check": "室町",
+        "suggested_insert_after_cluster": "明徳の乱が初めて議論の焦点になるクラスタ直後",
+        "background_facts": [
+          {
+            "fact_id": "c02",
+            "c2_type": "②背景構造",
+            "intended_use": "明徳の乱の本筋外の制度・史料背景を短く補足する"
+          }
+        ],
+        "core_new_claim": "明徳の乱は本筋の結論とは分け、制度・史料上の位置づけを確認する必要がある。",
+        "demand_type": "meta_background",
+        "core_answer_risk": "low",
+        "explainable_layer": "守護統制",
+        "thread_may_say": [
+          "明徳の乱の名前や一点だけの事実",
+          "明徳の乱への疑問や茶々"
+        ],
+        "thread_should_not_say": [
+          "明徳の乱の制度・出典・帰結を一レスで説明し切る"
+        ]
+      },
+      {
+        "term": "応永の乱",
+        "reading": "おうえいのらん",
+        "era_check": "室町",
+        "suggested_insert_after_cluster": "応永の乱が初めて議論の焦点になるクラスタ直後",
+        "background_facts": [
+          {
+            "fact_id": "c04",
+            "c2_type": "④出典史料",
+            "intended_use": "応永の乱の本筋外の制度・史料背景を短く補足する"
+          }
+        ],
+        "core_new_claim": "応永の乱は本筋の結論とは分け、制度・史料上の位置づけを確認する必要がある。",
+        "demand_type": "meta_background",
+        "core_answer_risk": "low",
+        "explainable_layer": "守護統制",
+        "thread_may_say": [
+          "応永の乱の名前や一点だけの事実",
+          "応永の乱への疑問や茶々"
+        ],
+        "thread_should_not_say": [
+          "応永の乱の制度・出典・帰結を一レスで説明し切る"
+        ]
+      },
+      {
+        "term": "太政大臣",
+        "reading": "だじょうだいじん",
+        "era_check": "室町",
+        "suggested_insert_after_cluster": "太政大臣が初めて議論の焦点になるクラスタ直後",
+        "background_facts": [
+          {
+            "fact_id": "c05",
+            "c2_type": "②背景構造",
+            "intended_use": "太政大臣の本筋外の制度・史料背景を短く補足する"
+          }
+        ],
+        "core_new_claim": "太政大臣は本筋の結論とは分け、制度・史料上の位置づけを確認する必要がある。",
+        "demand_type": "meta_background",
+        "core_answer_risk": "low",
+        "explainable_layer": "官職制度",
+        "thread_may_say": [
+          "太政大臣の名前や一点だけの事実",
+          "太政大臣への疑問や茶々"
+        ],
+        "thread_should_not_say": [
+          "太政大臣の制度・出典・帰結を一レスで説明し切る"
+        ]
+      },
+      {
+        "term": "日本国王",
+        "reading": "にほんこくおう",
+        "era_check": "室町",
+        "suggested_insert_after_cluster": "日本国王が初めて議論の焦点になるクラスタ直後",
+        "background_facts": [
+          {
+            "fact_id": "c06",
+            "c2_type": "④出典史料",
+            "intended_use": "日本国王の本筋外の制度・史料背景を短く補足する"
+          }
+        ],
+        "core_new_claim": "日本国王は本筋の結論とは分け、制度・史料上の位置づけを確認する必要がある。",
+        "demand_type": "meta_background",
+        "core_answer_risk": "low",
+        "explainable_layer": "対外称号",
+        "thread_may_say": [
+          "日本国王の名前や一点だけの事実",
+          "日本国王への疑問や茶々"
+        ],
+        "thread_should_not_say": [
+          "日本国王の制度・出典・帰結を一レスで説明し切る"
+        ]
+      },
+      {
+        "term": "勘合貿易",
+        "reading": "かんごうぼうえき",
+        "era_check": "室町",
+        "suggested_insert_after_cluster": "勘合貿易が初めて議論の焦点になるクラスタ直後",
+        "background_facts": [
+          {
+            "fact_id": "c06",
+            "c2_type": "②背景構造",
+            "intended_use": "勘合貿易の本筋外の制度・史料背景を短く補足する"
+          }
+        ],
+        "core_new_claim": "勘合貿易は本筋の結論とは分け、制度・史料上の位置づけを確認する必要がある。",
+        "demand_type": "meta_background",
+        "core_answer_risk": "low",
+        "explainable_layer": "対外交易",
+        "thread_may_say": [
+          "勘合貿易の名前や一点だけの事実",
+          "勘合貿易への疑問や茶々"
+        ],
+        "thread_should_not_say": [
+          "勘合貿易の制度・出典・帰結を一レスで説明し切る"
+        ]
+      },
+      {
+        "term": "北山殿",
+        "reading": "きたやまどの",
+        "era_check": "室町",
+        "suggested_insert_after_cluster": "北山殿が初めて議論の焦点になるクラスタ直後",
+        "background_facts": [
+          {
+            "fact_id": "c07",
+            "c2_type": "④出典史料",
+            "intended_use": "北山殿の本筋外の制度・史料背景を短く補足する"
+          }
+        ],
+        "core_new_claim": "北山殿は本筋の結論とは分け、制度・史料上の位置づけを確認する必要がある。",
+        "demand_type": "meta_background",
+        "core_answer_risk": "low",
+        "explainable_layer": "文化史",
+        "thread_may_say": [
+          "北山殿の名前や一点だけの事実",
+          "北山殿への疑問や茶々"
+        ],
+        "thread_should_not_say": [
+          "北山殿の制度・出典・帰結を一レスで説明し切る"
+        ]
+      },
+      {
+        "term": "義嗣",
+        "reading": "よしつぐ",
+        "era_check": "室町",
+        "suggested_insert_after_cluster": "義嗣が初めて議論の焦点になるクラスタ直後",
+        "background_facts": [
+          {
+            "fact_id": "c08",
+            "c2_type": "②背景構造",
+            "intended_use": "義嗣の本筋外の制度・史料背景を短く補足する"
+          }
+        ],
+        "core_new_claim": "義嗣は本筋の結論とは分け、制度・史料上の位置づけを確認する必要がある。",
+        "demand_type": "meta_background",
+        "core_answer_risk": "low",
+        "explainable_layer": "人物関係",
+        "thread_may_say": [
+          "義嗣の名前や一点だけの事実",
+          "義嗣への疑問や茶々"
+        ],
+        "thread_should_not_say": [
+          "義嗣の制度・出典・帰結を一レスで説明し切る"
+        ]
+      },
+      {
+        "term": "皇位簒奪説",
+        "reading": "こういさんだつせつ",
+        "era_check": "室町",
+        "suggested_insert_after_cluster": "皇位簒奪説が初めて議論の焦点になるクラスタ直後",
+        "background_facts": [
+          {
+            "fact_id": "c08",
+            "c2_type": "④出典史料",
+            "intended_use": "皇位簒奪説の本筋外の制度・史料背景を短く補足する"
+          }
+        ],
+        "core_new_claim": "皇位簒奪説は本筋の結論とは分け、制度・史料上の位置づけを確認する必要がある。",
+        "demand_type": "meta_background",
+        "core_answer_risk": "low",
+        "explainable_layer": "研究史",
+        "thread_may_say": [
+          "皇位簒奪説の名前や一点だけの事実",
+          "皇位簒奪説への疑問や茶々"
+        ],
+        "thread_should_not_say": [
+          "皇位簒奪説の制度・出典・帰結を一レスで説明し切る"
+        ]
+      }
+    ],
+    "narr_budget_pct": 25
+  },
+  "context": {
+    "taiga_linked": false,
+    "recent_overlap_urls": []
+  }
+}

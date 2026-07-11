@@ -1,0 +1,362 @@
+{
+  "save_dir": "Projects/youtube/創作スレ下書き/2026-07-15_秀吉_本能寺後の偽情報/",
+  "status": "ready_for_pipeline",
+  "block_reasons": [],
+  "theme_subject": "羽柴秀吉の偽情報戦―中川清秀宛書状",
+  "era": "戦国",
+  "working_title": "【2ch歴史】明智光秀「信長を討ったぞ！」→秀吉が偽情報で逆転した件www 2ちゃんねるの歴史オタクたちの見解がおもしろい【ゆっくり解説】",
+  "title_candidates": [
+    {
+      "title": "【2ch歴史】明智光秀「信長を討ったぞ！」→秀吉が偽情報で逆転した件www 2ちゃんねるの歴史オタクたちの見解がおもしろい【ゆっくり解説】",
+      "pattern": "2ch会話フック",
+      "predicted_views": 16377,
+      "over_10k_prob": 0.532,
+      "rank": "A"
+    },
+    {
+      "title": "【2ch歴史】秀吉「信長は生きてるぞ」←本能寺後の情報戦がえぐすぎる件www 2ちゃんねるの歴史オタクたちの見解がおもしろい【ゆっくり解説】",
+      "pattern": "情報戦",
+      "predicted_views": 17165,
+      "over_10k_prob": 0.532,
+      "rank": "A"
+    },
+    {
+      "title": "【2ch歴史】秀吉、本能寺直後に「信長は無事」と偽情報を流して味方を増やした件www 2ちゃんねるの歴史オタクたちの見解がおもしろい【ゆっくり解説】",
+      "pattern": "意外な真実",
+      "predicted_views": 17165,
+      "over_10k_prob": 0.543,
+      "rank": "A"
+    },
+    {
+      "title": "【2ch歴史】秀吉、明智光秀より先に偽情報で摂津の武将を固めた件www 2ちゃんねるの歴史オタクたちの見解がおもしろい【ゆっくり解説】",
+      "pattern": "比較",
+      "predicted_views": 18097,
+      "over_10k_prob": 0.58,
+      "rank": "A"
+    }
+  ],
+  "split": {
+    "pattern_id": "③",
+    "pattern_name": "前提を疑う型",
+    "front": {
+      "role": "タイトルネタ",
+      "theme": "6月5日書状に記された『信長・信忠は無事』という事実と異なる情報と、その宛先・狙いを追う。",
+      "hook_type": "情報戦・意外な真実",
+      "fact_ids": [
+        "c01",
+        "c02",
+        "c03",
+        "c04",
+        "c05"
+      ],
+      "rationale": "一通の書状という具体物から入り、遺体や流血を前面に出さず秀吉の情報操作を可視化する。"
+    },
+    "back": {
+      "role": "本筋",
+      "theme": "6月10日の返書と11日の合流までを追い、偽情報が往復書状による陣営形成の一部だったことを検証する。",
+      "fact_ids": [
+        "c06",
+        "c07",
+        "c08",
+        "c09"
+      ],
+      "rationale": "派手な嘘話から、返信・出兵要請・合流という実証へ深める。"
+    },
+    "thread_core_question": {
+      "front": "秀吉は中川清秀へ何を伝え、なぜ事実と異なる情報を送ったのか？",
+      "back": "その情報は清秀の判断と秀吉陣営の形成にどう関わったのか？"
+    },
+    "transition_B": "ここまでは、秀吉が中川清秀へ送った事実と異なる情報を見てきたが、『書状を一通送っただけで本当に武将が動くのか？』という疑問も出てきた。では返書と実際の合流はどうつながるのか。引き続き議論を見ていこう。",
+    "gap_rationale": "前半の一通の嘘から、後半の往復通信・連絡網・軍勢合流へ移る。"
+  },
+  "scoring": {
+    "predicted_views": 16377,
+    "over_10k_prob": 0.532,
+    "rank": "A",
+    "breakdown": {
+      "engine": "predict_score.py",
+      "raw": "[A] pred= 16,377  p10k=53.2%  戦国      /if系              【2ch歴史】明智光秀「信長を討ったぞ！」→秀吉が偽情報で逆転した件www 2ちゃんねるの歴史オタクたちの見解がおもしろい【ゆっくり解説】\n       → 戦国×if系=5,613 / pat:www/草系/〜件/〜件www=9,071 / subj:豊臣秀吉/織田信長/明智光秀=9,671 / 大河連動×1.6 / トレンド×1.3"
+    },
+    "boost": [
+      "taiga",
+      "trend"
+    ],
+    "model_version": "median-2026-06-23",
+    "recent_hit_rate": 0.673,
+    "confidence": "mid"
+  },
+  "facts": {
+    "confirmed": [
+      {
+        "id": "c01",
+        "claim": "天正10年6月2日、本能寺の変で織田信長と嫡男・信忠が倒れた。",
+        "source_url": "https://da.lib.kobe-u.ac.jp/da/sc/0100399107/",
+        "source_tier": "大学",
+        "year": 1582,
+        "half": "前半"
+      },
+      {
+        "id": "c02",
+        "claim": "羽柴秀吉は6月5日付で摂津茨木城主・中川清秀へ書状を送った。",
+        "source_url": "https://catalog.lib.kyushu-u.ac.jp/opac_download_md/1516170/hattori_2015_6.pdf",
+        "source_tier": "学術",
+        "year": 1582,
+        "half": "前半"
+      },
+      {
+        "id": "c03",
+        "claim": "6月5日付書状には、信長・信忠が無事に脱出して膳所へ退いたという事実と異なる情報が記された。",
+        "source_url": "https://catalog.lib.kyushu-u.ac.jp/opac_download_md/1516170/hattori_2015_6.pdf",
+        "source_tier": "学術",
+        "year": 1582,
+        "half": "前半"
+      },
+      {
+        "id": "c04",
+        "claim": "神戸大学の中川家文書解題は、この偽情報を清秀が光秀方に付くことを牽制するためだったと説明している。",
+        "source_url": "https://da.lib.kobe-u.ac.jp/da/sc/0100399107/",
+        "source_tier": "大学",
+        "year": 1582,
+        "half": "前半"
+      },
+      {
+        "id": "c05",
+        "claim": "当時の軍事通信では書状の往復が成立し、中川清秀から秀吉への返答も行われていた。",
+        "source_url": "https://catalog.lib.kyushu-u.ac.jp/opac_download_md/1516170/hattori_2015_6.pdf",
+        "source_tier": "学術",
+        "year": 1582,
+        "half": "前半"
+      },
+      {
+        "id": "c06",
+        "claim": "現存する6月10日付の羽柴秀吉書状写は、秀吉が明石を通過した後に中川清秀へ送ったものとされる。",
+        "source_url": "https://da.lib.kobe-u.ac.jp/da/sc/0100399107/",
+        "source_tier": "大学",
+        "year": 1582,
+        "half": "後半"
+      },
+      {
+        "id": "c07",
+        "claim": "6月10日書状の文言から、清秀が秀吉支持と光秀の動向に関する情報を返信していたことが分かる。",
+        "source_url": "https://da.lib.kobe-u.ac.jp/da/sc/0100399107/",
+        "source_tier": "大学",
+        "year": 1582,
+        "half": "後半"
+      },
+      {
+        "id": "c08",
+        "claim": "秀吉は清秀に出兵を求め、高山右近や丹羽長秀らとの連絡状況も知らせた。",
+        "source_url": "https://da.lib.kobe-u.ac.jp/da/sc/0100399107/",
+        "source_tier": "大学",
+        "year": 1582,
+        "half": "後半"
+      },
+      {
+        "id": "c09",
+        "claim": "中川清秀は6月11日に秀吉軍へ合流し、山崎合戦で本隊の一翼を担った。",
+        "source_url": "https://da.lib.kobe-u.ac.jp/da/sc/0100399107/",
+        "source_tier": "大学",
+        "year": 1582,
+        "half": "後半"
+      }
+    ],
+    "shosetsu": [
+      {
+        "id": "s01",
+        "claim": "秀吉が最初から虚偽を創作したのか、不確かな風評も混じったのかは断定できない。",
+        "variants": [
+          "意図的な情報操作",
+          "不確かな情報の利用"
+        ],
+        "hedge_phrase": "情報操作とみられるが、書状内容が事実と異なることを中心に扱う",
+        "usable_in": "前半"
+      },
+      {
+        "id": "s02",
+        "claim": "中川清秀の参陣を偽情報だけの効果と断定できない。",
+        "variants": [
+          "重要な判断材料",
+          "既存関係や戦況も作用"
+        ],
+        "hedge_phrase": "判断材料の一つになったとみられる",
+        "usable_in": "後半"
+      }
+    ],
+    "avoid_assertions": [
+      "一通の書状だけで山崎の勝敗が決まったと断定しない",
+      "摂津の全武将が偽情報を信じたと断定しない",
+      "清秀が元々光秀方だったと断定しない",
+      "タイトル内の発言を史料の逐語引用として扱わない",
+      "遺体をタイトルやサムネの中心語にしない",
+      "中国大返しの距離・速度・兵站を再説明しない"
+    ],
+    "hard_dates": [
+      {
+        "event": "本能寺の変",
+        "year": 1582
+      },
+      {
+        "event": "秀吉の中川清秀宛書状",
+        "year": 1582
+      },
+      {
+        "event": "中川清秀の合流",
+        "year": 1582
+      }
+    ]
+  },
+  "gen_directives": {
+    "target_chars_per_thread": "2500-3000",
+    "shaku_blueprint": {
+      "long": {
+        "n": 10,
+        "chars": "88+"
+      },
+      "mid": {
+        "n": 8,
+        "chars": "50-87"
+      },
+      "short": {
+        "chars": "0-49"
+      },
+      "recommended_long": {
+        "chars": "120-150"
+      }
+    },
+    "tone": "情報戦を史料で解く",
+    "must_surface_terms": [
+      "中川清秀",
+      "膳所",
+      "梅林寺文書",
+      "茨木城"
+    ],
+    "buntai_doc_path": "03_知識ベース/YouTube・コンテンツ制作/2chスレ文体パターン.md",
+    "gloss_handling": "gloss_targets語はスレ内で断片・疑問・一点うんちくに留め、定義→背景→帰結まで説明し切らない",
+    "thread_terminal_cap": {
+      "window": 8,
+      "max_long_88": 0,
+      "allowed": [
+        "具体物",
+        "茶々",
+        "疑問",
+        "未解決感",
+        "次の問い"
+      ],
+      "forbidden": [
+        "総括",
+        "教訓",
+        "余韻回収",
+        "評価保留",
+        "closing claim再説明"
+      ]
+    }
+  },
+  "gloss": {
+    "gloss_targets": [
+      {
+        "term": "中川清秀",
+        "reading": "なかがわきよひで",
+        "era_check": "戦国",
+        "suggested_insert_after_cluster": "中川清秀が初めて議論の焦点になるクラスタ直後",
+        "background_facts": [
+          {
+            "fact_id": "c01",
+            "c2_type": "②背景構造",
+            "intended_use": "中川清秀の本筋外の制度・史料背景を短く補足する"
+          }
+        ],
+        "core_new_claim": "中川清秀は本筋の結論とは分け、制度・史料上の位置づけを確認する必要がある。",
+        "demand_type": "hybrid",
+        "core_answer_risk": "medium",
+        "explainable_layer": "人物関係",
+        "thread_may_say": [
+          "中川清秀の名前や一点だけの事実",
+          "中川清秀への疑問や茶々"
+        ],
+        "thread_should_not_say": [
+          "中川清秀の制度・出典・帰結を一レスで説明し切る"
+        ]
+      },
+      {
+        "term": "膳所",
+        "reading": "ぜぜ",
+        "era_check": "戦国",
+        "suggested_insert_after_cluster": "膳所が初めて議論の焦点になるクラスタ直後",
+        "background_facts": [
+          {
+            "fact_id": "c02",
+            "c2_type": "④出典史料",
+            "intended_use": "膳所の本筋外の制度・史料背景を短く補足する"
+          }
+        ],
+        "core_new_claim": "膳所は本筋の結論とは分け、制度・史料上の位置づけを確認する必要がある。",
+        "demand_type": "hybrid",
+        "core_answer_risk": "medium",
+        "explainable_layer": "地名",
+        "thread_may_say": [
+          "膳所の名前や一点だけの事実",
+          "膳所への疑問や茶々"
+        ],
+        "thread_should_not_say": [
+          "膳所の制度・出典・帰結を一レスで説明し切る"
+        ]
+      },
+      {
+        "term": "梅林寺文書",
+        "reading": "ばいりんじもんじょ",
+        "era_check": "戦国",
+        "suggested_insert_after_cluster": "梅林寺文書が初めて議論の焦点になるクラスタ直後",
+        "background_facts": [
+          {
+            "fact_id": "c03",
+            "c2_type": "②背景構造",
+            "intended_use": "梅林寺文書の本筋外の制度・史料背景を短く補足する"
+          }
+        ],
+        "core_new_claim": "梅林寺文書は本筋の結論とは分け、制度・史料上の位置づけを確認する必要がある。",
+        "demand_type": "meta_background",
+        "core_answer_risk": "low",
+        "explainable_layer": "出典史料",
+        "thread_may_say": [
+          "梅林寺文書の名前や一点だけの事実",
+          "梅林寺文書への疑問や茶々"
+        ],
+        "thread_should_not_say": [
+          "梅林寺文書の制度・出典・帰結を一レスで説明し切る"
+        ]
+      },
+      {
+        "term": "茨木城",
+        "reading": "いばらきじょう",
+        "era_check": "戦国",
+        "suggested_insert_after_cluster": "茨木城が初めて議論の焦点になるクラスタ直後",
+        "background_facts": [
+          {
+            "fact_id": "c04",
+            "c2_type": "④出典史料",
+            "intended_use": "茨木城の本筋外の制度・史料背景を短く補足する"
+          }
+        ],
+        "core_new_claim": "茨木城は本筋の結論とは分け、制度・史料上の位置づけを確認する必要がある。",
+        "demand_type": "meta_background",
+        "core_answer_risk": "low",
+        "explainable_layer": "地理背景",
+        "thread_may_say": [
+          "茨木城の名前や一点だけの事実",
+          "茨木城への疑問や茶々"
+        ],
+        "thread_should_not_say": [
+          "茨木城の制度・出典・帰結を一レスで説明し切る"
+        ]
+      }
+    ],
+    "narr_budget_pct": 25
+  },
+  "context": {
+    "taiga_linked": true,
+    "recent_overlap_urls": [
+      "/Users/kojinn/Projects/youtube/創作スレ下書き/2026-07-03_中国大返し/2026-07-03_中国大返し_台本.md",
+      "/Users/kojinn/Projects/youtube/創作スレ下書き/2026-07-10_明智光秀_本能寺の変理由リメイク/2026-07-10_明智光秀_本能寺の変理由リメイク_台本.md"
+    ]
+  }
+}

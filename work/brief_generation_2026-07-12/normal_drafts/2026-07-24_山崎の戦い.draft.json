@@ -1,0 +1,371 @@
+{
+  "save_dir": "Projects/youtube/創作スレ下書き/2026-07-24_山崎の戦い/",
+  "status": "ready_for_pipeline",
+  "block_reasons": [],
+  "theme_subject": "山崎の戦い―天王山争奪神話と淀川沿いの実戦",
+  "era": "戦国",
+  "working_title": "【2ch歴史】秀吉vs光秀、山崎の戦いの勝敗を分けたのは天王山じゃなかった件www 2ちゃんねるの歴史オタクたちの見解がおもしろい【ゆっくり解説】",
+  "title_candidates": [
+    {
+      "title": "【2ch歴史】秀吉vs光秀、山崎の戦いの勝敗を分けたのは天王山じゃなかった件www 2ちゃんねるの歴史オタクたちの見解がおもしろい【ゆっくり解説】",
+      "pattern": "通説反転",
+      "predicted_views": 18097,
+      "over_10k_prob": 0.558,
+      "rank": "A"
+    },
+    {
+      "title": "【2ch歴史】「天下分け目の天王山」←実は勝負が決まったのは淀川沿いだった件www 2ちゃんねるの歴史オタクたちの見解がおもしろい【ゆっくり解説】",
+      "pattern": "意外な真実",
+      "predicted_views": 13291,
+      "over_10k_prob": 0.439,
+      "rank": "B"
+    },
+    {
+      "title": "【2ch歴史】山崎の戦い、天王山争奪戦で決まったという通説が後世の脚色だった件www 2ちゃんねるの歴史オタクたちの見解がおもしろい【ゆっくり解説】",
+      "pattern": "史料検証",
+      "predicted_views": 13014,
+      "over_10k_prob": 0.46,
+      "rank": "B"
+    },
+    {
+      "title": "【2ch歴史】明智光秀、天王山ではなく川沿いの側面突破で崩された件www 2ちゃんねるの歴史オタクたちの見解がおもしろい【ゆっくり解説】",
+      "pattern": "戦術",
+      "predicted_views": 14800,
+      "over_10k_prob": 0.489,
+      "rank": "B"
+    }
+  ],
+  "split": {
+    "pattern_id": "③",
+    "pattern_name": "前提を疑う型",
+    "front": {
+      "role": "タイトルネタ",
+      "theme": "山頂を取った側が勝ったという天王山争奪物語と、その物語が『太閤記』で広まった経緯。",
+      "hook_type": "通説反転",
+      "fact_ids": [
+        "c01",
+        "c02",
+        "c03",
+        "c04"
+      ],
+      "rationale": "誰もが知る慣用句を史料形成から問い直す。"
+    },
+    "back": {
+      "role": "本筋",
+      "theme": "主戦場だった天王山東側の湿地、円明寺川、淀川沿いでどの部隊が戦線を崩したのかを地形ベースで追う。",
+      "fact_ids": [
+        "c05",
+        "c06",
+        "c07",
+        "c08",
+        "c09",
+        "c10"
+      ],
+      "rationale": "山頂の英雄譚から川沿いの部隊運動へ視点を下ろす。"
+    },
+    "thread_core_question": {
+      "front": "天王山山頂の争奪が本当に山崎の勝敗を決めたのか？",
+      "back": "実際の戦線ではどこが突破され、明智方はどう崩れたのか？"
+    },
+    "transition_B": "ここまでは天王山争奪の有名な物語を見てきたが、『それが後世に広まった話なら、6月13日の本戦で実際に明智軍を崩したのは何だったのか？』という疑問も出てきた。引き続き議論を見ていこう。",
+    "gap_rationale": "有名な山頂の物語から、湿地と川沿いの戦闘推移へ切り替える。"
+  },
+  "scoring": {
+    "predicted_views": 18097,
+    "over_10k_prob": 0.558,
+    "rank": "A",
+    "breakdown": {
+      "engine": "predict_score.py",
+      "raw": "[A] pred= 18,097  p10k=55.8%  戦国      /if系+戦争・合戦+比較     【2ch歴史】秀吉vs光秀、山崎の戦いの勝敗を分けたのは天王山じゃなかった件www 2ちゃんねるの歴史オタクたちの見解がおもしろい【ゆっくり解説】\n       → 戦国×if系=5,613 / pat:www/草系/〜件/〜件www=9,071 / subj:豊臣秀吉/明智光秀=11,945 / 大河連動×1.6 / トレンド×1.3"
+    },
+    "boost": [
+      "taiga",
+      "trend"
+    ],
+    "model_version": "median-2026-06-23",
+    "recent_hit_rate": 0.673,
+    "confidence": "mid"
+  },
+  "facts": {
+    "confirmed": [
+      {
+        "id": "c01",
+        "claim": "6月12日までに羽柴・明智両軍はほぼ布陣を終え、天王山側で小規模な衝突があった。",
+        "source_url": "https://www2.ntj.jac.go.jp/dglib/contents/learn/edc18/ehon/yomoyama/y3/a.html",
+        "source_tier": "公的",
+        "year": 1582,
+        "half": "前半"
+      },
+      {
+        "id": "c02",
+        "claim": "山崎の戦いの全面戦闘は翌6月13日に起きた。",
+        "source_url": "https://www2.ntj.jac.go.jp/dglib/contents/learn/edc18/ehon/yomoyama/y3/a.html",
+        "source_tier": "公的",
+        "year": 1582,
+        "half": "前半"
+      },
+      {
+        "id": "c03",
+        "claim": "堀尾吉晴と松田太郎左衛門による山頂争奪の物語は、小瀬甫庵『太閤記』で流布したと考えられている。",
+        "source_url": "https://www2.ntj.jac.go.jp/dglib/contents/learn/edc18/ehon/yomoyama/y3/a.html",
+        "source_tier": "公的",
+        "year": 1625,
+        "half": "前半"
+      },
+      {
+        "id": "c04",
+        "claim": "日本芸術文化振興会の解説は、後世に語られる天王山争奪が勝敗を決めたわけではないとしている。",
+        "source_url": "https://www2.ntj.jac.go.jp/dglib/contents/learn/edc18/ehon/yomoyama/y3/a.html",
+        "source_tier": "公的",
+        "year": 1582,
+        "half": "前半"
+      },
+      {
+        "id": "c05",
+        "claim": "実際の主戦場は天王山東側の湿地帯で、天王山と淀川に挟まれた狭い地形だった。",
+        "source_url": "https://www.town.oyamazaki.kyoto.jp/kanko/kankospot/2523.html",
+        "source_tier": "公的",
+        "year": 1582,
+        "half": "後半"
+      },
+      {
+        "id": "c06",
+        "claim": "明智方は狭隘部から出る羽柴方を各個撃破する意図で天王山東側に展開した。",
+        "source_url": "https://www.town.oyamazaki.kyoto.jp/kanko/kankospot/2523.html",
+        "source_tier": "公的",
+        "year": 1582,
+        "half": "後半"
+      },
+      {
+        "id": "c07",
+        "claim": "中川清秀・高山右近らの先手に斎藤利三らが攻めかかったが、湿地に制約されて崩し切れなかった。",
+        "source_url": "https://www.town.oyamazaki.kyoto.jp/kanko/kankospot/2523.html",
+        "source_tier": "公的",
+        "year": 1582,
+        "half": "後半"
+      },
+      {
+        "id": "c08",
+        "claim": "その間に池田恒興・加藤光泰・木村隼人らが淀川沿いを進み、円明寺川東側へ展開した。",
+        "source_url": "https://www.town.oyamazaki.kyoto.jp/kanko/kankospot/2523.html",
+        "source_tier": "公的",
+        "year": 1582,
+        "half": "後半"
+      },
+      {
+        "id": "c09",
+        "claim": "川沿いの明智方は比較的手薄で、同方面の部隊が苦戦したことが全軍の崩れにつながった。",
+        "source_url": "https://www.town.oyamazaki.kyoto.jp/kanko/kankospot/2523.html",
+        "source_tier": "公的",
+        "year": 1582,
+        "half": "後半"
+      },
+      {
+        "id": "c10",
+        "claim": "戦闘は約3時間で終わり、光秀は勝龍寺城へ退いた。",
+        "source_url": "https://www.town.oyamazaki.kyoto.jp/kanko/kankospot/2523.html",
+        "source_tier": "公的",
+        "year": 1582,
+        "half": "後半"
+      }
+    ],
+    "shosetsu": [
+      {
+        "id": "s01",
+        "claim": "両軍の正確な兵数は史料により幅がある。",
+        "variants": [
+          "羽柴方3万数千",
+          "明智方1万数千"
+        ],
+        "hedge_phrase": "兵数は推定値として幅を持たせる",
+        "usable_in": "後半"
+      },
+      {
+        "id": "s02",
+        "claim": "旗立松や秀吉の山頂行動は伝承を含む。",
+        "variants": [
+          "後世の天王山物語",
+          "現地伝承"
+        ],
+        "hedge_phrase": "伝承として扱う",
+        "usable_in": "前半"
+      }
+    ],
+    "avoid_assertions": [
+      "天王山はまったく無意味だったと断定しない",
+      "山崎で山上の戦闘が一切なかったとしない",
+      "池田恒興個人が一撃で勝敗を決めたとしない",
+      "中国大返し・味方不参加・三日天下を主要敗因として繰り返さない",
+      "光秀の最期を見せ場にしない",
+      "既存台本の天王山3レスを文言ごと再利用しない"
+    ],
+    "hard_dates": [
+      {
+        "event": "山崎の戦い前日の布陣",
+        "year": 1582
+      },
+      {
+        "event": "山崎の戦い",
+        "year": 1582
+      },
+      {
+        "event": "小瀬甫庵『太閤記』刊行",
+        "year": 1625
+      }
+    ]
+  },
+  "gen_directives": {
+    "target_chars_per_thread": "2500-3000",
+    "shaku_blueprint": {
+      "long": {
+        "n": 10,
+        "chars": "88+"
+      },
+      "mid": {
+        "n": 8,
+        "chars": "50-87"
+      },
+      "short": {
+        "chars": "0-49"
+      },
+      "recommended_long": {
+        "chars": "120-150"
+      }
+    },
+    "tone": "通説から地形戦へ",
+    "must_surface_terms": [
+      "天王山",
+      "円明寺川",
+      "小瀬甫庵",
+      "勝龍寺城"
+    ],
+    "buntai_doc_path": "03_知識ベース/YouTube・コンテンツ制作/2chスレ文体パターン.md",
+    "gloss_handling": "gloss_targets語はスレ内で断片・疑問・一点うんちくに留め、定義→背景→帰結まで説明し切らない",
+    "thread_terminal_cap": {
+      "window": 8,
+      "max_long_88": 0,
+      "allowed": [
+        "具体物",
+        "茶々",
+        "疑問",
+        "未解決感",
+        "次の問い"
+      ],
+      "forbidden": [
+        "総括",
+        "教訓",
+        "余韻回収",
+        "評価保留",
+        "closing claim再説明"
+      ]
+    }
+  },
+  "gloss": {
+    "gloss_targets": [
+      {
+        "term": "天王山",
+        "reading": "てんのうざん",
+        "era_check": "戦国",
+        "suggested_insert_after_cluster": "天王山が初めて議論の焦点になるクラスタ直後",
+        "background_facts": [
+          {
+            "fact_id": "c01",
+            "c2_type": "②背景構造",
+            "intended_use": "天王山の本筋外の制度・史料背景を短く補足する"
+          }
+        ],
+        "core_new_claim": "天王山は本筋の結論とは分け、制度・史料上の位置づけを確認する必要がある。",
+        "demand_type": "hybrid",
+        "core_answer_risk": "medium",
+        "explainable_layer": "地形と通説",
+        "thread_may_say": [
+          "天王山の名前や一点だけの事実",
+          "天王山への疑問や茶々"
+        ],
+        "thread_should_not_say": [
+          "天王山の制度・出典・帰結を一レスで説明し切る"
+        ]
+      },
+      {
+        "term": "円明寺川",
+        "reading": "えんみょうじがわ",
+        "era_check": "戦国",
+        "suggested_insert_after_cluster": "円明寺川が初めて議論の焦点になるクラスタ直後",
+        "background_facts": [
+          {
+            "fact_id": "c02",
+            "c2_type": "④出典史料",
+            "intended_use": "円明寺川の本筋外の制度・史料背景を短く補足する"
+          }
+        ],
+        "core_new_claim": "円明寺川は本筋の結論とは分け、制度・史料上の位置づけを確認する必要がある。",
+        "demand_type": "hybrid",
+        "core_answer_risk": "medium",
+        "explainable_layer": "主戦場",
+        "thread_may_say": [
+          "円明寺川の名前や一点だけの事実",
+          "円明寺川への疑問や茶々"
+        ],
+        "thread_should_not_say": [
+          "円明寺川の制度・出典・帰結を一レスで説明し切る"
+        ]
+      },
+      {
+        "term": "小瀬甫庵",
+        "reading": "おぜほあん",
+        "era_check": "戦国",
+        "suggested_insert_after_cluster": "小瀬甫庵が初めて議論の焦点になるクラスタ直後",
+        "background_facts": [
+          {
+            "fact_id": "c03",
+            "c2_type": "②背景構造",
+            "intended_use": "小瀬甫庵の本筋外の制度・史料背景を短く補足する"
+          }
+        ],
+        "core_new_claim": "小瀬甫庵は本筋の結論とは分け、制度・史料上の位置づけを確認する必要がある。",
+        "demand_type": "meta_background",
+        "core_answer_risk": "low",
+        "explainable_layer": "後世史料",
+        "thread_may_say": [
+          "小瀬甫庵の名前や一点だけの事実",
+          "小瀬甫庵への疑問や茶々"
+        ],
+        "thread_should_not_say": [
+          "小瀬甫庵の制度・出典・帰結を一レスで説明し切る"
+        ]
+      },
+      {
+        "term": "勝龍寺城",
+        "reading": "しょうりゅうじじょう",
+        "era_check": "戦国",
+        "suggested_insert_after_cluster": "勝龍寺城が初めて議論の焦点になるクラスタ直後",
+        "background_facts": [
+          {
+            "fact_id": "c04",
+            "c2_type": "④出典史料",
+            "intended_use": "勝龍寺城の本筋外の制度・史料背景を短く補足する"
+          }
+        ],
+        "core_new_claim": "勝龍寺城は本筋の結論とは分け、制度・史料上の位置づけを確認する必要がある。",
+        "demand_type": "meta_background",
+        "core_answer_risk": "low",
+        "explainable_layer": "退却先",
+        "thread_may_say": [
+          "勝龍寺城の名前や一点だけの事実",
+          "勝龍寺城への疑問や茶々"
+        ],
+        "thread_should_not_say": [
+          "勝龍寺城の制度・出典・帰結を一レスで説明し切る"
+        ]
+      }
+    ],
+    "narr_budget_pct": 25
+  },
+  "context": {
+    "taiga_linked": true,
+    "recent_overlap_urls": [
+      "/Users/kojinn/Projects/youtube/創作スレ下書き/2026-07-03_中国大返し/2026-07-03_中国大返し_台本.md",
+      "/Users/kojinn/Projects/youtube/創作スレ下書き/2026-07-10_山崎の戦い__差し替え保留/brief.json"
+    ]
+  }
+}
