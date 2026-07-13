@@ -1,0 +1,210 @@
+{
+  "schema_version": 2,
+  "generated_at": "2026-07-13T16:00:00+09:00",
+  "project": "応仁の乱_AI作成",
+  "workflow": {
+    "dictionary_reset_before_csv": true,
+    "reset_method": "伏せ字辞書310件と旧単語辞書357件を無効化し、修正版単語辞書311件だけを有効化",
+    "dictionary_imported": "ymm4_user_修正版.dic",
+    "dictionary_state": {
+      "masked_word_sets_total": 310,
+      "masked_word_sets_active": 0,
+      "word_sets_total": 668,
+      "word_sets_active": 311,
+      "word_sets_disabled": 357,
+      "pronouncing_sets": 6,
+      "corrected_dic_rows": 311,
+      "missing_active_dic_pairs": 0,
+      "extra_active_dic_pairs": 0,
+      "other_to_hokano_active_count": 1
+    },
+    "csv_imported_after_dictionary": "台本_YMM4取込用_187行.csv",
+    "import_sequence": [
+      "辞書の有効・無効状態を確定",
+      "YMM4で新規プロジェクトを作成",
+      "187行CSVを読み込み",
+      "187音声を新規生成",
+      "元プロジェクトと同一の画像・動画・BGM・SEを配置",
+      "MP4を書き出して全尺監査"
+    ],
+    "voice_character_mapping": "CSVの正規キャラクター名を直接使用。ずんだもんへの一時マッピングなし。",
+    "source_character_count": 16,
+    "character_voice_setting_mismatch_count": 0
+  },
+  "outputs": {
+    "ymmp": {
+      "path": "\\\\Mac\\SSD\\YouTube\\創作スレ下書き\\2026-07-12_応仁の乱AI作成\\応仁の乱_AI作成_素材配置_v5_単語辞書最終修正版.ymmp",
+      "sha256": "38D82DEEC77A2055CE2C256C1391DE83FE28175C4735EF77C2E11532BE4FB08B",
+      "bytes": 22139663,
+      "items": 482,
+      "voices": 187,
+      "images": 148,
+      "shapes": 74,
+      "videos": 54,
+      "texts": 16,
+      "audios": 3,
+      "timeline_frames": 34340
+    },
+    "mp4": {
+      "path": "\\\\Mac\\SSD\\YouTube\\創作スレ下書き\\2026-07-12_応仁の乱AI作成\\応仁の乱_AI作成_完成_v5_単語辞書最終修正版.mp4",
+      "sha256": "1943C2F04269CE2B7A6A866689808A6CFB813032B62DFACFA673EF1573991FCA",
+      "bytes": 2051362664,
+      "duration_seconds": 1144.699966,
+      "width": 1920,
+      "height": 1080,
+      "fps": 30,
+      "video_frames": 34340,
+      "video_codec": "h264 Main",
+      "audio_codec": "aac LC",
+      "audio_hz": 48000,
+      "audio_channels": 2,
+      "mean_volume_db": -24.2,
+      "max_volume_db": -8.4
+    },
+    "voice_ymmp": {
+      "path": "応仁の乱_AI作成_単語辞書最終修正版音声.ymmp",
+      "sha256": "AB6ADACF5A0054352B4D75C5D9086F31CC780751E586E069F38BF19B6053AA71",
+      "bytes": 21406087,
+      "voices": 187
+    },
+    "voice_list_csv": {
+      "path": "応仁の乱_AI作成_単語辞書最終修正版音声一覧.csv",
+      "sha256": "3C576EF5CDA1F5144923638E5749EC738632EA9FFE28A4B649B35781E16BF2F0",
+      "bytes": 62377,
+      "rows": 187
+    },
+    "audit_json": {
+      "path": "応仁の乱_AI作成_単語辞書最終修正版音声_audit.json",
+      "sha256": "77A0167D0BA174FEF8DFF63015C4EE6AACE8E407E7AADE17588121388FAD1357",
+      "bytes": 7748,
+      "pass": true
+    },
+    "verification_json": {
+      "path": "応仁の乱_AI作成_素材配置_v5_単語辞書最終修正版_verification.json",
+      "sha256": "80037E3566D66B78240C71081749AC21A3C0EE78FF82E801E3C9CC2B51D5B850",
+      "bytes": 2170,
+      "pass": true
+    }
+  },
+  "source_comparison": {
+    "source_mp4_sha256": "FD2018CC2AF7F457F7AD9B0620C99D2219AE3F5BBFC9349835601EC617BDDC98",
+    "source_mp4_bytes": 1928705886,
+    "source_duration_seconds": 1153.533333,
+    "output_duration_seconds": 1144.699966,
+    "duration_delta_seconds": -8.833367,
+    "source_timeline_frames": 34605,
+    "output_timeline_frames": 34340,
+    "timeline_delta_frames": -265,
+    "reason": "最終単語辞書を確定してから187音声を新規生成したため",
+    "source_mean_volume_db": -24.2,
+    "source_max_volume_db": -8.4,
+    "output_mean_volume_db": -24.2,
+    "output_max_volume_db": -8.4,
+    "volume_match": true
+  },
+  "assets": {
+    "mode": "reuse_source_assets",
+    "source_nonvoice_items": 295,
+    "target_nonvoice_items": 295,
+    "file_path_attributes_compared": 205,
+    "file_path_mismatch_count": 0,
+    "all_source_filepaths_preserved": true,
+    "unique_referenced_files": 106,
+    "missing_references": 0,
+    "downloaded_replacement_assets_used": 0,
+    "downloaded_commons_assets": 0,
+    "derived_slot_assets": 0,
+    "credits_file": null,
+    "historical_v3_credits_file": "素材クレジット.txt",
+    "historical_v3_assets_used_in_final": false
+  },
+  "input_hashes": {
+    "dictionary_sha256": "C705F55C1DD44DEE9A7BDBA58B8249DA7D5CDD9115BB75686375500C4965D31A",
+    "original_dictionary_sha256": "C685DB263C48913AC9B238CCA27CB67BB7DE565BCF18F6E0318B5FC548800A58",
+    "import_csv_sha256": "D7B30A0971F47A80ABC5A6E88F8499AB8A515DF013AC563F2ACD1223A86D0376",
+    "target_voice_ymmp_sha256": "AB6ADACF5A0054352B4D75C5D9086F31CC780751E586E069F38BF19B6053AA71",
+    "source_reference_ymmp_sha256": "96BAFA76C2094055161F8E9EE8035955A58E837BDCA0EF8A27095EA1955F2C69",
+    "reading_diff_audit_csv_sha256": "832A65755F40B6CF86D700883B603AB6149479820F86DCCFCADE3B9F626F7D52"
+  },
+  "checks": {
+    "ymm4_load_success": true,
+    "render_success": true,
+    "ffprobe_success": true,
+    "full_video_audio_decode_success": true,
+    "decode_error_count": 0,
+    "file_stability_and_hash_recheck_success": true,
+    "audio_payload_preserved": true,
+    "missing_file_paths": 0,
+    "voice": {
+      "csv_rows": 187,
+      "serif_mismatch_count": 0,
+      "character_mismatch_count": 0,
+      "hatsuon_blank_count": 0,
+      "voice_cache_blank_count": 0,
+      "voice_length_invalid_count": 0,
+      "hatsuon_changed_from_v4_count": 2,
+      "other_reading_zero_based_indexes": [29, 185],
+      "other_reading_hatsuon": "/ほかの/いけんや/",
+      "remaining_tano_token_count": 0
+    },
+    "assembly": {
+      "voice_payload_mismatch_count": 0,
+      "nonvoice_mismatch_count": 0,
+      "item_type_order_mismatch_count": 0,
+      "file_path_mismatch_count": 0,
+      "invalid_timeline_item_count": 0
+    },
+    "targeted_readings_pass": true,
+    "visual_spot_checks": [
+      {
+        "seconds": 5.733,
+        "result": "opening and introduction normal"
+      },
+      {
+        "seconds": 37.0,
+        "result": "11年を漢字・数字のまま正常表示"
+      },
+      {
+        "seconds": 43.0,
+        "result": "1467年から1477年まで京都で揉め続けたやつな を漢字・数字のまま正常表示"
+      },
+      {
+        "seconds": 1133.2,
+        "result": "今回の動画について他の意見や感想があったら を正常表示、読みは ほかの"
+      },
+      {
+        "seconds": 1144.1,
+        "result": "最終案内の背景・字幕が正常"
+      }
+    ]
+  },
+  "known_differences": [
+    "最終版は元動画より8.833367秒短い。最終単語辞書を確定後に187音声を新規生成したことによる。",
+    "読み差12件を監査し、ｗ→わら・京都民・後の東西軍・一方向・後から等は意図的補正として維持。他の→ほかのは該当2音声で修正した。",
+    "映像・画像・BGM・SEの参照先は元プロジェクトと同一で、代替素材は使用していない。"
+  ],
+  "revision_history": [
+    {
+      "revision": "v3",
+      "status": "superseded",
+      "report_sha256": "36FA63B4965A0D30B2861B1BA440D2123AE6F043B4B781A2335AB224C72532D7",
+      "reason": "初回版。伏せ字辞書誤適用による字幕かな化と外部代替素材の使用が判明したため差し替え。"
+    },
+    {
+      "revision": "v4",
+      "status": "superseded",
+      "voice_sha256": "CBF6526758F1E06050B0AFEBA1A7F8FFE37DE351D88AB6A68D5E8A55072A29B0",
+      "project_sha256": "2B554DB8080CC7F6B9520438FC91883F67A607015379A0D1D1574CC727E9EFB2",
+      "mp4_sha256": "8AC22DCC7DE66D63C03E1D555AD51A5E560B6452AC0ACF86E0101B5FF4303B07",
+      "reason": "伏せ字問題と素材参照は修正済みだが、他の を たの と読む2音声が残ったため差し替え。"
+    },
+    {
+      "revision": "v5",
+      "status": "final",
+      "voice_sha256": "AB6ADACF5A0054352B4D75C5D9086F31CC780751E586E069F38BF19B6053AA71",
+      "project_sha256": "38D82DEEC77A2055CE2C256C1391DE83FE28175C4735EF77C2E11532BE4FB08B",
+      "mp4_sha256": "1943C2F04269CE2B7A6A866689808A6CFB813032B62DFACFA673EF1573991FCA",
+      "reason": "修正版単語辞書311件で音声を再生成し、元プロジェクトと同一素材で最終化。"
+    }
+  ]
+}
