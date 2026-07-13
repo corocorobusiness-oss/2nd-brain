@@ -352,6 +352,9 @@ for ($i = 0; $i -lt 187; $i++) {
         if ($null -eq $sourceProperty -or $null -eq $outputProperty) {
             throw "Voice visual property is missing: $visualProperty at index $i"
         }
+        if ($visualProperty -eq 'JimakuVideoEffects' -and @($sourceProperty.Value).Count -eq 0) {
+            continue
+        }
         if ($null -eq $sourceProperty.Value) {
             $outputProperty.Value = $null
         }
@@ -378,7 +381,8 @@ foreach ($sourceItem in $sourceNonVoice) {
     $mappedNonVoice.Add($mapped)
 }
 
-$rebuiltItems = @($outputVoices) + @($mappedNonVoice | ForEach-Object { $_ })
+$outputVoicesInOriginalOrder = @($outputTimeline.Items | Where-Object { (Get-ItemKind $_) -eq 'VoiceItem' })
+$rebuiltItems = @($outputVoicesInOriginalOrder) + @($mappedNonVoice | ForEach-Object { $_ })
 $outputTimeline.Items = $rebuiltItems
 $outputTimeline.LayerSettings = @(Copy-JsonObject $sourceTimeline.LayerSettings)
 $outputTimeline.CurrentFrame = 0
