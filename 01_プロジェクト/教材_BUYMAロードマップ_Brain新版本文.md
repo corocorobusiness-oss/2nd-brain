@@ -2409,6 +2409,8 @@ Kind regards,
 
 ## 第6章 BUYMAショップリスト
 
+![第6章 BUYMAショップリスト](BUYMA章頭挿絵/第6章_BUYMAショップリスト.png)
+
 ![ショップリストの使い方](BUYMA本文挿絵/A06_第6章_ショップリストの使い方.png)
 
 <!-- SOURCE: ROOT-06 / PDF-SHOP-01〜02 / 公式更新=本章末リンク -->
