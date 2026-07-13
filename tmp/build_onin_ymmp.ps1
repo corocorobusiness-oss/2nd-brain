@@ -34,6 +34,13 @@ function Convert-ToUncPath {
         return $full
     }
 
+        if ($full -match '^N:(\\.*)$') {
+        return '\\Mac\SSD' + $matches[1]
+    }
+    if ($full -match '^Y:(\\.*)$') {
+        return '\\Mac\Home' + $matches[1]
+    }
+
     if ($full -match '^([A-Za-z]):(\\.*)$') {
         $driveName = $matches[1]
         $driveTail = $matches[2]
@@ -236,41 +243,41 @@ $replacementSpecs = @(
     [pscustomobject]@{ Frame = 4571;  Layer = 0; Asset = '10_ashikaga_yoshimasa.jpg' },
     [pscustomobject]@{ Frame = 4736;  Layer = 0; Asset = '06_rakuchu_pair.jpg' },
     [pscustomobject]@{ Frame = 4957;  Layer = 0; Asset = '16_onin_scene3.jpg' },
-    [pscustomobject]@{ Frame = 6153;  Layer = 3; Asset = '06_rakuchu_pair.jpg' },
+    [pscustomobject]@{ Frame = 6153;  Layer = 3; Asset = '04_rakuchu_right.jpg' },
     [pscustomobject]@{ Frame = 8102;  Layer = 1; Asset = '02_muromachi_samurai.jpg' },
     [pscustomobject]@{ Frame = 9596;  Layer = 4; Asset = '13_ashikaga_yoshimi.jpg' },
     [pscustomobject]@{ Frame = 9999;  Layer = 3; Asset = '13_ashikaga_yoshimi.jpg' },
     [pscustomobject]@{ Frame = 11226; Layer = 3; Asset = '10_ashikaga_yoshimasa.jpg' },
     [pscustomobject]@{ Frame = 14453; Layer = 0; Asset = '04_rakuchu_right.jpg' },
-    [pscustomobject]@{ Frame = 14630; Layer = 0; Asset = '05_rakuchu_left.jpg' },
+    [pscustomobject]@{ Frame = 14630; Layer = 0; Asset = '18_kamigoryo_shrine.jpg' },
     [pscustomobject]@{ Frame = 14814; Layer = 0; Asset = '06_rakuchu_pair.jpg' },
-    [pscustomobject]@{ Frame = 14814; Layer = 2; Asset = '18_kamigoryo_shrine.jpg' },
+    [pscustomobject]@{ Frame = 14814; Layer = 2; Asset = '03_muromachi_ship.jpg' },
     [pscustomobject]@{ Frame = 16189; Layer = 1; Asset = '03_muromachi_ship.jpg' },
     [pscustomobject]@{ Frame = 16920; Layer = 1; Asset = '01_onin_marker.jpg' },
-    [pscustomobject]@{ Frame = 17356; Layer = 1; Asset = '16_onin_scene3.jpg' },
+    [pscustomobject]@{ Frame = 17356; Layer = 1; Asset = '17_onin_yoshitora.jpg' },
     [pscustomobject]@{ Frame = 24146; Layer = 0; Asset = '02_muromachi_samurai.jpg' },
-    [pscustomobject]@{ Frame = 24312; Layer = 0; Asset = '14_funaki_kyoto.jpg' },
-    [pscustomobject]@{ Frame = 24426; Layer = 0; Asset = '03_muromachi_ship.jpg' },
-    [pscustomobject]@{ Frame = 24600; Layer = 0; Asset = '12_onin_monument.jpg' },
+    [pscustomobject]@{ Frame = 24312; Layer = 0; Asset = '02_muromachi_samurai.jpg' },
+    [pscustomobject]@{ Frame = 24426; Layer = 0; Asset = '05_rakuchu_left.jpg' },
+    [pscustomobject]@{ Frame = 24600; Layer = 0; Asset = '16_onin_scene3.jpg' },
     [pscustomobject]@{ Frame = 24893; Layer = 4; Asset = '02_muromachi_samurai.jpg' },
-    [pscustomobject]@{ Frame = 27589; Layer = 3; Asset = '01_onin_marker.jpg' },
-    [pscustomobject]@{ Frame = 32256; Layer = 0; Asset = '11_hosokawa_masamoto.jpg' },
+    [pscustomobject]@{ Frame = 27589; Layer = 3; Asset = '12_onin_monument.jpg' },
+    [pscustomobject]@{ Frame = 32256; Layer = 0; Asset = '06_rakuchu_pair.jpg' },
     [pscustomobject]@{ Frame = 32256; Layer = 3; Asset = '11_hosokawa_masamoto.jpg' },
-    [pscustomobject]@{ Frame = 32456; Layer = 0; Asset = '06_rakuchu_pair.jpg' },
+    [pscustomobject]@{ Frame = 32456; Layer = 0; Asset = '04_rakuchu_right.jpg' },
     [pscustomobject]@{ Frame = 32456; Layer = 2; Asset = '09_ashikaga_yoshitane.jpg' },
     [pscustomobject]@{ Frame = 32456; Layer = 3; Asset = '11_hosokawa_masamoto.jpg' },
-    [pscustomobject]@{ Frame = 32525; Layer = 2; Asset = '08_ashikaga_yoshihisa.jpg' },
+    [pscustomobject]@{ Frame = 32525; Layer = 2; Asset = '02_muromachi_samurai.jpg' },
     [pscustomobject]@{ Frame = 32604; Layer = 0; Asset = '12_onin_monument.jpg' },
-    [pscustomobject]@{ Frame = 32819; Layer = 0; Asset = '04_rakuchu_right.jpg' },
+    [pscustomobject]@{ Frame = 32819; Layer = 0; Asset = '16_onin_scene3.jpg' },
     [pscustomobject]@{ Frame = 33693; Layer = 2; Asset = '14_funaki_kyoto.jpg' },
-    [pscustomobject]@{ Frame = 34058; Layer = 2; Asset = '17_onin_yoshitora.jpg' }
+    [pscustomobject]@{ Frame = 34058; Layer = 2; Asset = '01_onin_marker.jpg' }
 )
 
 if ($replacementSpecs.Count -ne 38) {
     throw "The replacement table must contain exactly 38 entries; found $($replacementSpecs.Count)."
 }
-if (@($replacementSpecs.Asset | Sort-Object -Unique).Count -ne 18) {
-    throw 'The replacement table must reference all 18 external asset files.'
+if (@($replacementSpecs.Asset | Sort-Object -Unique).Count -ne 17) {
+    throw 'The replacement table must reference exactly 17 distinct external asset files.'
 }
 
 $replacementByKey = @{}
@@ -334,9 +341,24 @@ $output = Copy-JsonObject $target
 $outputTimeline = Get-SelectedTimeline $output 'Output project'
 $outputVoices = Get-SortedVoices $outputTimeline
 
+$voiceVisualProperties = @(
+    'JimakuVisibility', 'Y', 'X', 'BasePoint',
+    'JimakuVideoEffects', 'Group', 'Layer'
+)
 for ($i = 0; $i -lt 187; $i++) {
-    $outputVoices[$i].Layer = [int]$sourceVoices[$i].Layer
-    $outputVoices[$i].Group = $sourceVoices[$i].Group
+    foreach ($visualProperty in $voiceVisualProperties) {
+        $sourceProperty = $sourceVoices[$i].PSObject.Properties[$visualProperty]
+        $outputProperty = $outputVoices[$i].PSObject.Properties[$visualProperty]
+        if ($null -eq $sourceProperty -or $null -eq $outputProperty) {
+            throw "Voice visual property is missing: $visualProperty at index $i"
+        }
+        if ($null -eq $sourceProperty.Value) {
+            $outputProperty.Value = $null
+        }
+        else {
+            $outputProperty.Value = Copy-JsonObject $sourceProperty.Value
+        }
+    }
 }
 
 $mappedNonVoice = New-Object System.Collections.Generic.List[object]
@@ -356,7 +378,7 @@ foreach ($sourceItem in $sourceNonVoice) {
     $mappedNonVoice.Add($mapped)
 }
 
-$rebuiltItems = @($outputVoices) + @($mappedNonVoice)
+$rebuiltItems = @($outputVoices) + @($mappedNonVoice | ForEach-Object { $_ })
 $outputTimeline.Items = $rebuiltItems
 $outputTimeline.LayerSettings = @(Copy-JsonObject $sourceTimeline.LayerSettings)
 $outputTimeline.CurrentFrame = 0
@@ -400,6 +422,8 @@ $voiceTextPreserved = $true
 $voiceHatsuonPreserved = $true
 $voiceCachePreserved = $true
 $voiceLengthPreserved = $true
+$voiceFramePreserved = $true
+$voiceItemLengthPreserved = $true
 for ($i = 0; $i -lt 187; $i++) {
     if (-not [string]::Equals([string]$targetVoices[$i].Serif, [string]$outputVoicesForValidation[$i].Serif, [StringComparison]::Ordinal)) {
         $voiceTextPreserved = $false
@@ -413,10 +437,17 @@ for ($i = 0; $i -lt 187; $i++) {
     if ($targetVoices[$i].VoiceLength -ne $outputVoicesForValidation[$i].VoiceLength) {
         $voiceLengthPreserved = $false
     }
+    if ([int]$targetVoices[$i].Frame -ne [int]$outputVoicesForValidation[$i].Frame) {
+        $voiceFramePreserved = $false
+    }
+    if ([int]$targetVoices[$i].Length -ne [int]$outputVoicesForValidation[$i].Length) {
+        $voiceItemLengthPreserved = $false
+    }
 }
 if (-not $voiceTextPreserved -or -not $voiceHatsuonPreserved -or
-    -not $voiceCachePreserved -or -not $voiceLengthPreserved) {
-    throw 'One or more target voice payload fields changed during reconstruction.'
+    -not $voiceCachePreserved -or -not $voiceLengthPreserved -or
+    -not $voiceFramePreserved -or -not $voiceItemLengthPreserved) {
+    throw 'One or more target voice payload or timing fields changed during reconstruction.'
 }
 
 $externalImageCount = @($outputTimeline.Items | Where-Object {
@@ -446,8 +477,28 @@ if ($missingPaths.Count -ne 0) {
     throw "Rebuilt timeline contains $($missingPaths.Count) missing FilePath references: $($missingPaths -join '; ')"
 }
 
+$invalidTimelineItems = @($outputTimeline.Items | Where-Object {
+    ([int]$_.Frame -lt 0) -or
+    ([int]$_.Length -lt 1) -or
+    (([int]$_.Frame + [int]$_.Length) -gt [int]$outputTimeline.Length)
+})
+if ($invalidTimelineItems.Count -ne 0) {
+    throw "Rebuilt timeline contains $($invalidTimelineItems.Count) invalid frame/length items."
+}
+
+$videoInfo = $outputTimeline.VideoInfo
+$videoInfoValid = (
+    [int]$videoInfo.Width -eq 1920 -and
+    [int]$videoInfo.Height -eq 1080 -and
+    [int]$videoInfo.FPS -eq 30 -and
+    [int]$videoInfo.Hz -eq 48000
+)
+if (-not $videoInfoValid) {
+    throw "Unexpected VideoInfo: $($videoInfo | ConvertTo-Json -Compress)"
+}
+
 $utf8Bom = New-Object System.Text.UTF8Encoding($true)
-$outputJson = $output | ConvertTo-Json -Depth 100
+$outputJson = $output | ConvertTo-Json -Depth 100 -Compress
 [System.IO.File]::WriteAllText($outputPath, $outputJson, $utf8Bom)
 
 $outputHash = (Get-FileHash -Algorithm SHA256 -LiteralPath $outputPath).Hash
@@ -484,6 +535,14 @@ $verification = [ordered]@{
     voice_hatsuon_preserved = $voiceHatsuonPreserved
     voice_cache_preserved = $voiceCachePreserved
     voice_length_preserved = $voiceLengthPreserved
+    voice_frame_preserved = $voiceFramePreserved
+    voice_item_length_preserved = $voiceItemLengthPreserved
+    invalid_timeline_item_count = $invalidTimelineItems.Count
+    video_info_valid = $videoInfoValid
+    video_width = [int]$videoInfo.Width
+    video_height = [int]$videoInfo.Height
+    video_fps = [int]$videoInfo.FPS
+    audio_hz = [int]$videoInfo.Hz
     output_filepath_is_unc = ([string]$output.FilePath).StartsWith('\\')
 }
 [System.IO.File]::WriteAllText(
