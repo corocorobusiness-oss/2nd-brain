@@ -1605,7 +1605,8 @@ Before placing the order, could you please confirm the following?
 1. Is the item currently available, and until when can it be reserved?
 2. Can you ship it to my designated receiving partner in [city, country]?
    My partner will physically inspect the item before it is sent to the customer.
-3. What is the final price and the export VAT or local tax treatment?
+3. What is the final price and the VAT or local-tax treatment
+   when the item is exported?
 4. Which official and secure payment methods are available?
 5. Which carrier will you use, and what are the shipping cost,
    estimated delivery time, tracking, and insurance conditions?
@@ -1638,7 +1639,7 @@ Kind regards,
    回答者、日時、原文、税、支払、配送、購入証明、返品、連絡先を保存します。
 
 4. **出品者：検品経路と仕入れ総額を決める**
-   店舗から出品者または正式な買付パートナーへ送り、誰が現物検品するかを確定します。商品代、税、2区間の送料、報酬、関税等を試算します。
+   店舗から出品者または正式な買付パートナーへ送り、誰が現物検品するかを確定します。商品代、現地税、2区間の送料、報酬に加え、関税込み・関税返金等で出品者負担となる関税等を原価へ含めます。通常の海外発送で購入者負担となる関税等は原価へ混ぜず、商品ページの表示条件として別に管理します。
 
 5. **出品者：受注後に在庫と条件を再確認する**
    品番、色、サイズ、数量、価格、取置期限、返品、店舗から検品者までの発送予定を再確認します。購入者宛ての発送が、注文確定日時から18日後の同じ時刻までに間に合うかも確認します。
@@ -1659,7 +1660,7 @@ Kind regards,
     指示内容、購入証明、検品報告を照合します。異常がある場合は購入者へ送らず、返品・交換の判断をします。
 
 11. **出品者または買付パートナー：購入者へ発送する**
-    購入者が選んだ条件に従い、追跡可能な方法で発送します。検品者→購入者の発送控え、発送日、追跡番号を保存します。
+    購入者が選んだ条件に従い、追跡可能な方法で発送します。配送方法を変更する場合は発送前に購入者の了承を得て、海外発送では郵便局留めを指定しません。海外パートナーへ購入者情報を渡す場合は、発送に必要な最小限だけを共有し、第3章3-10で確認した外国提供の条件、保管期限、削除手順に従います。検品者→購入者の発送控え、発送日、追跡番号を保存します。
 
 12. **出品者：BUYMAで発送通知し、取引を管理する**
     購入者宛ての発送を確認してから、検品者→購入者の追跡番号をBUYMAへ入力します。受取、問い合わせ、関税、返品等を取引完了まで管理します。
@@ -1820,6 +1821,8 @@ BUYMAから買付先確認を求められた時に備え、次が分かる注文
 - [ ] 画像を掲載する場合は利用許可を保存した
 - [ ] 異常がある商品を購入者へ発送していない
 - [ ] 検品者→購入者の発送日・追跡番号を別に記録した
+- [ ] 配送方法を変更した場合は購入者の了承を得て、郵便局留めにしていない
+- [ ] 海外パートナーへ渡す購入者情報を必要最小限にし、削除時期を記録した
 - [ ] 購入者宛て発送後にだけBUYMAで発送通知した
 - [ ] 注文確定日時から18日後の発送期限を時刻まで管理した
 - [ ] 関税等の負担条件を商品ページどおりに案内した
