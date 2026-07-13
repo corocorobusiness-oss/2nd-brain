@@ -384,7 +384,7 @@ foreach ($sourceItem in $sourceNonVoice) {
 $outputVoicesInOriginalOrder = @($outputTimeline.Items | Where-Object { (Get-ItemKind $_) -eq 'VoiceItem' })
 $rebuiltItems = @($outputVoicesInOriginalOrder) + @($mappedNonVoice | ForEach-Object { $_ })
 $outputTimeline.Items = $rebuiltItems
-$outputTimeline.LayerSettings = @(Copy-JsonObject $sourceTimeline.LayerSettings)
+$outputTimeline.LayerSettings = Copy-JsonObject $sourceTimeline.LayerSettings
 $outputTimeline.CurrentFrame = 0
 $outputTimeline.Length = [int]$targetTimeline.Length
 $maximumLayer = ($rebuiltItems | Measure-Object -Property Layer -Maximum).Maximum
