@@ -70,7 +70,7 @@ foreach ($spec in $specs) {
     }
     $info = $page.imageinfo[0]
     $meta = $info.extmetadata
-    $downloadUrl = if ($info.thumburl) { $info.thumburl -replace '/1920px-','/1024px-' } else { $info.url }
+    $downloadUrl = if ($info.thumburl) { $info.thumburl } else { $info.url }
     $license = if ($meta.LicenseShortName) { $meta.LicenseShortName.value } else { '' }
     if ($license -notmatch 'Public domain|CC0|CC BY') {
         throw "Disallowed or unknown license for $($spec.title): $license"
