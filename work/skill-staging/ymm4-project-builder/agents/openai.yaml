@@ -1,0 +1,4 @@
+interface:
+  display_name: "YMM4動画編集プロジェクト"
+  short_description: "YMM4案件を設計・生成・検査し確認用動画まで安全に進める"
+  default_prompt: "Use $ymm4-project-builder to create this YMM4 video job from the approved script and assets, run QA, and prepare a review render."
