@@ -37,9 +37,16 @@ $specs = @(
 New-Item -ItemType Directory -Path $TargetDir -Force | Out-Null
 
 $titles = ($specs.title -join '|')
-$api = 'https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&prop=imageinfo&iiprop=url%7Cextmetadata&iiurlwidth=1920&titles=' + [uri]::EscapeDataString($titles)
+$api = 'https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&prop=imageinfo&iiprop=url%7Cextmetadata&iiurlwidth=1024&titles=' + [uri]::EscapeDataString($titles)
 $headers = @{ 'User-Agent' = 'Codex-YMM4-AssetBuilder/1.0 (personal video production)' }
-$response = Invoke-RestMethod -Uri $api -Headers $headers -UseBasicParsing
+$metadataCache = Join-Path (Split-Path -Parent $TargetDir) 'commons_metadata_cache_1024.json'
+if (Test-Path -LiteralPath $metadataCache) {
+    $response = Get-Content -LiteralPath $metadataCache -Raw | ConvertFrom-Json
+}
+else {
+    $response = Invoke-RestMethod -Uri $api -Headers $headers -UseBasicParsing
+    [System.IO.File]::WriteAllText($metadataCache, ($response | ConvertTo-Json -Depth 30), (New-Object System.Text.UTF8Encoding($true)))
+}
 
 $pageByTitle = @{}
 foreach ($page in $response.query.pages) {
@@ -63,14 +70,26 @@ foreach ($spec in $specs) {
     }
     $info = $page.imageinfo[0]
     $meta = $info.extmetadata
-    $downloadUrl = if ($info.thumburl) { $info.thumburl } else { $info.url }
+    $downloadUrl = if ($info.thumburl) { $info.thumburl -replace '/1920px-','/1024px-' } else { $info.url }
     $license = if ($meta.LicenseShortName) { $meta.LicenseShortName.value } else { '' }
     if ($license -notmatch 'Public domain|CC0|CC BY') {
         throw "Disallowed or unknown license for $($spec.title): $license"
     }
 
     $destination = Join-Path $TargetDir $spec.file
-    Invoke-WebRequest -Uri $downloadUrl -Headers $headers -OutFile $destination -UseBasicParsing
+    if (-not (Test-Path -LiteralPath $destination) -or (Get-Item -LiteralPath $destination).Length -eq 0) {
+        $downloaded = $false
+        for ($attempt = 1; $attempt -le 4; $attempt++) {
+            & curl.exe -L --fail --silent --show-error --retry 2 --retry-delay 5 -A 'Codex-YMM4-AssetBuilder/1.0 (personal video production)' -o $destination $downloadUrl
+            if ($LASTEXITCODE -eq 0 -and (Test-Path -LiteralPath $destination) -and (Get-Item -LiteralPath $destination).Length -gt 0) {
+                $downloaded = $true
+                break
+            }
+            if ($attempt -lt 4) { Start-Sleep -Seconds (5 * $attempt) }
+        }
+        if (-not $downloaded) { throw "Download failed: $downloadUrl" }
+        Start-Sleep -Seconds 3
+    }
 
     $bitmap = $null
     try {
