@@ -4,8 +4,9 @@ import { fileURLToPath } from "node:url";
 import { FileBlob, SpreadsheetFile, Workbook } from "@oai/artifact-tool";
 
 const here = path.dirname(fileURLToPath(import.meta.url));
-const bodyPath = path.resolve(here, "../教材_BUYMAロードマップ_Brain新版本文.md");
-const previewDir = path.join(here, "プレビュー");
+const outputDir = path.basename(here) === ".build" ? path.dirname(here) : here;
+const bodyPath = path.resolve(outputDir, "../教材_BUYMAロードマップ_Brain新版本文.md");
+const previewDir = path.join(outputDir, ".build", "プレビュー");
 const checkedOn = "2026-07-13";
 
 const COLORS = {
@@ -86,6 +87,7 @@ function styleGrid(sheet, lastCol, lastRow, formulaCols = []) {
     sheet.getRange(`${col}5:${col}${lastRow}`).format.fill = COLORS.formula;
   }
   sheet.freezePanes.freezeRows(4);
+  sheet.freezePanes.freezeColumns(2);
 }
 
 function setWidths(sheet, widths, lastRow) {
@@ -230,7 +232,7 @@ async function saveAndVerify(workbook, fileName, previews, checks) {
     await fs.writeFile(path.join(previewDir, previewName), new Uint8Array(await image.arrayBuffer()));
   }
 
-  const outputPath = path.join(here, fileName);
+  const outputPath = path.join(outputDir, fileName);
   const exported = await SpreadsheetFile.exportXlsx(workbook);
   await exported.save(outputPath);
 
@@ -249,6 +251,12 @@ async function saveAndVerify(workbook, fileName, previews, checks) {
     .some((entry) => entry.kind !== "notice");
   if (hasReloadedErrors) {
     throw new Error(`${fileName}: post-export formula error detected\n${reloadedErrors.ndjson}`);
+  }
+  const inspectSidecar = `${outputPath}.inspect.ndjson`;
+  try {
+    await fs.rename(inspectSidecar, path.join(here, path.basename(inspectSidecar)));
+  } catch (error) {
+    if (error?.code !== "ENOENT") throw error;
   }
   console.log(`EXPORTED ${outputPath}`);
 }
@@ -323,8 +331,8 @@ async function buildProfitWorkbook() {
     "BUYMA_利益計算表_購入者版.xlsx",
     [
       { sheet: "利益計算", range: "A1:T12" },
-      { sheet: "設定", range: "A1:C7" },
-      { sheet: "使い方", range: "A1:B12" },
+      { sheet: "設定", range: "A1:D7" },
+      { sheet: "使い方", range: "A1:F12" },
     ],
     [
       { sheet: "利益計算", range: "A4:T8" },
@@ -414,8 +422,8 @@ async function buildListingWorkbook() {
     [
       { sheet: "出品管理", range: "A1:AD11" },
       { sheet: "関税・分類確認", range: "A1:K11" },
-      { sheet: "設定", range: "A1:C7" },
-      { sheet: "使い方", range: "A1:B12" },
+      { sheet: "設定", range: "A1:D7" },
+      { sheet: "使い方", range: "A1:F12" },
     ],
     [
       { sheet: "出品管理", range: "A4:AD7" },
@@ -487,7 +495,7 @@ async function buildDomesticWorkbook() {
     [
       { sheet: "国内買付管理", range: "A1:AE11" },
       { sheet: "経費・精算明細", range: "A1:K11" },
-      { sheet: "使い方", range: "A1:B13" },
+      { sheet: "使い方", range: "A1:F13" },
     ],
     [
       { sheet: "国内買付管理", range: "A4:AE7" },
@@ -569,7 +577,7 @@ async function buildOverseasWorkbook() {
     [
       { sheet: "海外買付管理", range: "A1:AI11" },
       { sheet: "経費・送金明細", range: "A1:M11" },
-      { sheet: "使い方", range: "A1:B14" },
+      { sheet: "使い方", range: "A1:F14" },
     ],
     [
       { sheet: "海外買付管理", range: "A4:AI7" },
@@ -622,7 +630,7 @@ async function buildDirectWorkbook() {
     [
       { sheet: "直営店確認台帳", range: "A1:AA11" },
       { sheet: "問い合わせ記録", range: "A1:K11" },
-      { sheet: "使い方", range: "A1:B13" },
+      { sheet: "使い方", range: "A1:F13" },
     ],
     [
       { sheet: "直営店確認台帳", range: "A4:AA7" },
@@ -677,7 +685,7 @@ async function buildVipWorkbook() {
     [
       { sheet: "VIP交渉管理", range: "A1:Y11" },
       { sheet: "交渉履歴", range: "A1:L11" },
-      { sheet: "使い方", range: "A1:B13" },
+      { sheet: "使い方", range: "A1:F13" },
     ],
     [
       { sheet: "VIP交渉管理", range: "A4:Y7" },
@@ -814,7 +822,7 @@ async function buildShopWorkbook() {
     [
       { sheet: "ショップ現況監査", range: "A1:Z12" },
       { sheet: "注文前確認", range: "A1:R11" },
-      { sheet: "使い方", range: "A1:B12" },
+      { sheet: "使い方", range: "A1:F12" },
     ],
     [
       { sheet: "ショップ現況監査", range: "A4:Z8" },
