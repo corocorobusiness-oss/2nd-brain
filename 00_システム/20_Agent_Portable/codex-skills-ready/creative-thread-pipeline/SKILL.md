@@ -91,6 +91,9 @@ youtube-pipeline（実スレscrape版）の**兄弟**＝下流（組み立て→
 ### STEP7（任意）タイトル・サムネ・概要欄
 ※スキルのスコープはここまで（出荷物の生成）。**発音チェック・YouTube投稿予約はスキル外＝オーナーが手動**。
 - タイトルは `neta-research/scripts/predict_score.py` で**実データ採点**してから決める（過去109本DB）。単独人物は中央値≈6k＝「実は/たった1人で」等の意外性フックで上振れ狙い。
+- 🖼️ **タイトル・サムネは勝ちパターンを読んでから作る**（click-learning-loop・2026-07-14導入）: `~/2nd-Brain/03_知識ベース/YouTube・コンテンツ制作/サムネ・タイトル勝ちパターン.md`（T系/S系）参照。サムネは**2〜3案（1要素違い）で Test & Compare** を開始し、公開時に記録:
+  `python3 ~/2nd-Brain/00_システム/20_Agent_Portable/scripts/click_ledger.py publish --folder YYYY-MM-DD_テーマ --title "..." --pred N --thumb-headline "..." --ab-variant "A:本命" --ab-variant "B:対抗"`
+  （A/B終了時は `ab --winner`、差し替えたら `touch`。仕様: `00_システム/20_Agent_Portable/specs/click-learning-loop-設計書.md`）
 - 概要欄は **youtube-pipeline STEP6 の実データ準拠テンプレ**に従う（短く150〜250字・**解説者の声/である体**・AI広告語禁止・冒頭ナレと地続き）。
 - **見本＝平将門のメタ情報**：`01_プロジェクト/YouTube/創作スレ下書き/2026-06-17_平将門の祟り_メタ情報.md`（タイトル/サムネ/概要欄の確定例）。
 
