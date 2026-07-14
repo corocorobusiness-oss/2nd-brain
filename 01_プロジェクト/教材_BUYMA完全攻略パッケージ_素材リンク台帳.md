@@ -18,10 +18,10 @@
 | 仕入れ | BUYMA オンラインVIP仕入れ完全解説マニュアル | https://app.notion.com/p/BUYMA-VIP-f2896f4c86904b3d84e32162fd40baba?pvs=21 | 第5章 BUYMA オンラインVIP仕入れ完全解説マニュアル |
 | 仕入れ | BUYMAショップリスト | https://app.notion.com/p/BUYMA-6476a89e8ce7433c942ad51a7bbbdeee?pvs=21 | 第6章 BUYMAショップリスト |
 | 高値売り | 高値売りの戦略大公開 | https://app.notion.com/p/4abb102ec8f6436aa3f2b9083c359e31?pvs=21 | 第7章 高値売りの戦略 |
-| 高値売り・外注化 | 僕がBUYMAで実際にやっている フル外注化&高値売り戦略 | https://app.notion.com/p/BUYMA-1288a834eec68013ae48fae7654940bf?pvs=21 | 第7章の重複補足／第10章 フル外注化と運営設計 |
-| 外注化 | BUYMAの出品外注化・採用・教育まで伝授致します | https://app.notion.com/p/BUYMA-7f93fc2781a84d749d1bac650f2d286c?pvs=21 | 第8章 出品外注化・採用・教育／第9章 実践資料／特典4 |
+| 外注化 | BUYMAの出品外注化・採用・教育まで伝授致します | https://app.notion.com/p/BUYMA-7f93fc2781a84d749d1bac650f2d286c?pvs=21 | 第8章 出品外注化・採用・教育マニュアル／第9章 出品外注化 実践資料集／特典4 出品外注化スターターキット |
 | 外注化 | 出品地獄からの解放 出品作業だけでなく採用と教育の自動化 特典まとめ | https://app.notion.com/p/6315ce950d9644118a039fe098ef9b44?pvs=21 | 第9章 出品外注化 実践資料集／特典4 |
-| AI活用 | BUYMA AIで稼ぐ秘密 | https://app.notion.com/p/BUYMA-AI-40ee53aac4ed41b7bde9eaa1d9674064?pvs=21 | 第11章 BUYMA運営へのAI活用 |
+| 高値売り・外注化 | 僕がBUYMAで実際にやっている フル外注化&高値売り戦略 | https://app.notion.com/p/BUYMA-1288a834eec68013ae48fae7654940bf?pvs=21 | 第7章 高値売りの戦略の重複補足／第10章 フル外注化と運営設計 |
+| AI活用 | BUYMA AIで稼ぐ秘密 | https://app.notion.com/p/BUYMA-AI-40ee53aac4ed41b7bde9eaa1d9674064?pvs=21 | 第11章 BUYMA運営へのAI活用／第12章 BUYMA実践プロンプト集 |
 
 第12章「BUYMA実践プロンプト集」は、上表の公開AI教材内で取得済みの5プロンプトだけを現行化して使う。
 
@@ -30,8 +30,16 @@
 | 区分 | 教材名 | URL | 移植先 |
 |---|---|---|---|
 | 特典 | 海外買付マニュアル | https://app.notion.com/p/ff9ccc81187f4405b2de1fa9b8541da3?pvs=21 | 特典1 海外買付パートナー実務キット |
-| 特典 | 実際に獲得した直営店直送交渉可能なブランド | https://app.notion.com/p/e4a644b2a9fe4bbb8f8ea52dea469025?pvs=21 | 特典3 直営店・VIP開拓キットの候補資料。現況再確認を前提に使用 |
 | 特典 | 国内買付サンプルマニュアル | https://app.notion.com/p/224e016e95fd48749a629c79627e5fda?pvs=21 | 特典2 国内買付パートナー実務キット |
+| 特典 | 実際に獲得した直営店直送交渉可能なブランド | https://app.notion.com/p/e4a644b2a9fe4bbb8f8ea52dea469025?pvs=21 | 特典3 直営店・VIP開拓キットの候補資料。現況再確認を前提に使用 |
+
+公開時の特典順と正式名称:
+
+1. 特典1 海外買付パートナー実務キット
+2. 特典2 国内買付パートナー実務キット
+3. 特典3 直営店・VIP開拓キット
+4. 特典4 出品外注化スターターキット
+5. 特典5 問い合わせ・運営テンプレート集
 
 特典4は出品外注化教材・実践資料・取得済み子素材から再構成し、特典5はSTART UP・出品外注化教材内の問い合わせ資料から再構成する。
 

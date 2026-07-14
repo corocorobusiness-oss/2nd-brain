@@ -2,7 +2,8 @@
 
 初版: 2026-07-10  
 最終更新: 2026-07-14  
-対象本文: `教材_BUYMAロードマップ_Brain新版本文.md`
+対象本文: `教材_BUYMAロードマップ_Brain公開用本文.md`
+再検品時のSHA-256: `f3e30191a6bedda4e7a0a0f5b0ab6d9f0e3dd576942bacb4dfde068dfd0b3d75`
 
 ## 1. 方針
 
