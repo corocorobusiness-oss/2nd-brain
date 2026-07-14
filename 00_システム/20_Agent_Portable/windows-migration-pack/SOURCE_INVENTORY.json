@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-07-15",
+  "overall_state": "PREPARED_NOT_EXECUTED",
+  "source_contract": {
+    "current_canonical_until_cutover": "/Users/kojinn/2nd-Brain-master",
+    "daily_target": "physical Windows notebook",
+    "mac_mini_after_cutover": "24h automation and rollback",
+    "simultaneous_human_editing": false
+  },
+  "repositories": [
+    {
+      "name": "2nd-Brain-master",
+      "remote": "git@github.com:corocorobusiness-oss/2nd-brain.git",
+      "windows_target": "%USERPROFILE%\\2nd-Brain-master",
+      "remote_parity": "NEEDS_MAC_VERIFICATION"
+    },
+    {
+      "name": "youtube",
+      "remote": "git@github.com:corocorobusiness-oss/youtube-work.git",
+      "windows_target": "%USERPROFILE%\\Projects\\youtube",
+      "remote_parity": "NEEDS_MAC_VERIFICATION",
+      "known_warning": "golden_cases and local virtual environment require storage and tracking audit before clone acceptance"
+    },
+    {
+      "name": "agent-skills",
+      "remote": "git@github.com:corocorobusiness-oss/agent-skills.git",
+      "windows_target": "%USERPROFILE%\\agent-skills",
+      "remote_parity": "NEEDS_MAC_VERIFICATION"
+    },
+    {
+      "name": "agent-adapters",
+      "remote": "git@github.com:corocorobusiness-oss/agent-adapters.git",
+      "windows_target": "%USERPROFILE%\\agent-adapters",
+      "remote_parity": "NEEDS_MAC_VERIFICATION"
+    }
+  ],
+  "yymm4_handoff": {
+    "source_on_mac": "/Volumes/SSD/YouTube/YMM4-AI-HANDOFF-20260714-v1.1.2",
+    "parallels_visible_path": "\\\\Mac\\SSD\\YouTube\\YMM4-AI-HANDOFF-20260714-v1.1.2",
+    "physical_windows_transport": "COPY_OVER_MAC_SMB_TO_LOCAL_STORAGE",
+    "transport_manifest_sha256": "7346B2D8311490BE9092BF24D9F844D89D95D6225F4B0D4A2B953AA783EAF543",
+    "transport_payload_files": 328,
+    "transport_payload_bytes": 3551386472,
+    "portable_release_version": "1.1.2",
+    "portable_release_manifest_sha256": "65BD5E00950C8833DBBEBC9E73F71181C7361F1FC70F6432C838841817D4CEFC",
+    "bootstrap_version": "1.1.0",
+    "bootstrap_manifest_sha256": "8AA4A02CC25CA1B9BB9602F0332D174907AEF10E2A40EEC72347AEBDBDF71C58",
+    "physical_acceptance": "NOT_EXECUTED",
+    "current_parallels_level1": "NOT_COMPLETE"
+  },
+  "yymm4_locked_environment": {
+    "yymm4_version": "4.53.0.9",
+    "python_version": "3.13.14",
+    "job_root": "C:\\YMM4-Jobs",
+    "runtime_root": "C:\\Tools\\YMM4-AI\\versions\\1.1.2",
+    "development_root": "C:\\Dev\\YMM4-AI\\1.1.2-dev",
+    "expected_items": 482,
+    "expected_frames": 34605,
+    "asset_references": 205,
+    "unique_assets": 106,
+    "missing_assets": 0,
+    "dictionary_entries": 311
+  },
+  "automation": {
+    "host": "Mac mini",
+    "registered_expected_jobs": 29,
+    "initial_migration_scope": "KEEP_RUNNING_ON_MAC",
+    "windows_port": "SEPARATE_LATER_PROJECT"
+  },
+  "blocked_until_verified": [
+    "Mac local repository HEAD equals private remote for all four repositories",
+    "physical Windows preflight passes",
+    "Mac SMB share path is confirmed",
+    "current Parallels YMM4 Level 1 baseline is frozen before physical acceptance",
+    "human approves each migration checkpoint"
+  ],
+  "never_transport": [
+    "tokens",
+    "cookies",
+    "browser profiles",
+    "Codex auth files",
+    "Claude auth files",
+    "sqlite session databases",
+    "raw logs and caches",
+    "YMM4 user logs and backups"
+  ]
+}
+

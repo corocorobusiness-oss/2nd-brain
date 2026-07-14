@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "migration_root": "C:\\Migration-Work",
+  "report_root": "C:\\Migration-Work\\reports",
+  "transfer_root": "C:\\Transfer",
+  "second_brain": "%USERPROFILE%\\2nd-Brain-master",
+  "youtube_repo": "%USERPROFILE%\\Projects\\youtube",
+  "agent_skills_repo": "%USERPROFILE%\\agent-skills",
+  "agent_adapters_repo": "%USERPROFILE%\\agent-adapters",
+  "yymm4_job_root": "C:\\YMM4-Jobs",
+  "yymm4_asset_library": "C:\\YMM4-Assets",
+  "yymm4_large_asset_library_optional": "S:\\YMM4-Assets",
+  "yymm4_ai_install_root": "C:\\Tools\\YMM4-AI",
+  "yymm4_ai_development_root": "C:\\Dev\\YMM4-AI",
+  "mac_smb_source": "\\\\MAC_IP\\SHARE_NAME",
+  "notes": [
+    "Copy this example to C:\\Migration-Work\\local\\TARGET_CONFIG.local.json before editing.",
+    "Do not commit the local copy.",
+    "Do not put passwords, tokens, or cookies in this file.",
+    "Use a fixed drive letter for a Windows asset SSD.",
+    "Do not point YMM4 jobs at SMB, UNC, OneDrive, Dropbox, or the Mac SSD."
+  ]
+}
