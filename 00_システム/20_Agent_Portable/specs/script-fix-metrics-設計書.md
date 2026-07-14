@@ -187,12 +187,25 @@
 - 執行者タグの初期値: F03/F04/F09=`機械:assemble_csv`、F02/F08/R4=`機械:qa`、それ以外=`prose`。**F05/F06/F07は§4.8等に機械チェックが既にあるかMac側で未確認**のため保守的に`prose`とした（実は機械化済みならタグを更新）
 - テストはリモート環境のscratchpadで実施（vault・本番JSONLは汚していない）
 
-### 残作業（Mac mini側・次回そっちで作業する時）
+### 残作業の消化（2026-07-14 同日・GitHubミラー経由で実施）
 
-1. **~/agent-skills 正本側のSKILL.md同期**: creative-thread-pipeline / youtube-pipeline の出荷手順への「記録1行」追記を、`~/agent-skills/` の正本にも同展開する（codex-skills-ready は控えのため、このvault編集だけでは実運用のSKILL.mdに反映されない）
-2. **遡り記録**: 7月出荷分（中国大返し・豊臣秀長・安倍晴明など記憶が新しい分だけ）を `ship` で3本以上入力
-3. **初回レポート生成**: `python3 00_システム/20_Agent_Portable/scripts/fix_metrics_report.py` → [[台本ルール効き]]が生成されるのを確認し、#レポートへ共有
-4. F05/F06/F07の実際の執行状況（§4.8/qaに入っているか）を確認し、入っていればタグを`機械:sec48`等へ更新
+祐馬さん承認のもと `corocorobusiness-oss/agent-skills` / `youtube-work` ミラーをセッションに追加して実施：
+
+1. ✅ **正本SKILL.md同期**: agent-skills の creative-thread-pipeline / youtube-pipeline へ記録手順を追記 → **ブランチ `claude/script-fix-metrics` にpush済み（要マージ）**。なお正本SKILL.mdの制作ログ/スレコーパスパスは更新済みと確認＝§6-2のパスずれは**vaultの控え（codex-skills-ready）だけ**の問題だった
+2. ✅ **遡り記録3本**: 中国大返し（AI2＋指摘1・F04-F07）／豊臣秀長（AI1＋指摘4・F03＋新種2件=いずれも機械化済み）／安倍晴明（AI2＋指摘0）。実データ源＝各案件フォルダのPIPELINE_STATE.md・STEP7報告書・STEP4.7/4.8レポート → **youtube-work ブランチ `claude/script-fix-metrics` にpush済み（要マージ）**
+3. ✅ **初回レポート生成**: [[台本ルール効き]]をvaultに生成（このブランチ）。#レポートへの共有はMac側マージ後に再生成してから
+4. ✅ **F01/F05/F06は機械化済みと確認**: `thread-assembly-core/scripts/assemble_csv_core.py` の§4.8に「スレタイ=男性A・各スレ先頭」「同一ベース話者の連続なし」「解説直後の下スタートなし」が実在 → タグを `機械:sec48` へ更新済み。**F07（退場レス）だけが本当にprose**＝最初の機械化候補
+
+### Mac mini側の最終適用（マージ後）
+
+1. 3ブランチ（2nd-brain / agent-skills / youtube-work の各 `claude/...`）をマージし、Mac側で `git pull`
+2. Mac実データで `python3 ~/2nd-Brain/00_システム/20_Agent_Portable/scripts/fix_metrics_report.py` を再実行（台帳突合が生きる）→ #レポートへ共有
+3. 以後、出荷のたびに `ship` 記録（SKILL.mdに手順追記済み）
+
+### 実施中に見つけた事実（別件メモ）
+
+- **制作ログは実在するが2件のみ**（6/07縄文・6/17 47都道府県）＝7月出荷分は未記録。ただしSTEPレポート群（STEP7報告書等）が事実上の制作ログとして機能しており、情報量はむしろ豊富。「制作ログ.md を別途書く」運用は形骸化気味 → 制作ログの役割はSTEPレポートに一本化し、script-learningの読み先を変える案を検討してもいい（提案のみ）
+- 豊臣秀長回で「新種指摘→その場でqa_check.py/§4.8へ機械化」が2件実践されていた＝修正→機械化ループは既に高速で回っている。本仕組みはその「記録と可視化」を担う
 
 ---
 更新履歴
