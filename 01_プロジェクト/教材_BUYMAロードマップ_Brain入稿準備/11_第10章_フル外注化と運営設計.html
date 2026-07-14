@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>第10章 フル外注化と運営設計</title>
+<style>
+  :root { color-scheme: light; }
+  body { margin: 0; background: #f5f6f8; color: #172033; font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif; line-height: 1.8; }
+  article { box-sizing: border-box; max-width: 860px; margin: 32px auto; padding: 40px 48px 64px; background: #fff; }
+  h1, h2, h3, h4, h5 { line-height: 1.45; letter-spacing: 0; }
+  h1 { font-size: 32px; }
+  h2 { margin-top: 2em; padding-bottom: .35em; border-bottom: 2px solid #c99a2e; font-size: 26px; }
+  h3 { margin-top: 1.7em; font-size: 21px; }
+  h4 { margin-top: 1.5em; font-size: 18px; }
+  p, li { font-size: 16px; }
+  table { width: 100%; border-collapse: collapse; margin: 1.4em 0; }
+  th, td { border: 1px solid #ccd2dc; padding: 8px 10px; vertical-align: top; }
+  th { background: #f0f3f7; }
+  pre { overflow-x: auto; padding: 16px; background: #f3f5f8; border-left: 4px solid #0b2b50; white-space: pre-wrap; }
+  blockquote { margin: 1.4em 0; padding: .3em 1.2em; border-left: 4px solid #c99a2e; background: #fbf8ef; }
+  .image-marker { margin: 28px 0; padding: 16px 18px; border: 2px dashed #c99a2e; background: #fffaf0; color: #5a420a; }
+  @media (max-width: 720px) { article { margin: 0; padding: 24px 18px 48px; } h1 { font-size: 28px; } h2 { font-size: 23px; } }
+</style>
+</head>
+<body>
+<article id="brain-import-root">
+<h2>第10章 フル外注化と運営設計</h2>
+<div class="image-marker" data-image-sequence="22" data-image-path="BUYMA章頭挿絵/第10章_フル外注化と運営設計.png"><strong>画像差し込み 22</strong><br>第10章 フル外注化と運営設計<br><code>BUYMA章頭挿絵/第10章_フル外注化と運営設計.png</code></div>
+
+<p>フル外注化は、すべての責任を他人へ渡すことではありません。繰り返し作業を役割ごとに分け、正常・異常・停止・承認の基準を共有し、出品者本人は運営、判断、監督、改善へ時間を使える状態を作ることです。</p>
+<p>外注化だけで売上や自由時間が保証されるわけではありません。教育、確認、支払、個人情報、アカウント、取引先、事故対応を管理できないまま範囲を広げると、手戻りとリスクが増えます。</p>
+<h3>10-1 外注化の目的</h3>
+<p>旧教材では、外注化の目的を「売上を安定させる」「作業時間を減らす」としていました。新版では、結果を保証せず、次の運営状態を目的にします。</p>
+<ol>
+<li>出品者本人しか分からない作業を減らす</li>
+<li>正常時の定型作業を再現できるようにする</li>
+<li>異常時に作業を止め、必要な人へ上げられるようにする</li>
+<li>担当者が休止・退任しても引き継げるようにする</li>
+<li>出品者本人が、規約、資金、権限、重大判断を管理する</li>
+<li>作業量ではなく、正確性、利益、顧客対応、継続性を改善する</li>
+</ol>
+<p>外注化する前に、現在の作業時間、件数、手戻り、重大ミス、問い合わせ、利益を記録します。外注後も同じ指標で比較し、作業が増えただけになっていないか確認します。</p>
+<h3>10-2 自分の作業を言語化する</h3>
+<p>「在庫を探す」「問い合わせへ返信する」だけでは、担当者は同じ判断を再現できません。次の項目で1業務を記録します。</p>
+<h4>業務言語化シート</h4>
+<pre><code class="language-text">業務名: ［名称］
+目的: ［何を正しい状態にするか］
+開始条件: ［注文、依頼、在庫確認等のきっかけ］
+入力: ［URL、型番、注文情報、使用許可済み画像等］
+手順: ［順番］
+完成物: ［管理表、下書き、発送、返信等］
+正常条件: ［何を満たせば完了か］
+異常条件: ［不一致、欠品、価格変更、遅延、権利不明等］
+停止条件: ［担当者が先へ進んではいけない状態］
+承認者: ［誰が判断するか］
+証拠: ［URL、画像、証憑、確認日時、履歴］
+期限: ［業務別の期限］
+権限: ［閲覧、編集、公開、購入、送金等］
+個人情報: ［扱う項目と共有範囲］
+復旧: ［担当不在・ツール停止時の代替手順］
+改善記録: ［質問、ミス、修正理由、更新日］
+</code></pre>
+<p>まず出品者本人が一度実行し、画面操作だけでなく判断理由を記録します。言語化できない判断を、担当者の経験や「いい感じ」に依存させません。</p>
+<h3>10-3 マイルール・停止条件・確認方法</h3>
+<p>原教材の「最初の仕入先になければ次、最後になければ諦める」という考え方は、業務を止める線を決める点で有効です。ただし、すべての商品へ同じ仕入先順を固定しません。</p>
+<h4>マイルールの作り方</h4>
+<pre><code class="language-text">対象: ［ブランド／カテゴリ／発送地／取引種別］
+最初に確認する情報: ［公式情報・在庫・価格・販売元等］
+次の候補へ進む条件: ［在庫なし／条件不一致等］
+進んではいけない候補: ［禁止買付先／販売元不明等］
+終了条件: ［何件・何分・何時まで／利益条件／期限］
+承認が必要な変更: ［価格、発送地、関税、色、サイズ、買付先等］
+記録する証拠: ［URL、確認日時、回答、証憑］
+</code></pre>
+<h4>全業務共通の停止条件</h4>
+<ul>
+<li>商品、型番、色、サイズ、数量が一致しない</li>
+<li>画像・文章の利用権が分からない</li>
+<li>販売元、在庫、価格、返品、配送を確認できない</li>
+<li>禁止買付先や禁止出品の可能性がある</li>
+<li>発送地、関税、配送条件が出品情報と変わる</li>
+<li>見込利益が承認条件を下回る</li>
+<li>顧客への回答に必要な事実を確認できない</li>
+<li>注文後に色、サイズ、価格、配送を変える必要がある</li>
+<li>不良、誤配送、紛失、漏えい、アカウント異常が疑われる</li>
+<li>担当者の権限を超える公開、購入、送金が必要</li>
+</ul>
+<p>停止した件数を「仕事が遅い」と評価しません。危険な取引を進めず、必要な情報を上げたことを運用品質として確認します。</p>
+<h3>10-4 人に依存しないマニュアルと引継ぎ</h3>
+<div class="image-marker" data-image-sequence="23" data-image-path="BUYMA本文挿絵/A10_第10章_外注化ツールの使い分け.png"><strong>画像差し込み 23</strong><br>外注化ツールの使い分け<br><code>BUYMA本文挿絵/A10_第10章_外注化ツールの使い分け.png</code></div>
+
+<p>1人の記憶やチャット履歴だけで運用せず、次の5種類を分けて管理します。</p>
+<table>
+<thead>
+<tr>
+<th>資料</th>
+<th>役割</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>依頼文</td>
+<td>今回の対象、数量、期限、報酬、承認者を伝える</td>
+</tr>
+<tr>
+<td>作業マニュアル</td>
+<td>正常な手順と完成条件を説明する</td>
+</tr>
+<tr>
+<td>チェック表</td>
+<td>公開・購入・発送・送信前の確認をそろえる</td>
+</tr>
+<tr>
+<td>教育資料</td>
+<td>正常例、異常例、止める例、修正理由を伝える</td>
+</tr>
+<tr>
+<td>改善メモ</td>
+<td>質問、事故、手戻り、公式変更を次版へ反映する</td>
+</tr>
+</tbody></table>
+<h4>マニュアルの版管理</h4>
+<ul>
+<li>タイトル、版、更新日、適用範囲、作成者、確認者を記録する</li>
+<li>古い版を現行版と同じ場所に混在させない</li>
+<li>公式ルール、画面、配送、税、契約が変わったら更新する</li>
+<li>変更理由と影響する業務を残す</li>
+<li>教育済み担当者へ変更点を再共有する</li>
+<li>定期確認ではなく、重大変更や事故後にも見直す</li>
+</ul>
+<h4>引継ぎセット</h4>
+<pre><code class="language-text">1. 現行SOP一覧と版
+2. 役割・担当・代替担当
+3. 作業中案件と期限
+4. 未解決の質問・事故・精算
+5. 管理表と証憑の場所
+6. 権限一覧と停止方法
+7. 取引先・配送先・顧客情報の共有範囲
+8. 日次・週次・月次等、実際に必要な確認項目
+9. 次の判断者と緊急連絡先
+10. 退任時のアクセス・データ削除記録
+</code></pre>
+<p>会議を月1回・週1回と固定しません。業務量、重大性、担当者の習熟、変更頻度に合わせ、必要な確認項目と頻度を決めます。</p>
+<h3>10-5 外注化する順番</h3>
+<p>原教材の順番は、次の6段階です。</p>
+<ol>
+<li>出品</li>
+<li>発送</li>
+<li>問い合わせ</li>
+<li>買付</li>
+<li>秘書</li>
+<li>リサーチ</li>
+</ol>
+<p>これは全員に共通する絶対順ではありません。次の段階へ進む条件を満たしているかで判断します。</p>
+<table>
+<thead>
+<tr>
+<th>段階</th>
+<th>任せる内容</th>
+<th>進む前の条件</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>出品</td>
+<td>商品情報整理、画像候補、公開前下書き</td>
+<td>第8〜9章の業務仕様、権利確認、下書きレビュー、利用制限歴確認</td>
+</tr>
+<tr>
+<td>発送</td>
+<td>受取、検品、梱包、購入者向け発送</td>
+<td>注文照合、検品、個人情報、追跡、期限、事故時停止を再現できる</td>
+</tr>
+<tr>
+<td>問い合わせ</td>
+<td>事実確認、下書き、承認済み定型返信</td>
+<td>30場面、確認元、変更時の同意、苦情・補償の引上げ条件がある</td>
+</tr>
+<tr>
+<td>買付</td>
+<td>在庫・価格・販売元確認、承認後の購入</td>
+<td>禁止買付先、予算、利益、支払、証憑、個人情報、誤購入時対応がある</td>
+</tr>
+<tr>
+<td>秘書・調整</td>
+<td>進捗、精算、SOP、担当間調整</td>
+<td>広い閲覧権限を分離でき、契約・支払・アクセスの最終権限を本人が持つ</td>
+</tr>
+<tr>
+<td>リサーチ</td>
+<td>候補抽出、データ整理、検証待ち一覧</td>
+<td>調査条件、除外条件、根拠、確認日、停止条件、採用判断者が決まっている</td>
+</tr>
+</tbody></table>
+<p>発送、問い合わせ、買付は顧客情報・金銭・取引変更を扱います。出品より後なら自動的に安全という意味ではなく、各業務のゲートを満たすまで範囲を広げません。</p>
+<h3>10-6 手動運用と許諾済み補助機能を切り分ける</h3>
+<p>旧教材の自動出品ツール、月5,000品、大量リスト取得、画像の一括加工、外部ツールが止まったら別ツールを開発する手順は使いません。</p>
+<p>BUYMAは、自動出品ソフトの中に、機械的に生成された不正確な情報で出品するものやサーバーへ過度な負荷をかけるものがあり、無許諾の外部プログラム使用はアカウント停止の対象になり得ると案内しています。大量出品や処理速度を目的に、利用可否が不明なプログラムを使いません。</p>
+<h4>3つに分けて判断する</h4>
+<table>
+<thead>
+<tr>
+<th>区分</th>
+<th>例</th>
+<th>扱い</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>手動の担当業務</td>
+<td>情報照合、下書き、検品、例外判断</td>
+<td>SOP、チェック、権限、記録を整える</td>
+</tr>
+<tr>
+<td>BUYMAが提供・案内する機能</td>
+<td>カタログ出品、対象者向け一括編集等</td>
+<td>利用条件、対象項目、最終確認を現在の公式ガイドで確認する</td>
+</tr>
+<tr>
+<td>外部ツール・プログラム</td>
+<td>自動ログイン、取得、加工、出品等</td>
+<td>BUYMAの明示許可、提供者、認証、データ、操作、停止・復旧を確認できない限り使わない</td>
+</tr>
+</tbody></table>
+<h4>ツール導入前チェック</h4>
+<ul>
+<li><input disabled="" type="checkbox"> BUYMAが現在の用途を許可している根拠がある</li>
+<li><input disabled="" type="checkbox"> 提供者・運営者・問い合わせ先を確認した</li>
+<li><input disabled="" type="checkbox"> ログイン情報、カード、顧客情報を何に送るか分かる</li>
+<li><input disabled="" type="checkbox"> 取得・保存・再利用する画像と文章の権利を確認した</li>
+<li><input disabled="" type="checkbox"> 実行前プレビューと公開前承認がある</li>
+<li><input disabled="" type="checkbox"> 誰が、いつ、何を変更したか記録できる</li>
+<li><input disabled="" type="checkbox"> 誤操作時に停止・取消・復旧できる</li>
+<li><input disabled="" type="checkbox"> サービス終了時に手動運用へ戻せる</li>
+<li><input disabled="" type="checkbox"> 退任時に権限、トークン、端末、保存データを失効できる</li>
+</ul>
+<p>複数アカウント、アカウント貸与、自動出品、禁止業務の名称変更、停止回避を「仕組み化」と呼びません。</p>
+<h3>10-7 秘書・担当者・運営者の役割</h3>
+<p>旧教材では、秘書1名に買付、問い合わせ、リサーチ、採用、教育、売上管理、報酬振込等を広く任せていました。新版では、役割名ではなく権限と責任を分けます。</p>
+<table>
+<thead>
+<tr>
+<th>役割</th>
+<th>主な作業</th>
+<th>任せない最終判断</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>出品担当</td>
+<td>商品情報、画像候補、出品下書き、質問</td>
+<td>権利不明、規約判断、未承認公開</td>
+</tr>
+<tr>
+<td>発送担当</td>
+<td>受取、照合、検品、梱包、発送、追跡記録</td>
+<td>不一致品の無断発送、仮発送通知</td>
+</tr>
+<tr>
+<td>問い合わせ担当</td>
+<td>事実確認、定型返信、履歴記録</td>
+<td>注文変更、補償、苦情、法令・規約判断</td>
+</tr>
+<tr>
+<td>買付担当</td>
+<td>在庫、価格、販売元、条件確認、承認済み購入</td>
+<td>予算超過、禁止買付先、配送先変更、未承認送金</td>
+</tr>
+<tr>
+<td>リサーチ担当</td>
+<td>候補抽出、根拠URL、確認日、除外理由</td>
+<td>出品可否、販売元・権利・利益の最終承認</td>
+</tr>
+<tr>
+<td>リーダー</td>
+<td>下書き確認、質問整理、教育、改善記録</td>
+<td>契約、報酬、全権限、重大事故の最終処理</td>
+</tr>
+<tr>
+<td>秘書・調整担当</td>
+<td>進捗、期限、精算準備、SOP更新、担当調整</td>
+<td>銀行・カード・アカウント所有者権限、契約・解約の最終決定</td>
+</tr>
+<tr>
+<td>出品者本人・運営者</td>
+<td>規約、資金、契約、権限、重大判断、改善</td>
+<td>最終責任を他者へ移さない</td>
+</tr>
+</tbody></table>
+<p>担当を昇格させる場合も、在籍期間や作業速度だけで決めません。重大ミス、例外時の停止、根拠確認、情報管理、引継ぎ、他者への説明を確認します。</p>
+<h3>10-8 権限・証憑・公開前確認</h3>
+<h4>権限台帳</h4>
+<pre><code class="language-text">利用者, 役割, システム, 閲覧範囲, 編集範囲, 公開可否,
+購入可否, 送金可否, 個人情報範囲, 付与日, 確認日,
+停止予定日, 停止日, 端末, 二要素認証, 備考
+</code></pre>
+<p>1人の共有IDを複数人で使い回しません。仕組み上利用者を分離できない権限は渡さず、出品者本人が操作します。パスワード、カード、復旧コードを共有表へ保存しません。</p>
+<h4>証憑と記録</h4>
+<table>
+<thead>
+<tr>
+<th>場面</th>
+<th>残すもの</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>出品</td>
+<td>公式商品URL、画像利用根拠、在庫・価格確認、公開者・確認者</td>
+</tr>
+<tr>
+<td>買付</td>
+<td>注文内容、販売元、注文番号、決済明細、インボイス、返品条件</td>
+</tr>
+<tr>
+<td>検品</td>
+<td>注文照合、現物画像、不一致・傷、判断と連絡履歴</td>
+</tr>
+<tr>
+<td>発送</td>
+<td>配送先確認、配送会社、購入者向け追跡番号、発送日時</td>
+</tr>
+<tr>
+<td>問い合わせ</td>
+<td>質問、確認元、回答、送信者、変更同意</td>
+</tr>
+<tr>
+<td>精算</td>
+<td>発注、納品、検査、報酬、費用、支払日、証憑</td>
+</tr>
+<tr>
+<td>権限</td>
+<td>付与、変更、確認、停止、セッション・トークン失効</td>
+</tr>
+</tbody></table>
+<p>証憑の保存先、閲覧者、保存期間、削除を決めます。顧客情報や決済情報を、業務に不要な人へ共有しません。</p>
+<h4>運営者が確認する指標</h4>
+<ul>
+<li>処理件数と未処理件数</li>
+<li>期限超過とその理由</li>
+<li>下書き修正率と重大誤り</li>
+<li>在庫・価格・販売元の未確認件数</li>
+<li>停止・質問・承認待ち件数</li>
+<li>キャンセル、不良、誤配送、苦情、情報事故</li>
+<li>見込利益と実績利益の差</li>
+<li>未精算、未提出証憑、未停止権限</li>
+<li>SOPの古い版と公式変更の未反映</li>
+</ul>
+<p>売上だけで担当者を評価しません。担当者が制御できない結果と、確認・記録・停止できた行動を分けます。</p>
+<h3>第10章チェックリスト</h3>
+<ul>
+<li><input disabled="" type="checkbox"> 外注化の目的を、売上保証ではなく運営状態で定義した</li>
+<li><input disabled="" type="checkbox"> 業務ごとに開始、入力、手順、完成、異常、停止、承認、証拠を言語化した</li>
+<li><input disabled="" type="checkbox"> マイルールをブランド・カテゴリ・取引条件に合わせた</li>
+<li><input disabled="" type="checkbox"> 依頼文、SOP、チェック表、教育資料、改善メモを分けた</li>
+<li><input disabled="" type="checkbox"> 現行版、更新日、変更理由、教育済み担当を記録した</li>
+<li><input disabled="" type="checkbox"> 出品→発送→問い合わせ→買付→秘書→リサーチの各ゲートを確認した</li>
+<li><input disabled="" type="checkbox"> 自動出品、月5,000品、複数アカウントを運営設計へ入れていない</li>
+<li><input disabled="" type="checkbox"> 外部ツールの許可、認証、データ、記録、停止、復旧を確認した</li>
+<li><input disabled="" type="checkbox"> 役割ごとに、作業と最終判断を分けた</li>
+<li><input disabled="" type="checkbox"> 銀行、カード、契約、アカウント所有者権限を本人が管理している</li>
+<li><input disabled="" type="checkbox"> 権限台帳、証憑、公開前確認、未精算、退任処理を確認した</li>
+<li><input disabled="" type="checkbox"> 担当者が止めた案件と質問を、品質指標として確認している</li>
+</ul>
+<h3>第10章の公式確認先</h3>
+<p>確認日: <strong>2026-07-13</strong></p>
+<ul>
+<li><a href="https://qa.buyma.com/shopper/reg/13732.html">BUYMA 出品者登録に関するよくある質問</a></li>
+<li><a href="https://qa.buyma.com/shopper/tips/30118.html">BUYMAの副業・高額コンサル・スクール勧誘に関する注意</a></li>
+<li><a href="https://qa.buyma.com/shopper/sell/15284.html">BUYMA カタログから出品する機能</a></li>
+<li><a href="https://qa.buyma.com/shopper/sell/6196.html">BUYMA 商品一括編集・削除機能</a></li>
+<li><a href="https://qa.buyma.com/shopper/order-to-delivery/4201.html">BUYMA 検品・梱包・発送</a></li>
+<li><a href="https://qa.buyma.com/shopper/order-to-delivery/4204.html">BUYMA 国内で一度商品を受け取る場合の発送通知</a></li>
+<li><a href="https://qa.buyma.com/shopper/order-to-delivery/9413.html">BUYMA 発送通知を行う</a></li>
+<li><a href="https://www.jftc.go.jp/freelancelaw_2025/index.html">公正取引委員会 フリーランス法特設サイト</a></li>
+<li><a href="https://www.ppc.go.jp/personalinfo/legal/guidelines_tsusoku/">個人情報保護委員会 個人情報保護法ガイドライン（通則編）</a></li>
+</ul>
+<hr>
+</article>
+</body>
+</html>

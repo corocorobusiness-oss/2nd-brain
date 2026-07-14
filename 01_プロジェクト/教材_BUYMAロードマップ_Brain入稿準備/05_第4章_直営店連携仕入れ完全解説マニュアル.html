@@ -1,0 +1,563 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>第4章 直営店連携仕入れ完全解説マニュアル</title>
+<style>
+  :root { color-scheme: light; }
+  body { margin: 0; background: #f5f6f8; color: #172033; font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif; line-height: 1.8; }
+  article { box-sizing: border-box; max-width: 860px; margin: 32px auto; padding: 40px 48px 64px; background: #fff; }
+  h1, h2, h3, h4, h5 { line-height: 1.45; letter-spacing: 0; }
+  h1 { font-size: 32px; }
+  h2 { margin-top: 2em; padding-bottom: .35em; border-bottom: 2px solid #c99a2e; font-size: 26px; }
+  h3 { margin-top: 1.7em; font-size: 21px; }
+  h4 { margin-top: 1.5em; font-size: 18px; }
+  p, li { font-size: 16px; }
+  table { width: 100%; border-collapse: collapse; margin: 1.4em 0; }
+  th, td { border: 1px solid #ccd2dc; padding: 8px 10px; vertical-align: top; }
+  th { background: #f0f3f7; }
+  pre { overflow-x: auto; padding: 16px; background: #f3f5f8; border-left: 4px solid #0b2b50; white-space: pre-wrap; }
+  blockquote { margin: 1.4em 0; padding: .3em 1.2em; border-left: 4px solid #c99a2e; background: #fbf8ef; }
+  .image-marker { margin: 28px 0; padding: 16px 18px; border: 2px dashed #c99a2e; background: #fffaf0; color: #5a420a; }
+  @media (max-width: 720px) { article { margin: 0; padding: 24px 18px 48px; } h1 { font-size: 28px; } h2 { font-size: 23px; } }
+</style>
+</head>
+<body>
+<article id="brain-import-root">
+<h2>第4章 直営店連携仕入れ完全解説マニュアル</h2>
+<div class="image-marker" data-image-sequence="13" data-image-path="BUYMA章頭挿絵/第4章_直営店連携仕入れ完全解説マニュアル.png"><strong>画像差し込み 13</strong><br>第4章 直営店連携仕入れ完全解説マニュアル<br><code>BUYMA章頭挿絵/第4章_直営店連携仕入れ完全解説マニュアル.png</code></div>
+
+<div class="image-marker" data-image-sequence="14" data-image-path="BUYMA本文挿絵/A04_第4章_直営店連携仕入れの確認経路.png"><strong>画像差し込み 14</strong><br>直営店連携仕入れの確認経路<br><code>BUYMA本文挿絵/A04_第4章_直営店連携仕入れの確認経路.png</code></div>
+
+<div class="image-marker" data-image-sequence="15" data-image-path="BUYMA本文挿絵/D04_第4章_直営店への問い合わせ前チェック.png"><strong>画像差し込み 15</strong><br>直営店への問い合わせ前チェック<br><code>BUYMA本文挿絵/D04_第4章_直営店への問い合わせ前チェック.png</code></div>
+
+<p>旧教材では、直営店のスタッフが検品し、店舗から購入者へ直接発送する方法を「直営店直送」として解説していました。しかし、BUYMAでは、買付先から購入者へ未検品で直接送ることは原則禁止されています。店舗スタッフは、出品者と共に買付を行うパートナーとしても認められていません。</p>
+<p>そこで本章では、旧教材の強みである「直営店の在庫・担当者・購入証明・輸出条件へ直接確認できること」を残し、発送経路だけを現行ルールへ合わせます。</p>
+<pre><code class="language-text">旧教材の経路
+直営店 → 購入者
+店舗スタッフの確認だけで発送
+
+本章の経路
+直営店 → 出品者または正式な買付パートナー
+→ 現物検品 → 購入者へ発送
+</code></pre>
+<p>本章では、この現行経路を<strong>直営店連携仕入れ</strong>と呼びます。</p>
+<p>本章のゴールは、候補店舗1件について次を完了できることです。</p>
+<ol>
+<li>ブランド公式の店舗・連絡先を確認する</li>
+<li>輸出、支払、配送、購入証明、返品の条件を確認する</li>
+<li>出品者または買付パートナーが現物検品する経路を決める</li>
+<li>店舗から検品者までと、検品者から購入者までの配送を分けて管理する</li>
+<li>回答日と根拠を管理表へ残し、受注時に再確認する</li>
+</ol>
+<h3>4-1 直営店連携仕入れの仕組み</h3>
+<p>利用できる基本経路は次の2つです。</p>
+<table>
+<thead>
+<tr>
+<th>経路</th>
+<th>店舗の配送先</th>
+<th>現物検品</th>
+<th>購入者への発送</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>出品者受取</td>
+<td>出品者本人</td>
+<td>出品者本人</td>
+<td>出品者本人</td>
+</tr>
+<tr>
+<td>パートナー受取</td>
+<td>正式な買付パートナー</td>
+<td>買付パートナー</td>
+<td>買付パートナー</td>
+</tr>
+</tbody></table>
+<p>どちらも、店舗から届いた商品を一度受け取り、注文内容と品質を確認してから購入者へ発送します。</p>
+<h4>店舗スタッフができること</h4>
+<ul>
+<li>在庫、価格、品番、色、サイズを確認する</li>
+<li>店舗方針の範囲で商品写真や動画を送る</li>
+<li>取り置き、他店舗からの取り寄せ、輸出条件を案内する</li>
+<li>公式の決済方法で注文を受ける</li>
+<li>出品者または買付パートナーへ商品を発送する</li>
+<li>レシート、インボイス、注文確認等を発行する</li>
+</ul>
+<h4>店舗スタッフへ任せられないこと</h4>
+<ul>
+<li>BUYMA上の出品者責任を負う現物検品</li>
+<li>出品者の買付パートナーとしての購入者直送</li>
+<li>BUYMAの発送通知に使う最終発送判断</li>
+<li>購入者クレーム時の出品者責任</li>
+</ul>
+<p>店舗から届く写真は事前確認の補助です。最終的には、出品者または正式な買付パートナーが実物を手に取って検品します。</p>
+<h3>4-2 メリットとリスク</h3>
+<h4>メリット</h4>
+<ul>
+<li>ブランド公式の実店舗在庫を確認できる</li>
+<li>公式オンラインに表示されない店舗在庫が見つかる場合がある</li>
+<li>他店舗からの取り寄せ可否を直接確認できる</li>
+<li>購入証明、輸出条件、配送条件を店舗へ確認できる</li>
+<li>継続取引により、同じ担当者へ正確に問い合わせやすくなる場合がある</li>
+<li>店舗の許可があれば、実物写真や動画を商品確認に使える場合がある</li>
+</ul>
+<h4>リスク</h4>
+<ul>
+<li>同じブランドでも国、店舗、担当者、時期で対応が異なる</li>
+<li>国外配送、輸出時の税、取り置き、取り寄せは保証されない</li>
+<li>店舗から検品者までの配送分だけ日数と送料が増える</li>
+<li>返品・交換期限が短く、購入者発送前に対応できない場合がある</li>
+<li>決済リンク、送金先、連絡先が本物か確認する必要がある</li>
+<li>店舗から受け取った画像の利用には、著作権や利用許可の確認が必要になる</li>
+<li>購入者情報を海外パートナーへ渡す場合は、第3章の外国第三者提供の確認が必要になる</li>
+</ul>
+<p>直営店との連絡ルートができても、在庫確保、国外配送、税の免除、割引、高値販売を保証するものではありません。候補商品ごとに、仕入れ総額と発送期限まで成立するかを確認します。</p>
+<h3>4-3 候補店舗の探し方</h3>
+<p>候補店舗は、ブランド公式サイトのストアロケーターから探します。検索結果、地図サービス、SNSプロフィールだけで公式店舗と決めません。</p>
+<h4>候補登録の手順</h4>
+<ol>
+<li>ブランド公式サイトを開く</li>
+<li>公式のストアロケーターへ移動する</li>
+<li>国、都市、店舗名、住所、電話番号、公式メール等を確認する</li>
+<li>公式サイト上のURLを保存する</li>
+<li>確認日と対応言語を記録する</li>
+<li>連絡前の状態を「未確認」として登録する</li>
+</ol>
+<p>競合出品者の商品画像、サイズ表示、発送地、配送会社から「このブランドは直営店直送できる」と断定しません。それらは候補を探す仮説にはなっても、店舗との現行条件を証明する情報ではありません。</p>
+<h4>旧特典に記録されていた6ブランド</h4>
+<p>旧特典には、過去に交渉できた例として次の6ブランドが記録されていました。これは<strong>当時の実績メモであり、現在の国外配送、税、支払、画像提供、取り寄せ条件を保証する一覧ではありません</strong>。</p>
+<table>
+<thead>
+<tr>
+<th>旧教材の候補</th>
+<th>現行の公式店舗確認先</th>
+<th>2026-07-13時点の扱い</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>MANOLO BLAHNIK</td>
+<td><a href="https://www.manoloblahnik.com/us/storelocator">公式Store Locator</a></td>
+<td>店舗別条件は未確認</td>
+</tr>
+<tr>
+<td>Dolce&amp;Gabbana</td>
+<td><a href="https://support.dolcegabbana.com/hc/en-us/articles/360005976759-How-can-I-find-the-nearest-boutique">公式Store Locator案内</a></td>
+<td>店舗別条件は未確認</td>
+</tr>
+<tr>
+<td>Burberry</td>
+<td><a href="https://stores.burberry.com/">公式Store Locator</a></td>
+<td>店舗別条件は未確認</td>
+</tr>
+<tr>
+<td>Max Mara</td>
+<td><a href="https://store.maxmara.com/en/directory">公式Store Locator</a></td>
+<td>店舗別条件は未確認</td>
+</tr>
+<tr>
+<td>Sergio Rossi</td>
+<td><a href="https://www.sergiorossi.com/en-int/pages/store-locator">公式Store Locator</a></td>
+<td>店舗別条件は未確認</td>
+</tr>
+<tr>
+<td>Ferragamo</td>
+<td><a href="https://store.ferragamo.com/en-us">公式Store Locator</a></td>
+<td>店舗別条件は未確認</td>
+</tr>
+</tbody></table>
+<p>旧特典の<code>Salvatore Ferragam</code>は、現行表示に合わせて<code>Ferragamo</code>へ修正しました。6ブランドは「交渉可能ブランド一覧」ではなく、公式店舗を探して現在の条件を確認する候補として使います。</p>
+<h3>4-4 問い合わせ前の準備</h3>
+<p>問い合わせ前に、買付と検品の設計を決めます。</p>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>決める内容</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>商品</td>
+<td>商品名、品番、色、サイズ、数量、商品URL</td>
+</tr>
+<tr>
+<td>店舗</td>
+<td>ブランド、国、都市、店舗名、公式連絡先</td>
+</tr>
+<tr>
+<td>注文者</td>
+<td>出品者本人または契約済みパートナー</td>
+</tr>
+<tr>
+<td>店舗の配送先</td>
+<td>出品者または現物検品を行う買付パートナー</td>
+</tr>
+<tr>
+<td>検品者</td>
+<td>誰が実物を確認するか</td>
+</tr>
+<tr>
+<td>購入者発送</td>
+<td>誰がどの配送方法で発送するか</td>
+</tr>
+<tr>
+<td>支払</td>
+<td>通貨、上限、公式決済経路、送金の要否</td>
+</tr>
+<tr>
+<td>期限</td>
+<td>在庫回答、取置、決済、店舗発送、検品、購入者発送</td>
+</tr>
+<tr>
+<td>証拠</td>
+<td>回答記録、注文確認、購入証明、検品写真、配送伝票</td>
+</tr>
+</tbody></table>
+<p>連絡ツールは店舗が公式に案内する手段を使います。特定のメッセージアプリ、通話サービス、翻訳サービスへ固定しません。</p>
+<p>翻訳を使う場合も、商品、価格、税、配送先、返品等の重要条件は原文と日本語を照合し、曖昧な回答を推測で確定しません。交渉担当へ任せる場合の採用・契約・教育は第8章で扱います。</p>
+<h3>4-5 店舗へ確認する10項目</h3>
+<p>旧管理表の7項目を残しつつ、未検品直送を避けるための検品経路、返品、回答根拠を追加します。</p>
+<h4>1. 店舗の基本情報</h4>
+<ul>
+<li>ブランド公式の直営店または公式に確認できる店舗か</li>
+<li>店舗名、住所、国、電話番号、公式メール</li>
+<li>回答者名または部署、回答日時、対応言語</li>
+</ul>
+<h4>2. 出品者または買付パートナーへの配送</h4>
+<ul>
+<li>指定した国・住所へ発送できるか</li>
+<li>配送先名義と決済名義に条件があるか</li>
+<li>私書箱、転送先、ホテル等に制限があるか</li>
+<li>商品を店舗から購入者へ未検品で直送する提案になっていないか</li>
+</ul>
+<h4>3. 輸出時の税の扱い</h4>
+<ul>
+<li>表示価格に含まれる税の種類と金額</li>
+<li>店舗が国外へ発送する時の税の扱い</li>
+<li>免税または輸出扱いに必要な配送証明・書類</li>
+<li>返金方式の場合の条件、時期、手数料</li>
+<li>税を除いた最終請求額と根拠</li>
+</ul>
+<p>EUではEU域外への輸出にVAT免除の枠組みがありますが、実際の適用には輸出方法や証拠等の条件があります。店舗が必ずVATを差し引くとは限りません。EU以外の国も含め、「VAT OFFできますか」だけで終わらせず、店舗が適用する税務処理と最終請求額を書面で確認します。</p>
+<h4>4. 支払方法</h4>
+<ul>
+<li>店舗公式の決済リンクまたは公式オンライン決済が使えるか</li>
+<li>対応カード、銀行送金等の方法と通貨</li>
+<li>決済名義、請求先住所、本人確認の条件</li>
+<li>追加手数料、返金方法、決済期限</li>
+</ul>
+<p>カード番号、セキュリティコード、認証コードを、チャット、SMS、メールへ送信しません。電話注文を使う場合も、店舗の正式な決済手順、通話録音の扱い、カード情報を保存しない運用を確認します。</p>
+<h4>5. 配送方法・送料</h4>
+<ul>
+<li>配送会社、サービス名、追跡、補償</li>
+<li>商品サイズ・重量別の送料</li>
+<li>発送までの日数と到着目安</li>
+<li>通常便と速達便の違い</li>
+<li>輸出申告、インボイス、禁制品の扱い</li>
+<li>店舗発送後に受け取る追跡番号</li>
+</ul>
+<h4>6. 他店舗からの取り寄せ</h4>
+<ul>
+<li>取り寄せ可能な地域・店舗</li>
+<li>取り寄せ費用、所要日数、キャンセル条件</li>
+<li>取り寄せ後の購入期限</li>
+</ul>
+<p>取り寄せ可否を店舗スタッフの能力評価には使いません。ブランド方針、在庫、国境、店舗区分等で変わる業務条件として記録します。</p>
+<h4>7. 連絡先</h4>
+<ul>
+<li>継続連絡に使ってよい公式連絡先</li>
+<li>担当者名、部署、対応時間、使用言語</li>
+<li>個人連絡先を取得する場合の店舗方針と利用目的</li>
+<li>担当変更時の公式な引継ぎ先</li>
+</ul>
+<h4>8. 購入証明・インボイス</h4>
+<ul>
+<li>店舗名、住所、購入日、商品、価格が分かる証憑を発行できるか</li>
+<li>紙、PDF、メール等の受取方法</li>
+<li>商品同梱書類と電子送付書類の違い</li>
+<li>BUYMAから買付先確認があった時に提出できる内容か</li>
+</ul>
+<p>購入証明は価格を隠す目的で受け取らないのではなく、出品者が必ず保管します。購入者へ価格部分を見せない場合も、出品者の証拠原本まで削除・加工しません。</p>
+<h4>9. 返品・交換</h4>
+<ul>
+<li>返品・交換できる条件と期限</li>
+<li>返品先、送料、返金方法、必要書類</li>
+<li>セール品、取り寄せ品、国外発送の例外</li>
+<li>不良、誤商品、配送破損時の連絡手順</li>
+</ul>
+<h4>10. 検品補助と画像利用</h4>
+<ul>
+<li>店舗方針の範囲で、発送前に品番・色・サイズ・状態を確認できるか</li>
+<li>商品写真や動画を送付できるか</li>
+<li>画像を商品確認以外、特に出品画像として使ってよいか</li>
+<li>利用許可の範囲、期限、クレジット表記</li>
+</ul>
+<p>店舗の事前確認や写真は、正式な買付パートナーによる現物検品の代わりにはなりません。利用許可が確認できない画像はBUYMAへ掲載しません。</p>
+<h3>4-6 誠実な問い合わせ文</h3>
+<p>次は、旧教材の挨拶文と7確認項目を、現行経路へ合わせた問い合わせ例です。自分の氏名、事業、配送先、商品、実績に合わせて書き換えます。</p>
+<pre><code class="language-text">Subject: Inquiry about purchase, export, and shipping arrangements
+
+Hello [Boutique / Client Advisor name],
+
+My name is [your name], and I operate an online retail business in Japan.
+I am interested in purchasing the item below from your boutique.
+
+Product: [product name]
+Reference / SKU: [reference]
+Color: [color]
+Size: [size]
+
+Before placing the order, could you please confirm the following?
+
+1. Is the item currently available, and until when can it be reserved?
+2. Can you ship it to my designated receiving partner in [city, country]?
+   My partner will physically inspect the item before it is sent to the customer.
+3. What is the final price and the VAT or local-tax treatment
+   when the item is exported?
+4. Which official and secure payment methods are available?
+5. Which carrier will you use, and what are the shipping cost,
+   estimated delivery time, tracking, and insurance conditions?
+6. If unavailable, can the item be transferred from another boutique?
+7. Can you issue a detailed invoice or receipt showing the boutique,
+   purchase date, product, and price?
+8. What are the return or exchange conditions for an international order?
+9. If your policy allows, could you share photos of the item before shipment?
+   Please also let me know whether those photos may be used on a product page.
+
+I understand that all services and conditions are subject to your boutique policy.
+Thank you for your time.
+
+Kind regards,
+[your name]
+[business contact]
+</code></pre>
+<p>相手が回答しやすいよう、最初から全店舗へ同一文面を大量送信せず、商品と店舗に合わせて必要項目を絞ります。回答が届いたら当日または次の営業日を目安にお礼を伝え、回答内容を管理表へ記録します。</p>
+<h3>4-7 問い合わせから購入者発送までの12工程</h3>
+<ol>
+<li><p><strong>出品者：公式店舗を確認する</strong>
+ブランド公式のストアロケーターで店舗、国、住所、公式連絡先を確認し、確認日を残します。</p>
+</li>
+<li><p><strong>出品者または交渉担当：条件を問い合わせる</strong>
+4-5の項目から必要な質問を選び、本人の役割と目的を偽らず問い合わせます。</p>
+</li>
+<li><p><strong>出品者：回答を管理表へ記録する</strong>
+回答者、日時、原文、税、支払、配送、購入証明、返品、連絡先を保存します。</p>
+</li>
+<li><p><strong>出品者：検品経路と仕入れ総額を決める</strong>
+店舗から出品者または正式な買付パートナーへ送り、誰が現物検品するかを確定します。商品代、現地税、2区間の送料、報酬に加え、関税込み・関税返金等で出品者負担となる関税等を原価へ含めます。通常の海外発送で購入者負担となる関税等は原価へ混ぜず、商品ページの表示条件として別に管理します。</p>
+</li>
+<li><p><strong>出品者：受注後に在庫と条件を再確認する</strong>
+品番、色、サイズ、数量、価格、取置期限、返品、店舗から検品者までの発送予定を再確認します。購入者宛ての発送が、注文確定日時から18日後の同じ時刻までに間に合うかも確認します。</p>
+</li>
+<li><p><strong>出品者：公式の安全な方法で決済する</strong>
+店舗の公式決済リンク、公式オンライン決済、確認済み口座等を使い、決済額、通貨、手数料、取引番号を保存します。</p>
+</li>
+<li><p><strong>出品者：購入証明を受け取る</strong>
+注文確認、レシート、インボイス等を受け取り、店舗名、住所、日時、商品、価格を確認します。</p>
+</li>
+<li><p><strong>店舗：出品者または買付パートナーへ発送する</strong>
+店舗→検品者の発送日、配送会社、追跡番号を記録します。この時点ではBUYMAの発送通知を行いません。</p>
+</li>
+<li><p><strong>出品者または買付パートナー：受取・現物検品する</strong>
+商品、品番、色、サイズ、付属品、傷、汚れ、破損を確認し、日付または取引IDが分かる写真を残します。</p>
+</li>
+<li><p><strong>出品者：検品証拠を確認して発送を承認する</strong>
+指示内容、購入証明、検品報告を照合します。異常がある場合は購入者へ送らず、返品・交換の判断をします。</p>
+</li>
+<li><p><strong>出品者または買付パートナー：購入者へ発送する</strong>
+購入者が選んだ条件に従い、追跡可能な方法で発送します。配送方法を変更する場合は発送前に購入者の了承を得て、海外発送では郵便局留めを指定しません。海外パートナーへ購入者情報を渡す場合は、発送に必要な最小限だけを共有し、第3章3-10で確認した外国提供の条件、保管期限、削除手順に従います。検品者→購入者の発送控え、発送日、追跡番号を保存します。</p>
+</li>
+<li><p><strong>出品者：BUYMAで発送通知し、取引を管理する</strong>
+購入者宛ての発送を確認してから、検品者→購入者の追跡番号をBUYMAへ入力します。受取、問い合わせ、関税、返品等を取引完了まで管理します。</p>
+</li>
+</ol>
+<p>店舗→検品者と、検品者→購入者は別の配送です。2区間の発送日・追跡番号を同じセルへ入れず、BUYMAへ登録するのは購入者宛ての区間だけにします。</p>
+<p>店舗発送や検品者の受取が遅れ、購入者宛て発送が期限に間に合わない見込みの場合は、期限前に購入者へ状況を説明し、同意を得たうえで発送期限の延長を申請します。</p>
+<h3>4-8 決済・輸出時の税・購入証明</h3>
+<h4>決済</h4>
+<p>優先するのは、店舗公式ドメインの決済画面、店舗が発行した検証可能な決済リンク、店舗名義を確認できる送金先です。</p>
+<ul>
+<li>リンク元、ドメイン、店舗名、金額、通貨を確認する</li>
+<li>短縮URLや個人名義口座は、店舗公式窓口で真偽を再確認する</li>
+<li>カード情報を平文のチャット、SMS、メールで送らない</li>
+<li>セキュリティコードや認証コードを保存しない</li>
+<li>交渉担当者へカード情報、銀行認証、決済アカウントを共有しない</li>
+<li>特定の送金サービスを固定推奨せず、国・通貨・規約・手数料を取引時に確認する</li>
+</ul>
+<p>電話決済では、カード情報を含む通話録音やメモが残る可能性があります。店舗の公式なカード取扱手順を確認できない場合は、決済リンク等の別手段を依頼します。</p>
+<h4>輸出時の税</h4>
+<p>EU域外への輸出はEU VAT上の免除対象になり得ますが、店舗が輸出者となるか、輸出証明を保持できるか等で実際の請求が変わります。国名や表示税率だけから値引額を計算しません。</p>
+<p>管理表には次を残します。</p>
+<ul>
+<li>表示価格と通貨</li>
+<li>税込み・税抜きの別</li>
+<li>税の名称と店舗回答</li>
+<li>最終請求額</li>
+<li>適用条件と必要書類</li>
+<li>回答日、回答者、原文または根拠URL</li>
+<li>返金方式の場合の予定日と実際の返金額</li>
+</ul>
+<p>購入者へ海外発送する場合の関税等は第3章のルールに従い、通常取引か関税込み取引かを商品ページで明確にします。</p>
+<h4>購入証明</h4>
+<p>BUYMAから買付先確認を求められた時に備え、次が分かる注文確認、レシート、インボイス等を保管します。</p>
+<ul>
+<li>購入先店舗名と住所</li>
+<li>買付日時</li>
+<li>商品名、品番、数量</li>
+<li>商品価格、税、送料、通貨</li>
+<li>注文番号または取引番号</li>
+</ul>
+<p>検品写真、店舗から検品者への発送伝票、購入者への発送伝票と同じ管理番号へ紐付けます。</p>
+<h3>4-9 店舗写真と現物検品</h3>
+<p>店舗が発送前の写真を送ってくれる場合、次の順に扱います。</p>
+<ol>
+<li>商品確認用として受け取る</li>
+<li>品番、色、サイズ、付属品を画像で事前確認する</li>
+<li>出品画像に使う場合は、店舗または権利者の利用許可を確認する</li>
+<li>許可の範囲、回答者、回答日を保存する</li>
+<li>出品者または買付パートナーが受取後に現物検品する</li>
+</ol>
+<p>店舗写真に問題がなくても、配送中の破損、誤同梱、付属品不足は受取後に判明することがあります。店舗写真だけで「検品済み」と判断せず、購入者発送前の現物検品を必須にします。</p>
+<p>現物検品と梱包の詳細は第3章の3-8を使います。</p>
+<h3>4-10 直営店連携管理表の使い方</h3>
+<blockquote>
+<p><strong>この章の配布資料:</strong> <code>BUYMA_直営店連携確認台帳_購入者版.xlsx</code>
+旧候補267件は、現行営業・公式連絡先・条件を確認できていないため収録していません。確認済みの候補だけを追加する空の台帳として配布します。</p>
+</blockquote>
+<p>原xlsxには、<code>電話先一覧</code>と<code>管理表</code>の2シートがあります。</p>
+<h4>電話先一覧</h4>
+<p>原シートは<code>A1:D267</code>で、チェック欄、ブランド、URL、国等の備考を持っています。ただし、空行が多く、確認日のないURL、検索パラメータ付きURL、住所・電話番号の直書き、リンク欠損が混在しています。267行を「現在使える267店舗」として配布しません。</p>
+<p>配布版では、次の候補台帳へ作り直します。</p>
+<table>
+<thead>
+<tr>
+<th>項目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>ブランド</td>
+<td>現行の公式表記</td>
+</tr>
+<tr>
+<td>国・都市・店舗</td>
+<td>公式ストアロケーターの表示</td>
+</tr>
+<tr>
+<td>公式URL</td>
+<td>ブランド公式ドメインの店舗ページ</td>
+</tr>
+<tr>
+<td>公式連絡先</td>
+<td>公開されている店舗窓口</td>
+</tr>
+<tr>
+<td>対応言語・時間帯</td>
+<td>現地時間とタイムゾーン</td>
+</tr>
+<tr>
+<td>確認状態</td>
+<td>未確認、回答待ち、条件確認済み、停止</td>
+</tr>
+<tr>
+<td>最終確認日</td>
+<td>URL・営業・連絡先を確認した日</td>
+</tr>
+<tr>
+<td>根拠</td>
+<td>公式ページ、メール回答等</td>
+</tr>
+</tbody></table>
+<h4>管理表</h4>
+<p>原シートは<code>A1:U3</code>、21列で、基本情報と次の7項目を持っています。</p>
+<ol>
+<li>直送可否</li>
+<li>VAT OFF</li>
+<li>支払方法</li>
+<li>配送方法・送料</li>
+<li>他店取り寄せ</li>
+<li>連絡先</li>
+<li>インボイス</li>
+</ol>
+<p>配布版では、次のように現行化します。</p>
+<ul>
+<li><code>直送可否</code>を<code>出品者・買付パートナーへの配送可否</code>へ変更する</li>
+<li>検品者、店舗→検品者、検品者→購入者の2区間配送を追加する</li>
+<li><code>VAT OFF</code>を<code>輸出時の税処理・根拠・最終請求額</code>へ変更する</li>
+<li>支払欄から固定サービス名を削除し、安全な決済経路と通貨を記録する</li>
+<li>カード番号、セキュリティコード、本人確認書類を保存しない</li>
+<li>配送会社、送料、所要日数、追跡、補償、回答日を分ける</li>
+<li>インボイスを「抜けるか」ではなく、購入証明の発行・受取方法として管理する</li>
+<li>返品・交換、画像利用許可、個人情報、回答根拠を追加する</li>
+<li>3回分の電話時間帯を、日時・タイムゾーン・担当・結果を持つ問い合わせ履歴へ変更する</li>
+<li>回答を集める欄と、採用・条件付き・保留・除外を決める<code>最終判断</code>欄を分ける</li>
+<li>実在の担当者連絡先は閲覧権限と削除・更新ルールを設定する</li>
+</ul>
+<p>1回目と異なる回答を得るためだけに時間帯を変えて何度も電話しません。回答が曖昧または担当者によって異なる場合は、その差を記録し、注文時に書面で最終確認します。</p>
+<p>配布版完成後は、出品者受取とパートナー受取を各1件ずつ模擬入力し、2区間の追跡番号、税、購入証明、検品、発送通知の前後関係を検証します。</p>
+<h3>4-11 問い合わせ業務を任せる場合</h3>
+<p>店舗調査や問い合わせを外部へ任せても、回答の採用、買付、決済、検品、出品者責任はアカウント登録者に残ります。</p>
+<ul>
+<li>交渉担当は、自分が出品者本人ではなく、許可を得た担当・アシスタント・通訳であることを正しく伝える</li>
+<li>架空の購入実績、購入予定額、顧客、会社規模を伝えない</li>
+<li>通話・録音・個人情報は、相手国の法令と利用サービスの条件を確認する</li>
+<li>回答原文、日時、店舗、担当者を記録し、出品者が重要条件を再確認する</li>
+<li>1件30円、成功200円等の旧固定報酬を相場として使わない</li>
+<li>不通なら無報酬等、一方だけにリスクを負わせる条件にしない</li>
+<li>募集サービスの禁止事項を隠す、別表現ですり抜ける募集をしない</li>
+</ul>
+<p>クラウドワークスは、無在庫販売、EC運営代行、代理注文・購入・受取・買付等を禁止対象として案内しています。直営店問い合わせ業務を含め、BUYMA関連業務を募集する際は目的を偽装せず、利用前にサービスへ可否を確認します。本教材では募集先として固定推奨しません。</p>
+<p>募集、契約、報酬、教育、品質評価の詳細は第8章で扱います。</p>
+<h3>4-12 チェックリスト</h3>
+<h4>次章へ進む準備チェック</h4>
+<ul>
+<li><input disabled="" type="checkbox"> 直営店連携仕入れと未検品直送の違いを説明できる</li>
+<li><input disabled="" type="checkbox"> ブランド公式ストアロケーターから候補店舗を確認した</li>
+<li><input disabled="" type="checkbox"> 出品者または正式な買付パートナーの検品経路を決めた</li>
+<li><input disabled="" type="checkbox"> 店舗へ確認する10項目を説明できる</li>
+<li><input disabled="" type="checkbox"> 店舗→検品者と、検品者→購入者の2区間を試算した</li>
+<li><input disabled="" type="checkbox"> 輸出時の税を固定率で判断していない</li>
+<li><input disabled="" type="checkbox"> 公式の安全な決済経路を確認した</li>
+<li><input disabled="" type="checkbox"> 購入証明、返品、画像利用の条件を確認した</li>
+<li><input disabled="" type="checkbox"> 候補店舗を回答日・根拠付きで管理表へ記録した</li>
+</ul>
+<h4>実取引時チェック</h4>
+<ul>
+<li><input disabled="" type="checkbox"> 受注後に品番、色、サイズ、価格、在庫を再確認した</li>
+<li><input disabled="" type="checkbox"> 店舗の配送先が出品者または正式な買付パートナーになっている</li>
+<li><input disabled="" type="checkbox"> カード情報・認証コードを平文で送信・共有・保存していない</li>
+<li><input disabled="" type="checkbox"> 税、送料、通貨、手数料を含む最終請求額を確認した</li>
+<li><input disabled="" type="checkbox"> 注文確認、レシート、インボイス等を保存した</li>
+<li><input disabled="" type="checkbox"> 店舗→検品者の発送日・追跡番号を記録した</li>
+<li><input disabled="" type="checkbox"> 出品者または買付パートナーが現物検品した</li>
+<li><input disabled="" type="checkbox"> 店舗写真だけで検品済みにしていない</li>
+<li><input disabled="" type="checkbox"> 画像を掲載する場合は利用許可を保存した</li>
+<li><input disabled="" type="checkbox"> 異常がある商品を購入者へ発送していない</li>
+<li><input disabled="" type="checkbox"> 検品者→購入者の発送日・追跡番号を別に記録した</li>
+<li><input disabled="" type="checkbox"> 配送方法を変更した場合は購入者の了承を得て、郵便局留めにしていない</li>
+<li><input disabled="" type="checkbox"> 海外パートナーへ渡す購入者情報を必要最小限にし、削除時期を記録した</li>
+<li><input disabled="" type="checkbox"> 購入者宛て発送後にだけBUYMAで発送通知した</li>
+<li><input disabled="" type="checkbox"> 注文確定日時から18日後の発送期限を時刻まで管理した</li>
+<li><input disabled="" type="checkbox"> 関税等の負担条件を商品ページどおりに案内した</li>
+<li><input disabled="" type="checkbox"> 取引完了まで受取、通関、返品、問い合わせを管理した</li>
+</ul>
+<h3>第4章の公式確認先</h3>
+<p>確認日: <strong>2026-07-13</strong></p>
+<ul>
+<li><a href="https://qa.buyma.com/shopper/order-to-delivery/4205.html">BUYMA 買付先から購入者への直送</a></li>
+<li><a href="https://qa.buyma.com/shopper/order-to-delivery/4201.html">BUYMA 検品・梱包・発送</a></li>
+<li><a href="https://qa.buyma.com/shopper/order-to-delivery/4303.html">BUYMA 発送期限までに発送できない場合</a></li>
+<li><a href="https://qa.buyma.com/shopper/prohibited-item/4007.html">BUYMA 禁止・要注意買付先</a></li>
+<li><a href="https://qa.buyma.com/shopper/reg/13732.html">BUYMA 外部委託時のアカウント管理</a></li>
+<li><a href="https://qa.buyma.com/buy/pay/3104.html">BUYMA 関税の支払い</a></li>
+<li><a href="https://www.ppc.go.jp/personalinfo/legal/guidelines_offshore/">個人情報保護委員会 外国にある第三者への提供</a></li>
+<li><a href="https://taxation-customs.ec.europa.eu/taxation/vat/vat-directive/vat-exemptions_en">欧州委員会 VAT Exemptions</a></li>
+<li><a href="https://www.pcisecuritystandards.org/faqs/1085/">PCI SSC 暗号化されていないカード番号をメール・SMS・チャットで送れるか</a></li>
+<li><a href="https://www.pcisecuritystandards.org/faqs/1319/">PCI SSC カード確認コードを保存できるか</a></li>
+<li><a href="https://crowdworks.jp/pages/guidelines/job_offer.htm">クラウドワークス 仕事依頼ガイドライン</a></li>
+</ul>
+<hr>
+</article>
+</body>
+</html>

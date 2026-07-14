@@ -1,0 +1,711 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>第6章 BUYMAショップリスト</title>
+<style>
+  :root { color-scheme: light; }
+  body { margin: 0; background: #f5f6f8; color: #172033; font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif; line-height: 1.8; }
+  article { box-sizing: border-box; max-width: 860px; margin: 32px auto; padding: 40px 48px 64px; background: #fff; }
+  h1, h2, h3, h4, h5 { line-height: 1.45; letter-spacing: 0; }
+  h1 { font-size: 32px; }
+  h2 { margin-top: 2em; padding-bottom: .35em; border-bottom: 2px solid #c99a2e; font-size: 26px; }
+  h3 { margin-top: 1.7em; font-size: 21px; }
+  h4 { margin-top: 1.5em; font-size: 18px; }
+  p, li { font-size: 16px; }
+  table { width: 100%; border-collapse: collapse; margin: 1.4em 0; }
+  th, td { border: 1px solid #ccd2dc; padding: 8px 10px; vertical-align: top; }
+  th { background: #f0f3f7; }
+  pre { overflow-x: auto; padding: 16px; background: #f3f5f8; border-left: 4px solid #0b2b50; white-space: pre-wrap; }
+  blockquote { margin: 1.4em 0; padding: .3em 1.2em; border-left: 4px solid #c99a2e; background: #fbf8ef; }
+  .image-marker { margin: 28px 0; padding: 16px 18px; border: 2px dashed #c99a2e; background: #fffaf0; color: #5a420a; }
+  @media (max-width: 720px) { article { margin: 0; padding: 24px 18px 48px; } h1 { font-size: 28px; } h2 { font-size: 23px; } }
+</style>
+</head>
+<body>
+<article id="brain-import-root">
+<h2>第6章 BUYMAショップリスト</h2>
+<div class="image-marker" data-image-sequence="17" data-image-path="BUYMA章頭挿絵/第6章_BUYMAショップリスト.png"><strong>画像差し込み 17</strong><br>第6章 BUYMAショップリスト<br><code>BUYMA章頭挿絵/第6章_BUYMAショップリスト.png</code></div>
+
+<div class="image-marker" data-image-sequence="18" data-image-path="BUYMA本文挿絵/A06_第6章_ショップリストの使い方.png"><strong>画像差し込み 18</strong><br>ショップリストの使い方<br><code>BUYMA本文挿絵/A06_第6章_ショップリストの使い方.png</code></div>
+
+<p>この章は、第2〜5章で学んだ買付先確認を、原教材のショップリストへ当てはめる実践資料です。</p>
+<p>旧対応表では「約69件」と見積もっていましたが、原PDFの実物を数えると<strong>1ページ目43件、2ページ目25件、合計68件</strong>でした。68件はすべて下表へ残しますが、掲載は推薦を意味しません。</p>
+<p>本章のゴールは、ショップ名を見てすぐ注文することではありません。候補1件について、現在の運営、販売元、正規性、配送、返品、証憑、BUYMAルール、検品経路を確認し、使う・保留・除外を自分で記録できる状態にすることです。</p>
+<h3>6-1 先に知っておく4つの判定</h3>
+<p>確認日: <strong>2026-07-13</strong></p>
+<p>原PDF68件を現況だけで分類すると、次の内訳でした。</p>
+<table>
+<thead>
+<tr>
+<th>現況判定</th>
+<th align="right">件数</th>
+<th>意味</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>営業表示あり</td>
+<td align="right">44</td>
+<td>商品、カート、規約等の現行表示を確認できた。正規性やBUYMA利用可の保証ではない</td>
+</tr>
+<tr>
+<td>URL・名称・運営変更</td>
+<td align="right">12</td>
+<td>旧URLや旧名称のまま使えない。新しい販売主体を別の買付先として再確認する</td>
+</tr>
+<tr>
+<td>EC終了・閉鎖</td>
+<td align="right">9</td>
+<td>商品ECを確認できない、閉鎖告知、ドメイン駐車、DNS消失等。仕入れに使わない</td>
+</tr>
+<tr>
+<td>要再確認</td>
+<td align="right">3</td>
+<td>原表の国・事業との不一致、SSL・アクセス不良等があり、現行店と断定できない</td>
+</tr>
+</tbody></table>
+<p>この44件には、日本国内ECのANTEPRIMAも含まれます。サイト自体は営業中でも、BUYMAは国内ECサイトを禁止買付先としているため、買付候補から除外します。</p>
+<p>4分類の所属は次のとおりです。個別表の「注意」「URL変更」「単独EC終了」等は、その4分類内の詳細状態です。</p>
+<ul>
+<li>営業表示あり44件: <code>1〜8、10〜11、13〜17、19、21〜22、24〜26、29、32〜33、35〜37、40、43〜46、48〜49、52、54、57、59〜61、63〜64、66〜67</code></li>
+<li>URL・名称・運営変更12件: <code>20、23、30、31、38、42、50、51、55、62、65、68</code></li>
+<li>EC終了・閉鎖9件: <code>12、18、27、28、34、41、47、53、56</code></li>
+<li>要再確認3件: <code>9、39、58</code></li>
+</ul>
+<h3>6-2 原教材68件の現況監査表</h3>
+<p>表の「営業表示あり」は、2026-07-13時点でサイト上の営業表示を確認できたという意味です。<strong>安全、正規品、BUYMAで利用可能、日本配送可能を保証する表示ではありません。</strong></p>
+<p>原PDFのショップ名にある曲線アポストロフィは読みやすい記号へ正規化し、途中までしか表示されていない国名<code>アラブ首長国連</code>は<code>アラブ首長国連邦</code>へ補正しています。以下の「原教材の表記・国」は、この記号と明白な欠字だけを補正した表示です。</p>
+<h4>アメリカ・アラブ首長国連邦・イギリス</h4>
+<table>
+<thead>
+<tr>
+<th align="right">No.</th>
+<th>原教材の表記（記号補正）</th>
+<th>原教材の国（欠字補正）</th>
+<th>2026-07-13時点</th>
+<th>現行リンク・扱い</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="right">1</td>
+<td>Nordstrom</td>
+<td>アメリカ</td>
+<td>営業表示あり</td>
+<td><a href="https://www.nordstrom.com/">現行サイト</a>。商品、販売元、発送国を注文ごとに確認</td>
+</tr>
+<tr>
+<td align="right">2</td>
+<td>SHOPBOP</td>
+<td>アメリカ</td>
+<td>営業表示あり</td>
+<td><a href="https://www.shopbop.com/">現行サイト</a>。掲載だけでBUYMA利用可とはしない</td>
+</tr>
+<tr>
+<td align="right">3</td>
+<td>Revolve Clothing</td>
+<td>アメリカ</td>
+<td>営業表示あり</td>
+<td><a href="https://www.revolve.com/">REVOLVE</a>。現名称へ更新</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td>Saks Fifth Avenue</td>
+<td>アメリカ</td>
+<td>営業表示あり・注意</td>
+<td><a href="https://www.saksfifthavenue.com/">現行サイト</a>。親会社の再建・名称変更後のため、請求主体と返品条件を注文時に再確認</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td>Urban Outfitters</td>
+<td>アメリカ</td>
+<td>営業表示あり</td>
+<td><a href="https://www.urbanoutfitters.com/">現行サイト</a>。地域版と発送元を確認</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td>Neiman Marcus</td>
+<td>アメリカ</td>
+<td>営業表示あり・注意</td>
+<td><a href="https://www.neimanmarcus.com/">現行サイト</a>。親会社の再建後のため、閉店情報とEC継続を分けて確認</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td>Bluefly</td>
+<td>アメリカ</td>
+<td>営業表示あり・注意</td>
+<td><a href="https://www.bluefly.com/">現行サイト</a>。販売元、請求書、正規取扱根拠を商品単位で確認</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td>TiLLY&#39;S</td>
+<td>アメリカ</td>
+<td>営業表示あり</td>
+<td><a href="https://www.tillys.com/">Tillys</a>。現表記へ更新</td>
+</tr>
+<tr>
+<td align="right">9</td>
+<td>Hu&#39;s</td>
+<td>アメリカ</td>
+<td>要再確認</td>
+<td><a href="https://husonline.com/">原ドメイン</a>。SSL・アクセス不良があり、現行ECとして掲載しない</td>
+</tr>
+<tr>
+<td align="right">10</td>
+<td>HAMPDEN</td>
+<td>アメリカ</td>
+<td>営業表示あり</td>
+<td><a href="https://hampdenclothing.com/">現行サイト</a>。商品と注文導線を確認</td>
+</tr>
+<tr>
+<td align="right">11</td>
+<td>The Trend Boutique</td>
+<td>アメリカ</td>
+<td>営業表示あり</td>
+<td><a href="https://shop.trendcincinnati.com/">現行サイト</a>。実店舗閉鎖・オンライン運営の表示があるため発送条件を確認</td>
+</tr>
+<tr>
+<td align="right">12</td>
+<td>Ron Herman</td>
+<td>アメリカ</td>
+<td>EC終了</td>
+<td><a href="http://ronherman.com/">現在の案内</a>は店舗案内中心。原教材の海外EC候補として使わない。日本ECは国内ECとして除外</td>
+</tr>
+<tr>
+<td align="right">13</td>
+<td>Macy&#39;s</td>
+<td>アメリカ</td>
+<td>営業表示あり</td>
+<td><a href="https://www.macys.com/">現行サイト</a>。地域制限と発送可否を確認</td>
+</tr>
+<tr>
+<td align="right">14</td>
+<td>Karmaloop</td>
+<td>アメリカ</td>
+<td>営業表示あり</td>
+<td><a href="https://www.karmaloop.com/">現行サイト</a>。商品と注文導線を確認</td>
+</tr>
+<tr>
+<td align="right">15</td>
+<td>Anthropologie</td>
+<td>アメリカ</td>
+<td>営業表示あり</td>
+<td><a href="https://www.anthropologie.com/">現行サイト</a>。地域版と発送元を確認</td>
+</tr>
+<tr>
+<td align="right">16</td>
+<td>Bloomingdale&#39;s</td>
+<td>アメリカ</td>
+<td>営業表示あり</td>
+<td><a href="https://www.bloomingdales.com/">現行サイト</a>。商品単位の販売元を確認</td>
+</tr>
+<tr>
+<td align="right">17</td>
+<td>BYSYMPHONY</td>
+<td>アラブ首長国連邦</td>
+<td>営業表示あり・注意</td>
+<td><a href="https://bysymphony.com/">BySymphony</a>。商品、店舗、連絡先はあるが、更新日と在庫の鮮度を確認</td>
+</tr>
+<tr>
+<td align="right">18</td>
+<td>Boutique1</td>
+<td>アラブ首長国連邦</td>
+<td>EC終了</td>
+<td><a href="https://www.boutique1.com/">原ドメイン</a>は駐車ページ。仕入れに使わない</td>
+</tr>
+<tr>
+<td align="right">19</td>
+<td>Harrods</td>
+<td>イギリス</td>
+<td>営業表示あり</td>
+<td><a href="https://www.harrods.com/en-us/">現行サイト</a>。国際配送とブランド制限を確認</td>
+</tr>
+<tr>
+<td align="right">20</td>
+<td>Surfdome</td>
+<td>イギリス</td>
+<td>URL・事業変更</td>
+<td><a href="https://www.brandalley.co.uk/surfdome">BrandAlley内の案内</a>。旧単独ECとして使わず、現販売主体を別途確認するまで保留</td>
+</tr>
+<tr>
+<td align="right">21</td>
+<td>END.</td>
+<td>イギリス</td>
+<td>営業表示あり</td>
+<td><a href="https://www.endclothing.com/us">END. Clothing</a>。現名称へ更新</td>
+</tr>
+<tr>
+<td align="right">22</td>
+<td>LN-CC</td>
+<td>イギリス</td>
+<td>営業表示あり</td>
+<td><a href="https://www.ln-cc.com/ja-jp/">現行サイト</a>。地域、通貨、発送元を確認</td>
+</tr>
+<tr>
+<td align="right">23</td>
+<td>All Sole</td>
+<td>イギリス</td>
+<td>単独EC終了</td>
+<td><a href="https://www.flannels.com/">転送先Flannels</a>は別の販売主体として再調査。AllSoleの実績を引き継がない</td>
+</tr>
+<tr>
+<td align="right">24</td>
+<td>ZOO FASHIONS</td>
+<td>イギリス</td>
+<td>営業表示あり</td>
+<td><a href="https://www.zoofashions.com/">現行サイト</a>。商品と注文導線を確認</td>
+</tr>
+<tr>
+<td align="right">25</td>
+<td>The Outnet</td>
+<td>イギリス</td>
+<td>営業表示あり・注意</td>
+<td><a href="https://www.theoutnet.com/en-us/">現行サイト</a>。運営移行後の請求主体、返品先、規約を再確認</td>
+</tr>
+<tr>
+<td align="right">26</td>
+<td>NET-A-PORTER</td>
+<td>イギリス</td>
+<td>営業表示あり</td>
+<td><a href="https://www.net-a-porter.com/en-us/">現行サイト</a>。配送国と返品条件を確認</td>
+</tr>
+<tr>
+<td align="right">27</td>
+<td>MATCHESFASHION</td>
+<td>イギリス</td>
+<td>EC終了・再始動待ち</td>
+<td><a href="https://matchesfashion.com/">現在の公式ページ</a>は再始動予告のみ。商品、決済、返品が再開するまで使わない</td>
+</tr>
+</tbody></table>
+<h4>イタリア</h4>
+<table>
+<thead>
+<tr>
+<th align="right">No.</th>
+<th>原教材の表記（記号補正）</th>
+<th>原教材の国（欠字補正）</th>
+<th>2026-07-13時点</th>
+<th>現行リンク・扱い</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="right">28</td>
+<td>FRMODA</td>
+<td>イタリア</td>
+<td>EC終了</td>
+<td><a href="https://frmoda.com/">公式閉鎖案内</a>。仕入れに使わない</td>
+</tr>
+<tr>
+<td align="right">29</td>
+<td>ANTEPRIMA</td>
+<td>イタリア</td>
+<td>国内ECのため除外</td>
+<td>原URL<a href="https://www.wirebag.jp/">wirebag.jp</a>は日本向け国内EC。BUYMA買付候補へ入れない</td>
+</tr>
+<tr>
+<td align="right">30</td>
+<td>DELL&#39;O GLIO</td>
+<td>イタリア</td>
+<td>URL変更</td>
+<td><a href="https://doboutique.com/">Dell&#39;Oglio</a>へドメイン変更。現法人、正規性、規約を再確認</td>
+</tr>
+<tr>
+<td align="right">31</td>
+<td>Chirulli</td>
+<td>イタリア</td>
+<td>URL変更</td>
+<td><a href="https://chirullishop.com/gb/">現行サイト</a>。地域、通貨、配送国を確認</td>
+</tr>
+<tr>
+<td align="right">32</td>
+<td>Dante5</td>
+<td>イタリア</td>
+<td>営業表示あり</td>
+<td><a href="https://www.dante5.com/en-US">現行サイト</a>。アクセス制限時は注文せず公式窓口で確認</td>
+</tr>
+<tr>
+<td align="right">33</td>
+<td>G&amp;B NEGOZIO</td>
+<td>イタリア</td>
+<td>営業表示あり</td>
+<td><a href="https://gebnegozionline.com/">現行サイト</a>。運営主体と配送条件を確認</td>
+</tr>
+<tr>
+<td align="right">34</td>
+<td>the clutcher</td>
+<td>イタリア</td>
+<td>閉鎖扱い</td>
+<td>原ドメインを確認できない。類似名の別サイトへ置き換えない</td>
+</tr>
+<tr>
+<td align="right">35</td>
+<td>YOOX</td>
+<td>イタリア</td>
+<td>営業表示あり</td>
+<td><a href="https://www.yoox.com/us/women">現行サイト</a>。地域、販売元、返品条件を確認</td>
+</tr>
+<tr>
+<td align="right">36</td>
+<td>BRUNA ROSSO</td>
+<td>イタリア</td>
+<td>営業表示あり</td>
+<td><a href="https://www.brunarosso.com/">現行サイト</a>。商品と注文導線を確認</td>
+</tr>
+<tr>
+<td align="right">37</td>
+<td>Leam</td>
+<td>イタリア</td>
+<td>営業表示あり</td>
+<td><a href="https://www.leam.com/it_eu/">現行サイト</a>。地域と配送先設定を確認</td>
+</tr>
+<tr>
+<td align="right">38</td>
+<td>LIDIA SHOPPING</td>
+<td>イタリア</td>
+<td>URL変更</td>
+<td><a href="https://www.lidiashopping.com/">現行トップ</a>。旧地域パスを使わず、配送国を選び直す</td>
+</tr>
+<tr>
+<td align="right">39</td>
+<td>Satu</td>
+<td>イタリア</td>
+<td>要再確認</td>
+<td><a href="https://shopsatu.com/">現在の同ドメイン</a>はカンボジアの別事業。原教材のイタリア店として使わない</td>
+</tr>
+<tr>
+<td align="right">40</td>
+<td>Bernardelli</td>
+<td>イタリア</td>
+<td>営業表示あり</td>
+<td><a href="https://www.bernardellistores.com/en">現行サイト</a>。アクセス制限時は注文せず公式窓口で確認</td>
+</tr>
+<tr>
+<td align="right">41</td>
+<td>Atelier On Web</td>
+<td>イタリア</td>
+<td>EC終了</td>
+<td>原ドメインのEC表示を確認できない。仕入れに使わない</td>
+</tr>
+<tr>
+<td align="right">42</td>
+<td>ANTONIA</td>
+<td>イタリア</td>
+<td>URL変更</td>
+<td><a href="https://www.antonia.it/en-us/collections/mens-clothing">現行サイト</a>。商品カテゴリ、配送国、返品条件を確認</td>
+</tr>
+<tr>
+<td align="right">43</td>
+<td>VINICIO</td>
+<td>イタリア</td>
+<td>営業表示あり</td>
+<td><a href="https://www.vinicioboutique.com/en/">現行サイト</a>。アクセス制限時は注文せず公式窓口で確認</td>
+</tr>
+<tr>
+<td align="right">44</td>
+<td>italist</td>
+<td>イタリア</td>
+<td>営業表示あり・注意</td>
+<td><a href="https://italist.com/">現行サイト</a>。複数ブティック連携型のため、実販売元、請求書、返品先を商品単位で確認</td>
+</tr>
+<tr>
+<td align="right">45</td>
+<td>TESSABIT</td>
+<td>イタリア</td>
+<td>営業表示あり</td>
+<td><a href="https://www.tessabit.com/row/woman/">現行サイト</a>。アクセス制限時は注文せず公式窓口で確認</td>
+</tr>
+<tr>
+<td align="right">46</td>
+<td>LUISAVIAROMA</td>
+<td>イタリア</td>
+<td>営業表示あり</td>
+<td><a href="https://www.luisaviaroma.com/ja-us/">現行サイト</a>。地域と配送条件を確認</td>
+</tr>
+<tr>
+<td align="right">47</td>
+<td>L&#39;INDE LE PALAIS</td>
+<td>イタリア</td>
+<td>閉鎖</td>
+<td>原URLはショップ自身のECではなくディレクトリ。実店舗・公式ドメインとも現行営業を確認できず使わない</td>
+</tr>
+<tr>
+<td align="right">48</td>
+<td>GIGLIO</td>
+<td>イタリア</td>
+<td>営業表示あり</td>
+<td><a href="https://www.giglio.com/eng/">現行サイト</a>。広告パラメータを外し、地域と配送条件を確認</td>
+</tr>
+<tr>
+<td align="right">49</td>
+<td>galiano</td>
+<td>イタリア</td>
+<td>営業表示あり</td>
+<td><a href="https://www.galianostore.com/it-ita">Galiano Store</a>。現表記へ更新</td>
+</tr>
+<tr>
+<td align="right">50</td>
+<td>FORZIERI</td>
+<td>イタリア</td>
+<td>運営変更・保留</td>
+<td><a href="https://www.forzieri.com/">現在のForzieri</a>は新運営。旧マルチブランドECの実績を引き継がず、新規候補として再確認するまで保留</td>
+</tr>
+<tr>
+<td align="right">51</td>
+<td>ANTONIOLI</td>
+<td>イタリア</td>
+<td>URL変更</td>
+<td><a href="https://antonioli.eu/">現行トップ</a>。旧セールURLを使わず、商品と配送条件を選び直す</td>
+</tr>
+<tr>
+<td align="right">52</td>
+<td>ELEONORA BONUCCI</td>
+<td>イタリア</td>
+<td>営業表示あり</td>
+<td><a href="https://eleonorabonucci.com/">現行サイト</a>。商品と注文導線を確認</td>
+</tr>
+</tbody></table>
+<h4>オーストラリア・カナダ・スウェーデン・ドイツ・フランス・ベルギー</h4>
+<table>
+<thead>
+<tr>
+<th align="right">No.</th>
+<th>原教材の表記（記号補正）</th>
+<th>原教材の国（欠字補正）</th>
+<th>2026-07-13時点</th>
+<th>現行リンク・扱い</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="right">53</td>
+<td>LALABAZAAR</td>
+<td>オーストラリア</td>
+<td>閉鎖</td>
+<td>原ドメインは売却ページ。仕入れに使わない</td>
+</tr>
+<tr>
+<td align="right">54</td>
+<td>Beginning Boutique</td>
+<td>オーストラリア</td>
+<td>営業表示あり</td>
+<td><a href="https://www.beginningboutique.com.au/">現行サイト</a>。商品と注文導線を確認</td>
+</tr>
+<tr>
+<td align="right">55</td>
+<td>ANOTHER LOVE</td>
+<td>オーストラリア</td>
+<td>URL変更</td>
+<td><a href="https://www.anotherloveclothing.com/">現行サイト</a>。販売主体と配送条件を確認</td>
+</tr>
+<tr>
+<td align="right">56</td>
+<td>HOUSE OF ZOI</td>
+<td>オーストラリア</td>
+<td>閉鎖扱い</td>
+<td>原ドメインを確認できない。類似名の別サイトへ置き換えない</td>
+</tr>
+<tr>
+<td align="right">57</td>
+<td>SSENSE</td>
+<td>カナダ</td>
+<td>営業表示あり・注意</td>
+<td><a href="https://www.ssense.com/ja-jp/men/sale">現行サイト</a>。再建・運営変更後の規約、決済、返品条件を注文時に確認</td>
+</tr>
+<tr>
+<td align="right">58</td>
+<td>COUP</td>
+<td>カナダ</td>
+<td>要再確認</td>
+<td><a href="https://coupeg.com/">現在の同ドメイン</a>はエジプトの別事業。原教材のカナダ店として使わない</td>
+</tr>
+<tr>
+<td align="right">59</td>
+<td>Sneakersnstuff.com</td>
+<td>スウェーデン</td>
+<td>営業表示あり</td>
+<td><a href="https://www.sneakersnstuff.com/">SNS</a>。地域配送を確認</td>
+</tr>
+<tr>
+<td align="right">60</td>
+<td>SAVANNAHS</td>
+<td>スウェーデン</td>
+<td>営業表示あり</td>
+<td><a href="https://savannahs.com/">現行サイト</a>。連絡先、配送、返品を確認</td>
+</tr>
+<tr>
+<td align="right">61</td>
+<td>NELLY.com</td>
+<td>スウェーデン</td>
+<td>営業表示あり</td>
+<td><a href="https://nelly.com/ww/womens-fashion/">現行サイト</a>。アクセス制限時は注文せず公式窓口で確認</td>
+</tr>
+<tr>
+<td align="right">62</td>
+<td>Voo Store</td>
+<td>ドイツ</td>
+<td>URL変更</td>
+<td><a href="https://voostore.com/">VOO STORE</a>へ更新。運営主体と配送条件を確認</td>
+</tr>
+<tr>
+<td align="right">63</td>
+<td>ANITA HASS</td>
+<td>ドイツ</td>
+<td>営業表示あり</td>
+<td><a href="https://anitahass.com/">現行サイト</a>。商品と注文導線を確認</td>
+</tr>
+<tr>
+<td align="right">64</td>
+<td>FASHIONESTA</td>
+<td>ドイツ</td>
+<td>営業表示あり</td>
+<td><a href="https://www.fashionesta.com/en-us">現行サイト</a>。会社情報、配送、返品を確認</td>
+</tr>
+<tr>
+<td align="right">65</td>
+<td>STYLEBOP</td>
+<td>ドイツ</td>
+<td>単独EC終了・運営変更</td>
+<td><a href="https://www.peek-cloppenburg.de/de/designer">Peek &amp; Cloppenburg</a>の現販売主体を別の買付先として確認。旧STYLEBOPの実績を引き継がない</td>
+</tr>
+<tr>
+<td align="right">66</td>
+<td>mytheresa</td>
+<td>ドイツ</td>
+<td>営業表示あり</td>
+<td><a href="https://www.mytheresa.com/">現行サイト</a>。地域、配送、返品を確認</td>
+</tr>
+<tr>
+<td align="right">67</td>
+<td>24S</td>
+<td>フランス</td>
+<td>営業表示あり</td>
+<td><a href="https://www.24s.com/en-us/">現行サイト</a>。地域とブランド別配送制限を確認</td>
+</tr>
+<tr>
+<td align="right">68</td>
+<td>IRINA KHA</td>
+<td>ベルギー</td>
+<td>URL・表記変更</td>
+<td><a href="https://irina-kha.com/en/">Irina Kha</a>。法人、実店舗、配送、返品を確認</td>
+</tr>
+</tbody></table>
+<h3>6-3 購入者版ショップ管理表の列</h3>
+<blockquote>
+<p><strong>この章の配布資料:</strong> <code>BUYMA_ショップ確認台帳_購入者版.xlsx</code>
+旧教材68件の2026-07-13時点の現況と、空の新規候補行、注文前確認シートを収録しています。</p>
+</blockquote>
+<p>原PDFの「ショップ名・国・URL」だけでは、現在使えるか判断できません。購入者版では、最低限次の列を使います。</p>
+<h4>基本情報</h4>
+<ul>
+<li>ショップNo.と、注文単位の管理番号</li>
+<li>原教材のショップ名、国</li>
+<li>現在のショップ名、国、現行URL</li>
+<li>運営会社、販売主体</li>
+<li>状態: 未確認、営業表示あり、URL・名称・運営変更、要再確認、閉鎖、除外</li>
+<li>現況確認メモ、BUYMA禁止先確認日、次回確認日、確認者、変更履歴</li>
+</ul>
+<h4>正規性とBUYMA確認</h4>
+<ul>
+<li>ブランド公式または正規販売の根拠URL</li>
+<li>マーケットプレイス・提携店型か</li>
+<li>実際の販売元</li>
+<li>BUYMA禁止・要注意買付先の確認日</li>
+<li>国内EC、CtoC、品質・真贋不安の該当確認</li>
+<li>購入証明、レシート、インボイスの発行可否</li>
+</ul>
+<h4>注文と取引条件</h4>
+<ul>
+<li>日本または検品者住所への配送可否</li>
+<li>送料、追跡、補償、検品者・場所</li>
+<li>価格・通貨、税・関税の表示と負担者</li>
+<li>実際の決済・請求主体</li>
+<li>返品・返金条件、期限、返送料</li>
+<li>現物検品者と検品場所</li>
+<li>確認証拠の保管先</li>
+<li>最終判断、判断理由、次回確認日</li>
+</ul>
+<p>URLだけを一覧で公開せず、各URLへ確認日と根拠を付けます。管理表には証拠ファイルそのものではなく、アクセスを限定した保管先リンクと確認日を記録します。ログイン情報、カード番号、本人確認書類、購入者の個人情報はショップ管理表へ保存しません。</p>
+<p>注文確認や問い合わせ回答に氏名、住所、注文番号等が含まれる場合、共有用は必要箇所をマスキングし、原本は権限を限定した保管先へ分離します。担当終了時は保管先と管理表へのアクセスを停止し、担当者側の不要なローカル複製を削除します。</p>
+<h3>6-4 初めてのショップを使う前の10工程</h3>
+<ol>
+<li><p><strong>URLと運営主体を確認する</strong>
+広告パラメータを外した公式トップ、会社名、住所、連絡先、規約を確認します。旧ドメインが別事業へ転用されていたら使いません。</p>
+</li>
+<li><p><strong>BUYMAの禁止・要注意買付先を確認する</strong>
+固有名の一致だけでなく、国内EC、CtoC、品質・真贋不安、マーケットプレイス等の分類も確認します。</p>
+</li>
+<li><p><strong>実際の販売元を確認する</strong>
+マーケットプレイス、提携ブティック、複数販売元型では、サイト名だけで判断せず商品ページの販売元まで記録します。</p>
+</li>
+<li><p><strong>ブランド取扱根拠を確認する</strong>
+ブランド公式の店舗・取扱店情報、ショップの会社情報、購入証明等を確認します。確認項目を満たしても安全保証にはなりません。</p>
+</li>
+<li><p><strong>商品情報を照合する</strong>
+ブランド名、商品名、型番、色、サイズ、素材、付属品、販売元、商品状態を公式情報と照合します。</p>
+</li>
+<li><p><strong>配送と検品経路を決める</strong>
+日本または買付パートナー住所への配送、追跡、補償、到着目安を確認し、出品者本人または買付パートナーが現物検品する経路を作ります。</p>
+</li>
+<li><p><strong>税・関税・決済を確認する</strong>
+表示価格、税処理、関税等の負担者、送料、決済手数料、通貨、請求主体を確認し、二重計上せず利益を試算します。</p>
+</li>
+<li><p><strong>返品・返金を確認する</strong>
+返品可否、期限、対象外、返送料、返金通貨、割引や関税等の扱いを確認します。</p>
+</li>
+<li><p><strong>証拠を保存する</strong>
+商品ページ、注文確認、規約、購入証明、問い合わせ回答、確認日を保存します。個人情報を含む原本は権限を限定した保管先へ分離し、管理表にはリンクだけを記録します。共有用は必要箇所をマスキングし、公開範囲、保存期限、担当終了時のアクセス停止とローカル複製削除を決めます。</p>
+</li>
+<li><p><strong>注文直前に再確認する</strong>
+在庫、販売元、価格、配送、税、返品、規約、検品経路を再確認し、管理表の最終確認日を更新します。</p>
+</li>
+</ol>
+<h3>6-5 ショップリストを安全保証として使わない</h3>
+<p>BUYMAの公式ガイドは、禁止買付先の一覧にないショップでも利用を控える場合があり、個別ショップの利用可否には回答せず、出品者自身が真贋と品質を確認するよう案内しています。</p>
+<p>そのため、本リストでは次の判断をしません。</p>
+<ul>
+<li>営業中だから安全</li>
+<li>有名店だから全商品が利用可能</li>
+<li>BUYMAの固有名一覧にないから許可</li>
+<li>ブランドを扱っているから正規販売店</li>
+<li>カートへ入るから日本へ配送可能</li>
+<li>過去に買えたから現在も同じ条件</li>
+<li>URLが同じだから運営会社も同じ</li>
+</ul>
+<p>ショップ、販売元、商品、注文条件、検品経路を1件ずつ確認します。現況が変わった行は上書きせず、変更日と旧状態を履歴へ残します。</p>
+<h3>6-6 チェックリスト</h3>
+<h4>候補登録時</h4>
+<ul>
+<li><input disabled="" type="checkbox"> 原PDFは68件であることを確認した</li>
+<li><input disabled="" type="checkbox"> 原教材の表記と現在の表記を分けて登録した</li>
+<li><input disabled="" type="checkbox"> URLの移転、閉鎖、別事業化を確認した</li>
+<li><input disabled="" type="checkbox"> 国内ECとCtoCを候補から除外した</li>
+<li><input disabled="" type="checkbox"> BUYMAの禁止・要注意買付先を分類まで確認した</li>
+<li><input disabled="" type="checkbox"> 営業表示ありを安全保証として扱っていない</li>
+</ul>
+<h4>注文前</h4>
+<ul>
+<li><input disabled="" type="checkbox"> 運営会社と実際の販売元を確認した</li>
+<li><input disabled="" type="checkbox"> ブランド取扱根拠と商品情報を確認した</li>
+<li><input disabled="" type="checkbox"> 日本または検品者住所への配送条件を確認した</li>
+<li><input disabled="" type="checkbox"> 出品者本人または買付パートナーの現物検品経路を確定した</li>
+<li><input disabled="" type="checkbox"> 税、関税等の負担者、送料、決済、返品を確認した</li>
+<li><input disabled="" type="checkbox"> 注文確認、購入証明、規約、問い合わせ回答を保存できる</li>
+<li><input disabled="" type="checkbox"> 注文直前に価格、在庫、販売元、規約を再確認した</li>
+<li><input disabled="" type="checkbox"> 管理表の最終確認日と判断理由を更新した</li>
+</ul>
+<h3>第6章の公式・現況確認先</h3>
+<p>確認日: <strong>2026-07-13</strong></p>
+<ul>
+<li><a href="https://qa.buyma.com/shopper/prohibited-item/4007.html">BUYMA 出品を禁止されている買い付け先</a></li>
+<li><a href="https://qa.buyma.com/shopper/order-to-delivery/4201.html">BUYMA 検品・梱包・発送</a></li>
+<li><a href="https://matchesfashion.com/">MATCHESFASHION 現在の公式ページ</a></li>
+<li><a href="https://frmoda.com/">FRMODA EC閉鎖案内</a></li>
+<li><a href="https://bysymphony.com/">BySymphony 公式サイト</a></li>
+<li><a href="https://www.peek-cloppenburg.de/de/stylebop">STYLEBOP転送先</a></li>
+<li><a href="https://www.forzieri.com/">Forzieri 現在の公式サイト</a></li>
+<li><a href="https://shopsatu.com/">Satu 現在の同ドメイン</a></li>
+<li><a href="https://coupeg.com/">COUP 現在の同ドメイン</a></li>
+</ul>
+<hr>
+</article>
+</body>
+</html>

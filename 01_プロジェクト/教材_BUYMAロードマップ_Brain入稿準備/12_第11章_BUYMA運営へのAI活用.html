@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>第11章 BUYMA運営へのAI活用</title>
+<style>
+  :root { color-scheme: light; }
+  body { margin: 0; background: #f5f6f8; color: #172033; font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif; line-height: 1.8; }
+  article { box-sizing: border-box; max-width: 860px; margin: 32px auto; padding: 40px 48px 64px; background: #fff; }
+  h1, h2, h3, h4, h5 { line-height: 1.45; letter-spacing: 0; }
+  h1 { font-size: 32px; }
+  h2 { margin-top: 2em; padding-bottom: .35em; border-bottom: 2px solid #c99a2e; font-size: 26px; }
+  h3 { margin-top: 1.7em; font-size: 21px; }
+  h4 { margin-top: 1.5em; font-size: 18px; }
+  p, li { font-size: 16px; }
+  table { width: 100%; border-collapse: collapse; margin: 1.4em 0; }
+  th, td { border: 1px solid #ccd2dc; padding: 8px 10px; vertical-align: top; }
+  th { background: #f0f3f7; }
+  pre { overflow-x: auto; padding: 16px; background: #f3f5f8; border-left: 4px solid #0b2b50; white-space: pre-wrap; }
+  blockquote { margin: 1.4em 0; padding: .3em 1.2em; border-left: 4px solid #c99a2e; background: #fbf8ef; }
+  .image-marker { margin: 28px 0; padding: 16px 18px; border: 2px dashed #c99a2e; background: #fffaf0; color: #5a420a; }
+  @media (max-width: 720px) { article { margin: 0; padding: 24px 18px 48px; } h1 { font-size: 28px; } h2 { font-size: 23px; } }
+</style>
+</head>
+<body>
+<article id="brain-import-root">
+<h2>第11章 BUYMA運営へのAI活用</h2>
+<div class="image-marker" data-image-sequence="24" data-image-path="BUYMA章頭挿絵/第11章_BUYMA運営へのAI活用.png"><strong>画像差し込み 24</strong><br>第11章 BUYMA運営へのAI活用<br><code>BUYMA章頭挿絵/第11章_BUYMA運営へのAI活用.png</code></div>
+
+<p>AIは、BUYMA運営の判断者ではありません。情報を整理し、文章や手順の<strong>下書きを作る補助者</strong>です。</p>
+<p>公開教材のAI活用パートでは、ショップ調査、VIP交渉文、商品コメント、外注マニュアル、募集文の5場面を扱っていました。新版ではこの5用途を残し、AIが作った店名、URL、商品情報、実績、規約解釈をそのまま使う旧手順は外します。</p>
+<p>OpenAIも、出力が常に正確とは限らず、唯一の事実情報として依存せず、利用・共有前に正確性と用途適合性を人が評価するよう案内しています。AIを使ったかどうかではなく、<strong>入力してよい情報か、根拠を確認したか、公開責任を誰が持つか</strong>で運用します。</p>
+<h3>11-1 AIが得意なこと・苦手なこと</h3>
+<table>
+<thead>
+<tr>
+<th>AIに補助させやすいこと</th>
+<th>AIだけで決めないこと</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>与えた情報の整理・分類</td>
+<td>ショップや商品の実在確認</td>
+</tr>
+<tr>
+<td>文章の下書き・言い換え</td>
+<td>BUYMA規約・法令への適合判断</td>
+</tr>
+<tr>
+<td>表、チェックリスト、手順のたたき台</td>
+<td>画像・文章・商標等の利用権判断</td>
+</tr>
+<tr>
+<td>英文案と日本語確認案の作成</td>
+<td>在庫、価格、関税、配送、返品等の最新条件</td>
+</tr>
+<tr>
+<td>長文から確認事項・不足情報を抽出</td>
+<td>商品仕様、人気、限定性、著名人利用等の事実認定</td>
+</tr>
+<tr>
+<td>正常・異常・停止条件の整理</td>
+<td>出品、購入、送金、注文変更、補償等の最終判断</td>
+</tr>
+</tbody></table>
+<p>AIは自然な文章で、存在しない店名、誤ったURL、推測した商品仕様を出すことがあります。文章が読みやすいことと、事実であることを混同しません。</p>
+<p>古い画面手順、モデル名、利用者数、文字数上限は変わりやすいため、本章では固定しません。ChatGPTを利用するときは、OpenAIの現在の公式ページと、自分のアカウントに表示される設定を確認します。</p>
+<h3>11-2 AIに任せるのは下書きと整理</h3>
+<div class="image-marker" data-image-sequence="25" data-image-path="BUYMA本文挿絵/D11_第11章_AIと人の役割分担.png"><strong>画像差し込み 25</strong><br>AIに補助させる部分と人が確認する部分<br><code>BUYMA本文挿絵/D11_第11章_AIと人の役割分担.png</code></div>
+
+<p>AIを使う業務は、次の3段階に分けます。</p>
+<ol>
+<li><strong>入力を整える</strong>: 利用権のある情報、確認済みの事実、目的、禁止事項を渡す</li>
+<li><strong>AIに下書きを作らせる</strong>: 不明点を推測せず、確認待ちとして分けさせる</li>
+<li><strong>人が検品して採用する</strong>: 公式情報、仕入先、現物、契約、管理表と照合する</li>
+</ol>
+<h4>AI作業票</h4>
+<pre><code class="language-text">業務名: ［ショップ候補調査／交渉文／商品コメント等］
+目的: ［何の下書きを作るか］
+入力元: ［公式URL、許諾済み商品情報、自社資料等］
+確認済みの事実: ［AIが変更してはいけない情報］
+禁止事項: ［推測、架空実績、誇張、個人情報等］
+出力形式: ［表、文章、チェックリスト等］
+不明時の処理: 「不明」「要確認」と記載する
+人が照合する先: ［公式ページ、仕入先回答、現物等］
+承認者: ［公開・送信・採用を判断する人］
+確認日: ［YYYY-MM-DD］
+</code></pre>
+<p>「プロのバイヤーとして考えて」だけでは、AIが足りない事実を補ってしまうことがあります。役割を与えるだけでなく、使える情報、使えない情報、不明時の処理、出力形式を指定します。具体的な5つの入力例は第12章で扱います。</p>
+<h3>11-3 人が確認する6項目</h3>
+<h4>1. 仕入先の実在と販売元</h4>
+<ul>
+<li>公式URLを実際に開けるか</li>
+<li>サイト運営者、所在地、連絡先、販売元を確認できるか</li>
+<li>ブランド取扱いの根拠が現在もあるか</li>
+<li>BUYMAの禁止・要注意買付先に該当しないか</li>
+<li>AIが示したURLではなく、公式サイト内の情報で裏づけたか</li>
+</ul>
+<h4>2. 商品と在庫</h4>
+<ul>
+<li>ブランド、商品名、型番、色、サイズ、素材、付属品が一致するか</li>
+<li>在庫、価格、通貨、税、配送、返品条件を現在のページで確認したか</li>
+<li>商品画像や説明文に、入力していない仕様が加わっていないか</li>
+</ul>
+<h4>3. 買付条件と利益</h4>
+<ul>
+<li>割引、免税、送料、関税、消費税、決済手数料の条件を確認したか</li>
+<li>AIの試算ではなく、第1章の利益計算へ確認済み数値を入れたか</li>
+<li>条件変更時に再計算し、承認条件を下回る取引を止めたか</li>
+</ul>
+<h4>4. BUYMA規約と法令</h4>
+<ul>
+<li>出品、買付、画像、検品、発送、外注の現行ルールを公式情報で確認したか</li>
+<li>AIの「問題ありません」という回答だけで規約判断していないか</li>
+<li>契約、個人情報、表示、税務等の専門判断をAIで確定していないか</li>
+</ul>
+<h4>5. 権利と表現</h4>
+<ul>
+<li>画像・文章を使う権利と根拠があるか</li>
+<li>「限定」「日本未入荷」「大人気」「残り1点」「著名人愛用」等に根拠があるか</li>
+<li>競合の説明文をAIへ渡して、言い換えコピーを作っていないか</li>
+<li>出力に第三者のブランドやサービスとの提携を誤認させる表現がないか</li>
+</ul>
+<h4>6. 顧客対応と最終判断</h4>
+<ul>
+<li>注文、配送、返品、補償、キャンセルに関する回答を注文記録と公式ガイドで確認したか</li>
+<li>AIが勝手に約束、謝罪条件、返金、値引き、発送日を決めていないか</li>
+<li>送信前に担当者名、注文内容、期限、確認元を人が確認したか</li>
+</ul>
+<h3>11-4 公開教材から残す5つの活用場面</h3>
+<table>
+<thead>
+<tr>
+<th>活用場面</th>
+<th>AIに補助させる範囲</th>
+<th>人が確認すること</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>取扱ショップ候補調査</td>
+<td>検索条件、候補表、未確認事項の整理</td>
+<td>実在、公式URL、運営者、取扱い、買付可否、確認日</td>
+</tr>
+<tr>
+<td>VIP交渉文</td>
+<td>確認済み事実を使った英文案、日本語確認案</td>
+<td>実績、購入予定、宛先、条件、送信可否</td>
+</tr>
+<tr>
+<td>商品コメント</td>
+<td>商品情報から説明文の下書きを作る</td>
+<td>仕様、権利、禁止・誇張表現、表示との一致</td>
+</tr>
+<tr>
+<td>外注マニュアル</td>
+<td>入力、手順、正常・異常・停止条件を整理</td>
+<td>実画面、現行手順、権限、個人情報、承認者</td>
+</tr>
+<tr>
+<td>募集文</td>
+<td>正確な業務条件から募集文を整える</td>
+<td>委託可否、業務、報酬、支払、個人情報、掲載先規約</td>
+</tr>
+</tbody></table>
+<p>原教材の「100ショップを一瞬で開拓」「交渉文・商品コメント・マニュアル・募集文を一瞬で完成」という表現は使いません。AIで速く作れるのは候補や下書きであり、採用可能な成果物になるまでには確認が必要です。</p>
+<p>AIへBUYMAを直接操作させたり、公開、購入、送信を無承認で実行させたりしません。AI利用とBUYMA上の自動操作を分け、無許諾の外部プログラムは第10章の基準で判断します。</p>
+<h3>11-5 入力しない情報とデータ設定</h3>
+<h4>原則として入力しないもの</h4>
+<ul>
+<li>BUYMA、メール、仕入先、決済等のパスワード</li>
+<li>二要素認証コード、復旧コード、セッション、APIキー</li>
+<li>クレジットカード、銀行口座、本人確認書類の画像・番号</li>
+<li>購入者や外注パートナーの氏名、住所、電話番号、メールアドレス</li>
+<li>注文番号、追跡番号等、他情報と組み合わせて個人や取引を特定できる情報</li>
+<li>非公開の契約書、仕入条件、クーポンコード、取引先担当者情報</li>
+<li>他者の著作物、画像、会話、個人情報など、AIへ提供する権利がないもの</li>
+</ul>
+<p>実例が必要なときは、氏名を「購入者A」、住所を「都道府県まで」、注文番号を「注文ID-A」のように置き換えます。ただし、伏せ字にすれば何でも入力してよいわけではありません。目的に不要な情報は入れません。</p>
+<h4>ChatGPTの設定を過信しない</h4>
+<p>OpenAIのData Controlsでは、会話をモデル改善へ使用する設定を変更できます。Temporary Chatは履歴やメモリに残らずモデル改善に使われませんが、安全目的で最大30日コピーを保持する場合があると案内されています。また、GPT等が外部サービスへデータを送る機能を使う場合は、送信先のプライバシーポリシーが適用されます。</p>
+<p>したがって、「学習オフ」や「一時チャット」だけを秘密情報の入力許可にしません。利用するAIサービス、プラン、外部連携、保存、削除、管理者権限を現在の公式案内で確認し、入力を最小化します。</p>
+<h3>11-6 AI出力の検品フロー</h3>
+<h4>検品の7手順</h4>
+<ol>
+<li>入力前に、個人情報、秘密情報、権利のない内容を除く</li>
+<li>確認済み事実、禁止事項、不明時の処理を指定する</li>
+<li>AI出力を「確認済み」「要確認」「不採用」に分ける</li>
+<li>URL、運営者、商品、条件を一次情報で開いて確認する</li>
+<li>BUYMA規約、法令、権利、顧客影響を人が確認する</li>
+<li>入力していない事実・数字・実績・約束を削除する</li>
+<li>公開・送信・採用した人、確認元、確認日を記録する</li>
+</ol>
+<h4>出力別の採用条件</h4>
+<table>
+<thead>
+<tr>
+<th>出力</th>
+<th>採用前に必要な証拠</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>ショップ候補</td>
+<td>公式URL、運営者、取扱い、販売条件、確認日</td>
+</tr>
+<tr>
+<td>交渉文</td>
+<td>真実の実績・予定、宛先、原文、日本語確認、送信記録</td>
+</tr>
+<tr>
+<td>商品コメント</td>
+<td>公式商品情報、利用権、禁止表現確認、掲載内容との一致</td>
+</tr>
+<tr>
+<td>外注マニュアル</td>
+<td>実際の操作確認、正常・異常・停止、権限、承認者、版</td>
+</tr>
+<tr>
+<td>募集文</td>
+<td>正確な委託条件、報酬・支払、掲載先規約、個人情報項目</td>
+</tr>
+</tbody></table>
+<p>AI出力に誤りが見つかったら、その一文だけ直して終わらせません。誤りの原因が、入力不足、古い資料、禁止事項の欠落、確認先の誤りのどれかを記録し、次回の作業票と第10章のマニュアルへ反映します。</p>
+<h3>第11章チェックリスト</h3>
+<ul>
+<li><input disabled="" type="checkbox"> AIを事実の決定者ではなく、下書き・整理の補助に限定した</li>
+<li><input disabled="" type="checkbox"> 確認済み事実、禁止事項、不明時の処理、出力形式を指定した</li>
+<li><input disabled="" type="checkbox"> 店名、URL、運営者、商品、条件を一次情報で確認した</li>
+<li><input disabled="" type="checkbox"> BUYMA規約、法令、権利をAI回答だけで判断していない</li>
+<li><input disabled="" type="checkbox"> 入力していない人気、限定性、実績、数字、約束を削除した</li>
+<li><input disabled="" type="checkbox"> 顧客対応を注文記録と公式ガイドで確認した</li>
+<li><input disabled="" type="checkbox"> パスワード、認証情報、カード、個人情報、秘密情報を入力していない</li>
+<li><input disabled="" type="checkbox"> データ設定だけを根拠に秘密情報の入力を許可していない</li>
+<li><input disabled="" type="checkbox"> AIにBUYMAの公開、購入、送信を無承認で実行させていない</li>
+<li><input disabled="" type="checkbox"> 採用した人、確認元、確認日を記録した</li>
+</ul>
+<h3>第11章の公式確認先</h3>
+<p>確認日: <strong>2026-07-13</strong></p>
+<ul>
+<li><a href="https://openai.com/policies/terms-of-use/">OpenAI Terms of Use</a></li>
+<li><a href="https://help.openai.com/en/articles/7730893-data-controls-faq">OpenAI Data Controls FAQ</a></li>
+<li><a href="https://help.openai.com/en/articles/8914046-temp">OpenAI Temporary Chat FAQ</a></li>
+<li><a href="https://help.openai.com/en/articles/8590148-memory-faq">OpenAI Memory FAQ</a></li>
+<li><a href="https://help.openai.com/en/articles/8983778-chat-and-file-retention-policies-in-chatgpt">OpenAI Chat and File Retention Policies in ChatGPT</a></li>
+<li><a href="https://qa.buyma.com/shopper/prohibited-item/4007.html">BUYMA 出品を禁止されている買い付け先について</a></li>
+<li><a href="https://qa.buyma.com/shopper/prohibited-item/15733.html">BUYMA 出品画像による権利侵害の禁止について</a></li>
+<li><a href="https://qa.buyma.com/shopper/prohibited-item/11394.html">BUYMA 出品時の禁止事項</a></li>
+<li><a href="https://qa.buyma.com/shopper/tips/30118.html">BUYMAの副業・高額コンサル・スクール勧誘に関する注意</a></li>
+</ul>
+<hr>
+</article>
+</body>
+</html>

@@ -1,0 +1,443 @@
+{
+  "generated_at": "2026-07-14T19:43:34.117Z",
+  "source": "教材_BUYMAロードマップ_Brain公開用本文.md",
+  "source_sha256": "010c137d481ee59a10297fd6c4c1ae81bca0b6c61eb49a13cf4be93b271d3466",
+  "source_chars": 152973,
+  "chunks": [
+    {
+      "sequence": 0,
+      "title": "販売ページ・総合目次",
+      "file": "00_販売ページ・総合目次.html",
+      "source_start_line": 1,
+      "source_end_line": 125,
+      "markdown_chars": 2667,
+      "markdown_sha256": "933221ac4ac827da382de9d98e5427e704d31c81e9dc8cfc99f350f3ab24889a",
+      "html_sha256": "9946cb30cc9513da4340446ae190bf39f2a3926f97e3f492350cf3722a1d5cb7",
+      "image_count": 0
+    },
+    {
+      "sequence": 1,
+      "title": "第0章 全体ロードマップと実践前の注意",
+      "file": "01_第0章_全体ロードマップと実践前の注意.html",
+      "source_start_line": 126,
+      "source_end_line": 254,
+      "markdown_chars": 3821,
+      "markdown_sha256": "bc8a4582d2108a91eb70d11eb73a50ba0f3f3b5094eed5fd027381f5bb037e5c",
+      "html_sha256": "e9c9d2cdc22bc9d2cf9c4ae7e5e9b9ad1314217243c84eba9051041cf1a2297e",
+      "image_count": 3
+    },
+    {
+      "sequence": 2,
+      "title": "第1章 BUYMA START UP",
+      "file": "02_第1章_BUYMA_START_UP.html",
+      "source_start_line": 255,
+      "source_end_line": 562,
+      "markdown_chars": 6418,
+      "markdown_sha256": "ca0d9a322ef2f5ac1a0bc7fe367f6d5f315a3c1fc3d1560d80020541dc9bc016",
+      "html_sha256": "93b96ad8013dce842478ce106d2629a5d83001ac7daf1f79ea4af0b490b39251",
+      "image_count": 3
+    },
+    {
+      "sequence": 3,
+      "title": "第2章 BUYMA国内買付完全解説マニュアル",
+      "file": "03_第2章_BUYMA国内買付完全解説マニュアル.html",
+      "source_start_line": 563,
+      "source_end_line": 860,
+      "markdown_chars": 6800,
+      "markdown_sha256": "a00051a75a75c53989f526f9b5fb3111c78f6688b5b71f90022ce531d4fbb392",
+      "html_sha256": "8b4d703edf5d0885689daacf00a4428e7c0cb96660ee5fc2d2f487fcb2685a91",
+      "image_count": 3
+    },
+    {
+      "sequence": 4,
+      "title": "第3章 海外買付完全解説マニュアル",
+      "file": "04_第3章_海外買付完全解説マニュアル.html",
+      "source_start_line": 861,
+      "source_end_line": 1374,
+      "markdown_chars": 12993,
+      "markdown_sha256": "7a863ffbb8dea55d1b720f8adf2051a6fff8fd8da698a2c2cd09cec59e651784",
+      "html_sha256": "2619a5f22238a9e60d7370124a83b81d7f68acb15302daad5ab7475c5bf4da2c",
+      "image_count": 3
+    },
+    {
+      "sequence": 5,
+      "title": "第4章 直営店連携仕入れ完全解説マニュアル",
+      "file": "05_第4章_直営店連携仕入れ完全解説マニュアル.html",
+      "source_start_line": 1375,
+      "source_end_line": 1858,
+      "markdown_chars": 12642,
+      "markdown_sha256": "868ac3968cd8b2c3f962af9b2c2bede92cbfcffa5f76f41e73facd66de6d774b",
+      "html_sha256": "694c60669b0dc62485fff44c83df83e49ad8e93be314390431964eb050b71111",
+      "image_count": 3
+    },
+    {
+      "sequence": 6,
+      "title": "第5章 BUYMA オンラインVIP仕入れ完全解説マニュアル",
+      "file": "06_第5章_BUYMA_オンラインVIP仕入れ完全解説マニュアル.html",
+      "source_start_line": 1859,
+      "source_end_line": 2234,
+      "markdown_chars": 9794,
+      "markdown_sha256": "37052fb7257ac29da8891301e54360e281ca90963d3d0ab726568a236005e328",
+      "html_sha256": "29cca80ab94c43c89fc48dd31176172691fe05f168bf2a684fe62cf833517be9",
+      "image_count": 1
+    },
+    {
+      "sequence": 7,
+      "title": "第6章 BUYMAショップリスト",
+      "file": "07_第6章_BUYMAショップリスト.html",
+      "source_start_line": 2235,
+      "source_end_line": 2483,
+      "markdown_chars": 11095,
+      "markdown_sha256": "60791f42f94d6c1543413a99982a458eeca3e02bb705479e9143266e258d695a",
+      "html_sha256": "fc3166b81cd3e05aa816e42cce95fd332600558d148563b32d10fc2bfc532966",
+      "image_count": 2
+    },
+    {
+      "sequence": 8,
+      "title": "第7章 高値売りの戦略",
+      "file": "08_第7章_高値売りの戦略.html",
+      "source_start_line": 2484,
+      "source_end_line": 2748,
+      "markdown_chars": 6830,
+      "markdown_sha256": "43758caffbcd8d5271e0ad4d43cca7fc6f38e99eb76bbccb008e9fdf56a77f62",
+      "html_sha256": "07dbeb58744a5c0c8edda18dbab63061a38491636ff84f025afbb6bdf47cd6d8",
+      "image_count": 1
+    },
+    {
+      "sequence": 9,
+      "title": "第8章 出品外注化・採用・教育マニュアル",
+      "file": "09_第8章_出品外注化・採用・教育マニュアル.html",
+      "source_start_line": 2749,
+      "source_end_line": 3152,
+      "markdown_chars": 11104,
+      "markdown_sha256": "92ebc6b57eef1cf9ece02b6e333cd181f5093942857b978fa4106f9d74a3d572",
+      "html_sha256": "3ea991890526ed174a5e7e5bcb7141df7004b25777822f4c6cc249a1ecb7b6f1",
+      "image_count": 1
+    },
+    {
+      "sequence": 10,
+      "title": "第9章 出品外注化 実践資料集",
+      "file": "10_第9章_出品外注化_実践資料集.html",
+      "source_start_line": 3153,
+      "source_end_line": 4687,
+      "markdown_chars": 32563,
+      "markdown_sha256": "e5163d035d58e602310cf83a83c4cee11f9c17d82ffb747530450bdd35260456",
+      "html_sha256": "9419405d5b4f8d7ed05aa14d43602adb2740c36e283ad589bd658a0bef229c0a",
+      "image_count": 1
+    },
+    {
+      "sequence": 11,
+      "title": "第10章 フル外注化と運営設計",
+      "file": "11_第10章_フル外注化と運営設計.html",
+      "source_start_line": 4688,
+      "source_end_line": 4946,
+      "markdown_chars": 6427,
+      "markdown_sha256": "4813fd036367257c975654faf86b86e6e8d164c3285b569739478153b902a8b9",
+      "html_sha256": "31cce70c9d7045ba8ce30f2e2ef91f7bc4266ce313b04a5525cdfcb5b158fa95",
+      "image_count": 2
+    },
+    {
+      "sequence": 12,
+      "title": "第11章 BUYMA運営へのAI活用",
+      "file": "12_第11章_BUYMA運営へのAI活用.html",
+      "source_start_line": 4947,
+      "source_end_line": 5126,
+      "markdown_chars": 5202,
+      "markdown_sha256": "ecc0d07e64bdca72b2125eedf09ce8950e76fad374cb829de0817c96b1c566ac",
+      "html_sha256": "cb6f1e7b30f9a081667cbd12f620f4f160a9b5d7d9c02bd541492a0105918dd8",
+      "image_count": 2
+    },
+    {
+      "sequence": 13,
+      "title": "第12章 BUYMA実践プロンプト集",
+      "file": "13_第12章_BUYMA実践プロンプト集.html",
+      "source_start_line": 5127,
+      "source_end_line": 5544,
+      "markdown_chars": 8952,
+      "markdown_sha256": "cb85c979f197719bddb90d05d8309dcaecbb492d8b8a086411e44825928cb0db",
+      "html_sha256": "e268dca25304942e2edb2b54e8e4dc2135f5b11266ff166ca882380baf97e7fc",
+      "image_count": 2
+    },
+    {
+      "sequence": 14,
+      "title": "特典1 海外買付パートナー実務キット",
+      "file": "14_特典1_海外買付パートナー実務キット.html",
+      "source_start_line": 5545,
+      "source_end_line": 5752,
+      "markdown_chars": 3864,
+      "markdown_sha256": "5d0101a3eae8665ced35a3a78e28bf4fcb774cb8629db875847330e56916ed87",
+      "html_sha256": "c93459848104d6a12b0e9935938ef4045eddae207cc69903e1313c3797b0a96b",
+      "image_count": 1
+    },
+    {
+      "sequence": 15,
+      "title": "特典2 国内買付パートナー実務キット",
+      "file": "15_特典2_国内買付パートナー実務キット.html",
+      "source_start_line": 5753,
+      "source_end_line": 5903,
+      "markdown_chars": 2624,
+      "markdown_sha256": "138a4bc3a010040c32f0104e7ce97303d7f9ee4c74b8b40c0cec70d117f305c9",
+      "html_sha256": "a5bb86a8d2cc50e3bffe160e079fa112b24e5c0359f74c8b6e15fb2f98c262ae",
+      "image_count": 1
+    },
+    {
+      "sequence": 16,
+      "title": "特典3 直営店・VIP開拓キット",
+      "file": "16_特典3_直営店・VIP開拓キット.html",
+      "source_start_line": 5904,
+      "source_end_line": 6044,
+      "markdown_chars": 2648,
+      "markdown_sha256": "f210a8b1e51bbf052dfaf6d7a39a626d53657ce122c67ece2d73b0d09acd1fa5",
+      "html_sha256": "a3cabc3817eb9f6f53b2eb89f1596b032d519973ede2576221f203b3dc5798e7",
+      "image_count": 1
+    },
+    {
+      "sequence": 17,
+      "title": "特典4 出品外注化スターターキット",
+      "file": "17_特典4_出品外注化スターターキット.html",
+      "source_start_line": 6045,
+      "source_end_line": 6280,
+      "markdown_chars": 3265,
+      "markdown_sha256": "59833b74aa34542e312ac430dca128da3f2d8443b7108880f2c64a99cc8c0781",
+      "html_sha256": "9c30515d08452661a4d5788080b93ff1358fdc4076e665677ee20954993d681d",
+      "image_count": 1
+    },
+    {
+      "sequence": 18,
+      "title": "特典5 問い合わせ・運営テンプレート集",
+      "file": "18_特典5_問い合わせ・運営テンプレート集.html",
+      "source_start_line": 6281,
+      "source_end_line": 6481,
+      "markdown_chars": 3264,
+      "markdown_sha256": "6437e65bcfa13f5bc279b70da79f0da3c614f04a3ee1c2da711ed8fb39cb2d43",
+      "html_sha256": "4601529b5bbe3c6c369a08939a23a7ebaa7be592c8ae377ed2e3b468f2ee4796",
+      "image_count": 1
+    }
+  ],
+  "images": [
+    {
+      "sequence": 1,
+      "source_line": 128,
+      "section": "第0章 全体ロードマップと実践前の注意",
+      "alt": "第0章 全体ロードマップと実践前の注意",
+      "path": "BUYMA章頭挿絵/第0章_全体ロードマップと実践前の注意.png"
+    },
+    {
+      "sequence": 2,
+      "source_line": 130,
+      "section": "第0章 全体ロードマップと実践前の注意",
+      "alt": "0から運営者になるまで",
+      "path": "BUYMA本文挿絵/A00_第0章_0から運営者になるまで.png"
+    },
+    {
+      "sequence": 3,
+      "source_line": 253,
+      "section": "第0章 全体ロードマップと実践前の注意",
+      "alt": "START UP",
+      "path": "BUYMA本文挿絵/B01_区切り_START_UP.png"
+    },
+    {
+      "sequence": 4,
+      "source_line": 257,
+      "section": "第1章 BUYMA START UP",
+      "alt": "第1章 BUYMA START UP",
+      "path": "BUYMA章頭挿絵/第1章_BUYMA_START_UP.png"
+    },
+    {
+      "sequence": 5,
+      "source_line": 259,
+      "section": "第1章 BUYMA START UP",
+      "alt": "初出品までの5ステップ",
+      "path": "BUYMA本文挿絵/A01_第1章_初出品までの5ステップ.png"
+    },
+    {
+      "sequence": 6,
+      "source_line": 561,
+      "section": "第1章 BUYMA START UP",
+      "alt": "仕入れを構築する",
+      "path": "BUYMA本文挿絵/B02_区切り_仕入れを構築する.png"
+    },
+    {
+      "sequence": 7,
+      "source_line": 565,
+      "section": "第2章 BUYMA国内買付完全解説マニュアル",
+      "alt": "第2章 BUYMA国内買付完全解説マニュアル",
+      "path": "BUYMA章頭挿絵/第2章_BUYMA国内買付完全解説マニュアル.png"
+    },
+    {
+      "sequence": 8,
+      "source_line": 567,
+      "section": "第2章 BUYMA国内買付完全解説マニュアル",
+      "alt": "国内買付の基本フロー",
+      "path": "BUYMA本文挿絵/A02_第2章_国内買付の基本フロー.png"
+    },
+    {
+      "sequence": 9,
+      "source_line": 619,
+      "section": "第2章 BUYMA国内買付完全解説マニュアル",
+      "alt": "国内ショップを選ぶ判断基準",
+      "path": "BUYMA本文挿絵/D02_第2章_国内ショップを選ぶ判断基準.png"
+    },
+    {
+      "sequence": 10,
+      "source_line": 863,
+      "section": "第3章 海外買付完全解説マニュアル",
+      "alt": "第3章 海外買付完全解説マニュアル",
+      "path": "BUYMA章頭挿絵/第3章_海外買付完全解説マニュアル.png"
+    },
+    {
+      "sequence": 11,
+      "source_line": 865,
+      "section": "第3章 海外買付完全解説マニュアル",
+      "alt": "海外買付の基本フロー",
+      "path": "BUYMA本文挿絵/A03_第3章_海外買付の基本フロー.png"
+    },
+    {
+      "sequence": 12,
+      "source_line": 926,
+      "section": "第3章 海外買付完全解説マニュアル",
+      "alt": "仕入れ総額の考え方",
+      "path": "BUYMA本文挿絵/D03_第3章_仕入れ総額の考え方.png"
+    },
+    {
+      "sequence": 13,
+      "source_line": 1377,
+      "section": "第4章 直営店連携仕入れ完全解説マニュアル",
+      "alt": "第4章 直営店連携仕入れ完全解説マニュアル",
+      "path": "BUYMA章頭挿絵/第4章_直営店連携仕入れ完全解説マニュアル.png"
+    },
+    {
+      "sequence": 14,
+      "source_line": 1379,
+      "section": "第4章 直営店連携仕入れ完全解説マニュアル",
+      "alt": "直営店連携仕入れの確認経路",
+      "path": "BUYMA本文挿絵/A04_第4章_直営店連携仕入れの確認経路.png"
+    },
+    {
+      "sequence": 15,
+      "source_line": 1381,
+      "section": "第4章 直営店連携仕入れ完全解説マニュアル",
+      "alt": "直営店への問い合わせ前チェック",
+      "path": "BUYMA本文挿絵/D04_第4章_直営店への問い合わせ前チェック.png"
+    },
+    {
+      "sequence": 16,
+      "source_line": 1861,
+      "section": "第5章 BUYMA オンラインVIP仕入れ完全解説マニュアル",
+      "alt": "第5章 BUYMA オンラインVIP仕入れ完全解説マニュアル",
+      "path": "BUYMA章頭挿絵/第5章_BUYMAオンラインVIP仕入れ完全解説マニュアル.png"
+    },
+    {
+      "sequence": 17,
+      "source_line": 2237,
+      "section": "第6章 BUYMAショップリスト",
+      "alt": "第6章 BUYMAショップリスト",
+      "path": "BUYMA章頭挿絵/第6章_BUYMAショップリスト.png"
+    },
+    {
+      "sequence": 18,
+      "source_line": 2239,
+      "section": "第6章 BUYMAショップリスト",
+      "alt": "ショップリストの使い方",
+      "path": "BUYMA本文挿絵/A06_第6章_ショップリストの使い方.png"
+    },
+    {
+      "sequence": 19,
+      "source_line": 2486,
+      "section": "第7章 高値売りの戦略",
+      "alt": "第7章 高値売りの戦略",
+      "path": "BUYMA章頭挿絵/第7章_高値売りの戦略.png"
+    },
+    {
+      "sequence": 20,
+      "source_line": 2751,
+      "section": "第8章 出品外注化・採用・教育マニュアル",
+      "alt": "第8章 出品外注化・採用・教育マニュアル",
+      "path": "BUYMA章頭挿絵/第8章_出品外注化・採用・教育マニュアル.png"
+    },
+    {
+      "sequence": 21,
+      "source_line": 3155,
+      "section": "第9章 出品外注化 実践資料集",
+      "alt": "第9章 出品外注化 実践資料集",
+      "path": "BUYMA章頭挿絵/第9章_出品外注化_実践資料集.png"
+    },
+    {
+      "sequence": 22,
+      "source_line": 4690,
+      "section": "第10章 フル外注化と運営設計",
+      "alt": "第10章 フル外注化と運営設計",
+      "path": "BUYMA章頭挿絵/第10章_フル外注化と運営設計.png"
+    },
+    {
+      "sequence": 23,
+      "source_line": 4769,
+      "section": "第10章 フル外注化と運営設計",
+      "alt": "外注化ツールの使い分け",
+      "path": "BUYMA本文挿絵/A10_第10章_外注化ツールの使い分け.png"
+    },
+    {
+      "sequence": 24,
+      "source_line": 4949,
+      "section": "第11章 BUYMA運営へのAI活用",
+      "alt": "第11章 BUYMA運営へのAI活用",
+      "path": "BUYMA章頭挿絵/第11章_BUYMA運営へのAI活用.png"
+    },
+    {
+      "sequence": 25,
+      "source_line": 4974,
+      "section": "第11章 BUYMA運営へのAI活用",
+      "alt": "AIに補助させる部分と人が確認する部分",
+      "path": "BUYMA本文挿絵/D11_第11章_AIと人の役割分担.png"
+    },
+    {
+      "sequence": 26,
+      "source_line": 5129,
+      "section": "第12章 BUYMA実践プロンプト集",
+      "alt": "第12章 BUYMA実践プロンプト集",
+      "path": "BUYMA章頭挿絵/第12章_BUYMA実践プロンプト集.png"
+    },
+    {
+      "sequence": 27,
+      "source_line": 5135,
+      "section": "第12章 BUYMA実践プロンプト集",
+      "alt": "弱いプロンプトと改善後のプロンプト",
+      "path": "BUYMA本文挿絵/D12_第12章_弱いプロンプトと改善後.png"
+    },
+    {
+      "sequence": 28,
+      "source_line": 5547,
+      "section": "特典1 海外買付パートナー実務キット",
+      "alt": "特典1 海外買付パートナー実務キット",
+      "path": "BUYMA本文挿絵/C01_特典1_海外買付パートナー実務キット.png"
+    },
+    {
+      "sequence": 29,
+      "source_line": 5755,
+      "section": "特典2 国内買付パートナー実務キット",
+      "alt": "特典2 国内買付パートナー実務キット",
+      "path": "BUYMA本文挿絵/C02_特典2_国内買付パートナー実務キット.png"
+    },
+    {
+      "sequence": 30,
+      "source_line": 5906,
+      "section": "特典3 直営店・VIP開拓キット",
+      "alt": "特典3 直営店・VIP開拓キット",
+      "path": "BUYMA本文挿絵/C03_特典3_直営店・VIP開拓キット.png"
+    },
+    {
+      "sequence": 31,
+      "source_line": 6047,
+      "section": "特典4 出品外注化スターターキット",
+      "alt": "特典4 出品外注化スターターキット",
+      "path": "BUYMA本文挿絵/C04_特典4_出品外注化スターターキット.png"
+    },
+    {
+      "sequence": 32,
+      "source_line": 6283,
+      "section": "特典5 問い合わせ・運営テンプレート集",
+      "alt": "特典5 問い合わせ・運営テンプレート集",
+      "path": "BUYMA本文挿絵/C05_特典5_問い合わせ・運営テンプレート集.png"
+    }
+  ]
+}
