@@ -107,6 +107,9 @@ youtube-pipeline（実スレscrape版）の**兄弟**＝下流（組み立て→
 - `_台本.md`（人間可読・構成見出し付き）
 - `~/Desktop` への CSV 複製＋ `ymm4_user.dic`（STEP6）
 - ※**xlsx は作らない**（オーナー決定2026-06-20）。目視は show_widget の会話ビューアを**単発依頼で**出す。
+- 📊 **出荷したら修正メトリクスを1行記録**（script-fix-metrics・2026-07-14導入）:
+  `python3 ~/2nd-Brain/00_システム/20_Agent_Portable/scripts/record_fix_metrics.py ship --folder YYYY-MM-DD_テーマ --ai-regen <再生成回数> --owner-fix <出荷前の指摘回数> --violations F04,F07`
+  （違反ゼロなら --violations 省略。IDは台本執筆ルール.mdのタグ。出荷後の修正指示は `fix` サブコマンドで都度追記。仕様: `specs/script-fix-metrics-設計書.md`）
 
 ## 学習と自動化グラデーション（Phase2・2026-06-21実装）
 判断ルールは `learning-log.md` に prose で（値は汎化しない）。STEP別の成熟度は **`scripts/maturity.py`＋`automation-state.json`** で機械管理する。
