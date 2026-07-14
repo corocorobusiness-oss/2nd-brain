@@ -3,7 +3,7 @@
 初回検品: 2026-07-10  
 現行本文再検品: 2026-07-14  
 対象本文: `教材_BUYMAロードマップ_Brain公開用本文.md`
-対象本文SHA-256: `f3e30191a6bedda4e7a0a0f5b0ab6d9f0e3dd576942bacb4dfde068dfd0b3d75`
+対象本文SHA-256: `010c137d481ee59a10297fd6c4c1ae81bca0b6c61eb49a13cf4be93b271d3466`
 
 ## 総合判定
 
