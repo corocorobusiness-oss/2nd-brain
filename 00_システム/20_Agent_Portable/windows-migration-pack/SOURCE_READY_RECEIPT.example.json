@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "generated_at": "REPLACE_WITH_TIMESTAMP",
+  "generated_on": "Mac mini",
+  "status": "NOT_VERIFIED_EXAMPLE",
+  "repositories": [
+    {
+      "name": "2nd-Brain-master",
+      "local_head": "REPLACE_WITH_FULL_SHA",
+      "remote_main": "REPLACE_WITH_FULL_SHA",
+      "worktree_clean": false,
+      "equal": false
+    },
+    {
+      "name": "youtube",
+      "local_head": "REPLACE_WITH_FULL_SHA",
+      "remote_main": "REPLACE_WITH_FULL_SHA",
+      "worktree_clean": false,
+      "equal": false
+    },
+    {
+      "name": "agent-skills",
+      "local_head": "REPLACE_WITH_FULL_SHA",
+      "remote_main": "REPLACE_WITH_FULL_SHA",
+      "worktree_clean": false,
+      "equal": false
+    },
+    {
+      "name": "agent-adapters",
+      "local_head": "REPLACE_WITH_FULL_SHA",
+      "remote_main": "REPLACE_WITH_FULL_SHA",
+      "worktree_clean": false,
+      "equal": false
+    }
+  ],
+  "rule": "Windows clone is blocked until status is PASS and all four equal fields are true."
+}
