@@ -1,6 +1,6 @@
 # NOW
 
-最終更新: 2026-07-02
+最終更新: 2026-07-14
 
 ## 今の運用方針
 
@@ -20,6 +20,15 @@
 2. AI自動化ジョブを台帳で管理し、ゾンビ化を防ぐ
 3. Second BrainをClaude Code / Codex共通の事業OSとして整える
 4. YouTube制作フローを安定運用する
+
+## YMM4動画編集AI社員（進行中）
+
+- portable v1.1.1は独立peer監査でACCEPT。fresh installのmachine gate、PRE_VOICE、診断用self-baseline strict QAはPASS
+- Level 1は未完了。残りは、物理WindowsノートPCでの搬送検証 → machine gate → 実YMM4辞書311件適用・読戻し → 別名保存 → 保存後の正解表を2回抽出して一致固定 → 新規実レンダー → golden比較
+- 旧teacher由来の正解表は720差分でFAILし、fail-closedが正常に働いた。診断用self-baselineをLevel 2の正解表へ昇格しない
+- Windowsノートでは、実行版を`C:\Tools\YMM4-AI\versions\1.1.1`へ凍結し、開発は別コピー`C:\Dev\YMM4-AI\1.1.2-dev`で続ける
+- SSD搬送用handoffはローカルで265 payload / 3,519,083,195 bytesをmanifest検証済み。外付けSSD実体がParallelsへ未共有のため、SSD配置は未完了
+- 現在起動中の旧YMM4は未保存確認なしに強制終了しない。Level 1が完了するまでLevel 2を開始しない
 
 ## AIが最初に見る場所
 

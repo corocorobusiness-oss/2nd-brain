@@ -5,6 +5,7 @@
 ## 0. 判定ルール
 
 - すべての必須項目がPASSするまで移行完了と書かない
+- Parallels内のPASSだけで物理WindowsノートPCの項目へチェックを付けない
 - 元のWindows、SSD、正本ファイルを上書き・削除しない
 - 失敗時は新しいレポートへ残し、同名出力を再利用しない
 
@@ -44,6 +45,18 @@
 - [ ] asset-pipelineのスモークテストPASS
 - [ ] インストーラーを2回実行して二重配置0
 
+## 4A. Windowsノート開発環境
+
+- [ ] 実行版を`C:\Tools\YMM4-AI\versions\1.1.1`へ導入し、直接編集しない
+- [ ] 開発用を`C:\Dev\YMM4-AI\1.1.2-dev`へ物理コピー
+- [ ] 開発用で新しいGit baseline commitを作成
+- [ ] 開発開始前の全テスト、security scan、manifest verifyがPASS
+- [ ] production Pythonは固定絶対パス + `-B`
+- [ ] テスト後の`__pycache__` / `.pyc` 0件
+- [ ] 開発リポジトリ内の秘密情報、`machine.local.json`、YMM4 user設定0件
+- [ ] 変更は新versionとして凍結し、installer経由で実行版へ導入
+- [ ] Git commit/tagまたは新bundleをMac側正本へ一方向に返却し、同時編集しない
+
 ## 5. ゴールデン案件取込
 
 - [ ] ゴールデンパックmanifest一致
@@ -73,8 +86,10 @@
 ## 7. YMM4実機
 
 - [ ] YMM4 4.53.0.9で開く
+- [ ] 物理WindowsノートPCで実施した証拠を残す
 - [ ] 読込エラー0
 - [ ] 保存後に再QA PASS
+- [ ] 保存後の正解表を2回抽出しbyte一致。旧teacher正解表と診断用self-baselineは使用しない
 - [ ] 18:25地点が正解見本と一致
 - [ ] 素材名に不要なハッシュ接尾辞が表示されない
 - [ ] 字幕は漢字表示、読みはHatsuon/単語辞書どおり

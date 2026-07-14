@@ -67,3 +67,7 @@ AIエージェントが会話を通じて学んだこと。次回以降に活か
 - （Codex）`agent-run` の Codex 分岐を最小配線。`AGENT_VENDOR=codex agent-run -p "..."` は `codex exec` で動作確認済み。Claude専用フラグ（`--permission-mode` / `--allowedTools` 等）はfail-closeするため、既存自動化の一括切替はまだ不可。
 - 2026-07-03 Codex: rules.md基本方針へ『Fable司令塔・Codex実行』型の参照1行を追記（採用GOによる・詳細はfable-command-codex-execution.md）
 - 2026-07-03 Fable(あおい): 実行ミラー `~/agent-adapters/claude/CLAUDE.md` の「AI運用の現在地」へ『Fable司令塔・Codex実行』型の参照1行を追記（二層同期の拾い・祐馬さんミラーGO。正本rules.md側は同日Codexが追記済み＝両層一致）
+
+## 2026-07-14
+
+- 同一VMの事前PASSは物理PC受入ではない。正解表は実YMM4往復保存後に2回抽出して固定し、release runtimeとdev working copyを分離する。Pythonは固定絶対パス + `-B`、実行前後のmanifest一致で自己汚染を検出する。

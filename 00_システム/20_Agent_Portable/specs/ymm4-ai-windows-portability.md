@@ -1,7 +1,7 @@
 # YMM4動画編集AI社員 Windows移行仕様
 
 更新: 2026-07-14  
-状態: フェーズ1実装中。応仁の乱ゴールデン案件の完成MP4とクリーンルート復元試験がPASSするまで「別PC移行完了」とは扱わない。
+状態: portable v1.1.1のコード監査と同一VM事前受入はPASS。物理WindowsノートPC受入とLevel 1の実YMM4往復・新規レンダーは未完了であり、「別PC移行完了」とは扱わない。
 
 ## 目的
 
@@ -12,6 +12,29 @@ YMM4動画編集AI社員を、現在のParallels Windowsだけでなく、別の
 - コード側: Git管理できる小型の `YMM4-AI-portable` バンドル
 - 媒体側: SSD上のハッシュ付き `golden-001-onin` パック
 - Second Brain: 仕様、チェックリスト、判断ログだけ。動画・素材・認証情報は置かない
+
+## 2026-07-14 portable v1.1.1 事前受入証拠
+
+- bundle manifest SHA-256: `E6BBE92D7C53AD9F6A18E79F2249ABD582536319FD025ACBC4526E31B7AF00F8`
+- manifest payload: 121 files / 1,673,779 bytes。manifest自身を含む物理ファイルは122件
+- fresh installでsourceとinstalledの欠落・余分・SHA差分0
+- machine gate: PASS、failed 0、Python実行ファイルhashの情報WARN 1のみ
+- PRE_VOICE: PASS。DIC 311件、SHA-256 `C705F55C1DD44DEE9A7BDBA58B8249DA7D5CDD9115BB75686375500C4965D31A`、Word完全一致、伏字有効0
+- clean YMMP: 482 items / 34,605 frames / 205 refs / 106 unique / missing 0
+- 診断用self-baseline strict QA: PASS、path maps 0、入力不変
+- 独立peer監査: ACCEPT、P0/P1/P2すべて0
+- Windowsノート搬送handoffのローカルmanifest: 265 payload / 3,519,083,195 bytes、SHA-256 `E5A5EEBA2BC50D4019D2499BC0A1353F95C2AD307DC2FB787BF9576F94531FFE`、verify PASS
+
+旧`reference_timeline_clean_local.json`はteacher由来であり、clean YMMPとの比較は720 errorsでFAILした。これは古い正解表を誤って合格させないfail-closedの正常動作である。self-baseline PASSはLevel 1完了の証明ではない。最終正解表は、物理Windowsノートの実YMM4で開いて別名保存した直後に2回抽出し、byte一致を確認してから固定する。
+
+## Windowsノートで開発を続ける契約
+
+- 実行版: `C:\Tools\YMM4-AI\versions\1.1.1`。凍結し、直接編集しない
+- 開発版: `C:\Dev\YMM4-AI\1.1.2-dev`。物理コピーし、新しいGit baseline commitから開発する
+- productionのPythonは固定した絶対`YMM4_G2P_PYTHON`と`-B`で実行する。テスト前後のmanifest一致と`__pycache__` / `.pyc` 0件を必須にする
+- `machine.local.json`、認証情報、Cookie、YMM4 user設定、ログ、キャッシュはGit・SSD搬送対象外
+- installed runtime内で修正せず、開発版でtest → security scan → manifest → 新version化 → installer経由で導入する
+- Mac側とWindows側を同時編集しない。ノートPCの変更はGit commit/tagまたは新bundleでMac側正本へ一方向に戻し、ノートPC作業コピーを第二の正本にしない
 
 ## 正本
 
