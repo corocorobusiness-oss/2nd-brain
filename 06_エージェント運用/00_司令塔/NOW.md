@@ -23,12 +23,15 @@
 
 ## YMM4動画編集AI社員（進行中）
 
-- portable v1.1.1は独立peer監査でACCEPT。fresh installのmachine gate、PRE_VOICE、診断用self-baseline strict QAはPASS
-- Level 1は未完了。残りは、物理WindowsノートPCでの搬送検証 → machine gate → 実YMM4辞書311件適用・読戻し → 別名保存 → 保存後の正解表を2回抽出して一致固定 → 新規実レンダー → golden比較
+- 開発方針を訂正。物理Windowsノートは移行可能な状態まで準備し、Level 1〜5の開発は現在のParallels Windowsで完成させる。物理ノート受入は後日実施し、現在の開発を止める条件にしない
+- Windows移行bootstrap v1.0.0は7ファイル・159,934 bytesで凍結。manifest SHA-256 `CF93D9D6C4F14F2B41FAFDC05572EB6B43405495D57697478A0D9A6FB89DFC1E`、検証スクリプトSHA-256 `A16401DBCF69CEA261B8700E63213970A4016DAF4966C598001EBC929015AFBC`。handoffは265ファイル・3,519,083,195 bytes、transport SHA-256 `E5A5EEBA2BC50D4019D2499BC0A1353F95C2AD307DC2FB787BF9576F94531FFE`で検証済み
+- 現在PCのYMM4ローカルコピーは4,506ファイル・4,028,195,195 bytes、tree SHA-256 `4807D45CFB5613723746944340FB77BE89A8B3CE0D74E696B28CD690D52DCBE5`で一致し、machine gate PASS。Level 1は未完了
+- Level 1のローカルrebaseは205/205参照、106/106素材、内部参照2/2でPASS。出力SHA-256 `C465C3A09BA4F1200C1F49855694FA5080B588D80021B1701CC929C587656F7B`
+- 実YMM4辞書はまだWord 612件（有効605）で案件311件と不一致。Word 311・伏字0の候補ファイルはPASSしたが、候補を実辞書へ直接適用した扱いにはしない
+- 残りは、呼び出し可能なComputer Use接続 → 伏字有効0 → 単語辞書リセット → 案件DICのみインポート → 実辞書PRE_VOICE → CSV/音声更新 → 別名保存 → 正解表2回一致 → 新規レンダー → golden比較
 - 旧teacher由来の正解表は720差分でFAILし、fail-closedが正常に働いた。診断用self-baselineをLevel 2の正解表へ昇格しない
-- Windowsノートでは、実行版を`C:\Tools\YMM4-AI\versions\1.1.1`へ凍結し、開発は別コピー`C:\Dev\YMM4-AI\1.1.2-dev`で続ける
-- SSD搬送用handoffはローカルで265 payload / 3,519,083,195 bytesをmanifest検証済み。外付けSSD実体がParallelsへ未共有のため、SSD配置は未完了
-- 現在起動中の旧YMM4は未保存確認なしに強制終了しない。Level 1が完了するまでLevel 2を開始しない
+- 現タスクではComputer Useの呼び出し可能ツールが接続されていないため、GUI工程は未実行。最終確認時点ではYMM4プロセスは起動していない。Level 1が完了するまでLevel 2を開始しない
+- 人物素材は、じたんだの青系・胸上・透過PNG・横512px（縦0=比率維持）・同一デザイン5表情を基準に固定。有名人物は定番像を優先し、顔だけ/SVG/旧320px版/若年版を自動採用しない
 
 ## AIが最初に見る場所
 

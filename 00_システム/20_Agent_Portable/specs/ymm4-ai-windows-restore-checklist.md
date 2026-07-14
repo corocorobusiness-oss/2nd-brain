@@ -45,17 +45,26 @@
 - [ ] asset-pipelineのスモークテストPASS
 - [ ] インストーラーを2回実行して二重配置0
 
-## 4A. Windowsノート開発環境
+## 4A. 現在のParallels開発環境
 
-- [ ] 実行版を`C:\Tools\YMM4-AI\versions\1.1.1`へ導入し、直接編集しない
-- [ ] 開発用を`C:\Dev\YMM4-AI\1.1.2-dev`へ物理コピー
-- [ ] 開発用で新しいGit baseline commitを作成
-- [ ] 開発開始前の全テスト、security scan、manifest verifyがPASS
-- [ ] production Pythonは固定絶対パス + `-B`
-- [ ] テスト後の`__pycache__` / `.pyc` 0件
-- [ ] 開発リポジトリ内の秘密情報、`machine.local.json`、YMM4 user設定0件
-- [ ] 変更は新versionとして凍結し、installer経由で実行版へ導入
+- [x] 実行版v1.1.1と開発版1.1.2-devを分離し、実行版を直接編集しない
+- [x] YMM4ローカルコピー4,506ファイル・4,028,195,195 bytes・tree SHA一致
+- [x] machine gate PASS
+- [x] production Pythonを固定絶対パス + `-B`で使用
+- [x] 開発リポジトリ内へ認証情報やYMM4 user設定を混入させない
+- [ ] Level 1〜5の変更を新versionとして凍結し、検証後に実行版へ導入
 - [ ] Git commit/tagまたは新bundleをMac側正本へ一方向に返却し、同時編集しない
+
+## 4B. 将来の物理Windowsノート受入
+
+- [x] bootstrap v1.0.0を7ファイル・159,934 bytesで凍結し、manifestと検証スクリプトのSHAを固定
+- [x] handoff 265ファイル・3,519,083,195 bytesのtransport manifestを検証
+- [ ] 物理ノートへbootstrap/handoffを搬送し、再検証
+- [ ] 実行版を`C:\Tools\YMM4-AI\versions\<version>`へ導入し、直接編集しない
+- [ ] 開発用を`C:\Dev\YMM4-AI\<version>-dev`へ物理コピー
+- [ ] インストーラーを2回実行して二重配置・意図しない上書き0
+- [ ] ParallelsのPASSを流用せず、物理ノートでmachine gate・全テスト・YMM4開閉保存・レンダーを再実施
+- [ ] bootstrapを直接更新せず、変更が必要なら新バージョンを作る
 
 ## 5. ゴールデン案件取込
 
@@ -85,8 +94,10 @@
 
 ## 7. YMM4実機
 
+- [ ] 現タスクで呼び出し可能なComputer Use接続を確認
 - [ ] YMM4 4.53.0.9で開く
-- [ ] 物理WindowsノートPCで実施した証拠を残す
+- [ ] 現在のParallelsでLevel 1の実施証拠を残す
+- [ ] 物理WindowsノートPCでの受入証拠は後日、別判定として残す
 - [ ] 読込エラー0
 - [ ] 保存後に再QA PASS
 - [ ] 保存後の正解表を2回抽出しbyte一致。旧teacher正解表と診断用self-baselineは使用しない
