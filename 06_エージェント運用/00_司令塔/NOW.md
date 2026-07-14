@@ -1,6 +1,6 @@
 # NOW
 
-最終更新: 2026-07-14
+最終更新: 2026-07-15
 
 ## 今の運用方針
 
@@ -24,14 +24,15 @@
 ## YMM4動画編集AI社員（進行中）
 
 - 開発方針を訂正。物理Windowsノートは移行可能な状態まで準備し、Level 1〜5の開発は現在のParallels Windowsで完成させる。物理ノート受入は後日実施し、現在の開発を止める条件にしない
-- Windows移行bootstrap v1.0.0は7ファイル・159,934 bytesで凍結。manifest SHA-256 `CF93D9D6C4F14F2B41FAFDC05572EB6B43405495D57697478A0D9A6FB89DFC1E`、検証スクリプトSHA-256 `A16401DBCF69CEA261B8700E63213970A4016DAF4966C598001EBC929015AFBC`。handoffは265ファイル・3,519,083,195 bytes、transport SHA-256 `E5A5EEBA2BC50D4019D2499BC0A1353F95C2AD307DC2FB787BF9576F94531FFE`で検証済み
+- Windows移行bootstrap v1.1.0は7ファイル・161,126 bytesで凍結。manifest SHA-256 `8AA4A02CC25CA1B9BB9602F0332D174907AEF10E2A40EEC72347AEBDBDF71C58`。portable release v1.1.2は165ファイル・2,419,397 bytes、manifest SHA-256 `65BD5E00950C8833DBBEBC9E73F71181C7361F1FC70F6432C838841817D4CEFC`で検証済み
+- Windowsノート移行用handoffの正本はSSD `/Volumes/SSD/YouTube/YMM4-AI-HANDOFF-20260714-v1.1.2`（Windows `X:\YouTube\YMM4-AI-HANDOFF-20260714-v1.1.2`）。328ファイル・3,551,386,472 bytes、transport SHA-256 `7346B2D8311490BE9092BF24D9F844D89D95D6225F4B0D4A2B953AA783EAF543`を全件検証済み。SSD検証後に本体の旧・新handoffを削除し約6.58GiBを回収、現行作業案件だけC:へ保持
 - 現在PCのYMM4ローカルコピーは4,506ファイル・4,028,195,195 bytes、tree SHA-256 `4807D45CFB5613723746944340FB77BE89A8B3CE0D74E696B28CD690D52DCBE5`で一致し、machine gate PASS。Level 1は未完了
 - Level 1のローカルrebaseは205/205参照、106/106素材、内部参照2/2でPASS。出力SHA-256 `C465C3A09BA4F1200C1F49855694FA5080B588D80021B1701CC929C587656F7B`
 - 実YMM4辞書はまだWord 612件（有効605）で案件311件と不一致。Word 311・伏字0の候補ファイルはPASSしたが、候補を実辞書へ直接適用した扱いにはしない
 - 残りは、呼び出し可能なComputer Use接続 → 伏字有効0 → 単語辞書リセット → 案件DICのみインポート → 実辞書PRE_VOICE → CSV/音声更新 → 別名保存 → 正解表2回一致 → 新規レンダー → golden比較
 - 旧teacher由来の正解表は720差分でFAILし、fail-closedが正常に働いた。診断用self-baselineをLevel 2の正解表へ昇格しない
-- 現タスクではComputer Useの呼び出し可能ツールが接続されていないため、GUI工程は未実行。最終確認時点ではYMM4プロセスは起動していない。Level 1が完了するまでLevel 2を開始しない
-- 人物素材は、じたんだの青系・胸上・透過PNG・横512px（縦0=比率維持）・同一デザイン5表情を基準に固定。有名人物は定番像を優先し、顔だけ/SVG/旧320px版/若年版を自動採用しない
+- Computer Useプラグインは有効で、2026-07-15に実行機能設定も有効化した。現在タスクは変更前のツール構成を保持しているためCodex Windowsアプリの再起動・タスク再読込待ち。GUI工程は未実行、YMM4プロセスは未起動。Level 1が完了するまでLevel 2を開始しない
+- 人物素材は、じたんだの青系・胸上・透過PNG・横512px（サイト入力の縦0=比率維持、実出力512×641px）・同一デザイン5表情を基準に固定。人物パックmanifest SHA-256は `929CC2BA6A4D2E4CCE58338BF10F9FF112E2F45D63C47BFCA46ACFE97343134A`。有名人物は定番像を優先し、顔だけ/SVG/旧320px版/若年版を自動採用しない
 
 ## AIが最初に見る場所
 
