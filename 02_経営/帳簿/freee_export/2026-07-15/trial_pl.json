@@ -1,0 +1,177 @@
+{
+ "trial_pl": {
+  "company_id": 12511831,
+  "start_date": "2026-01-01",
+  "end_date": "2026-07-15",
+  "created_at": "2026-07-15T12:04:26+09:00",
+  "balances": [
+   {
+    "account_item_id": 1024926858,
+    "account_item_name": "売上高",
+    "account_category_name": "収入金額",
+    "hierarchy_level": 2,
+    "opening_balance": 0,
+    "debit_amount": 0,
+    "credit_amount": 1120527,
+    "closing_balance": 1120527,
+    "composition_ratio": 99.81
+   },
+   {
+    "account_item_id": 1024926864,
+    "account_item_name": "雑収入",
+    "account_category_name": "収入金額",
+    "hierarchy_level": 2,
+    "opening_balance": 0,
+    "debit_amount": 0,
+    "credit_amount": 2127,
+    "closing_balance": 2127,
+    "composition_ratio": 0.19
+   },
+   {
+    "account_category_name": "収入金額",
+    "total_line": true,
+    "hierarchy_level": 1,
+    "parent_account_category_name": "売上総利益",
+    "opening_balance": 0,
+    "debit_amount": 0,
+    "credit_amount": 1122654,
+    "closing_balance": 1122654,
+    "composition_ratio": 100.0
+   },
+   {
+    "account_category_name": "売上原価",
+    "total_line": true,
+    "hierarchy_level": 2,
+    "parent_account_category_name": "売上総利益",
+    "opening_balance": 0,
+    "debit_amount": 0,
+    "credit_amount": 0,
+    "closing_balance": 0,
+    "composition_ratio": 0.0
+   },
+   {
+    "account_category_name": "売上総利益",
+    "total_line": true,
+    "hierarchy_level": 1,
+    "parent_account_category_name": "営業損益",
+    "opening_balance": 0,
+    "debit_amount": 0,
+    "credit_amount": 1122654,
+    "closing_balance": 1122654,
+    "composition_ratio": 100.0
+   },
+   {
+    "account_item_id": 1024926935,
+    "account_item_name": "研修費",
+    "account_category_name": "経費",
+    "hierarchy_level": 3,
+    "opening_balance": 0,
+    "debit_amount": 32062,
+    "credit_amount": 0,
+    "closing_balance": 32062,
+    "composition_ratio": 2.86
+   },
+   {
+    "account_item_id": 1024926876,
+    "account_item_name": "通信費",
+    "account_category_name": "経費",
+    "hierarchy_level": 3,
+    "opening_balance": 0,
+    "debit_amount": 77481,
+    "credit_amount": 0,
+    "closing_balance": 77481,
+    "composition_ratio": 6.9
+   },
+   {
+    "account_item_id": 1024926881,
+    "account_item_name": "消耗品費",
+    "account_category_name": "経費",
+    "hierarchy_level": 3,
+    "opening_balance": 0,
+    "debit_amount": 21448,
+    "credit_amount": 0,
+    "closing_balance": 21448,
+    "composition_ratio": 1.91
+   },
+   {
+    "account_item_id": 1024926896,
+    "account_item_name": "支払手数料",
+    "account_category_name": "経費",
+    "hierarchy_level": 3,
+    "opening_balance": 0,
+    "debit_amount": 75,
+    "credit_amount": 0,
+    "closing_balance": 75,
+    "composition_ratio": 0.01
+   },
+   {
+    "account_item_id": 1024926897,
+    "account_item_name": "車両費",
+    "account_category_name": "経費",
+    "hierarchy_level": 3,
+    "opening_balance": 0,
+    "debit_amount": 61926,
+    "credit_amount": 0,
+    "closing_balance": 61926,
+    "composition_ratio": 5.52
+   },
+   {
+    "account_category_name": "経費",
+    "total_line": true,
+    "hierarchy_level": 2,
+    "parent_account_category_name": "営業損益",
+    "opening_balance": 0,
+    "debit_amount": 192992,
+    "credit_amount": 0,
+    "closing_balance": 192992,
+    "composition_ratio": 17.19
+   },
+   {
+    "account_category_name": "営業損益",
+    "total_line": true,
+    "hierarchy_level": 1,
+    "parent_account_category_name": "差引損益計算",
+    "opening_balance": 0,
+    "debit_amount": 192992,
+    "credit_amount": 1122654,
+    "closing_balance": 929662,
+    "composition_ratio": 82.81
+   },
+   {
+    "account_category_name": "繰戻額等",
+    "total_line": true,
+    "hierarchy_level": 2,
+    "parent_account_category_name": "引当金等",
+    "opening_balance": 0,
+    "debit_amount": 0,
+    "credit_amount": 0,
+    "closing_balance": 0,
+    "composition_ratio": 0.0
+   },
+   {
+    "account_category_name": "繰入額等",
+    "total_line": true,
+    "hierarchy_level": 2,
+    "parent_account_category_name": "引当金等",
+    "opening_balance": 0,
+    "debit_amount": 0,
+    "credit_amount": 0,
+    "closing_balance": 0,
+    "composition_ratio": 0.0
+   },
+   {
+    "account_category_name": "差引損益計算",
+    "total_line": true,
+    "hierarchy_level": 1,
+    "parent_account_category_name": "資本",
+    "opening_balance": 0,
+    "debit_amount": 192992,
+    "credit_amount": 1122654,
+    "closing_balance": 929662,
+    "composition_ratio": 82.81
+   }
+  ]
+ },
+ "up_to_date": true,
+ "up_to_date_reasons": []
+}

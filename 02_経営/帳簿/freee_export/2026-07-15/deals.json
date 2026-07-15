@@ -1,0 +1,365 @@
+{
+ "count": 9,
+ "deals": [
+  {
+   "id": 3614397622,
+   "company_id": 12511831,
+   "issue_date": "2026-06-24",
+   "due_date": null,
+   "amount": 6000,
+   "due_amount": 0,
+   "type": "expense",
+   "partner_id": 114973619,
+   "partner_code": null,
+   "ref_number": null,
+   "status": "settled",
+   "deal_origin_name": "自動で経理",
+   "details": [
+    {
+     "id": 9833087281,
+     "account_item_id": 1024926833,
+     "tax_code": 2,
+     "partner_id": 114973619,
+     "partner_code": null,
+     "item_id": null,
+     "section_id": null,
+     "tag_ids": [],
+     "amount": 6000,
+     "vat": 0,
+     "description": "",
+     "entry_side": "debit"
+    }
+   ],
+   "payments": [
+    {
+     "id": 9833087282,
+     "date": "2026-06-24",
+     "from_walletable_type": "bank_account",
+     "from_walletable_id": 4635538,
+     "amount": 6000
+    }
+   ],
+   "receipts": []
+  },
+  {
+   "id": 3614397615,
+   "company_id": 12511831,
+   "issue_date": "2026-06-23",
+   "due_date": null,
+   "amount": 19744,
+   "due_amount": 0,
+   "type": "income",
+   "partner_id": 112727574,
+   "partner_code": null,
+   "ref_number": null,
+   "status": "settled",
+   "deal_origin_name": "自動で経理",
+   "details": [
+    {
+     "id": 9833087267,
+     "account_item_id": 1024926858,
+     "tax_code": 129,
+     "partner_id": 112727574,
+     "partner_code": null,
+     "item_id": null,
+     "section_id": null,
+     "tag_ids": [],
+     "amount": 19744,
+     "vat": 1794,
+     "description": "",
+     "entry_side": "credit"
+    }
+   ],
+   "payments": [
+    {
+     "id": 9833087268,
+     "date": "2026-06-23",
+     "from_walletable_type": "bank_account",
+     "from_walletable_id": 4635538,
+     "amount": 19744
+    }
+   ],
+   "receipts": []
+  },
+  {
+   "id": 3614398502,
+   "company_id": 12511831,
+   "issue_date": "2026-06-22",
+   "due_date": null,
+   "amount": 66919,
+   "due_amount": 0,
+   "type": "income",
+   "partner_id": null,
+   "partner_code": null,
+   "ref_number": "",
+   "status": "settled",
+   "deal_origin_name": "手動",
+   "details": [
+    {
+     "id": 9833089759,
+     "account_item_id": 1024926858,
+     "tax_code": 129,
+     "partner_id": 0,
+     "partner_code": null,
+     "item_id": null,
+     "section_id": null,
+     "tag_ids": [],
+     "amount": 66919,
+     "vat": 6083,
+     "description": "Google AdSense収益 2026-06-22",
+     "entry_side": "credit"
+    }
+   ],
+   "payments": [
+    {
+     "id": 9833089760,
+     "date": "2026-06-22",
+     "from_walletable_type": "bank_account",
+     "from_walletable_id": 4635538,
+     "amount": 66919
+    }
+   ],
+   "receipts": []
+  },
+  {
+   "id": 3614397605,
+   "company_id": 12511831,
+   "issue_date": "2026-06-22",
+   "due_date": null,
+   "amount": 9437,
+   "due_amount": 0,
+   "type": "income",
+   "partner_id": 112727657,
+   "partner_code": null,
+   "ref_number": null,
+   "status": "settled",
+   "deal_origin_name": "自動で経理",
+   "details": [
+    {
+     "id": 9833087245,
+     "account_item_id": 1024926858,
+     "tax_code": 129,
+     "partner_id": 112727657,
+     "partner_code": null,
+     "item_id": null,
+     "section_id": null,
+     "tag_ids": [],
+     "amount": 9437,
+     "vat": 857,
+     "description": "",
+     "entry_side": "credit"
+    }
+   ],
+   "payments": [
+    {
+     "id": 9833087246,
+     "date": "2026-06-22",
+     "from_walletable_type": "bank_account",
+     "from_walletable_id": 4635538,
+     "amount": 9437
+    }
+   ],
+   "receipts": []
+  },
+  {
+   "id": 3615609929,
+   "company_id": 12511831,
+   "issue_date": "2026-06-17",
+   "due_date": null,
+   "amount": 50000,
+   "due_amount": 0,
+   "type": "expense",
+   "partner_id": 114973028,
+   "partner_code": null,
+   "ref_number": "",
+   "status": "settled",
+   "deal_origin_name": "手動",
+   "details": [
+    {
+     "id": 9836585582,
+     "account_item_id": 1024926833,
+     "tax_code": 2,
+     "partner_id": 114973028,
+     "partner_code": null,
+     "item_id": null,
+     "section_id": null,
+     "tag_ids": [],
+     "amount": 50000,
+     "vat": 0,
+     "description": "振込 第四北越(生活費)",
+     "entry_side": "debit"
+    }
+   ],
+   "payments": [
+    {
+     "id": 9836585585,
+     "date": "2026-06-17",
+     "from_walletable_type": "bank_account",
+     "from_walletable_id": 4635538,
+     "amount": 50000
+    }
+   ],
+   "receipts": []
+  },
+  {
+   "id": 3614397594,
+   "company_id": 12511831,
+   "issue_date": "2026-06-17",
+   "due_date": null,
+   "amount": 15000,
+   "due_amount": 0,
+   "type": "expense",
+   "partner_id": 112727698,
+   "partner_code": null,
+   "ref_number": null,
+   "status": "settled",
+   "deal_origin_name": "自動で経理",
+   "details": [
+    {
+     "id": 9833087222,
+     "account_item_id": 1024926802,
+     "tax_code": 2,
+     "partner_id": 112727698,
+     "partner_code": null,
+     "item_id": null,
+     "section_id": null,
+     "tag_ids": [],
+     "amount": 15000,
+     "vat": 0,
+     "description": "",
+     "entry_side": "debit"
+    }
+   ],
+   "payments": [
+    {
+     "id": 9833087223,
+     "date": "2026-06-17",
+     "from_walletable_type": "bank_account",
+     "from_walletable_id": 4635538,
+     "amount": 15000
+    }
+   ],
+   "receipts": []
+  },
+  {
+   "id": 3600831957,
+   "company_id": 12511831,
+   "issue_date": "2026-06-16",
+   "due_date": null,
+   "amount": 22908,
+   "due_amount": 0,
+   "type": "income",
+   "partner_id": 112727574,
+   "partner_code": null,
+   "ref_number": null,
+   "status": "settled",
+   "deal_origin_name": "自動で経理",
+   "details": [
+    {
+     "id": 9793350276,
+     "account_item_id": 1024926858,
+     "tax_code": 129,
+     "partner_id": 112727574,
+     "partner_code": null,
+     "item_id": null,
+     "section_id": null,
+     "tag_ids": [],
+     "amount": 22908,
+     "vat": 2082,
+     "description": "",
+     "entry_side": "credit"
+    }
+   ],
+   "payments": [
+    {
+     "id": 9793350277,
+     "date": "2026-06-16",
+     "from_walletable_type": "bank_account",
+     "from_walletable_id": 4635538,
+     "amount": 22908
+    }
+   ],
+   "receipts": []
+  },
+  {
+   "id": 3600831920,
+   "company_id": 12511831,
+   "issue_date": "2026-06-14",
+   "due_date": null,
+   "amount": 3983,
+   "due_amount": 0,
+   "type": "expense",
+   "partner_id": 112727437,
+   "partner_code": null,
+   "ref_number": null,
+   "status": "settled",
+   "deal_origin_name": "自動で経理",
+   "details": [
+    {
+     "id": 9793350178,
+     "account_item_id": 1024926897,
+     "tax_code": 136,
+     "partner_id": 112727437,
+     "partner_code": null,
+     "item_id": null,
+     "section_id": null,
+     "tag_ids": [],
+     "amount": 3983,
+     "vat": 362,
+     "description": "",
+     "entry_side": "debit"
+    }
+   ],
+   "payments": [
+    {
+     "id": 9793350183,
+     "date": "2026-06-14",
+     "from_walletable_type": "bank_account",
+     "from_walletable_id": 4635538,
+     "amount": 3983
+    }
+   ],
+   "receipts": []
+  },
+  {
+   "id": 3614389323,
+   "company_id": 12511831,
+   "issue_date": "2026-03-23",
+   "due_date": null,
+   "amount": 28779,
+   "due_amount": 0,
+   "type": "income",
+   "partner_id": null,
+   "partner_code": null,
+   "ref_number": "",
+   "status": "settled",
+   "deal_origin_name": "手動",
+   "details": [
+    {
+     "id": 9833066075,
+     "account_item_id": 1024926858,
+     "tax_code": 129,
+     "partner_id": 0,
+     "partner_code": null,
+     "item_id": null,
+     "section_id": null,
+     "tag_ids": [],
+     "amount": 28779,
+     "vat": 2616,
+     "description": "Google AdSense収益 2026-03-23",
+     "entry_side": "credit"
+    }
+   ],
+   "payments": [
+    {
+     "id": 9833066078,
+     "date": "2026-03-23",
+     "from_walletable_type": "bank_account",
+     "from_walletable_id": 4635538,
+     "amount": 28779
+    }
+   ],
+   "receipts": []
+  }
+ ]
+}
