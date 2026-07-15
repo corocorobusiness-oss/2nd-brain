@@ -67,6 +67,13 @@
 - LLM: OpenRouter従量。事業責任者AI 1体・日次稼働で月$10-40目安（モデル次第・検証で実測）
 - インフラ: Mac mini常駐なら追加¥0
 
+## 付記: 2026-07-15 Discord質疑で確定した設計方針
+
+1. **正本は2nd-Brainのまま**（Hermesメモリ統一は却下）。Hermesメモリ＝社員の個人手帳。重要事項は当日中に2nd-Brainへ書き出す昇格フロー
+2. **Hermes用の別ブレインは作らない**。4分離トポロジに乗せる：知識=`~/2nd-Brain`共有（当初読み取り専用）／作業場=Hermes専用dir新設（git管理）／スキル=`~/agent-skills`共用（agentskills.io標準・Day5検証）／Hermes固有メモリ・認証はvault外
+3. **既存運用との競合対策**：ルール→agent-neutral-contract層にHermesも乗せる／Discord受付→検証中サブch限定・本格時は1チャンネル1担当で再割当／自動化ジョブ→ジョブ台帳＋段階移行＋人間確認（新旧同時ONしない）／役割→Fable=司令塔は不変・Hermes=事業実行社員
+4. 会社憲章はagent-neutral-contract拡張として書き、「正本は2nd-Brain・社員内蔵メモリは個人手帳」を明文化する（GPT資料の穴を塞ぐ1行）
+
 ## 情報源
 
 - https://hermes-agent.org/ / https://hermes-agent.org/about/
