@@ -62,6 +62,12 @@ AIエージェントが会話を通じて学んだこと。次回以降に活か
 ## 2026-06-29
 - （Codex/複数エージェントレビュー）Claude Code / Channelsで `<invoke name="Bash">` 等が本文に漏れる現象は、権限不足ではなく「ツール実行境界」の事故として扱う。実ツール結果・終了コード・差分・API応答などの証拠がないものは未実行。共通契約へ追記し、台本チェックは `~/agent-skills/youtube-script-checker/bin/yt-script-scan` の薄いwrapper設計へ寄せる方針にした。
 
+## 2026-07-14
+- （あおい/リモート）YouTube Analytics API v2 に **2026-01-15付でサムネ指標が正式追加**（`videoThumbnailImpressions` / `videoThumbnailImpressionsClickRate` / endScreen系）。従来Studio画面でしか見れなかったCTRがAPI自動収集できる＝クリック学習ループ（P1）の自動化が成立した根拠。認証は既存 `token_2ch.json` 流用
+- （あおい）**「回ってるはず」と「実際に回ってる」の監査は正本の実物で**: 台本ルールの機械化状況を確認したら、F01/F05/F06は§4.8受入チェックに実在（ルールブック上はproseに見えた）。逆に動画台帳は自動更新されてるように見えて手動トリガーのみで16日陳腐化。ドキュメントではなくコード・データのタイムスタンプで確認する
+- （あおい）遡りデータ入力は「記憶」でなく**STEPレポート等の一次資料から再構成し、noteに出典を明記**する（youtube-workの各案件フォルダは事実上の制作ログとして情報量が豊富）
+- （あおい）リモートセッションからMac資産に触る型: GitHubミラー（agent-skills / youtube-work）を明示承認でセッション追加→ブランチpush→PR→Mac側でマージ＋pull。正本を直接触らず二層同期も壊さない
+
 ## 2026-07-01
 - （Codex）`/ai-development-flow` に沿って Codexメイン移行フェーズ1を開始。正本ドキュメント上の本線を「Codexメイン移行フェーズ1 / Claude Code補助・退避先 / Obsidian正本」へ更新。ただし `agent-run` と既存launchd/cron自動化は段階移行中で、Codex切替完了とは扱わない。
 - （Codex）`agent-run` の Codex 分岐を最小配線。`AGENT_VENDOR=codex agent-run -p "..."` は `codex exec` で動作確認済み。Claude専用フラグ（`--permission-mode` / `--allowedTools` 等）はfail-closeするため、既存自動化の一括切替はまだ不可。
