@@ -51,7 +51,7 @@
 | Day | 検証 | 合格条件 |
 |---|---|---|
 | 1 | インストール＋モデル接続（OpenRouter） | 起動・応答・モデル切替OK |
-| 2 | 2nd-Brain読取＋agent-neutral-contract遵守テスト | NOW.md/契約を読んで正しく行動宣言 |
+| 2 | 2nd-Brain読取＋agent-neutral-contract遵守テスト | NOW.md/契約を読んで正しく行動宣言。**記憶の住み分け遵守**（正本=2nd-Brain・Hermesメモリ=作業メモ。重要事項は2nd-Brainへ書き出す昇格フローが機能し、Hermesメモリは消えても困らない状態を保てること）＝2026-07-15祐馬さん質疑で確定した設計 |
 | 3 | Discordゲートウェイ（サブch限定）＋承認ゲート | 危険コマンドがapproval待ちで止まる |
 | 4 | personalityプロフィール＝「事業責任者AI」試作1体 | 役割・KPI・権限境界を守って提案が出る |
 | 5 | スキル自動生成＋agentskills.io互換（`~/agent-skills`読込） | 既存スキルを読める・生成スキルが妥当 |
