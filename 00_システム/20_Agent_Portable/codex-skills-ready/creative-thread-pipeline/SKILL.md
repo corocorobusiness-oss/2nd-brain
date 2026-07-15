@@ -91,6 +91,9 @@ youtube-pipeline（実スレscrape版）の**兄弟**＝下流（組み立て→
 ### STEP7（任意）タイトル・サムネ・概要欄
 ※スキルのスコープはここまで（出荷物の生成）。**発音チェック・YouTube投稿予約はスキル外＝オーナーが手動**。
 - タイトルは `neta-research/scripts/predict_score.py` で**実データ採点**してから決める（過去109本DB）。単独人物は中央値≈6k＝「実は/たった1人で」等の意外性フックで上振れ狙い。
+- 🖼️ **タイトル・サムネは勝ちパターンを読んでから作る**（click-learning-loop・2026-07-14導入）: `~/2nd-Brain/03_知識ベース/YouTube・コンテンツ制作/サムネ・タイトル勝ちパターン.md`（T系/S系）参照。サムネは**2〜3案（1要素違い）で Test & Compare** を開始し、公開時に記録:
+  `python3 ~/2nd-Brain/00_システム/20_Agent_Portable/scripts/click_ledger.py publish --folder YYYY-MM-DD_テーマ --title "..." --pred N --thumb-headline "..." --ab-variant "A:本命" --ab-variant "B:対抗"`
+  （A/B終了時は `ab --winner`、差し替えたら `touch`。仕様: `00_システム/20_Agent_Portable/specs/click-learning-loop-設計書.md`）
 - 概要欄は **youtube-pipeline STEP6 の実データ準拠テンプレ**に従う（短く150〜250字・**解説者の声/である体**・AI広告語禁止・冒頭ナレと地続き）。
 - **見本＝平将門のメタ情報**：`01_プロジェクト/YouTube/創作スレ下書き/2026-06-17_平将門の祟り_メタ情報.md`（タイトル/サムネ/概要欄の確定例）。
 
@@ -107,6 +110,9 @@ youtube-pipeline（実スレscrape版）の**兄弟**＝下流（組み立て→
 - `_台本.md`（人間可読・構成見出し付き）
 - `~/Desktop` への CSV 複製＋ `ymm4_user.dic`（STEP6）
 - ※**xlsx は作らない**（オーナー決定2026-06-20）。目視は show_widget の会話ビューアを**単発依頼で**出す。
+- 📊 **出荷したら修正メトリクスを1行記録**（script-fix-metrics・2026-07-14導入）:
+  `python3 ~/2nd-Brain/00_システム/20_Agent_Portable/scripts/record_fix_metrics.py ship --folder YYYY-MM-DD_テーマ --ai-regen <再生成回数> --owner-fix <出荷前の指摘回数> --violations F04,F07`
+  （違反ゼロなら --violations 省略。IDは台本執筆ルール.mdのタグ。出荷後の修正指示は `fix` サブコマンドで都度追記。仕様: `specs/script-fix-metrics-設計書.md`）
 
 ## 学習と自動化グラデーション（Phase2・2026-06-21実装）
 判断ルールは `learning-log.md` に prose で（値は汎化しない）。STEP別の成熟度は **`scripts/maturity.py`＋`automation-state.json`** で機械管理する。
