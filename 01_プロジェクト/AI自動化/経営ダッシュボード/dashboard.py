@@ -256,6 +256,34 @@ def source_record_date(path: Path, today: dt.date) -> str | None:
     return modified.isoformat() if modified <= today else None
 
 
+def source_sort_timestamp(path: Path, today: dt.date) -> str | None:
+    """記録日を優先し、同じ日ならファイル時刻まで使って新着順を決める。"""
+    record_date = source_record_date(path, today)
+    modified = file_timestamp(path)
+    if record_date and modified and modified[:10] == record_date:
+        return modified
+    if record_date:
+        return dt.datetime.combine(dt.date.fromisoformat(record_date), dt.time.min).astimezone().isoformat()
+    return modified
+
+
+def latest_source_timestamp(paths: list[Path]) -> str | None:
+    """スキルの実装ファイルを走査し、キャッシュを除いた最新変更時刻を返す。"""
+    allowed = {".md", ".py", ".json", ".jsonl", ".yaml", ".yml", ".tsv", ".csv", ".sh"}
+    timestamps: list[str] = []
+    for root in paths:
+        candidates = [root] if root.is_file() else root.rglob("*") if root.exists() else []
+        for path in candidates:
+            if not path.is_file() or path.suffix.lower() not in allowed:
+                continue
+            if any(part in {".git", "__pycache__", ".pytest_cache", "node_modules"} for part in path.parts):
+                continue
+            value = file_timestamp(path)
+            if value:
+                timestamps.append(value)
+    return latest_timestamp(*timestamps)
+
+
 def same_file(left: Path, right: Path) -> bool:
     try:
         return left.samefile(right)
@@ -288,23 +316,34 @@ def parse_youtube_systems(
         names: tuple[str, ...],
         name: str,
         summary: str,
+        verified_at: str | None,
+        verification_next: str,
     ) -> None:
-        sources = [skills_root / skill_name / "SKILL.md" for skill_name in names]
+        skill_dirs = [skills_root / skill_name for skill_name in names]
+        sources = [path / "SKILL.md" for path in skill_dirs]
         visible = all(
             source.exists()
             and same_file(source, codex_skills_root / skill_name / "SKILL.md")
             and same_file(source, claude_skills_root / skill_name / "SKILL.md")
             for source, skill_name in zip(sources, names)
         )
-        dates = [source_record_date(path, today) for path in sources if path.exists()]
+        updated_at = latest_source_timestamp(skill_dirs)
+        verified = False
+        if visible and verified_at and updated_at:
+            try:
+                verified = dt.datetime.fromisoformat(updated_at) <= dt.datetime.fromisoformat(verified_at)
+            except ValueError:
+                verified = False
         items.append({
             "id": system_id,
             "name": name,
             "summary": summary,
-            "status": "ready" if visible else "attention",
-            "status_label": "使える" if visible else "確認が必要",
-            "updated_on": max((value for value in dates if value), default=None),
-            "next_action": "" if visible else "ClaudeとCodexの両方から使える状態か確認する",
+            "status": "ready" if verified else "attention",
+            "status_label": "使える" if verified else "確認中" if visible else "確認が必要",
+            "updated_on": updated_at[:10] if updated_at else None,
+            "updated_at": updated_at,
+            "verified_on": verified_at[:10] if verified_at else None,
+            "next_action": "" if verified else verification_next if visible else "ClaudeとCodexの両方から使える状態か確認する",
             "made_by": "",
             "sources": [readable_source(path, vault, youtube_root, skills_root) for path in sources],
         })
@@ -314,18 +353,24 @@ def parse_youtube_systems(
         ("zatsugaku-pipeline",),
         "雑学動画を一気に作る",
         "調査、史実確認、台本、辞書、最終チェックまでまとめて進めます。",
+        None,
+        "一気通貫の確認を最後まで通す",
     )
     add_skill_system(
         "normal-video-pipeline",
         ("youtube-pipeline", "creative-thread-pipeline"),
         "通常動画を一気に作る",
         "人物や事件の企画から、前後半の台本とYMM4用データまで進めます。",
+        "2026-07-16T20:20:00+09:00",
+        "更新後の全確認をもう一度通す",
     )
     add_skill_system(
         "neta-forge",
         ("neta-forge",),
         "伸びそうなネタと企画を作る",
         "候補を調べて再生数を予測し、1本分の制作指示を作ります。",
+        "2026-07-16T20:20:00+09:00",
+        "更新後の確認をもう一度通す",
     )
 
     now_path = vault / "06_エージェント運用/00_司令塔/NOW.md"
@@ -335,6 +380,16 @@ def parse_youtube_systems(
         now_text = ""
     level_one_ready = bool(re.search(r"Level 1(?:は)?(?:完了|完成)", now_text)) and "Level 1は未完了" not in now_text
     now_available = "YMM4動画編集AI社員" in now_text
+    worklog_path = vault / "06_エージェント運用/00_司令塔/作業ログ_ツバキとあおい.md"
+    try:
+        worklog_text = read_text(worklog_path)
+    except (OSError, UnicodeError):
+        worklog_text = ""
+    latest_ymm4_result = ""
+    latest_ymm4_result_date = None
+    if "YMM4「応仁の乱」v7見本一致版を完成・SSD保存" in worklog_text:
+        latest_ymm4_result = "応仁の乱 v7の見本一致版を完成"
+        latest_ymm4_result_date = "2026-07-14"
     items.append({
         "id": "ymm4-project-builder",
         "name": "YMM4動画編集AI社員",
@@ -342,14 +397,21 @@ def parse_youtube_systems(
         "status": "ready" if level_one_ready else "attention",
         "status_label": "使える" if level_one_ready else "待機中" if now_available else "確認が必要",
         "updated_on": source_record_date(now_path, today) if now_path.exists() else None,
+        "updated_at": source_sort_timestamp(now_path, today) if now_path.exists() else None,
+        "latest_result": latest_ymm4_result,
+        "latest_result_date": latest_ymm4_result_date,
         "next_action": "" if level_one_ready else "YMM4を実際に動かし、Level 1の動画を作り直して比べる",
         "made_by": "",
-        "sources": [readable_source(now_path, vault, youtube_root, skills_root)],
+        "sources": [
+            readable_source(path, vault, youtube_root, skills_root)
+            for path in (now_path, worklog_path)
+            if path.exists()
+        ],
     })
 
     eval_root = youtube_root / "eval/runs"
     eval_runs = list(eval_root.glob("20??-??-??_*_p7fix*_trial.md")) if eval_root.exists() else []
-    latest_eval = max(eval_runs, key=lambda path: path.stat().st_mtime, default=None)
+    latest_eval = max(eval_runs, key=lambda path: file_timestamp(path) or "", default=None)
     try:
         eval_text = read_text(latest_eval) if latest_eval else ""
     except OSError:
@@ -363,6 +425,7 @@ def parse_youtube_systems(
         "status": "attention",
         "status_label": "改善中" if eval_blocked else "確認が必要",
         "updated_on": source_record_date(latest_eval, today) if latest_eval else None,
+        "updated_at": source_sort_timestamp(latest_eval, today) if latest_eval else None,
         "next_action": "本番の台本へはまだ反映しない" if eval_blocked else "最新のテスト結果を確認する",
         "made_by": "",
         "sources": [
@@ -388,6 +451,11 @@ def parse_youtube_systems(
         for path in (asset_report, asset_design)
         if path.exists()
     ]
+    asset_timestamps = [
+        source_sort_timestamp(path, today)
+        for path in (asset_report, asset_design)
+        if path.exists()
+    ]
     items.append({
         "id": "ymm4-asset-pipeline",
         "name": "画像素材を自動で集めて置く",
@@ -395,6 +463,7 @@ def parse_youtube_systems(
         "status": "ready" if asset_ready else "attention",
         "status_label": "使える" if asset_ready else "確認が必要",
         "updated_on": max((value for value in asset_dates if value), default=None),
+        "updated_at": max((value for value in asset_timestamps if value), default=None),
         "next_action": "" if asset_ready else "完成記録とYMM4での表示を確認する",
         "made_by": "Fable" if "Fable" in asset_design_text else "",
         "sources": [
@@ -404,12 +473,32 @@ def parse_youtube_systems(
         ],
     })
 
-    items.sort(key=lambda item: item["updated_on"] or "", reverse=True)
+    items.sort(key=lambda item: item.get("updated_at") or "", reverse=True)
     counts = {
         "ready": sum(item["status"] == "ready" for item in items),
         "attention": sum(item["status"] != "ready" for item in items),
     }
     return {"checked_at": today.isoformat(), "counts": counts, "items": items}
+
+
+def unavailable_youtube_systems(today: dt.date) -> dict[str, Any]:
+    """追加情報だけ読めない時に、経営数字を巻き込まず赤表示へ落とす。"""
+    return {
+        "checked_at": today.isoformat(),
+        "counts": {"ready": 0, "attention": 1},
+        "items": [{
+            "id": "youtube-systems-unavailable",
+            "name": "最近の仕組みを確認できません",
+            "summary": "売上や動画予定は、そのまま見ることができます。",
+            "status": "attention",
+            "status_label": "確認が必要",
+            "updated_on": None,
+            "updated_at": None,
+            "next_action": "仕組みの情報源を確認する",
+            "made_by": "",
+            "sources": [],
+        }],
+    }
 
 
 def normalize_merchant(value: str | None) -> str:
@@ -1116,7 +1205,11 @@ def build_dashboard(
     revenue_total = delivery_total + youtube_total
     overall_target_to_date = budget_to_date + youtube_calendar_target_to_date
     jobs = parse_jobs(vault / "01_プロジェクト/AI自動化/導入済み.md")
-    youtube_systems = parse_youtube_systems(vault, youtube_root, today)
+    try:
+        youtube_systems = parse_youtube_systems(vault, youtube_root, today)
+    except Exception:
+        youtube_systems = unavailable_youtube_systems(today)
+        warnings.append("YouTubeの最近の仕組みを確認できません")
     return {
         "generated_at": dt.datetime.now().astimezone().isoformat(timespec="minutes"),
         "today": today.isoformat(), "cutoff": cutoff.isoformat(), "month": month,

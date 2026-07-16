@@ -6,6 +6,7 @@ import os
 import tempfile
 import unittest
 from pathlib import Path
+from unittest import mock
 
 import dashboard
 
@@ -131,6 +132,11 @@ class DashboardTests(unittest.TestCase):
             eval_run = youtube / "eval/runs/2026-07-11_嘉吉の変_p7fix7_trial.md"
             eval_run.parent.mkdir(parents=True)
             eval_run.write_text("# 最終判定\nFAIL_NO_PROMOTION\nNEEDS_FIX\n", encoding="utf-8")
+            worklog = vault / "06_エージェント運用/00_司令塔/作業ログ_ツバキとあおい.md"
+            worklog.write_text(
+                "## 07-14 あおい（Codex）｜YMM4「応仁の乱」v7見本一致版を完成・SSD保存\n",
+                encoding="utf-8",
+            )
 
             result = dashboard.parse_youtube_systems(
                 vault,
@@ -140,16 +146,30 @@ class DashboardTests(unittest.TestCase):
                 codex_skills,
                 claude_skills,
             )
-            self.assertEqual(result["counts"], {"ready": 4, "attention": 2})
+            self.assertEqual(result["counts"], {"ready": 3, "attention": 3})
             self.assertEqual(result["items"][0]["name"], "雑学動画を一気に作る")
+            zatsugaku = next(item for item in result["items"] if item["id"] == "zatsugaku-pipeline")
+            self.assertEqual(zatsugaku["status_label"], "確認中")
             ymm4 = next(item for item in result["items"] if item["id"] == "ymm4-project-builder")
             self.assertEqual(ymm4["status_label"], "待機中")
+            self.assertEqual(ymm4["latest_result"], "応仁の乱 v7の見本一致版を完成")
             fable = next(item for item in result["items"] if item["id"] == "script-quality-experiment")
             self.assertEqual(fable["status_label"], "改善中")
             asset = next(item for item in result["items"] if item["id"] == "ymm4-asset-pipeline")
             self.assertEqual(asset["status_label"], "使える")
             self.assertEqual(asset["made_by"], "Fable")
             self.assertTrue(all(not source.startswith("/Users/") for item in result["items"] for source in item["sources"]))
+
+    def test_system_read_failure_does_not_hide_business_numbers(self):
+        with mock.patch.object(dashboard, "parse_youtube_systems", side_effect=UnicodeDecodeError("utf-8", b"x", 0, 1, "bad")):
+            data = dashboard.build_dashboard(
+                Path("~/2nd-Brain").expanduser(),
+                Path("~/Projects/youtube").expanduser(),
+                dt.date(2026, 7, 16),
+            )
+        self.assertIsInstance(data["finance"]["revenue"], int)
+        self.assertEqual(data["youtube"]["systems"]["counts"], {"ready": 0, "attention": 1})
+        self.assertIn("YouTubeの最近の仕組みを確認できません", data["warnings"])
 
     def test_mobile_breakpoints_exist(self):
         html = (Path(__file__).parent / "index.html").read_text(encoding="utf-8")
