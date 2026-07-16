@@ -66,7 +66,19 @@ class DashboardTests(unittest.TestCase):
         )
         self.assertEqual(data["cutoff"], "2026-07-15")
         self.assertEqual(len(data["daily"]), 15)
-        self.assertEqual(data["youtube"]["schedule"][0]["title"], "毛利軍｜秀吉を追撃しなかった理由")
+        self.assertEqual(
+            [item["title"] for item in data["youtube"]["schedule"]],
+            [
+                "明智光秀「信長を討ったぞ！」→秀吉が偽情報で逆転した件www",
+                "毛利軍、本能寺の変を知ったのに秀吉を追撃しなかったの謎すぎる件www",
+                "高杉晋作、約80人の挙兵から長州藩の流れを変えた件www",
+                "縄文時代・近年の新事実雑学",
+            ],
+        )
+        self.assertTrue(data["youtube"]["schedule_source"].endswith("2026-07_ネタslate.md"))
+        self.assertEqual(data["youtube"]["schedule"][0]["completed"], 4)
+        self.assertEqual(data["youtube"]["schedule"][0]["stages"][-1]["name"], "公開前に最終確認する")
+        self.assertFalse(data["youtube"]["schedule"][0]["stages"][-1]["done"])
         self.assertEqual(data["jobs"]["counts"], {"running": 27, "watch": 2, "stopped": 4})
         self.assertEqual(data["jobs"]["groups"]["running"][0]["name"], "スマホの相談窓口")
         self.assertEqual(data["youtube"]["target_to_date"], 20968)
@@ -88,6 +100,17 @@ class DashboardTests(unittest.TestCase):
         expected_profit = None if data["finance"]["expense_partial"] else data["finance"]["revenue"] - data["finance"]["expenses"]
         self.assertEqual(data["finance"]["profit"], expected_profit)
         json.dumps(data, ensure_ascii=False)
+
+    def test_youtube_schedule_switches_on_monday_using_today_not_sales_cutoff(self):
+        data = dashboard.build_dashboard(
+            Path("~/2nd-Brain").expanduser(),
+            Path("~/Projects/youtube").expanduser(),
+            dt.date(2026, 7, 20),
+        )
+        self.assertEqual(
+            [item["date"] for item in data["youtube"]["schedule"]],
+            ["2026-07-22", "2026-07-24", "2026-07-25", "2026-07-26"],
+        )
 
     def test_recent_youtube_systems_use_real_sources_and_fail_close(self):
         with tempfile.TemporaryDirectory() as tmp:

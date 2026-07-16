@@ -39,13 +39,7 @@ _FREEE_CACHE: dict[str, Any] = {"key": None, "loaded": 0.0, "data": None, "error
 _FREEE_CACHE_LOCK = threading.Lock()
 DELIVERY_NAMES = {"Uber Eats", "Uber", "出前館", "ロケットナウ", "ロケットなう"}
 YOUTUBE_NAMES = {"YouTube"}
-YOUTUBE_OVERRIDES = {
-    "2026-07-17": {
-        "title": "毛利軍｜秀吉を追撃しなかった理由",
-        "folder": "2026-07-17_毛利軍_秀吉を追撃しなかった理由",
-        "predicted_views": 16457,
-    }
-}
+YOUTUBE_SLATE_DIR = Path("03_知識ベース/YouTube・コンテンツ制作")
 
 JOB_LABELS = {
     "com.claude.discord-monitor": ("スマホの相談窓口", "Discordのメッセージを受け取り、あおいに届けます"),
@@ -196,6 +190,51 @@ def parse_budget_and_schedule(path: Path, month: str) -> tuple[dict[int, int], i
                     "predicted_views": yen(cells[3]) or 0, "goal": cells[4] if len(cells) > 4 else "",
                 })
     return budgets, delivery_target, schedule, youtube_target
+
+
+def plain_markdown(value: str) -> str:
+    return value.replace("**", "").replace("✅", "").strip()
+
+
+def parse_youtube_slate(vault: Path, month: str) -> tuple[list[dict[str, Any]], Path | None]:
+    """当月slateの「公開カレンダー」だけを読む。
+
+    初期推奨案・見直し案は履歴なので混ぜない。見つからない場合は
+    呼び出し側が旧「目標と計画」表へフォールバックできる。
+    """
+    year, mon = map(int, month.split("-"))
+    slate = vault / YOUTUBE_SLATE_DIR / f"{month}_ネタslate.md"
+    if not slate.exists():
+        return [], None
+
+    schedule: list[dict[str, Any]] = []
+    in_calendar = False
+    for line in read_text(slate).splitlines():
+        if line.startswith("## "):
+            if in_calendar:
+                break
+            in_calendar = f"{mon}月 公開カレンダー" in line
+            continue
+        if not in_calendar or not line.startswith("|"):
+            continue
+        cells = table_cells(line)
+        if len(cells) < 5:
+            continue
+        match = re.fullmatch(r"(\d{1,2})/(\d{1,2})\(([^)]+)\)", plain_markdown(cells[0]))
+        if not match or int(match.group(1)) != mon:
+            continue
+        try:
+            date = dt.date(year, mon, int(match.group(2)))
+        except ValueError:
+            continue
+        schedule.append({
+            "date": date.isoformat(),
+            "weekday": match.group(3),
+            "title": plain_markdown(cells[1]).replace("🎬", "").strip(),
+            "predicted_views": yen(cells[3]) or 0,
+            "goal": plain_markdown(cells[4]),
+        })
+    return schedule, slate
 
 
 def latest_freee_snapshot(vault: Path, cutoff: dt.date) -> Path | None:
@@ -1048,12 +1087,21 @@ def parse_jobs(path: Path) -> dict[str, Any]:
 
 def youtube_stages(folder: Path | None) -> list[dict[str, Any]]:
     files = {p.name for p in folder.iterdir()} if folder and folder.exists() else set()
+    pipeline_hold = False
+    if folder and (folder / "PIPELINE_STATE.md").exists():
+        try:
+            state_lines = read_text(folder / "PIPELINE_STATE.md").splitlines()
+            decision_lines = [line for line in state_lines if "判定:" in line]
+            current_state = decision_lines[-1] if decision_lines else "\n".join(state_lines)
+            pipeline_hold = bool(re.search(r"\b(?:HOLD|FAIL)\b", current_state, re.IGNORECASE))
+        except OSError:
+            pipeline_hold = True
     rules = [
         ("企画内容を決める", lambda: "brief.json" in files),
         ("台本を作る", lambda: any(name.endswith(".csv") and "台本" in name for name in files)),
         ("タイトルと説明文を作る", lambda: "title.txt" in files and "description.txt" in files),
         ("読み方辞書を用意する", lambda: any(name.endswith(".dic") for name in files)),
-        ("公開前に最終確認する", lambda: any("review" in name.lower() or "レビュー" in name for name in files)),
+        ("公開前に最終確認する", lambda: not pipeline_hold and any("review" in name.lower() or "レビュー" in name for name in files)),
     ]
     stages = [{"name": name, "done": bool(check())} for name, check in rules]
     first = next((stage["name"] for stage in stages if not stage["done"]), "投稿準備完了")
@@ -1071,12 +1119,12 @@ def enrich_schedule(schedule: list[dict[str, Any]], youtube_root: Path, cutoff: 
         date = dt.date.fromisoformat(item["date"])
         if not week_start <= date <= week_end:
             continue
-        override = YOUTUBE_OVERRIDES.get(item["date"])
-        if override:
-            item = {**item, **override}
-        folder = drafts / override["folder"] if override else None
-        if folder is None and drafts.exists():
-            candidates = sorted(drafts.glob(f"{item['date']}_*"))
+        folder = None
+        if drafts.exists():
+            candidates = sorted(
+                path for path in drafts.glob(f"{item['date']}_*")
+                if path.is_dir() and "__差し替え保留" not in path.name
+            )
             folder = candidates[0] if len(candidates) == 1 else None
         item["folder"] = str(folder) if folder and folder.exists() else None
         item["stages"] = youtube_stages(folder)
@@ -1157,7 +1205,11 @@ def build_dashboard(
     today = today or dt.date.today()
     cutoff = today - dt.timedelta(days=1)
     month = cutoff.strftime("%Y-%m")
-    budgets, delivery_target, schedule, youtube_target = parse_budget_and_schedule(vault / "02_経営/目標と計画.md", month)
+    budgets, delivery_target, legacy_schedule, youtube_target = parse_budget_and_schedule(vault / "02_経営/目標と計画.md", month)
+    schedule, schedule_source = parse_youtube_slate(vault, month)
+    if not schedule:
+        schedule = legacy_schedule
+        schedule_source = None
     days_in_month = calendar.monthrange(cutoff.year, cutoff.month)[1]
     daily = []
     delivery_total = youtube_total = 0
@@ -1230,7 +1282,9 @@ def build_dashboard(
             "daily_target_average": round(youtube_target / days_in_month) if youtube_target else 0,
             "last_revenue_date": youtube_last_date,
             "captured_days": captured_youtube, "expected_days": cutoff.day,
-            "schedule": enrich_schedule(schedule, youtube_root, cutoff),
+            "schedule": enrich_schedule(schedule, youtube_root, today),
+            "schedule_source": str(schedule_source) if schedule_source else "02_経営/目標と計画.md（予備）",
+            "schedule_updated_at": file_timestamp(schedule_source) if schedule_source else None,
             "systems": youtube_systems,
         },
         "finance": {
