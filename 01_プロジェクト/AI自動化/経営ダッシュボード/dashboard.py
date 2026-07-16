@@ -23,6 +23,9 @@ from urllib.parse import urlparse
 HERE = Path(__file__).resolve().parent
 DEFAULT_VAULT = Path("~/2nd-Brain").expanduser()
 DEFAULT_YOUTUBE = Path("~/Projects/youtube").expanduser()
+DEFAULT_AGENT_SKILLS = Path("~/agent-skills").expanduser()
+DEFAULT_CODEX_SKILLS = Path("~/.codex/skills").expanduser()
+DEFAULT_CLAUDE_SKILLS = Path("~/.claude/skills").expanduser()
 DEFAULT_EXPENSE_ROOT = Path(
     "~/Library/CloudStorage/GoogleDrive-corocoro.business@gmail.com/マイドライブ/経費精算"
 ).expanduser()
