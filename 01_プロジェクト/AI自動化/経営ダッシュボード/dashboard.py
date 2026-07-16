@@ -1279,6 +1279,23 @@ def build_dashboard(
     youtube_last_day = max((row["day"] for row in daily if row["youtube_actual"] is not None), default=0)
     youtube_target_to_date = round(youtube_target / days_in_month * youtube_last_day) if youtube_target else 0
     youtube_last_date = daily[youtube_last_day - 1]["date"] if youtube_last_day else None
+    youtube_daily = [{**row, "future": False} for row in daily]
+    for day in range(cutoff.day + 1, days_in_month + 1):
+        date = dt.date(cutoff.year, cutoff.month, day)
+        youtube_daily_target = (
+            round(youtube_target * day / days_in_month)
+            - round(youtube_target * (day - 1) / days_in_month)
+            if youtube_target else 0
+        )
+        youtube_daily.append({
+            "date": date.isoformat(),
+            "day": day,
+            "youtube_target": youtube_daily_target,
+            "youtube_actual": None,
+            "youtube_difference": None,
+            "youtube_cumulative": None,
+            "future": True,
+        })
     revenue_total = delivery_total + youtube_total
     overall_target_to_date = budget_to_date + youtube_calendar_target_to_date
     jobs = parse_jobs(vault / "01_プロジェクト/AI自動化/導入済み.md")
@@ -1307,6 +1324,7 @@ def build_dashboard(
             "daily_target_average": round(youtube_target / days_in_month) if youtube_target else 0,
             "last_revenue_date": youtube_last_date,
             "captured_days": captured_youtube, "expected_days": cutoff.day,
+            "daily": youtube_daily,
             "schedule": enrich_schedule(schedule, youtube_root, today),
             "schedule_source": " / ".join(str(path) for path in schedule_sources) or "投稿予定の正本が未設定",
             "schedule_updated_at": latest_timestamp(*(file_timestamp(path) for path in schedule_sources)),

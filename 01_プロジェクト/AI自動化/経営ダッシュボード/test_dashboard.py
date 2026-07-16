@@ -79,6 +79,10 @@ class DashboardTests(unittest.TestCase):
         self.assertEqual(data["youtube"]["schedule"][0]["completed"], 4)
         self.assertEqual(data["youtube"]["schedule"][0]["stages"][-1]["name"], "公開前に最終確認する")
         self.assertFalse(data["youtube"]["schedule"][0]["stages"][-1]["done"])
+        self.assertEqual(len(data["youtube"]["daily"]), 31)
+        self.assertEqual(data["youtube"]["daily"][0]["date"], "2026-07-01")
+        self.assertEqual(data["youtube"]["daily"][-1]["date"], "2026-07-31")
+        self.assertTrue(data["youtube"]["daily"][-1]["future"])
         self.assertEqual(data["jobs"]["counts"], {"running": 27, "watch": 2, "stopped": 4})
         self.assertEqual(data["jobs"]["groups"]["running"][0]["name"], "スマホの相談窓口")
         self.assertEqual(data["youtube"]["target_to_date"], 20968)
@@ -463,6 +467,9 @@ class DashboardTests(unittest.TestCase):
         self.assertIn("go(activePage,false)", html)
         self.assertIn("最近できた仕組み", html)
         self.assertIn("esc(item.name)", html)
+        self.assertIn("data.youtube.daily.map", html)
+        self.assertIn("今の合計", html)
+        self.assertIn("<tfoot>${youtubeTotalRow}</tfoot>", html)
         self.assertIn(".checks,.system-list{grid-template-columns:1fr}", html)
 
 
