@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import datetime as dt
 import json
+import os
 import tempfile
 import unittest
 from pathlib import Path
@@ -80,9 +81,75 @@ class DashboardTests(unittest.TestCase):
             for row in data["daily"] if row["youtube_actual"] is None
         ))
         self.assertTrue(data["today_note"]["tasks"])
+        self.assertTrue(data["youtube"]["systems"]["items"])
+        system_dates = [item["updated_on"] or "" for item in data["youtube"]["systems"]["items"]]
+        self.assertEqual(system_dates, sorted(system_dates, reverse=True))
         expected_profit = None if data["finance"]["expense_partial"] else data["finance"]["revenue"] - data["finance"]["expenses"]
         self.assertEqual(data["finance"]["profit"], expected_profit)
         json.dumps(data, ensure_ascii=False)
+
+    def test_recent_youtube_systems_use_real_sources_and_fail_close(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            vault = root / "vault"
+            youtube = root / "youtube"
+            skills = root / "agent-skills"
+            codex_skills = root / "codex-skills"
+            claude_skills = root / "claude-skills"
+            codex_skills.mkdir()
+            youtube.mkdir()
+
+            for name, updated in (
+                ("zatsugaku-pipeline", "2026-07-16"),
+                ("youtube-pipeline", "2026-07-11"),
+                ("creative-thread-pipeline", "2026-07-11"),
+                ("neta-forge", "2026-07-10"),
+            ):
+                skill = skills / name
+                skill.mkdir(parents=True)
+                source = skill / "SKILL.md"
+                source.write_text(f"---\nname: {name}\n---\n", encoding="utf-8")
+                stamp = dt.datetime.fromisoformat(f"{updated}T12:00:00").timestamp()
+                os.utime(source, (stamp, stamp))
+                (codex_skills / name).symlink_to(skill, target_is_directory=True)
+            claude_skills.symlink_to(skills, target_is_directory=True)
+
+            now_path = vault / "06_エージェント運用/00_司令塔/NOW.md"
+            now_path.parent.mkdir(parents=True)
+            now_path.write_text(
+                "# NOW\n最終更新: 2026-07-15\n## YMM4動画編集AI社員\n- Level 1は未完了\n",
+                encoding="utf-8",
+            )
+            report = vault / "01_プロジェクト/AI自動化/YMM4素材資産化_完成報告_MVP_2026-07-03.md"
+            report.parent.mkdir(parents=True)
+            report.write_text(
+                "# 完成報告\n日付: 2026-07-03（レビュー確定 2026-07-04）\n## 完成判定\n**完成**\n",
+                encoding="utf-8",
+            )
+            design = report.parent / "YMM4素材資産化パイプライン_設計_2026-07-03.md"
+            design.write_text("作成日: 2026-07-03\n実装者変更: Fable\n", encoding="utf-8")
+            eval_run = youtube / "eval/runs/2026-07-11_嘉吉の変_p7fix7_trial.md"
+            eval_run.parent.mkdir(parents=True)
+            eval_run.write_text("# 最終判定\nFAIL_NO_PROMOTION\nNEEDS_FIX\n", encoding="utf-8")
+
+            result = dashboard.parse_youtube_systems(
+                vault,
+                youtube,
+                dt.date(2026, 7, 16),
+                skills,
+                codex_skills,
+                claude_skills,
+            )
+            self.assertEqual(result["counts"], {"ready": 4, "attention": 2})
+            self.assertEqual(result["items"][0]["name"], "雑学動画を一気に作る")
+            ymm4 = next(item for item in result["items"] if item["id"] == "ymm4-project-builder")
+            self.assertEqual(ymm4["status_label"], "待機中")
+            fable = next(item for item in result["items"] if item["id"] == "script-quality-experiment")
+            self.assertEqual(fable["status_label"], "改善中")
+            asset = next(item for item in result["items"] if item["id"] == "ymm4-asset-pipeline")
+            self.assertEqual(asset["status_label"], "使える")
+            self.assertEqual(asset["made_by"], "Fable")
+            self.assertTrue(all(not source.startswith("/Users/") for item in result["items"] for source in item["sources"]))
 
     def test_mobile_breakpoints_exist(self):
         html = (Path(__file__).parent / "index.html").read_text(encoding="utf-8")
@@ -321,6 +388,9 @@ class DashboardTests(unittest.TestCase):
         self.assertIn("freee反映待ち", html)
         self.assertIn("setInterval(()=>loadDashboard(true),60000)", html)
         self.assertIn("go(activePage,false)", html)
+        self.assertIn("最近できた仕組み", html)
+        self.assertIn("esc(item.name)", html)
+        self.assertIn(".checks,.system-list{grid-template-columns:1fr}", html)
 
 
 if __name__ == "__main__":

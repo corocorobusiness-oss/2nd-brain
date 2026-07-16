@@ -231,6 +231,187 @@ def latest_timestamp(*values: str | None) -> str | None:
     return max(parsed, default=(None, None))[1]
 
 
+def source_record_date(path: Path, today: dt.date) -> str | None:
+    """記録本文・ファイル名・更新時刻の順で、未来日を除いた日付を返す。"""
+    candidates: list[dt.date] = []
+    sample = path.name
+    try:
+        if path.is_file():
+            sample += "\n" + "\n".join(read_text(path).splitlines()[:12])
+    except OSError:
+        pass
+    for value in re.findall(r"20\d{2}-\d{2}-\d{2}", sample):
+        try:
+            parsed = dt.date.fromisoformat(value)
+        except ValueError:
+            continue
+        if parsed <= today:
+            candidates.append(parsed)
+    if candidates:
+        return max(candidates).isoformat()
+    try:
+        modified = dt.datetime.fromtimestamp(path.stat().st_mtime).date()
+    except OSError:
+        return None
+    return modified.isoformat() if modified <= today else None
+
+
+def same_file(left: Path, right: Path) -> bool:
+    try:
+        return left.samefile(right)
+    except OSError:
+        return False
+
+
+def readable_source(path: Path, vault: Path, youtube_root: Path, skills_root: Path) -> str:
+    for root, label in ((vault, "Second Brain"), (youtube_root, "YouTube制作"), (skills_root, "制作スキル")):
+        try:
+            return f"{label}/{path.relative_to(root)}"
+        except ValueError:
+            continue
+    return path.name
+
+
+def parse_youtube_systems(
+    vault: Path,
+    youtube_root: Path,
+    today: dt.date,
+    skills_root: Path = DEFAULT_AGENT_SKILLS,
+    codex_skills_root: Path = DEFAULT_CODEX_SKILLS,
+    claude_skills_root: Path = DEFAULT_CLAUDE_SKILLS,
+) -> dict[str, Any]:
+    """最新の正本から、YouTube制作の仕組みと現在の状態を短くまとめる。"""
+    items: list[dict[str, Any]] = []
+
+    def add_skill_system(
+        system_id: str,
+        names: tuple[str, ...],
+        name: str,
+        summary: str,
+    ) -> None:
+        sources = [skills_root / skill_name / "SKILL.md" for skill_name in names]
+        visible = all(
+            source.exists()
+            and same_file(source, codex_skills_root / skill_name / "SKILL.md")
+            and same_file(source, claude_skills_root / skill_name / "SKILL.md")
+            for source, skill_name in zip(sources, names)
+        )
+        dates = [source_record_date(path, today) for path in sources if path.exists()]
+        items.append({
+            "id": system_id,
+            "name": name,
+            "summary": summary,
+            "status": "ready" if visible else "attention",
+            "status_label": "使える" if visible else "確認が必要",
+            "updated_on": max((value for value in dates if value), default=None),
+            "next_action": "" if visible else "ClaudeとCodexの両方から使える状態か確認する",
+            "made_by": "",
+            "sources": [readable_source(path, vault, youtube_root, skills_root) for path in sources],
+        })
+
+    add_skill_system(
+        "zatsugaku-pipeline",
+        ("zatsugaku-pipeline",),
+        "雑学動画を一気に作る",
+        "調査、史実確認、台本、辞書、最終チェックまでまとめて進めます。",
+    )
+    add_skill_system(
+        "normal-video-pipeline",
+        ("youtube-pipeline", "creative-thread-pipeline"),
+        "通常動画を一気に作る",
+        "人物や事件の企画から、前後半の台本とYMM4用データまで進めます。",
+    )
+    add_skill_system(
+        "neta-forge",
+        ("neta-forge",),
+        "伸びそうなネタと企画を作る",
+        "候補を調べて再生数を予測し、1本分の制作指示を作ります。",
+    )
+
+    now_path = vault / "06_エージェント運用/00_司令塔/NOW.md"
+    try:
+        now_text = read_text(now_path)
+    except OSError:
+        now_text = ""
+    level_one_ready = bool(re.search(r"Level 1(?:は)?(?:完了|完成)", now_text)) and "Level 1は未完了" not in now_text
+    now_available = "YMM4動画編集AI社員" in now_text
+    items.append({
+        "id": "ymm4-project-builder",
+        "name": "YMM4動画編集AI社員",
+        "summary": "台本から音声、テロップ、画像を入れた動画づくり全体を自動化します。",
+        "status": "ready" if level_one_ready else "attention",
+        "status_label": "使える" if level_one_ready else "待機中" if now_available else "確認が必要",
+        "updated_on": source_record_date(now_path, today) if now_path.exists() else None,
+        "next_action": "" if level_one_ready else "YMM4を実際に動かし、Level 1の動画を作り直して比べる",
+        "made_by": "",
+        "sources": [readable_source(now_path, vault, youtube_root, skills_root)],
+    })
+
+    eval_root = youtube_root / "eval/runs"
+    eval_runs = list(eval_root.glob("20??-??-??_*_p7fix*_trial.md")) if eval_root.exists() else []
+    latest_eval = max(eval_runs, key=lambda path: path.stat().st_mtime, default=None)
+    try:
+        eval_text = read_text(latest_eval) if latest_eval else ""
+    except OSError:
+        eval_text = ""
+    eval_blocked = "FAIL_NO_PROMOTION" in eval_text or "NEEDS_FIX" in eval_text
+    quality_protocol = youtube_root / "eval/ab_中国大返し/protocol.md"
+    items.append({
+        "id": "script-quality-experiment",
+        "name": "台本の品質改善テスト",
+        "summary": "Fable案も比べながら、会話の自然さや内容のかぶりを本番前に確認します。",
+        "status": "attention",
+        "status_label": "改善中" if eval_blocked else "確認が必要",
+        "updated_on": source_record_date(latest_eval, today) if latest_eval else None,
+        "next_action": "本番の台本へはまだ反映しない" if eval_blocked else "最新のテスト結果を確認する",
+        "made_by": "",
+        "sources": [
+            readable_source(path, vault, youtube_root, skills_root)
+            for path in (latest_eval, quality_protocol)
+            if path and path.exists()
+        ],
+    })
+
+    asset_report = vault / "01_プロジェクト/AI自動化/YMM4素材資産化_完成報告_MVP_2026-07-03.md"
+    asset_design = vault / "01_プロジェクト/AI自動化/YMM4素材資産化パイプライン_設計_2026-07-03.md"
+    try:
+        asset_text = read_text(asset_report)
+    except OSError:
+        asset_text = ""
+    try:
+        asset_design_text = read_text(asset_design)
+    except OSError:
+        asset_design_text = ""
+    asset_ready = bool(re.search(r"\*\*完成\*\*", asset_text))
+    asset_dates = [
+        source_record_date(path, today)
+        for path in (asset_report, asset_design)
+        if path.exists()
+    ]
+    items.append({
+        "id": "ymm4-asset-pipeline",
+        "name": "画像素材を自動で集めて置く",
+        "summary": "権利を確認した歴史画像を集め、YMM4の合う場所へ自動で置きます。",
+        "status": "ready" if asset_ready else "attention",
+        "status_label": "使える" if asset_ready else "確認が必要",
+        "updated_on": max((value for value in asset_dates if value), default=None),
+        "next_action": "" if asset_ready else "完成記録とYMM4での表示を確認する",
+        "made_by": "Fable" if "Fable" in asset_design_text else "",
+        "sources": [
+            readable_source(path, vault, youtube_root, skills_root)
+            for path in (asset_report, asset_design)
+            if path.exists()
+        ],
+    })
+
+    items.sort(key=lambda item: item["updated_on"] or "", reverse=True)
+    counts = {
+        "ready": sum(item["status"] == "ready" for item in items),
+        "attention": sum(item["status"] != "ready" for item in items),
+    }
+    return {"checked_at": today.isoformat(), "counts": counts, "items": items}
+
+
 def normalize_merchant(value: str | None) -> str:
     text = unicodedata.normalize("NFKC", value or "").lower()
     aliases = [
@@ -935,6 +1116,7 @@ def build_dashboard(
     revenue_total = delivery_total + youtube_total
     overall_target_to_date = budget_to_date + youtube_calendar_target_to_date
     jobs = parse_jobs(vault / "01_プロジェクト/AI自動化/導入済み.md")
+    youtube_systems = parse_youtube_systems(vault, youtube_root, today)
     return {
         "generated_at": dt.datetime.now().astimezone().isoformat(timespec="minutes"),
         "today": today.isoformat(), "cutoff": cutoff.isoformat(), "month": month,
@@ -956,6 +1138,7 @@ def build_dashboard(
             "last_revenue_date": youtube_last_date,
             "captured_days": captured_youtube, "expected_days": cutoff.day,
             "schedule": enrich_schedule(schedule, youtube_root, cutoff),
+            "systems": youtube_systems,
         },
         "finance": {
             "revenue": revenue_total,
