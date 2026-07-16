@@ -237,6 +237,33 @@ def parse_youtube_slate(vault: Path, month: str) -> tuple[list[dict[str, Any]], 
     return schedule, slate
 
 
+def parse_youtube_week_schedule(
+    vault: Path,
+    targets_path: Path,
+    today: dt.date,
+) -> tuple[list[dict[str, Any]], list[Path]]:
+    """今週に含まれる月のslate（最大2冊）を結合する。"""
+    week_start = today - dt.timedelta(days=today.weekday())
+    months = sorted({
+        (week_start + dt.timedelta(days=offset)).strftime("%Y-%m")
+        for offset in range(7)
+    })
+    schedule: list[dict[str, Any]] = []
+    sources: list[Path] = []
+    for schedule_month in months:
+        month_schedule, source = parse_youtube_slate(vault, schedule_month)
+        if month_schedule:
+            schedule.extend(month_schedule)
+            if source:
+                sources.append(source)
+            continue
+        _, _, fallback, _ = parse_budget_and_schedule(targets_path, schedule_month)
+        schedule.extend(fallback)
+        if fallback:
+            sources.append(targets_path)
+    return schedule, sources
+
+
 def latest_freee_snapshot(vault: Path, cutoff: dt.date) -> Path | None:
     root = vault / "02_経営/帳簿/freee_export"
     candidates = []
@@ -1205,11 +1232,9 @@ def build_dashboard(
     today = today or dt.date.today()
     cutoff = today - dt.timedelta(days=1)
     month = cutoff.strftime("%Y-%m")
-    budgets, delivery_target, legacy_schedule, youtube_target = parse_budget_and_schedule(vault / "02_経営/目標と計画.md", month)
-    schedule, schedule_source = parse_youtube_slate(vault, month)
-    if not schedule:
-        schedule = legacy_schedule
-        schedule_source = None
+    targets_path = vault / "02_経営/目標と計画.md"
+    budgets, delivery_target, _, youtube_target = parse_budget_and_schedule(targets_path, month)
+    schedule, schedule_sources = parse_youtube_week_schedule(vault, targets_path, today)
     days_in_month = calendar.monthrange(cutoff.year, cutoff.month)[1]
     daily = []
     delivery_total = youtube_total = 0
@@ -1283,8 +1308,8 @@ def build_dashboard(
             "last_revenue_date": youtube_last_date,
             "captured_days": captured_youtube, "expected_days": cutoff.day,
             "schedule": enrich_schedule(schedule, youtube_root, today),
-            "schedule_source": str(schedule_source) if schedule_source else "02_経営/目標と計画.md（予備）",
-            "schedule_updated_at": file_timestamp(schedule_source) if schedule_source else None,
+            "schedule_source": " / ".join(str(path) for path in schedule_sources) or "投稿予定の正本が未設定",
+            "schedule_updated_at": latest_timestamp(*(file_timestamp(path) for path in schedule_sources)),
             "systems": youtube_systems,
         },
         "finance": {

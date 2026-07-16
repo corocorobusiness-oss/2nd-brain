@@ -112,6 +112,36 @@ class DashboardTests(unittest.TestCase):
             ["2026-07-22", "2026-07-24", "2026-07-25", "2026-07-26"],
         )
 
+    def test_youtube_schedule_combines_two_slates_across_month_end(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            vault = Path(tmp)
+            slate_dir = vault / dashboard.YOUTUBE_SLATE_DIR
+            slate_dir.mkdir(parents=True)
+            (slate_dir / "2026-07_ネタslate.md").write_text(
+                "## 7月 公開カレンダー\n"
+                "| 日付 | 動画 | era | pred / rank | 状態 |\n"
+                "|---|---|---|---|---|\n"
+                "| 7/31(金) | 7月の動画 | 戦国 | 10,000 / A | brief✓ PASS |\n",
+                encoding="utf-8",
+            )
+            (slate_dir / "2026-08_ネタslate.md").write_text(
+                "## 8月 公開カレンダー\n"
+                "| 日付 | 動画 | era | pred / rank | 状態 |\n"
+                "|---|---|---|---|---|\n"
+                "| 8/1(土) | 8月の動画 | 幕末 | 12,000 / A | brief✓ PASS |\n",
+                encoding="utf-8",
+            )
+            targets = vault / "02_経営/目標と計画.md"
+            targets.parent.mkdir(parents=True)
+            targets.write_text("# 目標\n", encoding="utf-8")
+
+            schedule, sources = dashboard.parse_youtube_week_schedule(
+                vault, targets, dt.date(2026, 8, 1)
+            )
+            visible = dashboard.enrich_schedule(schedule, vault / "youtube", dt.date(2026, 8, 1))
+            self.assertEqual([item["date"] for item in visible], ["2026-07-31", "2026-08-01"])
+            self.assertEqual([path.name for path in sources], ["2026-07_ネタslate.md", "2026-08_ネタslate.md"])
+
     def test_recent_youtube_systems_use_real_sources_and_fail_close(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
