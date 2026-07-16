@@ -181,35 +181,34 @@ def parse_budgets(vault: Path, ym: str):
 
 def parse_month_sales(vault: Path, today: datetime.date):
     """当月デイリーノートの「今日の売上」表を集計。
-    返り値: (delivery_sum, youtube_sum, [(day, その日の合計)], 記入日数)"""
+    返り値: (delivery_sum, youtube_sum, [(day, その日の合計)], days)
+    days = [{"day": 3, "Uber Eats": 5140, "出前館": None, ..., "YouTube": None}, ...]"""
     delivery = youtube = 0
     daily_totals = []
-    filled_days = 0
+    days = []
+    names = DELIVERY_NAMES + ("YouTube",)
     for day in range(1, today.day + 1):
         path = vault / DIARY_DIR_REL / f"{today.year}-{today.month:02d}-{day:02d}.md"
         if not path.exists():
             continue
-        day_total = 0
-        found = False
+        amounts = {n: None for n in names}
         for line in read(path).splitlines():
             m = re.match(r"^\|\s*([^|]+?)\s*\|\s*([^|]*)\|", line)
             if not m:
                 continue
             name, amount = m.group(1), yen(m.group(2))
-            if amount is None:
+            if amount is None or name not in amounts:
                 continue
-            if name in DELIVERY_NAMES:
-                delivery += amount
-                day_total += amount
-                found = True
-            elif name == "YouTube":
-                youtube += amount
-                day_total += amount
-                found = True
-        if found:
-            filled_days += 1
-            daily_totals.append((day, day_total))
-    return delivery, youtube, daily_totals, filled_days
+            amounts[name] = (amounts[name] or 0) + amount
+        if all(v is None for v in amounts.values()):
+            continue
+        d_day = sum(amounts[n] or 0 for n in DELIVERY_NAMES)
+        y_day = amounts["YouTube"] or 0
+        delivery += d_day
+        youtube += y_day
+        daily_totals.append((day, d_day + y_day))
+        days.append({"day": day, **amounts})
+    return delivery, youtube, daily_totals, days
 
 
 def parse_freee_block(vault: Path, today: datetime.date, lookback: int = 70):
@@ -270,7 +269,7 @@ def build_sales_svg(daily_totals, budget_total):
 </svg>"""
 
 
-def biz_card(name, actual, budget, today):
+def biz_card(name, actual, budget, today, detail_html=""):
     days_in_month = calendar.monthrange(today.year, today.month)[1]
     pct = (actual / budget * 100) if budget else None
     pace = None
@@ -283,27 +282,61 @@ def biz_card(name, actual, budget, today):
     else:
         cls = "up" if pace >= 0 else "down"
         sign = "+" if pace >= 0 else "−"
-        pace_html = f'<span class="pace {cls}">ペース{sign}{fmt(abs(pace))[0]}{abs(pace):,}</span>'
-    return f"""      <div class="card">
-        <div class="cardhead"><h3>{esc(name)}</h3>{pace_html}</div>
-        <div class="big">{fmt(actual)}</div>
-        <div class="sub">予算 {fmt(budget)} ・ 達成率 <b>{pct_s}</b></div>
-        <div class="bar"><i style="width:{width:.0f}%"></i></div>
-      </div>
+        pace_html = f'<span class="pace {cls}">ペース{sign}¥{abs(pace):,}</span>'
+    return f"""      <details class="card exp">
+        <summary>
+          <div class="cardhead"><h3>{esc(name)}</h3>{pace_html}</div>
+          <div class="big">{fmt(actual)}</div>
+          <div class="sub">予算 {fmt(budget)} ・ 達成率 <b>{pct_s}</b><span class="opener">日別 ▾</span></div>
+          <div class="bar"><i style="width:{width:.0f}%"></i></div>
+        </summary>
+        {detail_html}
+      </details>
 """
+
+
+def cell(v):
+    return f'<td class="r">{fmt(v)}</td>' if v is not None else '<td class="r dim2">—</td>'
+
+
+def build_daily_details(days, today):
+    """日別明細テーブル（新しい日が上）: (デリバリー用, YouTube用, 合計用)"""
+    rows_d = rows_y = rows_t = ""
+    for e in reversed(days):
+        date = f"{today.month}/{e['day']}"
+        d_sum = sum(e[n] or 0 for n in DELIVERY_NAMES)
+        has_d = any(e[n] is not None for n in DELIVERY_NAMES)
+        if has_d:
+            rows_d += (f'<tr><td class="strongc">{date}</td>{cell(e["Uber Eats"])}{cell(e["出前館"])}'
+                       f'{cell(e["ロケットナウ"])}<td class="r strongc">{fmt(d_sum)}</td></tr>')
+        if e["YouTube"] is not None:
+            rows_y += f'<tr><td class="strongc">{date}</td>{cell(e["YouTube"])}</tr>'
+        rows_t += (f'<tr><td class="strongc">{date}</td>{cell(d_sum if has_d else None)}{cell(e["YouTube"])}'
+                   f'<td class="r strongc">{fmt(d_sum + (e["YouTube"] or 0))}</td></tr>')
+    t_d = (f'<table class="mini"><tr><th>日付</th><th class="r">Uber</th><th class="r">出前館</th>'
+           f'<th class="r">ロケナウ</th><th class="r">計</th></tr>{rows_d}</table>') if rows_d else \
+        '<p class="hint">今月はまだ記入なし</p>'
+    t_y = (f'<table class="mini"><tr><th>日付</th><th class="r">収益</th></tr>{rows_y}</table>'
+           '<p class="hint">YouTube収益は2〜3日遅れで自動記入される仕様</p>') if rows_y else \
+        '<p class="hint">今月はまだ記入なし（2〜3日遅れで自動記入される仕様）</p>'
+    t_t = (f'<table class="mini"><tr><th>日付</th><th class="r">デリバリー</th><th class="r">YouTube</th>'
+           f'<th class="r">計</th></tr>{rows_t}</table>') if rows_t else '<p class="hint">今月はまだ記入なし</p>'
+    return t_d, t_y, t_t
 
 
 def build_money_html(vault: Path, today: datetime.date):
     ym = f"{today.year}-{today.month:02d}"
     budgets = parse_budgets(vault, ym) or (None, None, None)
     d_budget, y_budget, t_budget = budgets
-    delivery, youtube, daily_totals, filled = parse_month_sales(vault, today)
+    delivery, youtube, daily_totals, days = parse_month_sales(vault, today)
+    filled = len(days)
     total = delivery + youtube
     freee = parse_freee_block(vault, today)
 
-    cards = biz_card("デリバリー", delivery, d_budget, today)
-    cards += biz_card("YouTube", youtube, y_budget, today)
-    cards += biz_card("合計", total, t_budget, today)
+    t_d, t_y, t_t = build_daily_details(days, today)
+    cards = biz_card("デリバリー", delivery, d_budget, today, t_d)
+    cards += biz_card("YouTube", youtube, y_budget, today, t_y)
+    cards += biz_card("合計", total, t_budget, today, t_t)
 
     if freee:
         stale_note = ""
@@ -369,7 +402,11 @@ def parse_slate(vault: Path, today: datetime.date):
     items = []
     for m in re.finditer(r"^\d+\.\s*(.+?)〔(.+?)〕", text, re.M):
         items.append((m.group(1).strip(), m.group(2).strip()))
-    return ready, brief, items[:6]
+    fresh = None  # 草案のデータ鮮度（例: 2026-06-28）
+    fm = re.search(r"データ鮮度:\s*\D*(\d{4})-(\d{2})-(\d{2})", text)
+    if fm:
+        fresh = datetime.date(int(fm.group(1)), int(fm.group(2)), int(fm.group(3)))
+    return ready, brief, items[:6], fresh
 
 
 def parse_board_youtube(vault: Path, limit: int = 4):
@@ -412,13 +449,19 @@ def build_youtube_html(vault: Path, today: datetime.date):
     todo_lis = todo_lis or '<li class="dim2">なし</li>'
 
     if slate:
-        ready, brief, items = slate
-        stock_head = f'台本済 <b class="strongc">{ready}</b> 本 ・ ブリーフ済（台本これから） <b>{brief}</b> 本'
+        ready, brief, items, fresh = slate
+        fresh_tag = f' <span class="tag">草案 {fresh.month}/{fresh.day}時点</span>' if fresh else ""
+        stock_head = f'台本済 <b class="strongc">{ready}</b> 本 ・ ブリーフ済（台本これから） <b>{brief}</b> 本{fresh_tag}'
         stock_lis = "".join(
             f'<li>{esc(n)} <span class="tag{" ok" if "公開待ち" in s or "台本できてる" in s else ""}">{esc(s)}</span></li>'
             for n, s in items
         )
-        stock_html = f'<p class="sub" style="margin:2px 0 6px;">{stock_head}</p><ul class="list">{stock_lis}</ul><p class="hint">在庫の正本: 来月ネタ草案（毎月25日更新）</p>'
+        stale_warn = ""
+        if fresh and (datetime.date.today() - fresh).days > 7:
+            stale_warn = ('<p class="warn">⚠ 在庫リストは草案時点の状態で、最新の進捗は反映されてない。'
+                          '実際の状況は上の週間ボード（あおいが更新）が正。</p>')
+        stock_html = (f'<p class="sub" style="margin:2px 0 6px;">{stock_head}</p><ul class="list">{stock_lis}</ul>'
+                      f'{stale_warn}<p class="hint">在庫の正本: 来月ネタ草案（毎月25日更新）</p>')
     else:
         stock_html = '<p class="hint">今月のネタ草案ファイルが見つからない</p>'
 
