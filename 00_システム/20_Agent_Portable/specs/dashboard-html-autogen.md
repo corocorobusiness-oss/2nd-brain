@@ -16,8 +16,13 @@
 | `00_システム/20_Agent_Portable/scripts/dashboard_template.html` | テンプレート（プレースホルダ入りHTML・図SVG焼き込み済み） |
 | `06_エージェント運用/00_司令塔/AIシステムダッシュボード.html` | 出力（唯一の書き込み先。手で編集しない） |
 
-読み取るもの: タスクボード.md（📌今週やる）／期日タスク.md（`- [ ] YYYY-MM-DD` 行）／
-`05_日誌/今日.md`（思いつきメモ/Inbox欄）／導入済み.md（`| com.xxx |` 行の🟢🟡🛑を集計＋nightly-refresh・daily-dashboardを加算）。
+読み取るもの:
+- **お金**: `02_経営/目標と計画.md`（当月の予算行）／`05_日誌/*.md`「今日の売上」表（Uber Eats・出前館・ロケットナウ=デリバリー、YouTube。当月分を集計→実績・達成率・日割りペース比・累計グラフSVG）／デイリーノートの `dashboard:start` ブロック（freee数字。当月未記入なら直近の記入済みを日付付き表示＋停止警告）
+- **YouTube運営**: `00_司令塔/YouTube週間ボード.md`（投稿予定・制作中・やること＝正本）／`来月ネタ草案_YYYY-MM.md`（在庫と台本状況）／タスクボード📺節
+- **タスク**: タスクボード.md（📌今週やる）／期日タスク.md（`- [ ] YYYY-MM-DD` 行）／`05_日誌/今日.md`（メモ欄）
+- **ジョブ数**: 導入済み.md（`| com.xxx |` 行の🟢🟡🛑を集計＋nightly-refresh・daily-dashboardを加算）
+
+デザインは「AI Company OS」風のダーク固定（サイドバー・KPIカード・進捗バー・SVGチャート）。アンカー: `#money` `#youtube` `#tasks` `#status` `#team` `#flow` `#help`。
 
 ## 実行方法（手動）
 

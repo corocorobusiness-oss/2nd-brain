@@ -3,241 +3,255 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>🎛 AIシステムダッシュボード</title>
+<title>AI Company OS — 祐馬さんの経営ダッシュボード</title>
 <style>
+  /* このページは意図的にダーク固定（AI Company OS スタイル） */
   :root{
-    --ground:#F6F9FB; --card:#FFFFFF; --ink:#1B2733; --ink2:#5A6B7A; --ink3:#8195A3;
-    --line:#DCE5EB; --accent:#1F7AA8; --accent-soft:#E3F0F7;
-    --good:#2E7D46; --good-bg:#E7F3EB; --watch:#9A6B12; --watch-bg:#F7EEDC; --stop:#B3423A; --stop-bg:#F8E8E6;
-    --code-bg:#EEF3F6;
+    --bg:#0B111C; --panel:#121B2A; --panel2:#0E1622; --line:#1D2A3D;
+    --ink:#E7EDF5; --ink2:#93A3B8; --ink3:#5D6E84;
+    --accent:#4C9BE8; --accent2:#39C5CF;
+    --good:#3DBE7B; --watch:#E0A93E; --bad:#E06C5F; --purple:#9B7BE8;
   }
-  @media (prefers-color-scheme: dark){
-    :root{
-      --ground:#101820; --card:#182430; --ink:#E4ECF2; --ink2:#96A7B4; --ink3:#6E8290;
-      --line:#2A3843; --accent:#5AB0D8; --accent-soft:#1C3341;
-      --good:#63BD85; --good-bg:#1B3226; --watch:#D9A84E; --watch-bg:#382E17; --stop:#E08078; --stop-bg:#3B2320;
-      --code-bg:#212E39;
-    }
-  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
   body{
-    background:var(--ground); color:var(--ink);
+    background:var(--bg); color:var(--ink); margin:0;
     font-family:"Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic UI","Yu Gothic","Noto Sans JP",sans-serif;
-    line-height:1.8; margin:0; font-size:15px;
+    font-size:14px; line-height:1.85;
+    -webkit-font-smoothing:antialiased;
   }
-  .wrap{max-width:880px; margin:0 auto; padding:32px 20px 72px;}
-  .eyebrow{font-size:11px; letter-spacing:.14em; color:var(--accent); font-weight:700; margin:0 0 6px;}
-  h1{font-size:26px; line-height:1.35; margin:0 0 4px; text-wrap:balance; letter-spacing:.01em;}
-  .meta{color:var(--ink3); font-size:12.5px; margin:0 0 18px;}
-  .notice{
-    background:var(--accent-soft); border-left:3px solid var(--accent);
-    padding:10px 14px; border-radius:0 8px 8px 0; font-size:13px; color:var(--ink2); margin:0 0 30px;
+  a{color:var(--accent); text-decoration:none;}
+  a:focus-visible{outline:2px solid var(--accent); outline-offset:2px; border-radius:4px;}
+
+  .layout{display:grid; grid-template-columns:196px 1fr; min-height:100vh;}
+  .side{
+    background:var(--panel2); border-right:1px solid var(--line);
+    padding:22px 14px; position:sticky; top:0; height:100vh; overflow-y:auto;
   }
-  h2{font-size:18px; margin:46px 0 6px; letter-spacing:.02em;}
-  h2 .sub{font-weight:400; font-size:12.5px; color:var(--ink3); margin-left:8px;}
-  h3{font-size:14.5px; margin:0 0 4px;}
-  .oneliner{font-size:16px; background:var(--card); border:1px solid var(--line); border-radius:10px; padding:16px 18px; margin:0;}
-  .oneliner strong{color:var(--accent);}
-
-  .diagram{background:#FFFFFF; border:1px solid var(--line); border-radius:10px; padding:16px 12px; margin-top:12px; overflow-x:auto;}
-  .diagram svg{display:block; min-width:600px; max-width:780px; height:auto; margin:0 auto;}
-
-  .roster{display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:12px; margin-top:12px;}
-  .member{background:var(--card); border:1px solid var(--line); border-radius:10px; padding:14px 16px;}
-  .member .face{font-size:26px; line-height:1;}
-  .member .name{font-weight:700; font-size:15px; margin-top:6px;}
-  .member .title{display:inline-block; font-size:11.5px; font-weight:700; color:var(--accent); background:var(--accent-soft); border-radius:99px; padding:1px 10px; margin:4px 0 6px;}
-  .member .desc{font-size:12.5px; color:var(--ink2); line-height:1.7;}
-
-  .tiles{display:grid; grid-template-columns:repeat(auto-fit,minmax(140px,1fr)); gap:10px; margin:12px 0 0;}
-  .tile{background:var(--card); border:1px solid var(--line); border-radius:10px; padding:14px 16px 12px;}
-  .tile .chip{display:inline-flex; align-items:center; gap:6px; font-size:11.5px; font-weight:700; border-radius:99px; padding:2px 10px;}
-  .tile .chip::before{content:""; width:8px; height:8px; border-radius:50%; background:currentColor;}
-  .chip.good{color:var(--good); background:var(--good-bg);}
-  .chip.watch{color:var(--watch); background:var(--watch-bg);}
-  .chip.stop{color:var(--stop); background:var(--stop-bg);}
-  .chip.total{color:var(--ink2); background:var(--code-bg);}
-  .tile .num{font-size:34px; font-weight:700; font-variant-numeric:tabular-nums; line-height:1.15; margin-top:6px;}
-  .tile .num small{font-size:14px; font-weight:500; color:var(--ink3); margin-left:2px;}
-  .tile .desc{font-size:11.5px; color:var(--ink3); line-height:1.5; margin-top:2px;}
-
-  .cats{display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:12px; margin-top:12px;}
-  .cat{background:var(--card); border:1px solid var(--line); border-radius:10px; padding:14px 18px;}
-  .cat h3{font-size:15px;}
-  .cat ul{margin:6px 0 0; padding-left:1.15em;}
-  .cat li{font-size:13px; margin:6px 0; color:var(--ink2);}
-  .cat li b{color:var(--ink);}
-  .ch{font-weight:700; color:var(--accent); white-space:nowrap;}
-  .due{font-size:11px; font-weight:700; color:var(--stop); background:var(--stop-bg); border-radius:99px; padding:1px 8px; white-space:nowrap;}
-
-  .card{background:var(--card); border:1px solid var(--line); border-radius:10px; padding:6px 18px 14px; margin-top:12px;}
-  .scroll{overflow-x:auto;}
-  table{border-collapse:collapse; width:100%; font-size:13.5px; margin:10px 0 4px;}
-  th{font-size:11.5px; letter-spacing:.06em; color:var(--ink3); text-align:left; font-weight:700; padding:8px 12px 6px; border-bottom:1.5px solid var(--line); white-space:nowrap;}
-  td{padding:9px 12px; border-bottom:1px solid var(--line); vertical-align:top;}
-  tr:last-child td{border-bottom:none;}
-  td.key{white-space:nowrap; font-weight:600; font-variant-numeric:tabular-nums;}
-  code{font-family:ui-monospace,"SF Mono",Menlo,monospace; font-size:12.5px; background:var(--code-bg); border-radius:4px; padding:1px 6px;}
-  ul.flat{margin:10px 0 0; padding-left:1.2em; font-size:13.5px;}
-  ul.flat li{margin:5px 0;}
-
-  ol.alert{margin:12px 0 0; padding-left:0; list-style:none; counter-reset:s;}
-  ol.alert li{counter-increment:s; display:flex; gap:12px; padding:9px 0; border-bottom:1px solid var(--line); font-size:14px; align-items:baseline;}
-  ol.alert li:last-child{border-bottom:none;}
-  ol.alert li::before{
-    content:counter(s); flex:none; width:24px; height:24px; border-radius:50%;
-    background:var(--stop-bg); color:var(--stop); font-weight:700; font-size:12.5px;
-    display:flex; align-items:center; justify-content:center; align-self:center;
+  .brand{font-size:15px; font-weight:700; letter-spacing:.02em; padding:0 8px;}
+  .brand small{display:block; font-size:10.5px; font-weight:400; color:var(--ink3); letter-spacing:.05em;}
+  .nav{list-style:none; margin:20px 0 0; padding:0;}
+  .nav a{
+    display:block; padding:8px 10px; border-radius:9px; color:var(--ink2);
+    font-size:13px; font-weight:600;
   }
-  .warnbox{border-left-color:var(--stop); margin-top:12px;}
-  .warnbox strong{color:var(--stop);}
+  .nav a:hover{background:var(--panel); color:var(--ink);}
+  .factory{
+    margin-top:26px; background:var(--panel); border:1px solid var(--line);
+    border-radius:12px; padding:12px; font-size:11.5px; color:var(--ink2); line-height:1.7;
+  }
+  .factory b{color:var(--ink); font-size:12px;}
+  .online{display:inline-block; width:7px; height:7px; border-radius:50%; background:var(--good); margin-right:5px;}
 
-  details{background:var(--card); border:1px solid var(--line); border-radius:10px; padding:12px 18px; margin-top:12px; font-size:13px; color:var(--ink2);}
-  details summary{cursor:pointer; font-weight:700; color:var(--ink); font-size:13.5px;}
-  details[open] summary{margin-bottom:8px;}
-  details h3{margin-top:14px; color:var(--ink);}
-  details ul{padding-left:1.2em; margin:6px 0;}
-  details li{margin:4px 0;}
+  .main{padding:26px 30px 90px; max-width:1100px;}
+  .topbar{display:flex; flex-wrap:wrap; align-items:baseline; gap:8px 16px; margin-bottom:20px;}
+  h1{font-size:19px; font-weight:700; margin:0;}
+  .meta{font-size:11.5px; color:var(--ink3);}
 
-  .footer{margin-top:48px; color:var(--ink3); font-size:12px; border-top:1px solid var(--line); padding-top:14px;}
-  a{color:var(--accent);}
-  a:focus-visible{outline:2px solid var(--accent); outline-offset:2px; border-radius:2px;}
+  .sec{margin-top:40px;}
+  .seclabel{font-size:10px; letter-spacing:.22em; text-transform:uppercase; color:var(--accent2); font-weight:700; margin:0 0 2px;}
+  h2{font-size:16px; font-weight:700; margin:0 0 12px;}
+  h3{font-size:13px; font-weight:700; margin:0;}
+  .dim{color:var(--ink3); font-weight:400; font-size:11.5px;}
+  .dim2{color:var(--ink3);}
+  .hint{font-size:11.5px; color:var(--ink3); margin:6px 0 0;}
+  .warn{font-size:12px; color:var(--watch); margin:8px 0 0;}
+
+  .grid2{display:grid; grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr)); gap:12px;}
+  .grid3{display:grid; grid-template-columns:repeat(auto-fit,minmax(min(230px,100%),1fr)); gap:12px;}
+  .grid2>*, .grid3>*, .stats>*{min-width:0;}
+  svg{max-width:100%; height:auto;}
+  .card{
+    background:var(--panel); border:1px solid var(--line); border-radius:14px;
+    padding:16px 18px;
+  }
+  .cardhead{display:flex; justify-content:space-between; align-items:baseline; gap:8px; margin-bottom:6px;}
+  .big{font-size:28px; font-weight:700; letter-spacing:.01em; font-variant-numeric:tabular-nums; line-height:1.3;}
+  .sub{font-size:12px; color:var(--ink2);}
+  .sub b{color:var(--ink);}
+  .bar{height:5px; background:var(--line); border-radius:3px; margin-top:10px; overflow:hidden;}
+  .bar i{display:block; height:100%; background:linear-gradient(90deg,var(--accent),var(--accent2)); border-radius:3px;}
+  .pace{font-size:11px; font-weight:700; white-space:nowrap;}
+  .pace.up{color:var(--good);} .pace.down{color:var(--bad);}
+
+  table.mini{border-collapse:collapse; width:100%; font-size:12.5px; margin-top:4px;}
+  table.mini th{color:var(--ink3); font-size:11px; text-align:left; font-weight:600; padding:5px 8px 5px 0; border-bottom:1px solid var(--line);}
+  table.mini td{padding:7px 8px 7px 0; border-bottom:1px solid var(--line); color:var(--ink2); vertical-align:top;}
+  table.mini tr:last-child td{border-bottom:none;}
+  td.r{text-align:right; font-variant-numeric:tabular-nums; color:var(--ink);}
+  .strongc{color:var(--ink); font-weight:600;}
+
+  ul.list{list-style:none; margin:4px 0 0; padding:0;}
+  ul.list li{padding:7px 0; border-bottom:1px solid var(--line); font-size:12.5px; color:var(--ink2); line-height:1.75;}
+  ul.list li:last-child{border-bottom:none;}
+  ul.list li b{color:var(--ink); font-variant-numeric:tabular-nums;}
+  .due{color:var(--bad); font-size:10.5px; font-weight:700; margin-left:6px; white-space:nowrap;}
+  .due.soon{color:var(--watch);}
+  .tag{font-size:10.5px; color:var(--ink3); border:1px solid var(--line); border-radius:99px; padding:1px 8px; margin-left:6px; white-space:nowrap;}
+  .tag.ok{color:var(--good); border-color:var(--good);}
+
+  .svgt{fill:var(--ink3); font-size:10px; font-family:inherit;}
+  .svgt.strong{fill:var(--ink); font-weight:700; font-size:11px;}
+
+  .stats{display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:12px;}
+  .stats .card em{display:block; font-style:normal; font-size:34px; font-weight:700; line-height:1.2; font-variant-numeric:tabular-nums;}
+  .stats .card span{font-size:11.5px; color:var(--ink2); display:inline-flex; align-items:center; gap:6px;}
+  .dot{width:7px; height:7px; border-radius:50%; display:inline-block; flex:none;}
+  .dot.good{background:var(--good);} .dot.watch{background:var(--watch);} .dot.stop{background:var(--bad);}
+
+  .person{display:flex; gap:12px; align-items:flex-start; padding:11px 0; border-bottom:1px solid var(--line);}
+  .person:last-child{border-bottom:none;}
+  .avatar{width:34px; height:34px; border-radius:50%; flex:none; display:flex; align-items:center; justify-content:center; font-size:13px; font-weight:700; color:#fff;}
+  .av1{background:linear-gradient(135deg,#2E7FB8,#39C5CF);} .av2{background:linear-gradient(135deg,#5E8F52,#8BBB55);}
+  .av3{background:linear-gradient(135deg,#7B5FD0,#A47BE8);} .av4{background:linear-gradient(135deg,#8A6B3A,#C09A4E);}
+  .person b{display:block; font-size:13px;}
+  .person i{font-style:normal; font-size:10.5px; color:var(--accent2); font-weight:700;}
+  .person p{margin:1px 0 0; font-size:11.5px; color:var(--ink2); line-height:1.7;}
+
+  .flow{list-style:none; margin:8px 0 0; padding:0;}
+  .flow li{position:relative; padding:0 0 14px 24px; font-size:12.5px; color:var(--ink2);}
+  .flow li b{color:var(--ink); font-size:13px;}
+  .flow li::before{content:""; position:absolute; left:3px; top:8px; width:7px; height:7px; border-radius:50%; background:var(--accent);}
+  .flow li::after{content:""; position:absolute; left:6px; top:19px; bottom:-2px; width:1px; background:var(--line);}
+  .flow li:last-child::after{display:none;}
+  .flow li:last-child{padding-bottom:0;}
+
+  .cmd{display:flex; flex-wrap:wrap; gap:8px; margin-top:8px;}
+  .cmd span{background:var(--panel2); border:1px solid var(--line); border-radius:99px; padding:5px 14px; font-size:12px; color:var(--ink2);}
+  .cmd span b{color:var(--accent2);}
+
+  .alerts{list-style:none; margin:6px 0 0; padding:0; counter-reset:a;}
+  .alerts li{counter-increment:a; padding:8px 0 8px 28px; border-bottom:1px solid var(--line); position:relative; font-size:12.5px; color:var(--ink2);}
+  .alerts li:last-child{border-bottom:none;}
+  .alerts li::before{content:counter(a); position:absolute; left:0; top:10px; width:18px; height:18px; border:1px solid var(--bad); color:var(--bad); border-radius:50%; font-size:10.5px; font-weight:700; display:flex; align-items:center; justify-content:center;}
+
+  details{margin-top:12px;}
+  details summary{cursor:pointer; font-size:12px; font-weight:600; color:var(--ink3);}
+  details .inner{font-size:12px; color:var(--ink2); margin-top:8px; line-height:1.85;}
+  details .inner h3{font-size:11.5px; color:var(--ink); margin:12px 0 2px;}
+  details .inner ul{margin:2px 0; padding-left:1.2em;}
+  code{font-family:ui-monospace,"SF Mono",Menlo,monospace; font-size:11px; background:var(--panel2); border:1px solid var(--line); border-radius:4px; padding:1px 5px;}
+
+  .footer{margin-top:56px; padding-top:14px; border-top:1px solid var(--line); font-size:11px; color:var(--ink3); line-height:1.9;}
+
+  @media (max-width:900px){
+    .layout{grid-template-columns:1fr;}
+    .side{position:static; height:auto; border-right:none; border-bottom:1px solid var(--line); padding:14px 18px;}
+    .nav{display:flex; flex-wrap:wrap; gap:2px; margin-top:10px;}
+    .nav a{padding:5px 10px; font-size:12px;}
+    .factory{display:none;}
+    .main{padding:20px 18px 70px;}
+  }
 </style>
 </head>
 <body>
-<div class="wrap">
-  <p class="eyebrow">06_エージェント運用 / 00_司令塔</p>
-  <h1>🎛 AIシステムダッシュボード</h1>
-  <p class="meta">自動生成 {{GENERATED_AT}} ・ 数字は生成時点のスナップショット（正本: AI自動化ジョブ台帳）</p>
-  <div class="notice">これはビジュアル版（スクリプトが自動で作り直す）。<strong>正本は同フォルダの <code>AIシステムダッシュボード.md</code></strong>。内容が食い違ったらmd側が正しい。</div>
+<div class="layout">
 
-  <h2>この会社、いまこうなってる</h2>
-  <p class="oneliner">祐馬さんが<strong>AIに話しかける</strong> → ぜんぶ<strong>Second Brainに記録</strong>される → <strong>Mac miniが24時間、33個の仕事を自動で回す</strong> → 結果は<strong>Discordに届く</strong>。壊れてないか見張る警備員と、消えても戻せるバックアップ付き。</p>
+  <aside class="side">
+    <div class="brand">🏛 AI Company OS<small>祐馬さんの経営システム</small></div>
+    <ul class="nav">
+      <li><a href="#money">💰 今月のお金</a></li>
+      <li><a href="#youtube">📺 YouTube運営</a></li>
+      <li><a href="#tasks">✅ 今日のタスク</a></li>
+      <li><a href="#status">⚙️ 自動化の状態</a></li>
+      <li><a href="#team">🤖 AI社員</a></li>
+      <li><a href="#flow">🗺 仕組み</a></li>
+      <li><a href="#help">🚨 困った時</a></li>
+    </ul>
+    <div class="factory"><b><span class="online"></span>Mac mini 工場</b>24時間稼働・自動化33ジョブ<br>見張り: Watchtower 毎朝8:30</div>
+  </aside>
 
-  <div class="diagram">
-<svg id="my-svg" width="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="flowchart" style="max-width: 727.562px; background-color: transparent;" viewBox="0 0 727.5625 822" role="graphics-document document" aria-roledescription="flowchart-v2"><style>#my-svg{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;fill:#333;}@keyframes edge-animation-frame{from{stroke-dashoffset:0;}}@keyframes dash{to{stroke-dashoffset:0;}}#my-svg .edge-animation-slow{stroke-dasharray:9,5!important;stroke-dashoffset:900;animation:dash 50s linear infinite;stroke-linecap:round;}#my-svg .edge-animation-fast{stroke-dasharray:9,5!important;stroke-dashoffset:900;animation:dash 20s linear infinite;stroke-linecap:round;}#my-svg .error-icon{fill:#552222;}#my-svg .error-text{fill:#552222;stroke:#552222;}#my-svg .edge-thickness-normal{stroke-width:1px;}#my-svg .edge-thickness-thick{stroke-width:3.5px;}#my-svg .edge-pattern-solid{stroke-dasharray:0;}#my-svg .edge-thickness-invisible{stroke-width:0;fill:none;}#my-svg .edge-pattern-dashed{stroke-dasharray:3;}#my-svg .edge-pattern-dotted{stroke-dasharray:2;}#my-svg .marker{fill:#333333;stroke:#333333;}#my-svg .marker.cross{stroke:#333333;}#my-svg svg{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;}#my-svg p{margin:0;}#my-svg .label{font-family:"trebuchet ms",verdana,arial,sans-serif;color:#333;}#my-svg .cluster-label text{fill:#333;}#my-svg .cluster-label span{color:#333;}#my-svg .cluster-label span p{background-color:transparent;}#my-svg .label text,#my-svg span{fill:#333;color:#333;}#my-svg .node rect,#my-svg .node circle,#my-svg .node ellipse,#my-svg .node polygon,#my-svg .node path{fill:#ECECFF;stroke:#9370DB;stroke-width:1px;}#my-svg .rough-node .label text,#my-svg .node .label text,#my-svg .image-shape .label,#my-svg .icon-shape .label{text-anchor:middle;}#my-svg .node .katex path{fill:#000;stroke:#000;stroke-width:1px;}#my-svg .rough-node .label,#my-svg .node .label,#my-svg .image-shape .label,#my-svg .icon-shape .label{text-align:center;}#my-svg .node.clickable{cursor:pointer;}#my-svg .root .anchor path{fill:#333333!important;stroke-width:0;stroke:#333333;}#my-svg .arrowheadPath{fill:#333333;}#my-svg .edgePath .path{stroke:#333333;stroke-width:1px;}#my-svg .flowchart-link{stroke:#333333;fill:none;}#my-svg .edgeLabel{background-color:rgba(232,232,232, 0.8);text-align:center;}#my-svg .edgeLabel p{background-color:rgba(232,232,232, 0.8);}#my-svg .edgeLabel rect{opacity:0.5;background-color:rgba(232,232,232, 0.8);fill:rgba(232,232,232, 0.8);}#my-svg .labelBkg{background-color:rgba(232, 232, 232, 0.5);}#my-svg .cluster rect{fill:#ffffde;stroke:#aaaa33;stroke-width:1px;}#my-svg .cluster text{fill:#333;}#my-svg .cluster span{color:#333;}#my-svg div.mermaidTooltip{position:absolute;text-align:center;max-width:200px;padding:2px;font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:12px;background:hsl(80, 100%, 96.2745098039%);border:1px solid #aaaa33;border-radius:2px;pointer-events:none;z-index:100;}#my-svg .flowchartTitleText{text-anchor:middle;font-size:18px;fill:#333;}#my-svg rect.text{fill:none;stroke-width:0;}#my-svg .icon-shape,#my-svg .image-shape{background-color:rgba(232,232,232, 0.8);text-align:center;}#my-svg .icon-shape p,#my-svg .image-shape p{background-color:rgba(232,232,232, 0.8);padding:2px;}#my-svg .icon-shape .label rect,#my-svg .image-shape .label rect{opacity:0.5;background-color:rgba(232,232,232, 0.8);fill:rgba(232,232,232, 0.8);}#my-svg .label-icon{display:inline-block;height:1em;overflow:visible;vertical-align:-0.125em;}#my-svg .node .label-icon path{fill:currentColor;stroke:revert;stroke-width:revert;}#my-svg .node .neo-node{stroke:#9370DB;}#my-svg [data-look="neo"].node rect,#my-svg [data-look="neo"].cluster rect,#my-svg [data-look="neo"].node polygon{stroke:#9370DB;filter:drop-shadow(1px 2px 2px rgba(185, 185, 185, 1));}#my-svg [data-look="neo"].swimlane.cluster rect{filter:none;}#my-svg [data-look="neo"].node path{stroke:#9370DB;stroke-width:1px;}#my-svg [data-look="neo"].node .outer-path{filter:drop-shadow(1px 2px 2px rgba(185, 185, 185, 1));}#my-svg [data-look="neo"].node .neo-line path{stroke:#9370DB;filter:none;}#my-svg [data-look="neo"].node circle{stroke:#9370DB;filter:drop-shadow(1px 2px 2px rgba(185, 185, 185, 1));}#my-svg [data-look="neo"].node circle .state-start{fill:#000000;}#my-svg [data-look="neo"].icon-shape .icon{fill:#9370DB;filter:drop-shadow(1px 2px 2px rgba(185, 185, 185, 1));}#my-svg [data-look="neo"].icon-shape .icon-neo path{stroke:#9370DB;filter:drop-shadow(1px 2px 2px rgba(185, 185, 185, 1));}#my-svg :root{--mermaid-font-family:"trebuchet ms",verdana,arial,sans-serif;}</style><g><marker id="my-svg_flowchart-v2-pointEnd" class="marker flowchart-v2" viewBox="0 0 10 10" refX="5" refY="5" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowMarkerPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"/></marker><marker id="my-svg_flowchart-v2-pointStart" class="marker flowchart-v2" viewBox="0 0 10 10" refX="4.5" refY="5" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" orient="auto"><path d="M 0 5 L 10 10 L 10 0 z" class="arrowMarkerPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"/></marker><marker id="my-svg_flowchart-v2-pointEnd-margin" class="marker flowchart-v2" viewBox="0 0 11.5 14" refX="11.5" refY="7" markerUnits="userSpaceOnUse" markerWidth="10.5" markerHeight="14" orient="auto"><path d="M 0 0 L 11.5 7 L 0 14 z" class="arrowMarkerPath" style="stroke-width: 0; stroke-dasharray: 1, 0;"/></marker><marker id="my-svg_flowchart-v2-pointStart-margin" class="marker flowchart-v2" viewBox="0 0 11.5 14" refX="1" refY="7" markerUnits="userSpaceOnUse" markerWidth="11.5" markerHeight="14" orient="auto"><polygon points="0,7 11.5,14 11.5,0" class="arrowMarkerPath" style="stroke-width: 0; stroke-dasharray: 1, 0;"/></marker><marker id="my-svg_flowchart-v2-circleEnd" class="marker flowchart-v2" viewBox="0 0 10 10" refX="11" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto"><circle cx="5" cy="5" r="5" class="arrowMarkerPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"/></marker><marker id="my-svg_flowchart-v2-circleStart" class="marker flowchart-v2" viewBox="0 0 10 10" refX="-1" refY="5" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto"><circle cx="5" cy="5" r="5" class="arrowMarkerPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"/></marker><marker id="my-svg_flowchart-v2-circleEnd-margin" class="marker flowchart-v2" viewBox="0 0 10 10" refY="5" refX="12.25" markerUnits="userSpaceOnUse" markerWidth="14" markerHeight="14" orient="auto"><circle cx="5" cy="5" r="5" class="arrowMarkerPath" style="stroke-width: 0; stroke-dasharray: 1, 0;"/></marker><marker id="my-svg_flowchart-v2-circleStart-margin" class="marker flowchart-v2" viewBox="0 0 10 10" refX="-2" refY="5" markerUnits="userSpaceOnUse" markerWidth="14" markerHeight="14" orient="auto"><circle cx="5" cy="5" r="5" class="arrowMarkerPath" style="stroke-width: 0; stroke-dasharray: 1, 0;"/></marker><marker id="my-svg_flowchart-v2-crossEnd" class="marker cross flowchart-v2" viewBox="0 0 11 11" refX="12" refY="5.2" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto"><path d="M 1,1 l 9,9 M 10,1 l -9,9" class="arrowMarkerPath" style="stroke-width: 2; stroke-dasharray: 1, 0;"/></marker><marker id="my-svg_flowchart-v2-crossStart" class="marker cross flowchart-v2" viewBox="0 0 11 11" refX="-1" refY="5.2" markerUnits="userSpaceOnUse" markerWidth="11" markerHeight="11" orient="auto"><path d="M 1,1 l 9,9 M 10,1 l -9,9" class="arrowMarkerPath" style="stroke-width: 2; stroke-dasharray: 1, 0;"/></marker><marker id="my-svg_flowchart-v2-crossEnd-margin" class="marker cross flowchart-v2" viewBox="0 0 15 15" refX="17.7" refY="7.5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M 1,1 L 14,14 M 1,14 L 14,1" class="arrowMarkerPath" style="stroke-width: 2.5;"/></marker><marker id="my-svg_flowchart-v2-crossStart-margin" class="marker cross flowchart-v2" viewBox="0 0 15 15" refX="-3.5" refY="7.5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto"><path d="M 1,1 L 14,14 M 1,14 L 14,1" class="arrowMarkerPath" style="stroke-width: 2.5; stroke-dasharray: 1, 0;"/></marker><g class="root"><g class="clusters"/><g class="edgePaths"><path d="M293.118,62L267.265,68.167C241.412,74.333,189.706,86.667,163.853,98.333C138,110,138,121,138,126.5L138,132" id="my-svg-L_Y_TALK_0" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" style=";" data-edge="true" data-et="edge" data-id="L_Y_TALK_0" data-points="W3sieCI6MjkzLjExODE2NDA2MjUsInkiOjYyfSx7IngiOjEzOCwieSI6OTl9LHsieCI6MTM4LCJ5IjoxMzZ9XQ==" data-look="classic" marker-end="url(#my-svg_flowchart-v2-pointEnd)"/><path d="M138,262L138,268.167C138,274.333,138,286.667,141.741,298.445C145.481,310.224,152.963,321.448,156.704,327.06L160.444,332.672" id="my-svg-L_TALK_BRAIN_0" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" style=";" data-edge="true" data-et="edge" data-id="L_TALK_BRAIN_0" data-points="W3sieCI6MTM4LCJ5IjoyNjJ9LHsieCI6MTM4LCJ5IjoyOTl9LHsieCI6MTYyLjY2MjgxMjUsInkiOjMzNn1d" data-look="classic" marker-end="url(#my-svg_flowchart-v2-pointEnd)"/><path d="M204.656,462L204.656,468.167C204.656,474.333,204.656,486.667,212.47,498.604C220.284,510.541,235.911,522.082,243.725,527.853L251.538,533.624" id="my-svg-L_BRAIN_FACTORY_0" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" style=";" data-edge="true" data-et="edge" data-id="L_BRAIN_FACTORY_0" data-points="W3sieCI6MjA0LjY1NjI1LCJ5Ijo0NjJ9LHsieCI6MjA0LjY1NjI1LCJ5Ijo0OTl9LHsieCI6MjU0Ljc1NjAzNjkzMTgxODIsInkiOjUzNn1d" data-look="classic" marker-end="url(#my-svg_flowchart-v2-pointEnd)"/><path d="M323.813,638L323.813,644.167C323.813,650.333,323.813,662.667,329.138,674.514C334.463,686.361,345.114,697.721,350.439,703.402L355.764,709.082" id="my-svg-L_FACTORY_OUT_0" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" style=";" data-edge="true" data-et="edge" data-id="L_FACTORY_OUT_0" data-points="W3sieCI6MzIzLjgxMjUsInkiOjYzOH0seyJ4IjozMjMuODEyNSwieSI6Njc1fSx7IngiOjM1OC41LCJ5Ijo3MTJ9XQ==" data-look="classic" marker-end="url(#my-svg_flowchart-v2-pointEnd)"/><path d="M536.313,719.749L558.729,712.29C581.146,704.832,625.979,689.916,648.396,667.791C670.813,645.667,670.813,616.333,670.813,587C670.813,557.667,670.813,528.333,670.813,497C670.813,465.667,670.813,432.333,670.813,399C670.813,365.667,670.813,332.333,670.813,299C670.813,265.667,670.813,232.333,670.813,199C670.813,165.667,670.813,132.333,645.975,109.657C621.137,86.98,571.462,74.96,546.624,68.951L521.786,62.941" id="my-svg-L_OUT_Y_0" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" style=";" data-edge="true" data-et="edge" data-id="L_OUT_Y_0" data-points="W3sieCI6NTM2LjMxMjUsInkiOjcxOS43NDg1ODIyMzA2MjM4fSx7IngiOjY3MC44MTI1LCJ5Ijo2NzV9LHsieCI6NjcwLjgxMjUsInkiOjU4N30seyJ4Ijo2NzAuODEyNSwieSI6NDk5fSx7IngiOjY3MC44MTI1LCJ5IjozOTl9LHsieCI6NjcwLjgxMjUsInkiOjI5OX0seyJ4Ijo2NzAuODEyNSwieSI6MTk5fSx7IngiOjY3MC44MTI1LCJ5Ijo5OX0seyJ4Ijo1MTcuODk4NDM3NSwieSI6NjJ9XQ==" data-look="classic" marker-end="url(#my-svg_flowchart-v2-pointEnd)"/><path d="M498.432,250L501.573,258.167C504.715,266.333,510.998,282.667,514.14,307.5C517.281,332.333,517.281,365.667,517.281,399C517.281,432.333,517.281,465.667,504.331,488.224C491.38,510.781,465.479,522.563,452.528,528.453L439.577,534.344" id="my-svg-L_GUARD_FACTORY_0" class="edge-thickness-normal edge-pattern-dotted edge-thickness-normal edge-pattern-solid flowchart-link" style=";" data-edge="true" data-et="edge" data-id="L_GUARD_FACTORY_0" data-points="W3sieCI6NDk4LjQzMTU2MjUsInkiOjI1MH0seyJ4Ijo1MTcuMjgxMjUsInkiOjI5OX0seyJ4Ijo1MTcuMjgxMjUsInkiOjM5OX0seyJ4Ijo1MTcuMjgxMjUsInkiOjQ5OX0seyJ4Ijo0MzUuOTM2NDM0NjU5MDkwOSwieSI6NTM2fV0=" data-look="classic" marker-end="url(#my-svg_flowchart-v2-pointEnd)"/><path d="M418.043,250L408.312,258.167C398.581,266.333,379.118,282.667,360.389,296.639C341.66,310.61,323.664,322.221,314.666,328.026L305.667,333.831" id="my-svg-L_GUARD_BRAIN_0" class="edge-thickness-normal edge-pattern-dotted edge-thickness-normal edge-pattern-solid flowchart-link" style=";" data-edge="true" data-et="edge" data-id="L_GUARD_BRAIN_0" data-points="W3sieCI6NDE4LjA0MjgxMjQ5OTk5OTk3LCJ5IjoyNTB9LHsieCI6MzU5LjY1NjI1LCJ5IjoyOTl9LHsieCI6MzAyLjMwNjI1LCJ5IjozMzZ9XQ==" data-look="classic" marker-end="url(#my-svg_flowchart-v2-pointEnd)"/></g><g class="edgeLabels"><g class="edgeLabel" transform="translate(138, 99)"><g class="label" data-id="L_Y_TALK_0" transform="translate(-40, -12)"><foreignObject width="80" height="24"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"><p>指示・相談</p></span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(138, 299)"><g class="label" data-id="L_TALK_BRAIN_0" transform="translate(-56.375, -12)"><foreignObject width="112.75" height="24"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"><p>記録・読み出し</p></span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(204.65625, 499)"><g class="label" data-id="L_BRAIN_FACTORY_0" transform="translate(-64.9375, -12)"><foreignObject width="129.875" height="24"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"><p>ルール通りに動く</p></span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(323.8125, 675)"><g class="label" data-id="L_FACTORY_OUT_0" transform="translate(-16, -12)"><foreignObject width="32" height="24"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"><p>結果</p></span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(670.8125, 399)"><g class="label" data-id="L_OUT_Y_0" transform="translate(-48.75, -12)"><foreignObject width="97.5" height="24"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"><p>スマホで確認</p></span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(517.28125, 399)"><g class="label" data-id="L_GUARD_FACTORY_0" transform="translate(-73.3125, -12)"><foreignObject width="146.625" height="24"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"><p>壊れてたら知らせる</p></span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(359.65625, 299)"><g class="label" data-id="L_GUARD_BRAIN_0" transform="translate(-56.9375, -12)"><foreignObject width="113.875" height="24"><div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="edgeLabel"><p>消えても戻せる</p></span></div></foreignObject></g></g></g><g class="nodes"><g class="node default" id="my-svg-flowchart-Y-0" data-look="classic" transform="translate(406.3125, 35)"><rect class="basic label-container" style="" x="-122.5859375" y="-27" width="245.171875" height="54"/><g class="label" style="" transform="translate(-92.5859375, -12)"><rect/><foreignObject width="185.171875" height="24"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell; white-space: nowrap; line-height: 1.5; max-width: 200px; text-align: center;"><span class="nodeLabel"><p>👑 祐馬さん（一人社長）</p></span></div></foreignObject></g></g><g class="node default" id="my-svg-flowchart-TALK-1" data-look="classic" transform="translate(138, 199)"><rect class="basic label-container" style="" x="-130" y="-63" width="260" height="126"/><g class="label" style="" transform="translate(-100, -48)"><rect/><foreignObject width="200" height="96"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table; white-space: break-spaces; line-height: 1.5; max-width: 200px; text-align: center; width: 200px;"><span class="nodeLabel"><p>🗣️ 話しかける窓口<br />Codex（いまのメイン）／あおい🌊（Claude）／Discord（スマホから）</p></span></div></foreignObject></g></g><g class="node default" id="my-svg-flowchart-BRAIN-2" data-look="classic" transform="translate(204.65625, 399)"><rect class="basic label-container" style="" x="-130" y="-63" width="260" height="126"/><g class="label" style="" transform="translate(-100, -48)"><rect/><foreignObject width="200" height="96"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table; white-space: break-spaces; line-height: 1.5; max-width: 200px; text-align: center; width: 200px;"><span class="nodeLabel"><p>📚 会社の記憶 ＝ Second Brain（Obsidian）<br />ルール・記録・お金・ネタ、ぜんぶの正本がここ</p></span></div></foreignObject></g></g><g class="node default" id="my-svg-flowchart-FACTORY-3" data-look="classic" transform="translate(323.8125, 587)"><rect class="basic label-container" style="" x="-130" y="-51" width="260" height="102"/><g class="label" style="" transform="translate(-100, -36)"><rect/><foreignObject width="200" height="72"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table; white-space: break-spaces; line-height: 1.5; max-width: 200px; text-align: center; width: 200px;"><span class="nodeLabel"><p>🏭 自動化工場（Mac mini・24時間稼働）<br />33個の仕事が自動で回る</p></span></div></foreignObject></g></g><g class="node default" id="my-svg-flowchart-OUT-4" data-look="classic" transform="translate(406.3125, 763)"><rect class="basic label-container" style="" x="-130" y="-51" width="260" height="102"/><g class="label" style="" transform="translate(-100, -36)"><rect/><foreignObject width="200" height="72"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table; white-space: break-spaces; line-height: 1.5; max-width: 200px; text-align: center; width: 200px;"><span class="nodeLabel"><p>📬 報告はDiscordに届く<br />#一般・#お金・#youtube・#メモ・#レポート</p></span></div></foreignObject></g></g><g class="node default" id="my-svg-flowchart-GUARD-5" data-look="classic" transform="translate(478.8125, 199)"><rect class="basic label-container" style="" x="-130" y="-51" width="260" height="102"/><g class="label" style="" transform="translate(-100, -36)"><rect/><foreignObject width="200" height="72"><div xmlns="http://www.w3.org/1999/xhtml" style="display: table; white-space: break-spaces; line-height: 1.5; max-width: 200px; text-align: center; width: 200px;"><span class="nodeLabel"><p>🗼 見張りと保険<br />Watchtower（毎朝点検）＋バックアップ4重</p></span></div></foreignObject></g></g></g></g></g><defs><filter id="my-svg-drop-shadow" height="130%" width="130%"><feDropShadow dx="4" dy="4" stdDeviation="0" flood-opacity="0.06" flood-color="#000000"/></filter></defs><defs><filter id="my-svg-drop-shadow-small" height="150%" width="150%"><feDropShadow dx="2" dy="2" stdDeviation="0" flood-opacity="0.06" flood-color="#000000"/></filter></defs></svg>
-  </div>
-
-  <h2>🧑‍💼 AI社員名簿</h2>
-  <div class="roster">
-    <div class="member"><div class="face">🌊</div><div class="name">あおい</div><div class="title">秘書 兼 マネージャー（Claude）</div><div class="desc">Discordで話しかければいつでも返事。Mac miniに住んでいて、自動化の実行役も担当。</div></div>
-    <div class="member"><div class="face">🧑‍🔧</div><div class="name">Codex</div><div class="title">メインの作業員（引き継ぎ中）</div><div class="desc">調べ物・ファイル編集・計画づくり。いま日常の入口をあおいから引き継ぎ中。</div></div>
-    <div class="member"><div class="face">🧠</div><div class="name">Fable 5</div><div class="title">社外の軍師</div><div class="desc">作戦会議・整理・図解の担当。自分では手を動かさない、考える専門。</div></div>
-    <div class="member"><div class="face">🗼</div><div class="name">Watchtower</div><div class="title">警備員（AIではなくプログラム）</div><div class="desc">毎朝8:30に全設備を点検。異常があった時だけ知らせてくる。</div></div>
-  </div>
-
-  <h2>🏭 自動でやってくれてる仕事<span class="sub">全33個</span></h2>
-  <div class="tiles">
-    <div class="tile"><span class="chip good">元気に稼働中</span><div class="num">{{N_GOOD}}<small>個</small></div></div>
-    <div class="tile"><span class="chip watch">様子見</span><div class="num">{{N_WATCH}}<small>個</small></div></div>
-    <div class="tile"><span class="chip stop">止めてある</span><div class="num">{{N_STOP}}<small>個</small></div></div>
-    <div class="tile"><span class="chip total">合計</span><div class="num">{{N_TOTAL}}<small>個</small></div></div>
-  </div>
-  <div class="cats">
-    <div class="cat">
-      <h3>💰 お金係</h3>
-      <ul>
-        <li>毎晩23:00、<b>Uberの売上を集計</b> → <span class="ch">#お金</span></li>
-        <li>毎週月曜の朝、<b>freeeに週次で記帳</b> → <span class="ch">#お金</span></li>
-        <li>毎月1日、freeeの<b>「振り分け待ちのお金」をチェック</b> → <span class="ch">#お金</span></li>
-        <li>月2回、<b>出前館の実績PDF</b>のダウンロードをリマインド</li>
-        <li>毎月アタマ、経理の数字を<b>別ルートで検算</b>（静かに実施）</li>
-      </ul>
+  <main class="main">
+    <div class="topbar">
+      <h1>おはようございます、祐馬さん 👋</h1>
+      <span class="meta">自動生成 {{GENERATED_AT}} ・ 正本は同フォルダのmd版とリンク先の台帳</span>
     </div>
-    <div class="cat">
-      <h3>📺 YouTube係</h3>
-      <ul>
-        <li><b>YouTubeの収益</b>を毎日デイリーノートに記録（静か）</li>
-        <li>毎週月曜、<b>チャンネル統計</b>をスプレッドシートに更新</li>
-        <li><b>創作スレの学習</b>（ネタ収集・文体学習=日曜夜／台本の振り返り=毎月1日）</li>
-        <li>毎月25日、<b>「来月のネタ草案つくろう」</b>とリマインド → <span class="ch">#youtube</span></li>
-      </ul>
-    </div>
-    <div class="cat">
-      <h3>🧠 記憶・メモ係</h3>
-      <ul>
-        <li>毎朝4:00、<b>☀️朝ダイジェスト</b>（今月の数字＋今日のタスク）→ <span class="ch">#一般</span></li>
-        <li>毎晩23:30、日誌から<b>知識を拾い出し</b> → <span class="ch">#メモ</span></li>
-        <li>日曜夜、<b>ノートのお手入れ</b>（リンク付け・重複整理）</li>
-        <li>日曜20:00、たまったタスクから5個だけ<b>「やる？いつか？捨てる？」</b>と質問</li>
-        <li>毎週月曜、<b>不要メールのお掃除</b></li>
-      </ul>
-    </div>
-    <div class="cat">
-      <h3>🛡️ 守り係</h3>
-      <ul>
-        <li><b>10分ごとに全記録を自動保存</b>＋毎日GitHubへ控えを送る</li>
-        <li>日曜4:30に<b>週次バックアップ</b>、毎月1日に大型バックアップ、2日に<b>復元の練習</b></li>
-        <li><b>外付けSSDにも控え</b>（MacとGoogleが同時に壊れても戻せる最終保険）</li>
-        <li>毎晩、<b>あおいの頭をリフレッシュ</b>（朝はフル回転で始業）</li>
-      </ul>
-    </div>
-  </div>
 
-  <h2>📅 AI社員の1日</h2>
-  <div class="card scroll">
-    <table>
-      <tr><th>時刻</th><th>起きること</th><th>届く場所</th></tr>
-      <tr><td class="key">3:10</td><td>あおいの頭を夜間リフレッシュ</td><td>（静か）</td></tr>
-      <tr><td class="key">4:00</td><td>☀️朝ダイジェスト配達</td><td><span class="ch">#一般</span></td></tr>
-      <tr><td class="key">8:30</td><td>🗼Watchtowerが全設備を点検</td><td>異常時だけ <span class="ch">#レポート</span></td></tr>
-      <tr><td class="key">12:00</td><td>YouTube収益をノートに記録</td><td>（静か）</td></tr>
-      <tr><td class="key">23:00</td><td>Uber売上の集計</td><td><span class="ch">#お金</span></td></tr>
-      <tr><td class="key">23:30</td><td>今日の学びを知識として保存</td><td><span class="ch">#メモ</span></td></tr>
-    </table>
-  </div>
-  <ul class="flat">
-    <li><b>月曜の朝</b>: メール掃除 → 週次経理 → チャンネル統計更新</li>
-    <li><b>日曜の夜</b>: 週次バックアップ（早朝）→ 棚卸し＆Uber週間プラン（20:00）→ ノート手入れ＆ネタ収集（21:00）→ 文体学習（22:00）</li>
-    <li><b>毎月1日</b>: バックアップと経理チェックのまとめDAY（2日は復元練習、25日はネタ草案リマインド）</li>
-  </ul>
-
+{{MONEY_HTML}}
+{{YOUTUBE_HTML}}
 {{TASKS_HTML}}
-  <h2>🚨 調子が悪いときの見分け方</h2>
-  <p class="oneliner" style="font-size:14px;"><strong>「来るはずの報告が来ない」= 故障のサイン。</strong>特にこの3つが目印：</p>
-  <div class="card">
-    <ol class="alert">
-      <li>毎朝4時の☀️朝ダイジェスト（<span class="ch">#一般</span>）</li>
-      <li>毎晩23時のUber売上（<span class="ch">#お金</span>）</li>
-      <li>月曜朝の週次経理（<span class="ch">#お金</span>）</li>
-    </ol>
-  </div>
-  <p style="font-size:13.5px; margin-top:10px;">おかしいと思ったら、Discordであおいに「<b>◯◯の報告来てないよ</b>」と言えばOK。調べて直すのはAIの仕事。</p>
 
-  <h2>🤝 AIとの約束ごと</h2>
-  <div class="notice warnbox"><strong>AIが勝手にやらないこと（必ず確認してから）：</strong>削除／外部への投稿／お金の確定処理／アカウント設定の変更／自動化の停止や追加</div>
+  <section class="sec" id="status">
+    <p class="seclabel">Automation</p>
+    <h2>自動化の状態 <span class="dim">詳細と止め方は「AI自動化/導入済み.md」</span></h2>
+    <div class="stats">
+      <div class="card"><em>{{N_GOOD}}</em><span><i class="dot good"></i>稼働中</span></div>
+      <div class="card"><em>{{N_WATCH}}</em><span><i class="dot watch"></i>様子見</span></div>
+      <div class="card"><em>{{N_STOP}}</em><span><i class="dot stop"></i>停止中</span></div>
+      <div class="card"><em>{{N_TOTAL}}</em><span>合計</span></div>
+    </div>
+  </section>
 
-  <details>
-    <summary>🔧 エージェント向け技術メモ（祐馬さんは読まなくてOK）</summary>
-    <h3>構成の実体</h3>
-    <ul>
-      <li>入口: Codexメイン移行フェーズ1／Claude Code（あおい）は補助・退避先／Discordはスマホ受付・通知（正本ではない）</li>
-      <li>4正本（各git管理）: <code>~/2nd-Brain</code>（知識）／<code>~/Projects/youtube</code>（制作作業場）／<code>~/agent-skills</code>（スキル正本）／<code>~/agent-adapters</code>（AI入口＋agent-run）</li>
-      <li>実行: Mac mini launchd（Claude / Codex / Python混在）。agent-run＝AIベンダー差し替え口（段階移行中）</li>
-      <li>バックアップ4層: ローカルgit(10分毎) → GitHub日次push → 週次snapshot＋月次tar＋restore-drill(毎月2日) → SSD(鍵抜き版)</li>
-    </ul>
-    <h3>ジョブ状態の内訳（2026-07-16時点・正本は台帳）</h3>
-    <ul>
-      <li>🟡 様子見 2: youtube-revenue（last exit 0・要観察）／vault-snapshot（launchd tarに売上証憑が入るかの確認）</li>
-      <li>🛑 停止・退避済み 4: channel-lifecycle／monthly-accounting（Claude実行のため停止）／kicho-weekly（旧記帳）／vault-mirror（旧Driveミラー）</li>
-      <li>停止の作法: 削除せず plist退避（<code>~/.claude/archived-launchagents/</code>）＋Watchtower EXPECTED_JOBS整合（29本＝🟢27＋🟡2と一致）</li>
-      <li>移行・観察中: script-learning＝Codex shadow（判定 2026-08-02）／corpus-collect＝agent-run配線済み・日曜21:00の自然実行を観察</li>
-    </ul>
-    <h3>誤解しないこと</h3>
-    <ul>
-      <li>Codexメイン入口 ＝ 全自動化のCodex化完了、ではない</li>
-      <li><code>com.claude.*</code> ＝ 今もClaudeで動いている、ではない</li>
-      <li>Driveの2nd-Brain ＝ 正本、ではない（証憑フォルダだけは正本）</li>
-      <li>Discord / Channels ＝ 正本、ではない</li>
-    </ul>
-    <h3>一次面</h3>
-    <ul>
-      <li>今の状態・最優先: <code>00_司令塔/NOW.md</code>／タスク: <code>タスクボード.md</code>＋<code>期日タスク.md</code>／ログ: <code>作業ログ_ツバキとあおい.md</code></li>
-      <li>自動化の正本台帳: <code>01_プロジェクト/AI自動化/導入済み.md</code>／稼働記録: <code>30_ヘルスチェック/ヘルスチェックログ.md</code></li>
-      <li>決定: <code>40_判断ログ/決定事項.md</code>／ルール: <code>10_Agent/rules.md</code>＋<code>権限と禁止事項.md</code>／契約: <code>specs/agent-neutral-contract.md</code></li>
-    </ul>
-  </details>
+  <section class="sec" id="team">
+    <p class="seclabel">Team</p>
+    <h2>AI社員</h2>
+    <div class="card">
+      <div class="person"><span class="avatar av1">あ</span><div><b>あおい🌊 <i>秘書 兼 マネージャー</i></b><p>Discordで話しかければいつでも返事。Mac miniに住んでいて、自動化の実行役も担当。</p></div></div>
+      <div class="person"><span class="avatar av2">Cx</span><div><b>Codex <i>メインの作業員</i></b><p>調べ物・ファイル編集・計画づくり。日常の入口をあおいから引き継ぎ中。</p></div></div>
+      <div class="person"><span class="avatar av3">F5</span><div><b>Fable 5 <i>社外の軍師</i></b><p>作戦会議・整理・図解の担当。自分では手を動かさない、考える専門。</p></div></div>
+      <div class="person"><span class="avatar av4">W</span><div><b>Watchtower <i>警備員（非AI）</i></b><p>毎朝8:30に全設備を点検するプログラム。異常があった時だけ知らせてくる。</p></div></div>
+    </div>
+  </section>
 
-  <p class="footer">更新ルール: 正本はmd版。このHTMLはスクリプトが自動生成する（手で直さない）。テンプレ: 00_システム/20_Agent_Portable/scripts/dashboard_template.html ／ 生成: generate_dashboard_html.py。最新の正確な数字は台帳・NOW.mdが正しい。</p>
+  <section class="sec" id="flow">
+    <p class="seclabel">Flow</p>
+    <h2>仕組み（1周の流れ）</h2>
+    <div class="card">
+      <ol class="flow">
+        <li><b>祐馬さん</b> — 指示や相談。窓口はCodex・あおい🌊・Discordのどれでも</li>
+        <li><b>Second Brain（Obsidian）</b> — 会話も決定もお金もネタも、正本はぜんぶここ</li>
+        <li><b>Mac mini</b> — 記録とルールに従って33個の仕事を24時間自動で回す</li>
+        <li><b>Discord</b> — 結果が #一般・#お金・#youtube・#メモ・#レポート に届く</li>
+        <li><b>スマホで確認</b> — 気になったらまた話しかける。この循環で会社が回る</li>
+      </ol>
+      <p class="hint">守り: 10分ごと自動保存 → GitHub日次 → 週次/月次バックアップ＋復元練習 → SSD最終保険</p>
+    </div>
+  </section>
+
+  <section class="sec" id="help">
+    <p class="seclabel">Signal</p>
+    <h2>困った時・故障のサイン</h2>
+    <div class="grid2">
+      <div class="card">
+        <div class="cardhead"><h3>この報告が来なかったら故障</h3></div>
+        <ol class="alerts">
+          <li>毎朝4時の朝ダイジェスト（#一般）</li>
+          <li>毎晩23時のUber売上（#お金）</li>
+          <li>月曜朝の週次経理（#お金）</li>
+        </ol>
+        <p class="hint">おかしいと思ったら、あおいに「◯◯の報告来てないよ」でOK。調べて直すのはAIの仕事。</p>
+      </div>
+      <div class="card">
+        <div class="cardhead"><h3>クイックコマンド（Discordで言うだけ）</h3></div>
+        <div class="cmd">
+          <span><b>済:</b> ◯◯（タスク完了）</span>
+          <span><b>メモ:</b> ◯◯（今日のノートへ）</span>
+          <span><b>タスク:</b> 7/20 車検（期日登録）</span>
+          <span><b>投稿予定:</b> 7/20 ◯◯（YouTube週間ボードへ）</span>
+          <span><b>ナレッジ:</b> ◯◯（知識ベースへ）</span>
+        </div>
+        <p class="hint">AIが確認なしにやらないこと: 削除・外部投稿・お金の確定・アカウント設定変更・自動化の停止/追加</p>
+        <details>
+          <summary>技術メモ（エージェント向け）</summary>
+          <div class="inner">
+            <h3>構成の実体</h3>
+            <ul>
+              <li>入口: Codexメイン移行フェーズ1／Claude Code（あおい）は補助・退避先／Discordはスマホ受付・通知（正本ではない）</li>
+              <li>4正本（各git管理）: <code>~/2nd-Brain</code>／<code>~/Projects/youtube</code>／<code>~/agent-skills</code>／<code>~/agent-adapters</code>（agent-run＝AIベンダー差し替え口）</li>
+              <li>実行: Mac mini launchd（Claude / Codex / Python混在）。停止の作法: plist退避＋Watchtower EXPECTED_JOBS整合</li>
+              <li>移行中: script-learning＝Codex shadow（判定 2026-08-02）／corpus-collect＝agent-run配線済み観察中</li>
+              <li>誤解しないこと: Codexメイン入口＝全自動化Codex化完了ではない／<code>com.claude.*</code>＝今もClaude実行とは限らない／Drive 2nd-Brain・Discordは正本ではない</li>
+              <li>一次面: <code>NOW.md</code>／<code>タスクボード.md</code>＋<code>期日タスク.md</code>／<code>作業ログ</code>／<code>ヘルスチェックログ.md</code>／<code>導入済み.md</code>／<code>決定事項.md</code>／<code>rules.md</code>＋<code>権限と禁止事項.md</code></li>
+            </ul>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <p class="footer">正本はmd版（同フォルダ）と各リンク先。このHTMLはスクリプトが自動生成する — 手で直さない。テンプレ: <code>20_Agent_Portable/scripts/dashboard_template.html</code> ／ 生成: <code>generate_dashboard_html.py</code> ／ お金の確定数字はfreeeが正本。</p>
+
+  </main>
 </div>
 </body>
 </html>
