@@ -38,7 +38,18 @@ class DashboardTests(unittest.TestCase):
         self.assertEqual(data["youtube"]["schedule"][0]["title"], "毛利軍｜秀吉を追撃しなかった理由")
         self.assertEqual(data["jobs"]["counts"], {"running": 27, "watch": 2, "stopped": 4})
         self.assertEqual(data["jobs"]["groups"]["running"][0]["name"], "スマホの相談窓口")
-        self.assertEqual(data["youtube"]["target_to_date"], 24194)
+        self.assertEqual(data["youtube"]["target_to_date"], 20968)
+        self.assertEqual(data["youtube"]["calendar_target_to_date"], 24194)
+        self.assertEqual(data["youtube"]["daily_target_average"], 1613)
+        self.assertEqual(sum(row["youtube_target"] for row in data["daily"]), 24194)
+        self.assertEqual(
+            sum(row["youtube_actual"] or 0 for row in data["daily"]),
+            data["youtube"]["actual"],
+        )
+        self.assertTrue(all(
+            row["youtube_difference"] is None
+            for row in data["daily"] if row["youtube_actual"] is None
+        ))
         self.assertTrue(data["today_note"]["tasks"])
         json.dumps(data, ensure_ascii=False)
 

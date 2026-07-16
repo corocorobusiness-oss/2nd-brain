@@ -369,6 +369,7 @@ def build_dashboard(vault: Path, youtube_root: Path, today: dt.date | None = Non
     cutoff = today - dt.timedelta(days=1)
     month = cutoff.strftime("%Y-%m")
     budgets, delivery_target, schedule, youtube_target = parse_budget_and_schedule(vault / "02_経営/目標と計画.md", month)
+    days_in_month = calendar.monthrange(cutoff.year, cutoff.month)[1]
     daily = []
     delivery_total = youtube_total = 0
     captured_delivery = captured_youtube = 0
@@ -377,6 +378,13 @@ def build_dashboard(vault: Path, youtube_root: Path, today: dt.date | None = Non
         date = dt.date(cutoff.year, cutoff.month, day)
         parsed = parse_sales_note(vault / "05_日誌" / f"{date.isoformat()}.md")
         budget = budgets.get(day, 0)
+        youtube_daily_target = (
+            round(youtube_target * day / days_in_month)
+            - round(youtube_target * (day - 1) / days_in_month)
+            if youtube_target else 0
+        )
+        youtube_cumulative_target = round(youtube_target * day / days_in_month) if youtube_target else 0
+        youtube_actual = parsed["youtube"] if parsed.get("has_youtube") else None
         delivery_total += parsed["delivery"]
         youtube_total += parsed["youtube"]
         captured_delivery += int(bool(parsed.get("has_delivery")))
@@ -385,6 +393,11 @@ def build_dashboard(vault: Path, youtube_root: Path, today: dt.date | None = Non
         daily.append({
             "date": date.isoformat(), "day": day, "budget": budget, "delivery": parsed["delivery"],
             "difference": parsed["delivery"] - budget, "status": status, "rows": parsed["rows"],
+            "youtube_target": youtube_daily_target,
+            "youtube_actual": youtube_actual,
+            "youtube_difference": youtube_actual - youtube_daily_target if youtube_actual is not None else None,
+            "youtube_cumulative": youtube_total,
+            "youtube_cumulative_target": youtube_cumulative_target,
         })
     yesterday = daily[-1] if daily else None
     if yesterday and yesterday["status"] != "確定":
@@ -394,10 +407,12 @@ def build_dashboard(vault: Path, youtube_root: Path, today: dt.date | None = Non
     expenses = parse_freee_expenses(vault, month, cutoff)
     warnings.append(expenses["warning"])
     budget_to_date = sum(budgets.get(day, 0) for day in range(1, cutoff.day + 1))
-    days_in_month = calendar.monthrange(cutoff.year, cutoff.month)[1]
-    youtube_target_to_date = round(youtube_target / days_in_month * cutoff.day) if youtube_target else 0
+    youtube_calendar_target_to_date = round(youtube_target / days_in_month * cutoff.day) if youtube_target else 0
+    youtube_last_day = max((row["day"] for row in daily if row["youtube_actual"] is not None), default=0)
+    youtube_target_to_date = round(youtube_target / days_in_month * youtube_last_day) if youtube_target else 0
+    youtube_last_date = daily[youtube_last_day - 1]["date"] if youtube_last_day else None
     revenue_total = delivery_total + youtube_total
-    overall_target_to_date = budget_to_date + youtube_target_to_date
+    overall_target_to_date = budget_to_date + youtube_calendar_target_to_date
     jobs = parse_jobs(vault / "01_プロジェクト/AI自動化/導入済み.md")
     return {
         "generated_at": dt.datetime.now().astimezone().isoformat(timespec="minutes"),
@@ -413,8 +428,11 @@ def build_dashboard(vault: Path, youtube_root: Path, today: dt.date | None = Non
             "actual": youtube_total, "target": youtube_target,
             "achievement": round(youtube_total / youtube_target * 100, 1) if youtube_target else None,
             "target_to_date": youtube_target_to_date,
+            "calendar_target_to_date": youtube_calendar_target_to_date,
             "difference_to_date": youtube_total - youtube_target_to_date,
             "pace": round(youtube_total / youtube_target_to_date * 100, 1) if youtube_target_to_date else None,
+            "daily_target_average": round(youtube_target / days_in_month) if youtube_target else 0,
+            "last_revenue_date": youtube_last_date,
             "captured_days": captured_youtube, "expected_days": cutoff.day,
             "schedule": enrich_schedule(schedule, youtube_root, cutoff),
         },
