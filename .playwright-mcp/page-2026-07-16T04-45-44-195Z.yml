@@ -1,0 +1,25 @@
+- generic [ref=e3]:
+  - img "Uber ロゴ" [ref=e5]
+  - main [ref=e9]:
+    - generic [ref=e11]:
+      - heading "電話番号またはメール アドレスをお知らせください" [level=1] [ref=e12]
+      - generic [ref=e14]:
+        - textbox "電話番号またはメール アドレスを入力してください" [active] [ref=e19]:
+          - /placeholder: 電話番号またはメールアドレスを入力
+        - paragraph
+        - paragraph
+        - button "続行" [ref=e21] [cursor=pointer]
+        - generic [ref=e26]:
+          - paragraph [ref=e28]: または
+          - generic [ref=e29]:
+            - button "Google で続行する、新しいウィンドウが開きます" [ref=e33] [cursor=pointer]:
+              - paragraph [ref=e44]: Google で続行する
+            - button "Apple で続行する、新しいウィンドウが開きます" [ref=e48] [cursor=pointer]:
+              - paragraph [ref=e57]: Apple で続行する
+            - button [ref=e61] [cursor=pointer]:
+              - paragraph [ref=e69]: 楽天 ID で続行する
+        - generic [ref=e72]:
+          - paragraph [ref=e74]: または
+          - button [ref=e78] [cursor=pointer]:
+            - paragraph [ref=e86]: QR コードでサインイン
+        - paragraph [ref=e87]: ユーザーはテキストメッセージまたは WhatsApp で認証コードを受け取ることに同意するものとします。メッセージ料金およびデータ受信料が発生する場合があります。
