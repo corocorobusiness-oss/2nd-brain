@@ -80,6 +80,8 @@ class DashboardTests(unittest.TestCase):
             for row in data["daily"] if row["youtube_actual"] is None
         ))
         self.assertTrue(data["today_note"]["tasks"])
+        expected_profit = None if data["finance"]["expense_partial"] else data["finance"]["revenue"] - data["finance"]["expenses"]
+        self.assertEqual(data["finance"]["profit"], expected_profit)
         json.dumps(data, ensure_ascii=False)
 
     def test_mobile_breakpoints_exist(self):
@@ -138,21 +140,132 @@ class DashboardTests(unittest.TestCase):
             drive = dashboard.parse_drive_expenses(root / "expenses", "2026-07", dt.date(2026, 7, 16))
             result = dashboard.reconcile_expenses(freee, drive)
             self.assertEqual(result["matched_receipt_count"], 0)
-            self.assertEqual(result["ambiguous_count"], 2)
-            self.assertEqual(result["pending_count"], 2)
+            self.assertEqual(result["ambiguous_count"], 1)
+            self.assertEqual(result["pending_count"], 1)
+            self.assertEqual(result["pending"], 4000)
+            self.assertEqual(result["total"], 8000)
             self.assertEqual(result["status"], "要確認")
 
     def test_duplicate_receipt_files_are_counted_once_and_foreign_amount_is_not_guessed(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp) / "expenses/2026/07"
             root.mkdir(parents=True)
-            (root / "20260716_出光_3,500.jpg").write_bytes(b"jpg")
-            (root / "20260716_出光_3,500.pdf").write_bytes(b"pdf")
+            (root / "20260716_出光_3,500.jpg").write_bytes(b"same receipt")
+            (root / "20260716_出光_3,500.pdf").write_bytes(b"same receipt")
             (root / "20260716_OpenAI_USD88.30.pdf").write_bytes(b"usd")
             drive = dashboard.parse_drive_expenses(root.parents[1], "2026-07", dt.date(2026, 7, 16))
             self.assertEqual(len(drive["receipts"]), 1)
             self.assertEqual(drive["duplicate_count"], 1)
             self.assertEqual(drive["unparsed_count"], 1)
+
+    def test_same_named_receipts_with_different_contents_are_not_silently_merged(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp) / "expenses/2026/07"
+            root.mkdir(parents=True)
+            (root / "20260716_出光_3,500.jpg").write_bytes(b"first purchase")
+            (root / "20260716_出光_3,500.pdf").write_bytes(b"second purchase")
+            drive = dashboard.parse_drive_expenses(root.parents[1], "2026-07", dt.date(2026, 7, 16))
+            self.assertEqual(len(drive["receipts"]), 2)
+            self.assertEqual(drive["duplicate_count"], 0)
+
+    def test_card_statement_date_can_lag_receipt_by_three_days(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            deal = self.freee_expense(amount=4000, partner_id=20)
+            deal["issue_date"] = "2026-07-18"
+            self.write_freee_snapshot(root, [deal], [{"id": 20, "name": "ENEOS"}])
+            receipt_dir = root / "expenses/2026/07"
+            receipt_dir.mkdir(parents=True)
+            (receipt_dir / "20260716_エネオス_4,000.jpg").write_bytes(b"receipt")
+            freee = dashboard.parse_freee_expenses(root, "2026-07", dt.date(2026, 7, 19))
+            drive = dashboard.parse_drive_expenses(root / "expenses", "2026-07", dt.date(2026, 7, 19))
+            result = dashboard.reconcile_expenses(freee, drive)
+            self.assertEqual(result["matched_receipt_count"], 1)
+            self.assertEqual(result["pending"], 0)
+            self.assertEqual(result["total"], 4000)
+
+    def test_date_window_matching_maximizes_one_to_one_matches(self):
+        freee = {
+            "available": True, "total": 8000,
+            "categories": [{"name": "車両費", "amount": 8000, "status": "確認済み"}],
+            "matching_deals": [
+                {"id": 1, "date": "2026-07-03", "amount": 4000, "merchant": "ENEOS", "merchant_key": "eneos", "merchant_reliable": True},
+                {"id": 2, "date": "2026-07-07", "amount": 4000, "merchant": "ENEOS", "merchant_key": "eneos", "merchant_reliable": True},
+            ],
+            "as_of": "2026-07-08", "updated_at": None, "source": "テスト",
+            "latest_bank_date": "2026-07-08", "stale": False, "bank_stale": False,
+            "latest_check_failed": False, "warnings": [],
+        }
+        drive = {
+            "available": True,
+            "receipts": [
+                {"date": "2026-07-01", "merchant": "ENEOS", "merchant_key": "eneos", "amount": 4000, "updated_at": None, "file_name": "a.jpg"},
+                {"date": "2026-07-04", "merchant": "ENEOS", "merchant_key": "eneos", "amount": 4000, "updated_at": None, "file_name": "b.jpg"},
+            ],
+            "updated_at": None, "unparsed_count": 0, "duplicate_count": 0,
+        }
+        result = dashboard.reconcile_expenses(freee, drive)
+        self.assertEqual(result["matched_receipt_count"], 2)
+        self.assertEqual(result["pending"], 0)
+        self.assertEqual(result["total"], 8000)
+
+    def test_missing_freee_and_empty_drive_are_not_reported_as_zero(self):
+        freee = {
+            "available": False, "total": 0, "categories": [], "matching_deals": [],
+            "as_of": None, "updated_at": None, "source": "未取得",
+            "latest_bank_date": None, "stale": True, "bank_stale": True,
+            "latest_check_failed": True, "warnings": ["未取得"],
+        }
+        drive = {
+            "available": True, "receipts": [], "updated_at": None,
+            "unparsed_count": 0, "duplicate_count": 0,
+        }
+        result = dashboard.reconcile_expenses(freee, drive)
+        self.assertIsNone(result["confirmed"])
+        self.assertIsNone(result["total"])
+        self.assertTrue(result["partial"])
+
+    def test_unknown_freee_merchant_stays_for_review(self):
+        freee = {
+            "available": True, "total": 4000,
+            "categories": [{"name": "車両費", "amount": 4000, "status": "確認済み"}],
+            "matching_deals": [{
+                "id": 1, "date": "2026-07-16", "amount": 4000,
+                "merchant": "", "merchant_key": "", "merchant_reliable": False,
+            }],
+            "as_of": "2026-07-16", "updated_at": None, "source": "テスト",
+            "latest_bank_date": "2026-07-16", "stale": False, "bank_stale": False,
+            "latest_check_failed": False, "warnings": [],
+        }
+        drive = {
+            "available": True,
+            "receipts": [{
+                "date": "2026-07-16", "merchant": "ENEOS", "merchant_key": "eneos",
+                "amount": 4000, "updated_at": None, "file_name": "receipt.jpg",
+            }],
+            "updated_at": None, "unparsed_count": 0, "duplicate_count": 0,
+        }
+        result = dashboard.reconcile_expenses(freee, drive)
+        self.assertEqual(result["matched_receipt_count"], 0)
+        self.assertEqual(result["ambiguous_count"], 1)
+        self.assertEqual(result["pending"], 0)
+        self.assertEqual(result["total"], 4000)
+        self.assertEqual(result["status"], "要確認")
+
+    def test_failed_live_check_keeps_fresh_cache_in_review_state(self):
+        freee = {
+            "available": True, "total": 0, "categories": [], "matching_deals": [],
+            "as_of": "2026-07-16", "updated_at": None, "source": "直前の確認",
+            "latest_bank_date": "2026-07-16", "stale": False, "bank_stale": False,
+            "latest_check_failed": True, "warnings": ["最新確認失敗"],
+        }
+        drive = {
+            "available": True, "receipts": [], "updated_at": None,
+            "unparsed_count": 0, "duplicate_count": 0,
+        }
+        result = dashboard.reconcile_expenses(freee, drive)
+        self.assertTrue(result["partial"])
+        self.assertEqual(result["status"], "要確認")
 
     def test_auto_refresh_and_expense_labels_exist(self):
         html = (Path(__file__).parent / "index.html").read_text(encoding="utf-8")

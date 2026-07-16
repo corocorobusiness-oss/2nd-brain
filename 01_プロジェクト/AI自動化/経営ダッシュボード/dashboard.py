@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 import calendar
 import datetime as dt
+import hashlib
 import json
 import re
 import threading
@@ -14,7 +15,6 @@ import unicodedata
 import urllib.error
 import urllib.parse
 import urllib.request
-from collections import Counter
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from typing import Any
@@ -30,6 +30,7 @@ FREEE_TOKENS = Path("~/.config/freee-mcp/tokens.json").expanduser()
 FREEE_API_BASE = "https://api.freee.co.jp/api/1"
 FREEE_COMPANY_ID = 12511831
 FREEE_REFRESH_SECONDS = 30 * 60
+FREEE_ERROR_RETRY_SECONDS = 5 * 60
 EXPENSE_FILE_EXTENSIONS = {".jpg", ".jpeg", ".png", ".heic", ".pdf", ".md"}
 _FREEE_CACHE: dict[str, Any] = {"key": None, "loaded": 0.0, "data": None, "error": None}
 _FREEE_CACHE_LOCK = threading.Lock()
@@ -307,7 +308,8 @@ def cached_freee_live(month: str, through_date: dt.date) -> tuple[dict[str, Any]
     key = f"{month}:{through_date.isoformat()}"
     now = time.monotonic()
     with _FREEE_CACHE_LOCK:
-        if _FREEE_CACHE["key"] == key and now - float(_FREEE_CACHE["loaded"]) < FREEE_REFRESH_SECONDS:
+        cache_seconds = FREEE_ERROR_RETRY_SECONDS if _FREEE_CACHE["error"] else FREEE_REFRESH_SECONDS
+        if _FREEE_CACHE["key"] == key and now - float(_FREEE_CACHE["loaded"]) < cache_seconds:
             return _FREEE_CACHE["data"], _FREEE_CACHE["error"]
         previous = _FREEE_CACHE["data"] if _FREEE_CACHE["key"] == key else None
         try:
@@ -390,6 +392,7 @@ def summarize_freee_expenses(
         "latest_bank_date": latest_bank_date,
         "stale": source_stale or bank_stale,
         "bank_stale": bank_stale,
+        "latest_check_failed": False,
     }
 
 
@@ -414,6 +417,7 @@ def parse_freee_expenses(
             )
             if live_error:
                 warnings.append("freeeの最新確認に失敗したため、直前に確認できた数字を表示しています")
+            result["latest_check_failed"] = bool(live_error)
             result["warnings"] = warnings
             return result
 
@@ -430,6 +434,7 @@ def parse_freee_expenses(
             "latest_bank_date": None,
             "stale": True,
             "bank_stale": True,
+            "latest_check_failed": bool(live_error),
             "warnings": ["freeeの経費データを確認できません"],
         }
     try:
@@ -451,6 +456,7 @@ def parse_freee_expenses(
             "latest_bank_date": None,
             "stale": True,
             "bank_stale": True,
+            "latest_check_failed": bool(live_error),
             "warnings": ["freeeの保存データが壊れているため、経費を確定できません"],
         }
     updated_at = latest_timestamp(*(
@@ -466,6 +472,7 @@ def parse_freee_expenses(
         source="freee保存データ",
     )
     if allow_live and live_error:
+        result["latest_check_failed"] = True
         if live_error == "HTTP 401":
             warnings.append(f"freeeとの接続が切れているため、{snapshot.name.replace('-', '/')}の控えを表示しています")
         else:
@@ -523,6 +530,11 @@ def parse_drive_expenses(expense_root: Path, month: str, through_date: dt.date) 
         if date.strftime("%Y-%m") != month or date > through_date or amount <= 0:
             continue
         merchant = unicodedata.normalize("NFKC", match.group(2)).strip()
+        try:
+            fingerprint = hashlib.sha256(path.read_bytes()).hexdigest()
+        except OSError:
+            unparsed_count += 1
+            continue
         receipts.append({
             "date": date.isoformat(),
             "merchant": merchant,
@@ -530,15 +542,23 @@ def parse_drive_expenses(expense_root: Path, month: str, through_date: dt.date) 
             "amount": amount,
             "updated_at": file_timestamp(path),
             "file_name": path.name,
+            "fingerprint": fingerprint,
         })
 
     unique = {}
     for receipt in receipts:
-        key = (receipt["date"], receipt["merchant_key"] or receipt["merchant"], receipt["amount"])
+        key = (
+            receipt["date"],
+            receipt["merchant_key"] or receipt["merchant"],
+            receipt["amount"],
+            receipt["fingerprint"],
+        )
         current = unique.get(key)
         if current is None or (receipt["updated_at"] or "") > (current["updated_at"] or ""):
             unique[key] = receipt
     deduplicated = sorted(unique.values(), key=lambda row: (row["date"], row["merchant"], row["amount"]))
+    for receipt in deduplicated:
+        receipt.pop("fingerprint", None)
     return {
         "available": True,
         "receipts": deduplicated,
@@ -551,52 +571,104 @@ def parse_drive_expenses(expense_root: Path, month: str, through_date: dt.date) 
 def reconcile_expenses(freee: dict[str, Any], drive: dict[str, Any]) -> dict[str, Any]:
     receipts = drive["receipts"]
     deals = freee["matching_deals"]
-    receipt_key_counts = Counter((row["date"], row["amount"]) for row in receipts)
-    deal_key_counts = Counter((row["date"], row["amount"]) for row in deals)
+    used_receipts: set[int] = set()
     used_deals: set[int] = set()
     pending = []
-    ambiguous_count = 0
+    ambiguous = []
     matched_count = 0
 
-    for receipt in receipts:
-        key = (receipt["date"], receipt["amount"])
-        candidates = [
-            (index, deal) for index, deal in enumerate(deals)
-            if index not in used_deals and (deal["date"], deal["amount"]) == key
-        ]
-        match_index = None
-        if receipt_key_counts[key] == 1 and deal_key_counts[key] == 1 and len(candidates) == 1:
-            index, deal = candidates[0]
-            if (
-                not receipt["merchant_key"]
-                or not deal["merchant_key"]
-                or not deal["merchant_reliable"]
-                or merchants_match(receipt["merchant_key"], deal["merchant_key"])
-            ):
-                match_index = index
-        else:
-            merchant_matches = [
-                index for index, deal in candidates
-                if merchants_match(receipt["merchant_key"], deal["merchant_key"])
-            ]
-            if len(merchant_matches) == 1:
-                match_index = merchant_matches[0]
-        if match_index is not None:
-            used_deals.add(match_index)
-            matched_count += 1
+    # カード明細はレシート日より遅れるため、同額・同じ店なら3日差まで同一取引とみなす。
+    # 取引先がfreeeで確認できないものは自動確定せず、次の曖昧照合へ回す。
+    reliable_candidates: dict[int, list[tuple[int, int]]] = {}
+    for receipt_index, receipt in enumerate(receipts):
+        try:
+            receipt_date = dt.date.fromisoformat(receipt["date"])
+        except ValueError:
             continue
-        row = {**receipt, "status": "要確認" if candidates else "反映待ち"}
-        pending.append(row)
-        if candidates:
-            ambiguous_count += 1
+        for deal_index, deal in enumerate(deals):
+            if receipt["amount"] != deal["amount"] or not deal.get("merchant_reliable"):
+                continue
+            if not merchants_match(receipt["merchant_key"], deal["merchant_key"]):
+                continue
+            try:
+                date_gap = abs((receipt_date - dt.date.fromisoformat(deal["date"])).days)
+            except ValueError:
+                continue
+            if date_gap <= 3:
+                reliable_candidates.setdefault(receipt_index, []).append((date_gap, deal_index))
 
-    confirmed = int(freee["total"] or 0)
+    # 単純な「近い順」では組める件数を減らす場合があるため、増加路で最大一対一照合にする。
+    def maximum_pairs(candidates: dict[int, list[tuple[int, int]]]) -> dict[int, int]:
+        deal_to_receipt: dict[int, int] = {}
+
+        def assign_receipt(receipt_index: int, seen_deals: set[int]) -> bool:
+            for _, deal_index in sorted(candidates.get(receipt_index, [])):
+                if deal_index in seen_deals:
+                    continue
+                seen_deals.add(deal_index)
+                current_receipt = deal_to_receipt.get(deal_index)
+                if current_receipt is None or assign_receipt(current_receipt, seen_deals):
+                    deal_to_receipt[deal_index] = receipt_index
+                    return True
+            return False
+
+        for receipt_index in sorted(candidates, key=lambda index: receipts[index]["date"]):
+            assign_receipt(receipt_index, set())
+        return deal_to_receipt
+
+    reliable_matches = maximum_pairs(reliable_candidates)
+    used_deals.update(reliable_matches)
+    used_receipts.update(reliable_matches.values())
+    matched_count = len(reliable_matches)
+
+    # 店名が分からないなど確定できない組み合わせも、同額かつ3日差以内なら二重加算せず要確認にする。
+    uncertain_candidates: dict[int, list[tuple[int, int]]] = {}
+    for receipt_index, receipt in enumerate(receipts):
+        if receipt_index in used_receipts:
+            continue
+        try:
+            receipt_date = dt.date.fromisoformat(receipt["date"])
+        except ValueError:
+            continue
+        for deal_index, deal in enumerate(deals):
+            if deal_index in used_deals or receipt["amount"] != deal["amount"]:
+                continue
+            try:
+                date_gap = abs((receipt_date - dt.date.fromisoformat(deal["date"])).days)
+            except ValueError:
+                continue
+            if date_gap <= 3:
+                uncertain_candidates.setdefault(receipt_index, []).append((date_gap, deal_index))
+    uncertain_matches = maximum_pairs(uncertain_candidates)
+    for deal_index, receipt_index in uncertain_matches.items():
+        used_receipts.add(receipt_index)
+        used_deals.add(deal_index)
+        ambiguous.append({**receipts[receipt_index], "status": "要確認"})
+
+    for receipt_index, receipt in enumerate(receipts):
+        if receipt_index not in used_receipts:
+            pending.append({**receipt, "status": "反映待ち"})
+
+    confirmed = int(freee["total"] or 0) if freee["available"] else None
     pending_total = sum(row["amount"] for row in pending)
-    known_total = confirmed + pending_total
-    partial = not freee["available"] or not drive["available"] or freee["stale"] or bool(ambiguous_count) or bool(drive["unparsed_count"])
+    pending_value = pending_total if drive["available"] else None
+    if freee["available"]:
+        known_total = int(confirmed or 0) + pending_total
+    elif drive["available"] and pending:
+        known_total = pending_total
+    else:
+        known_total = None
+    partial = (
+        not freee["available"]
+        or not drive["available"]
+        or freee["stale"]
+        or freee.get("latest_check_failed", False)
+        or bool(ambiguous)
+        or bool(drive["unparsed_count"])
+    )
     if not freee["available"] or not drive["available"]:
         status = "未取得あり"
-    elif freee["stale"] or ambiguous_count or drive["unparsed_count"]:
+    elif freee["stale"] or freee.get("latest_check_failed", False) or ambiguous or drive["unparsed_count"]:
         status = "要確認"
     elif pending:
         status = "反映待ちあり"
@@ -616,21 +688,23 @@ def reconcile_expenses(freee: dict[str, Any], drive: dict[str, Any]) -> dict[str
         warnings.append("レシートの保存先を確認できないため、速報経費が未取得です")
     if pending:
         warnings.append(f"freee反映待ちの経費が{len(pending)}件あります")
-    if ambiguous_count:
-        warnings.append(f"同じ日・同じ金額の経費が重なり、{ambiguous_count}件は確認が必要です")
+    if ambiguous:
+        warnings.append(f"同じ日・同じ金額の経費が重なり、{len(ambiguous)}件は確認が必要です")
     if drive["unparsed_count"]:
         warnings.append(f"ファイル名から金額を読めない証憑が{drive['unparsed_count']}件あります")
+    if drive["duplicate_count"]:
+        warnings.append(f"内容が同じレシートファイル{drive['duplicate_count']}件は二重に足していません")
 
     return {
         "total": known_total,
         "confirmed": confirmed,
-        "pending": pending_total,
+        "pending": pending_value,
         "pending_count": len(pending),
         "matched_receipt_count": matched_count,
-        "ambiguous_count": ambiguous_count,
+        "ambiguous_count": len(ambiguous),
         "unparsed_count": drive["unparsed_count"],
         "duplicate_count": drive["duplicate_count"],
-        "pending_receipts": pending,
+        "pending_receipts": sorted(pending + ambiguous, key=lambda row: (row["date"], row["merchant"], row["amount"])),
         "breakdown": breakdown,
         "status": status,
         "partial": partial,
@@ -868,7 +942,9 @@ def build_dashboard(
             "schedule": enrich_schedule(schedule, youtube_root, cutoff),
         },
         "finance": {
-            "revenue": revenue_total, "expenses": expenses["total"], "profit": revenue_total - expenses["total"],
+            "revenue": revenue_total,
+            "expenses": expenses["total"],
+            "profit": None if expenses["partial"] or expenses["total"] is None else revenue_total - expenses["total"],
             "target_to_date": overall_target_to_date,
             "difference_to_date": revenue_total - overall_target_to_date,
             "achievement": round(revenue_total / overall_target_to_date * 100, 1) if overall_target_to_date else None,
