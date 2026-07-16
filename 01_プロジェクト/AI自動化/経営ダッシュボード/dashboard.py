@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import calendar
 import datetime as dt
 import json
 import re
@@ -24,6 +25,63 @@ YOUTUBE_OVERRIDES = {
         "predicted_views": 16457,
     }
 }
+
+JOB_LABELS = {
+    "com.claude.discord-monitor": ("スマホの相談窓口", "Discordのメッセージを受け取り、あおいに届けます"),
+    "com.claude.listener-watchdog": ("相談窓口の見張り", "メッセージの受信が止まっていないか見張ります"),
+    "com.claude.channel-lifecycle": ("動画用チャットの整理", "制作ごとのチャットを整理する旧機能です"),
+    "com.claude.youtube-revenue": ("YouTube収益の記録", "YouTube収益をデイリーノートへ記録します"),
+    "com.claude.uber-earnings": ("Uber売上の記録", "その日のUber売上を集計して記録します"),
+    "com.claude.daily-knowledge-extract": ("今日の学びを保存", "日誌から大事な気づきを拾って知識にします"),
+    "com.claude.gmail-cleanup": ("メールの整理", "不要なメールを週に一度整理します"),
+    "com.claude.weekly-accounting": ("週次の経理", "一週間分の取引をfreeeへ記録します"),
+    "com.claude.weekly-stocktake": ("タスクの棚卸し", "たまったタスクから今やるものを整理します"),
+    "com.claude.neta-retrain": ("動画データの学習", "動画の実績を使ってネタ予測を更新します"),
+    "com.claude.uber-weekly-plan": ("来週のUber計画", "天気と過去実績から来週の稼働案を作ります"),
+    "com.claude.knowledge-gardener": ("Second Brainの整理", "関連ノートをつなぎ、重複や古い情報を整理します"),
+    "com.claude.corpus-collect": ("動画ネタの学習素材集め", "創作スレの文章パターンを週に一度集めます"),
+    "com.claude.thread-format-learning": ("台本文体の学習", "過去台本から読みやすい書き方を学びます"),
+    "com.claude.trash-cleanup": ("不要ファイルの整理", "安全に消せる一時ファイルを月に一度整理します"),
+    "com.claude.demaecan-reminder": ("出前館の明細リマインド", "出前館の売上明細を忘れないよう知らせます"),
+    "com.claude.monthly-accounting": ("旧・月次経理", "以前の月次経理機能です。現在は使っていません"),
+    "com.korokoro.monthly-accounting-recheck": ("月次経理の再チェック", "売上とfreeeの数字が合うか別ルートで確認します"),
+    "com.claude.freee-uncleared-monitor": ("freee未処理の確認", "freeeに残っている未処理の明細を確認します"),
+    "com.claude.script-learning": ("台本結果の振り返り", "公開後の結果から次の台本改善案を作ります"),
+    "com.claude.neta-slate-reminder": ("来月の動画予定リマインド", "来月のネタを決める時期になったら知らせます"),
+    "com.claude.monthly-backup": ("月次バックアップ", "会社の大事なデータを月に一度まとめて保存します"),
+    "com.claude.vault-snapshot": ("週次バックアップ", "Second Brainと売上証拠を週に一度保存します"),
+    "com.claude.restore-drill": ("バックアップの復元確認", "保存したデータが本当に戻せるか確認します"),
+    "com.claude.ssd-backup": ("外付けSSDへの保存", "Macが壊れても戻せるようSSDにも控えを作ります"),
+    "com.korokoro.kicho-weekly": ("旧・週次記帳", "以前の記帳機能です。現在は使っていません"),
+    "com.korokoro.yuma-watchtower": ("自動化の見守り役", "すべての自動化が正常か毎朝確認します"),
+    "com.claude.vault-autocommit": ("Second Brainの自動保存", "変更を10分ごとに履歴として保存します"),
+    "com.claude.satellite-autocommit": ("制作データの自動保存", "YouTube制作物やスキルを10分ごとに保存します"),
+    "com.claude.vault-mirror": ("旧・Driveコピー", "以前のGoogle Driveコピー機能です。現在は使っていません"),
+    "com.claude.youtube-drafts-ssd-mirror": ("YouTube制作物のSSD保存", "制作中の動画データをSSDにもコピーします"),
+    "com.claude.nightly-refresh": ("あおいの夜間リフレッシュ", "翌朝も軽快に動けるよう、夜中に状態を整えます"),
+    "com.claude.daily-dashboard": ("朝の経営レポート", "売上と今日のタスクを毎朝まとめます"),
+}
+
+
+def friendly_schedule(value: str) -> str:
+    return (value.replace("常駐（KeepAlive）", "常に動作")
+                 .replace("常駐（KeepAlive / 30秒監視）", "常に動作・30秒ごとに確認")
+                 .replace("常駐", "常に動作")
+                 .replace("SSDマウント時（StartOnMount）", "SSDをつないだ時"))
+
+
+def friendly_job(name: str, schedule: str, group: str, raw_state: str, raw_detail: str) -> dict[str, Any]:
+    label, summary = JOB_LABELS.get(name, (name.replace("com.claude.", "").replace("com.korokoro.", ""), "自動で動く社内業務です"))
+    state = {"running": "順調", "watch": "確認中", "stopped": "停止中"}[group]
+    return {
+        "name": label,
+        "summary": summary,
+        "schedule": friendly_schedule(schedule),
+        "state": state,
+        "technical_name": name,
+        "technical_state": raw_state,
+        "technical_detail": raw_detail,
+    }
 
 
 def read_text(path: Path) -> str:
@@ -185,33 +243,34 @@ def parse_jobs(path: Path) -> dict[str, Any]:
         group = classify_job(cells[state_index])
         if not group:
             continue
-        groups[group].append({
-            "name": cells[0],
-            "schedule": cells[1] if len(cells) > 1 else "",
-            "state": cells[state_index],
-            "detail": cells[state_index + 1] if state_index + 1 < len(cells) else "",
-        })
+        groups[group].append(friendly_job(
+            cells[0],
+            cells[1] if len(cells) > 1 else "",
+            group,
+            cells[state_index],
+            cells[state_index + 1] if state_index + 1 < len(cells) else "",
+        ))
     # 台帳の詳細表外だが、既存ダッシュボード仕様で稼働中に含める2ジョブ。
     text = read_text(path)
     extras = [
         ("com.claude.nightly-refresh", "毎晩3:10・3:50", "あおいのセッションを安全にリフレッシュ"),
         ("com.claude.daily-dashboard", "毎朝4:00", "経営ダッシュボードとタスクを集約"),
     ]
-    existing = {job["name"] for values in groups.values() for job in values}
+    existing = {job["technical_name"] for values in groups.values() for job in values}
     for name, schedule, detail in extras:
         if name in text and name not in existing:
-            groups["running"].append({"name": name, "schedule": schedule, "state": "🟢 稼働中", "detail": detail})
+            groups["running"].append(friendly_job(name, schedule, "running", "🟢 稼働中", detail))
     return {"counts": {key: len(value) for key, value in groups.items()}, "groups": groups}
 
 
 def youtube_stages(folder: Path | None) -> list[dict[str, Any]]:
     files = {p.name for p in folder.iterdir()} if folder and folder.exists() else set()
     rules = [
-        ("制作ブリーフ", lambda: "brief.json" in files),
-        ("台本", lambda: any(name.endswith(".csv") and "台本" in name for name in files)),
-        ("タイトル・概要欄", lambda: "title.txt" in files and "description.txt" in files),
-        ("YMM4辞書", lambda: any(name.endswith(".dic") for name in files)),
-        ("最終レビュー", lambda: any("review" in name.lower() or "レビュー" in name for name in files)),
+        ("企画内容を決める", lambda: "brief.json" in files),
+        ("台本を作る", lambda: any(name.endswith(".csv") and "台本" in name for name in files)),
+        ("タイトルと説明文を作る", lambda: "title.txt" in files and "description.txt" in files),
+        ("読み方辞書を用意する", lambda: any(name.endswith(".dic") for name in files)),
+        ("公開前に最終確認する", lambda: any("review" in name.lower() or "レビュー" in name for name in files)),
     ]
     stages = [{"name": name, "done": bool(check())} for name, check in rules]
     first = next((stage["name"] for stage in stages if not stage["done"]), "投稿準備完了")
@@ -244,6 +303,67 @@ def enrich_schedule(schedule: list[dict[str, Any]], youtube_root: Path, cutoff: 
     return result
 
 
+def simple_task(text: str) -> str:
+    rules = [
+        ("出前館", "出前館の6月後半の売上明細を確認する"),
+        ("A1外部レビュー", "自動チェックが正しく動いているか確認する"),
+        ("vault-snapshot", "バックアップに売上明細が入っているか確認する"),
+        ("corpus-collect", "動画学習の自動処理が動いたか確認する"),
+        ("freeeトークン", "freeeとの接続をやり直す"),
+        ("正本4ファイル", "大事な設定ファイルの確認を終える"),
+        ("柱①", "AI開発の進め方が使いやすいか見直す"),
+    ]
+    for keyword, label in rules:
+        if keyword in text:
+            return label
+    text = re.sub(r"\[\[[^\]]+\]\]", "", text)
+    text = re.sub(r"（[^）]{20,}）", "", text)
+    return text.strip()[:70]
+
+
+def parse_today_note(vault: Path, today: dt.date) -> dict[str, Any]:
+    path = vault / "05_日誌" / f"{today.isoformat()}.md"
+    if not path.exists():
+        return {"exists": False, "sales": [], "sales_total": 0, "tasks": [], "notes": []}
+    text = read_text(path)
+    sales = parse_sales_note(path)
+    tasks = []
+    in_tasks = False
+    for line in text.splitlines():
+        if "<!-- tasks:start -->" in line:
+            in_tasks = True
+            continue
+        if "<!-- tasks:end -->" in line:
+            in_tasks = False
+            continue
+        if not in_tasks:
+            continue
+        match = re.match(r"^- \[([ xX])\]\s+(?:(\d{4}-\d{2}-\d{2})\s+)?(?:（(\d+)日超過）)?\s*(.+)$", line.strip())
+        if not match:
+            continue
+        tasks.append({
+            "done": match.group(1).lower() == "x",
+            "due": match.group(2),
+            "overdue_days": int(match.group(3)) if match.group(3) else 0,
+            "title": simple_task(match.group(4)),
+        })
+    notes = []
+    wanted = False
+    for line in text.splitlines():
+        if line.startswith("## "):
+            wanted = "メモ / アイデア" in line or "ログ" in line
+            continue
+        if wanted and line.startswith("- ") and line[2:].strip():
+            notes.append(line[2:].strip())
+    return {
+        "exists": True,
+        "sales": sales["rows"],
+        "sales_total": sum(row["amount"] or 0 for row in sales["rows"] if row["name"] != "YouTube"),
+        "tasks": tasks[:8],
+        "notes": notes[:6],
+    }
+
+
 def build_dashboard(vault: Path, youtube_root: Path, today: dt.date | None = None) -> dict[str, Any]:
     today = today or dt.date.today()
     cutoff = today - dt.timedelta(days=1)
@@ -274,7 +394,10 @@ def build_dashboard(vault: Path, youtube_root: Path, today: dt.date | None = Non
     expenses = parse_freee_expenses(vault, month, cutoff)
     warnings.append(expenses["warning"])
     budget_to_date = sum(budgets.get(day, 0) for day in range(1, cutoff.day + 1))
+    days_in_month = calendar.monthrange(cutoff.year, cutoff.month)[1]
+    youtube_target_to_date = round(youtube_target / days_in_month * cutoff.day) if youtube_target else 0
     revenue_total = delivery_total + youtube_total
+    overall_target_to_date = budget_to_date + youtube_target_to_date
     jobs = parse_jobs(vault / "01_プロジェクト/AI自動化/導入済み.md")
     return {
         "generated_at": dt.datetime.now().astimezone().isoformat(timespec="minutes"),
@@ -289,16 +412,23 @@ def build_dashboard(vault: Path, youtube_root: Path, today: dt.date | None = Non
         "youtube": {
             "actual": youtube_total, "target": youtube_target,
             "achievement": round(youtube_total / youtube_target * 100, 1) if youtube_target else None,
+            "target_to_date": youtube_target_to_date,
+            "difference_to_date": youtube_total - youtube_target_to_date,
+            "pace": round(youtube_total / youtube_target_to_date * 100, 1) if youtube_target_to_date else None,
             "captured_days": captured_youtube, "expected_days": cutoff.day,
             "schedule": enrich_schedule(schedule, youtube_root, cutoff),
         },
         "finance": {
             "revenue": revenue_total, "expenses": expenses["total"], "profit": revenue_total - expenses["total"],
+            "target_to_date": overall_target_to_date,
+            "difference_to_date": revenue_total - overall_target_to_date,
+            "achievement": round(revenue_total / overall_target_to_date * 100, 1) if overall_target_to_date else None,
             "expense_categories": expenses["categories"], "expense_as_of": expenses["as_of"],
             "expense_status": expenses["status"],
         },
         "daily": daily,
         "jobs": jobs,
+        "today_note": parse_today_note(vault, today),
     }
 
 

@@ -37,6 +37,9 @@ class DashboardTests(unittest.TestCase):
         self.assertEqual(len(data["daily"]), 15)
         self.assertEqual(data["youtube"]["schedule"][0]["title"], "毛利軍｜秀吉を追撃しなかった理由")
         self.assertEqual(data["jobs"]["counts"], {"running": 27, "watch": 2, "stopped": 4})
+        self.assertEqual(data["jobs"]["groups"]["running"][0]["name"], "スマホの相談窓口")
+        self.assertEqual(data["youtube"]["target_to_date"], 24194)
+        self.assertTrue(data["today_note"]["tasks"])
         json.dumps(data, ensure_ascii=False)
 
     def test_mobile_breakpoints_exist(self):
