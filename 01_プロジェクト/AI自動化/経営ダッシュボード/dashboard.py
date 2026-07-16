@@ -8,6 +8,13 @@ import calendar
 import datetime as dt
 import json
 import re
+import threading
+import time
+import unicodedata
+import urllib.error
+import urllib.parse
+import urllib.request
+from collections import Counter
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from typing import Any
@@ -16,6 +23,16 @@ from urllib.parse import urlparse
 HERE = Path(__file__).resolve().parent
 DEFAULT_VAULT = Path("~/2nd-Brain").expanduser()
 DEFAULT_YOUTUBE = Path("~/Projects/youtube").expanduser()
+DEFAULT_EXPENSE_ROOT = Path(
+    "~/Library/CloudStorage/GoogleDrive-corocoro.business@gmail.com/マイドライブ/経費精算"
+).expanduser()
+FREEE_TOKENS = Path("~/.config/freee-mcp/tokens.json").expanduser()
+FREEE_API_BASE = "https://api.freee.co.jp/api/1"
+FREEE_COMPANY_ID = 12511831
+FREEE_REFRESH_SECONDS = 30 * 60
+EXPENSE_FILE_EXTENSIONS = {".jpg", ".jpeg", ".png", ".heic", ".pdf", ".md"}
+_FREEE_CACHE: dict[str, Any] = {"key": None, "loaded": 0.0, "data": None, "error": None}
+_FREEE_CACHE_LOCK = threading.Lock()
 DELIVERY_NAMES = {"Uber Eats", "Uber", "出前館", "ロケットナウ", "ロケットなう"}
 YOUTUBE_NAMES = {"YouTube"}
 YOUTUBE_OVERRIDES = {
@@ -191,33 +208,426 @@ def latest_freee_snapshot(vault: Path, cutoff: dt.date) -> Path | None:
     return max(candidates, default=(None, None))[1]
 
 
-def parse_freee_expenses(vault: Path, month: str, cutoff: dt.date) -> dict[str, Any]:
-    snapshot = latest_freee_snapshot(vault, cutoff)
-    empty = {"total": 0, "categories": [], "as_of": None, "status": "未取得", "warning": "freeeスナップショットがありません"}
-    if not snapshot:
-        return empty
+def file_timestamp(path: Path) -> str | None:
     try:
-        deals = json.loads(read_text(snapshot / "deals.json")).get("deals", [])
-        items = json.loads(read_text(snapshot / "account_items.json")).get("account_items", [])
-    except (OSError, ValueError):
-        return empty
-    names = {item.get("id"): item.get("name", "不明") for item in items}
+        return dt.datetime.fromtimestamp(path.stat().st_mtime).astimezone().isoformat(timespec="seconds")
+    except OSError:
+        return None
+
+
+def latest_timestamp(*values: str | None) -> str | None:
+    parsed: list[tuple[dt.datetime, str]] = []
+    for value in values:
+        if not value:
+            continue
+        try:
+            parsed.append((dt.datetime.fromisoformat(value), value))
+        except ValueError:
+            continue
+    return max(parsed, default=(None, None))[1]
+
+
+def normalize_merchant(value: str | None) -> str:
+    text = unicodedata.normalize("NFKC", value or "").lower()
+    aliases = [
+        (("eneos", "enejet", "エネオス"), "eneos"),
+        (("apollo", "アポロ", "出光", "idemitsu"), "idemitsu"),
+        (("anthropic", "claude"), "anthropic"),
+        (("openai", "chatgpt"), "openai"),
+        (("ニコニコ", "ドワンゴ", "niconico"), "dwango"),
+        (("google", "グーグル"), "google"),
+    ]
+    for words, canonical in aliases:
+        if any(word in text for word in words):
+            return canonical
+    text = re.sub(r"(?:株式会社|有限会社|合同会社|\(株\)|（株）|inc\.?|llc)", "", text)
+    return re.sub(r"[^0-9a-zぁ-んァ-ヶ一-龠]", "", text)
+
+
+def merchants_match(left: str, right: str) -> bool:
+    if not left or not right:
+        return False
+    if left == right:
+        return True
+    return min(len(left), len(right)) >= 4 and (left in right or right in left)
+
+
+def freee_api_get(access_token: str, path: str, params: dict[str, Any]) -> dict[str, Any]:
+    query = urllib.parse.urlencode(params)
+    request = urllib.request.Request(
+        f"{FREEE_API_BASE}/{path}?{query}",
+        headers={"Authorization": f"Bearer {access_token}", "User-Agent": "local-management-dashboard/1.0"},
+    )
+    with urllib.request.urlopen(request, timeout=15) as response:
+        return json.load(response)
+
+
+def fetch_freee_live(month: str, through_date: dt.date) -> dict[str, Any]:
+    token_data = json.loads(read_text(FREEE_TOKENS))
+    access_token = token_data.get("access_token")
+    if not access_token:
+        raise ValueError("access_token missing")
+
+    start_date = f"{month}-01"
+    common = {"company_id": FREEE_COMPANY_ID}
+    deals: list[dict[str, Any]] = []
+    offset = 0
+    while True:
+        page = freee_api_get(access_token, "deals", {
+            **common,
+            "start_issue_date": start_date,
+            "end_issue_date": through_date.isoformat(),
+            "limit": 100,
+            "offset": offset,
+        }).get("deals", [])
+        deals.extend(page)
+        if len(page) < 100:
+            break
+        offset += 100
+
+    partners: list[dict[str, Any]] = []
+    offset = 0
+    while True:
+        page = freee_api_get(access_token, "partners", {**common, "limit": 100, "offset": offset}).get("partners", [])
+        partners.extend(page)
+        if len(page) < 100:
+            break
+        offset += 100
+
+    return {
+        "deals": deals,
+        "account_items": freee_api_get(access_token, "account_items", common).get("account_items", []),
+        "partners": partners,
+        "wallet_txns": freee_api_get(access_token, "wallet_txns", {**common, "limit": 100}).get("wallet_txns", []),
+        "retrieved_at": dt.datetime.now().astimezone().isoformat(timespec="seconds"),
+    }
+
+
+def cached_freee_live(month: str, through_date: dt.date) -> tuple[dict[str, Any] | None, str | None]:
+    key = f"{month}:{through_date.isoformat()}"
+    now = time.monotonic()
+    with _FREEE_CACHE_LOCK:
+        if _FREEE_CACHE["key"] == key and now - float(_FREEE_CACHE["loaded"]) < FREEE_REFRESH_SECONDS:
+            return _FREEE_CACHE["data"], _FREEE_CACHE["error"]
+        previous = _FREEE_CACHE["data"] if _FREEE_CACHE["key"] == key else None
+        try:
+            data = fetch_freee_live(month, through_date)
+            error = None
+        except urllib.error.HTTPError as exc:
+            data, error = previous, f"HTTP {exc.code}"
+        except (OSError, ValueError, urllib.error.URLError, TimeoutError) as exc:
+            data, error = previous, type(exc).__name__
+        _FREEE_CACHE.update({"key": key, "loaded": now, "data": data, "error": error})
+        return data, error
+
+
+def summarize_freee_expenses(
+    payload: dict[str, Any],
+    month: str,
+    through_date: dt.date,
+    *,
+    as_of: str,
+    updated_at: str | None,
+    source: str,
+) -> dict[str, Any]:
+    items = payload.get("account_items", [])
+    partners = payload.get("partners", [])
+    deals = payload.get("deals", [])
+    wallet_txns = payload.get("wallet_txns", [])
+    item_names = {item.get("id"): item.get("name", "分類不明") for item in items}
+    partner_names = {partner.get("id"): partner.get("name", "") for partner in partners}
     categories: dict[str, int] = {}
+    matching_deals = []
     for deal in deals:
         if deal.get("type") != "expense" or not str(deal.get("issue_date", "")).startswith(month):
             continue
         for detail in deal.get("details", []):
             if detail.get("entry_side") != "debit":
                 continue
-            name = names.get(detail.get("account_item_id"), "分類不明")
+            name = item_names.get(detail.get("account_item_id"), "分類不明")
             categories[name] = categories.get(name, 0) + int(detail.get("amount") or 0)
-    total = sum(categories.values())
+        partner_name = partner_names.get(deal.get("partner_id"), "")
+        if not partner_name:
+            descriptions = [str(detail.get("description") or "") for detail in deal.get("details", [])]
+            partner_name = next((value for value in descriptions if value), "")
+        matching_deals.append({
+            "id": deal.get("id"),
+            "date": str(deal.get("issue_date") or ""),
+            "amount": int(deal.get("amount") or 0),
+            "merchant": partner_name,
+            "merchant_key": normalize_merchant(partner_name),
+        })
+
+    wallet_dates = [str(row.get("date")) for row in wallet_txns if row.get("date")]
+    latest_bank_date = max(wallet_dates, default=None)
+    bank_stale = True
+    if latest_bank_date:
+        try:
+            bank_stale = (through_date - dt.date.fromisoformat(latest_bank_date)).days > 7
+        except ValueError:
+            bank_stale = True
+    try:
+        source_stale = (through_date - dt.date.fromisoformat(as_of[:10])).days > 1
+    except ValueError:
+        source_stale = True
+
     return {
-        "total": total,
-        "categories": [{"name": name, "amount": amount} for name, amount in sorted(categories.items(), key=lambda x: -x[1])],
-        "as_of": snapshot.name,
-        "status": "暫定",
-        "warning": "freeeの最新ローカル取得分のみ。未同期取引は含みません",
+        "available": True,
+        "total": sum(categories.values()),
+        "categories": [
+            {"name": name, "amount": amount, "status": "確認済み"}
+            for name, amount in sorted(categories.items(), key=lambda item: -item[1])
+        ],
+        "matching_deals": matching_deals,
+        "as_of": as_of,
+        "updated_at": updated_at,
+        "source": source,
+        "latest_bank_date": latest_bank_date,
+        "stale": source_stale or bank_stale,
+        "bank_stale": bank_stale,
+    }
+
+
+def parse_freee_expenses(
+    vault: Path,
+    month: str,
+    through_date: dt.date,
+    allow_live: bool = False,
+) -> dict[str, Any]:
+    warnings = []
+    live_error = None
+    if allow_live:
+        live, live_error = cached_freee_live(month, through_date)
+        if live:
+            result = summarize_freee_expenses(
+                live,
+                month,
+                through_date,
+                as_of=live["retrieved_at"][:10],
+                updated_at=live["retrieved_at"],
+                source="freee最新確認",
+            )
+            if live_error:
+                warnings.append("freeeの最新確認に失敗したため、直前に確認できた数字を表示しています")
+            result["warnings"] = warnings
+            return result
+
+    snapshot = latest_freee_snapshot(vault, through_date)
+    if not snapshot:
+        return {
+            "available": False,
+            "total": 0,
+            "categories": [],
+            "matching_deals": [],
+            "as_of": None,
+            "updated_at": None,
+            "source": "未取得",
+            "latest_bank_date": None,
+            "stale": True,
+            "bank_stale": True,
+            "warnings": ["freeeの経費データを確認できません"],
+        }
+    try:
+        payload = {
+            "deals": json.loads(read_text(snapshot / "deals.json")).get("deals", []),
+            "account_items": json.loads(read_text(snapshot / "account_items.json")).get("account_items", []),
+            "partners": json.loads(read_text(snapshot / "partners.json")).get("partners", []),
+            "wallet_txns": json.loads(read_text(snapshot / "wallet_txns.json")).get("wallet_txns", []),
+        }
+    except (OSError, ValueError):
+        return {
+            "available": False,
+            "total": 0,
+            "categories": [],
+            "matching_deals": [],
+            "as_of": snapshot.name,
+            "updated_at": None,
+            "source": "未取得",
+            "latest_bank_date": None,
+            "stale": True,
+            "bank_stale": True,
+            "warnings": ["freeeの保存データが壊れているため、経費を確定できません"],
+        }
+    updated_at = latest_timestamp(*(
+        file_timestamp(snapshot / name)
+        for name in ("deals.json", "account_items.json", "partners.json", "wallet_txns.json")
+    ))
+    result = summarize_freee_expenses(
+        payload,
+        month,
+        through_date,
+        as_of=snapshot.name,
+        updated_at=updated_at,
+        source="freee保存データ",
+    )
+    if allow_live and live_error:
+        warnings.append(f"freeeの最新確認ができないため、{snapshot.name.replace('-', '/')}の控えを表示しています")
+    result["warnings"] = warnings
+    return result
+
+
+def parse_drive_expenses(expense_root: Path, month: str, through_date: dt.date) -> dict[str, Any]:
+    if not expense_root.exists():
+        return {
+            "available": False,
+            "receipts": [],
+            "updated_at": None,
+            "unparsed_count": 0,
+            "duplicate_count": 0,
+        }
+    year, mon = month.split("-")
+    month_dir = expense_root / year / mon
+    if not month_dir.exists():
+        return {
+            "available": True,
+            "receipts": [],
+            "updated_at": None,
+            "unparsed_count": 0,
+            "duplicate_count": 0,
+        }
+
+    receipt_pattern = re.compile(r"^(\d{8})_(.+)_((?:\d{1,3}(?:,\d{3})+)|(?:\d+))$")
+    receipts = []
+    unparsed_count = 0
+    try:
+        paths = sorted(path for path in month_dir.iterdir() if path.is_file())
+    except OSError:
+        return {
+            "available": False,
+            "receipts": [],
+            "updated_at": None,
+            "unparsed_count": 0,
+            "duplicate_count": 0,
+        }
+    for path in paths:
+        if path.suffix.lower() not in EXPENSE_FILE_EXTENSIONS:
+            continue
+        match = receipt_pattern.fullmatch(path.stem)
+        if not match:
+            unparsed_count += 1
+            continue
+        try:
+            date = dt.datetime.strptime(match.group(1), "%Y%m%d").date()
+            amount = int(match.group(3).replace(",", ""))
+        except (ValueError, OverflowError):
+            unparsed_count += 1
+            continue
+        if date.strftime("%Y-%m") != month or date > through_date or amount <= 0:
+            continue
+        merchant = unicodedata.normalize("NFKC", match.group(2)).strip()
+        receipts.append({
+            "date": date.isoformat(),
+            "merchant": merchant,
+            "merchant_key": normalize_merchant(merchant),
+            "amount": amount,
+            "updated_at": file_timestamp(path),
+            "file_name": path.name,
+        })
+
+    unique = {}
+    for receipt in receipts:
+        key = (receipt["date"], receipt["merchant_key"] or receipt["merchant"], receipt["amount"])
+        current = unique.get(key)
+        if current is None or (receipt["updated_at"] or "") > (current["updated_at"] or ""):
+            unique[key] = receipt
+    deduplicated = sorted(unique.values(), key=lambda row: (row["date"], row["merchant"], row["amount"]))
+    return {
+        "available": True,
+        "receipts": deduplicated,
+        "updated_at": latest_timestamp(*(row["updated_at"] for row in deduplicated)),
+        "unparsed_count": unparsed_count,
+        "duplicate_count": len(receipts) - len(deduplicated),
+    }
+
+
+def reconcile_expenses(freee: dict[str, Any], drive: dict[str, Any]) -> dict[str, Any]:
+    receipts = drive["receipts"]
+    deals = freee["matching_deals"]
+    receipt_key_counts = Counter((row["date"], row["amount"]) for row in receipts)
+    deal_key_counts = Counter((row["date"], row["amount"]) for row in deals)
+    used_deals: set[int] = set()
+    pending = []
+    ambiguous_count = 0
+    matched_count = 0
+
+    for receipt in receipts:
+        key = (receipt["date"], receipt["amount"])
+        candidates = [
+            (index, deal) for index, deal in enumerate(deals)
+            if index not in used_deals and (deal["date"], deal["amount"]) == key
+        ]
+        match_index = None
+        if receipt_key_counts[key] == 1 and deal_key_counts[key] == 1 and len(candidates) == 1:
+            index, deal = candidates[0]
+            if not receipt["merchant_key"] or not deal["merchant_key"] or merchants_match(receipt["merchant_key"], deal["merchant_key"]):
+                match_index = index
+        else:
+            merchant_matches = [
+                index for index, deal in candidates
+                if merchants_match(receipt["merchant_key"], deal["merchant_key"])
+            ]
+            if len(merchant_matches) == 1:
+                match_index = merchant_matches[0]
+        if match_index is not None:
+            used_deals.add(match_index)
+            matched_count += 1
+            continue
+        row = {**receipt, "status": "要確認" if candidates else "反映待ち"}
+        pending.append(row)
+        if candidates:
+            ambiguous_count += 1
+
+    confirmed = int(freee["total"] or 0)
+    pending_total = sum(row["amount"] for row in pending)
+    known_total = confirmed + pending_total
+    partial = not freee["available"] or not drive["available"] or freee["stale"] or bool(ambiguous_count) or bool(drive["unparsed_count"])
+    if not freee["available"] or not drive["available"]:
+        status = "未取得あり"
+    elif freee["stale"] or ambiguous_count or drive["unparsed_count"]:
+        status = "要確認"
+    elif pending:
+        status = "反映待ちあり"
+    else:
+        status = "確認済み"
+
+    breakdown = list(freee["categories"])
+    if pending_total:
+        breakdown.append({"name": "freee反映待ち", "amount": pending_total, "status": "反映待ち"})
+    warnings = list(freee.get("warnings", []))
+    if freee["bank_stale"]:
+        if freee["latest_bank_date"]:
+            warnings.append(f"freeeの銀行データは{freee['latest_bank_date'].replace('-', '/')}から更新されていません")
+        else:
+            warnings.append("freeeの銀行データを確認できません")
+    if not drive["available"]:
+        warnings.append("レシートの保存先を確認できないため、速報経費が未取得です")
+    if pending:
+        warnings.append(f"freee反映待ちの経費が{len(pending)}件あります")
+    if ambiguous_count:
+        warnings.append(f"同じ日・同じ金額の経費が重なり、{ambiguous_count}件は確認が必要です")
+    if drive["unparsed_count"]:
+        warnings.append(f"ファイル名から金額を読めない証憑が{drive['unparsed_count']}件あります")
+
+    return {
+        "total": known_total,
+        "confirmed": confirmed,
+        "pending": pending_total,
+        "pending_count": len(pending),
+        "matched_receipt_count": matched_count,
+        "ambiguous_count": ambiguous_count,
+        "unparsed_count": drive["unparsed_count"],
+        "duplicate_count": drive["duplicate_count"],
+        "pending_receipts": pending,
+        "breakdown": breakdown,
+        "status": status,
+        "partial": partial,
+        "as_of": freee["as_of"],
+        "source": freee["source"],
+        "latest_bank_date": freee["latest_bank_date"],
+        "updated_at": latest_timestamp(freee["updated_at"], drive["updated_at"]),
+        "freee_updated_at": freee["updated_at"],
+        "drive_updated_at": drive["updated_at"],
+        "warnings": list(dict.fromkeys(warnings)),
     }
 
 
@@ -364,7 +774,13 @@ def parse_today_note(vault: Path, today: dt.date) -> dict[str, Any]:
     }
 
 
-def build_dashboard(vault: Path, youtube_root: Path, today: dt.date | None = None) -> dict[str, Any]:
+def build_dashboard(
+    vault: Path,
+    youtube_root: Path,
+    today: dt.date | None = None,
+    expense_root: Path = DEFAULT_EXPENSE_ROOT,
+    allow_live_freee: bool = False,
+) -> dict[str, Any]:
     today = today or dt.date.today()
     cutoff = today - dt.timedelta(days=1)
     month = cutoff.strftime("%Y-%m")
@@ -404,8 +820,10 @@ def build_dashboard(vault: Path, youtube_root: Path, today: dt.date | None = Non
         warnings.append(f"昨日（{cutoff.strftime('%-m/%-d')}）の配達売上は{yesterday['status']}です")
     if captured_youtube < cutoff.day:
         warnings.append(f"YouTube収益は{captured_youtube}/{cutoff.day}日分のみ取得済みです")
-    expenses = parse_freee_expenses(vault, month, cutoff)
-    warnings.append(expenses["warning"])
+    freee_expenses = parse_freee_expenses(vault, month, today, allow_live=allow_live_freee)
+    drive_expenses = parse_drive_expenses(expense_root, month, today)
+    expenses = reconcile_expenses(freee_expenses, drive_expenses)
+    warnings.extend(expenses["warnings"])
     budget_to_date = sum(budgets.get(day, 0) for day in range(1, cutoff.day + 1))
     youtube_calendar_target_to_date = round(youtube_target / days_in_month * cutoff.day) if youtube_target else 0
     youtube_last_day = max((row["day"] for row in daily if row["youtube_actual"] is not None), default=0)
@@ -441,8 +859,21 @@ def build_dashboard(vault: Path, youtube_root: Path, today: dt.date | None = Non
             "target_to_date": overall_target_to_date,
             "difference_to_date": revenue_total - overall_target_to_date,
             "achievement": round(revenue_total / overall_target_to_date * 100, 1) if overall_target_to_date else None,
-            "expense_categories": expenses["categories"], "expense_as_of": expenses["as_of"],
+            "expense_categories": expenses["breakdown"], "expense_as_of": expenses["as_of"],
             "expense_status": expenses["status"],
+            "expense_confirmed": expenses["confirmed"],
+            "expense_pending": expenses["pending"],
+            "expense_pending_count": expenses["pending_count"],
+            "expense_pending_receipts": expenses["pending_receipts"],
+            "expense_ambiguous_count": expenses["ambiguous_count"],
+            "expense_unparsed_count": expenses["unparsed_count"],
+            "expense_partial": expenses["partial"],
+            "expense_updated_at": expenses["updated_at"],
+            "expense_freee_updated_at": expenses["freee_updated_at"],
+            "expense_drive_updated_at": expenses["drive_updated_at"],
+            "expense_latest_bank_date": expenses["latest_bank_date"],
+            "expense_source": expenses["source"],
+            "expense_period_end": today.isoformat(),
         },
         "daily": daily,
         "jobs": jobs,
@@ -453,13 +884,21 @@ def build_dashboard(vault: Path, youtube_root: Path, today: dt.date | None = Non
 class Handler(BaseHTTPRequestHandler):
     vault = DEFAULT_VAULT
     youtube_root = DEFAULT_YOUTUBE
+    expense_root = DEFAULT_EXPENSE_ROOT
+    allow_live_freee = True
     fixed_today: dt.date | None = None
 
     def do_GET(self) -> None:  # noqa: N802
         path = urlparse(self.path).path
         if path == "/api/dashboard":
             try:
-                payload = json.dumps(build_dashboard(self.vault, self.youtube_root, self.fixed_today), ensure_ascii=False).encode()
+                payload = json.dumps(build_dashboard(
+                    self.vault,
+                    self.youtube_root,
+                    self.fixed_today,
+                    self.expense_root,
+                    self.allow_live_freee,
+                ), ensure_ascii=False).encode()
                 self.send_response(200)
                 self.send_header("Content-Type", "application/json; charset=utf-8")
                 self.send_header("Cache-Control", "no-store")
@@ -493,16 +932,26 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--vault", type=Path, default=DEFAULT_VAULT)
     parser.add_argument("--youtube-root", type=Path, default=DEFAULT_YOUTUBE)
+    parser.add_argument("--expense-root", type=Path, default=DEFAULT_EXPENSE_ROOT)
     parser.add_argument("--host", default="127.0.0.1")
     parser.add_argument("--port", type=int, default=8765)
     parser.add_argument("--date", type=dt.date.fromisoformat, help="検証用の今日（YYYY-MM-DD）")
     parser.add_argument("--json", action="store_true", help="画面を起動せず集計JSONを表示")
+    parser.add_argument("--no-live-freee", action="store_true", help="freeeを直接確認せず、保存済みデータだけを使う")
     args = parser.parse_args()
     if args.json:
-        print(json.dumps(build_dashboard(args.vault.expanduser(), args.youtube_root.expanduser(), args.date), ensure_ascii=False, indent=2))
+        print(json.dumps(build_dashboard(
+            args.vault.expanduser(),
+            args.youtube_root.expanduser(),
+            args.date,
+            args.expense_root.expanduser(),
+            not args.no_live_freee,
+        ), ensure_ascii=False, indent=2))
         return
     Handler.vault = args.vault.expanduser()
     Handler.youtube_root = args.youtube_root.expanduser()
+    Handler.expense_root = args.expense_root.expanduser()
+    Handler.allow_live_freee = not args.no_live_freee
     Handler.fixed_today = args.date
     server = ThreadingHTTPServer((args.host, args.port), Handler)
     print(f"経営ダッシュボード: http://{args.host}:{args.port}")

@@ -37,6 +37,7 @@
     .business-name{display:flex;justify-content:space-between;align-items:center;font-size:18px;font-weight:800}.arrow{font-size:24px;font-weight:400}.business .row{display:flex;justify-content:space-between;gap:12px;margin-top:20px;font-size:13px;color:var(--muted)}.business .row b{font-size:20px;color:var(--ink)}
     .progress{height:7px;background:#e2e8f0;border-radius:99px;overflow:hidden;margin:14px 0 9px}.progress i{display:block;height:100%;background:var(--green);border-radius:inherit}.progress.red i{background:var(--red)}
     .progress-line{display:flex;justify-content:space-between;gap:12px;font-size:12px;color:var(--muted)}.progress-line strong{font-size:18px;color:var(--ink)}
+    .expense-status{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}.expense-mini{background:var(--card);border:1px solid var(--line);border-radius:13px;padding:14px}.expense-mini span{display:block;color:var(--muted);font-size:11px;font-weight:750}.expense-mini b{display:block;margin-top:5px;font-size:20px;letter-spacing:-.035em;font-variant-numeric:tabular-nums}.expense-mini small{display:block;color:var(--muted);font-size:10px;margin-top:3px}.expense-alert{margin-top:8px;padding:11px 13px;border-left:3px solid var(--red);border-radius:3px 10px 10px 3px;background:var(--red-soft);color:#991b1b;font-size:12px}
     .table-wrap{overflow:auto}table{width:100%;border-collapse:collapse;font-size:13px}th{text-align:left;color:var(--muted);font-size:11px;padding:8px 10px;border-bottom:1px solid var(--line);white-space:nowrap}td{padding:11px 10px;border-bottom:1px solid #edf0f4;vertical-align:top}tr:last-child td{border:0}.money{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
     .tag{display:inline-block;padding:3px 8px;border-radius:99px;font-size:10px;font-weight:800}.tag.ok{background:var(--green-soft);color:var(--green)}.tag.wait{background:var(--amber-soft);color:var(--amber)}.tag.stop{background:var(--red-soft);color:var(--red)}
     .video-list,.task-list,.job-list{display:grid;gap:8px}.video,.task,.job{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:15px;box-shadow:0 1px 2px rgba(15,23,42,.03)}.video-top,.job-top{display:flex;justify-content:space-between;gap:14px}.video h4,.job h4{margin:0;font-size:15px}.video-date{font-size:12px;color:var(--muted);text-align:right;white-space:nowrap}.checks{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:5px;margin-top:13px}.check{display:flex;gap:6px;align-items:flex-start;padding:8px;background:#f1f5f9;border-radius:8px;color:var(--muted);font-size:11px}.check.next{background:var(--green-soft);color:#1e3a8a;font-weight:750}.check input{accent-color:var(--green);margin:2px 0 0}.checkline{margin-top:9px;font-size:11px;color:var(--muted)}
@@ -44,42 +45,52 @@
     .today-sales{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}.today-sale{padding:14px;background:#ffffff;border:1px solid var(--line);border-radius:10px;box-shadow:0 1px 2px rgba(15,23,42,.03)}.today-sale span{font-size:11px;color:var(--muted)}.today-sale b{display:block;font-size:20px;margin-top:4px}
     .job-tabs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}.job-tab{border:1px solid var(--line);background:var(--card);border-radius:13px;padding:14px;text-align:left;cursor:pointer}.job-tab.active{background:var(--black);color:#fff;border-color:var(--black)}.job-tab span{font-size:11px;color:var(--muted)}.job-tab.active span{color:#cbd5e1}.job-tab b{display:block;font-size:29px;letter-spacing:-.04em}.job .job-time{color:var(--green);font-size:11px;font-weight:800}.job p{font-size:13px;color:var(--muted);margin:7px 0 0}.job-state{font-size:11px;white-space:nowrap}
     .error{max-width:680px;margin:60px auto;padding:22px;background:var(--red-soft);color:var(--red);border-radius:14px}
-    @media(max-width:800px){.grid4,.grid3{grid-template-columns:repeat(2,minmax(0,1fr))}.grid2{grid-template-columns:minmax(0,1fr)}.checks{grid-template-columns:1fr 1fr}.today-sales{grid-template-columns:1fr 1fr}.nav{overflow:auto;grid-template-columns:repeat(5,minmax(105px,1fr))}}
-    @media(max-width:520px){.app{padding:18px 13px 60px}.brand{display:block}.asof{text-align:left;margin-top:14px}.nav{top:6px;margin:0 -3px}.nav button{padding:10px 7px}.page-head{display:block;margin-top:30px}.page-head .kicker{display:block;margin-bottom:4px}.grid4,.grid3{gap:7px}.card{padding:14px}.number{font-size:25px}.business{grid-template-columns:1fr}.checks{grid-template-columns:1fr}.section-title{align-items:flex-start;flex-direction:column;gap:2px}.section-title span{text-align:left}.job-tabs{grid-template-columns:1fr 1fr}.video-top{display:block}.video-date{text-align:left;margin-top:5px}.today-sales{grid-template-columns:1fr 1fr}.task{grid-template-columns:auto 1fr}.overdue{grid-column:2}}
+    @media(max-width:800px){.grid4,.grid3{grid-template-columns:repeat(2,minmax(0,1fr))}.grid2{grid-template-columns:minmax(0,1fr)}.expense-status{grid-template-columns:1fr 1fr}.checks{grid-template-columns:1fr 1fr}.today-sales{grid-template-columns:1fr 1fr}.nav{overflow:auto;grid-template-columns:repeat(5,minmax(105px,1fr))}}
+    @media(max-width:520px){.app{padding:18px 13px 60px}.brand{display:block}.asof{text-align:left;margin-top:14px}.nav{top:6px;margin:0 -3px}.nav button{padding:10px 7px}.page-head{display:block;margin-top:30px}.page-head .kicker{display:block;margin-bottom:4px}.grid4,.grid3,.expense-status{gap:7px}.card{padding:14px}.number{font-size:25px}.expense-mini{padding:12px}.expense-mini b{font-size:17px}.business{grid-template-columns:1fr}.checks{grid-template-columns:1fr}.section-title{align-items:flex-start;flex-direction:column;gap:2px}.section-title span{text-align:left}.job-tabs{grid-template-columns:1fr 1fr}.video-top{display:block}.video-date{text-align:left;margin-top:5px}.today-sales{grid-template-columns:1fr 1fr}.task{grid-template-columns:auto 1fr}.overdue{grid-column:2}}
   </style>
 </head>
 <body>
 <main class="app" id="app"><div class="empty">数字をまとめています…</div></main>
 <script>
-const yen=n=>new Intl.NumberFormat('ja-JP',{style:'currency',currency:'JPY',maximumFractionDigits:0}).format(n||0);
+const yen=n=>n==null?'未取得':new Intl.NumberFormat('ja-JP',{style:'currency',currency:'JPY',maximumFractionDigits:0}).format(n);
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const signed=n=>`${n>=0?'+':''}${yen(n)}`;
 const tone=n=>n>=0?'good':'bad';
 const bar=n=>Math.max(0,Math.min(100,n||0));
-const simpleNotice=w=>w.includes('昨日')?'昨日の配達売上は、まだ途中の数字です':w.includes('YouTube')?'YouTube収益は反映が遅れるため、今見えている分だけです':'経費はfreeeに入っている分だけです';
+const shortDate=s=>s?String(s).slice(5,10).replace('-','/'):'未取得';
+const shortDateTime=s=>{if(!s)return '未取得';const d=new Date(s);return Number.isNaN(d.valueOf())?String(s):d.toLocaleString('ja-JP',{month:'numeric',day:'numeric',hour:'2-digit',minute:'2-digit'})};
+const simpleNotice=w=>w.includes('昨日')?'昨日の配達売上は、まだ途中の数字です':w.includes('YouTube')?'YouTube収益は反映が遅れるため、今見えている分だけです':w;
 
 function metric(label,value,sub,kind='',dark=false){return `<article class="card ${dark?'dark':''}"><div class="label">${label}</div><div class="number ${kind}">${value}</div><div class="fine">${sub}</div></article>`}
 function pageButton(id,label){return `<button data-go="${id}">${label}</button>`}
 
 function render(data){
+ const activePage=['overview','youtube','delivery','tasks','ai'].includes(location.hash.slice(1))?location.hash.slice(1):'overview';
  const videos=data.youtube.schedule.map(v=>`<article class="video"><div class="video-top"><div><h4>${esc(v.title)}</h4><div class="fine">${v.folder?'動画づくりを開始しています':'制作フォルダを確認中です'}</div></div><div class="video-date">${v.date.slice(5).replace('-','/')} 公開予定<br>予想 ${Number(v.predicted_views).toLocaleString()}回</div></div><div class="checks">${v.stages.map(s=>`<label class="check ${s.next?'next':''}"><input type="checkbox" ${s.done?'checked':''} disabled><span>${esc(s.name)}${s.next?'　次にやる':''}</span></label>`).join('')}</div><div class="checkline">${v.completed}/${v.total_stages} 完了　※今は見るだけです</div></article>`).join('')||'<div class="empty">今週の公開予定はありません</div>';
  const dailyRows=data.daily.slice().reverse().map(x=>`<tr><td>${x.date.slice(5).replace('-','/')}</td><td class="money">${yen(x.budget)}</td><td class="money">${yen(x.delivery)}</td><td class="money ${tone(x.difference)}">${signed(x.difference)}</td><td><span class="tag ${x.status==='確定'?'ok':'wait'}">${x.status==='確定'?'入力済み':'途中'}</span></td></tr>`).join('');
  const youtubeRows=data.daily.slice().reverse().map(x=>`<tr><td>${x.date.slice(5).replace('-','/')}</td><td class="money">${yen(x.youtube_target)}</td><td class="money">${x.youtube_actual==null?'<span class="tag wait">未反映</span>':yen(x.youtube_actual)}</td><td class="money ${x.youtube_difference==null?'':tone(x.youtube_difference)}">${x.youtube_difference==null?'—':signed(x.youtube_difference)}</td><td class="money">${yen(x.youtube_cumulative)}</td></tr>`).join('');
  const yesterdayRows=(data.delivery.yesterday?.rows||[]).filter(x=>['Uber Eats','Uber','出前館','ロケットナウ','ロケットなう'].includes(x.name)).map(x=>`<div class="today-sale"><span>${esc(x.name)}</span><b>${x.amount==null?'未入力':yen(x.amount)}</b></div>`).join('');
- const expenseRows=data.finance.expense_categories.length?data.finance.expense_categories.map(x=>`<tr><td>${esc(x.name)}</td><td class="money">${yen(x.amount)}</td></tr>`).join(''):'<tr><td colspan="2" class="empty">今月の経費は、まだfreeeに反映されていません</td></tr>';
+ const expenseRows=data.finance.expense_categories.length?data.finance.expense_categories.map(x=>`<tr><td>${esc(x.name)}</td><td><span class="tag ${x.status==='確認済み'?'ok':'wait'}">${esc(x.status)}</span></td><td class="money">${yen(x.amount)}</td></tr>`).join(''):'<tr><td colspan="3" class="empty">経費データの反映を待っています</td></tr>';
+ const pendingRows=(data.finance.expense_pending_receipts||[]).map(x=>`<tr><td>${shortDate(x.date)}</td><td>${esc(x.merchant)}</td><td><span class="tag ${x.status==='要確認'?'stop':'wait'}">${esc(x.status)}</span></td><td class="money">${yen(x.amount)}</td></tr>`).join('');
+ const expenseNeedsAttention=data.finance.expense_status!=='確認済み';
+ const expenseSourceDetail=data.finance.expense_latest_bank_date?`freeeの最新明細 ${shortDate(data.finance.expense_latest_bank_date)}`:`${esc(data.finance.expense_source)}・明細未取得`;
  const tasks=data.today_note.tasks.length?data.today_note.tasks.map(t=>`<label class="task"><input type="checkbox" ${t.done?'checked':''} disabled><span><b>${esc(t.title)}</b><small>${t.due?`${t.due.replaceAll('-','/')}まで`:''}</small></span>${t.overdue_days?`<span class="overdue">${t.overdue_days}日遅れ</span>`:''}</label>`).join(''):'<div class="empty">今日のタスクはありません</div>';
  const todaySales=data.today_note.sales.filter(x=>x.name!=='合計').map(x=>`<div class="today-sale"><span>${esc(x.name)}</span><b>${x.amount==null?'未入力':yen(x.amount)}</b></div>`).join('');
  document.querySelector('#app').innerHTML=`
-   <header class="brand"><div><small>祐馬さんの事業</small><h1>経営ダッシュボード</h1><p>いま何が順調で、次に何をすればいいか。</p></div><div class="asof">売上は ${data.cutoff.replaceAll('-','/')} まで<br>画面更新 ${data.generated_at.slice(0,16).replace('T',' ')}</div></header>
+   <header class="brand"><div><small>祐馬さんの事業</small><h1>経営ダッシュボード</h1><p>いま何が順調で、次に何をすればいいか。</p></div><div class="asof">売上は ${data.cutoff.replaceAll('-','/')} まで<br>経費は ${data.finance.expense_period_end.replaceAll('-','/')} までの速報<br><span id="refresh-state">画面更新 ${data.generated_at.slice(0,16).replace('T',' ')}</span></div></header>
    <nav class="nav" aria-label="画面切り替え">${pageButton('overview','全体')}${pageButton('youtube','YouTube')}${pageButton('delivery','配達')}${pageButton('tasks','タスク・日誌')}${pageButton('ai','AIの仕事')}</nav>
 
    <section class="page" data-page="overview">
     <div class="page-head"><div><span class="kicker">全体</span><h2>事業全体</h2><p>売上、経費、利益をひと目で確認。</p></div></div>
-    <div class="grid4">${metric('今月の売上',yen(data.finance.revenue),`今日までの目安 ${yen(data.finance.target_to_date)}`,'',true)}${metric('目安との差',signed(data.finance.difference_to_date),`達成度 ${data.finance.achievement}%`,tone(data.finance.difference_to_date))}${metric('今月の経費',yen(data.finance.expenses),'freeeに入っている分だけ')}${metric('今月の利益',yen(data.finance.profit),'売上から経費を引いた金額',tone(data.finance.profit))}</div>
+    <div class="grid4">${metric('今月の売上',yen(data.finance.revenue),`昨日までの目安 ${yen(data.finance.target_to_date)}`,'',true)}${metric('目安との差',signed(data.finance.difference_to_date),`達成度 ${data.finance.achievement}%`,tone(data.finance.difference_to_date))}${metric('今月使った経費',yen(data.finance.expenses),data.finance.expense_partial?'分かっている分・確認待ちあり':'確認済み＋反映待ち',expenseNeedsAttention?'bad':'good')}${metric('利益の目安',yen(data.finance.profit),'売上は昨日まで・経費は今日の速報を含む',data.finance.expense_partial?'bad':tone(data.finance.profit))}</div>
     <div class="section-title"><h3>確認しておくこと</h3><span>数字がそろっていない時だけ表示</span></div><div class="notices">${data.warnings.map(w=>`<div class="notice">${simpleNotice(w)}</div>`).join('')}</div>
+    <div class="section-title"><h3>経費の状態</h3><span>${expenseSourceDetail}</span></div>
+    <div class="expense-status"><article class="expense-mini"><span>今月使った額</span><b class="${expenseNeedsAttention?'bad':'good'}">${yen(data.finance.expenses)}</b><small>確認済みと反映待ちの合計</small></article><article class="expense-mini"><span>freee確認済み</span><b class="good">${yen(data.finance.expense_confirmed)}</b><small>${esc(data.finance.expense_source)}</small></article><article class="expense-mini"><span>freee反映待ち</span><b class="${data.finance.expense_pending>0?'bad':'good'}">${yen(data.finance.expense_pending)}</b><small>${data.finance.expense_pending_count}件</small></article><article class="expense-mini"><span>最終確認</span><b class="${expenseNeedsAttention?'bad':'good'}">${shortDateTime(data.finance.expense_updated_at)}</b><small>${esc(data.finance.expense_status)}</small></article></div>
+    ${expenseNeedsAttention?`<div class="expense-alert">経費はまだ確定前です。赤い項目がなくなるまでは「分かっている分」として見てください。</div>`:''}
     <div class="section-title"><h3>事業ごとの状況</h3><span>押すと詳しい画面へ移動</span></div>
     <div class="business"><button data-go="youtube"><div class="business-name"><span>YouTube</span><span class="arrow">→</span></div><div class="row"><span>今月の収益<br><b>${yen(data.youtube.actual)}</b></span><span>入力済みの日までの目標<br><b>${yen(data.youtube.target_to_date)}</b></span></div><div class="progress ${data.youtube.pace<100?'red':''}"><i style="width:${bar(data.youtube.pace)}%"></i></div></button><button data-go="delivery"><div class="business-name"><span>配達</span><span class="arrow">→</span></div><div class="row"><span>今月の売上<br><b>${yen(data.delivery.actual)}</b></span><span>今日までの予定<br><b>${yen(data.delivery.budget_to_date)}</b></span></div><div class="progress ${data.delivery.achievement<100?'red':''}"><i style="width:${bar(data.delivery.achievement)}%"></i></div></button></div>
-    <div class="section-title"><h3>経費の内訳</h3><span>freee ${data.finance.expense_as_of||'未取得'} まで</span></div><article class="card table-wrap"><table><thead><tr><th>項目</th><th class="money">金額</th></tr></thead><tbody>${expenseRows}</tbody></table></article>
+    <div class="section-title"><h3>経費の内訳</h3><span>確認済みと反映待ちを分けて表示</span></div><article class="card table-wrap"><table><thead><tr><th>項目</th><th>状態</th><th class="money">金額</th></tr></thead><tbody>${expenseRows}</tbody></table></article>
+    ${pendingRows?`<div class="section-title"><h3>freee反映待ちのレシート</h3><span>Driveへ入った時点で速報表示</span></div><article class="card table-wrap"><table><thead><tr><th>日</th><th>お店</th><th>状態</th><th class="money">金額</th></tr></thead><tbody>${pendingRows}</tbody></table></article>`:''}
    </section>
 
    <section class="page" data-page="youtube">
@@ -115,13 +126,26 @@ function render(data){
   document.querySelector('#job-title').textContent=labels[group];
   document.querySelector('#job-list').innerHTML=rows.map(j=>`<article class="job"><div class="job-top"><div><span class="job-time">${esc(j.schedule)}</span><h4>${esc(j.name)}</h4></div><span class="job-state ${j.group==='running'?'good':j.group==='watch'?'bad':''}">${j.group==='running'?'順調':j.group==='watch'?'確認中':'停止中'}</span></div><p>${esc(j.summary)}</p></article>`).join('');
  }
- function go(page){document.querySelectorAll('.page').forEach(x=>x.classList.toggle('active',x.dataset.page===page));document.querySelectorAll('.nav button').forEach(x=>x.classList.toggle('active',x.dataset.go===page));location.hash=page;window.scrollTo({top:0,behavior:'smooth'})}
+ function go(page,scroll=true){document.querySelectorAll('.page').forEach(x=>x.classList.toggle('active',x.dataset.page===page));document.querySelectorAll('.nav button').forEach(x=>x.classList.toggle('active',x.dataset.go===page));location.hash=page;if(scroll)window.scrollTo({top:0,behavior:'smooth'})}
  document.querySelectorAll('[data-go]').forEach(b=>b.onclick=()=>go(b.dataset.go));
  document.querySelectorAll('.job-tab').forEach(b=>b.onclick=()=>{document.querySelectorAll('.job-tab').forEach(x=>x.classList.remove('active'));b.classList.add('active');showJobs(b.dataset.jobs)});
- showJobs('running');go(['overview','youtube','delivery','tasks','ai'].includes(location.hash.slice(1))?location.hash.slice(1):'overview');
+ showJobs('running');go(activePage,false);
 }
 
-fetch('/api/dashboard',{cache:'no-store'}).then(r=>r.json()).then(d=>{if(d.error)throw Error(d.error);render(d)}).catch(e=>document.querySelector('#app').innerHTML=`<div class="error"><b>画面を表示できません</b><br>${esc(e.message)}<br><small>間違った数字を出さないため、表示を止めました。</small></div>`);
+let dashboardLoaded=false;
+async function loadDashboard(silent=false){
+ try{
+  const response=await fetch('/api/dashboard',{cache:'no-store'});
+  const data=await response.json();
+  if(!response.ok||data.error)throw Error(data.error||`HTTP ${response.status}`);
+  render(data);dashboardLoaded=true;
+ }catch(error){
+  if(dashboardLoaded&&silent){const state=document.querySelector('#refresh-state');if(state){state.className='bad';state.textContent='更新できません・前回の数字を表示中'}return}
+  document.querySelector('#app').innerHTML=`<div class="error"><b>画面を表示できません</b><br>${esc(error.message)}<br><small>間違った数字を出さないため、表示を止めました。</small></div>`;
+ }
+}
+loadDashboard();
+setInterval(()=>loadDashboard(true),60000);
 </script>
 </body>
 </html>
