@@ -76,6 +76,7 @@
 
   table.mini{border-collapse:collapse; width:100%; font-size:12.5px; margin-top:4px;}
   table.mini th{color:var(--ink3); font-size:11px; text-align:left; font-weight:600; padding:5px 8px 5px 0; border-bottom:1px solid var(--line);}
+  table.mini th.r{text-align:right;}
   table.mini td{padding:7px 8px 7px 0; border-bottom:1px solid var(--line); color:var(--ink2); vertical-align:top;}
   table.mini tr:last-child td{border-bottom:none;}
   td.r{text-align:right; font-variant-numeric:tabular-nums; color:var(--ink);}
@@ -124,6 +125,15 @@
   .alerts li{counter-increment:a; padding:8px 0 8px 28px; border-bottom:1px solid var(--line); position:relative; font-size:12.5px; color:var(--ink2);}
   .alerts li:last-child{border-bottom:none;}
   .alerts li::before{content:counter(a); position:absolute; left:0; top:10px; width:18px; height:18px; border:1px solid var(--bad); color:var(--bad); border-radius:50%; font-size:10.5px; font-weight:700; display:flex; align-items:center; justify-content:center;}
+
+  /* タップで日別明細が開くカード */
+  details.exp{margin-top:0;}
+  details.exp summary{cursor:pointer; list-style:none;}
+  details.exp summary::-webkit-details-marker{display:none;}
+  details.exp summary:focus-visible{outline:2px solid var(--accent); outline-offset:4px; border-radius:8px;}
+  .opener{font-size:10.5px; color:var(--accent2); font-weight:700; margin-left:10px; white-space:nowrap;}
+  details.exp[open] .opener{opacity:.55;}
+  details.exp > table.mini, details.exp > p.hint{margin-top:12px; border-top:1px solid var(--line); padding-top:8px;}
 
   details{margin-top:12px;}
   details summary{cursor:pointer; font-size:12px; font-weight:600; color:var(--ink3);}
