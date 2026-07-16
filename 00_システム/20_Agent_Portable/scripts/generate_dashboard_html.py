@@ -94,9 +94,9 @@ def parse_deadlines(deadline_path: Path, today: datetime.date, limit: int = 8):
         d = datetime.date(int(m.group(1)), int(m.group(2)), int(m.group(3)))
         body = strip_md(re.sub(r"[（(].{40,}[)）]", "", m.group(4)))  # 長い括弧注は省く
         if d < today:
-            mark = "🔴 期限切れ"
+            mark = "overdue"
         elif (d - today).days <= 7:
-            mark = "🟡 今週"
+            mark = "soon"
         else:
             mark = ""
         items.append((d, body[:80], mark))
@@ -146,35 +146,36 @@ def parse_job_counts(ledger_path: Path):
 
 
 def build_tasks_html(thisweek, deadlines, deadline_rest, daily, today):
+    badge = {"overdue": ' <span class="due">期限切れ</span>', "soon": ' <span class="due soon">今週</span>', "": ""}
     li_week = "".join(f"<li>{esc(t)}</li>" for t in (thisweek or [])) or "<li>（読み取れなかった）</li>"
     li_dead = "".join(
-        f'<li><b>{d.strftime("%m/%d")}</b> {esc(t)}'
-        + (f' <span class="due">{m}</span>' if m else "")
-        + "</li>"
+        f'<li><b>{d.strftime("%m/%d")}</b>　{esc(t)}{badge.get(m, "")}</li>'
         for d, t, m in (deadlines or [])
     ) or "<li>期日つきタスクはゼロ！</li>"
-    rest = f'<li>…ほか{deadline_rest}件（期日タスク.md）</li>' if deadline_rest else ""
+    rest = f'<li class="dim">…ほか{deadline_rest}件（期日タスク.md）</li>' if deadline_rest else ""
     if daily is None:
-        daily_html = "今日はまだ作られていない（Obsidianで開くと自動作成／Discordで「メモ: ◯◯」でも入る）"
+        daily_html = "今日はまだ作られていない。Obsidianで開くと自動作成、Discordで「メモ: ◯◯」でも入る。"
     elif not daily:
-        daily_html = "作成済み。メモはまだなし（Discordで「メモ: ◯◯」）"
+        daily_html = "作成済み。メモはまだなし（Discordで「メモ: ◯◯」）。"
     else:
         daily_html = "<ul>" + "".join(f"<li>{esc(b)}</li>" for b in daily) + "</ul>"
-    return f"""  <h2>📋 今日のタスク<span class="sub">完了操作はDiscordで「済: ◯◯」（期日タスクはObsidianでチェックも可）</span></h2>
-  <div class="cats">
-    <div class="cat">
-      <h3>📌 今週やる（タスクボードより）</h3>
-      <ul>{li_week}</ul>
+    return f"""  <section class="sec">
+    <p class="seclabel">Tasks</p>
+    <h2>今日のタスク</h2>
+    <p class="hint">完了はDiscordで「済: ◯◯」。期日タスクはObsidianのチェックでもOK。</p>
+    <div class="cols2">
+      <div>
+        <h3>今週やる</h3>
+        <ul class="list">{li_week}</ul>
+      </div>
+      <div>
+        <h3>期日つき</h3>
+        <ul class="list">{li_dead}{rest}</ul>
+      </div>
     </div>
-    <div class="cat">
-      <h3>⏰ 期日つき（期日順）</h3>
-      <ul>{li_dead}{rest}</ul>
-    </div>
-  </div>
-  <div class="cat" style="margin-top:12px;">
-    <h3>📓 今日のデイリーノート（{today.strftime("%m/%d")}）</h3>
-    <div style="font-size:13px; color:var(--ink2);">{daily_html}</div>
-  </div>
+    <h3 class="mt24">今日のデイリーノート <span class="dim">{today.month}/{today.day}</span></h3>
+    <div class="notebody">{daily_html}</div>
+  </section>
 """
 
 
