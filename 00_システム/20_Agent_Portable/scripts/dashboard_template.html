@@ -3,264 +3,255 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AIシステムダッシュボード</title>
+<title>AI Company OS — 祐馬さんの経営ダッシュボード</title>
 <style>
+  /* このページは意図的にダーク固定（AI Company OS スタイル） */
   :root{
-    --ground:#FFFFFF; --ink:#1A242E; --ink2:#66737D; --ink3:#98A3AC;
-    --line:#E9EDF0; --accent:#33708F; --accent-soft:#EEF4F7;
-    --good:#3E8E63; --watch:#B08A2E; --stop:#C4574E;
-  }
-  @media (prefers-color-scheme: dark){
-    :root{
-      --ground:#10161B; --ink:#E8EDF0; --ink2:#93A0AA; --ink3:#68757F;
-      --line:#242E36; --accent:#7FB4CF; --accent-soft:#1A2830;
-      --good:#6CC393; --watch:#D9B36A; --stop:#E08A82;
-    }
-  }
-  :root[data-theme="dark"]{
-    --ground:#10161B; --ink:#E8EDF0; --ink2:#93A0AA; --ink3:#68757F;
-    --line:#242E36; --accent:#7FB4CF; --accent-soft:#1A2830;
-    --good:#6CC393; --watch:#D9B36A; --stop:#E08A82;
-  }
-  :root[data-theme="light"]{
-    --ground:#FFFFFF; --ink:#1A242E; --ink2:#66737D; --ink3:#98A3AC;
-    --line:#E9EDF0; --accent:#33708F; --accent-soft:#EEF4F7;
-    --good:#3E8E63; --watch:#B08A2E; --stop:#C4574E;
+    --bg:#0B111C; --panel:#121B2A; --panel2:#0E1622; --line:#1D2A3D;
+    --ink:#E7EDF5; --ink2:#93A3B8; --ink3:#5D6E84;
+    --accent:#4C9BE8; --accent2:#39C5CF;
+    --good:#3DBE7B; --watch:#E0A93E; --bad:#E06C5F; --purple:#9B7BE8;
   }
   *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
   body{
-    background:var(--ground); color:var(--ink); margin:0;
+    background:var(--bg); color:var(--ink); margin:0;
     font-family:"Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic UI","Yu Gothic","Noto Sans JP",sans-serif;
-    font-size:14.5px; line-height:1.95;
+    font-size:14px; line-height:1.85;
     -webkit-font-smoothing:antialiased;
   }
-  .wrap{max-width:680px; margin:0 auto; padding:56px 24px 96px;}
+  a{color:var(--accent); text-decoration:none;}
+  a:focus-visible{outline:2px solid var(--accent); outline-offset:2px; border-radius:4px;}
 
-  .seclabel{font-size:10.5px; letter-spacing:.2em; text-transform:uppercase; color:var(--accent); font-weight:700; margin:0;}
-  h1{font-size:21px; font-weight:600; letter-spacing:.02em; margin:4px 0 6px; text-wrap:balance;}
-  .meta{font-size:12px; color:var(--ink3); margin:0;}
-  h2{font-size:17px; font-weight:600; letter-spacing:.02em; margin:2px 0 10px;}
-  h3{font-size:13.5px; font-weight:700; margin:18px 0 0;}
-  .sec{margin-top:56px; padding-top:22px; border-top:1px solid var(--line);}
-  .hint{font-size:12px; color:var(--ink3); margin:0;}
-  .dim{color:var(--ink3); font-weight:400; font-size:12px;}
-  .mt24{margin-top:24px;}
-
-  .lead{font-size:16.5px; font-weight:300; line-height:2.1; margin:40px 0 0; text-wrap:balance;}
-  .lead strong{font-weight:600; color:var(--accent);}
-
-  .stats{display:grid; grid-template-columns:repeat(4,1fr); margin-top:12px;}
-  .stats>div{padding:10px 18px 6px; border-left:1px solid var(--line);}
-  .stats>div:first-child{border-left:none; padding-left:0;}
-  .stats em{display:block; font-style:normal; font-size:44px; font-weight:200; line-height:1.15; letter-spacing:-.01em; font-variant-numeric:tabular-nums;}
-  .stats span{font-size:11.5px; color:var(--ink2); display:inline-flex; align-items:center; gap:6px;}
-  .dot{width:7px; height:7px; border-radius:50%; display:inline-block; flex:none;}
-  .dot.good{background:var(--good);} .dot.watch{background:var(--watch);} .dot.stop{background:var(--stop);}
-  @media (max-width:540px){
-    .stats{grid-template-columns:1fr 1fr; row-gap:18px;}
-    .stats>div:nth-child(3){border-left:none; padding-left:0;}
+  .layout{display:grid; grid-template-columns:196px 1fr; min-height:100vh;}
+  .side{
+    background:var(--panel2); border-right:1px solid var(--line);
+    padding:22px 14px; position:sticky; top:0; height:100vh; overflow-y:auto;
   }
+  .brand{font-size:15px; font-weight:700; letter-spacing:.02em; padding:0 8px;}
+  .brand small{display:block; font-size:10.5px; font-weight:400; color:var(--ink3); letter-spacing:.05em;}
+  .nav{list-style:none; margin:20px 0 0; padding:0;}
+  .nav a{
+    display:block; padding:8px 10px; border-radius:9px; color:var(--ink2);
+    font-size:13px; font-weight:600;
+  }
+  .nav a:hover{background:var(--panel); color:var(--ink);}
+  .factory{
+    margin-top:26px; background:var(--panel); border:1px solid var(--line);
+    border-radius:12px; padding:12px; font-size:11.5px; color:var(--ink2); line-height:1.7;
+  }
+  .factory b{color:var(--ink); font-size:12px;}
+  .online{display:inline-block; width:7px; height:7px; border-radius:50%; background:var(--good); margin-right:5px;}
 
-  .flow{list-style:none; margin:20px 0 0; padding:0;}
-  .flow li{position:relative; padding:0 0 20px 28px;}
-  .flow li::before{content:""; position:absolute; left:4px; top:9px; width:8px; height:8px; border-radius:50%; background:var(--accent);}
-  .flow li::after{content:""; position:absolute; left:7.5px; top:23px; bottom:0; width:1px; background:var(--line);}
-  .flow li:last-child{padding-bottom:0;}
-  .flow li:last-child::after{display:none;}
-  .flow li.loop::before{background:var(--ground); border:1.5px solid var(--accent); width:7px; height:7px; left:3.5px; top:8px;}
-  .flow b{display:block; font-size:14px; font-weight:600;}
-  .flow span{display:block; font-size:12.5px; color:var(--ink2); line-height:1.8;}
-  .aside{font-size:12px; color:var(--ink3); margin:16px 0 0; padding-left:28px;}
+  .main{padding:26px 30px 90px; max-width:1100px;}
+  .topbar{display:flex; flex-wrap:wrap; align-items:baseline; gap:8px 16px; margin-bottom:20px;}
+  h1{font-size:19px; font-weight:700; margin:0;}
+  .meta{font-size:11.5px; color:var(--ink3);}
 
-  .list{list-style:none; margin:6px 0 0; padding:0;}
-  .list li{padding:9px 0; border-bottom:1px solid var(--line); font-size:13px; color:var(--ink2); line-height:1.8;}
-  .list li:last-child{border-bottom:none;}
-  .list li b{color:var(--ink); font-weight:600; font-variant-numeric:tabular-nums;}
-  .due{color:var(--stop); font-size:11px; font-weight:700; margin-left:6px; white-space:nowrap;}
+  .sec{margin-top:40px;}
+  .seclabel{font-size:10px; letter-spacing:.22em; text-transform:uppercase; color:var(--accent2); font-weight:700; margin:0 0 2px;}
+  h2{font-size:16px; font-weight:700; margin:0 0 12px;}
+  h3{font-size:13px; font-weight:700; margin:0;}
+  .dim{color:var(--ink3); font-weight:400; font-size:11.5px;}
+  .dim2{color:var(--ink3);}
+  .hint{font-size:11.5px; color:var(--ink3); margin:6px 0 0;}
+  .warn{font-size:12px; color:var(--watch); margin:8px 0 0;}
+
+  .grid2{display:grid; grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr)); gap:12px;}
+  .grid3{display:grid; grid-template-columns:repeat(auto-fit,minmax(min(230px,100%),1fr)); gap:12px;}
+  .grid2>*, .grid3>*, .stats>*{min-width:0;}
+  svg{max-width:100%; height:auto;}
+  .card{
+    background:var(--panel); border:1px solid var(--line); border-radius:14px;
+    padding:16px 18px;
+  }
+  .cardhead{display:flex; justify-content:space-between; align-items:baseline; gap:8px; margin-bottom:6px;}
+  .big{font-size:28px; font-weight:700; letter-spacing:.01em; font-variant-numeric:tabular-nums; line-height:1.3;}
+  .sub{font-size:12px; color:var(--ink2);}
+  .sub b{color:var(--ink);}
+  .bar{height:5px; background:var(--line); border-radius:3px; margin-top:10px; overflow:hidden;}
+  .bar i{display:block; height:100%; background:linear-gradient(90deg,var(--accent),var(--accent2)); border-radius:3px;}
+  .pace{font-size:11px; font-weight:700; white-space:nowrap;}
+  .pace.up{color:var(--good);} .pace.down{color:var(--bad);}
+
+  table.mini{border-collapse:collapse; width:100%; font-size:12.5px; margin-top:4px;}
+  table.mini th{color:var(--ink3); font-size:11px; text-align:left; font-weight:600; padding:5px 8px 5px 0; border-bottom:1px solid var(--line);}
+  table.mini td{padding:7px 8px 7px 0; border-bottom:1px solid var(--line); color:var(--ink2); vertical-align:top;}
+  table.mini tr:last-child td{border-bottom:none;}
+  td.r{text-align:right; font-variant-numeric:tabular-nums; color:var(--ink);}
+  .strongc{color:var(--ink); font-weight:600;}
+
+  ul.list{list-style:none; margin:4px 0 0; padding:0;}
+  ul.list li{padding:7px 0; border-bottom:1px solid var(--line); font-size:12.5px; color:var(--ink2); line-height:1.75;}
+  ul.list li:last-child{border-bottom:none;}
+  ul.list li b{color:var(--ink); font-variant-numeric:tabular-nums;}
+  .due{color:var(--bad); font-size:10.5px; font-weight:700; margin-left:6px; white-space:nowrap;}
   .due.soon{color:var(--watch);}
-  .ch{color:var(--accent); font-weight:600; white-space:nowrap;}
-  .notebody{font-size:13px; color:var(--ink2); margin-top:4px;}
-  .notebody ul{list-style:none; margin:0; padding:0;}
-  .notebody li{padding:7px 0; border-bottom:1px solid var(--line);}
-  .notebody li:last-child{border-bottom:none;}
+  .tag{font-size:10.5px; color:var(--ink3); border:1px solid var(--line); border-radius:99px; padding:1px 8px; margin-left:6px; white-space:nowrap;}
+  .tag.ok{color:var(--good); border-color:var(--good);}
 
-  .cols2{display:grid; grid-template-columns:1fr 1fr; gap:0 44px; margin-top:2px;}
-  @media (max-width:600px){ .cols2{grid-template-columns:1fr;} }
+  .svgt{fill:var(--ink3); font-size:10px; font-family:inherit;}
+  .svgt.strong{fill:var(--ink); font-weight:700; font-size:11px;}
 
-  .person{display:grid; grid-template-columns:118px 1fr; gap:14px; padding:13px 0; border-bottom:1px solid var(--line);}
+  .stats{display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:12px;}
+  .stats .card em{display:block; font-style:normal; font-size:34px; font-weight:700; line-height:1.2; font-variant-numeric:tabular-nums;}
+  .stats .card span{font-size:11.5px; color:var(--ink2); display:inline-flex; align-items:center; gap:6px;}
+  .dot{width:7px; height:7px; border-radius:50%; display:inline-block; flex:none;}
+  .dot.good{background:var(--good);} .dot.watch{background:var(--watch);} .dot.stop{background:var(--bad);}
+
+  .person{display:flex; gap:12px; align-items:flex-start; padding:11px 0; border-bottom:1px solid var(--line);}
   .person:last-child{border-bottom:none;}
-  .person .who b{display:block; font-size:14px; font-weight:600;}
-  .person .who i{font-style:normal; font-size:11px; color:var(--accent); font-weight:600; letter-spacing:.04em;}
-  .person p{margin:0; font-size:12.5px; color:var(--ink2); line-height:1.8;}
-  @media (max-width:480px){ .person{grid-template-columns:1fr; gap:2px; } }
+  .avatar{width:34px; height:34px; border-radius:50%; flex:none; display:flex; align-items:center; justify-content:center; font-size:13px; font-weight:700; color:#fff;}
+  .av1{background:linear-gradient(135deg,#2E7FB8,#39C5CF);} .av2{background:linear-gradient(135deg,#5E8F52,#8BBB55);}
+  .av3{background:linear-gradient(135deg,#7B5FD0,#A47BE8);} .av4{background:linear-gradient(135deg,#8A6B3A,#C09A4E);}
+  .person b{display:block; font-size:13px;}
+  .person i{font-style:normal; font-size:10.5px; color:var(--accent2); font-weight:700;}
+  .person p{margin:1px 0 0; font-size:11.5px; color:var(--ink2); line-height:1.7;}
 
-  .alerts{list-style:none; margin:12px 0 0; padding:0; counter-reset:a;}
-  .alerts li{counter-increment:a; padding:10px 0 10px 30px; border-bottom:1px solid var(--line); position:relative; font-size:13.5px;}
+  .flow{list-style:none; margin:8px 0 0; padding:0;}
+  .flow li{position:relative; padding:0 0 14px 24px; font-size:12.5px; color:var(--ink2);}
+  .flow li b{color:var(--ink); font-size:13px;}
+  .flow li::before{content:""; position:absolute; left:3px; top:8px; width:7px; height:7px; border-radius:50%; background:var(--accent);}
+  .flow li::after{content:""; position:absolute; left:6px; top:19px; bottom:-2px; width:1px; background:var(--line);}
+  .flow li:last-child::after{display:none;}
+  .flow li:last-child{padding-bottom:0;}
+
+  .cmd{display:flex; flex-wrap:wrap; gap:8px; margin-top:8px;}
+  .cmd span{background:var(--panel2); border:1px solid var(--line); border-radius:99px; padding:5px 14px; font-size:12px; color:var(--ink2);}
+  .cmd span b{color:var(--accent2);}
+
+  .alerts{list-style:none; margin:6px 0 0; padding:0; counter-reset:a;}
+  .alerts li{counter-increment:a; padding:8px 0 8px 28px; border-bottom:1px solid var(--line); position:relative; font-size:12.5px; color:var(--ink2);}
   .alerts li:last-child{border-bottom:none;}
-  .alerts li::before{content:counter(a); position:absolute; left:0; top:12px; width:19px; height:19px; border:1px solid var(--stop); color:var(--stop); border-radius:50%; font-size:11px; font-weight:700; display:flex; align-items:center; justify-content:center;}
+  .alerts li::before{content:counter(a); position:absolute; left:0; top:10px; width:18px; height:18px; border:1px solid var(--bad); color:var(--bad); border-radius:50%; font-size:10.5px; font-weight:700; display:flex; align-items:center; justify-content:center;}
 
-  details{margin-top:14px;}
-  details summary{cursor:pointer; font-size:12.5px; font-weight:600; color:var(--ink2); list-style-position:outside;}
-  details summary:focus-visible{outline:2px solid var(--accent); outline-offset:2px;}
-  details .inner{font-size:12.5px; color:var(--ink2); margin-top:10px; line-height:1.9;}
-  details .inner h3{font-size:12px; color:var(--ink); margin:14px 0 2px;}
+  details{margin-top:12px;}
+  details summary{cursor:pointer; font-size:12px; font-weight:600; color:var(--ink3);}
+  details .inner{font-size:12px; color:var(--ink2); margin-top:8px; line-height:1.85;}
+  details .inner h3{font-size:11.5px; color:var(--ink); margin:12px 0 2px;}
   details .inner ul{margin:2px 0; padding-left:1.2em;}
-  code{font-family:ui-monospace,"SF Mono",Menlo,monospace; font-size:11.5px; background:var(--accent-soft); border-radius:4px; padding:1px 5px;}
+  code{font-family:ui-monospace,"SF Mono",Menlo,monospace; font-size:11px; background:var(--panel2); border:1px solid var(--line); border-radius:4px; padding:1px 5px;}
 
-  .footer{margin-top:72px; padding-top:16px; border-top:1px solid var(--line); font-size:11.5px; color:var(--ink3); line-height:1.9;}
-  a{color:var(--accent);}
+  .footer{margin-top:56px; padding-top:14px; border-top:1px solid var(--line); font-size:11px; color:var(--ink3); line-height:1.9;}
+
+  @media (max-width:900px){
+    .layout{grid-template-columns:1fr;}
+    .side{position:static; height:auto; border-right:none; border-bottom:1px solid var(--line); padding:14px 18px;}
+    .nav{display:flex; flex-wrap:wrap; gap:2px; margin-top:10px;}
+    .nav a{padding:5px 10px; font-size:12px;}
+    .factory{display:none;}
+    .main{padding:20px 18px 70px;}
+  }
 </style>
 </head>
 <body>
-<div class="wrap">
+<div class="layout">
 
-  <header>
-    <p class="seclabel">00_司令塔</p>
-    <h1>AIシステムダッシュボード</h1>
-    <p class="meta">自動生成 {{GENERATED_AT}} ・ 正本は同フォルダのmd版（食い違いはmdが正しい）</p>
-  </header>
+  <aside class="side">
+    <div class="brand">🏛 AI Company OS<small>祐馬さんの経営システム</small></div>
+    <ul class="nav">
+      <li><a href="#money">💰 今月のお金</a></li>
+      <li><a href="#youtube">📺 YouTube運営</a></li>
+      <li><a href="#tasks">✅ 今日のタスク</a></li>
+      <li><a href="#status">⚙️ 自動化の状態</a></li>
+      <li><a href="#team">🤖 AI社員</a></li>
+      <li><a href="#flow">🗺 仕組み</a></li>
+      <li><a href="#help">🚨 困った時</a></li>
+    </ul>
+    <div class="factory"><b><span class="online"></span>Mac mini 工場</b>24時間稼働・自動化33ジョブ<br>見張り: Watchtower 毎朝8:30</div>
+  </aside>
 
-  <p class="lead">話しかける → <strong>Second Brain</strong>に記録される → <strong>Mac mini</strong>が24時間・33個の仕事を自動で回す → 結果は<strong>Discord</strong>に届く。見張りと4重のバックアップ付き。</p>
+  <main class="main">
+    <div class="topbar">
+      <h1>おはようございます、祐馬さん 👋</h1>
+      <span class="meta">自動生成 {{GENERATED_AT}} ・ 正本は同フォルダのmd版とリンク先の台帳</span>
+    </div>
 
+{{MONEY_HTML}}
+{{YOUTUBE_HTML}}
 {{TASKS_HTML}}
 
-  <section class="sec">
-    <p class="seclabel">Status</p>
-    <h2>自動の仕事、いまの状態</h2>
+  <section class="sec" id="status">
+    <p class="seclabel">Automation</p>
+    <h2>自動化の状態 <span class="dim">詳細と止め方は「AI自動化/導入済み.md」</span></h2>
     <div class="stats">
-      <div><em>{{N_GOOD}}</em><span><i class="dot good"></i>稼働中</span></div>
-      <div><em>{{N_WATCH}}</em><span><i class="dot watch"></i>様子見</span></div>
-      <div><em>{{N_STOP}}</em><span><i class="dot stop"></i>停止中</span></div>
-      <div><em>{{N_TOTAL}}</em><span>合計</span></div>
+      <div class="card"><em>{{N_GOOD}}</em><span><i class="dot good"></i>稼働中</span></div>
+      <div class="card"><em>{{N_WATCH}}</em><span><i class="dot watch"></i>様子見</span></div>
+      <div class="card"><em>{{N_STOP}}</em><span><i class="dot stop"></i>停止中</span></div>
+      <div class="card"><em>{{N_TOTAL}}</em><span>合計</span></div>
     </div>
-    <p class="hint" style="margin-top:14px;">数字は台帳から自動集計。内訳や止め方は「01_プロジェクト/AI自動化/導入済み.md」。</p>
   </section>
 
-  <section class="sec">
-    <p class="seclabel">Flow</p>
-    <h2>全体の流れ</h2>
-    <ol class="flow">
-      <li><b>祐馬さん</b><span>指示や相談をする。窓口はCodex（いまのメイン）・あおい🌊・Discordのどれでも</span></li>
-      <li><b>Second Brain（Obsidian）</b><span>会話も決定もお金もネタも、ぜんぶの正本がここに記録される</span></li>
-      <li><b>Mac mini</b><span>記録とルールに従って、33個の仕事を24時間自動で回す</span></li>
-      <li><b>Discord</b><span>結果が #一般・#お金・#youtube・#メモ・#レポート に届く</span></li>
-      <li class="loop"><b>スマホで確認</b><span>気になったらまた話しかける。この循環で会社が回る</span></li>
-    </ol>
-    <p class="aside">見張り: Watchtowerが毎朝8:30に全設備を点検。バックアップは4重で、どれかが壊れても戻せる。</p>
-  </section>
-
-  <section class="sec">
+  <section class="sec" id="team">
     <p class="seclabel">Team</p>
     <h2>AI社員</h2>
-    <div class="person"><div class="who"><b>あおい🌊</b><i>秘書 兼 マネージャー</i></div><p>Discordで話しかければいつでも返事。Mac miniに住んでいて、自動化の実行役も担当。</p></div>
-    <div class="person"><div class="who"><b>Codex</b><i>メインの作業員</i></div><p>調べ物・ファイル編集・計画づくり。日常の入口をあおいから引き継ぎ中。</p></div>
-    <div class="person"><div class="who"><b>Fable 5</b><i>社外の軍師</i></div><p>作戦会議・整理・図解の担当。自分では手を動かさない、考える専門。</p></div>
-    <div class="person"><div class="who"><b>Watchtower</b><i>警備員（非AI）</i></div><p>毎朝8:30に全設備を点検するプログラム。異常があった時だけ知らせてくる。</p></div>
+    <div class="card">
+      <div class="person"><span class="avatar av1">あ</span><div><b>あおい🌊 <i>秘書 兼 マネージャー</i></b><p>Discordで話しかければいつでも返事。Mac miniに住んでいて、自動化の実行役も担当。</p></div></div>
+      <div class="person"><span class="avatar av2">Cx</span><div><b>Codex <i>メインの作業員</i></b><p>調べ物・ファイル編集・計画づくり。日常の入口をあおいから引き継ぎ中。</p></div></div>
+      <div class="person"><span class="avatar av3">F5</span><div><b>Fable 5 <i>社外の軍師</i></b><p>作戦会議・整理・図解の担当。自分では手を動かさない、考える専門。</p></div></div>
+      <div class="person"><span class="avatar av4">W</span><div><b>Watchtower <i>警備員（非AI）</i></b><p>毎朝8:30に全設備を点検するプログラム。異常があった時だけ知らせてくる。</p></div></div>
+    </div>
   </section>
 
-  <section class="sec">
-    <p class="seclabel">Work</p>
-    <h2>係ごとの仕事</h2>
-    <div class="cols2">
-      <div>
-        <h3>お金係</h3>
-        <ul class="list">
-          <li>Uber売上を毎晩集計 → <span class="ch">#お金</span></li>
-          <li>freeeに週次で記帳（月曜朝）→ <span class="ch">#お金</span></li>
-          <li>消込待ちのお金をチェック（毎月1日）</li>
-          <li>出前館PDFのリマインド（月2回）</li>
-          <li>月次の数字を別ルートで検算（静か）</li>
-        </ul>
+  <section class="sec" id="flow">
+    <p class="seclabel">Flow</p>
+    <h2>仕組み（1周の流れ）</h2>
+    <div class="card">
+      <ol class="flow">
+        <li><b>祐馬さん</b> — 指示や相談。窓口はCodex・あおい🌊・Discordのどれでも</li>
+        <li><b>Second Brain（Obsidian）</b> — 会話も決定もお金もネタも、正本はぜんぶここ</li>
+        <li><b>Mac mini</b> — 記録とルールに従って33個の仕事を24時間自動で回す</li>
+        <li><b>Discord</b> — 結果が #一般・#お金・#youtube・#メモ・#レポート に届く</li>
+        <li><b>スマホで確認</b> — 気になったらまた話しかける。この循環で会社が回る</li>
+      </ol>
+      <p class="hint">守り: 10分ごと自動保存 → GitHub日次 → 週次/月次バックアップ＋復元練習 → SSD最終保険</p>
+    </div>
+  </section>
+
+  <section class="sec" id="help">
+    <p class="seclabel">Signal</p>
+    <h2>困った時・故障のサイン</h2>
+    <div class="grid2">
+      <div class="card">
+        <div class="cardhead"><h3>この報告が来なかったら故障</h3></div>
+        <ol class="alerts">
+          <li>毎朝4時の朝ダイジェスト（#一般）</li>
+          <li>毎晩23時のUber売上（#お金）</li>
+          <li>月曜朝の週次経理（#お金）</li>
+        </ol>
+        <p class="hint">おかしいと思ったら、あおいに「◯◯の報告来てないよ」でOK。調べて直すのはAIの仕事。</p>
       </div>
-      <div>
-        <h3>YouTube係</h3>
-        <ul class="list">
-          <li>収益を毎日ノートに記録（静か）</li>
-          <li>チャンネル統計を毎週更新</li>
-          <li>創作スレの学習（週末・月次）</li>
-          <li>来月ネタ草案のリマインド（25日）→ <span class="ch">#youtube</span></li>
-        </ul>
-      </div>
-      <div>
-        <h3>記憶・メモ係</h3>
-        <ul class="list">
-          <li>朝ダイジェスト（毎朝4:00）→ <span class="ch">#一般</span></li>
-          <li>日誌から知識を抽出（毎晩23:30）→ <span class="ch">#メモ</span></li>
-          <li>ノート手入れと週次棚卸し（日曜）</li>
-          <li>不要メールの掃除（月曜）</li>
-        </ul>
-      </div>
-      <div>
-        <h3>守り係</h3>
-        <ul class="list">
-          <li>10分ごとに全記録を自動保存＋GitHubへ控え</li>
-          <li>週次・月次バックアップと復元の練習</li>
-          <li>外付けSSDに最終保険</li>
-          <li>夜間にあおいの頭をリフレッシュ</li>
-        </ul>
+      <div class="card">
+        <div class="cardhead"><h3>クイックコマンド（Discordで言うだけ）</h3></div>
+        <div class="cmd">
+          <span><b>済:</b> ◯◯（タスク完了）</span>
+          <span><b>メモ:</b> ◯◯（今日のノートへ）</span>
+          <span><b>タスク:</b> 7/20 車検（期日登録）</span>
+          <span><b>投稿予定:</b> 7/20 ◯◯（YouTube週間ボードへ）</span>
+          <span><b>ナレッジ:</b> ◯◯（知識ベースへ）</span>
+        </div>
+        <p class="hint">AIが確認なしにやらないこと: 削除・外部投稿・お金の確定・アカウント設定変更・自動化の停止/追加</p>
+        <details>
+          <summary>技術メモ（エージェント向け）</summary>
+          <div class="inner">
+            <h3>構成の実体</h3>
+            <ul>
+              <li>入口: Codexメイン移行フェーズ1／Claude Code（あおい）は補助・退避先／Discordはスマホ受付・通知（正本ではない）</li>
+              <li>4正本（各git管理）: <code>~/2nd-Brain</code>／<code>~/Projects/youtube</code>／<code>~/agent-skills</code>／<code>~/agent-adapters</code>（agent-run＝AIベンダー差し替え口）</li>
+              <li>実行: Mac mini launchd（Claude / Codex / Python混在）。停止の作法: plist退避＋Watchtower EXPECTED_JOBS整合</li>
+              <li>移行中: script-learning＝Codex shadow（判定 2026-08-02）／corpus-collect＝agent-run配線済み観察中</li>
+              <li>誤解しないこと: Codexメイン入口＝全自動化Codex化完了ではない／<code>com.claude.*</code>＝今もClaude実行とは限らない／Drive 2nd-Brain・Discordは正本ではない</li>
+              <li>一次面: <code>NOW.md</code>／<code>タスクボード.md</code>＋<code>期日タスク.md</code>／<code>作業ログ</code>／<code>ヘルスチェックログ.md</code>／<code>導入済み.md</code>／<code>決定事項.md</code>／<code>rules.md</code>＋<code>権限と禁止事項.md</code></li>
+            </ul>
+          </div>
+        </details>
       </div>
     </div>
   </section>
 
-  <section class="sec">
-    <p class="seclabel">Rhythm</p>
-    <h2>1日のリズム</h2>
-    <ul class="list">
-      <li><b>3:10</b>　夜間リフレッシュ <span class="dim">（静か）</span></li>
-      <li><b>4:00</b>　朝ダイジェスト → <span class="ch">#一般</span></li>
-      <li><b>8:30</b>　Watchtowerの点検 <span class="dim">（異常時だけ #レポート）</span></li>
-      <li><b>12:00</b>　YouTube収益を記録 <span class="dim">（静か）</span></li>
-      <li><b>23:00</b>　Uber売上の集計 → <span class="ch">#お金</span></li>
-      <li><b>23:30</b>　今日の学びを保存 → <span class="ch">#メモ</span></li>
-    </ul>
-    <p class="hint" style="margin-top:12px;">月曜朝=メール掃除・週次経理・統計更新 ／ 日曜夜=棚卸し・バックアップ・ネタ収集 ／ 毎月1日=バックアップと経理チェックのまとめDAY</p>
-  </section>
+  <p class="footer">正本はmd版（同フォルダ）と各リンク先。このHTMLはスクリプトが自動生成する — 手で直さない。テンプレ: <code>20_Agent_Portable/scripts/dashboard_template.html</code> ／ 生成: <code>generate_dashboard_html.py</code> ／ お金の確定数字はfreeeが正本。</p>
 
-  <section class="sec">
-    <p class="seclabel">Signal</p>
-    <h2>故障のサイン</h2>
-    <p class="hint">「来るはずの報告が来ない」が合図。特にこの3つ。</p>
-    <ol class="alerts">
-      <li>毎朝4時の朝ダイジェスト（<span class="ch">#一般</span>）</li>
-      <li>毎晩23時のUber売上（<span class="ch">#お金</span>）</li>
-      <li>月曜朝の週次経理（<span class="ch">#お金</span>）</li>
-    </ol>
-    <p style="font-size:13px; margin-top:12px;">おかしいと思ったら、あおいに「<b>◯◯の報告来てないよ</b>」でOK。調べて直すのはAIの仕事。</p>
-  </section>
-
-  <section class="sec">
-    <p class="seclabel">Rules</p>
-    <h2>約束ごと</h2>
-    <p style="font-size:13.5px; margin:6px 0 0;">AIが確認なしにやらないこと — <b>削除・外部への投稿・お金の確定処理・アカウント設定の変更・自動化の停止や追加</b>。</p>
-    <details>
-      <summary>技術メモ（エージェント向け）</summary>
-      <div class="inner">
-        <h3>構成の実体</h3>
-        <ul>
-          <li>入口: Codexメイン移行フェーズ1／Claude Code（あおい）は補助・退避先／Discordはスマホ受付・通知（正本ではない）</li>
-          <li>4正本（各git管理）: <code>~/2nd-Brain</code>／<code>~/Projects/youtube</code>／<code>~/agent-skills</code>／<code>~/agent-adapters</code>（agent-run＝AIベンダー差し替え口）</li>
-          <li>実行: Mac mini launchd（Claude / Codex / Python混在）。バックアップ4層: ローカルgit(10分毎)→GitHub日次→週次snapshot＋月次tar＋restore-drill→SSD(鍵抜き)</li>
-        </ul>
-        <h3>ジョブ状態の注記（正本は台帳）</h3>
-        <ul>
-          <li>様子見: youtube-revenue／vault-snapshot（売上証憑入り確認）。停止: channel-lifecycle／monthly-accounting／kicho-weekly／vault-mirror</li>
-          <li>停止の作法: plist退避（<code>~/.claude/archived-launchagents/</code>）＋Watchtower EXPECTED_JOBS整合</li>
-          <li>移行中: script-learning＝Codex shadow（判定 2026-08-02）／corpus-collect＝agent-run配線済み観察中</li>
-        </ul>
-        <h3>誤解しないこと</h3>
-        <ul>
-          <li>Codexメイン入口＝全自動化のCodex化完了ではない／<code>com.claude.*</code>＝今もClaude実行とは限らない／Driveの2nd-Brain・Discordは正本ではない</li>
-        </ul>
-        <h3>一次面</h3>
-        <ul>
-          <li><code>NOW.md</code>／<code>タスクボード.md</code>＋<code>期日タスク.md</code>／<code>作業ログ_ツバキとあおい.md</code>／<code>ヘルスチェックログ.md</code>／<code>導入済み.md</code>／<code>決定事項.md</code>／<code>rules.md</code>＋<code>権限と禁止事項.md</code></li>
-        </ul>
-      </div>
-    </details>
-  </section>
-
-  <p class="footer">正本はmd版（同フォルダ）。このHTMLはスクリプトが自動生成する — 手で直さない。テンプレ: <code>20_Agent_Portable/scripts/dashboard_template.html</code> ／ 生成: <code>generate_dashboard_html.py</code></p>
-
+  </main>
 </div>
 </body>
 </html>
