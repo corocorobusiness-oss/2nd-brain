@@ -48,6 +48,13 @@ python3 ~/2nd-Brain/00_システム/20_Agent_Portable/scripts/generate_dashboard
 
 止め方: `launchctl bootout gui/503/com.claude.dashboard-html`（plistは `~/.claude/archived-launchagents/` へ退避＋Watchtower期待リストから除外）
 
+## ほぼリアルタイム運用（2026-07-17追記・祐馬さん要件）
+
+- **朝イチで昨日の数字**: 毎朝4:10の定時生成でOK。ただし経費・利益は朝4:00のdaily-dashboardジョブ（freee記入・現在故障中）の修理が前提
+- **今すぐ最新にしたい時**: `python3 ~/2nd-Brain/00_システム/20_Agent_Portable/scripts/generate_dashboard_html.py` を手動実行（あおいに「ダッシュボード更新して」でも可）
+- **見るたび最新（本命）**: Webアプリ版（開発ブリーフG5）で、ページを開いた時に生成してから返す方式にする
+- **（任意・要承認）クラウド側閲覧の鮮度向上**: vault-autocommitのGitHub pushを日次→1〜3時間毎へ変更すると、GitHub経由（Claude Codeリモート等）でも数時間遅れまで縮む。変更時はプッシュ失敗通知の閾値（現在4日連続失敗で通知）も見直すこと
+
 ## 安全性
 
 - 書き込みは出力HTML 1ファイルのみ。タスク・日誌・台帳へは読み取りだけ
