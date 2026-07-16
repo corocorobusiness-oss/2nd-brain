@@ -107,7 +107,7 @@
 <div class="wrap">
   <p class="eyebrow">06_エージェント運用 / 00_司令塔</p>
   <h1>🎛 AIシステムダッシュボード</h1>
-  <p class="meta">自動生成 2026-07-16 06:16 ・ 数字は生成時点のスナップショット（正本: AI自動化ジョブ台帳）</p>
+  <p class="meta">自動生成 {{GENERATED_AT}} ・ 数字は生成時点のスナップショット（正本: AI自動化ジョブ台帳）</p>
   <div class="notice">これはビジュアル版（スクリプトが自動で作り直す）。<strong>正本は同フォルダの <code>AIシステムダッシュボード.md</code></strong>。内容が食い違ったらmd側が正しい。</div>
 
   <h2>この会社、いまこうなってる</h2>
@@ -127,10 +127,10 @@
 
   <h2>🏭 自動でやってくれてる仕事<span class="sub">全33個</span></h2>
   <div class="tiles">
-    <div class="tile"><span class="chip good">元気に稼働中</span><div class="num">27<small>個</small></div></div>
-    <div class="tile"><span class="chip watch">様子見</span><div class="num">2<small>個</small></div></div>
-    <div class="tile"><span class="chip stop">止めてある</span><div class="num">4<small>個</small></div></div>
-    <div class="tile"><span class="chip total">合計</span><div class="num">33<small>個</small></div></div>
+    <div class="tile"><span class="chip good">元気に稼働中</span><div class="num">{{N_GOOD}}<small>個</small></div></div>
+    <div class="tile"><span class="chip watch">様子見</span><div class="num">{{N_WATCH}}<small>個</small></div></div>
+    <div class="tile"><span class="chip stop">止めてある</span><div class="num">{{N_STOP}}<small>個</small></div></div>
+    <div class="tile"><span class="chip total">合計</span><div class="num">{{N_TOTAL}}<small>個</small></div></div>
   </div>
   <div class="cats">
     <div class="cat">
@@ -191,22 +191,7 @@
     <li><b>毎月1日</b>: バックアップと経理チェックのまとめDAY（2日は復元練習、25日はネタ草案リマインド）</li>
   </ul>
 
-  <h2>📋 今日のタスク<span class="sub">完了操作はDiscordで「済: ◯◯」（期日タスクはObsidianでチェックも可）</span></h2>
-  <div class="cats">
-    <div class="cat">
-      <h3>📌 今週やる（タスクボードより）</h3>
-      <ul><li>まだ未選択（候補: 出前館精算書メール検証期日タスク🔴 / Roblox Phase1方針決定 / YouTube次アクション1つ決める）</li></ul>
-    </div>
-    <div class="cat">
-      <h3>⏰ 期日つき（期日順）</h3>
-      <ul><li><b>07/03</b> 出前館の後半配達実績PDF（6/16〜6/30）を再確認して、発行済みならDLして#お金に送る #出前館実績 ※2026-07-02確認時点ではGmail未着・ <span class="due">🔴 期限切れ</span></li><li><b>07/04</b> A1外部レビュー指摘台帳のWARN-1再点検 <span class="due">🔴 期限切れ</span></li><li><b>07/05</b> vault-snapshot-2026-07-05.tar.gzに売上証憑が入っているかCodexへ読み取り確認を依頼（restore-drill件のクローズ判 <span class="due">🔴 期限切れ</span></li><li><b>07/06</b> corpus-collect日曜21:00自然実行の観察結果を確認 <span class="due">🔴 期限切れ</span></li><li><b>07/06</b> freeeトークン再生成（週次経理のため） <span class="due">🔴 期限切れ</span></li><li><b>07/07</b> 正本4ファイルへのfrontmatter付与後のvault検査ジョブ正常性確認（異常ならヘッダ除去してA2A3反映を再点検） <span class="due">🔴 期限切れ</span></li><li><b>07/13</b> 柱① 提案テンプレの儀式化チェック（実サンプル5件を見て定型文化していたら自動廃止）＋v2.2実装後30日レビュー <span class="due">🔴 期限切れ</span></li><li><b>08/02</b> script-learning Codex dry-run shadow判定。2026-08-01 11:00の既定Claude月次実行結果と、通常Termin</li><li>…ほか7件（期日タスク.md）</li></ul>
-    </div>
-  </div>
-  <div class="cat" style="margin-top:12px;">
-    <h3>📓 今日のデイリーノート（07/16）</h3>
-    <div style="font-size:13px; color:var(--ink2);">今日はまだ作られていない（Obsidianで開くと自動作成／Discordで「メモ: ◯◯」でも入る）</div>
-  </div>
-
+{{TASKS_HTML}}
   <h2>🚨 調子が悪いときの見分け方</h2>
   <p class="oneliner" style="font-size:14px;"><strong>「来るはずの報告が来ない」= 故障のサイン。</strong>特にこの3つが目印：</p>
   <div class="card">
