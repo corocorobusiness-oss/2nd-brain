@@ -96,6 +96,11 @@ def normalize_character(
             .resize((target_width, TARGET_BODY_HEIGHT), Image.Resampling.LANCZOS)
             .convert("RGBA")
         )
+        # Remove sub-visible resampling specks while retaining the visible edge matte.
+        clean_alpha = subject.getchannel("A").point(
+            lambda value: 0 if value <= 4 else value
+        )
+        subject.putalpha(clean_alpha)
         output = Image.new("RGBA", CANVAS_SIZE, (0, 0, 0, 0))
         output.alpha_composite(subject, (paste_x, paste_y))
         output.save(target_folder / filename, format="PNG", optimize=True)
