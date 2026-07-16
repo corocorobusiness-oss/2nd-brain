@@ -66,6 +66,7 @@ function pageButton(id,label){return `<button data-go="${id}">${label}</button>`
 
 function render(data){
  const activePage=['overview','youtube','delivery','tasks','ai'].includes(location.hash.slice(1))?location.hash.slice(1):'overview';
+ const activeJobs=document.querySelector('.job-tab.active')?.dataset.jobs||'running';
  const videos=data.youtube.schedule.map(v=>`<article class="video"><div class="video-top"><div><h4>${esc(v.title)}</h4><div class="fine">${v.folder?'動画づくりを開始しています':'制作フォルダを確認中です'}</div></div><div class="video-date">${v.date.slice(5).replace('-','/')} 公開予定<br>予想 ${Number(v.predicted_views).toLocaleString()}回</div></div><div class="checks">${v.stages.map(s=>`<label class="check ${s.next?'next':''}"><input type="checkbox" ${s.done?'checked':''} disabled><span>${esc(s.name)}${s.next?'　次にやる':''}</span></label>`).join('')}</div><div class="checkline">${v.completed}/${v.total_stages} 完了　※今は見るだけです</div></article>`).join('')||'<div class="empty">今週の公開予定はありません</div>';
  const dailyRows=data.daily.slice().reverse().map(x=>`<tr><td>${x.date.slice(5).replace('-','/')}</td><td class="money">${yen(x.budget)}</td><td class="money">${yen(x.delivery)}</td><td class="money ${tone(x.difference)}">${signed(x.difference)}</td><td><span class="tag ${x.status==='確定'?'ok':'wait'}">${x.status==='確定'?'入力済み':'途中'}</span></td></tr>`).join('');
  const youtubeRows=data.daily.slice().reverse().map(x=>`<tr><td>${x.date.slice(5).replace('-','/')}</td><td class="money">${yen(x.youtube_target)}</td><td class="money">${x.youtube_actual==null?'<span class="tag wait">未反映</span>':yen(x.youtube_actual)}</td><td class="money ${x.youtube_difference==null?'':tone(x.youtube_difference)}">${x.youtube_difference==null?'—':signed(x.youtube_difference)}</td><td class="money">${yen(x.youtube_cumulative)}</td></tr>`).join('');
@@ -83,7 +84,7 @@ function render(data){
    <section class="page" data-page="overview">
     <div class="page-head"><div><span class="kicker">全体</span><h2>事業全体</h2><p>売上、経費、利益をひと目で確認。</p></div></div>
     <div class="grid4">${metric('今月の売上',yen(data.finance.revenue),`昨日までの目安 ${yen(data.finance.target_to_date)}`,'',true)}${metric('目安との差',signed(data.finance.difference_to_date),`達成度 ${data.finance.achievement}%`,tone(data.finance.difference_to_date))}${metric('今月使った経費',yen(data.finance.expenses),data.finance.expense_partial?'分かっている分・確認待ちあり':'確認済み＋反映待ち',expenseNeedsAttention?'bad':'good')}${metric('利益の目安',yen(data.finance.profit),'売上は昨日まで・経費は今日の速報を含む',data.finance.expense_partial?'bad':tone(data.finance.profit))}</div>
-    <div class="section-title"><h3>確認しておくこと</h3><span>数字がそろっていない時だけ表示</span></div><div class="notices">${data.warnings.map(w=>`<div class="notice">${simpleNotice(w)}</div>`).join('')}</div>
+    <div class="section-title"><h3>確認しておくこと</h3><span>数字がそろっていない時だけ表示</span></div><div class="notices">${data.warnings.map(w=>`<div class="notice">${esc(simpleNotice(w))}</div>`).join('')}</div>
     <div class="section-title"><h3>経費の状態</h3><span>${expenseSourceDetail}</span></div>
     <div class="expense-status"><article class="expense-mini"><span>今月使った額</span><b class="${expenseNeedsAttention?'bad':'good'}">${yen(data.finance.expenses)}</b><small>確認済みと反映待ちの合計</small></article><article class="expense-mini"><span>freee確認済み</span><b class="good">${yen(data.finance.expense_confirmed)}</b><small>${esc(data.finance.expense_source)}</small></article><article class="expense-mini"><span>freee反映待ち</span><b class="${data.finance.expense_pending>0?'bad':'good'}">${yen(data.finance.expense_pending)}</b><small>${data.finance.expense_pending_count}件</small></article><article class="expense-mini"><span>最終確認</span><b class="${expenseNeedsAttention?'bad':'good'}">${shortDateTime(data.finance.expense_updated_at)}</b><small>${esc(data.finance.expense_status)}</small></article></div>
     ${expenseNeedsAttention?`<div class="expense-alert">経費はまだ確定前です。赤い項目がなくなるまでは「分かっている分」として見てください。</div>`:''}
@@ -129,7 +130,7 @@ function render(data){
  function go(page,scroll=true){document.querySelectorAll('.page').forEach(x=>x.classList.toggle('active',x.dataset.page===page));document.querySelectorAll('.nav button').forEach(x=>x.classList.toggle('active',x.dataset.go===page));location.hash=page;if(scroll)window.scrollTo({top:0,behavior:'smooth'})}
  document.querySelectorAll('[data-go]').forEach(b=>b.onclick=()=>go(b.dataset.go));
  document.querySelectorAll('.job-tab').forEach(b=>b.onclick=()=>{document.querySelectorAll('.job-tab').forEach(x=>x.classList.remove('active'));b.classList.add('active');showJobs(b.dataset.jobs)});
- showJobs('running');go(activePage,false);
+ document.querySelectorAll('.job-tab').forEach(x=>x.classList.toggle('active',x.dataset.jobs===activeJobs));showJobs(activeJobs);go(activePage,false);
 }
 
 let dashboardLoaded=false;

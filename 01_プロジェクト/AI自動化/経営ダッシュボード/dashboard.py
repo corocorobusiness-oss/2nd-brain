@@ -347,6 +347,7 @@ def summarize_freee_expenses(
             name = item_names.get(detail.get("account_item_id"), "分類不明")
             categories[name] = categories.get(name, 0) + int(detail.get("amount") or 0)
         partner_name = partner_names.get(deal.get("partner_id"), "")
+        merchant_reliable = bool(partner_name)
         if not partner_name:
             descriptions = [str(detail.get("description") or "") for detail in deal.get("details", [])]
             partner_name = next((value for value in descriptions if value), "")
@@ -356,9 +357,13 @@ def summarize_freee_expenses(
             "amount": int(deal.get("amount") or 0),
             "merchant": partner_name,
             "merchant_key": normalize_merchant(partner_name),
+            "merchant_reliable": merchant_reliable,
         })
 
-    wallet_dates = [str(row.get("date")) for row in wallet_txns if row.get("date")]
+    wallet_dates = [
+        str(row.get("date")) for row in wallet_txns
+        if row.get("date") and row.get("walletable_type") == "bank_account"
+    ]
     latest_bank_date = max(wallet_dates, default=None)
     bank_stale = True
     if latest_bank_date:
@@ -461,7 +466,10 @@ def parse_freee_expenses(
         source="freee保存データ",
     )
     if allow_live and live_error:
-        warnings.append(f"freeeの最新確認ができないため、{snapshot.name.replace('-', '/')}の控えを表示しています")
+        if live_error == "HTTP 401":
+            warnings.append(f"freeeとの接続が切れているため、{snapshot.name.replace('-', '/')}の控えを表示しています")
+        else:
+            warnings.append(f"freeeの最新確認ができないため、{snapshot.name.replace('-', '/')}の控えを表示しています")
     result["warnings"] = warnings
     return result
 
@@ -559,7 +567,12 @@ def reconcile_expenses(freee: dict[str, Any], drive: dict[str, Any]) -> dict[str
         match_index = None
         if receipt_key_counts[key] == 1 and deal_key_counts[key] == 1 and len(candidates) == 1:
             index, deal = candidates[0]
-            if not receipt["merchant_key"] or not deal["merchant_key"] or merchants_match(receipt["merchant_key"], deal["merchant_key"]):
+            if (
+                not receipt["merchant_key"]
+                or not deal["merchant_key"]
+                or not deal["merchant_reliable"]
+                or merchants_match(receipt["merchant_key"], deal["merchant_key"])
+            ):
                 match_index = index
         else:
             merchant_matches = [
