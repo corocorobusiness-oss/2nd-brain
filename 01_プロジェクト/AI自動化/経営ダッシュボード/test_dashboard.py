@@ -209,6 +209,28 @@ class DashboardTests(unittest.TestCase):
         self.assertEqual(result["pending"], 0)
         self.assertEqual(result["total"], 8000)
 
+    def test_future_dated_snapshot_expense_is_not_counted_early(self):
+        current = self.freee_expense(amount=1000, partner_id=20)
+        current["issue_date"] = "2026-07-10"
+        future = self.freee_expense(amount=9000, partner_id=20)
+        future["id"] = 2
+        future["issue_date"] = "2026-07-31"
+        result = dashboard.summarize_freee_expenses(
+            {
+                "deals": [current, future],
+                "account_items": [{"id": 10, "name": "車両費"}],
+                "partners": [{"id": 20, "name": "ENEOS"}],
+                "wallet_txns": [{"date": "2026-07-16", "walletable_type": "bank_account"}],
+            },
+            "2026-07",
+            dt.date(2026, 7, 16),
+            as_of="2026-07-16",
+            updated_at=None,
+            source="テスト",
+        )
+        self.assertEqual(result["total"], 1000)
+        self.assertEqual(len(result["matching_deals"]), 1)
+
     def test_missing_freee_and_empty_drive_are_not_reported_as_zero(self):
         freee = {
             "available": False, "total": 0, "categories": [], "matching_deals": [],
@@ -230,7 +252,7 @@ class DashboardTests(unittest.TestCase):
             "available": True, "total": 4000,
             "categories": [{"name": "車両費", "amount": 4000, "status": "確認済み"}],
             "matching_deals": [{
-                "id": 1, "date": "2026-07-16", "amount": 4000,
+                "id": 1, "date": "2026-07-18", "amount": 4000,
                 "merchant": "", "merchant_key": "", "merchant_reliable": False,
             }],
             "as_of": "2026-07-16", "updated_at": None, "source": "テスト",
@@ -251,6 +273,32 @@ class DashboardTests(unittest.TestCase):
         self.assertEqual(result["pending"], 0)
         self.assertEqual(result["total"], 4000)
         self.assertEqual(result["status"], "要確認")
+
+    def test_same_amount_at_known_different_merchants_stays_as_two_expenses(self):
+        freee = {
+            "available": True, "total": 3000,
+            "categories": [{"name": "通信費", "amount": 3000, "status": "確認済み"}],
+            "matching_deals": [{
+                "id": 1, "date": "2026-07-18", "amount": 3000,
+                "merchant": "OpenAI", "merchant_key": "openai", "merchant_reliable": True,
+            }],
+            "as_of": "2026-07-18", "updated_at": None, "source": "テスト",
+            "latest_bank_date": "2026-07-18", "stale": False, "bank_stale": False,
+            "latest_check_failed": False, "warnings": [],
+        }
+        drive = {
+            "available": True,
+            "receipts": [{
+                "date": "2026-07-16", "merchant": "出光", "merchant_key": "idemitsu",
+                "amount": 3000, "updated_at": None, "file_name": "receipt.jpg",
+            }],
+            "updated_at": None, "unparsed_count": 0, "duplicate_count": 0,
+        }
+        result = dashboard.reconcile_expenses(freee, drive)
+        self.assertEqual(result["ambiguous_count"], 0)
+        self.assertEqual(result["pending"], 3000)
+        self.assertEqual(result["total"], 6000)
+        self.assertEqual(result["status"], "反映待ちあり")
 
     def test_failed_live_check_keeps_fresh_cache_in_review_state(self):
         freee = {

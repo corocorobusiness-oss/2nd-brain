@@ -341,7 +341,12 @@ def summarize_freee_expenses(
     categories: dict[str, int] = {}
     matching_deals = []
     for deal in deals:
-        if deal.get("type") != "expense" or not str(deal.get("issue_date", "")).startswith(month):
+        issue_date = str(deal.get("issue_date") or "")
+        try:
+            deal_date = dt.date.fromisoformat(issue_date)
+        except ValueError:
+            continue
+        if deal.get("type") != "expense" or not issue_date.startswith(month) or deal_date > through_date:
             continue
         for detail in deal.get("details", []):
             if detail.get("entry_side") != "debit":
@@ -355,7 +360,7 @@ def summarize_freee_expenses(
             partner_name = next((value for value in descriptions if value), "")
         matching_deals.append({
             "id": deal.get("id"),
-            "date": str(deal.get("issue_date") or ""),
+            "date": issue_date,
             "amount": int(deal.get("amount") or 0),
             "merchant": partner_name,
             "merchant_key": normalize_merchant(partner_name),
@@ -632,6 +637,14 @@ def reconcile_expenses(freee: dict[str, Any], drive: dict[str, Any]) -> dict[str
             continue
         for deal_index, deal in enumerate(deals):
             if deal_index in used_deals or receipt["amount"] != deal["amount"]:
+                continue
+            # 両方の店名が信頼でき、明確に別店舗なら別件。ここで曖昧一致させると経費を過少計上する。
+            if (
+                deal.get("merchant_reliable")
+                and receipt.get("merchant_key")
+                and deal.get("merchant_key")
+                and not merchants_match(receipt["merchant_key"], deal["merchant_key"])
+            ):
                 continue
             try:
                 date_gap = abs((receipt_date - dt.date.fromisoformat(deal["date"])).days)
