@@ -1,0 +1,23 @@
+- generic [ref=f1e5]:
+  - generic [ref=f1e7]:
+    - heading "Uber" [level=5] [ref=f1e8]
+    - img "Down" [ref=f1e16]
+  - generic [ref=f1e19]:
+    - heading "アクティビティの詳細" [level=5] [ref=f1e20]
+    - generic [ref=f1e21]:
+      - generic [ref=f1e22]: 週で検索
+      - textbox "Select a date range." [ref=f1e26]:
+        - /placeholder: YYYY/MM/DD – YYYY/MM/DD
+        - text: Jul 13, 2026 – Jul 20, 2026
+      - paragraph: Selected date range is from Jul 13, 2026 to Jul 20, 2026.
+    - table [ref=f1e30]:
+      - rowgroup [ref=f1e31]:
+        - row [ref=f1e32]:
+          - columnheader "イベント" [ref=f1e33]
+          - columnheader "日時" [ref=f1e34]
+          - columnheader "売り上げ" [ref=f1e35]
+          - columnheader "表示する" [ref=f1e36]
+      - rowgroup [ref=f1e37]:
+        - row [ref=f1e38]:
+          - cell [ref=f1e39]:
+            - progressbar "loading" [ref=f1e41]
