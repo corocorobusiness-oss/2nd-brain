@@ -48,7 +48,7 @@ STEP3 解説対象＆挿入位置の選定 → 解説者パート生成  →  /y
 STEP4 アセンブル【本スキルの心臓部】→ /scripts/assemble_csv.py
       ・構成順に結合し、内部長文/返信構造を検査後、感情付きABCDE話者・返信先・解説挿入・句読点改行を機械付与（§6）
       ・スレは read-only（アセンブルは番号を振り直さない＝§7）
-      ・出力＝CSV(utf-8-sig) ＋ 副産物 _台本.md(人間可読) ＋ ~/Desktop へCSV複製（**xlsxは廃止＝オーナー決定2026-06-20**・会話ビューアも作らない）
+      ・出力＝案件フォルダのCSV(utf-8-sig) ＋ 副産物 _台本.md(人間可読)。Desktop複製は明示時のみ（**xlsxは廃止＝オーナー決定2026-06-20**・会話ビューアも作らない）
 STEP4.5 敵対的"本物らしさ"監査【必須・機械ゲートの穴を埋める】→ §4.6 の5レンズLLM監査
       ・must_fix（講義臭=ナレVO化／二重主語/文末表現の文頭/会話流れ）を捕捉→修正→再qa →【提案→確認】
 STEP5 規約3段階チェック → /youtube-script-checker（8層＋LLM文脈＋ファクト）
@@ -104,7 +104,7 @@ youtube-script-checker が近代政治の固有名（GHQ／米軍／進駐軍／
 **出力（保存先 = `01_プロジェクト/YouTube/創作スレ下書き/YYYY-MM-DD_テーマ`）**：
 - `_台本.csv`（YMM4取り込み・utf-8-sig・句読点改行）＝**唯一の出荷フォーマット**
 - `_台本.md`（人間可読・構成見出し付き）
-- `~/Desktop` への複製（CSV/dic）
+- `~/Desktop` への複製は標準出力に含めない。ユーザー明示時のみ一時コピー
 - ※**xlsxは廃止**（オーナー決定2026-06-20）。目視は show_widget の会話ビューアを単発依頼で出す
 - `ymm4_user.dic`（STEP6）
 - ※会話ビューア（show_widget）は**作らない**（オーナー判断＝不要）。レビューしたい時だけ単発依頼で出す
@@ -157,14 +157,17 @@ youtube-script-checker が近代政治の固有名（GHQ／米軍／進駐軍／
   を**LLMが判断**して決める（regexは50%で破綻＝実証済）。
 - **解説の挿入位置**：対象用語クラスタの末尾（§6.2）を読んで判断。**初出直後ではない**。
 - **解説対象の選定**：難用語/固有名トップN。
+- **各一般レスの感情**：確定済み本文を読み、主調を `01=真顔 / 02=怒り / 03=困り / 04=喜び / 05=悲しみ / 06=びっくり` から1つ選ぶ。全seq分をsource hashとともにmanifestへ固定し、regex推測や配分ノルマは使わない。
 - いずれも **提案→確認ゲート必須**。確定値を §8 のmanifestに載せて 7.2 へ渡す。
 
-### 7.2 script機械適用（assemble_csv.py）※ただし下/>>は返信マップに依存＝「手判定ゼロ」ではない
-- **パイプライン順序（固定）**：①`>>`/`↑`除去 → ②大/下判定（**字数は改行付与前の生本文**）→
-  ③返信マップ反映（番号列 `N>>M`）→ ④句読点改行 → ⑤CSV/MD出力（xlsx廃止）。
-- ラベル付与の**優先順位**：`is_dai(88字+) ＞ prev_dai(大の直後) ＞ reply_map(下/>>)`。
-  ＝大ルールが返信マップに優先するので**大×マップの相互作用で一部の>>が抑制される**（§6.5⚠・§4.8で突合）。
-- 話者ローテは純index（ROT[i%5]）で決定的＝manifestに載せない。
+### 7.2 script機械適用（assemble_csv.py）※返信番号は返信マップ、感情は確定済みmanifestに依存
+- **パイプライン順序（固定）**：①共有coreが`>>`/`↑`除去 → ②内部大/直後判定（**字数は改行付与前の生本文**）→
+  ③返信マップ反映（番号列 `N>>M`）→ ④句読点改行 → ⑤private stageのCSV/MD構造ゲート →
+  ⑥normal wrapperが登場人物列だけを感情付きABCDEへ変換 → ⑦post-gate PASS後に案件フォルダへ原子的公開（xlsx廃止）。
+- 内部大判定の**優先順位**：`is_dai(88字+) ＞ prev_dai(大の直後) ＞ reply_map`。
+  これは返信番号の抑制判定にだけ使う。最終登場人物名へ`大/下`は表示しない。抑制された返信は§4.8で突合・可視化する。
+- 話者のベース文字は解説者を除く台本全体のglobal ordinalで `A→B→C→D→E`。スレ境界・ID・返信先ではリセット/据え置きしない。感情コードはmanifestの全seq mapから付与する。
+- `speaker_label_profile` は必須。新規は`abcde-emotion-v1`、過去再現だけ明示的`legacy-gender-size-v1`。未指定・未知値、scope不一致、map欠落/余剰、source hash driftは公開前exit 2で既存出力を保持する。
 - **スレ本文テキストは不改変（read-only）**。ただし番号列の`>>`付与（本文に無い`>>1`含む）は
   **LLMの返信マップに従いscriptが新規付与**＝「本文read-only」と「>>付与」は別物。
 - スレ内部のraw番号（欠番あり）→seq連番の変換は**assemble_csv.py一箇所**がread-only入力時に機械生成。
@@ -187,16 +190,17 @@ youtube-script-checker が近代政治の固有名（GHQ／米軍／進駐軍／
 ## 8. 同梱物（skill配下）
 - `scripts/assemble_csv.py` … threads(2)＋parts → CSV/MD（gen_csv.pyの汎用版）
   - **入力契約＝マニフェスト(JSON)**（ベタ書き廃止・全データはseq空間）：
-    `{出力base, 冒頭パス, 前置きパス, 締めパス,
-      スレ①:{threadパス, reply_map:{seq:seq,…(>>1も明示)}, 解説:[{after_seq, partパス, ラベル}…]},
-      スレ②:{同上}}`
+    `{out_base, speaker_label_profile, speaker_rotation_scope, sections:[
+      narr:{path,...},
+      thread:{path, reply_map:{seq:seq,…(>>1も明示)}, emotion_source_sha256,
+              emotion_map:{seq:"01".."06"}, inserts:[{after_seq,path,label}...]}, ...]}`
   - **reply_map＝LLMが§6.5/6.6で判断した返信グラフ**（gen_csv.pyのREPLY1/2と同形・seqキーseq値）。
     scriptはこれを受けて§6.5でラベル化するだけ＝**返信先をscriptが自動導出するのではない**（§7.1）。
   - **after_seq＝再採番後の連番**（raw原スレ番号は載せない）。指定seqが実在しなければ**即エラー**
     （旧gen_csvはキー不在を黙ってスキップ＝解説が無言で消える穴があった）。
-  - 話者ローテ・大下ラベル・句読点改行のみscriptが規約(§6)で機械付与。
-  - **§4.8受入チェックを内蔵**し、NG（未来/自己参照・大に>>・スレタイ不正・解説本数不一致）なら**exit 2**（"完成"と言わせない）。
-  - 副産物＝`_台本.md`(人間可読)＋`~/Desktop`へCSV複製。**xlsxは出さない**（to_xlsx.py廃止）。
+  - 内部長文/返信処理・句読点改行後、normal wrapperが登場人物列だけをglobal ABCDE＋確定済み感情へ変換する。
+  - **§4.8受入チェック＋感情話者post-gateを内蔵**し、構造NG・profile/scope/map/hash不整合なら**exit 2**（既存の公開CSV/MDを保持）。
+  - 副産物＝案件フォルダの`_台本.md`(人間可読)。Desktop複製はmanifestの`copy_desktop: true`明示時だけ。**xlsxは出さない**（to_xlsx.py廃止）。
 - `refs/組み立て規約.md` … 6章の正本（人間レビュー用）＋manifest正本スキーマ（sectionsリスト形）
 - `refs/サンプル/` … 平将門の最終CSVを参照見本として同梱
 - `learning-log.md` … 各STEPの判断ログ（9章の自動化グラデーション用）
@@ -242,14 +246,14 @@ youtube-script-checker が近代政治の固有名（GHQ／米軍／進駐軍／
 - 実装メモ：
   - skill-creator で `~/.claude/skills/creative-thread-pipeline/` を生成。
   - SKILL.md＝本設計書の3〜10章を手順化（各STEPに確認ゲート＋learning-log）。
-  - `scripts/assemble_csv.py`＝gen_csv.py汎用化（**返信マップはLLM判断→manifest供給**・**スレread-only**・seq空間・大下/句読点のみ機械付与・§4.8内蔵・CSV出力のみ）。
+  - `scripts/assemble_csv.py`＝gen_csv.py汎用化（**返信マップはLLM判断→manifest供給**・**スレread-only**・seq空間・内部大/返信処理・句読点改行・§4.8内蔵）。公開前にnormal wrapperが感情付きABCDEへ変換しpost-gateする。
   - `refs/組み立て規約.md`＋`refs/サンプル/`（平将門CSV＋manifest）同梱。**to_xlsx.pyは作らない**（CSV出力に確定）。
   - ポータブル複製を作成し同期確認。
 
 ## 16. Phase1 実装完了ログ（2026-06-20）
 - `~/.claude/skills/creative-thread-pipeline/`（SKILL.md＋scripts/assemble_csv.py＋refs/組み立て規約.md＋refs/サンプル/＋learning-log.md）生成。ポータブル複製も完全一致で同期。
 - **出力＝CSVのみに確定**（オーナー指示）。xlsx/to_xlsx.py は廃止。目視は show_widget の会話ビューア（単発）。
-- assemble_csv.py に **§4.8受入チェック内蔵＋NGでexit 2**、section path を manifest相対で解決（CWD非依存）、`_台本.md`＋Desktop複製を追加。
+- assemble_csv.py に **§4.8受入チェック内蔵＋NGでexit 2**、section path を manifest相対で解決（CWD非依存）、`_台本.md`＋当時のDesktop複製機能を追加。現在は案件フォルダ正本・Desktopは明示時のみ。
 - **回帰テスト合格**：平将門 manifest から本番CSV(174行)を**差分0で再現**。§4.8全PASS（解説4本発火・大に>>なし・未来参照なし・抑制12件可視化）。
 - manifest正本スキーマ＝**sectionsリスト形**（§8ネスト案から確定）。`refs/組み立て規約.md`に記載。
 
@@ -315,7 +319,7 @@ youtube-script-checker が近代政治の固有名（GHQ／米軍／進駐軍／
 - L7 工程順（特に大判定の字数が句読点改行の前後）未明記 → §7.2に固定順序を明記。
 - L12 ハードゲートが直らない時のループ上限/エスカレ未定義 → §9にK回打ち切り。
 - L13 WARN非ブロック出荷は実走実績ゼロ（平将門の唯一の出荷はC到達後）→ **§4.5に「WARN非ブロック出荷は実績ゼロの暫定運用」と注記**し、Phase1初回実走で事後評価（§14未テスト残に追記）。
-**棄却された偽穴**：>>除去は既に対処済／話者ローテをmanifestに載せない判断は正しい（純indexで決定的）／ローテmod5末尾衝突は飾りで実害薄。
+**当時棄却した偽穴（履歴）**：>>除去は既に対処済。当時は話者ローテをmanifestに載せない純index方式だったが、**2026-07-18の感情付きABCDE契約がこの判断を更新**し、profile/scope/source hash/emotion mapを必須化した。ベース文字のmod5自体は引き続き決定的。
 
 ---
 > 関連: [[claude-code-codex-obsidian-operation]] / 既存スキル youtube-pipeline・creative-thread-gen・ymm4-dic-generator
