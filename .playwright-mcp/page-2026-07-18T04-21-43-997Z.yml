@@ -1,0 +1,232 @@
+- generic [ref=e5]:
+  - generic [ref=e7]:
+    - heading "Uber" [level=5] [ref=e8]
+    - img "Down" [ref=e16]
+  - generic [ref=e19]:
+    - heading "アクティビティの詳細" [level=5] [ref=e20]
+    - generic [ref=e21]:
+      - generic [ref=e22]: 週で検索
+      - textbox "Select a date range." [ref=e26]:
+        - /placeholder: YYYY/MM/DD – YYYY/MM/DD
+        - text: Jul 13, 2026 – Jul 20, 2026
+      - paragraph: Selected date range is from Jul 13, 2026 to Jul 20, 2026.
+    - generic [ref=e27]:
+      - table [ref=e30]:
+        - rowgroup [ref=e31]:
+          - row [ref=e32]:
+            - columnheader "イベント" [ref=e33]
+            - columnheader "日時" [ref=e34]
+            - columnheader "売り上げ" [ref=e35]
+            - columnheader "表示する" [ref=e36]
+        - rowgroup [ref=e37]:
+          - row [ref=e38]:
+            - cell [ref=e39]:
+              - generic [ref=e40]:
+                - img "Person" [ref=e41]
+                - paragraph [ref=e43]: クエスト
+            - cell [ref=e44]:
+              - paragraph [ref=e45]: Friday, July 17th, 2026
+              - paragraph [ref=e46]: 20:37
+            - cell [ref=e47]:
+              - paragraph [ref=e48]: ￥75
+            - cell [ref=e49]:
+              - link [ref=e50] [cursor=pointer]:
+                - /url: https://drivers.uber.com/earnings/activities/detail?eventType=MISC&activityFeedUUID=f34c1f67-a1ab-3280-b2b1-bbcb38ff9ac7
+                - button "View Details" [ref=e51]
+          - row [ref=e52]:
+            - cell [ref=e53]:
+              - generic [ref=e54]:
+                - img "Flag" [ref=e55]
+                - paragraph [ref=e57]: "{0} 回乗車クエスト"
+            - cell [ref=e58]:
+              - paragraph [ref=e59]: Friday, July 17th, 2026
+              - paragraph [ref=e60]: 20:37
+            - cell [ref=e61]:
+              - paragraph [ref=e62]: ￥75.00
+            - cell [ref=e63]:
+              - link [ref=e64] [cursor=pointer]:
+                - /url: https://drivers.uber.com/earnings/activities/detail?eventType=QUEST&activityFeedUUID=85861259-b5eb-5efa-a24d-50d7dca26fb3&incentiveUUID=d89b476f-0f90-5e83-96e4-da0d939a505d&timestamp=1784288260
+                - button "View Details" [ref=e65]
+          - row [ref=e66]:
+            - cell [ref=e67]:
+              - generic [ref=e68]:
+                - img "Person" [ref=e69]
+                - paragraph [ref=e71]: Delivery
+            - cell [ref=e72]:
+              - paragraph [ref=e73]: Friday, July 17th, 2026
+              - paragraph [ref=e74]: 20:21
+            - cell [ref=e75]:
+              - paragraph [ref=e76]: ￥358
+            - cell [ref=e77]:
+              - link [ref=e78] [cursor=pointer]:
+                - /url: https://drivers.uber.com/earnings/trips/2d01a624-1b3e-4c73-8ffe-60395cf73e89
+                - button "View Details" [ref=e79]
+          - row [ref=e80]:
+            - cell [ref=e81]:
+              - generic [ref=e82]:
+                - img "Person" [ref=e83]
+                - paragraph [ref=e85]: クエスト
+            - cell [ref=e86]:
+              - paragraph [ref=e87]: Friday, July 17th, 2026
+              - paragraph [ref=e88]: 20:06
+            - cell [ref=e89]:
+              - paragraph [ref=e90]: ￥225
+            - cell [ref=e91]:
+              - link [ref=e92] [cursor=pointer]:
+                - /url: https://drivers.uber.com/earnings/activities/detail?eventType=MISC&activityFeedUUID=cceb3adc-9dc0-3035-bc8e-6f97c9388f7b
+                - button "View Details" [ref=e93]
+          - row [ref=e94]:
+            - cell [ref=e95]:
+              - generic [ref=e96]:
+                - img "Flag" [ref=e97]
+                - paragraph [ref=e99]: "{0} 回乗車クエスト"
+            - cell [ref=e100]:
+              - paragraph [ref=e101]: Friday, July 17th, 2026
+              - paragraph [ref=e102]: 20:05
+            - cell [ref=e103]:
+              - paragraph [ref=e104]: ￥225.00
+            - cell [ref=e105]:
+              - link [ref=e106] [cursor=pointer]:
+                - /url: https://drivers.uber.com/earnings/activities/detail?eventType=QUEST&activityFeedUUID=def12eea-1de4-54f3-b45d-9a43f44b557c&incentiveUUID=d89b476f-0f90-5e83-96e4-da0d939a505d&timestamp=1784286352
+                - button "View Details" [ref=e107]
+          - row [ref=e108]:
+            - cell [ref=e109]:
+              - generic [ref=e110]:
+                - img "Person" [ref=e111]
+                - paragraph [ref=e113]: Delivery
+            - cell [ref=e114]:
+              - paragraph [ref=e115]: Friday, July 17th, 2026
+              - paragraph [ref=e116]: 19:10
+            - cell [ref=e117]:
+              - paragraph [ref=e118]: ￥717
+            - cell [ref=e119]:
+              - link [ref=e120] [cursor=pointer]:
+                - /url: https://drivers.uber.com/earnings/trips/5dc23a27-aa6b-4dfb-9355-0868a820df19
+                - button "View Details" [ref=e121]
+          - row [ref=e122]:
+            - cell [ref=e123]:
+              - generic [ref=e124]:
+                - img "Person" [ref=e125]
+                - paragraph [ref=e127]: Delivery
+            - cell [ref=e128]:
+              - paragraph [ref=e129]: Friday, July 17th, 2026
+              - paragraph [ref=e130]: 10:46
+            - cell [ref=e131]:
+              - paragraph [ref=e132]: ￥536
+            - cell [ref=e133]:
+              - link [ref=e134] [cursor=pointer]:
+                - /url: https://drivers.uber.com/earnings/trips/5eb268b7-6ca0-47e1-8f77-d89793f2b33f
+                - button "View Details" [ref=e135]
+          - row [ref=e136]:
+            - cell [ref=e137]:
+              - generic [ref=e138]:
+                - img "Person" [ref=e139]
+                - paragraph [ref=e141]: Delivery
+            - cell [ref=e142]:
+              - paragraph [ref=e143]: Friday, July 17th, 2026
+              - paragraph [ref=e144]: 09:41
+            - cell [ref=e145]:
+              - paragraph [ref=e146]: ￥702
+            - cell [ref=e147]:
+              - link [ref=e148] [cursor=pointer]:
+                - /url: https://drivers.uber.com/earnings/trips/580d1256-5d80-4dc4-b0c6-9f0938dff036
+                - button "View Details" [ref=e149]
+          - row [ref=e150]:
+            - cell [ref=e151]:
+              - generic [ref=e152]:
+                - img "Person" [ref=e153]
+                - paragraph [ref=e155]: Delivery
+            - cell [ref=e156]:
+              - paragraph [ref=e157]: Friday, July 17th, 2026
+              - paragraph [ref=e158]: 09:22
+            - cell [ref=e159]:
+              - paragraph [ref=e160]: ￥435
+            - cell [ref=e161]:
+              - link [ref=e162] [cursor=pointer]:
+                - /url: https://drivers.uber.com/earnings/trips/8f618c4f-da51-4dab-ae45-754f60ea0705
+                - button "View Details" [ref=e163]
+          - row [ref=e164]:
+            - cell [ref=e165]:
+              - generic [ref=e166]:
+                - img "Person" [ref=e167]
+                - paragraph [ref=e169]: Delivery
+            - cell [ref=e170]:
+              - paragraph [ref=e171]: Friday, July 17th, 2026
+              - paragraph [ref=e172]: 08:57
+            - cell [ref=e173]:
+              - paragraph [ref=e174]: ￥546
+            - cell [ref=e175]:
+              - link [ref=e176] [cursor=pointer]:
+                - /url: https://drivers.uber.com/earnings/trips/7f3d5d2c-f8e5-4793-a24d-96e529cb5c25
+                - button "View Details" [ref=e177]
+          - row [ref=e178]:
+            - cell [ref=e179]:
+              - generic [ref=e180]:
+                - img "Flag" [ref=e181]
+                - paragraph [ref=e183]: "{0} 回乗車クエスト"
+            - cell [ref=e184]:
+              - paragraph [ref=e185]: Friday, July 17th, 2026
+              - paragraph [ref=e186]: 04:00
+            - cell [ref=e187]:
+              - paragraph [ref=e188]: ￥0.00
+            - cell [ref=e189]:
+              - link [ref=e190] [cursor=pointer]:
+                - /url: https://drivers.uber.com/earnings/activities/detail?eventType=QUEST&activityFeedUUID=8ee6d69e-3ad1-5124-8e9b-a3177f5b0685&incentiveUUID=e3ef660f-62ba-5b3d-91c3-068bae1e64a4&timestamp=1784228400
+                - button "View Details" [ref=e191]
+          - row [ref=e192]:
+            - cell [ref=e193]:
+              - generic [ref=e194]:
+                - img "Person" [ref=e195]
+                - paragraph [ref=e197]: Delivery
+            - cell [ref=e198]:
+              - paragraph [ref=e199]: Thursday, July 16th, 2026
+              - paragraph [ref=e200]: 11:13
+            - cell [ref=e201]:
+              - paragraph [ref=e202]: ￥583
+            - cell [ref=e203]:
+              - link [ref=e204] [cursor=pointer]:
+                - /url: https://drivers.uber.com/earnings/trips/84fea939-46b0-4eb4-9094-2ca203cf395c
+                - button "View Details" [ref=e205]
+          - row [ref=e206]:
+            - cell [ref=e207]:
+              - generic [ref=e208]:
+                - img "Person" [ref=e209]
+                - paragraph [ref=e211]: クエスト
+            - cell [ref=e212]:
+              - paragraph [ref=e213]: Thursday, July 16th, 2026
+              - paragraph [ref=e214]: 11:07
+            - cell [ref=e215]:
+              - paragraph [ref=e216]: ￥2,930
+            - cell [ref=e217]:
+              - link [ref=e218] [cursor=pointer]:
+                - /url: https://drivers.uber.com/earnings/activities/detail?eventType=MISC&activityFeedUUID=6e90a19d-75e1-3209-942a-6faaa74d65a0
+                - button "View Details" [ref=e219]
+          - row [ref=e220]:
+            - cell [ref=e221]:
+              - generic [ref=e222]:
+                - img "Flag" [ref=e223]
+                - paragraph [ref=e225]: "{0} 回乗車クエスト"
+            - cell [ref=e226]:
+              - paragraph [ref=e227]: Thursday, July 16th, 2026
+              - paragraph [ref=e228]: 11:07
+            - cell [ref=e229]:
+              - paragraph [ref=e230]: ￥2,930.00
+            - cell [ref=e231]:
+              - link [ref=e232] [cursor=pointer]:
+                - /url: https://drivers.uber.com/earnings/activities/detail?eventType=QUEST&activityFeedUUID=8aba0c1a-5903-5221-8200-0bd427c452ff&incentiveUUID=e3ef660f-62ba-5b3d-91c3-068bae1e64a4&timestamp=1784167638
+                - button "View Details" [ref=e233]
+          - row [ref=e234]:
+            - cell [ref=e235]:
+              - generic [ref=e236]:
+                - img "Person" [ref=e237]
+                - paragraph [ref=e239]: Delivery
+            - cell [ref=e240]:
+              - paragraph [ref=e241]: Thursday, July 16th, 2026
+              - paragraph [ref=e242]: 10:51
+            - cell [ref=e243]:
+              - paragraph [ref=e244]: ￥384
+            - cell [ref=e245]:
+              - link [ref=e246] [cursor=pointer]:
+                - /url: https://drivers.uber.com/earnings/trips/8a066893-f054-469b-9be5-b613997fea10
+                - button "View Details" [ref=e247]
+      - button "さらに読み込む" [ref=e248] [cursor=pointer]
