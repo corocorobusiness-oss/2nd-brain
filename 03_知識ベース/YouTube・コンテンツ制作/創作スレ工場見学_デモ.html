@@ -1,0 +1,237 @@
+<title>創作スレ工場見学 — 仕組みまるわかりデモ</title>
+<style>
+:root{
+  --bg:#F7F7F3; --ink:#26292C; --ink-soft:#5C6166; --line:#DDDDD3;
+  --panel:#FFFFEE; --panel-line:#E4E2C8; --name:#1E7A34; --resno:#8A6D3B;
+  --accent:#1E7A34; --gate:#A66A00; --gate-bg:#FBF3E1; --ng:#B3403A; --ng-bg:#F9ECEA;
+  --chip-bg:#E8F3EA; --card:#FFFFFF; --code:#EFEFE8;
+}
+@media (prefers-color-scheme: dark){:root{
+  --bg:#16181A; --ink:#E6E4DE; --ink-soft:#9BA1A6; --line:#33373B;
+  --panel:#20221A; --panel-line:#3A3D2C; --name:#6FC487; --resno:#C0A671;
+  --accent:#6FC487; --gate:#D9A03F; --gate-bg:#2A2418; --ng:#D97A72; --ng-bg:#2C1D1C;
+  --chip-bg:#213426; --card:#1D2023; --code:#24272B;
+}}
+:root[data-theme="dark"]{
+  --bg:#16181A; --ink:#E6E4DE; --ink-soft:#9BA1A6; --line:#33373B;
+  --panel:#20221A; --panel-line:#3A3D2C; --name:#6FC487; --resno:#C0A671;
+  --accent:#6FC487; --gate:#D9A03F; --gate-bg:#2A2418; --ng:#D97A72; --ng-bg:#2C1D1C;
+  --chip-bg:#213426; --card:#1D2023; --code:#24272B;
+}
+:root[data-theme="light"]{
+  --bg:#F7F7F3; --ink:#26292C; --ink-soft:#5C6166; --line:#DDDDD3;
+  --panel:#FFFFEE; --panel-line:#E4E2C8; --name:#1E7A34; --resno:#8A6D3B;
+  --accent:#1E7A34; --gate:#A66A00; --gate-bg:#FBF3E1; --ng:#B3403A; --ng-bg:#F9ECEA;
+  --chip-bg:#E8F3EA; --card:#FFFFFF; --code:#EFEFE8;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:"Hiragino Kaku Gothic ProN","Hiragino Sans","Yu Gothic UI","Yu Gothic","Noto Sans JP",sans-serif;
+  font-size:15px;line-height:1.85;}
+.wrap{max-width:880px;margin:0 auto;padding:40px 20px 80px;}
+header.top{border-bottom:2px solid var(--ink);padding-bottom:20px;margin-bottom:36px;}
+.eyebrow{font-size:12px;letter-spacing:.18em;color:var(--accent);font-weight:700;margin:0 0 8px;}
+h1{font-size:30px;font-weight:900;line-height:1.35;margin:0 0 10px;text-wrap:balance;letter-spacing:.01em;}
+.lede{color:var(--ink-soft);margin:0;max-width:40em;}
+h2{font-size:20px;font-weight:800;margin:52px 0 6px;letter-spacing:.02em;}
+h2 .no{color:var(--accent);font-family:Menlo,Consolas,monospace;font-size:15px;margin-right:8px;}
+.sub{color:var(--ink-soft);font-size:13.5px;margin:0 0 16px;}
+.note{background:var(--gate-bg);border:1px solid var(--gate);border-radius:6px;padding:10px 14px;font-size:13.5px;margin:16px 0;}
+/* pipeline rail */
+.rail{display:flex;gap:8px;overflow-x:auto;padding:6px 2px 14px;}
+.step{flex:0 0 148px;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:10px 12px;}
+.step b{display:block;font-size:12.5px;color:var(--accent);font-family:Menlo,Consolas,monospace;margin-bottom:2px;}
+.step .t{font-size:13.5px;font-weight:700;line-height:1.5;display:block;}
+.step .g{display:block;margin-top:8px;font-size:11.5px;color:var(--gate);background:var(--gate-bg);border-radius:4px;padding:2px 7px;line-height:1.6;}
+.arrow{align-self:center;color:var(--ink-soft);flex:0 0 auto;}
+/* budget table */
+table{border-collapse:collapse;width:100%;font-size:13.5px;font-variant-numeric:tabular-nums;}
+th,td{border:1px solid var(--line);padding:7px 11px;text-align:left;vertical-align:top;}
+th{background:var(--code);font-size:12.5px;letter-spacing:.04em;}
+.tblwrap{overflow-x:auto;margin:14px 0;}
+/* 2ch thread */
+.thread{background:var(--panel);border:1px solid var(--panel-line);border-radius:8px;padding:20px 22px;margin:16px 0;}
+.thread-title{font-weight:900;font-size:16.5px;color:var(--ng);margin:0 0 14px;line-height:1.5;}
+.res{padding:9px 0;border-top:1px dashed var(--panel-line);}
+.res:first-of-type{border-top:none;}
+.res .head{font-size:12.5px;color:var(--ink-soft);}
+.res .head .no{color:var(--resno);font-family:Menlo,Consolas,monospace;font-weight:700;}
+.res .head .name{color:var(--name);font-weight:700;}
+.res .body{margin:3px 0 0 0;white-space:pre-wrap;}
+.res .body .anch{color:var(--accent);font-weight:700;}
+.chips{margin-top:5px;display:flex;flex-wrap:wrap;gap:5px;}
+.chip{font-size:11px;line-height:1.7;padding:1px 8px;border-radius:999px;background:var(--chip-bg);color:var(--accent);border:1px solid var(--accent);font-weight:700;}
+.chip.gate{background:var(--gate-bg);color:var(--gate);border-color:var(--gate);}
+.chip.ng{background:var(--ng-bg);color:var(--ng);border-color:var(--ng);}
+/* NG cards */
+.ngcard{background:var(--ng-bg);border:1px solid var(--ng);border-radius:8px;padding:12px 16px;margin:12px 0;font-size:13.5px;}
+.ngcard b{color:var(--ng);}
+.ngcard s{color:var(--ink-soft);}
+.ok{color:var(--accent);font-weight:700;}
+/* loops */
+.loops{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin:16px 0;}
+.loop{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:14px 16px;font-size:13.5px;}
+.loop b{display:block;font-size:14px;margin-bottom:4px;}
+.loop .to{color:var(--ink-soft);font-size:12.5px;}
+code{font-family:Menlo,Consolas,monospace;font-size:12.5px;background:var(--code);border-radius:4px;padding:1px 6px;}
+footer{margin-top:56px;border-top:1px solid var(--line);padding-top:14px;font-size:12.5px;color:var(--ink-soft);}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;}
+</style>
+
+<div class="wrap">
+<header class="top">
+  <p class="eyebrow">2ch歴史チャンネル — 創作スレパイプライン</p>
+  <h1>創作スレ工場見学：1本の動画ができるまで</h1>
+  <p class="lede">実際のスキル（creative-thread-gen / creative-thread-pipeline / 2chスレ文体パターン）のルール通りに作ったデモスレで、「どの工程で・どの機械が・何を守らせているか」を見える化したページ。</p>
+</header>
+
+<div class="note">⚠️ このスレは<b>仕組み理解用の縮尺デモ（約24レス）</b>。本番は1スレ2,500〜3,000字・50〜90レスが合格ライン。<b>出荷物ではないので動画台帳・dedupには載せない</b>。</div>
+
+<h2><span class="no">MAP</span>全体の流れ（STEP1→7と検問所）</h2>
+<p class="sub">各STEPの下の黄色いラベルが「検問所（ゲート）」。ここで引っかかると先に進めない＝"完成"と言わせない設計。</p>
+<div class="rail">
+  <div class="step"><b>STEP1</b><span class="t">学習素材を読む</span><span class="g">サンプラで本物スレ多読・前作の指紋回避（ledger）</span></div>
+  <div class="arrow">→</div>
+  <div class="step"><b>STEP2</b><span class="t">スレ生成×2本</span><span class="g">qa_check: 字数床2,500・禁止語・テンプレ指紋・語尾偏り</span></div>
+  <div class="arrow">→</div>
+  <div class="step"><b>STEP3</b><span class="t">解説パート生成</span><span class="g">ナレ総量25%以内・「とは」型</span></div>
+  <div class="arrow">→</div>
+  <div class="step"><b>STEP4</b><span class="t">アセンブル（機械）</span><span class="g">§4.8受入: ローテ・大/下・返信整合→NGならexit 2</span></div>
+  <div class="arrow">→</div>
+  <div class="step"><b>STEP4.5</b><span class="t">敵対監査（AI5視点）</span><span class="g">講義臭・AI臭・会話の噛み合い</span></div>
+  <div class="arrow">→</div>
+  <div class="step"><b>STEP5</b><span class="t">規約3段チェック</span><span class="g">8層スキャン＋文脈＋史実ファクト🔴=出荷不可</span></div>
+  <div class="arrow">→</div>
+  <div class="step"><b>STEP6-7</b><span class="t">読み辞書→タイトル・サムネ</span><span class="g">predict_score採点・勝ちパターン・サムネA/B</span></div>
+</div>
+
+<h2><span class="no">01</span>書く前に「尺設計図」を立てる</h2>
+<p class="sub">いきなり上から書くと8割で締まって字数不足になる（過去実測）。だから先に長文の"床"を予算化してから書く＝<b>長文ファースト</b>。</p>
+<div class="tblwrap"><table>
+<tr><th>バケツ</th><th>本番（50レス）</th><th>このデモ（24レス縮尺）</th><th>役割</th></tr>
+<tr><td>長文（知識ニキ・IF・通説否定）</td><td>10本 × 120〜150字</td><td>4本 × 90〜120字</td><td>尺の床。トピックは全部別ネタに割る</td></tr>
+<tr><td>中レス（受け・反論）</td><td>14本 × 50〜60字</td><td>7本</td><td>会話の関節</td></tr>
+<tr><td>短レス（茶々・草）</td><td>26本 × 20〜25字</td><td>13本</td><td>2chの呼吸。8〜9割は淡々</td></tr>
+<tr><td><b>合計</b></td><td><b>≈2,700字</b></td><td>≈1,300字</td><td>床ができてから質感を作る順番が鉄則</td></tr>
+</table></div>
+
+<h2><span class="no">02</span>デモスレ本体（注釈つき）</h2>
+<p class="sub">テーマ「江戸の飛脚」（架空デモ・在庫と非重複）。緑チップ＝本物らしさルーブリック6要素、黄チップ＝ゲートが見てる箇所。レス番号が飛んでるのは<b>欠番のわざと</b>（本物のスレは番号が揃わない）。</p>
+
+<div class="thread">
+<p class="thread-title">江戸の飛脚、江戸→京都492kmを3日とかウソやろwww</p>
+
+<div class="res"><p class="head"><span class="no">1</span> ：<span class="name">風吹けば名無し</span></p>
+<p class="body">「江戸の飛脚、江戸→京都492kmを3日とかウソやろwww」
+ネットでこれ見たんやけど、こマ？　人間の脚やぞ</p>
+<div class="chips"><span class="chip">F01 スレタイはイッチの1レス目</span><span class="chip">T03 検証型の入口（断定しない）</span></div></div>
+
+<div class="res"><p class="head"><span class="no">2</span> ：<span class="name">風吹けば名無し</span></p>
+<p class="body">は？また飛脚スレか　月一で立つよな</p>
+<div class="chips"><span class="chip">ルーブリック② 既出ツッコミ（1回だけ）</span></div></div>
+
+<div class="res"><p class="head"><span class="no">3</span> ：<span class="name">風吹けば名無し</span></p>
+<p class="body"><span class="anch">&gt;&gt;1</span>　新幹線でも2時間半かかる距離やぞ　ウソに決まってる</p></div>
+
+<div class="res"><p class="head"><span class="no">5</span> ：<span class="name">風吹けば名無し</span></p>
+<p class="body">マラソン選手でも1日42kmが限界なのに草</p>
+<div class="chips"><span class="chip gate">欠番（4を飛ばす）＝本物の質感</span></div></div>
+
+<div class="res"><p class="head"><span class="no">6</span> ：<span class="name">風吹けば名無し</span></p>
+<p class="body"><span class="anch">&gt;&gt;5</span>　1日164km計算や　物理的に無理やろ</p></div>
+
+<div class="res"><p class="head"><span class="no">8</span> ：<span class="name">風吹けば名無し</span></p>
+<p class="body">マジレスすると走ってたのは1人ちゃうで　継飛脚っていう宿場ごとのリレー方式や　東海道五十三次の宿場に人が待機してて、書状を次々バトンタッチする　箱根駅伝の元祖みたいなもんやな</p>
+<div class="chips"><span class="chip">知識ニキ登場（構造の転換点）</span><span class="chip gate">長文=88字以上→アセンブルで「大」判定</span></div></div>
+
+<div class="res"><p class="head"><span class="no">9</span> ：<span class="name">風吹けば名無し</span></p>
+<p class="body"><span class="anch">&gt;&gt;8</span>　ファッ!?　リレーなんか　ずっと1人やと思ってたわ</p>
+<div class="chips"><span class="chip">ルーブリック④ 知識ニキへの茶々</span></div></div>
+
+<div class="res"><p class="head"><span class="no">11</span> ：<span class="name">風吹けば名無し</span></p>
+<p class="body">は？ソースは？　時代劇やと1人で走っとったぞ</p>
+<div class="chips"><span class="chip">ルーブリック① 懐疑・摩擦（言い返しが起きる）</span></div></div>
+
+<div class="res"><p class="head"><span class="no">12</span> ：<span class="name">風吹けば名無し</span></p>
+<p class="body"><span class="anch">&gt;&gt;11</span>　時代劇を史料にするのやめーや</p></div>
+
+<div class="res"><p class="head"><span class="no">14</span> ：<span class="name">風吹けば名無し</span></p>
+<p class="body">継飛脚は幕府公用の最速便で、それでも普通は3〜4日かかったらしい　昼夜ぶっ通しのリレーや　庶民が使う町飛脚の並便やと京都まで10日前後が相場で、料金は速さで段階があった</p>
+<div class="chips"><span class="chip gate">「らしい」= 断定回避（史実ファクト規律）</span></div></div>
+
+<div class="res"><p class="head"><span class="no">15</span> ：<span class="name">風吹けば名無し</span></p>
+<p class="body"><span class="anch">&gt;&gt;14</span>　はえー　宅急便のお急ぎ便みたいなもんか</p></div>
+
+<div class="res"><p class="head"><span class="no">18</span> ：<span class="name">風吹けば名無し</span></p>
+<p class="body">飛脚って月に何往復もするんやろ？　膝どうなっとんねん</p>
+<div class="chips"><span class="chip">脱線・小ボケ（張り詰めを緩める）</span></div></div>
+
+<div class="res"><p class="head"><span class="no">20</span> ：<span class="name">風吹けば名無し</span></p>
+<p class="body">昔の人は足腰が違う定期</p></div>
+
+<div class="res"><p class="head"><span class="no">21</span> ：<span class="name">風吹けば名無し</span></p>
+<p class="body"><span class="anch">&gt;&gt;18</span>　飛脚の飯の量がヤバかったって記録は残っとるで　走る燃料をほぼコメでまかなってたんやから、そら大食いにもなる　現代のアスリートの炭水化物ローディングを地でやってた説すき</p></div>
+
+<div class="res"><p class="head"><span class="no">23</span> ：<span class="name">風吹けば名無し</span></p>
+<p class="body">ワイも明日から走って通勤するわ</p>
+<div class="chips"><span class="chip">ルーブリック③ 死にレス（誰にも拾われない）</span></div></div>
+
+<div class="res"><p class="head"><span class="no">24</span> ：<span class="name">風吹けば名無し</span></p>
+<p class="body">で、結局3日はホンマなん？</p></div>
+
+<div class="res"><p class="head"><span class="no">26</span> ：<span class="name">風吹けば名無し</span></p>
+<p class="body"><span class="anch">&gt;&gt;24</span>　最速の特別仕立てなら3日前後って説はある　ただ諸説あって正確な記録は少ないんや　それでも「金を積むほど速い」って料金体系が残っとる時点で、当時から相当な速度競争があったのは間違いない</p>
+<div class="chips"><span class="chip gate">「諸説あるで」明示＝オリジナル生成の必須規律</span></div></div>
+
+<div class="res"><p class="head"><span class="no">29</span> ：<span class="name">風吹けば名無し</span></p>
+<p class="body">いうて現代人がヘタレなだけ説</p></div>
+
+<div class="res"><p class="head"><span class="no">30</span> ：<span class="name">風吹けば名無し</span></p>
+<p class="body"><span class="anch">&gt;&gt;29</span>　舗装路もシューズもある現代の方が有利なんだよなあ</p>
+<div class="chips"><span class="chip gate">語尾「な/なあ」＝本物コーパスの主力13%</span></div></div>
+
+<div class="res"><p class="head"><span class="no">32</span> ：<span class="name">風吹けば名無し</span></p>
+<p class="body">三度飛脚って名前、月3便やったから説すき</p>
+<div class="chips"><span class="chip gate">体言止め＝語尾を散らす（なんJ語尾は35%まで）</span></div></div>
+
+<div class="res"><p class="head"><span class="no">33</span> ：<span class="name">風吹けば名無し</span></p>
+<p class="body">なんやかんや江戸の物流網は世界レベルやったんやな</p></div>
+
+<div class="res"><p class="head"><span class="no">35</span> ：<span class="name">風吹けば名無し</span></p>
+<p class="body"><span class="anch">&gt;&gt;33</span>　綺麗にまとめるな　ワイはまだ3日は盛りすぎやと思っとるで</p>
+<div class="chips"><span class="chip">ルーブリック⑤ gdオチ（綺麗に締めず逆張りを残す）</span></div></div>
+</div>
+
+<h2><span class="no">03</span>ゲートに捕まる「わざとNG例」3連発</h2>
+<p class="sub">上のスレに入れなかったのはこういうレス。どの検問所が捕まえるかまでがセット。</p>
+<div class="ngcard"><b>講義臭（ナレーション化）</b><br>
+<s>「天保年間、飛脚制度は最盛期を迎えた。継飛脚は幕府公用であり、その速度は──」</s><br>
+→ <b>STEP4.5 敵対監査</b>が捕まえる（元号＋終止形の現在形＝教科書の声。掲示板の口調へ直させる）</div>
+<div class="ngcard"><b>退場だけのレス</b><br>
+<s>「飯やから抜けるわ　続きは詳しい人頼む」</s><br>
+→ <b>台本ルールF07</b>でカット（本物スレにはあるが動画では中身ゼロの間になる）。<span class="ok">現在prose止まりの唯一のルール＝機械化候補№1（修正メトリクスが監視中）</span></div>
+<div class="ngcard"><b>説明おじさん語尾の連発</b><br>
+<s>「〜なわけや」「〜しとるんよ」を長文の締めに3連発</s><br>
+→ <b>qa_check 9c/9c2</b>がWARN（本物コーパス実測5%なのに生成AIは3〜4倍使いがち。単一語尾は6%以下に散らす）</div>
+
+<h2><span class="no">04</span>アセンブル：機械が話者を配る（§4.8）</h2>
+<p class="sub">ここから先は人間もAIも手で書かない。<code>assemble_csv.py</code> が話者ローテ・大/下ラベル・返信表示を機械適用して、YMM4用CSVを吐く。崩れてたら exit 2 ＝「完成」と言わせない。</p>
+<div class="tblwrap"><table>
+<tr><th>seq</th><th>レス</th><th>機械が付けるラベル</th><th>根拠ルール</th></tr>
+<tr><td>1</td><td>#1 イッチ（スレタイ入り）</td><td>男性A</td><td>各スレ先頭＝男性A・スレタイ行は88字超でも「大」なし</td></tr>
+<tr><td>2</td><td>#2 既出ツッコミ</td><td>女性B</td><td>5人固定ローテ（A→B→C→D→E）。飛び禁止=F04（機械保証）</td></tr>
+<tr><td>3</td><td>#3 &gt;&gt;1</td><td>男性C下</td><td>返信レスに「下」。同一ベース話者の連続禁止=F05（§4.8検査）</td></tr>
+<tr><td>6</td><td>#8 知識ニキ長文</td><td>男性A大</td><td>88字以上→「大」付与=F03（機械適用）</td></tr>
+<tr><td>7</td><td>#9 &gt;&gt;8 茶々</td><td>女性B下</td><td>解説直後の1行目は「下」禁止=F06（§4.8検査）</td></tr>
+</table></div>
+
+<h2><span class="no">05</span>出したら終わりじゃない：3つの学習ループへ還流</h2>
+<div class="loops">
+  <div class="loop"><b>📝 修正メトリクス</b>出荷ごとに「何回直したか・どのルール違反か」を1行記録。<span class="to">→ 台本ルール効き.md ／ 効かないルールは書き直し・機械化候補へ</span></div>
+  <div class="loop"><b>🖼️ クリック学習</b>タイトル・サムネ案とA/Bテスト結果を記録、CTRはAPIが自動取得。<span class="to">→ サムネ・タイトル効き.md ／ 2勝で勝ちパターン昇格</span></div>
+  <div class="loop"><b>📊 予測の答え合わせ</b>出す前の再生数予測を30日後の実績と照合（週次自動）。<span class="to">→ 予測精度.md ／ 15件たまると較正が発動</span></div>
+</div>
+<p class="sub">この3ループがあるから、動画を出すたびに「ネタ選び・台本・サムネ」の全部が賢くなる。入口は Obsidian の <b>[[YouTube計器盤]]</b>。</p>
+
+<footer>デモ作成: 2026-07-14 あおい🌊 ／ 参照スキル: creative-thread-gen v1.0.1・creative-thread-pipeline・2chスレ文体パターン.md・台本執筆ルール.md（ID/執行者タグ準拠）／ このスレはデモにつき動画化・台帳登録はしない</footer>
+</div>
