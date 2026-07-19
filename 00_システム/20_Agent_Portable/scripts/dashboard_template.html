@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Company OS — 祐馬さんの経営ダッシュボード</title>
+<style>
+  /* このページは意図的にダーク固定（AI Company OS スタイル） */
+  :root{
+    --bg:#0B111C; --panel:#121B2A; --panel2:#0E1622; --line:#1D2A3D;
+    --ink:#E7EDF5; --ink2:#93A3B8; --ink3:#5D6E84;
+    --accent:#4C9BE8; --accent2:#39C5CF;
+    --good:#3DBE7B; --watch:#E0A93E; --bad:#E06C5F; --purple:#9B7BE8;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--bg); color:var(--ink); margin:0;
+    font-family:"Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic UI","Yu Gothic","Noto Sans JP",sans-serif;
+    font-size:14px; line-height:1.85;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--accent); text-decoration:none;}
+  a:focus-visible{outline:2px solid var(--accent); outline-offset:2px; border-radius:4px;}
+
+  .layout{display:grid; grid-template-columns:196px 1fr; min-height:100vh;}
+  .side{
+    background:var(--panel2); border-right:1px solid var(--line);
+    padding:22px 14px; position:sticky; top:0; height:100vh; overflow-y:auto;
+  }
+  .brand{font-size:15px; font-weight:700; letter-spacing:.02em; padding:0 8px;}
+  .brand small{display:block; font-size:10.5px; font-weight:400; color:var(--ink3); letter-spacing:.05em;}
+  .nav{list-style:none; margin:20px 0 0; padding:0;}
+  .nav a{
+    display:block; padding:8px 10px; border-radius:9px; color:var(--ink2);
+    font-size:13px; font-weight:600;
+  }
+  .nav a:hover{background:var(--panel); color:var(--ink);}
+  .factory{
+    margin-top:26px; background:var(--panel); border:1px solid var(--line);
+    border-radius:12px; padding:12px; font-size:11.5px; color:var(--ink2); line-height:1.7;
+  }
+  .factory b{color:var(--ink); font-size:12px;}
+  .online{display:inline-block; width:7px; height:7px; border-radius:50%; background:var(--good); margin-right:5px;}
+
+  .main{padding:26px 30px 90px; max-width:1100px;}
+  .topbar{display:flex; flex-wrap:wrap; align-items:baseline; gap:8px 16px; margin-bottom:20px;}
+  h1{font-size:19px; font-weight:700; margin:0;}
+  .meta{font-size:11.5px; color:var(--ink3);}
+
+  .sec{margin-top:40px;}
+  .seclabel{font-size:10px; letter-spacing:.22em; text-transform:uppercase; color:var(--accent2); font-weight:700; margin:0 0 2px;}
+  h2{font-size:16px; font-weight:700; margin:0 0 12px;}
+  h3{font-size:13px; font-weight:700; margin:0;}
+  .dim{color:var(--ink3); font-weight:400; font-size:11.5px;}
+  .dim2{color:var(--ink3);}
+  .hint{font-size:11.5px; color:var(--ink3); margin:6px 0 0;}
+  .warn{font-size:12px; color:var(--watch); margin:8px 0 0;}
+
+  .grid2{display:grid; grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr)); gap:12px;}
+  .grid3{display:grid; grid-template-columns:repeat(auto-fit,minmax(min(230px,100%),1fr)); gap:12px;}
+  .grid2>*, .grid3>*, .stats>*{min-width:0;}
+  svg{max-width:100%; height:auto;}
+  .card{
+    background:var(--panel); border:1px solid var(--line); border-radius:14px;
+    padding:16px 18px;
+  }
+  .cardhead{display:flex; justify-content:space-between; align-items:baseline; gap:8px; margin-bottom:6px;}
+  .big{font-size:28px; font-weight:700; letter-spacing:.01em; font-variant-numeric:tabular-nums; line-height:1.3;}
+  .sub{font-size:12px; color:var(--ink2);}
+  .sub b{color:var(--ink);}
+  .bar{height:5px; background:var(--line); border-radius:3px; margin-top:10px; overflow:hidden;}
+  .bar i{display:block; height:100%; background:linear-gradient(90deg,var(--accent),var(--accent2)); border-radius:3px;}
+  .pace{font-size:11px; font-weight:700; white-space:nowrap;}
+  .pace.up{color:var(--good);} .pace.down{color:var(--bad);}
+
+  table.mini{border-collapse:collapse; width:100%; font-size:12.5px; margin-top:4px;}
+  table.mini th{color:var(--ink3); font-size:11px; text-align:left; font-weight:600; padding:5px 8px 5px 0; border-bottom:1px solid var(--line);}
+  table.mini th.r{text-align:right;}
+  table.mini td{padding:7px 8px 7px 0; border-bottom:1px solid var(--line); color:var(--ink2); vertical-align:top;}
+  table.mini tr:last-child td{border-bottom:none;}
+  td.r{text-align:right; font-variant-numeric:tabular-nums; color:var(--ink);}
+  .strongc{color:var(--ink); font-weight:600;}
+
+  ul.list{list-style:none; margin:4px 0 0; padding:0;}
+  ul.list li{padding:7px 0; border-bottom:1px solid var(--line); font-size:12.5px; color:var(--ink2); line-height:1.75;}
+  ul.list li:last-child{border-bottom:none;}
+  ul.list li b{color:var(--ink); font-variant-numeric:tabular-nums;}
+  .due{color:var(--bad); font-size:10.5px; font-weight:700; margin-left:6px; white-space:nowrap;}
+  .due.soon{color:var(--watch);}
+  .tag{font-size:10.5px; color:var(--ink3); border:1px solid var(--line); border-radius:99px; padding:1px 8px; margin-left:6px; white-space:nowrap;}
+  .tag.ok{color:var(--good); border-color:var(--good);}
+
+  .svgt{fill:var(--ink3); font-size:10px; font-family:inherit;}
+  .svgt.strong{fill:var(--ink); font-weight:700; font-size:11px;}
+
+  .stats{display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:12px;}
+  .stats .card em{display:block; font-style:normal; font-size:34px; font-weight:700; line-height:1.2; font-variant-numeric:tabular-nums;}
+  .stats .card span{font-size:11.5px; color:var(--ink2); display:inline-flex; align-items:center; gap:6px;}
+  .dot{width:7px; height:7px; border-radius:50%; display:inline-block; flex:none;}
+  .dot.good{background:var(--good);} .dot.watch{background:var(--watch);} .dot.stop{background:var(--bad);}
+
+  .person{display:flex; gap:12px; align-items:flex-start; padding:11px 0; border-bottom:1px solid var(--line);}
+  .person:last-child{border-bottom:none;}
+  .avatar{width:34px; height:34px; border-radius:50%; flex:none; display:flex; align-items:center; justify-content:center; font-size:13px; font-weight:700; color:#fff;}
+  .av1{background:linear-gradient(135deg,#2E7FB8,#39C5CF);} .av2{background:linear-gradient(135deg,#5E8F52,#8BBB55);}
+  .av3{background:linear-gradient(135deg,#7B5FD0,#A47BE8);} .av4{background:linear-gradient(135deg,#8A6B3A,#C09A4E);}
+  .person b{display:block; font-size:13px;}
+  .person i{font-style:normal; font-size:10.5px; color:var(--accent2); font-weight:700;}
+  .person p{margin:1px 0 0; font-size:11.5px; color:var(--ink2); line-height:1.7;}
+
+  .flow{list-style:none; margin:8px 0 0; padding:0;}
+  .flow li{position:relative; padding:0 0 14px 24px; font-size:12.5px; color:var(--ink2);}
+  .flow li b{color:var(--ink); font-size:13px;}
+  .flow li::before{content:""; position:absolute; left:3px; top:8px; width:7px; height:7px; border-radius:50%; background:var(--accent);}
+  .flow li::after{content:""; position:absolute; left:6px; top:19px; bottom:-2px; width:1px; background:var(--line);}
+  .flow li:last-child::after{display:none;}
+  .flow li:last-child{padding-bottom:0;}
+
+  .cmd{display:flex; flex-wrap:wrap; gap:8px; margin-top:8px;}
+  .cmd span{background:var(--panel2); border:1px solid var(--line); border-radius:99px; padding:5px 14px; font-size:12px; color:var(--ink2);}
+  .cmd span b{color:var(--accent2);}
+
+  .alerts{list-style:none; margin:6px 0 0; padding:0; counter-reset:a;}
+  .alerts li{counter-increment:a; padding:8px 0 8px 28px; border-bottom:1px solid var(--line); position:relative; font-size:12.5px; color:var(--ink2);}
+  .alerts li:last-child{border-bottom:none;}
+  .alerts li::before{content:counter(a); position:absolute; left:0; top:10px; width:18px; height:18px; border:1px solid var(--bad); color:var(--bad); border-radius:50%; font-size:10.5px; font-weight:700; display:flex; align-items:center; justify-content:center;}
+
+  /* タップで日別明細が開くカード */
+  details.exp{margin-top:0;}
+  details.exp summary{cursor:pointer; list-style:none;}
+  details.exp summary::-webkit-details-marker{display:none;}
+  details.exp summary:focus-visible{outline:2px solid var(--accent); outline-offset:4px; border-radius:8px;}
+  .opener{font-size:10.5px; color:var(--accent2); font-weight:700; margin-left:10px; white-space:nowrap;}
+  details.exp[open] .opener{opacity:.55;}
+  details.exp > table.mini, details.exp > p.hint{margin-top:12px; border-top:1px solid var(--line); padding-top:8px;}
+
+  details{margin-top:12px;}
+  details summary{cursor:pointer; font-size:12px; font-weight:600; color:var(--ink3);}
+  details .inner{font-size:12px; color:var(--ink2); margin-top:8px; line-height:1.85;}
+  details .inner h3{font-size:11.5px; color:var(--ink); margin:12px 0 2px;}
+  details .inner ul{margin:2px 0; padding-left:1.2em;}
+  code{font-family:ui-monospace,"SF Mono",Menlo,monospace; font-size:11px; background:var(--panel2); border:1px solid var(--line); border-radius:4px; padding:1px 5px;}
+
+  .footer{margin-top:56px; padding-top:14px; border-top:1px solid var(--line); font-size:11px; color:var(--ink3); line-height:1.9;}
+
+  @media (max-width:900px){
+    .layout{grid-template-columns:1fr;}
+    .side{position:static; height:auto; border-right:none; border-bottom:1px solid var(--line); padding:14px 18px;}
+    .nav{display:flex; flex-wrap:wrap; gap:2px; margin-top:10px;}
+    .nav a{padding:5px 10px; font-size:12px;}
+    .factory{display:none;}
+    .main{padding:20px 18px 70px;}
+  }
+</style>
+</head>
+<body>
+<div class="layout">
+
+  <aside class="side">
+    <div class="brand">🏛 AI Company OS<small>祐馬さんの経営システム</small></div>
+    <ul class="nav">
+      <li><a href="#money">💰 今月のお金</a></li>
+      <li><a href="#youtube">📺 YouTube運営</a></li>
+      <li><a href="#tasks">✅ 今日のタスク</a></li>
+      <li><a href="#status">⚙️ 自動化の状態</a></li>
+      <li><a href="#team">🤖 AI社員</a></li>
+      <li><a href="#flow">🗺 仕組み</a></li>
+      <li><a href="#help">🚨 困った時</a></li>
+    </ul>
+    <div class="factory"><b><span class="online"></span>Mac mini 工場</b>24時間稼働・自動化33ジョブ<br>見張り: Watchtower 毎朝8:30</div>
+  </aside>
+
+  <main class="main">
+    <div class="topbar">
+      <h1>おはようございます、祐馬さん 👋</h1>
+      <span class="meta">自動生成 {{GENERATED_AT}} ・ 正本は同フォルダのmd版とリンク先の台帳</span>
+    </div>
+
+{{MONEY_HTML}}
+{{YOUTUBE_HTML}}
+{{TASKS_HTML}}
+
+  <section class="sec" id="status">
+    <p class="seclabel">Automation</p>
+    <h2>自動化の状態 <span class="dim">詳細と止め方は「AI自動化/導入済み.md」</span></h2>
+    <div class="stats">
+      <div class="card"><em>{{N_GOOD}}</em><span><i class="dot good"></i>稼働中</span></div>
+      <div class="card"><em>{{N_WATCH}}</em><span><i class="dot watch"></i>様子見</span></div>
+      <div class="card"><em>{{N_STOP}}</em><span><i class="dot stop"></i>停止中</span></div>
+      <div class="card"><em>{{N_TOTAL}}</em><span>合計</span></div>
+    </div>
+  </section>
+
+  <section class="sec" id="team">
+    <p class="seclabel">Team</p>
+    <h2>AI社員</h2>
+    <div class="card">
+      <div class="person"><span class="avatar av1">あ</span><div><b>あおい🌊 <i>秘書 兼 マネージャー</i></b><p>Discordで話しかければいつでも返事。Mac miniに住んでいて、自動化の実行役も担当。</p></div></div>
+      <div class="person"><span class="avatar av2">Cx</span><div><b>Codex <i>メインの作業員</i></b><p>調べ物・ファイル編集・計画づくり。日常の入口をあおいから引き継ぎ中。</p></div></div>
+      <div class="person"><span class="avatar av3">F5</span><div><b>Fable 5 <i>社外の軍師</i></b><p>作戦会議・整理・図解の担当。自分では手を動かさない、考える専門。</p></div></div>
+      <div class="person"><span class="avatar av4">W</span><div><b>Watchtower <i>警備員（非AI）</i></b><p>毎朝8:30に全設備を点検するプログラム。異常があった時だけ知らせてくる。</p></div></div>
+    </div>
+  </section>
+
+  <section class="sec" id="flow">
+    <p class="seclabel">Flow</p>
+    <h2>仕組み（1周の流れ）</h2>
+    <div class="card">
+      <ol class="flow">
+        <li><b>祐馬さん</b> — 指示や相談。窓口はCodex・あおい🌊・Discordのどれでも</li>
+        <li><b>Second Brain（Obsidian）</b> — 会話も決定もお金もネタも、正本はぜんぶここ</li>
+        <li><b>Mac mini</b> — 記録とルールに従って33個の仕事を24時間自動で回す</li>
+        <li><b>Discord</b> — 結果が #一般・#お金・#youtube・#メモ・#レポート に届く</li>
+        <li><b>スマホで確認</b> — 気になったらまた話しかける。この循環で会社が回る</li>
+      </ol>
+      <p class="hint">守り: 10分ごと自動保存 → GitHub日次 → 週次/月次バックアップ＋復元練習 → SSD最終保険</p>
+    </div>
+  </section>
+
+  <section class="sec" id="help">
+    <p class="seclabel">Signal</p>
+    <h2>困った時・故障のサイン</h2>
+    <div class="grid2">
+      <div class="card">
+        <div class="cardhead"><h3>この報告が来なかったら故障</h3></div>
+        <ol class="alerts">
+          <li>毎朝4時の朝ダイジェスト（#一般）</li>
+          <li>毎晩23時のUber売上（#お金）</li>
+          <li>月曜朝の週次経理（#お金）</li>
+        </ol>
+        <p class="hint">おかしいと思ったら、あおいに「◯◯の報告来てないよ」でOK。調べて直すのはAIの仕事。</p>
+      </div>
+      <div class="card">
+        <div class="cardhead"><h3>クイックコマンド（Discordで言うだけ）</h3></div>
+        <div class="cmd">
+          <span><b>済:</b> ◯◯（タスク完了）</span>
+          <span><b>メモ:</b> ◯◯（今日のノートへ）</span>
+          <span><b>タスク:</b> 7/20 車検（期日登録）</span>
+          <span><b>投稿予定:</b> 7/20 ◯◯（YouTube週間ボードへ）</span>
+          <span><b>ナレッジ:</b> ◯◯（知識ベースへ）</span>
+        </div>
+        <p class="hint">AIが確認なしにやらないこと: 削除・外部投稿・お金の確定・アカウント設定変更・自動化の停止/追加</p>
+        <details>
+          <summary>技術メモ（エージェント向け）</summary>
+          <div class="inner">
+            <h3>構成の実体</h3>
+            <ul>
+              <li>入口: Codexメイン移行フェーズ1／Claude Code（あおい）は補助・退避先／Discordはスマホ受付・通知（正本ではない）</li>
+              <li>4正本（各git管理）: <code>~/2nd-Brain</code>／<code>~/Projects/youtube</code>／<code>~/agent-skills</code>／<code>~/agent-adapters</code>（agent-run＝AIベンダー差し替え口）</li>
+              <li>実行: Mac mini launchd（Claude / Codex / Python混在）。停止の作法: plist退避＋Watchtower EXPECTED_JOBS整合</li>
+              <li>移行中: script-learning＝Codex shadow（判定 2026-08-02）／corpus-collect＝agent-run配線済み観察中</li>
+              <li>誤解しないこと: Codexメイン入口＝全自動化Codex化完了ではない／<code>com.claude.*</code>＝今もClaude実行とは限らない／Drive 2nd-Brain・Discordは正本ではない</li>
+              <li>一次面: <code>NOW.md</code>／<code>タスクボード.md</code>＋<code>期日タスク.md</code>／<code>作業ログ</code>／<code>ヘルスチェックログ.md</code>／<code>導入済み.md</code>／<code>決定事項.md</code>／<code>rules.md</code>＋<code>権限と禁止事項.md</code></li>
+            </ul>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <p class="footer">正本はmd版（同フォルダ）と各リンク先。このHTMLはスクリプトが自動生成する — 手で直さない。テンプレ: <code>20_Agent_Portable/scripts/dashboard_template.html</code> ／ 生成: <code>generate_dashboard_html.py</code> ／ お金の確定数字はfreeeが正本。</p>
+
+  </main>
+</div>
+</body>
+</html>
